@@ -4,8 +4,25 @@
 
 ## 功能概览
 
-- **组织概览**：仓库 Star / Fork / Issue 数量、全组织 Star 用户类型分布、各仓库非开发者占比、Star 数分布、多仓库 Star 用户统计
-- **仓库详情**：切换单个仓库，查看用户类型饼图、Star 时间分布、各类用户 Star 时间对比、可筛选的用户列表
+### 组织概览
+- 仓库 Star / Fork / Issue 数量
+- 全组织 Star 用户类型分布（双环饼图 + 分类说明）
+- 各仓库非开发者占比 Top 20（仅含 Star ≥ 100 的仓库）
+- 全组织 Star 增长趋势（按月堆叠 + 累计折线）
+- 各仓库用户类型构成 Top 20（百分比堆叠横向柱状图）
+- **各仓库 MR 周活跃度热力图**（近 26 周，按周统计 MR 新建数）
+- 仓库 Star 数分布、Star 多个仓库的用户统计
+
+### 仓库详情
+- 切换单个仓库，查看用户类型饼图（双环 + 分类标准说明）
+- 各类用户 Star 时间趋势（按月堆叠 + 累计折线）
+- **Issue 分析**：总量 / 已关闭 / 开放中 / 平均解决天数、创建关闭趋势、解决时长分布
+- **MR 分析**：总量 / 已合并 / 开放中 / 平均合并天数、创建合并趋势、状态分布饼图
+- 可筛选的 Star 用户列表（按类型筛选 + 分页）
+
+### 其他
+- 深色 / 浅色主题切换（持久化到 localStorage）
+- PC + 移动端响应式布局
 
 ## 用户分类标准
 
@@ -28,7 +45,11 @@ python collector.py repos        # 采集仓库基本信息
 python collector.py stars        # 采集各仓库 Star 用户列表
 python collector.py users        # 采集用户画像（贡献数、仓库数等）
 python collector.py activities   # 采集各仓库 MR / Issue 作者
+python collector.py issues       # 采集各仓库 Issue 详情（含关闭时间）
+python collector.py mrs          # 采集各仓库 MR 详情（含时间戳）
+python collector.py weekly       # 生成周粒度活跃度数据
 python collector.py reclassify   # 重新分类（更新 activity 数据后执行）
+python collector.py overview     # 生成概览聚合数据
 python collector.py report       # 输出文字报告
 ```
 
