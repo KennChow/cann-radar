@@ -238,14 +238,16 @@ const TYPE_LABELS = {
   die_hard_fan:   '铁粉',
 };
 
-const DATA_VER = '?v=11';
+const DATA_VER = '?v=12';
 async function loadJSON(path) {
   const r = await fetch(path + DATA_VER);
   return r.json();
 }
 
 function makeChart(id) {
-  return echarts.init(document.getElementById(id), 'dark', { backgroundColor: 'transparent' });
+  const chart = echarts.init(document.getElementById(id), 'dark');
+  chart.setOption({ backgroundColor: 'transparent' });
+  return chart;
 }
 
 // ── 页签切换 ─────────────────────────────────────────────
