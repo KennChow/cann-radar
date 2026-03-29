@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CANN GitCode 数据分析</title>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0f1117; color: #e0e0e0; }
+    header { padding: 32px 40px 20px; border-bottom: 1px solid #222; }
+    header h1 { font-size: 22px; font-weight: 600; color: #fff; }
+    header p  { margin-top: 6px; font-size: 13px; color: #888; }
+    .stats { display: flex; gap: 16px; padding: 24px 40px; flex-wrap: wrap; }
+    .stat-card { background: #1a1d27; border: 1px solid #2a2d3a; border-radius: 10px; padding: 18px 24px; flex: 1; min-width: 140px; }
+    .stat-card .val { font-size: 28px; font-weight: 700; color: #7eb6ff; }
+    .stat-card .lbl { font-size: 12px; color: #888; margin-top: 4px; }
+    .charts { padding: 0 40px 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .chart-box { background: #1a1d27; border: 1px solid #2a2d3a; border-radius: 10px; padding: 20px; }
+    .chart-box h2 { font-size: 14px; font-weight: 600; color: #ccc; margin-bottom: 12px; }
+    .chart { width: 100%; height: 360px; }
+    .chart-wide { grid-column: 1 / -1; }
+    .note { padding: 0 40px 24px; font-size: 12px; color: #555; }
+    @media (max-width: 768px) {
+      .charts { grid-template-columns: 1fr; padding: 0 16px 24px; }
+      .stats { padding: 16px; }
+      header { padding: 20px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>CANN GitCode 数据分析</h1>
+  <p id="update-time">数据加载中...</p>
+</header>
+
+<div class="stats" id="stats-row"></div>
+
+<div class="charts">
+  <div class="chart-box chart-wide">
+    <h2>各仓库 Star / Fork / Issue 数</h2>
+    <div class="chart" id="chart-repos"></div>
+  </div>
+  <div class="chart-box">
+    <h2>Star 用户类型分布</h2>
+    <div class="chart" id="chart-user-type"></div>
+  </div>
+  <div class="chart-box">
+    <h2>各仓库三无用户占比 Top 20</h2>
+    <div class="chart" id="chart-ghost-rate"></div>
+  </div>
+  <div class="chart-box">
+    <h2>仓库 Star 数分布</h2>
+    <div class="chart" id="chart-star-dist"></div>
+  </div>
+  <div class="chart-box">
+    <h2>Star 多仓库用户分布（同时 star N 个仓库）</h2>
+    <div class="chart" id="chart-multi-star"></div>
+  </div>
+</div>
+
+<p class="note" id="note"></p>
+
+<script>
+const COLORS = {
+  developer: '#5b8def',
+  casual: '#4ecdc4',
+  ghost: '#e05f5f',
+  star: '#f5c842',
+  fork: '#4ecdc4',
+  issue: '#e05f5f',
+};
+
+async function loadJSON(path) {
+  const r = await fetch(path);
+  return r.json();
+}
+
+function makeChart(id) {
+  return echarts.init(document.getElementById(id), 'dark', { backgroundColor: 'transparent' });
+}
+
+async function main() {
+  const [repos, allUsers, profiles] = await Promise.all([
+    loadJSON('data/repos.json'),
+    loadJSON('data/all_star_users.json'),
+    loadJSON('data/user_profiles.json'),
+  ]);
+
+  const profileMap = {};
+  profiles.forEach(p => profileMap[p.user_name] = p);
+
+  // ── 统计卡片 ──────────────────────────────────────────
+  const totalStars  = repos.reduce((s, r) => s + r.star_count, 0);
+  const totalForks  = repos.reduce((s, r) => s + r.forks_count, 0);
+  const totalIssues = repos.reduce((s, r) => s + r.open_issues_count, 0);
+  const typeCounts  = { developer: 0, casual: 0, ghost: 0 };
+  profiles.forEach(p => { typeCounts[p.user_type] = (typeCounts[p.user_type] || 0) + 1; });
+
+  document.getElementById('stats-row').innerHTML = [
+    ['仓库总数',  repos.length,                ''],
+    ['总 Star 数', totalStars.toLocaleString(), ''],
+    ['总 Fork 数', totalForks.toLocaleString(), ''],
+    ['开放 Issue', totalIssues.toLocaleString(),''],
+    ['唯一 Star 用户', allUsers.length.toLocaleString(), ''],
+    ['已画像用户', profiles.length.toLocaleString(), `/ ${allUsers.length}`],
+  ].map(([lbl, val, sub]) =>
+    `<div class="stat-card"><div class="val">${val}<small style="font-size:14px;color:#666">${sub}</small></div><div class="lbl">${lbl}</div></div>`
+  ).join('');
+
+  document.getElementById('update-time').textContent =
+    `数据采集时间：${new Date().toLocaleDateString('zh')}  ·  gitcode.com/cann`;
+
+  // ── 图1：各仓库 Star/Fork/Issue ──────────────────────
+  {
+    const top = repos.slice(0, 30);
+    const names  = top.map(r => r.path.split('/')[1]);
+    const chart  = makeChart('chart-repos');
+    chart.setOption({
+      tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
+      legend: { data: ['Star', 'Fork', 'Issue'], textStyle: { color: '#aaa' } },
+      grid: { left: 10, right: 10, bottom: 80, containLabel: true },
+      xAxis: { type: 'category', data: names, axisLabel: { rotate: 40, color: '#aaa', fontSize: 11 } },
+      yAxis: { type: 'value', axisLabel: { color: '#aaa' } },
+      series: [
+        { name: 'Star',  type: 'bar', data: top.map(r => r.star_count),        itemStyle: { color: COLORS.star } },
+        { name: 'Fork',  type: 'bar', data: top.map(r => r.forks_count),       itemStyle: { color: COLORS.fork } },
+        { name: 'Issue', type: 'bar', data: top.map(r => r.open_issues_count), itemStyle: { color: COLORS.issue } },
+      ],
+    });
+    window.addEventListener('resize', () => chart.resize());
+  }
+
+  // ── 图2：用户类型饼图 ─────────────────────────────────
+  {
+    const chart = makeChart('chart-user-type');
+    const labels = { developer: '开发者', casual: '普通用户', ghost: '三无用户' };
+    chart.setOption({
+      tooltip: { trigger: 'item', formatter: '{b}: {c} ({d}%)' },
+      legend: { bottom: 0, textStyle: { color: '#aaa' } },
+      series: [{
+        type: 'pie', radius: ['40%', '70%'], center: ['50%', '45%'],
+        label: { color: '#ccc', formatter: '{b}\n{d}%' },
+        data: Object.entries(typeCounts).map(([k, v]) => ({
+          name: labels[k], value: v,
+          itemStyle: { color: COLORS[k] },
+        })),
+      }],
+    });
+    window.addEventListener('resize', () => chart.resize());
+  }
+
+  // ── 图3：各仓库三无用户占比 ───────────────────────────
+  {
+    const rows = repos
+      .filter(r => r.star_count > 0)
+      .map(r => {
+        const rpath = r.path;
+        const repoUsers = allUsers.filter(u => u.starred_repos.includes(rpath));
+        const profiled  = repoUsers.filter(u => profileMap[u.user_name]);
+        const ghosts    = profiled.filter(u => profileMap[u.user_name]?.user_type === 'ghost');
+        const rate = profiled.length > 0 ? ghosts.length / profiled.length * 100 : 0;
+        return { name: rpath.split('/')[1], rate, profiled: profiled.length };
+      })
+      .filter(r => r.profiled >= 5)
+      .sort((a, b) => b.rate - a.rate)
+      .slice(0, 20);
+
+    const chart = makeChart('chart-ghost-rate');
+    chart.setOption({
+      tooltip: { trigger: 'axis', formatter: p => `${p[0].name}<br/>三无占比: ${p[0].value.toFixed(1)}%` },
+      grid: { left: 10, right: 20, bottom: 80, containLabel: true },
+      xAxis: { type: 'category', data: rows.map(r => r.name), axisLabel: { rotate: 40, color: '#aaa', fontSize: 11 } },
+      yAxis: { type: 'value', axisLabel: { color: '#aaa', formatter: '{value}%' }, max: 50 },
+      series: [{
+        type: 'bar',
+        data: rows.map(r => ({ value: r.rate, itemStyle: { color: r.rate > 20 ? '#e05f5f' : r.rate > 10 ? '#e0a85f' : '#5b8def' } })),
+      }],
+    });
+    window.addEventListener('resize', () => chart.resize());
+  }
+
+  // ── 图4：Star 数分布直方图 ────────────────────────────
+  {
+    const buckets = [
+      { label: '1-9',     min: 1,   max: 10  },
+      { label: '10-49',   min: 10,  max: 50  },
+      { label: '50-99',   min: 50,  max: 100 },
+      { label: '100-199', min: 100, max: 200 },
+      { label: '200-499', min: 200, max: 500 },
+      { label: '500+',    min: 500, max: Infinity },
+    ];
+    const counts = buckets.map(b => repos.filter(r => r.star_count >= b.min && r.star_count < b.max).length);
+    const chart  = makeChart('chart-star-dist');
+    chart.setOption({
+      tooltip: { trigger: 'axis' },
+      grid: { left: 10, right: 20, containLabel: true },
+      xAxis: { type: 'category', data: buckets.map(b => b.label), axisLabel: { color: '#aaa' } },
+      yAxis: { type: 'value', axisLabel: { color: '#aaa' }, minInterval: 1 },
+      series: [{ type: 'bar', data: counts, itemStyle: { color: COLORS.star }, label: { show: true, position: 'top', color: '#aaa' } }],
+    });
+    window.addEventListener('resize', () => chart.resize());
+  }
+
+  // ── 图5：多仓库 star 用户分布 ─────────────────────────
+  {
+    const buckets = [2, 5, 10, 20, 30, 40];
+    const labels  = ['2+', '5+', '10+', '20+', '30+', '全部(39)'];
+    const counts  = buckets.map(n => allUsers.filter(u => u.starred_repos.length >= n).length);
+    const chart   = makeChart('chart-multi-star');
+    chart.setOption({
+      tooltip: { trigger: 'axis', formatter: p => `star了 ${p[0].name} 个仓库的用户：${p[0].value} 位` },
+      grid: { left: 10, right: 20, containLabel: true },
+      xAxis: { type: 'category', data: labels, axisLabel: { color: '#aaa' } },
+      yAxis: { type: 'value', axisLabel: { color: '#aaa' } },
+      series: [{ type: 'bar', data: counts, itemStyle: { color: COLORS.casual }, label: { show: true, position: 'top', color: '#aaa' } }],
+    });
+    window.addEventListener('resize', () => chart.resize());
+  }
+
+  document.getElementById('note').textContent =
+    `用户画像已采集 ${profiles.length} / ${allUsers.length} 位，分类数据仅供参考。`;
+}
+
+main().catch(console.error);
+</script>
+</body>
+</html>
