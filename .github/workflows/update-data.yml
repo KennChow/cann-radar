@@ -30,15 +30,19 @@ jobs:
         with:
           python-version: '3.11'
 
-      # 每天清除：repos、stars、mrs、issues、聚合文件
-      # user_profiles.json 默认保留（仅增量追加新用户）
-      # 手动触发时可选择全量刷新用户画像
+      # 每天清除采集缓存，保留 user_profiles.json（增量追加）
+      # 手动触发或周日全量刷新时清除用户画像
       - name: Clear stale caches
         run: |
           rm -f data/repos.json
           rm -f data/org_timeline.json
           rm -f data/weekly_activity.json
+          rm -f data/dlevel_summary.json
+          rm -f data/users_slim.json
+          rm -f data/issue_summary.json
+          rm -f data/mr_summary.json
           rm -rf data/stars/
+          rm -rf data/forks/
           rm -rf data/mrs/
           rm -rf data/issues/
           if [ "${{ github.event.inputs.full_refresh }}" = "true" ] || \
@@ -47,41 +51,8 @@ jobs:
             rm -f data/user_profiles.json
           fi
 
-      - name: Collect repos
-        run: python collector.py repos
-
-      - name: Collect stars
-        run: python collector.py stars
-
-      - name: Collect new user profiles
-        run: python collector.py users
-
-      - name: Collect issue details
-        run: python collector.py issues
-
-      - name: Collect MR details
-        run: python collector.py mrs
-
-      - name: Collect activity authors
-        run: python collector.py activities
-
-      - name: Reclassify users
-        run: python collector.py reclassify
-
-      - name: Generate overview timeline
-        run: python collector.py overview
-
-      - name: Generate slim user data
-        run: python collector.py users-slim
-
-      - name: Generate issue summary
-        run: python collector.py issue-summary
-
-      - name: Generate MR summary
-        run: python collector.py mr-summary
-
-      - name: Generate weekly activity
-        run: python collector.py weekly
+      - name: Collect all data
+        run: python collector.py all
 
       - name: Commit and push updated data
         run: |

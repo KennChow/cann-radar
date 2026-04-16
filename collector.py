@@ -371,9 +371,56 @@ def collect_users():
 
 # ─── 步骤 3.5：采集各仓库 MR / Issue 作者 ────────────────────────────────────
 
+def _fetch_repo_activities(repo):
+    """采集单个仓库的 MR/Issue 作者（供线程池调用）。"""
+    repo_id   = repo["id"]
+    repo_path = repo["path"]
+    encoded   = urllib.parse.quote(repo_path, safe="")
+
+    mr_authors = set()
+    mr_page = 1
+    mr_count = 0
+    while True:
+        url  = f"{BASE_URL}/api/v1/projects/{repo_id}/merge_requests?page={mr_page}&per_page=100&state=all"
+        data = get(url)
+        if not data or not data.get("content"):
+            break
+        for mr in data["content"]:
+            uname = (mr.get("author") or {}).get("username")
+            if uname:
+                mr_authors.add(uname)
+                mr_count += 1
+        total = data.get("total") or 0
+        if len(mr_authors) >= total or len(data["content"]) < 100:
+            break
+        mr_page += 1
+        time.sleep(REQUEST_DELAY)
+
+    issue_authors = set()
+    issue_page = 1
+    issue_count = 0
+    while True:
+        url  = f"{BASE_URL}/api/v1/issue/{encoded}/issues?page={issue_page}&per_page=100&state=all"
+        data = get(url)
+        if not data or not data.get("issues"):
+            break
+        for issue in data["issues"]:
+            uname = (issue.get("author") or {}).get("username")
+            if uname:
+                issue_authors.add(uname)
+                issue_count += 1
+        total = data.get("all") or 0
+        if issue_count >= total or len(data["issues"]) < 100:
+            break
+        issue_page += 1
+        time.sleep(REQUEST_DELAY)
+
+    return repo_path, mr_authors, issue_authors, mr_count, issue_count
+
+
 def collect_activities():
     """
-    遍历所有 CANN 仓库，抓取 MR 和 Issue 的作者用户名。
+    遍历所有仓库，并发抓取 MR 和 Issue 的作者用户名。
     用于将"开发者"进一步区分为"贡献者"（有 MR）和"提问者"（有 Issue，无 MR）。
     结果保存到 data/activity_users.json。
     """
@@ -387,67 +434,75 @@ def collect_activities():
     mr_authors = set()
     issue_authors = set()
 
-    for repo in repos:
-        repo_id   = repo["id"]
-        repo_path = repo["path"]
-        encoded   = urllib.parse.quote(repo_path, safe="")
-
-        # ── MR 作者 ──────────────────────────────────────────
-        mr_page = 1
-        mr_count = 0
-        while True:
-            url  = f"{BASE_URL}/api/v1/projects/{repo_id}/merge_requests?page={mr_page}&per_page=100&state=all"
-            data = get(url)
-            if not data or not data.get("content"):
-                break
-            for mr in data["content"]:
-                uname = (mr.get("author") or {}).get("username")
-                if uname:
-                    mr_authors.add(uname)
-                    mr_count += 1
-            total = data.get("total") or 0
-            if len(mr_authors) >= total or len(data["content"]) < 100:
-                break
-            mr_page += 1
-            time.sleep(REQUEST_DELAY)
-
-        # ── Issue 作者 ───────────────────────────────────────
-        issue_page = 1
-        issue_count = 0
-        while True:
-            url  = f"{BASE_URL}/api/v1/issue/{encoded}/issues?page={issue_page}&per_page=100&state=all"
-            data = get(url)
-            if not data or not data.get("issues"):
-                break
-            for issue in data["issues"]:
-                uname = (issue.get("author") or {}).get("username")
-                if uname:
-                    issue_authors.add(uname)
-                    issue_count += 1
-            total = data.get("all") or 0
-            if issue_count >= total or len(data["issues"]) < 100:
-                break
-            issue_page += 1
-            time.sleep(REQUEST_DELAY)
-
-        print(f"  {repo_path}: MR作者 +{mr_count}  Issue作者 +{issue_count}  "
-              f"（累计 MR={len(mr_authors)} Issue={len(issue_authors)}）")
-        time.sleep(REQUEST_DELAY)
+    t_start = time.time()
+    with ThreadPoolExecutor(max_workers=len(repos)) as pool:
+        futures = {pool.submit(_fetch_repo_activities, repo): repo for repo in repos}
+        for future in as_completed(futures):
+            try:
+                repo_path, repo_mr, repo_issue, mr_count, issue_count = future.result()
+                mr_authors.update(repo_mr)
+                issue_authors.update(repo_issue)
+                print(f"  {repo_path}: MR作者 +{mr_count}  Issue作者 +{issue_count}  "
+                      f"（累计 MR={len(mr_authors)} Issue={len(issue_authors)}）")
+            except Exception as e:
+                repo_path = futures[future]["path"]
+                print(f"  ✗ {repo_path}: {e}")
 
     result = {
         "mr_authors":    sorted(mr_authors),
         "issue_authors": sorted(issue_authors),
     }
     save_json(DATA_DIR / "activity_users.json", result)
-    print(f"\n  ✓ MR 作者 {len(mr_authors)} 位，Issue 作者 {len(issue_authors)} 位")
+    elapsed = time.time() - t_start
+    print(f"\n  ✓ MR 作者 {len(mr_authors)} 位，Issue 作者 {len(issue_authors)} 位（耗时 {elapsed:.0f}s）")
     print(f"    已保存到 data/activity_users.json")
     return result
+
+
+def _fetch_repo_forks(repo, forks_dir):
+    """采集单个仓库的 Fork 明细（供线程池调用）。"""
+    repo_id = repo["id"]
+    repo_path = repo["path"]
+    safe_name = repo_path.replace("/", "__")
+    cache_file = forks_dir / f"{safe_name}.json"
+
+    if cache_file.exists():
+        forks = load_json(cache_file) or []
+        return repo_path, forks, True
+
+    forks = []
+    page = 1
+    per_page = 100
+    while True:
+        url = f"{BASE_URL}/api/v1/projects/{repo_id}/forks?page={page}&per_page={per_page}"
+        data = get(url)
+        items = (data or {}).get("content") or []
+        for item in items:
+            creator = item.get("creator") or {}
+            forks.append({
+                "id": item.get("id"),
+                "namespace": item.get("namespace", ""),
+                "name": item.get("name", ""),
+                "web_url": item.get("web_url", ""),
+                "http_url_to_repo": item.get("http_url_to_repo", ""),
+                "created_at": item.get("created_at", ""),
+                "creator_username": creator.get("username") or ((item.get("namespace", "").split("/")[0]) if "/" in item.get("namespace", "") else ""),
+                "creator_nick_name": creator.get("nick_name") or creator.get("name") or "",
+                "forked_from": (item.get("forked_from_project") or {}).get("path_with_namespace", repo_path),
+            })
+        if not items or page >= ((data or {}).get("page_count") or 1):
+            break
+        page += 1
+        time.sleep(REQUEST_DELAY)
+
+    save_json(cache_file, forks)
+    return repo_path, forks, False
 
 
 def collect_forks():
     """
     采集目标仓库的 Fork 明细，保存到 data/forks/{repo}.json。
-    用于识别 D0 关注者中的 Fork 用户。
+    多仓库并发采集，用于识别 D0 关注者中的 Fork 用户。
     """
     print("\n=== 步骤 3.8：采集 Fork 明细 ===")
 
@@ -460,49 +515,23 @@ def collect_forks():
     forks_dir.mkdir(exist_ok=True)
 
     result = {}
-    for repo in repos:
-        repo_id = repo["id"]
-        repo_path = repo["path"]
-        safe_name = repo_path.replace("/", "__")
-        cache_file = forks_dir / f"{safe_name}.json"
+    t_start = time.time()
+    with ThreadPoolExecutor(max_workers=len(repos)) as pool:
+        futures = {pool.submit(_fetch_repo_forks, repo, forks_dir): repo for repo in repos}
+        for future in as_completed(futures):
+            try:
+                repo_path, forks, cached = future.result()
+                result[repo_path] = forks
+                if cached:
+                    print(f"  {repo_path}: 使用缓存（{len(forks)} 条）")
+                else:
+                    print(f"  {repo_path}: 共 {len(forks)} 条 Fork")
+            except Exception as e:
+                repo_path = futures[future]["path"]
+                print(f"  ✗ {repo_path}: {e}")
 
-        if cache_file.exists():
-            forks = load_json(cache_file) or []
-            print(f"  {repo_path}: 使用缓存（{len(forks)} 条）")
-            result[repo_path] = forks
-            continue
-
-        forks = []
-        page = 1
-        per_page = 100
-        while True:
-            url = f"{BASE_URL}/api/v1/projects/{repo_id}/forks?page={page}&per_page={per_page}"
-            data = get(url)
-            items = (data or {}).get("content") or []
-            for item in items:
-                creator = item.get("creator") or {}
-                forks.append({
-                    "id": item.get("id"),
-                    "namespace": item.get("namespace", ""),
-                    "name": item.get("name", ""),
-                    "web_url": item.get("web_url", ""),
-                    "http_url_to_repo": item.get("http_url_to_repo", ""),
-                    "created_at": item.get("created_at", ""),
-                    "creator_username": creator.get("username") or ((item.get("namespace", "").split("/")[0]) if "/" in item.get("namespace", "") else ""),
-                    "creator_nick_name": creator.get("nick_name") or creator.get("name") or "",
-                    "forked_from": (item.get("forked_from_project") or {}).get("path_with_namespace", repo_path),
-                })
-            if not items or page >= ((data or {}).get("page_count") or 1):
-                break
-            page += 1
-            time.sleep(REQUEST_DELAY)
-
-        save_json(cache_file, forks)
-        result[repo_path] = forks
-        print(f"  {repo_path}: 共 {len(forks)} 条 Fork")
-        time.sleep(REQUEST_DELAY)
-
-    print("\n  ✓ 各仓库 Fork 明细已保存到 data/forks/")
+    elapsed = time.time() - t_start
+    print(f"\n  ✓ 各仓库 Fork 明细已保存到 data/forks/（耗时 {elapsed:.0f}s）")
     return result
 
 
@@ -568,11 +597,53 @@ def reclassify_users():
 
 # ─── 步骤 4：采集各仓库 Issue 详情 ───────────────────────────────────────────
 
+def _fetch_repo_issues(repo, issues_dir):
+    """采集单个仓库的全部 Issue（供线程池调用）。"""
+    repo_path = repo["path"]
+    encoded   = urllib.parse.quote(repo_path, safe="")
+    safe_name = repo_path.replace("/", "__")
+    cache_file = issues_dir / f"{safe_name}.json"
+
+    if cache_file.exists():
+        existing = load_json(cache_file) or []
+        return repo_path, existing, True
+
+    all_issues = []
+    total      = None
+    page       = 1
+
+    while True:
+        url  = f"{BASE_URL}/api/v1/issue/{encoded}/issues?page={page}&per_page=100&state=all"
+        data = get(url)
+        if not data or not data.get("issues"):
+            break
+
+        if total is None:
+            total = data.get("all") or 0
+
+        for issue in data["issues"]:
+            closed_raw = issue.get("closed_at") or ""
+            all_issues.append({
+                "iid":        issue.get("iid"),
+                "state":      issue.get("state", "opened"),
+                "created_at": (issue.get("created_at") or "")[:10],
+                "closed_at":  closed_raw[:10] if closed_raw else "",
+                "author":     (issue.get("author") or {}).get("username", ""),
+            })
+
+        if total and len(all_issues) >= total or len(data["issues"]) < 100:
+            break
+        page += 1
+        time.sleep(REQUEST_DELAY)
+
+    save_json(cache_file, all_issues)
+    return repo_path, all_issues, False
+
+
 def collect_issues():
     """
     采集所有仓库的完整 Issue 列表，保存创建时间和关闭时间，
-    用于计算 Issue 趋势和解决时长分布。
-    结果按仓库保存到 data/issues/{repo}.json。
+    多仓库并发采集，结果按仓库保存到 data/issues/{repo}.json。
     """
     print("\n=== 步骤 4：采集各仓库 Issue 详情 ===")
 
@@ -584,59 +655,77 @@ def collect_issues():
     issues_dir = DATA_DIR / "issues"
     issues_dir.mkdir(exist_ok=True)
 
-    for repo in repos:
-        repo_path = repo["path"]
-        encoded   = urllib.parse.quote(repo_path, safe="")
-        safe_name = repo_path.replace("/", "__")
-        cache_file = issues_dir / f"{safe_name}.json"
+    t_start = time.time()
+    with ThreadPoolExecutor(max_workers=len(repos)) as pool:
+        futures = {pool.submit(_fetch_repo_issues, repo, issues_dir): repo for repo in repos}
+        for future in as_completed(futures):
+            try:
+                repo_path, issues, cached = future.result()
+                if cached:
+                    print(f"  {repo_path}: 使用缓存（{len(issues)} 条）")
+                else:
+                    repo = futures[future]
+                    print(f"  {repo_path}: 共 {len(issues)} 条（open={repo['open_issues_count']}）")
+            except Exception as e:
+                repo_path = futures[future]["path"]
+                print(f"  ✗ {repo_path}: {e}")
 
-        if cache_file.exists():
-            existing = load_json(cache_file) or []
-            print(f"  {repo_path}: 使用缓存（{len(existing)} 条）")
-            continue
-
-        all_issues = []
-        total      = None
-        page       = 1
-
-        while True:
-            url  = f"{BASE_URL}/api/v1/issue/{encoded}/issues?page={page}&per_page=100&state=all"
-            data = get(url)
-            if not data or not data.get("issues"):
-                break
-
-            if total is None:
-                total = data.get("all") or 0
-
-            for issue in data["issues"]:
-                closed_raw = issue.get("closed_at") or ""
-                all_issues.append({
-                    "iid":        issue.get("iid"),
-                    "state":      issue.get("state", "opened"),
-                    "created_at": (issue.get("created_at") or "")[:10],
-                    "closed_at":  closed_raw[:10] if closed_raw else "",
-                    "author":     (issue.get("author") or {}).get("username", ""),
-                })
-
-            if total and len(all_issues) >= total or len(data["issues"]) < 100:
-                break
-            page += 1
-            time.sleep(REQUEST_DELAY)
-
-        save_json(cache_file, all_issues)
-        print(f"  {repo_path}: 共 {len(all_issues)} 条（open={repo['open_issues_count']}）")
-        time.sleep(REQUEST_DELAY)
-
-    print("\n  ✓ 各仓库 Issue 已保存到 data/issues/")
+    elapsed = time.time() - t_start
+    print(f"\n  ✓ 各仓库 Issue 已保存到 data/issues/（耗时 {elapsed:.0f}s）")
 
 
 # ─── 步骤 5：采集各仓库 MR 详情 ───────────────────────────────────────────────
+
+def _fetch_repo_mrs(repo, mrs_dir):
+    """采集单个仓库的全部 MR（供线程池调用）。"""
+    repo_id   = repo["id"]
+    repo_path = repo["path"]
+    safe_name = repo_path.replace("/", "__")
+    cache_file = mrs_dir / f"{safe_name}.json"
+
+    if cache_file.exists():
+        existing = load_json(cache_file) or []
+        return repo_path, existing, True
+
+    all_mrs = []
+    total   = None
+    page    = 1
+
+    while True:
+        url  = f"{BASE_URL}/api/v1/projects/{repo_id}/merge_requests?page={page}&per_page=100&state=all"
+        data = get(url)
+        if not data or not data.get("content"):
+            break
+
+        if total is None:
+            total = data.get("total") or 0
+
+        for mr in data["content"]:
+            merged_raw = mr.get("merged_at") or ""
+            closed_raw = mr.get("closed_at") or ""
+            all_mrs.append({
+                "iid":        mr.get("iid"),
+                "state":      mr.get("state", "opened"),
+                "created_at": (mr.get("created_at") or "")[:10],
+                "merged_at":  merged_raw[:10] if merged_raw else "",
+                "closed_at":  closed_raw[:10] if closed_raw else "",
+                "author":     (mr.get("author") or {}).get("username", ""),
+            })
+
+        if (total and len(all_mrs) >= total) or len(data["content"]) < 100:
+            break
+        page += 1
+        time.sleep(REQUEST_DELAY)
+
+    save_json(cache_file, all_mrs)
+    return repo_path, all_mrs, False
+
 
 def collect_mrs():
     """
     采集所有仓库的完整 MR 列表，保存创建时间、合并时间、状态和作者，
     用于计算 MR 趋势和周粒度活跃度分析。
-    结果按仓库保存到 data/mrs/{repo}.json。
+    多仓库并发采集，结果按仓库保存到 data/mrs/{repo}.json。
     """
     print("\n=== 步骤 5：采集各仓库 MR 详情 ===")
 
@@ -648,52 +737,23 @@ def collect_mrs():
     mrs_dir = DATA_DIR / "mrs"
     mrs_dir.mkdir(exist_ok=True)
 
-    for repo in repos:
-        repo_id   = repo["id"]
-        repo_path = repo["path"]
-        safe_name = repo_path.replace("/", "__")
-        cache_file = mrs_dir / f"{safe_name}.json"
+    t_start = time.time()
+    with ThreadPoolExecutor(max_workers=len(repos)) as pool:
+        futures = {pool.submit(_fetch_repo_mrs, repo, mrs_dir): repo for repo in repos}
+        for future in as_completed(futures):
+            try:
+                repo_path, mrs, cached = future.result()
+                if cached:
+                    print(f"  {repo_path}: 使用缓存（{len(mrs)} 条）")
+                else:
+                    repo = futures[future]
+                    print(f"  {repo_path}: 共 {len(mrs)} 条 MR（open_mr={repo['open_mr_count']}）")
+            except Exception as e:
+                repo_path = futures[future]["path"]
+                print(f"  ✗ {repo_path}: {e}")
 
-        if cache_file.exists():
-            existing = load_json(cache_file) or []
-            print(f"  {repo_path}: 使用缓存（{len(existing)} 条）")
-            continue
-
-        all_mrs = []
-        total   = None
-        page    = 1
-
-        while True:
-            url  = f"{BASE_URL}/api/v1/projects/{repo_id}/merge_requests?page={page}&per_page=100&state=all"
-            data = get(url)
-            if not data or not data.get("content"):
-                break
-
-            if total is None:
-                total = data.get("total") or 0
-
-            for mr in data["content"]:
-                merged_raw = mr.get("merged_at") or ""
-                closed_raw = mr.get("closed_at") or ""
-                all_mrs.append({
-                    "iid":        mr.get("iid"),
-                    "state":      mr.get("state", "opened"),
-                    "created_at": (mr.get("created_at") or "")[:10],
-                    "merged_at":  merged_raw[:10] if merged_raw else "",
-                    "closed_at":  closed_raw[:10] if closed_raw else "",
-                    "author":     (mr.get("author") or {}).get("username", ""),
-                })
-
-            if (total and len(all_mrs) >= total) or len(data["content"]) < 100:
-                break
-            page += 1
-            time.sleep(REQUEST_DELAY)
-
-        save_json(cache_file, all_mrs)
-        print(f"  {repo_path}: 共 {len(all_mrs)} 条 MR（open_mr={repo['open_mr_count']}）")
-        time.sleep(REQUEST_DELAY)
-
-    print("\n  ✓ 各仓库 MR 已保存到 data/mrs/")
+    elapsed = time.time() - t_start
+    print(f"\n  ✓ 各仓库 MR 已保存到 data/mrs/（耗时 {elapsed:.0f}s）")
 
 
 # ─── 步骤 6：生成周粒度活跃度数据 ─────────────────────────────────────────────
@@ -1244,21 +1304,66 @@ def main():
     elif cmd == "dlevels":
         generate_dlevel_summary()
     elif cmd == "all":
+        t_all = time.time()
+
+        # Layer 1: repos（其他所有步骤的基础）
         collect_repos()
-        collect_stars()
+
+        # Layer 2: stars / forks / issues / mrs / activities 只依赖 repos，并发执行
+        print("\n--- 并发采集 stars / forks / issues / mrs / activities ---")
+        with ThreadPoolExecutor(max_workers=5) as pool:
+            layer2 = {
+                pool.submit(collect_stars): "stars",
+                pool.submit(collect_forks): "forks",
+                pool.submit(collect_issues): "issues",
+                pool.submit(collect_mrs): "mrs",
+                pool.submit(collect_activities): "activities",
+            }
+            for future in as_completed(layer2):
+                name = layer2[future]
+                try:
+                    future.result()
+                except Exception as e:
+                    print(f"  ✗ {name} 失败: {e}")
+
+        # Layer 3: users（依赖 stars）
         collect_users()
-        collect_activities()
-        collect_forks()
-        collect_issues()
-        collect_mrs()
+
+        # Layer 4: reclassify（依赖 users + activities）
         reclassify_users()
-        generate_overview_data()
-        generate_users_slim()
-        generate_dlevel_summary()
-        generate_issue_summary()
-        generate_mr_summary()
-        generate_weekly_activity()
+
+        # Layer 5: overview / users-slim 可并发
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            layer5 = {
+                pool.submit(generate_overview_data): "overview",
+                pool.submit(generate_users_slim): "users-slim",
+            }
+            for future in as_completed(layer5):
+                name = layer5[future]
+                try:
+                    future.result()
+                except Exception as e:
+                    print(f"  ✗ {name} 失败: {e}")
+
+        # Layer 6: 聚合数据可并发
+        with ThreadPoolExecutor(max_workers=4) as pool:
+            layer6 = {
+                pool.submit(generate_dlevel_summary): "dlevels",
+                pool.submit(generate_issue_summary): "issue-summary",
+                pool.submit(generate_mr_summary): "mr-summary",
+                pool.submit(generate_weekly_activity): "weekly",
+            }
+            for future in as_completed(layer6):
+                name = layer6[future]
+                try:
+                    future.result()
+                except Exception as e:
+                    print(f"  ✗ {name} 失败: {e}")
+
         generate_report()
+        print(f"\n{'='*50}")
+        print(f"  全量采集完成，总耗时 {time.time() - t_all:.0f}s")
+        print(f"{'='*50}")
     elif cmd == "report":
         generate_report()
     else:
