@@ -1198,7 +1198,8 @@ def main():
     elif cmd == "stars":
         collect_stars()
     elif cmd == "users":
-        collect_users()
+        # collect_users()
+        pass
     elif cmd == "activities":
         collect_activities()
     elif cmd == "issues":
@@ -1224,7 +1225,7 @@ def main():
     elif cmd == "all":
         collect_repos()
         collect_stars()
-        collect_users()
+        # collect_users()
         collect_activities()
         collect_forks()
         collect_issues()
