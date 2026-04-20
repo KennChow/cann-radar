@@ -50,7 +50,20 @@
   "display_name": "页面显示名",
   "enabled": true,
   "goals": [
-    { "label": "2026年上半年达到500", "target": 500 }
+    {
+      "metric": "star",
+      "label": "Star 数",
+      "targets": [
+        { "label": "2026年上半年达到500", "target": 500 }
+      ]
+    },
+    {
+      "metric": "d1",
+      "label": "D1 开发者数量",
+      "targets": [
+        { "date": "2026-06-30", "target": 100 }
+      ]
+    }
   ]
 }
 ```
@@ -60,7 +73,7 @@
 | `path` | GitCode 仓库路径（注意大小写需与 API 返回一致，通常为小写） |
 | `display_name` | 前端展示名称 |
 | `enabled` | 设为 `false` 可临时隐藏，无需删除配置 |
-| `goals` | 运营目标线，可选，数组可为空 `[]` |
+| `goals` | 统一运营目标配置，可选，数组可为空 `[]` |
 
 ### 移除仓库
 
@@ -73,21 +86,37 @@
 
 > **注意**：`path` 的大小写必须与 GitCode API 返回的 `path_with_namespace` 一致（可先运行 `python collector.py repos` 查看 `data/repos.json` 中的实际值）。
 
-## 如何调整运营目标
+## 如何调整运营目标 / 指标
 
-编辑 `config/repos.json` 中对应仓库的 `goals` 数组：
+编辑 `config/repos.json` 中对应仓库的 `goals` 数组。Star、D1、D2 都使用同一种结构：
 
 ```json
 "goals": [
-  { "label": "2026年上半年达到500", "target": 500 },
-  { "label": "2026年底达到1000", "target": 1000 }
+  {
+    "metric": "star",
+    "label": "Star 数",
+    "targets": [
+      { "label": "2026年上半年达到500", "target": 500 },
+      { "label": "2026年底达到1000", "target": 1000 }
+    ]
+  },
+  {
+    "metric": "d1",
+    "label": "D1 开发者数量",
+    "targets": [
+      { "date": "2026-06-30", "target": 100 },
+      { "date": "2026-09-30", "target": 150 },
+      { "date": "2026-12-30", "target": 200 }
+    ]
+  }
 ]
 ```
 
-- `label`：目标描述文字，显示在仓库详情页
-- `target`：目标 Star 数，用于计算进度百分比和差距
-- 每个仓库可设多个目标，也可设为空数组 `[]` 表示无目标
-- 修改后推送到 `main` 即可生效（目标线不依赖数据采集）
+- `metric`：当前支持 `star` / `d1` / `d2`
+- `label`：指标名称，显示在仓库详情页
+- `targets`：阶段性目标；每个目标需要 `target`，可用 `label` 或 `date` 展示目标节点
+- `star` 使用仓库当前 Star 数计算进度；`d1` / `d2` 使用 `data/dlevel_summary.json` 中对应仓库的当前人数计算进度
+- 修改后推送到 `main` 即可生效；如果 D-Level 当前人数依赖新增仓库或最新行为数据，CI 会重新采集数据
 
 ## 数据采集
 

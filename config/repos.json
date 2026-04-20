@@ -5,8 +5,32 @@
       "display_name": "GE",
       "enabled": true,
       "goals": [
-        { "label": "2026年上半年达到500", "target": 500 },
-        { "label": "2026年底达到1000", "target": 1000 }
+        {
+          "metric": "star",
+          "label": "Star 数",
+          "targets": [
+            { "label": "2026年上半年达到500", "target": 500 },
+            { "label": "2026年底达到1000", "target": 1000 }
+          ]
+        },
+        {
+          "metric": "d1",
+          "label": "D1 开发者数量",
+          "targets": [
+            { "date": "2026-06-30", "target": 60 },
+            { "date": "2026-09-30", "target": 130 },
+            { "date": "2026-12-30", "target": 200 }
+          ]
+        },
+        {
+          "metric": "d2",
+          "label": "D2 开发者数量",
+          "targets": [
+            { "date": "2026-06-30", "target": 6 },
+            { "date": "2026-09-30", "target": 13 },
+            { "date": "2026-12-30", "target": 20 }
+          ]
+        }
       ]
     },
     {
@@ -14,7 +38,31 @@
       "display_name": "hixl",
       "enabled": true,
       "goals": [
-        { "label": "2026年上半年达到700", "target": 700 }
+        {
+          "metric": "star",
+          "label": "Star 数",
+          "targets": [
+            { "label": "2026年上半年达到700", "target": 700 }
+          ]
+        },
+        {
+          "metric": "d1",
+          "label": "D1 开发者数量",
+          "targets": [
+            { "date": "2026-06-30", "target": 60 },
+            { "date": "2026-09-30", "target": 150 },
+            { "date": "2026-12-30", "target": 200 }
+          ]
+        },
+        {
+          "metric": "d2",
+          "label": "D2 开发者数量",
+          "targets": [
+            { "date": "2026-06-30", "target": 10 },
+            { "date": "2026-09-30", "target": 20 },
+            { "date": "2026-12-30", "target": 30 }
+          ]
+        }
       ]
     },
     {
@@ -22,7 +70,31 @@
       "display_name": "auto-fusion",
       "enabled": true,
       "goals": [
-        { "label": "2026年上半年达到500", "target": 500 }
+        {
+          "metric": "star",
+          "label": "Star 数",
+          "targets": [
+            { "label": "2026年上半年达到500", "target": 500 }
+          ]
+        },
+        {
+          "metric": "d1",
+          "label": "D1 开发者数量",
+          "targets": [
+            { "date": "2026-06-30", "target": 80 },
+            { "date": "2026-09-30", "target": 150 },
+            { "date": "2026-12-30", "target": 200 }
+          ]
+        },
+        {
+          "metric": "d2",
+          "label": "D2 开发者数量",
+          "targets": [
+            { "date": "2026-06-30", "target": 10 },
+            { "date": "2026-09-30", "target": 20 },
+            { "date": "2026-12-30", "target": 30 }
+          ]
+        }
       ]
     },
     {
@@ -30,7 +102,31 @@
       "display_name": "torchtitan-npu",
       "enabled": true,
       "goals": [
-        { "label": "2026年上半年达到300", "target": 300 }
+        {
+          "metric": "star",
+          "label": "Star 数",
+          "targets": [
+            { "label": "2026年上半年达到300", "target": 300 }
+          ]
+        },
+        {
+          "metric": "d1",
+          "label": "D1 开发者数量",
+          "targets": [
+            { "date": "2026-06-30", "target": 100 },
+            { "date": "2026-09-30", "target": 150 },
+            { "date": "2026-12-30", "target": 200 }
+          ]
+        },
+        {
+          "metric": "d2",
+          "label": "D2 开发者数量",
+          "targets": [
+            { "date": "2026-06-30", "target": 10 },
+            { "date": "2026-09-30", "target": 20 },
+            { "date": "2026-12-30", "target": 30 }
+          ]
+        }
       ]
     },
     {
@@ -38,7 +134,31 @@
       "display_name": "TorchAir",
       "enabled": true,
       "goals": [
-        { "label": "2026年上半年达到700", "target": 700 }
+        {
+          "metric": "star",
+          "label": "Star 数",
+          "targets": [
+            { "label": "2026年上半年达到700", "target": 700 }
+          ]
+        },
+        {
+          "metric": "d1",
+          "label": "D1 开发者数量",
+          "targets": [
+            { "date": "2026-06-30", "target": 100 },
+            { "date": "2026-09-30", "target": 150 },
+            { "date": "2026-12-30", "target": 200 }
+          ]
+        },
+        {
+          "metric": "d2",
+          "label": "D2 开发者数量",
+          "targets": [
+            { "date": "2026-06-30", "target": 10 },
+            { "date": "2026-09-30", "target": 20 },
+            { "date": "2026-12-30", "target": 30 }
+          ]
+        }
       ]
     }
   ]

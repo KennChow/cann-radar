@@ -258,7 +258,7 @@
     </div>
     <div class="repo-stats" id="repo-stats"></div>
     <div class="goal-box">
-      <h2>运营目标</h2>
+      <h2>运营目标 / 指标</h2>
       <div class="goal-list" id="repo-goals"></div>
     </div>
     <div class="chart-box" style="margin-bottom:20px">
@@ -349,7 +349,7 @@ const TYPE_LABELS = {
   d2: 'D2 PR贡献者',
 };
 
-const DATA_VER = '?v=18';
+const DATA_VER = '?v=20';
 async function loadJSON(path) {
   const r = await fetch(path + DATA_VER);
   return r.json();
@@ -867,6 +867,19 @@ async function main() {
     currentFilter    = 'all';
     currentPage      = 1;
 
+    const summaryCounts = repoCounts[repoPath];
+    const tc = summaryCounts ? {
+      d0: summaryCounts.d0 || 0,
+      d1: summaryCounts.d1 || 0,
+      d2: summaryCounts.d2 || 0,
+    } : { d0: 0, d1: 0, d2: 0 };
+    if (!summaryCounts) {
+      repoUsers.forEach(u => {
+        const t = u.level || 'd0';
+        tc[t] = (tc[t] || 0) + 1;
+      });
+    }
+
     // 基本指标
     document.getElementById('repo-stats').innerHTML = [
       ['Star',     repo.star_count],
@@ -878,28 +891,50 @@ async function main() {
       `<div class="repo-stat"><div class="val">${val ?? '-'}</div><div class="lbl">${lbl}</div></div>`
     ).join('');
 
-    const goalList = repoConfigMap[repoPath]?.goals || [];
-    document.getElementById('repo-goals').innerHTML = goalList.map(goal => {
-      const gap = goal.target - repo.star_count;
-      const progress = goal.target > 0 ? Math.min(100, Math.round(repo.star_count / goal.target * 100)) : 0;
+    const formatMetricTargetLabel = target => {
+      if (target.label) return target.label;
+      if (!target.date) return '目标';
+      const [, month, day] = target.date.split('-');
+      return `${Number(month)}/${Number(day)} 达成`;
+    };
+
+    function getGoalMetricValue(goal) {
+      const metric = (goal.metric || '').toLowerCase();
+      const values = {
+        star: { current: repo.star_count || 0, display: '⭐', unit: 'Star' },
+        d1: { current: tc.d1 || 0, display: 'D1', unit: '人' },
+        d2: { current: tc.d2 || 0, display: 'D2', unit: '人' },
+      };
+      return values[metric] || {
+        current: 0,
+        display: metric ? metric.toUpperCase() : '指标',
+        unit: goal.unit || '',
+      };
+    }
+
+    const repoConfig = repoConfigMap[repoPath] || {};
+    const goalCards = (repoConfig.goals || []).map(goal => {
+      const metric = getGoalMetricValue(goal);
+      const targets = goal.targets || [];
+      if (!targets.length) return '';
       return `
         <div class="goal-item">
-          <div class="goal-label">${goal.label}</div>
-          <div class="goal-target">⭐ ${goal.target}</div>
+          <div class="goal-label">${goal.label || metric.display}</div>
+          <div class="goal-target">${metric.display} ${metric.current.toLocaleString()}</div>
           <div class="goal-meta">
-            当前 ${repo.star_count} Star<br/>
-            进度 ${progress}% · ${gap > 0 ? `还差 ${gap}` : '已达成'}
+            ${targets.map(target => {
+              const gap = target.target - metric.current;
+              const progress = target.target > 0 ? Math.min(100, Math.round(metric.current / target.target * 100)) : 0;
+              const unitText = metric.unit ? ` ${metric.unit}` : '';
+              return `${formatMetricTargetLabel(target)}：${target.target}${unitText} · ${progress}% · ${gap > 0 ? `还差 ${gap}` : '已达成'}`;
+            }).join('<br/>')}
           </div>
         </div>
       `;
-    }).join('') || '<div style="color:var(--text-3);font-size:12px">未配置运营目标</div>';
+    }).filter(Boolean);
+    document.getElementById('repo-goals').innerHTML = goalCards.join('') || '<div style="color:var(--text-3);font-size:12px">未配置运营目标</div>';
 
     // D0/D1/D2 分布饼图
-    const tc = { d0: 0, d1: 0, d2: 0 };
-    repoUsers.forEach(u => {
-      const t = u.level || 'd0';
-      tc[t] = (tc[t] || 0) + 1;
-    });
     if (!repoTypeChart) repoTypeChart = makeChart('chart-repo-type');
     repoTypeChart.setOption({
       tooltip: { trigger: 'item', formatter: '{b}: {c} ({d}%)' },
