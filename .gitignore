@@ -6,3 +6,9 @@
 
 # Claude 工作目录
 .claude/
+
+# 内部开发者名单（敏感数据，通过 CI Secret / 私有仓注入）
+config/internal_developers.txt
+
+# Python 缓存
+__pycache__/

@@ -74,26 +74,25 @@ class DashboardScopeTests(unittest.TestCase):
         self.assertIn('formatMetricTargetLabel', html)
         self.assertIn('运营目标', html)
 
-    def test_internal_developers_config_exists_and_is_unique(self):
-        names = (ROOT / 'config' / 'internal_developers.txt').read_text(encoding='utf-8').splitlines()
-        names = [name.strip() for name in names if name.strip()]
-        self.assertIn('yelongjian', names)
-        self.assertIn('KenChow', names)
-        self.assertIn('ASCEND222', names)
-        self.assertEqual(len(names), len(set(names)))
+    def test_internal_developers_list_is_gitignored(self):
+        # 名单通过私仓 / CI Secret 注入；本地可存在，但必须被 gitignore
+        gitignore = (ROOT / '.gitignore').read_text(encoding='utf-8')
+        self.assertIn('config/internal_developers.txt', gitignore)
 
-    def test_internal_developer_config_triggers_data_update_workflows(self):
-        for path in [
-            ROOT / '.github' / 'workflows' / 'update-data.yml',
-            ROOT / '.gitcode' / 'workflows' / 'update-data.yml',
-        ]:
-            workflow = path.read_text(encoding='utf-8')
-            self.assertIn('config/repos.json', workflow)
-            self.assertIn('config/internal_developers.txt', workflow)
+    def test_data_update_workflows_inject_private_list(self):
+        gh = (ROOT / '.github' / 'workflows' / 'update-data.yml').read_text(encoding='utf-8')
+        self.assertIn('cann-radar-private', gh)
+        self.assertIn('PRIVATE_REPO_PAT', gh)
+        self.assertIn('repository_dispatch', gh)
+
+        gc = (ROOT / '.gitcode' / 'workflows' / 'update-data.yml').read_text(encoding='utf-8')
+        self.assertIn('cann-radar-private', gc)
+        self.assertIn('PRIVATE_REPO_PAT', gc)
 
     def test_dashboard_supports_user_source_filters_and_sorting(self):
         html = (ROOT / 'index.html').read_text(encoding='utf-8')
-        self.assertIn("loadText('config/internal_developers.txt')", html)
+        self.assertNotIn("loadText('config/internal_developers.txt')", html)
+        self.assertIn("user.developer_source", html)
         self.assertIn('开发者来源', html)
         self.assertIn('filter-level', html)
         self.assertIn('filter-developer-source', html)

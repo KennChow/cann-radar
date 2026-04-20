@@ -8,7 +8,8 @@ on:
     branches: [main]
     paths:
       - 'config/repos.json'
-      - 'config/internal_developers.txt'
+  repository_dispatch:
+    types: [internal-developers-updated]
   workflow_dispatch:
     inputs:
       full_refresh:
@@ -26,6 +27,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Checkout private developer list
+        uses: actions/checkout@v4
+        with:
+          repository: KennChow/cann-radar-private
+          token: ${{ secrets.PRIVATE_REPO_PAT }}
+          path: .private
+
+      - name: Inject internal developers list
+        run: |
+          mkdir -p config
+          cp .private/internal_developers.txt config/internal_developers.txt
 
       - name: Setup Python
         uses: actions/setup-python@v5

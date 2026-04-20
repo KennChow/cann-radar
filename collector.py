@@ -38,8 +38,22 @@ if sys.platform == "win32":
 
 BASE_URL = "https://web-api.gitcode.com"
 CONFIG_PATH = Path("config/repos.json")
+INTERNAL_DEVELOPERS_PATH = Path("config/internal_developers.txt")
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
+
+
+def load_internal_developers():
+    """读取内部开发者名单；不存在则返回空集合（所有人视为 external）。"""
+    if not INTERNAL_DEVELOPERS_PATH.exists():
+        print(f"  ⚠ 未找到 {INTERNAL_DEVELOPERS_PATH}，所有用户将视为 external")
+        return set()
+    names = set()
+    for line in INTERNAL_DEVELOPERS_PATH.read_text(encoding="utf-8").splitlines():
+        name = line.strip()
+        if name and not name.startswith("#"):
+            names.add(name)
+    return names
 
 
 def load_repo_config():
@@ -987,6 +1001,7 @@ def generate_users_slim():
 
     profiles  = load_json(DATA_DIR / "user_profiles.json") or []
     all_users = load_json(DATA_DIR / "all_star_users.json") or []
+    internal_set = load_internal_developers()
 
     profile_map = {p["user_name"]: p for p in profiles}
 
@@ -1002,6 +1017,7 @@ def generate_users_slim():
             "fans_count":          p.get("fans_count"),
             "original_repo_count": p.get("original_repo_count"),
             "total_contributions": p.get("total_contributions"),
+            "developer_source":    "internal" if name in internal_set else "external",
         })
 
     save_json(DATA_DIR / "users_slim.json", result)

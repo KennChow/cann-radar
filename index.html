@@ -391,11 +391,6 @@ async function loadJSON(path) {
   const r = await fetch(path + DATA_VER);
   return r.json();
 }
-async function loadText(path) {
-  const r = await fetch(path + DATA_VER);
-  return r.text();
-}
-
 // ── 主题系统 ──────────────────────────────────────────────
 let currentTheme = localStorage.getItem('theme') || 'dark';
 
@@ -439,11 +434,10 @@ document.querySelectorAll('.tab').forEach(tab => {
 let repoTypeChart, repoTypeTimelineChart;
 
 async function main() {
-  const [repoConfig, repos, dlevelSummary, internalDeveloperText, weeklyData, mrSummary, issueSummary] = await Promise.all([
+  const [repoConfig, repos, dlevelSummary, weeklyData, mrSummary, issueSummary] = await Promise.all([
     loadJSON('config/repos.json'),
     loadJSON('data/repos.json'),
     loadJSON('data/dlevel_summary.json'),
-    loadText('config/internal_developers.txt'),
     loadJSON('data/weekly_activity.json').catch(() => null),
     loadJSON('data/mr_summary.json').catch(() => null),
     loadJSON('data/issue_summary.json').catch(() => null),
@@ -457,13 +451,6 @@ async function main() {
   const repoUserMap = dlevelSummary.repo_users || {};
   const repoCounts = dlevelSummary.repo_counts || {};
   const globalCounts = dlevelSummary.global_counts || { d0: 0, d1: 0, d2: 0, total: 0 };
-  const internalDeveloperSet = new Set(
-    internalDeveloperText
-      .split(/\r?\n/)
-      .map(name => name.trim())
-      .filter(name => name && !name.startsWith('#'))
-  );
-
   // ════════════════════════════════════════════════════════
   // 概览面板
   // ════════════════════════════════════════════════════════
@@ -1251,7 +1238,7 @@ async function main() {
   }
 
   function getDeveloperSource(user) {
-    return internalDeveloperSet.has(user.user_name) ? 'internal' : 'external';
+    return user.developer_source === 'internal' ? 'internal' : 'external';
   }
 
   function getStarredRepoCount(user) {

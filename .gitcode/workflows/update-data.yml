@@ -5,7 +5,6 @@ on:
     branches: [main]
     paths:
       - 'config/repos.json'
-      - 'config/internal_developers.txt'
   schedule:
     - cron: '0 14 * * *'    # 22:00 CST，每天增量更新
     - cron: '0 14 * * 0'    # 22:00 CST，每周日全量刷新用户画像
@@ -24,6 +23,15 @@ jobs:
         uses: setup-python@0.0.1
         with:
           python-version: '3.11'
+
+      - name: Fetch internal developers list from private repo
+        run: |
+          mkdir -p config
+          curl -sSL --fail \
+            -H "Authorization: Bearer ${{ secrets.PRIVATE_REPO_PAT }}" \
+            -H "Accept: application/vnd.github.v3.raw" \
+            https://api.github.com/repos/KennChow/cann-radar-private/contents/internal_developers.txt \
+            -o config/internal_developers.txt
 
       - name: Clear stale caches
         run: |
