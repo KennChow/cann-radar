@@ -163,7 +163,7 @@
     .chart-legend-row .legend-panel { width: 220px; flex-shrink: 0; padding-top: 20px; font-size: 12px; line-height: 1.8; }
 
     /* 用户表格横向滚动容器 */
-    .table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; min-height: 200px; }
 
     .mobile-tip {
       display: none;
@@ -1344,25 +1344,29 @@ async function main() {
       `仓库用户列表（${total} 位${hasFilter ? ' · 已筛选' : ''}${sortState.key ? ' · 已排序' : ''}）`;
 
     const tbody = document.getElementById('user-tbody');
-    tbody.innerHTML = page.map((u, i) => {
-      const p = u;
-      const type = u.level || 'd0';
-      const developerSource = getDeveloperSource(u);
-      const time = u.star_time ? u.star_time.slice(0, 10) : '-';
-      const starredRepoCount = getStarredRepoCount(u);
-      return `<tr>
-        <td style="color:var(--text-4)">${start + i + 1}</td>
-        <td><a class="user-link" href="https://gitcode.com/${u.user_name}" target="_blank">${u.user_name}</a></td>
-        <td style="color:var(--text-2)">${u.nick_name || '-'}</td>
-        <td><span class="badge badge-${type}">${TYPE_LABELS[type]}</span></td>
-        <td><span class="badge badge-source-${developerSource}">${DEVELOPER_SOURCE_LABELS[developerSource]}</span></td>
-        <td>${p?.fans_count ?? '-'}</td>
-        <td>${p?.original_repo_count ?? '-'}</td>
-        <td>${p?.total_contributions ?? '-'}</td>
-        <td>${starredRepoCount ?? '-'}</td>
-        <td style="color:var(--text-3);font-size:12px">${time}</td>
-      </tr>`;
-    }).join('');
+    if (page.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="10" style="text-align:center;padding:40px;color:var(--text-4)">暂无数据</td></tr>`;
+    } else {
+      tbody.innerHTML = page.map((u, i) => {
+        const p = u;
+        const type = u.level || 'd0';
+        const developerSource = getDeveloperSource(u);
+        const time = u.star_time ? u.star_time.slice(0, 10) : '-';
+        const starredRepoCount = getStarredRepoCount(u);
+        return `<tr>
+          <td style="color:var(--text-4)">${start + i + 1}</td>
+          <td><a class="user-link" href="https://gitcode.com/${u.user_name}" target="_blank">${u.user_name}</a></td>
+          <td style="color:var(--text-2)">${u.nick_name || '-'}</td>
+          <td><span class="badge badge-${type}">${TYPE_LABELS[type]}</span></td>
+          <td><span class="badge badge-source-${developerSource}">${DEVELOPER_SOURCE_LABELS[developerSource]}</span></td>
+          <td>${p?.fans_count ?? '-'}</td>
+          <td>${p?.original_repo_count ?? '-'}</td>
+          <td>${p?.total_contributions ?? '-'}</td>
+          <td>${starredRepoCount ?? '-'}</td>
+          <td style="color:var(--text-3);font-size:12px">${time}</td>
+        </tr>`;
+      }).join('');
+    }
 
     // 分页
     const pg = document.getElementById('pagination');
