@@ -1038,6 +1038,7 @@ def generate_dlevel_summary():
 
     repos = load_json(DATA_DIR / "repos.json") or []
     users_slim = load_json(DATA_DIR / "users_slim.json") or []
+    internal_set = load_internal_developers()
     stars_dir = DATA_DIR / "stars"
     forks_dir = DATA_DIR / "forks"
     issues_dir = DATA_DIR / "issues"
@@ -1129,6 +1130,7 @@ def generate_dlevel_summary():
                 "original_repo_count": meta.get("original_repo_count"),
                 "total_contributions": meta.get("total_contributions"),
                 "starred_repos": meta.get("starred_repos", []),
+                "developer_source": "internal" if uname in internal_set else "external",
             })
             if uname not in global_levels or priority[level] > priority[global_levels[uname]]:
                 global_levels[uname] = level
