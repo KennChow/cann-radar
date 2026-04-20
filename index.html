@@ -98,11 +98,17 @@
 
     .goal-box { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; }
     .goal-box h2 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 12px; }
-    .goal-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
-    .goal-item { border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; background: #7eb6ff12; }
-    .goal-item .goal-label { font-size: 12px; color: var(--text-2); margin-bottom: 8px; }
-    .goal-item .goal-target { font-size: 20px; font-weight: 700; color: var(--accent); }
-    .goal-item .goal-meta { font-size: 12px; color: var(--text-3); margin-top: 6px; line-height: 1.6; }
+    .goal-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .goal-item { border: 1px solid var(--border); border-radius: 8px; padding: 16px; background: var(--bg); display: flex; flex-direction: column; gap: 8px; position: relative; overflow: hidden; }
+    .goal-item::before { content: ""; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--accent); }
+    .goal-item .goal-label { font-size: 13px; color: var(--text-2); font-weight: 500; }
+    .goal-item .goal-target { font-size: 22px; font-weight: 700; color: var(--text); display: flex; align-items: baseline; gap: 6px; }
+    .goal-item .goal-target span { font-size: 12px; font-weight: 400; color: var(--text-3); }
+    .goal-item .goal-meta { font-size: 12px; color: var(--text-3); display: flex; flex-direction: column; gap: 12px; margin-top: 4px; }
+    .goal-progress-wrap { background: var(--border); border-radius: 4px; height: 6px; width: 100%; overflow: hidden; margin-top: 4px; }
+    .goal-progress-bar { background: var(--accent); height: 100%; border-radius: 4px; transition: width 0.5s ease; }
+    .goal-progress-bar.success { background: #4ecdc4; }
+    .goal-progress-text { display: flex; justify-content: space-between; font-size: 11px; margin-top: 6px; color: var(--text-3); }
 
     .repo-stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
     .repo-stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 14px 20px; flex: 1; min-width: 100px; }
@@ -971,14 +977,24 @@ async function main() {
       return `
         <div class="goal-item">
           <div class="goal-label">${goal.label || metric.display}</div>
-          <div class="goal-target">${metric.display} ${metric.current.toLocaleString()}</div>
+          <div class="goal-target">${metric.current.toLocaleString()} <span>${metric.unit || ''}</span></div>
           <div class="goal-meta">
             ${targets.map(target => {
               const gap = target.target - metric.current;
               const progress = target.target > 0 ? Math.min(100, Math.round(metric.current / target.target * 100)) : 0;
               const unitText = metric.unit ? ` ${metric.unit}` : '';
-              return `${formatMetricTargetLabel(target)}：${target.target}${unitText} · ${progress}% · ${gap > 0 ? `还差 ${gap}` : '已达成'}`;
-            }).join('<br/>')}
+              const isSuccess = gap <= 0;
+              return `
+                <div class="goal-target-group">
+                  <div style="color:var(--text-2); margin-bottom: 2px;">${formatMetricTargetLabel(target)}：<strong style="color:var(--text)">${target.target}${unitText}</strong></div>
+                  <div class="goal-progress-wrap"><div class="goal-progress-bar ${isSuccess ? 'success' : ''}" style="width: ${progress}%"></div></div>
+                  <div class="goal-progress-text">
+                    <span style="color: ${isSuccess ? '#4ecdc4' : 'var(--accent)'}; font-weight: 600;">${progress}%</span>
+                    <span>${isSuccess ? '已达成 🎉' : `还差 ${gap.toLocaleString()}`}</span>
+                  </div>
+                </div>
+              `;
+            }).join('')}
           </div>
         </div>
       `;
