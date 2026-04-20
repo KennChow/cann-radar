@@ -93,7 +93,7 @@
 
 > **注意**：`path` 的大小写必须与 GitCode API 返回的 `path_with_namespace` 一致（可先运行 `python collector.py repos` 查看 `data/repos.json` 中的实际值）。
 
-## 如何调整运营目标 / 指标
+## 如何调整运营目标
 
 编辑 `config/repos.json` 中对应仓库的 `goals` 数组。Star、D1、D2 都使用同一种结构：
 
