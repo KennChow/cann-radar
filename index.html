@@ -158,6 +158,21 @@
 
     .note { padding: 0 40px 24px; font-size: 12px; color: var(--text-4); }
 
+    /* 讨论参与者 */
+    .discussion-summary { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 12px; }
+    .discussion-summary .stat-card { flex: 0 1 180px; min-width: 140px; padding: 12px 16px; }
+    .discussion-summary .stat-card .val { font-size: 22px; }
+    .discussion-meta { font-size: 12px; color: var(--text-3); margin-bottom: 12px; line-height: 1.7; }
+    .discussion-block { margin-top: 18px; }
+    .discussion-subhead { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 10px; }
+    .discussion-subcount { font-size: 11px; font-weight: 400; color: var(--text-3); margin-left: 6px; }
+    .discussion-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+    .discussion-list li { display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px; padding: 8px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); align-items: center; }
+    .discussion-list li a { color: var(--accent); text-decoration: none; flex: 1; min-width: 220px; word-break: break-word; }
+    .discussion-list li a:hover { text-decoration: underline; }
+    .discussion-list .disc-stats { font-size: 12px; color: var(--text-3); }
+    .discussion-list .disc-error { color: #e05f5f; font-size: 12px; }
+
     /* 图表 + 说明并排容器 */
     .chart-legend-row { display: flex; gap: 16px; align-items: flex-start; }
     .chart-legend-row .legend-panel { width: 220px; flex-shrink: 0; padding-top: 20px; font-size: 12px; line-height: 1.8; }
@@ -250,6 +265,39 @@
         </span>
       </h2>
       <div class="chart" id="chart-repo-composition" style="height:440px"></div>
+    </div>
+    <div class="chart-box chart-wide" id="discussion-section" style="display:none">
+      <h2>参与讨论的外部开发者</h2>
+      <div class="discussion-summary" id="discussion-summary"></div>
+      <div class="discussion-meta" id="discussion-meta"></div>
+      <div class="chart" id="chart-discussion-trend" style="height:260px"></div>
+
+      <div class="discussion-block">
+        <h3 class="discussion-subhead">相关讨论帖 <span id="discussion-list-count" class="discussion-subcount"></span></h3>
+        <ul class="discussion-list" id="discussion-list"></ul>
+      </div>
+
+      <div class="discussion-block">
+        <div class="user-list-header">
+          <h3 class="discussion-subhead" id="discussion-users-title">外部开发者名单</h3>
+        </div>
+        <div class="table-wrapper">
+          <table class="user-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>用户名</th>
+                <th style="text-align:right">参与讨论</th>
+                <th style="text-align:right">顶层评论</th>
+                <th style="text-align:right">回复</th>
+                <th>最近参与</th>
+              </tr>
+            </thead>
+            <tbody id="discussion-tbody"></tbody>
+          </table>
+        </div>
+        <div class="pagination" id="discussion-pagination"></div>
+      </div>
     </div>
     <div class="chart-box chart-wide" id="weekly-activity-box" style="display:none">
       <h2>各仓库 MR 周活跃度热力图 <span style="font-size:11px;font-weight:400;color:#555;margin-left:6px">按周统计 MR 新建数，最多显示近 26 周</span></h2>
@@ -386,7 +434,7 @@ const DEVELOPER_SOURCE_LABELS = {
   external: '外部开发者',
 };
 
-const DATA_VER = '?v=22';
+const DATA_VER = '?v=27';
 async function loadJSON(path) {
   const r = await fetch(path + DATA_VER);
   return r.json();
@@ -434,13 +482,14 @@ document.querySelectorAll('.tab').forEach(tab => {
 let repoTypeChart, repoTypeTimelineChart;
 
 async function main() {
-  const [repoConfig, repos, dlevelSummary, weeklyData, mrSummary, issueSummary] = await Promise.all([
+  const [repoConfig, repos, dlevelSummary, weeklyData, mrSummary, issueSummary, discussionData] = await Promise.all([
     loadJSON('config/repos.json'),
     loadJSON('data/repos.json'),
     loadJSON('data/dlevel_summary.json'),
     loadJSON('data/weekly_activity.json').catch(() => null),
     loadJSON('data/mr_summary.json').catch(() => null),
     loadJSON('data/issue_summary.json').catch(() => null),
+    loadJSON('data/discussion_participants.json').catch(() => null),
   ]);
 
   const activeRepoConfigs = (repoConfig.repos || []).filter(repo => repo.enabled !== false);
@@ -821,6 +870,124 @@ async function main() {
 
   } // end renderOverviewCharts
   renderOverviewCharts();
+
+  // ── 外部讨论参与者 ──────────────────────────────────────
+  let discussionPage = 1;
+  const DISCUSSION_PAGE_SIZE = 20;
+
+  function escapeHTML(str) {
+    return String(str ?? '').replace(/[&<>"']/g, c => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    }[c]));
+  }
+
+  function renderDiscussionParticipants() {
+    const section = document.getElementById('discussion-section');
+    if (!discussionData) {
+      section.style.display = 'none';
+      return;
+    }
+    const externals = (discussionData.participants || []).filter(p => p.developer_source === 'external');
+    if (externals.length === 0) {
+      section.style.display = 'none';
+      return;
+    }
+    section.style.display = '';
+
+    // 概览卡片
+    const cards = [
+      ['外部讨论参与者', externals.length],
+      ['相关讨论帖数量', discussionData.discussion_count || 0],
+      ['总参与者', discussionData.total_unique_participants || externals.length],
+    ];
+    document.getElementById('discussion-summary').innerHTML = cards.map(([lbl, val]) =>
+      `<div class="stat-card"><div class="val">${val.toLocaleString()}</div><div class="lbl">${lbl}</div></div>`
+    ).join('');
+
+    document.getElementById('discussion-meta').textContent =
+      discussionData.generated_at ? `数据更新：${discussionData.generated_at}` : '';
+
+    // 趋势图
+    const trend = (discussionData.trend || []).slice().sort((a, b) => a.date.localeCompare(b.date));
+    const dates = trend.map(t => t.date);
+    const externalSeries = trend.map(t => t.external_count || 0);
+    const totalSeries = trend.map(t => t.total_unique_participants || 0);
+    const chart = makeChart('chart-discussion-trend');
+    chart.setOption({
+      tooltip: {
+        trigger: 'axis',
+        formatter: params => {
+          if (!params.length) return '';
+          let s = `<b>${params[0].axisValue}</b><br/>`;
+          params.forEach(p => { s += `${p.marker}${p.seriesName}：${p.value} 人<br/>`; });
+          return s;
+        },
+      },
+      legend: { data: ['外部参与者', '总参与者'], textStyle: { color: t('#aaa', '#555') }, top: 0 },
+      grid: { left: 10, right: 20, top: 36, bottom: 30, containLabel: true },
+      xAxis: { type: 'category', data: dates, axisLabel: { color: t('#aaa', '#666'), fontSize: 11 } },
+      yAxis: { type: 'value', minInterval: 1, axisLabel: { color: t('#aaa', '#666') } },
+      series: [
+        { name: '外部参与者', type: 'line', smooth: true, symbol: 'circle', symbolSize: 6, data: externalSeries, itemStyle: { color: COLORS.d2 }, areaStyle: { color: 'rgba(91,141,239,0.15)' } },
+        { name: '总参与者', type: 'line', smooth: true, symbol: 'circle', symbolSize: 6, data: totalSeries, itemStyle: { color: COLORS.d1 } },
+      ],
+    });
+    window.addEventListener('resize', () => chart.resize());
+
+    // 纳入统计的讨论列表
+    const discussions = discussionData.discussions || [];
+    const errorMap = {};
+    (discussionData.errors || []).forEach(e => { if (e && e.url) errorMap[e.url] = e.error || '采集失败'; });
+    document.getElementById('discussion-list-count').textContent = `共 ${discussions.length} 个`;
+    document.getElementById('discussion-list').innerHTML = discussions.map(d => {
+      const title = escapeHTML(d.title || d.url);
+      const url = escapeHTML(d.url);
+      const stats = `外部 ${d.external_participants}/${d.unique_participants} · 顶层评论 ${d.comment_total} · 回复 ${d.reply_total}`;
+      const err = errorMap[d.url] ? `<span class="disc-error">采集失败：${escapeHTML(errorMap[d.url])}</span>` : '';
+      return `<li><a href="${url}" target="_blank" rel="noopener">${title}</a><span class="disc-stats">${stats}</span>${err}</li>`;
+    }).join('');
+
+    // 外部开发者表格 + 分页
+    const totalPages = Math.max(1, Math.ceil(externals.length / DISCUSSION_PAGE_SIZE));
+    if (discussionPage > totalPages) discussionPage = totalPages;
+    const start = (discussionPage - 1) * DISCUSSION_PAGE_SIZE;
+    const pageItems = externals.slice(start, start + DISCUSSION_PAGE_SIZE);
+
+    document.getElementById('discussion-users-title').textContent =
+      `外部开发者名单（${externals.length} 人）`;
+    document.getElementById('discussion-tbody').innerHTML = pageItems.map((p, idx) => {
+      const name = escapeHTML(p.user_name);
+      const userUrl = `https://gitcode.com/${encodeURIComponent(p.user_name)}`;
+      const lastSeen = (p.last_seen_at || '').slice(0, 10) || '-';
+      return `<tr>
+        <td>${start + idx + 1}</td>
+        <td><a class="user-link" href="${userUrl}" target="_blank" rel="noopener">${name}</a></td>
+        <td style="text-align:right">${p.discussion_count}</td>
+        <td style="text-align:right">${p.top_comments}</td>
+        <td style="text-align:right">${p.replies}</td>
+        <td>${lastSeen}</td>
+      </tr>`;
+    }).join('');
+
+    const pag = document.getElementById('discussion-pagination');
+    if (totalPages <= 1) {
+      pag.innerHTML = '';
+    } else {
+      const btns = [];
+      for (let i = 1; i <= totalPages; i++) {
+        btns.push(`<button type="button" class="page-btn${i === discussionPage ? ' active' : ''}" data-page="${i}">${i}</button>`);
+      }
+      btns.push(`<span class="page-info">第 ${discussionPage} / ${totalPages} 页 · 共 ${externals.length} 人</span>`);
+      pag.innerHTML = btns.join('');
+      pag.querySelectorAll('button[data-page]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          discussionPage = Number(btn.dataset.page);
+          renderDiscussionParticipants();
+        });
+      });
+    }
+  }
+  renderDiscussionParticipants();
 
   document.getElementById('note').textContent = `已按 D0 / D1 / D2 归类 ${globalCounts.total || 0} 位可观测用户。`;
 
@@ -1473,6 +1640,7 @@ async function main() {
     localStorage.setItem('theme', currentTheme);
     applyThemeAttr();
     renderOverviewCharts();
+    renderDiscussionParticipants();
     // 若仓库详情面板已打开，同步重渲仓库图表
     if (document.getElementById('panel-repo').classList.contains('active')) {
       renderRepo(select.value);

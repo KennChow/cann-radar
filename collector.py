@@ -14,11 +14,13 @@
     python collector.py reclassify     # 补充贡献数据并重新分类
     python collector.py overview       # 生成概览聚合数据
     python collector.py dlevels        # 生成 D0/D1/D2 汇总数据
+    python collector.py discussions    # 采集 GitCode 讨论参与者
     python collector.py all            # 顺序执行以上所有步骤
     python collector.py report         # 生成分析报告（需先完成采集）
 """
 
 import json
+import re
 import time
 import os
 import sys
@@ -37,10 +39,16 @@ if sys.platform == "win32":
 # ─── 配置 ────────────────────────────────────────────────────────────────────
 
 BASE_URL = "https://web-api.gitcode.com"
+DISCUSS_BASE = "https://web-api.gitcode.com/api/v1/discuss"
 CONFIG_PATH = Path("config/repos.json")
 INTERNAL_DEVELOPERS_PATH = Path("config/internal_developers.txt")
+DISCUSSIONS_CONFIG_PATH = Path("config/discussions.json")
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
+DISCUSSION_PARTICIPANTS_PATH = DATA_DIR / "discussion_participants.json"
+TREND_RETENTION_DAYS = 180
+
+DISCUSSION_URL_RE = re.compile(r"^https://gitcode\.com/org/([^/]+)/discussions/(\d+)/?$")
 
 
 def load_internal_developers():
@@ -64,6 +72,48 @@ def load_repo_config():
     if not repos:
         raise ValueError("config/repos.json 中未配置任何仓库")
     return repos
+
+
+def parse_discussion_url(url):
+    """从讨论链接中解析 (org, number)。无效时抛 ValueError。"""
+    if not isinstance(url, str):
+        raise ValueError(f"讨论链接必须为字符串：{url!r}")
+    m = DISCUSSION_URL_RE.match(url.strip())
+    if not m:
+        raise ValueError(
+            f"无法解析讨论链接：{url}，期望格式 https://gitcode.com/org/<org>/discussions/<number>"
+        )
+    return m.group(1), m.group(2)
+
+
+def load_discussion_config():
+    """读取 config/discussions.json，返回启用的讨论列表。"""
+    cfg_path = DISCUSSIONS_CONFIG_PATH
+    if not cfg_path.exists():
+        print(f"  ⚠ 未找到 {cfg_path}，跳过讨论参与者采集")
+        return []
+    raw = load_json(cfg_path) or {}
+    items = raw.get("discussions", []) or []
+    out = []
+    for item in items:
+        if not item.get("enabled", True):
+            continue
+        url = (item.get("url") or "").strip()
+        if not url:
+            continue
+        try:
+            org, number = parse_discussion_url(url)
+        except ValueError as e:
+            print(f"  ⚠ 跳过无效讨论链接：{e}")
+            continue
+        out.append({
+            "url": url,
+            "org": item.get("org") or org,
+            "number": str(item.get("number") or number),
+            "source_type": int(item.get("source_type", 1)),
+            "label": item.get("label") or "",
+        })
+    return out
 
 
 def active_repo_configs():
@@ -124,6 +174,351 @@ def load_json(path):
         return None
     with open(path, encoding="utf-8") as f:
         return json.load(f)
+
+
+def post_json(url, payload, referer=None, retries=3, delay=REQUEST_DELAY, timeout=20):
+    """通用 POST JSON 请求，带 429/瞬时错误重试。失败返回 None。"""
+    headers = dict(HEADERS)
+    headers["Content-Type"] = "application/json"
+    if referer:
+        headers["Referer"] = referer
+    body = json.dumps(payload).encode("utf-8")
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(url, data=body, headers=headers, method="POST")
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                raw = resp.read()
+                return json.loads(raw.decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            print(f"  HTTP {e.code}: POST {url} payload={payload}")
+            if e.code == 429:
+                time.sleep(10)
+            elif attempt < retries - 1:
+                time.sleep(2 ** attempt)
+            else:
+                return None
+        except Exception as e:
+            print(f"  Error ({attempt+1}/{retries}): {e} - POST {url}")
+            if attempt < retries - 1:
+                time.sleep(2)
+            else:
+                return None
+    return None
+
+
+# ─── GitCode discuss API 封装 ───────────────────────────────────────────────
+
+def get_discussion_detail(org, number, source_type=1, referer=None):
+    return post_json(
+        f"{DISCUSS_BASE}/detail",
+        {"source_id": org, "serial_number": str(number), "source_type": source_type},
+        referer=referer,
+    )
+
+
+def get_discussion_comments_page(discuss_id, page=1, per_page=100, referer=None):
+    return post_json(
+        f"{DISCUSS_BASE}/comment/page",
+        {"discuss_id": discuss_id, "page": page, "per_page": per_page},
+        referer=referer,
+    )
+
+
+def get_discussion_replies_page(parent_id, page=1, per_page=100, referer=None):
+    return post_json(
+        f"{DISCUSS_BASE}/comment/reply/page",
+        {"parent_id": parent_id, "page": page, "per_page": per_page},
+        referer=referer,
+    )
+
+
+def _record_discussion_participant(participants, record, kind):
+    name = (record.get("created_by_user_name") or "").strip()
+    if not name:
+        return
+    nick = (record.get("created_by_nick_name") or "").strip()
+    created_at = record.get("created_date") or record.get("created_at") or ""
+    entry = participants.get(name)
+    if entry is None:
+        entry = {
+            "user_name": name,
+            "nick_name": nick,
+            "top_comments": 0,
+            "replies": 0,
+            "first_seen_at": created_at or None,
+            "last_seen_at": created_at or None,
+        }
+        participants[name] = entry
+    if kind == "top":
+        entry["top_comments"] += 1
+    else:
+        entry["replies"] += 1
+    if not entry["nick_name"] and nick:
+        entry["nick_name"] = nick
+    if created_at:
+        if not entry["first_seen_at"] or created_at < entry["first_seen_at"]:
+            entry["first_seen_at"] = created_at
+        if not entry["last_seen_at"] or created_at > entry["last_seen_at"]:
+            entry["last_seen_at"] = created_at
+
+
+def fetch_discussion_comments(discussion):
+    """抓取单个讨论的顶层评论与回复，提取参与者元数据。"""
+    org = discussion["org"]
+    number = str(discussion["number"])
+    url = discussion.get("url") or f"https://gitcode.com/org/{org}/discussions/{number}"
+    source_type = discussion.get("source_type", 1)
+    label = discussion.get("label") or ""
+    referer = url
+
+    base_result = {
+        "url": url,
+        "org": org,
+        "number": number,
+        "title": label,
+        "comment_total": 0,
+        "reply_total": 0,
+        "participants": {},
+    }
+
+    detail = get_discussion_detail(org, number, source_type=source_type, referer=referer)
+    if not detail or not detail.get("id"):
+        base_result["error"] = "无法获取讨论详情"
+        return base_result
+
+    discuss_id = detail["id"]
+    base_result["title"] = detail.get("title") or label or url
+    base_result["comment_total"] = detail.get("comment_total") or 0
+    base_result["reply_total"] = detail.get("reply_total") or 0
+
+    # 顶层评论分页
+    comments = []
+    page = 1
+    while True:
+        data = get_discussion_comments_page(discuss_id, page=page, per_page=100, referer=referer)
+        if not data:
+            break
+        records = data.get("records") or []
+        comments.extend(records)
+        total_pages = data.get("pages") or 1
+        if page >= total_pages or not records:
+            break
+        page += 1
+        time.sleep(REQUEST_DELAY)
+
+    participants = {}
+    for c in comments:
+        _record_discussion_participant(participants, c, "top")
+        if c.get("reply_total") and c.get("id"):
+            r_page = 1
+            while True:
+                rdata = get_discussion_replies_page(c["id"], page=r_page, per_page=100, referer=referer)
+                if not rdata:
+                    break
+                rrecords = rdata.get("records") or []
+                for r in rrecords:
+                    _record_discussion_participant(participants, r, "reply")
+                rtotal = rdata.get("pages") or 1
+                if r_page >= rtotal or not rrecords:
+                    break
+                r_page += 1
+                time.sleep(REQUEST_DELAY)
+
+    base_result["participants"] = participants
+    return base_result
+
+
+# ─── 讨论参与者聚合 ──────────────────────────────────────────────────────────
+
+def build_discussion_participants_summary(discussions, internal_developers=None,
+                                          previous_trend=None, generated_at=None):
+    """对多个讨论的参与者去重聚合，输出可序列化为 JSON 的概览结构。"""
+    internal_set = set(internal_developers or [])
+    previous_trend = list(previous_trend or [])
+    if generated_at is None:
+        generated_at = datetime.now().strftime("%Y-%m-%d")
+
+    aggregated = {}
+    discussions_summary = []
+
+    for disc in discussions:
+        url = disc.get("url", "")
+        title = disc.get("title") or ""
+        org = disc.get("org", "")
+        number = str(disc.get("number", ""))
+        comment_total = disc.get("comment_total") or 0
+        reply_total = disc.get("reply_total") or 0
+        participants = disc.get("participants") or {}
+
+        unique_names = set()
+        external_in_disc = 0
+        for name, info in participants.items():
+            if not name:
+                continue
+            unique_names.add(name)
+            if name not in internal_set:
+                external_in_disc += 1
+
+            top_n = int(info.get("top_comments") or 0)
+            reply_n = int(info.get("replies") or 0)
+            entry = aggregated.get(name)
+            if entry is None:
+                entry = {
+                    "user_name": name,
+                    "nick_name": info.get("nick_name") or "",
+                    "top_comments": 0,
+                    "replies": 0,
+                    "discussions": [],
+                    "first_seen_at": info.get("first_seen_at"),
+                    "last_seen_at": info.get("last_seen_at"),
+                }
+                aggregated[name] = entry
+            entry["top_comments"] += top_n
+            entry["replies"] += reply_n
+            if not entry["nick_name"] and info.get("nick_name"):
+                entry["nick_name"] = info["nick_name"]
+            fs = info.get("first_seen_at")
+            ls = info.get("last_seen_at")
+            if fs and (not entry["first_seen_at"] or fs < entry["first_seen_at"]):
+                entry["first_seen_at"] = fs
+            if ls and (not entry["last_seen_at"] or ls > entry["last_seen_at"]):
+                entry["last_seen_at"] = ls
+            entry["discussions"].append({
+                "url": url,
+                "title": title,
+                "top_comments": top_n,
+                "replies": reply_n,
+            })
+
+        discussions_summary.append({
+            "url": url,
+            "org": org,
+            "number": number,
+            "title": title,
+            "comment_total": comment_total,
+            "reply_total": reply_total,
+            "unique_participants": len(unique_names),
+            "external_participants": external_in_disc,
+        })
+
+    participants_list = []
+    external_count = 0
+    internal_count = 0
+    for name, entry in aggregated.items():
+        is_internal = name in internal_set
+        if is_internal:
+            internal_count += 1
+        else:
+            external_count += 1
+        participants_list.append({
+            "user_name": entry["user_name"],
+            "nick_name": entry["nick_name"],
+            "developer_source": "internal" if is_internal else "external",
+            "top_comments": entry["top_comments"],
+            "replies": entry["replies"],
+            "discussion_count": len(entry["discussions"]),
+            "discussions": entry["discussions"],
+            "first_seen_at": entry["first_seen_at"],
+            "last_seen_at": entry["last_seen_at"],
+        })
+
+    participants_list.sort(key=lambda p: (
+        -p["discussion_count"],
+        -(p["top_comments"] + p["replies"]),
+        p["user_name"].lower(),
+    ))
+
+    total_unique = len(participants_list)
+
+    # 趋势：保留旧记录，按当天日期覆盖
+    trend_map = {}
+    for entry in previous_trend:
+        date = entry.get("date")
+        if not date:
+            continue
+        trend_map[date] = {
+            "date": date,
+            "external_count": int(entry.get("external_count") or 0),
+            "total_unique_participants": int(entry.get("total_unique_participants") or 0),
+        }
+    trend_map[generated_at] = {
+        "date": generated_at,
+        "external_count": external_count,
+        "total_unique_participants": total_unique,
+    }
+    trend = sorted(trend_map.values(), key=lambda e: e["date"])
+    if len(trend) > TREND_RETENTION_DAYS:
+        trend = trend[-TREND_RETENTION_DAYS:]
+
+    return {
+        "generated_at": generated_at,
+        "source_count": len(discussions),
+        "discussion_count": len(discussions),
+        "external_count": external_count,
+        "internal_count": internal_count,
+        "total_unique_participants": total_unique,
+        "trend": trend,
+        "participants": participants_list,
+        "discussions": discussions_summary,
+        "errors": [],
+    }
+
+
+def collect_discussion_participants():
+    """采集 config/discussions.json 中所有启用讨论的参与者并写入 data/discussion_participants.json。"""
+    print("\n=== 步骤：采集 GitCode 讨论参与者 ===")
+    discussions_cfg = load_discussion_config()
+    if not discussions_cfg:
+        print("  无可用讨论配置，跳过")
+        return None
+
+    previous = load_json(DISCUSSION_PARTICIPANTS_PATH) or {}
+    previous_trend = previous.get("trend", [])
+
+    fetched = []
+    errors = []
+    for cfg in discussions_cfg:
+        url = cfg["url"]
+        print(f"  抓取讨论 {url}")
+        try:
+            data = fetch_discussion_comments(cfg)
+        except Exception as e:
+            print(f"    ✗ 抓取失败: {e}")
+            data = {
+                "url": url,
+                "org": cfg.get("org", ""),
+                "number": cfg.get("number", ""),
+                "title": cfg.get("label") or "",
+                "comment_total": 0,
+                "reply_total": 0,
+                "participants": {},
+                "error": str(e),
+            }
+        if data.get("error"):
+            errors.append({"url": url, "error": data["error"]})
+        else:
+            print(
+                f"    ✓ 顶层评论 {data['comment_total']} 条，回复 {data['reply_total']} 条，"
+                f"参与者 {len(data['participants'])} 位"
+            )
+        fetched.append(data)
+        time.sleep(REQUEST_DELAY)
+
+    internal_set = load_internal_developers()
+    summary = build_discussion_participants_summary(
+        fetched,
+        internal_developers=internal_set,
+        previous_trend=previous_trend,
+    )
+    if errors:
+        summary["errors"] = errors
+
+    save_json(DISCUSSION_PARTICIPANTS_PATH, summary)
+    print(
+        f"\n  ✓ 共 {summary['total_unique_participants']} 位参与者（内部 {summary['internal_count']}，"
+        f"外部 {summary['external_count']}），已保存到 {DISCUSSION_PARTICIPANTS_PATH}"
+    )
+    return summary
 
 
 # ─── 步骤 1：采集仓库列表及详情 ───────────────────────────────────────────────
@@ -1321,6 +1716,8 @@ def main():
         generate_overview_data()
     elif cmd == "dlevels":
         generate_dlevel_summary()
+    elif cmd == "discussions":
+        collect_discussion_participants()
     elif cmd == "all":
         t_all = time.time()
 
@@ -1364,12 +1761,13 @@ def main():
                     print(f"  ✗ {name} 失败: {e}")
 
         # Layer 6: 聚合数据可并发
-        with ThreadPoolExecutor(max_workers=4) as pool:
+        with ThreadPoolExecutor(max_workers=5) as pool:
             layer6 = {
                 pool.submit(generate_dlevel_summary): "dlevels",
                 pool.submit(generate_issue_summary): "issue-summary",
                 pool.submit(generate_mr_summary): "mr-summary",
                 pool.submit(generate_weekly_activity): "weekly",
+                pool.submit(collect_discussion_participants): "discussions",
             }
             for future in as_completed(layer6):
                 name = layer6[future]

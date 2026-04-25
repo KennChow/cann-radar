@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - 'config/repos.json'
+      - 'config/discussions.json'
   repository_dispatch:
     types: [internal-developers-updated]
   workflow_dispatch:
