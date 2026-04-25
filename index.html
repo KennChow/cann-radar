@@ -173,6 +173,22 @@
     .discussion-list .disc-stats { font-size: 12px; color: var(--text-3); }
     .discussion-list .disc-error { color: #e05f5f; font-size: 12px; }
 
+    /* 用户卡片网格 */
+    .user-card-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-top: 12px; }
+    .user-card { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 16px; display: flex; flex-direction: column; gap: 12px; transition: transform 0.2s, box-shadow 0.2s; }
+    .user-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); border-color: var(--accent); }
+    .uc-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-2); padding-bottom: 10px; }
+    .uc-user { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; overflow: hidden; }
+    .uc-rank { background: var(--border-3); color: var(--text); border-radius: 4px; padding: 2px 6px; font-size: 11px; font-weight: bold; }
+    .uc-rank.top-3 { background: var(--accent); color: #fff; }
+    .uc-name { color: var(--accent); text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 130px; }
+    .uc-name:hover { text-decoration: underline; }
+    .uc-time { font-size: 11px; color: var(--text-4); flex-shrink: 0; }
+    .uc-stats { display: flex; justify-content: space-between; }
+    .uc-stat { display: flex; flex-direction: column; gap: 4px; align-items: center; flex: 1; }
+    .uc-stat span { font-size: 11px; color: var(--text-3); }
+    .uc-stat strong { font-size: 16px; color: var(--text); font-weight: 600; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+
     /* 图表 + 说明并排容器 */
     .chart-legend-row { display: flex; gap: 16px; align-items: flex-start; }
     .chart-legend-row .legend-panel { width: 220px; flex-shrink: 0; padding-top: 20px; font-size: 12px; line-height: 1.8; }
@@ -281,21 +297,7 @@
         <div class="user-list-header">
           <h3 class="discussion-subhead" id="discussion-users-title">外部开发者名单</h3>
         </div>
-        <div class="table-wrapper">
-          <table class="user-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>用户名</th>
-                <th style="text-align:right">参与讨论</th>
-                <th style="text-align:right">顶层评论</th>
-                <th style="text-align:right">回复</th>
-                <th>最近参与</th>
-              </tr>
-            </thead>
-            <tbody id="discussion-tbody"></tbody>
-          </table>
-        </div>
+        <div class="user-card-grid" id="discussion-user-cards"></div>
         <div class="pagination" id="discussion-pagination"></div>
       </div>
     </div>
@@ -942,7 +944,7 @@ async function main() {
     document.getElementById('discussion-list').innerHTML = discussions.map(d => {
       const title = escapeHTML(d.title || d.url);
       const url = escapeHTML(d.url);
-      const stats = `外部 ${d.external_participants}/${d.unique_participants} · 顶层评论 ${d.comment_total} · 回复 ${d.reply_total}`;
+      const stats = `外部 ${d.external_participants}/${d.unique_participants} · 评论数 ${d.comment_total + d.reply_total}`;
       const err = errorMap[d.url] ? `<span class="disc-error">采集失败：${escapeHTML(errorMap[d.url])}</span>` : '';
       return `<li><a href="${url}" target="_blank" rel="noopener">${title}</a><span class="disc-stats">${stats}</span>${err}</li>`;
     }).join('');
@@ -955,18 +957,25 @@ async function main() {
 
     document.getElementById('discussion-users-title').textContent =
       `外部开发者名单（${externals.length} 人）`;
-    document.getElementById('discussion-tbody').innerHTML = pageItems.map((p, idx) => {
+    document.getElementById('discussion-user-cards').innerHTML = pageItems.map((p, idx) => {
       const name = escapeHTML(p.user_name);
       const userUrl = `https://gitcode.com/${encodeURIComponent(p.user_name)}`;
       const lastSeen = (p.last_seen_at || '').slice(0, 10) || '-';
-      return `<tr>
-        <td>${start + idx + 1}</td>
-        <td><a class="user-link" href="${userUrl}" target="_blank" rel="noopener">${name}</a></td>
-        <td style="text-align:right">${p.discussion_count}</td>
-        <td style="text-align:right">${p.top_comments}</td>
-        <td style="text-align:right">${p.replies}</td>
-        <td>${lastSeen}</td>
-      </tr>`;
+      const rank = start + idx + 1;
+      const rankClass = rank <= 3 ? 'top-3' : '';
+      return `<div class="user-card">
+        <div class="uc-header">
+          <div class="uc-user">
+            <span class="uc-rank ${rankClass}">#${rank}</span>
+            <a class="uc-name" href="${userUrl}" target="_blank" rel="noopener" title="${name}">${name}</a>
+          </div>
+          <span class="uc-time" title="最近参与">${lastSeen}</span>
+        </div>
+        <div class="uc-stats">
+          <div class="uc-stat"><span>参与讨论</span><strong>${p.discussion_count}</strong></div>
+          <div class="uc-stat"><span>评论数</span><strong>${p.top_comments + p.replies}</strong></div>
+        </div>
+      </div>`;
     }).join('');
 
     const pag = document.getElementById('discussion-pagination');
