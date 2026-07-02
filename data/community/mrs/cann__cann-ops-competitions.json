@@ -1,5 +1,22 @@
 [
   {
+    "iid": 525,
+    "state": "closed",
+    "title": "upsample3d",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "",
+    "closed_at": "2026-07-02",
+    "author": "lqq12345677",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/525",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/no",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1
+  },
+  {
     "iid": 524,
     "state": "opened",
     "title": "Add NEW DANCE Erfinv and IsNan submissions",
@@ -16,15 +33,16 @@
   },
   {
     "iid": 523,
-    "state": "opened",
+    "state": "merged",
     "title": "Add U赛队 GeluV2 and TensorEqual submissions",
     "created_at": "2026-07-01",
     "updated_at": "2026-07-02",
-    "merged_at": "",
+    "merged_at": "2026-07-02",
     "closed_at": "",
     "author": "li159357",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/523",
     "labels": [
+      "lgtm",
       "cann-cla/yes",
       "ci-pipeline-passed",
       "approved"
@@ -137,11 +155,11 @@
   },
   {
     "iid": 516,
-    "state": "opened",
+    "state": "merged",
     "title": "贡献Erfinv、IsNan",
     "created_at": "2026-06-29",
     "updated_at": "2026-07-02",
-    "merged_at": "",
+    "merged_at": "2026-07-02",
     "closed_at": "",
     "author": "LiJianhao2",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/516",
@@ -149,7 +167,8 @@
       "stat/needs-squash",
       "ci-pipeline-passed",
       "cann-cla/yes",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 4
   },
@@ -326,18 +345,19 @@
   },
   {
     "iid": 505,
-    "state": "opened",
+    "state": "merged",
     "title": "【社区任务】Gcd算子设计文档",
     "created_at": "2026-06-26",
-    "updated_at": "2026-06-30",
-    "merged_at": "",
+    "updated_at": "2026-07-02",
+    "merged_at": "2026-07-02",
     "closed_at": "",
     "author": "Morikunn",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/505",
     "labels": [
       "ci-pipeline-passed",
       "cann-cla/yes",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 5
   },
@@ -483,16 +503,17 @@
   },
   {
     "iid": 496,
-    "state": "opened",
+    "state": "merged",
     "title": "提交ScatterND算子设计文档",
     "created_at": "2026-06-17",
-    "updated_at": "2026-07-01",
-    "merged_at": "",
+    "updated_at": "2026-07-02",
+    "merged_at": "2026-07-02",
     "closed_at": "",
     "author": "zhangfeng1133",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/496",
     "labels": [
       "stat/needs-squash",
+      "lgtm",
       "cann-cla/yes",
       "ci-pipeline-passed",
       "approved"
@@ -555,7 +576,7 @@
     "state": "opened",
     "title": "【社区任务】aclsolverCheevj 三对角化实现 + 板上验证（设计文档+代码+结果）",
     "created_at": "2026-06-16",
-    "updated_at": "2026-07-01",
+    "updated_at": "2026-07-02",
     "merged_at": "",
     "closed_at": "",
     "author": "dahfgakf",
@@ -563,7 +584,8 @@
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 12
   },
@@ -604,7 +626,7 @@
     "state": "opened",
     "title": "【社区任务】BiasAdd设计文档",
     "created_at": "2026-06-15",
-    "updated_at": "2026-06-16",
+    "updated_at": "2026-07-02",
     "merged_at": "",
     "closed_at": "",
     "author": "TreamTik",
@@ -612,7 +634,8 @@
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 13
   },
@@ -727,7 +750,7 @@
     "state": "opened",
     "title": "feat: 为 PReluGradReduce 算子新增 Atlas A2 训练系列产品（ascend910b/ascend910_93）支持设计算子文件",
     "created_at": "2026-06-15",
-    "updated_at": "2026-06-17",
+    "updated_at": "2026-07-02",
     "merged_at": "",
     "closed_at": "",
     "author": "weixin_52517849",
@@ -735,8 +758,7 @@
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "stat/needs-squash",
-      "approved"
+      "stat/needs-squash"
     ],
     "working_days_open": 13
   },
@@ -760,17 +782,18 @@
   },
   {
     "iid": 480,
-    "state": "opened",
+    "state": "merged",
     "title": "【社区任务】Cast&EmbeddingDenseGrad算子设计文档",
     "created_at": "2026-06-15",
-    "updated_at": "2026-07-01",
-    "merged_at": "",
+    "updated_at": "2026-07-02",
+    "merged_at": "2026-07-02",
     "closed_at": "",
     "author": "flyskysky",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/480",
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
+      "lgtm",
       "ci-pipeline-passed",
       "approved"
     ],
@@ -944,7 +967,7 @@
     "state": "opened",
     "title": "feat: add ScatterAdd operator design document for task 03-17",
     "created_at": "2026-06-12",
-    "updated_at": "2026-07-01",
+    "updated_at": "2026-07-02",
     "merged_at": "",
     "closed_at": "",
     "author": "FDP6526",
@@ -3468,7 +3491,7 @@
     "state": "opened",
     "title": "update: 更新文件 README.md",
     "created_at": "2026-06-05",
-    "updated_at": "2026-06-30",
+    "updated_at": "2026-07-02",
     "merged_at": "",
     "closed_at": "",
     "author": "lqq12345677",

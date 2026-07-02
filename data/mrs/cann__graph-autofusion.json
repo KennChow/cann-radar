@@ -1,47 +1,202 @@
 [
   {
-    "iid": 1163,
+    "iid": 1172,
     "state": "opened",
-    "title": "fix: 修复graph_metadef拼写问题",
+    "title": "Scheduled Test Pipeline 20260702230151",
     "created_at": "2026-07-02",
     "updated_at": "2026-07-02",
     "merged_at": "",
+    "closed_at": "",
+    "author": "ling-DT",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1172",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 1171,
+    "state": "opened",
+    "title": "【PR】:  sync develop to master 20260702",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhanj",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1171",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 1170,
+    "state": "opened",
+    "title": "test: add isinf_maskedfill_test_e2e to backend E2E test execution list",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Jett_Woo",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1170",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 1169,
+    "state": "closed",
+    "title": "Scheduled Test Pipeline 20260702210137",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "",
+    "closed_at": "2026-07-02",
+    "author": "ling-DT",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1169",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 1168,
+    "state": "closed",
+    "title": "Scheduled Test Pipeline 20260702190123",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "",
+    "closed_at": "2026-07-02",
+    "author": "ling-DT",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1168",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 1167,
+    "state": "merged",
+    "title": "【PR】: feat:自动融合离线交叉编译link graph适配",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "2026-07-02",
+    "closed_at": "",
+    "author": "chengyutao3",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1167",
+    "labels": [
+      "stat/needs-squash",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved",
+      "enhancement",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 1166,
+    "state": "closed",
+    "title": "Scheduled Test Pipeline 20260702170108",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "",
+    "closed_at": "2026-07-02",
+    "author": "ling-DT",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1166",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 1165,
+    "state": "opened",
+    "title": "【PR】: [WIP]简要描述 tmp test debug  full new",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "czways",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1165",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 1164,
+    "state": "closed",
+    "title": "【PR】: 简要描述",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "",
+    "closed_at": "2026-07-02",
+    "author": "chengyutao3",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1164",
+    "labels": [
+      "cann-cla/yes",
+      "enhancement"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 1163,
+    "state": "merged",
+    "title": "fix: 修复graph_metadef拼写问题",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "2026-07-02",
     "closed_at": "",
     "author": "gcw_V3YyYBt1",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1163",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-running",
-      "stat/needs-squash"
+      "approved",
+      "stat/needs-squash",
+      "ci-pipeline-passed",
+      "lgtm"
     ],
     "working_days_open": 1
   },
   {
     "iid": 1162,
-    "state": "opened",
+    "state": "merged",
     "title": "【fix】: 修复schedule浅拷贝导致图重名问题",
     "created_at": "2026-07-02",
     "updated_at": "2026-07-02",
-    "merged_at": "",
+    "merged_at": "2026-07-02",
     "closed_at": "",
     "author": "WangYanMale",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1162",
     "labels": [
       "enhancement",
       "cann-cla/yes",
-      "ci-pipeline-running",
-      "BUILD-SUCC"
+      "BUILD-SUCC",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1
   },
   {
     "iid": 1161,
-    "state": "opened",
+    "state": "closed",
     "title": "Scheduled Test Pipeline 20260702150050",
     "created_at": "2026-07-02",
     "updated_at": "2026-07-02",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-02",
     "author": "ling-DT",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1161",
     "labels": [
@@ -87,34 +242,40 @@
   },
   {
     "iid": 1158,
-    "state": "opened",
+    "state": "merged",
     "title": "fix: 修复 ScalarData Cast 生成缺少 local tensor",
     "created_at": "2026-07-02",
     "updated_at": "2026-07-02",
-    "merged_at": "",
+    "merged_at": "2026-07-02",
     "closed_at": "",
     "author": "zqmin",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1158",
     "labels": [
+      "lgtm",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "approved",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1
   },
   {
     "iid": 1157,
-    "state": "opened",
+    "state": "merged",
     "title": "fix: support bf16 tensor memory size in PGO",
     "created_at": "2026-07-02",
     "updated_at": "2026-07-02",
-    "merged_at": "",
+    "merged_at": "2026-07-02",
     "closed_at": "",
     "author": "zhang_shengjie",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1157",
     "labels": [
       "stat/needs-squash",
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "ci-pipeline-passed",
+      "BUILD-SUCC",
+      "lgtm",
+      "cann-cla/yes",
+      "approved"
     ],
     "working_days_open": 1
   },
@@ -137,7 +298,7 @@
   {
     "iid": 1155,
     "state": "merged",
-    "title": "【fix】: fix pre-commit",
+    "title": "【fix】:fix pre-commit",
     "created_at": "2026-07-02",
     "updated_at": "2026-07-02",
     "merged_at": "2026-07-02",
@@ -164,24 +325,26 @@
     "author": "xiebangrui2025",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1154",
     "labels": [
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 2
   },
   {
     "iid": 1153,
-    "state": "opened",
+    "state": "merged",
     "title": "fix: 修复TopN PGO候选block_dim残留",
     "created_at": "2026-07-01",
     "updated_at": "2026-07-02",
-    "merged_at": "",
+    "merged_at": "2026-07-02",
     "closed_at": "",
     "author": "zhang_shengjie",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1153",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-running"
+      "approved",
+      "ci-pipeline-passed",
+      "lgtm"
     ],
     "working_days_open": 2
   },
@@ -214,21 +377,22 @@
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 2
   },
   {
     "iid": 1150,
     "state": "opened",
-    "title": "【PR】: 简要描述",
+    "title": "【feat】: 修改Transpose+Brc融合轴对齐及模板保留规则",
     "created_at": "2026-07-01",
-    "updated_at": "2026-07-01",
+    "updated_at": "2026-07-02",
     "merged_at": "",
     "closed_at": "",
     "author": "liyuewei",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1150",
     "labels": [
+      "ci-pipeline-failed",
       "enhancement",
       "cann-cla/yes"
     ],
@@ -247,25 +411,27 @@
     "labels": [
       "cann-cla/yes",
       "enhancement",
-      "stat/needs-squash",
-      "ci-pipeline-running"
+      "ci-pipeline-failed",
+      "stat/needs-squash"
     ],
     "working_days_open": 2
   },
   {
     "iid": 1148,
-    "state": "opened",
-    "title": "fix: 修正VectorFunc子节点性能信息解析",
+    "state": "merged",
+    "title": "fix: 修正VectorFunc子节点性能信息解析，优化性能公式",
     "created_at": "2026-07-01",
     "updated_at": "2026-07-02",
-    "merged_at": "",
+    "merged_at": "2026-07-02",
     "closed_at": "",
     "author": "zhang_shengjie",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1148",
     "labels": [
       "cann-cla/yes",
       "stat/needs-squash",
-      "ci-pipeline-running"
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 2
   },
@@ -309,7 +475,7 @@
     "state": "opened",
     "title": "【PR】: 【fix】:[autofuse]cv融合规避算子更新的Tensor_API相关模板，强制走BasicAPI模板",
     "created_at": "2026-07-01",
-    "updated_at": "2026-07-01",
+    "updated_at": "2026-07-02",
     "merged_at": "",
     "closed_at": "",
     "author": "yangzw653",
@@ -319,7 +485,8 @@
       "enhancement",
       "SC-SUCC",
       "BUILD-SUCC",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm"
     ],
     "working_days_open": 2
   },
@@ -344,20 +511,21 @@
   },
   {
     "iid": 1143,
-    "state": "opened",
+    "state": "merged",
     "title": "【PR】: sync develop to master 20260630",
     "created_at": "2026-06-30",
     "updated_at": "2026-07-02",
-    "merged_at": "",
+    "merged_at": "2026-07-02",
     "closed_at": "",
     "author": "wangxiaotian995",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1143",
     "labels": [
-      "ci-pipeline-running",
       "cann-cla/yes",
-      "api-check-pass",
       "enhancement",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 3
   },
@@ -558,10 +726,10 @@
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1132",
     "labels": [
       "stat/needs-squash",
-      "ci-pipeline-passed",
       "cann-cla/yes",
       "enhancement",
-      "api-check-pass"
+      "api-check-pass",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 4
   },
@@ -1312,7 +1480,9 @@
       "cann-cla/yes",
       "enhancement",
       "stat/needs-squash",
-      "ci-pipeline-passed"
+      "approved",
+      "lgtm",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 5
   },

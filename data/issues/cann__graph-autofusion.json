@@ -1,5 +1,50 @@
 [
   {
+    "iid": 159,
+    "state": "closed",
+    "created_at": "2026-07-02",
+    "closed_at": "2026-07-02",
+    "author": "zhang_shengjie",
+    "title": "bug: VectorFunc子节点性能信息解析存在多处缺陷",
+    "labels": [],
+    "assignees": [
+      "zhang_shengjie"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/159",
+    "working_days_open": 1
+  },
+  {
+    "iid": 158,
+    "state": "opened",
+    "created_at": "2026-07-02",
+    "closed_at": "",
+    "author": "zqmin",
+    "title": "ScalarData 作为 blk tensor 输入算子输入时缺少 local blk tensor 初始化",
+    "labels": [],
+    "assignees": [
+      "zqmin"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/158",
+    "working_days_open": 1
+  },
+  {
+    "iid": 157,
+    "state": "opened",
+    "created_at": "2026-07-02",
+    "closed_at": "",
+    "author": "zhang_shengjie",
+    "title": "[Bug] TopN PGO候选tiling外层block_dim残留导致下发tiling非法",
+    "labels": [],
+    "assignees": [
+      "zhang_shengjie"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/157",
+    "working_days_open": 1
+  },
+  {
     "iid": 156,
     "state": "opened",
     "created_at": "2026-07-01",
@@ -359,9 +404,9 @@
   },
   {
     "iid": 131,
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-19",
-    "closed_at": "",
+    "closed_at": "2026-07-02",
     "author": "leeibo",
     "title": "[Documentation|文档反馈]: Autofuse graph_metadef 中错误日志和注释的拼写问题",
     "labels": [],

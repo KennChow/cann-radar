@@ -1,5 +1,93 @@
 [
   {
+    "iid": 3309,
+    "state": "opened",
+    "title": "bugfix force_eager cannot capture",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "glf2016",
+    "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3309",
+    "labels": [
+      "ascend-cla/yes",
+      "docs-ci-pipeline-success",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 3308,
+    "state": "opened",
+    "title": "加回- Ascend 950PR/Ascend 950DT 的支持说明\"",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "mihudan",
+    "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3308",
+    "labels": [
+      "ci-pipeline-passed",
+      "docs-ci-pipeline-success",
+      "ascend-cla/yes"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 3307,
+    "state": "opened",
+    "title": "[fix] Add newly added superkernel config options to static compilation cache key",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "rich9527",
+    "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3307",
+    "labels": [
+      "ascend-cla/yes",
+      "docs-ci-pipeline-success",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 3306,
+    "state": "opened",
+    "title": "chore: compare rebased version of PR 3259",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "ling-DT",
+    "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3306",
+    "labels": [
+      "docs-ci-pipeline-success",
+      "stat/needs-squash",
+      "ascend-cla/yes"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 3305,
+    "state": "merged",
+    "title": "update docs for canfuse and cat",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "2026-07-02",
+    "closed_at": "",
+    "author": "yurongkun",
+    "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3305",
+    "labels": [
+      "ascend-cla/yes",
+      "docs-ci-pipeline-success",
+      "approved",
+      "lgtm",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1
+  },
+  {
     "iid": 3304,
     "state": "opened",
     "title": "mmallreduce change A5 default comm engine to aicpu",
@@ -27,9 +115,9 @@
     "author": "wuziyu",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3303",
     "labels": [
-      "ascend-cla/yes",
       "docs-ci-pipeline-success",
-      "ci-pipeline-passed"
+      "ascend-cla/yes",
+      "stat/needs-squash"
     ],
     "working_days_open": 1
   },
@@ -50,52 +138,58 @@
   },
   {
     "iid": 3301,
-    "state": "opened",
+    "state": "merged",
     "title": "docs: 补充 event graph break 使用约束",
     "created_at": "2026-07-02",
     "updated_at": "2026-07-02",
-    "merged_at": "",
+    "merged_at": "2026-07-02",
     "closed_at": "",
     "author": "stevenaw0",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3301",
     "labels": [
       "ascend-cla/yes",
       "ci-pipeline-passed",
-      "docs-ci-pipeline-success"
+      "docs-ci-pipeline-success",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1
   },
   {
     "iid": 3300,
-    "state": "opened",
+    "state": "merged",
     "title": "docs: 补充 event graph break 使用约束",
     "created_at": "2026-07-02",
     "updated_at": "2026-07-02",
-    "merged_at": "",
+    "merged_at": "2026-07-02",
     "closed_at": "",
     "author": "stevenaw0",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3300",
     "labels": [
       "ascend-cla/yes",
       "ci-pipeline-passed",
-      "docs-ci-pipeline-success"
+      "docs-ci-pipeline-success",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1
   },
   {
     "iid": 3299,
-    "state": "opened",
+    "state": "merged",
     "title": "修复allgathermm和matmulreducescatter图模式不支持comm_mode参数问题",
     "created_at": "2026-07-02",
     "updated_at": "2026-07-02",
-    "merged_at": "",
+    "merged_at": "2026-07-02",
     "closed_at": "",
     "author": "WangShuying5",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3299",
     "labels": [
       "ascend-cla/yes",
       "docs-ci-pipeline-success",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 1
   },
@@ -156,18 +250,20 @@
   },
   {
     "iid": 3295,
-    "state": "opened",
+    "state": "merged",
     "title": "compat(v2.13): wrap named-tensor overload lookups with getattr fallback",
     "created_at": "2026-07-01",
     "updated_at": "2026-07-02",
-    "merged_at": "",
+    "merged_at": "2026-07-02",
     "closed_at": "",
     "author": "c_34",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3295",
     "labels": [
       "ascend-cla/yes",
       "docs-ci-pipeline-success",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2
   },
@@ -649,7 +745,7 @@
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3269",
     "labels": [
       "ascend-cla/yes",
-      "docs-ci-pipeline-running",
+      "docs-ci-pipeline-success",
       "stat/needs-squash"
     ],
     "working_days_open": 5
@@ -714,7 +810,7 @@
     "state": "opened",
     "title": "feat: integrate custom op callback into fx2ge_converter and npu_fx_compiler",
     "created_at": "2026-06-26",
-    "updated_at": "2026-07-01",
+    "updated_at": "2026-07-02",
     "merged_at": "",
     "closed_at": "",
     "author": "yuht9",

@@ -1,18 +1,167 @@
 [
   {
-    "iid": 722,
+    "iid": 730,
     "state": "opened",
-    "title": "[refactor]: resolve notify address in transfer pool",
+    "title": "[docs]: 优化README",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "A-Liuhao",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/730",
+    "labels": [
+      "api-check-pass",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 729,
+    "state": "opened",
+    "title": "bugfix: 每2K个device传输任务下发notify wait",
     "created_at": "2026-07-02",
     "updated_at": "2026-07-02",
     "merged_at": "",
     "closed_at": "",
     "author": "zhaozhihui",
-    "web_url": "https://gitcode.com/cann/hixl/merge_requests/722",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/729",
+    "labels": [
+      "cann-cla/yes",
+      "api-check-pass",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 728,
+    "state": "merged",
+    "title": "[bugfix]: keep connect inside client manager for 9.1.0",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "2026-07-02",
+    "closed_at": "",
+    "author": "zhaozhihui",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/728",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 727,
+    "state": "merged",
+    "title": "[bugfix]: keep connect inside client manager",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "2026-07-02",
+    "closed_at": "",
+    "author": "zhaozhihui",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/727",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "api-check-pass",
+      "lgtm",
+      "approved"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 726,
+    "state": "merged",
+    "title": "[refactor]: 重构 TransferContext sync 入口并扩展同步字段",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "2026-07-02",
+    "closed_at": "",
+    "author": "lining23666",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/726",
     "labels": [
       "cann-cla/yes",
       "stat/needs-squash",
-      "ci-pipeline-running"
+      "api-check-pass",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 725,
+    "state": "merged",
+    "title": "[docs]: optimize hixl-troubleshoot skill and issue log download",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "2026-07-02",
+    "closed_at": "",
+    "author": "youyx",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/725",
+    "labels": [
+      "api-check-pass",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 724,
+    "state": "merged",
+    "title": "[bugfix]: wait channel status after create",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "2026-07-02",
+    "closed_at": "",
+    "author": "zhaozhihui",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/724",
+    "labels": [
+      "approved",
+      "lgtm",
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 723,
+    "state": "opened",
+    "title": "[refactor]: unify client locks to single mutex for serial execution",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhaozhihui",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/723",
+    "labels": [
+      "ci-pipeline-passed",
+      "lgtm",
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 1
+  },
+  {
+    "iid": 722,
+    "state": "merged",
+    "title": "[refactor]: resolve notify address in transfer pool",
+    "created_at": "2026-07-02",
+    "updated_at": "2026-07-02",
+    "merged_at": "2026-07-02",
+    "closed_at": "",
+    "author": "zhaozhihui",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/722",
+    "labels": [
+      "approved",
+      "lgtm",
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1
   },

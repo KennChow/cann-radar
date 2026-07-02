@@ -1,5 +1,44 @@
 [
   {
+    "iid": 562,
+    "state": "opened",
+    "created_at": "2026-07-02",
+    "closed_at": "",
+    "author": "RyanChang2026",
+    "title": "[Bug]: configure 脚本中 config_file 变量未用 $ 引用，缓存跳过机制失效",
+    "labels": [],
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/562",
+    "working_days_open": 1
+  },
+  {
+    "iid": 561,
+    "state": "opened",
+    "created_at": "2026-07-02",
+    "closed_at": "",
+    "author": "RyanChang2026",
+    "title": "[Bug]: build.sh 使用已移除的 distutils.version.LooseVersion，在 Python 3.12 上静默跳过单元测试",
+    "labels": [],
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/561",
+    "working_days_open": 1
+  },
+  {
+    "iid": 560,
+    "state": "opened",
+    "created_at": "2026-07-02",
+    "closed_at": "",
+    "author": "RyanChang2026",
+    "title": "[Bug]: configure.py 使用已移除的 distutils.sysconfig，在 Python 3.12 上配置阶段崩溃",
+    "labels": [],
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/560",
+    "working_days_open": 1
+  },
+  {
     "iid": 559,
     "state": "closed",
     "created_at": "2026-07-02",
@@ -124,7 +163,7 @@
     "assignees": [
       "yurongkun"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/Ascend/torchair/issues/551",
     "working_days_open": 4
   },
@@ -450,13 +489,15 @@
   },
   {
     "iid": 528,
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-12",
-    "closed_at": "",
+    "closed_at": "2026-07-02",
     "author": "zutao",
     "title": "[Bug]: qwen3-0.6B 使能npugraph_ex推理失败",
     "labels": [],
-    "assignees": [],
+    "assignees": [
+      "glf2016"
+    ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/Ascend/torchair/issues/528",
     "working_days_open": 14
@@ -505,9 +546,9 @@
   },
   {
     "iid": 524,
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-11",
-    "closed_at": "",
+    "closed_at": "2026-07-02",
     "author": "Huang-Peng",
     "title": "moe_init_routing GE图编译侧支持FP8量化和INT4动态量化",
     "labels": [],
@@ -520,14 +561,16 @@
   },
   {
     "iid": 523,
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-11",
-    "closed_at": "",
+    "closed_at": "2026-07-02",
     "author": "WSs_321",
     "title": "docs: 本地构建编译依赖不明确",
     "labels": [],
-    "assignees": [],
-    "user_notes_count": 0,
+    "assignees": [
+      "Sunyp01"
+    ],
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/Ascend/torchair/issues/523",
     "working_days_open": 15
   },
@@ -548,22 +591,24 @@
   },
   {
     "iid": 521,
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-10",
-    "closed_at": "",
+    "closed_at": "2026-07-02",
     "author": "lqqqqq0125",
     "title": "[Bug]: 动态调用到npu_moe_eplb_update_expert时报错",
     "labels": [],
-    "assignees": [],
+    "assignees": [
+      "Sunyp01"
+    ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/Ascend/torchair/issues/521",
     "working_days_open": 16
   },
   {
     "iid": 520,
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-10",
-    "closed_at": "",
+    "closed_at": "2026-07-02",
     "author": "chenjiale56",
     "title": "[Usage]: 图模式接口与单算子接口参数不一致",
     "labels": [],
@@ -676,9 +721,9 @@
   },
   {
     "iid": 512,
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-04",
-    "closed_at": "",
+    "closed_at": "2026-07-02",
     "author": "tujun6",
     "title": "[Usage]: 算子新增attr后，算子侧获取属性值为空",
     "labels": [],
@@ -738,7 +783,9 @@
     "author": "fwx_110",
     "title": "[Bug]: A5的2A+x环境跑了一个pytorch的alltoallv的aclgraph图模式的0tensor用例报错",
     "labels": [],
-    "assignees": [],
+    "assignees": [
+      "rich9527"
+    ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/Ascend/torchair/issues/508",
     "working_days_open": 21
