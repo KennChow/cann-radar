@@ -62,12 +62,55 @@ MAX_NOTIFY_COUNT = 2
 CONTACT_INFO = "如有疑问请联系夏国正 x00806611"
 
 
-def _is_requirement(title, labels):
+def _is_requirement(issue_type, title, labels):
+    if issue_type == "需求":
+        return True
     if title:
         if '[RFC]' in title or '[Feature-Request|需求反馈]' in title:
             return True
     if labels and 'requirement' in labels:
         return True
+    return False
+
+
+def _build_linked_pr_map(notify_paths):
+    """从 MR 数据构建 issue → set of linked MR authors 的映射（用于自提判定）。"""
+    linked = defaultdict(set)
+    mrs_dir = Path("data/mrs")
+    if not mrs_dir.exists():
+        return linked
+    for f in sorted(mrs_dir.glob("*.json")):
+        repo_path = f.stem.replace("__", "/", 1)
+        if notify_paths and repo_path not in notify_paths:
+            continue
+        try:
+            mrs = json.loads(f.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, FileNotFoundError):
+            continue
+        for mr in mrs:
+            mr_author = mr.get("author", "")
+            if not mr_author:
+                continue
+            for issue_num in mr.get("e2e_issues") or []:
+                linked[issue_num].add(mr_author)
+    return linked
+
+
+def _is_self_assigned(issue, linked_pr_map, mail_map):
+    """判定 issue 是否自提（无需发送邮件提醒）。"""
+    author = issue.get("author", "")
+    assignees = issue.get("assignees") or []
+
+    # 提单人是负责人之一
+    if author and author in assignees:
+        return True
+
+    # 提单人关联了自己的 PR
+    iid = str(issue.get("iid", ""))
+    linked_authors = linked_pr_map.get(iid, set())
+    if author and author in linked_authors:
+        return True
+
     return False
 
 
@@ -248,8 +291,9 @@ def scan_stale_issues(stale_days, notify_paths=None, notified=None):
 
             title = issue.get("title") or ""
             labels = issue.get("labels") or []
+            issue_type = issue.get("issue_type") or ""
 
-            if _is_requirement(title, labels):
+            if _is_requirement(issue_type, title, labels):
                 stats["total_requirement"] += 1
                 continue
             stats["total_non_req"] += 1
@@ -522,6 +566,27 @@ def main():
 
     if not matched_issues:
         print("\n  ✓ 无新增/待升级超期非Requirement Issue，无需通知")
+        return 0
+
+    # 自提过滤
+    linked_pr_map = _build_linked_pr_map(notify_paths)
+    print(f"  关联 PR 映射: {len(linked_pr_map)} 个 issue 有关联 MR")
+    self_assigned_count = 0
+    remaining_issues = []
+    for iss in matched_issues:
+        if _is_self_assigned(iss, linked_pr_map, mail_map):
+            self_assigned_count += 1
+        else:
+            remaining_issues.append(iss)
+    if self_assigned_count:
+        print(f"  自提排除: {self_assigned_count} 个 Issue")
+        for iss in matched_issues:
+            if _is_self_assigned(iss, linked_pr_map, mail_map):
+                print(f"    #{iss['iid']} author={iss['author']} (自提)")
+    matched_issues = remaining_issues
+
+    if not matched_issues:
+        print("\n  ✓ 均为自提 Issue，无需通知")
         return 0
 
     # 按 assignee 聚合 (每人一份邮件)

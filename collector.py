@@ -59,6 +59,24 @@ DISCUSSION_URL_RE = re.compile(r"^https://gitcode\.com/org/([^/]+)/discussions/(
 
 COMMUNITY_CONFIG_PATH = Path("config/community.yml")
 
+GITCODE_TOKEN_PATH = Path("config/gitcode_token.txt")
+V5_BASE = "https://gitcode.com/api/v5"
+
+
+def _load_token():
+    if GITCODE_TOKEN_PATH.exists():
+        t = GITCODE_TOKEN_PATH.read_text(encoding="utf-8").strip()
+        if t:
+            return t
+    return None
+
+
+def _v5_headers(token):
+    h = dict(HEADERS)
+    if token:
+        h["token"] = token
+    return h
+
 
 def load_community_config():
     """读取 config/community.yml，返回启用的社区公共仓库列表。"""
@@ -181,11 +199,12 @@ def _working_days_open(created_date_str):
 
 # ─── HTTP 工具 ────────────────────────────────────────────────────────────────
 
-def get(url, retries=3, delay=REQUEST_DELAY, timeout=8):
+def get(url, retries=3, delay=REQUEST_DELAY, timeout=8, headers=None):
     """发送 GET 请求，返回解析后的 JSON 或 None。"""
+    _headers = headers if headers is not None else HEADERS
     for attempt in range(retries):
         try:
-            req = urllib.request.Request(url, headers=HEADERS)
+            req = urllib.request.Request(url, headers=_headers)
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 raw = resp.read()
                 return json.loads(raw.decode("utf-8"))
@@ -1180,48 +1199,57 @@ def reclassify_users():
 # ─── 步骤 4：采集各仓库 Issue 详情 ───────────────────────────────────────────
 
 def _fetch_repo_issues(repo, issues_dir):
-    """采集单个仓库的全部 Issue（供线程池调用）。"""
+    """采集单个仓库的全部 Issue（v5 API，需要 token）。"""
+    token = _load_token()
+    if not token:
+        print(f"  ✗ 缺少 gitcode token，跳过 Issue 采集")
+        return repo["path"], [], False
+
     repo_path = repo["path"]
-    encoded   = urllib.parse.quote(repo_path, safe="")
+    owner, name = repo_path.split("/", 1)
     safe_name = repo_path.replace("/", "__")
     cache_file = issues_dir / f"{safe_name}.json"
 
+    # v5 migration: invalidate old cache without issue_type field
     if cache_file.exists():
         existing = load_json(cache_file) or []
-        return repo_path, existing, True
+        if existing and existing[0].get("issue_type") is not None:
+            return repo_path, existing, True
 
+    headers = _v5_headers(token)
     all_issues = []
-    total      = None
-    page       = 1
+    page = 1
 
     while True:
-        url  = f"{BASE_URL}/api/v1/issue/{encoded}/issues?page={page}&per_page=100&state=all"
-        data = get(url)
-        if not data or not data.get("issues"):
+        url = f"{V5_BASE}/repos/{owner}/{name}/issues?state=all&page={page}&per_page=100"
+        data = get(url, headers=headers)
+        if not data or not isinstance(data, list) or len(data) == 0:
             break
 
-        if total is None:
-            total = data.get("all") or 0
-
-        for issue in data["issues"]:
-            closed_raw = issue.get("closed_at") or ""
-            labels = issue.get("labels") or []
-            assignees_raw = issue.get("assignees") or []
+        for issue in data:
+            closed_raw = issue.get("finished_at") or issue.get("closed_at") or ""
+            created_raw = issue.get("created_at") or ""
+            assignees_list = issue.get("assignees") or []
+            labels_list = issue.get("labels") or []
+            user = issue.get("user") or {}
             all_issues.append({
-                "iid":             issue.get("iid"),
-                "state":           issue.get("state", "opened"),
-                "created_at":      (issue.get("created_at") or "")[:10],
-                "closed_at":       closed_raw[:10] if closed_raw else "",
-                "author":          (issue.get("author") or {}).get("username", ""),
-                "title":           issue.get("title") or "",
-                "labels":          [label.get("name", "") if isinstance(label, dict) else str(label) for label in labels],
-                "assignees":       [a.get("username", "") if isinstance(a, dict) else str(a) for a in assignees_raw],
-                "user_notes_count": issue.get("user_notes_count") or 0,
-                "web_url":         issue.get("web_url") or "",
-                "working_days_open": _working_days_open((issue.get("created_at") or "")[:10]),
+                "iid":              issue.get("number"),
+                "state":            "closed" if issue.get("state") == "closed" else "opened",
+                "created_at":       created_raw[:10] if created_raw else "",
+                "closed_at":        closed_raw[:10] if closed_raw else "",
+                "author":           user.get("login", ""),
+                "author_id":        user.get("id", ""),
+                "title":            issue.get("title") or "",
+                "labels":           [label.get("name", "") if isinstance(label, dict) else str(label) for label in labels_list],
+                "issue_type":       issue.get("issue_type") or "",
+                "issue_state":      issue.get("issue_state") or "",
+                "assignees":        [a.get("login", "") if isinstance(a, dict) else str(a) for a in assignees_list],
+                "user_notes_count": issue.get("comments") or 0,
+                "web_url":          issue.get("html_url") or f"https://gitcode.com/{repo_path}/issues/{issue.get('number', '')}",
+                "working_days_open": _working_days_open(created_raw[:10] if created_raw else ""),
             })
 
-        if total and len(all_issues) >= total or len(data["issues"]) < 100:
+        if len(data) < 100:
             break
         page += 1
         time.sleep(REQUEST_DELAY)
@@ -1295,6 +1323,7 @@ def _fetch_repo_mrs(repo, mrs_dir):
             closed_raw = mr.get("closed_at") or ""
             updated_raw = mr.get("updated_at") or ""
             ent_labels = mr.get("enterprise_labels") or []
+            e2e_issues = mr.get("e2e_issues") or []
             all_mrs.append({
                 "iid":        mr.get("iid"),
                 "state":      mr.get("state", "opened"),
@@ -1307,6 +1336,7 @@ def _fetch_repo_mrs(repo, mrs_dir):
                 "web_url":    mr.get("web_url") or "",
                 "labels":     [label.get("name", "") if isinstance(label, dict) else str(label) for label in ent_labels],
                 "working_days_open": _working_days_open((mr.get("created_at") or "")[:10]),
+                "e2e_issues": [e.get("issue_num", "").replace("issue", "") for e in e2e_issues],
             })
 
         if (total and len(all_mrs) >= total) or len(data["content"]) < 100:
@@ -1963,8 +1993,9 @@ def collect_community_stars():
 
 
 def collect_community_issues():
-    """采集社区公共数据仓库的 Issue 详情。"""
+    """采集社区公共数据仓库的 Issue 详情（v5 API）。"""
     print("\n=== 采集社区公共数据仓库 Issue 详情 ===")
+    token = _load_token()
     repos = load_json(COMMUNITY_DATA_DIR / "repos.json") or []
     if not repos:
         print("  请先运行 python collector.py community-repos")
@@ -1975,40 +2006,54 @@ def collect_community_issues():
 
     for repo in repos:
         repo_path = repo["path"]
+        owner, name = repo_path.split("/", 1)
         safe_name = repo_path.replace("/", "__")
         cache_file = issues_dir / f"{safe_name}.json"
 
         if cache_file.exists():
-            issues = load_json(cache_file) or []
-            print(f"  {repo_path}: 使用缓存（{len(issues)} 条）")
+            existing = load_json(cache_file) or []
+            if existing and existing[0].get("issue_type") is not None:
+                print(f"  {repo_path}: 使用缓存（{len(existing)} 条）")
+                continue
+
+        if not token:
+            print(f"  {repo_path}: 缺少 gitcode token，跳过")
             continue
 
+        headers = _v5_headers(token)
         all_issues = []
         page = 1
-        encoded = urllib.parse.quote(repo_path, safe="")
+
         while True:
-            url = f"{BASE_URL}/api/v1/issue/{encoded}/issues?page={page}&per_page=100&state=all"
-            data = get(url)
-            if not data or not data.get("issues"):
+            url = f"{V5_BASE}/repos/{owner}/{name}/issues?state=all&page={page}&per_page=100"
+            data = get(url, headers=headers)
+            if not data or not isinstance(data, list) or len(data) == 0:
                 break
-            for issue in data["issues"]:
-                closed_raw = issue.get("closed_at") or ""
-                labels = issue.get("labels") or []
-                assignees_raw = issue.get("assignees") or []
+
+            for issue in data:
+                closed_raw = issue.get("finished_at") or issue.get("closed_at") or ""
+                created_raw = issue.get("created_at") or ""
+                assignees_list = issue.get("assignees") or []
+                labels_list = issue.get("labels") or []
+                user = issue.get("user") or {}
                 all_issues.append({
-                    "iid": issue.get("iid"),
-                    "state": issue.get("state", "opened"),
-                    "created_at": (issue.get("created_at") or "")[:10],
-                    "closed_at": closed_raw[:10] if closed_raw else "",
-                    "author": (issue.get("author") or {}).get("username", ""),
-                    "title": issue.get("title") or "",
-                    "labels": [label.get("name", "") if isinstance(label, dict) else str(label) for label in labels],
-                    "assignees": [a.get("username", "") if isinstance(a, dict) else str(a) for a in assignees_raw],
-                    "user_notes_count": issue.get("user_notes_count") or 0,
-                    "web_url": issue.get("web_url") or "",
-                    "working_days_open": _working_days_open((issue.get("created_at") or "")[:10]),
+                    "iid":              issue.get("number"),
+                    "state":            "closed" if issue.get("state") == "closed" else "opened",
+                    "created_at":       created_raw[:10] if created_raw else "",
+                    "closed_at":        closed_raw[:10] if closed_raw else "",
+                    "author":           user.get("login", ""),
+                    "author_id":        user.get("id", ""),
+                    "title":            issue.get("title") or "",
+                    "labels":           [label.get("name", "") if isinstance(label, dict) else str(label) for label in labels_list],
+                    "issue_type":       issue.get("issue_type") or "",
+                    "issue_state":      issue.get("issue_state") or "",
+                    "assignees":        [a.get("login", "") if isinstance(a, dict) else str(a) for a in assignees_list],
+                    "user_notes_count": issue.get("comments") or 0,
+                    "web_url":          issue.get("html_url") or f"https://gitcode.com/{repo_path}/issues/{issue.get('number', '')}",
+                    "working_days_open": _working_days_open(created_raw[:10] if created_raw else ""),
                 })
-            if len(data["issues"]) < 100:
+
+            if len(data) < 100:
                 break
             page += 1
             time.sleep(REQUEST_DELAY)
@@ -2051,6 +2096,7 @@ def collect_community_mrs():
                 closed_raw = mr.get("closed_at") or ""
                 updated_raw = mr.get("updated_at") or ""
                 ent_labels = mr.get("enterprise_labels") or []
+                e2e_issues = mr.get("e2e_issues") or []
                 all_mrs.append({
                     "iid": mr.get("iid"),
                     "state": mr.get("state", "opened"),
@@ -2063,6 +2109,7 @@ def collect_community_mrs():
                     "web_url": mr.get("web_url") or "",
                     "labels": [label.get("name", "") if isinstance(label, dict) else str(label) for label in ent_labels],
                     "working_days_open": _working_days_open((mr.get("created_at") or "")[:10]),
+                    "e2e_issues": [e.get("issue_num", "").replace("issue", "") for e in e2e_issues],
                 })
             if len(data["content"]) < 100:
                 break
