@@ -185,8 +185,9 @@ def load_repo_admin_map():
     for repo in (config.get("repos") or []):
         path = repo.get("path", "")
         admin = repo.get("admin", "")
+        cc = repo.get("cc", "")
         if path and admin:
-            admin_map[path] = admin
+            admin_map[path] = (admin, cc)
     return admin_map
 
 
@@ -739,31 +740,31 @@ def main():
     staff_map = load_staff_map()
     repo_admin_map = load_repo_admin_map()
 
-    # 按 admin 邮箱分组 all stale issues
+    # 按 (admin, cc) 邮箱对分组 all stale issues
     admin_issues = defaultdict(list)
     for assignee, (email, issues) in has_email_assignees.items():
         for iss in issues:
-            repo_admin = repo_admin_map.get(iss["repo"], "")
-            if repo_admin:
-                admin_issues[repo_admin].append((assignee, iss, "有邮箱"))
+            repo_admin_cc = repo_admin_map.get(iss["repo"], ("", ""))
+            if repo_admin_cc[0]:
+                admin_issues[repo_admin_cc].append((assignee, iss, "有邮箱"))
     for assignee, iss_list in null_email_assignees.items():
         for iss in iss_list:
-            repo_admin = repo_admin_map.get(iss["repo"], "")
-            if repo_admin:
-                admin_issues[repo_admin].append((assignee, iss, "无邮箱"))
+            repo_admin_cc = repo_admin_map.get(iss["repo"], ("", ""))
+            if repo_admin_cc[0]:
+                admin_issues[repo_admin_cc].append((assignee, iss, "无邮箱"))
     for assignee, iss_list in external_assignees.items():
         for iss in iss_list:
-            repo_admin = repo_admin_map.get(iss["repo"], "")
-            if repo_admin:
-                admin_issues[repo_admin].append((assignee, iss, "外部"))
+            repo_admin_cc = repo_admin_map.get(iss["repo"], ("", ""))
+            if repo_admin_cc[0]:
+                admin_issues[repo_admin_cc].append((assignee, iss, "外部"))
     for iss in unassigned_issues:
-        repo_admin = repo_admin_map.get(iss["repo"], "")
-        if repo_admin:
-            admin_issues[repo_admin].append(("(未分配)", iss, "未分配"))
+        repo_admin_cc = repo_admin_map.get(iss["repo"], ("", ""))
+        if repo_admin_cc[0]:
+            admin_issues[repo_admin_cc].append(("(未分配)", iss, "未分配"))
 
     if admin_issues and not args.dry_run:
-        print(f"\n=== 发送管理员汇总报告（{len(admin_issues)} 位管理员） ===")
-        for admin_addr, items in sorted(admin_issues.items()):
+        print(f"\n=== 发送管理员汇总报告（{len(admin_issues)} 对 admin/cc） ===")
+        for (admin_addr, cc_addr), items in sorted(admin_issues.items()):
             items.sort(key=lambda x: -x[1]["days_open"])
             rows = ""
             for author, iss, category in items:
@@ -784,17 +785,17 @@ def main():
 <tbody>{rows}</tbody></table>
 <p style="color:#999;font-size:11px;margin-top:16px">CANN Radar 自动生成 · {CONTACT_INFO}</p></div>"""
             try:
-                send_one_email(smtp_cfg, admin_addr, f"[CANN] 超期 Issue 汇总报告（{len(items)} 个）", html)
-                print(f"  ✓ {admin_addr}: {len(items)} 个 Issue")
+                send_one_email(smtp_cfg, admin_addr, f"[CANN] 超期 Issue 汇总报告（{len(items)} 个）", html, cc_email=cc_addr if cc_addr else None)
+                print(f"  ✓ {admin_addr}" + (f" (CC: {cc_addr})" if cc_addr else "") + f": {len(items)} 个 Issue")
                 notified_data["admin_report_last_sent"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
-                notified_data["admin_report_admin"] = admin_addr
                 notified_changed = True
             except Exception as e:
                 print(f"  ✗ {admin_addr}: {e}")
     elif admin_issues and args.dry_run:
         print(f"\n=== 管理员汇总报告 ===")
-        for admin_addr, items in sorted(admin_issues.items()):
-            print(f"  → {admin_addr}: {len(items)} 个 Issue [dry-run，未发送]")
+        for (admin_addr, cc_addr), items in sorted(admin_issues.items()):
+            cc_str = f" CC:{cc_addr}" if cc_addr else ""
+            print(f"  → {admin_addr}{cc_str}: {len(items)} 个 Issue [dry-run]")
 
     if notified_changed and not args.dry_run:
         save_notified(notified_data)

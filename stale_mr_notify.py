@@ -135,7 +135,7 @@ def load_staff_map():
 
 
 def load_repo_admin_map():
-    """返回 {repo_path: admin_email}。"""
+    """返回 {repo_path: (admin_email, cc_email)}。"""
     admin_map = {}
     if not REPOS_CONFIG_PATH.exists():
         return admin_map
@@ -144,8 +144,9 @@ def load_repo_admin_map():
     for repo in (config.get("repos") or []):
         path = repo.get("path", "")
         admin = repo.get("admin", "")
+        cc = repo.get("cc", "")
         if path and admin:
-            admin_map[path] = admin
+            admin_map[path] = (admin, cc)
     return admin_map
 
 
@@ -649,27 +650,27 @@ def main():
     staff_map = load_staff_map()
     repo_admin_map = load_repo_admin_map()
 
-    # 按 admin 邮箱分组 all stale MRs
+    # 按 (admin, cc) 邮箱对分组 all stale MRs
     admin_mrs = defaultdict(list)
     for author, (email, mrs) in has_email_authors.items():
         for mr in mrs:
-            repo_admin = repo_admin_map.get(mr["repo"], "")
-            if repo_admin:
-                admin_mrs[repo_admin].append((author, mr, "有邮箱"))
+            repo_admin_cc = repo_admin_map.get(mr["repo"], ("", ""))
+            if repo_admin_cc[0]:
+                admin_mrs[repo_admin_cc].append((author, mr, "有邮箱"))
     for author, mrs_list in null_email_authors.items():
         for mr in mrs_list:
-            repo_admin = repo_admin_map.get(mr["repo"], "")
-            if repo_admin:
-                admin_mrs[repo_admin].append((author, mr, "无邮箱"))
+            repo_admin_cc = repo_admin_map.get(mr["repo"], ("", ""))
+            if repo_admin_cc[0]:
+                admin_mrs[repo_admin_cc].append((author, mr, "无邮箱"))
     for author, mrs_list in external_authors.items():
         for mr in mrs_list:
-            repo_admin = repo_admin_map.get(mr["repo"], "")
-            if repo_admin:
-                admin_mrs[repo_admin].append((author, mr, "外部"))
+            repo_admin_cc = repo_admin_map.get(mr["repo"], ("", ""))
+            if repo_admin_cc[0]:
+                admin_mrs[repo_admin_cc].append((author, mr, "外部"))
 
     if admin_mrs and not args.dry_run:
-        print(f"\n=== 发送管理员汇总报告（{len(admin_mrs)} 位管理员） ===")
-        for admin_addr, items in sorted(admin_mrs.items()):
+        print(f"\n=== 发送管理员汇总报告（{len(admin_mrs)} 对 admin/cc） ===")
+        for (admin_addr, cc_addr), items in sorted(admin_mrs.items()):
             items.sort(key=lambda x: -x[1]["days_open"])
             rows = ""
             for author, mr, category in items:
@@ -690,17 +691,17 @@ def main():
 <tbody>{rows}</tbody></table>
 <p style="color:#999;font-size:11px;margin-top:16px">CANN Radar 自动生成 · {CONTACT_INFO}</p></div>"""
             try:
-                send_one_email(smtp_cfg, admin_addr, f"[CANN] 超期 MR 汇总报告（{len(items)} 个）", html)
-                print(f"  ✓ {admin_addr}: {len(items)} 个 MR")
+                send_one_email(smtp_cfg, admin_addr, f"[CANN] 超期 MR 汇总报告（{len(items)} 个）", html, cc_email=cc_addr if cc_addr else None)
+                print(f"  ✓ {admin_addr}" + (f" (CC: {cc_addr})" if cc_addr else "") + f": {len(items)} 个 MR")
                 notified_data["admin_report_last_sent"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
-                notified_data["admin_report_admin"] = admin_addr
                 notified_changed = True
             except Exception as e:
                 print(f"  ✗ {admin_addr}: {e}")
     elif admin_mrs and args.dry_run:
         print(f"\n=== 管理员汇总报告 ===")
-        for admin_addr, items in sorted(admin_mrs.items()):
-            print(f"  → {admin_addr}: {len(items)} 个 MR [dry-run，未发送]")
+        for (admin_addr, cc_addr), items in sorted(admin_mrs.items()):
+            cc_str = f" CC:{cc_addr}" if cc_addr else ""
+            print(f"  → {admin_addr}{cc_str}: {len(items)} 个 MR [dry-run]")
 
     # 保存 tracking 文件
     if notified_changed and not args.dry_run:
