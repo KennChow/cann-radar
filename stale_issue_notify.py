@@ -54,6 +54,7 @@ MAIL_MAP_PATH = Path("config/gitcode_2_mail.txt")
 SMTP_CONFIG_PATH = Path("config/smtp_config.ini")
 ADMIN_EMAIL_PATH = Path("config/admin_email.txt")
 NOTIFIED_PATH = DATA_DIR / "stale_issue_notified.json"
+STAFF_MAP_PATH = Path("config/gitcode_2_staff.txt")
 
 DEFAULT_STALE_DAYS = 14
 RESEND_INTERVAL_DAYS = 7
@@ -159,6 +160,43 @@ def load_admin_email():
     if text:
         return text.splitlines()[0].strip()
     return None
+
+
+def load_staff_map():
+    staff = {}
+    if not STAFF_MAP_PATH.exists():
+        return staff
+    for line in STAFF_MAP_PATH.read_text(encoding="utf-8").splitlines():
+        parts = line.strip().split("\t")
+        if len(parts) < 3:
+            continue
+        uid, name, eid = parts[0], parts[1], parts[2]
+        if uid:
+            staff[uid] = (name, eid)
+    return staff
+
+
+def load_repo_admin_map():
+    admin_map = {}
+    if not REPOS_CONFIG_PATH.exists():
+        return admin_map
+    with open(REPOS_CONFIG_PATH, encoding="utf-8") as f:
+        config = yaml.safe_load(f) or {}
+    for repo in (config.get("repos") or []):
+        path = repo.get("path", "")
+        admin = repo.get("admin", "")
+        if path and admin:
+            admin_map[path] = admin
+    return admin_map
+
+
+def _author_display(author, staff_map, mail_map):
+    if author in staff_map:
+        name, eid = staff_map[author]
+        return f"{author} ({name}/{eid})"
+    if author in mail_map:
+        return f"{author} (有映射无邮箱)"
+    return f"{author} (外部)"
 
 
 def load_notified():
@@ -697,38 +735,66 @@ def main():
     if sent > 0 and not args.dry_run:
         _mark_issue_notified(notified_data, matched_issues)
 
-    # 管理员汇总报告
-    if args.dry_run:
-        if admin_email and (null_email_assignees or external_assignees or unassigned_issues):
-            print(f"\n=== 管理员汇总报告 ===")
-            print(f"  → 将发送到 {admin_email} [dry-run，未发送]")
-            print(f"    有映射无邮箱: {len(null_email_assignees)} 人")
-            print(f"    外部 assignee: {len(external_assignees)} 人")
-            print(f"    未分配负责人: {len(unassigned_issues)} 个")
-        elif not admin_email and (null_email_assignees or external_assignees or unassigned_issues):
-            print(f"\n=== 管理员汇总报告 ===")
-            print(f"  → 管理员邮箱未配置，跳过发送 [dry-run]")
-    elif admin_email and (null_email_assignees or external_assignees or unassigned_issues):
-        print(f"\n=== 发送管理员汇总报告 → {admin_email} ===")
-        admin_html = build_admin_report_html(
-            stats, unassigned_issues, null_email_assignees, external_assignees, args.stale_days,
-        )
-        try:
-            send_one_email(
-                smtp_cfg, admin_email,
-                f"[CANN] 超期 Issue 管理员报告（未分配 {len(unassigned_issues)}，无邮箱 {len(null_email_assignees)}，外部 {len(external_assignees)}）",
-                admin_html,
-            )
-            print(f"  ✓ 管理员汇总报告已发送")
-            notified_data["admin_report_last_sent"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
-            notified_data["admin_report_summary"] = {
-                "unassigned": len(unassigned_issues),
-                "null_email": len(null_email_assignees),
-                "external": len(external_assignees),
-            }
-            notified_changed = True
-        except Exception as e:
-            print(f"  ✗ 管理员汇总报告发送失败: {e}")
+    # 管理员汇总报告（按 repo admin 分组，表格展示）
+    staff_map = load_staff_map()
+    repo_admin_map = load_repo_admin_map()
+
+    # 按 admin 邮箱分组 all stale issues
+    admin_issues = defaultdict(list)
+    for assignee, (email, issues) in has_email_assignees.items():
+        for iss in issues:
+            repo_admin = repo_admin_map.get(iss["repo"], "")
+            if repo_admin:
+                admin_issues[repo_admin].append((assignee, iss, "有邮箱"))
+    for assignee, iss_list in null_email_assignees.items():
+        for iss in iss_list:
+            repo_admin = repo_admin_map.get(iss["repo"], "")
+            if repo_admin:
+                admin_issues[repo_admin].append((assignee, iss, "无邮箱"))
+    for assignee, iss_list in external_assignees.items():
+        for iss in iss_list:
+            repo_admin = repo_admin_map.get(iss["repo"], "")
+            if repo_admin:
+                admin_issues[repo_admin].append((assignee, iss, "外部"))
+    for iss in unassigned_issues:
+        repo_admin = repo_admin_map.get(iss["repo"], "")
+        if repo_admin:
+            admin_issues[repo_admin].append(("(未分配)", iss, "未分配"))
+
+    if admin_issues and not args.dry_run:
+        print(f"\n=== 发送管理员汇总报告（{len(admin_issues)} 位管理员） ===")
+        for admin_addr, items in sorted(admin_issues.items()):
+            items.sort(key=lambda x: -x[1]["days_open"])
+            rows = ""
+            for author, iss, category in items:
+                display = _author_display(author, staff_map, mail_map) if author != "(未分配)" else "(未分配负责人)"
+                rows += f"<tr><td>{iss['title'][:50]}</td><td><a href='{iss['web_url']}'>#{iss['iid']}</a></td><td>{iss['days_open']}天</td><td>{display}</td><td>{iss['repo']}</td></tr>"
+
+            html = f"""<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:800px">
+<h2>超期 Issue 汇总报告</h2>
+<p style="color:#666;font-size:13px">日期: {datetime.now().strftime('%Y-%m-%d')} | 共 {len(items)} 个超期 Issue（非Requirement）</p>
+<table style="width:100%;border-collapse:collapse;font-size:13px;border:1px solid #e2e4ea">
+<thead><tr style="background:#f0f2f5">
+<th style="padding:8px 10px;text-align:left">标题</th>
+<th style="padding:8px 10px;text-align:left">链接</th>
+<th style="padding:8px 10px;text-align:center">时长</th>
+<th style="padding:8px 10px;text-align:left">负责人</th>
+<th style="padding:8px 10px;text-align:left">仓库</th>
+</tr></thead>
+<tbody>{rows}</tbody></table>
+<p style="color:#999;font-size:11px;margin-top:16px">CANN Radar 自动生成 · {CONTACT_INFO}</p></div>"""
+            try:
+                send_one_email(smtp_cfg, admin_addr, f"[CANN] 超期 Issue 汇总报告（{len(items)} 个）", html)
+                print(f"  ✓ {admin_addr}: {len(items)} 个 Issue")
+                notified_data["admin_report_last_sent"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+                notified_data["admin_report_admin"] = admin_addr
+                notified_changed = True
+            except Exception as e:
+                print(f"  ✗ {admin_addr}: {e}")
+    elif admin_issues and args.dry_run:
+        print(f"\n=== 管理员汇总报告 ===")
+        for admin_addr, items in sorted(admin_issues.items()):
+            print(f"  → {admin_addr}: {len(items)} 个 Issue [dry-run，未发送]")
 
     if notified_changed and not args.dry_run:
         save_notified(notified_data)

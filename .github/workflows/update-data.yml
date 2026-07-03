@@ -73,6 +73,7 @@ jobs:
           cp .private/smtp_config.ini config/smtp_config.ini
           cp .private/admin_email.txt config/admin_email.txt
           cp .private/gitcode_token.txt config/gitcode_token.txt
+          cp .private/gitcode_2_staff.txt config/gitcode_2_staff.txt
 
       - name: Setup Python
         uses: actions/setup-python@v5

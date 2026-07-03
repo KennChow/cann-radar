@@ -22,5 +22,8 @@ config/admin_email.txt
 # GitCode API Token（敏感数据，通过 CI Secret / 私有仓注入）
 config/gitcode_token.txt
 
+# GitCode ID → 姓名+工号 映射（敏感数据，通过 CI Secret / 私有仓注入）
+config/gitcode_2_staff.txt
+
 # Python 缓存
 __pycache__/
