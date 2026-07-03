@@ -1828,7 +1828,8 @@ async function main() {
         if (i.state !== 'opened') return false;
         const title = (i.title || '');
         const labels = (i.labels || []);
-        const isRequirement = title.includes('[RFC]') 
+        const isRequirement = (i.issue_type === '需求')
+          || title.includes('[RFC]') 
           || title.includes('[Feature-Request|需求反馈]')
           || labels.includes('requirement');
         if (isRequirement) return false;
@@ -1841,7 +1842,8 @@ async function main() {
         if (i.state !== 'opened') return false;
         const title = (i.title || '');
         const labels = (i.labels || []);
-        const isRequirement = title.includes('[RFC]') 
+        const isRequirement = (i.issue_type === '需求')
+          || title.includes('[RFC]') 
           || title.includes('[Feature-Request|需求反馈]')
           || labels.includes('requirement');
         if (!isRequirement) return false;
