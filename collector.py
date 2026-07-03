@@ -1327,6 +1327,7 @@ def _fetch_repo_mrs(repo, mrs_dir):
             all_mrs.append({
                 "iid":        mr.get("iid"),
                 "state":      mr.get("state", "opened"),
+                "draft":      mr.get("draft", False),
                 "title":      mr.get("title") or "",
                 "created_at": (mr.get("created_at") or "")[:10],
                 "updated_at": (updated_raw[:10] if updated_raw else ""),
@@ -2100,6 +2101,7 @@ def collect_community_mrs():
                 all_mrs.append({
                     "iid": mr.get("iid"),
                     "state": mr.get("state", "opened"),
+                    "draft": mr.get("draft", False),
                     "title": mr.get("title") or "",
                     "created_at": (mr.get("created_at") or "")[:10],
                     "updated_at": updated_raw[:10] if updated_raw else "",

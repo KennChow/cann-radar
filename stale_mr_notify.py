@@ -245,6 +245,8 @@ def scan_stale_mrs(stale_days, notify_paths=None, notified=None):
         for mr in mrs:
             if mr.get("state") != "opened":
                 continue
+            if mr.get("draft"):
+                continue
             stats["total_opened"] += 1
 
             iid = mr.get("iid")
