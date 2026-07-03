@@ -108,11 +108,31 @@ repos:
     label: 外部D2 开发者数量
     targets:
     - date: '2026-06-30'
-      target: 5
+      target: 10
     - date: '2026-09-30'
-      target: 16
+      target: 20
     - date: '2026-12-30'
       target: 30
+- path: cann/metadef
+  display_name: MetaDef
+  enabled: true
+  notify: true
+  goals:
+  - metric: star
+    label: Star 数
+    targets:
+    - label: 2026年底达到500
+      target: 500
+- path: cann/tensorflow
+  display_name: TensorFlow
+  enabled: true
+  notify: true
+  goals:
+  - metric: star
+    label: Star 数
+    targets:
+    - label: 2026年底达到100
+      target: 100
 - path: Ascend/torchair
   display_name: TorchAir
   enabled: true
