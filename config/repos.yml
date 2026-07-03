@@ -116,7 +116,7 @@ repos:
 - path: Ascend/torchair
   display_name: TorchAir
   enabled: true
-  notify: false
+  notify: true
   goals:
   - metric: star
     label: Star 数
