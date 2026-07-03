@@ -736,64 +736,22 @@ def main():
     if sent > 0 and not args.dry_run:
         _mark_issue_notified(notified_data, matched_issues)
 
-    # 管理员汇总报告（按 repo admin 分组，表格展示）
-    staff_map = load_staff_map()
-    repo_admin_map = load_repo_admin_map()
-
-    # 按 (admin, cc, repo) 分组
-    admin_issues = defaultdict(list)
-    for assignee, (email, issues) in has_email_assignees.items():
-        for iss in issues:
-            repo_admin_cc = repo_admin_map.get(iss["repo"], ("", ""))
-            if repo_admin_cc[0]:
-                admin_issues[(*repo_admin_cc, iss["repo"])].append((assignee, iss, "有邮箱"))
-    for assignee, iss_list in null_email_assignees.items():
-        for iss in iss_list:
-            repo_admin_cc = repo_admin_map.get(iss["repo"], ("", ""))
-            if repo_admin_cc[0]:
-                admin_issues[(*repo_admin_cc, iss["repo"])].append((assignee, iss, "无邮箱"))
-    for assignee, iss_list in external_assignees.items():
-        for iss in iss_list:
-            repo_admin_cc = repo_admin_map.get(iss["repo"], ("", ""))
-            if repo_admin_cc[0]:
-                admin_issues[(*repo_admin_cc, iss["repo"])].append((assignee, iss, "外部"))
-    for iss in unassigned_issues:
-        repo_admin_cc = repo_admin_map.get(iss["repo"], ("", ""))
-        if repo_admin_cc[0]:
-            admin_issues[(*repo_admin_cc, iss["repo"])].append(("(未分配)", iss, "未分配"))
-
-    if admin_issues and not args.dry_run:
-        print(f"\n=== 发送管理员汇总报告（{len(admin_issues)} 封） ===")
-        for (admin_addr, cc_addr, repo), items in sorted(admin_issues.items()):
-            items.sort(key=lambda x: -x[1]["days_open"])
-            rows = ""
-            for author, iss, category in items:
-                display = _author_display(author, staff_map, mail_map) if author != "(未分配)" else "(未分配负责人)"
-                rows += f"<tr><td>{iss['title'][:50]}</td><td><a href='{iss['web_url']}'>#{iss['iid']}</a></td><td>{iss['days_open']}天</td><td>{display}</td></tr>"
-
-            html = f"""<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:800px">
-<h2>超期 Issue 汇总报告</h2>
-<p style="color:#666;font-size:13px">仓库: {repo} | 日期: {datetime.now().strftime('%Y-%m-%d')} | 共 {len(items)} 个超期 Issue（非Requirement）</p>
-<table style="width:100%;border-collapse:collapse;font-size:13px;border:1px solid #e2e4ea">
-<thead><tr style="background:#f0f2f5">
-<th style="padding:8px 10px;text-align:left">标题</th>
-<th style="padding:8px 10px;text-align:left">链接</th>
-<th style="padding:8px 10px;text-align:center">时长</th>
-<th style="padding:8px 10px;text-align:left">负责人</th>
-</tr></thead>
-<tbody>{rows}</tbody></table>
-<p style="color:#999;font-size:11px;margin-top:16px">CANN Radar 自动生成 · {CONTACT_INFO}</p></div>"""
-            try:
-                send_one_email(smtp_cfg, admin_addr, f"[CANN] 超期 Issue 汇总报告 - {repo}（{len(items)} 个）", html, cc_email=cc_addr if cc_addr else None)
-                print(f"  ✓ {repo} → {admin_addr}" + (f" (CC: {cc_addr})" if cc_addr else "") + f": {len(items)} 个 Issue")
-                notified_changed = True
-            except Exception as e:
-                print(f"  ✗ {repo} → {admin_addr}: {e}")
-    elif admin_issues and args.dry_run:
-        print(f"\n=== 管理员汇总报告 ===")
-        for (admin_addr, cc_addr, repo), items in sorted(admin_issues.items()):
-            cc_str = f" CC:{cc_addr}" if cc_addr else ""
-            print(f"  → {repo} → {admin_addr}{cc_str}: {len(items)} 个 Issue [dry-run]")
+    # 保存 Issue 汇总数据供 admin_summary.py 读取
+    if matched_issues and not args.dry_run:
+        summary_issues = []
+        for assignee, (email, issues) in has_email_assignees.items():
+            for iss in issues:
+                summary_issues.append({"assignee_display": assignee, "category": "有邮箱", **{k: iss[k] for k in ["repo","iid","title","days_open","web_url","notify_stage"]}})
+        for assignee, iss_list in null_email_assignees.items():
+            for iss in iss_list:
+                summary_issues.append({"assignee_display": assignee, "category": "无邮箱", **{k: iss[k] for k in ["repo","iid","title","days_open","web_url","notify_stage"]}})
+        for assignee, iss_list in external_assignees.items():
+            for iss in iss_list:
+                summary_issues.append({"assignee_display": assignee, "category": "外部", **{k: iss[k] for k in ["repo","iid","title","days_open","web_url","notify_stage"]}})
+        for iss in unassigned_issues:
+            summary_issues.append({"assignee_display": "(未分配)", "category": "未分配", **{k: iss[k] for k in ["repo","iid","title","days_open","web_url","notify_stage"]}})
+        with open(DATA_DIR / "admin_issue_summary.json", "w", encoding="utf-8") as f:
+            json.dump({"issue_items": summary_issues, "stats": stats, "stale_days": args.stale_days}, f, ensure_ascii=False)
 
     if notified_changed and not args.dry_run:
         save_notified(notified_data)

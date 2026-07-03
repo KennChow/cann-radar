@@ -172,3 +172,12 @@ jobs:
             git commit -m "chore: 更新超期 Issue 通知记录 $(date -u '+%Y-%m-%d')"
             git push
           )
+
+      - name: Send combined admin summary
+        if: github.event_name == 'schedule' || github.event.inputs.run_stale_notify == 'true' || github.event.inputs.run_issue_notify == 'true'
+        run: |
+          if [ -n "${{ github.event.inputs.admin_report_to }}" ]; then
+            python admin_summary.py --test ${{ github.event.inputs.admin_report_to }}
+          else
+            python admin_summary.py
+          fi

@@ -641,65 +641,25 @@ def main():
         sent, failed = _send_personal_emails(
             has_email_authors, smtp_cfg, notified_data, admin_email, args,
         )
-        if sent > 0 and not args.dry_run:
-            notified_changed = True
+    if sent > 0 and not args.dry_run:
+        notified_changed = True
+
+    # 保存 MR 汇总数据供 admin_summary.py 读取
+    if stale_by_author and not args.dry_run:
+        summary_mrs = []
+        for author, (email, mrs) in has_email_authors.items():
+            for mr in mrs:
+                summary_mrs.append({"author": author, "category": "有邮箱", **{k: mr[k] for k in ["repo","iid","title","days_open","web_url","notify_stage"]}})
+        for author, mrs_list in null_email_authors.items():
+            for mr in mrs_list:
+                summary_mrs.append({"author": author, "category": "无邮箱", **{k: mr[k] for k in ["repo","iid","title","days_open","web_url","notify_stage"]}})
+        for author, mrs_list in external_authors.items():
+            for mr in mrs_list:
+                summary_mrs.append({"author": author, "category": "外部", **{k: mr[k] for k in ["repo","iid","title","days_open","web_url","notify_stage"]}})
+        with open(DATA_DIR / "admin_mr_summary.json", "w", encoding="utf-8") as f:
+            json.dump({"mr_items": summary_mrs, "stats": stats, "stale_days": args.stale_days}, f, ensure_ascii=False)
         if not args.dry_run:
             print(f"\n  个人通知: 已发送 {sent}, 失败 {failed}")
-
-    # 发送管理员汇总报告（按 repo admin 分组，表格展示）
-    staff_map = load_staff_map()
-    repo_admin_map = load_repo_admin_map()
-
-    # 按 (admin, cc, repo) 分组
-    admin_mrs = defaultdict(list)
-    for author, (email, mrs) in has_email_authors.items():
-        for mr in mrs:
-            repo_admin_cc = repo_admin_map.get(mr["repo"], ("", ""))
-            if repo_admin_cc[0]:
-                admin_mrs[(*repo_admin_cc, mr["repo"])].append((author, mr, "有邮箱"))
-    for author, mrs_list in null_email_authors.items():
-        for mr in mrs_list:
-            repo_admin_cc = repo_admin_map.get(mr["repo"], ("", ""))
-            if repo_admin_cc[0]:
-                admin_mrs[(*repo_admin_cc, mr["repo"])].append((author, mr, "无邮箱"))
-    for author, mrs_list in external_authors.items():
-        for mr in mrs_list:
-            repo_admin_cc = repo_admin_map.get(mr["repo"], ("", ""))
-            if repo_admin_cc[0]:
-                admin_mrs[(*repo_admin_cc, mr["repo"])].append((author, mr, "外部"))
-
-    if admin_mrs and not args.dry_run:
-        print(f"\n=== 发送管理员汇总报告（{len(admin_mrs)} 封） ===")
-        for (admin_addr, cc_addr, repo), items in sorted(admin_mrs.items()):
-            items.sort(key=lambda x: -x[1]["days_open"])
-            rows = ""
-            for author, mr, category in items:
-                display = _author_display(author, staff_map, mail_map)
-                rows += f"<tr><td>{display}</td><td>{mr['title'][:50]}</td><td><a href='{mr['web_url']}'>#{mr['iid']}</a></td><td>{mr['days_open']}天</td></tr>"
-
-            html = f"""<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:800px">
-<h2>超期 MR 汇总报告</h2>
-<p style="color:#666;font-size:13px">仓库: {repo} | 日期: {datetime.now().strftime('%Y-%m-%d')} | 共 {len(items)} 个超期 MR</p>
-<table style="width:100%;border-collapse:collapse;font-size:13px;border:1px solid #e2e4ea">
-<thead><tr style="background:#f0f2f5">
-<th style="padding:8px 10px;text-align:left">提交人</th>
-<th style="padding:8px 10px;text-align:left">标题</th>
-<th style="padding:8px 10px;text-align:left">链接</th>
-<th style="padding:8px 10px;text-align:center">时长</th>
-</tr></thead>
-<tbody>{rows}</tbody></table>
-<p style="color:#999;font-size:11px;margin-top:16px">CANN Radar 自动生成 · {CONTACT_INFO}</p></div>"""
-            try:
-                send_one_email(smtp_cfg, admin_addr, f"[CANN] 超期 MR 汇总报告 - {repo}（{len(items)} 个）", html, cc_email=cc_addr if cc_addr else None)
-                print(f"  ✓ {repo} → {admin_addr}" + (f" (CC: {cc_addr})" if cc_addr else "") + f": {len(items)} 个 MR")
-                notified_changed = True
-            except Exception as e:
-                print(f"  ✗ {repo} → {admin_addr}: {e}")
-    elif admin_mrs and args.dry_run:
-        print(f"\n=== 管理员汇总报告 ===")
-        for (admin_addr, cc_addr, repo), items in sorted(admin_mrs.items()):
-            cc_str = f" CC:{cc_addr}" if cc_addr else ""
-            print(f"  → {repo} → {admin_addr}{cc_str}: {len(items)} 个 MR [dry-run]")
 
     # 保存 tracking 文件
     if notified_changed and not args.dry_run:
