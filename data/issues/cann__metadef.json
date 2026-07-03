@@ -1,0 +1,1427 @@
+[
+  {
+    "iid": "81",
+    "state": "opened",
+    "created_at": "2026-06-25",
+    "closed_at": "",
+    "author": "gothizzz",
+    "author_id": "68555bb1d8f0940af04e58e9",
+    "title": "[Bug-Report|缺陷反馈]: init_env.sh硬编码CANN_VERSION=9.0.0与master制品库实际版本(9.1.0)漂移导致下载404",
+    "labels": [
+      "bug"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yelongjian",
+      "gcw_3CxwvBIO"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/81",
+    "working_days_open": 7
+  },
+  {
+    "iid": "80",
+    "state": "opened",
+    "created_at": "2026-06-25",
+    "closed_at": "",
+    "author": "gothizzz",
+    "author_id": "68555bb1d8f0940af04e58e9",
+    "title": "[Bug-Report|缺陷反馈]: check_env.sh libasan检查未覆盖openEuler等dnf系gcc库路径，产生误报",
+    "labels": [
+      "bug"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yelongjian",
+      "gcw_3CxwvBIO"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/80",
+    "working_days_open": 7
+  },
+  {
+    "iid": "79",
+    "state": "opened",
+    "created_at": "2026-06-25",
+    "closed_at": "",
+    "author": "gothizzz",
+    "author_id": "68555bb1d8f0940af04e58e9",
+    "title": "[Bug-Report|缺陷反馈]: example样例Makefile硬编码aarch64头文件路径，x86_64环境编译失败",
+    "labels": [
+      "bug"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yelongjian"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/79",
+    "working_days_open": 7
+  },
+  {
+    "iid": "78",
+    "state": "opened",
+    "created_at": "2026-06-18",
+    "closed_at": "",
+    "author": "munanhw",
+    "author_id": "6864e0b9543b5b4023554e86",
+    "title": "[Documentation|文档反馈]: 文档中关于算子实例化后的索引和原型定义的索引描述不清，难以理解",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "lidaoming1"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/78",
+    "working_days_open": 11
+  },
+  {
+    "iid": "77",
+    "state": "opened",
+    "created_at": "2026-06-03",
+    "closed_at": "",
+    "author": "ffmh",
+    "author_id": "673d5a236704dc4ab7a050ba",
+    "title": "[Bug-Report|缺陷反馈]: aclInit在AdxDataDumpServerInit报错，与dump组件有同名函数，走到ge中报错",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "xiangrenzhi"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/77",
+    "working_days_open": 22
+  },
+  {
+    "iid": "76",
+    "state": "closed",
+    "created_at": "2026-05-29",
+    "closed_at": "2026-05-29",
+    "author": "maybeclear",
+    "author_id": "68230eda096b0e7b44aa8ca2",
+    "title": "[Bug-Report|缺陷反馈]: 训练报错aclrtStreamWaitEventWithTimeoutImpl:[Check][PARAM]timeout is invalid, must be [1, INT_MAX]. value=0",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已解决",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/76",
+    "working_days_open": 25
+  },
+  {
+    "iid": "75",
+    "state": "closed",
+    "created_at": "2026-05-26",
+    "closed_at": "2026-06-25",
+    "author": "Kevin_lee127",
+    "author_id": "69420352e4f37f6dc9ea24c2",
+    "title": "[Bug-Report|缺陷反馈]: 使用cann 9.0.0基于Ascend的FFmpeg流媒体框架指导进行编译报错/usr/local/Ascend/cann-9.0.0/include/acl/acl_dump.h:82:48: 错误: unknown type name 'acldumpType'",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已解决",
+    "assignees": [
+      "yring_8"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/75",
+    "working_days_open": 28
+  },
+  {
+    "iid": "74",
+    "state": "closed",
+    "created_at": "2026-05-25",
+    "closed_at": "2026-05-25",
+    "author": "fanzijian",
+    "author_id": "67d2d396d9cf996e0896bea9",
+    "title": "[Question|问题咨询]: stride.h头文件在算子仓怎么使用",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已解决",
+    "assignees": [],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/74",
+    "working_days_open": 29
+  },
+  {
+    "iid": "73",
+    "state": "closed",
+    "created_at": "2026-05-22",
+    "closed_at": "2026-05-29",
+    "author": "zDaPao",
+    "author_id": "69e714513a599c3e8a50a24c",
+    "title": "[Question|问题咨询]: FormulaNet_plus-S模型进行ATC转换时报错：[ERROR] GE(785706,atc.bin):ErrorNo: 4294967295(failed)Check op[Loop.0]'s type[ai.onnx::18::Loop] failed, it is not   supported.",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "luanchaowei"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/73",
+    "working_days_open": 30
+  },
+  {
+    "iid": "72",
+    "state": "closed",
+    "created_at": "2026-05-18",
+    "closed_at": "2026-06-25",
+    "author": "tmj1128",
+    "author_id": "68d527fe2300fb0b99db5af4",
+    "title": "[Documentation|文档反馈]: 执行ut用例时，报错显示patch command not found",
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已解决",
+    "assignees": [
+      "jikai-tyler"
+    ],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/metadef/issues/72",
+    "working_days_open": 34
+  },
+  {
+    "iid": "71",
+    "state": "closed",
+    "created_at": "2026-05-12",
+    "closed_at": "2026-06-25",
+    "author": "wyc123123",
+    "author_id": "670cbc729efb902826cd4674",
+    "title": "[Question|问题咨询]:atc转换自定义算子异常",
+    "labels": [
+      "wait-feedback"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "SeasonChu"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/71",
+    "working_days_open": 38
+  },
+  {
+    "iid": "70",
+    "state": "closed",
+    "created_at": "2026-05-06",
+    "closed_at": "2026-05-22",
+    "author": "gcw_b8nYhkS1",
+    "author_id": "69cf5f69825aa17db1a98d54",
+    "title": "[Question|问题咨询]: 如何获得OM的中间输出？",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "ClarkXie"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/70",
+    "working_days_open": 43
+  },
+  {
+    "iid": "69",
+    "state": "closed",
+    "created_at": "2026-05-05",
+    "closed_at": "2026-06-18",
+    "author": "Is-zhang-san",
+    "author_id": "67e3f82494d1d5302aadcce7",
+    "title": "[Documentation|文档反馈]: ",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已解决",
+    "assignees": [
+      "Mexyy"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/69",
+    "working_days_open": 43
+  },
+  {
+    "iid": "68",
+    "state": "closed",
+    "created_at": "2026-04-25",
+    "closed_at": "2026-04-28",
+    "author": "pichangping",
+    "author_id": "69a58e1d409bd453cbbd094a",
+    "title": "[Question|问题咨询]: torch_npu.npu_scatter_pa_kv_cache使用问题",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "KenChow"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/68",
+    "working_days_open": 47
+  },
+  {
+    "iid": "67",
+    "state": "closed",
+    "created_at": "2026-04-21",
+    "closed_at": "2026-04-22",
+    "author": "leironghao1",
+    "author_id": "65ec03a6e26555793de71288",
+    "title": "[Question|问题咨询]: ",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已解决",
+    "assignees": [
+      "yelongjian"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/67",
+    "working_days_open": 51
+  },
+  {
+    "iid": "65",
+    "state": "closed",
+    "created_at": "2026-04-14",
+    "closed_at": "2026-04-15",
+    "author": "xiong-pan",
+    "author_id": "681cac84e4b985165b49229b",
+    "title": "[Question|问题咨询]: 想问一下aclfinalize接口不调用会有什么影响？",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "luanchaowei"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/65",
+    "working_days_open": 56
+  },
+  {
+    "iid": "64",
+    "state": "closed",
+    "created_at": "2026-04-10",
+    "closed_at": "2026-04-15",
+    "author": "sisyphus11",
+    "author_id": "672609e20fac5a405d4db0ad",
+    "title": "[Bug-Report|缺陷反馈]: 910b4大模型推理加载失败",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "luanchaowei"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/64",
+    "working_days_open": 58
+  },
+  {
+    "iid": "63",
+    "state": "closed",
+    "created_at": "2026-04-03",
+    "closed_at": "2026-04-17",
+    "author": "gcw_b8nYhkS1",
+    "author_id": "69cf5f69825aa17db1a98d54",
+    "title": "[Question|问题咨询]: 用atc工具转换onnx模型为om格式后，更改om的代码，是否可以反向生成新的om模型？",
+    "labels": [
+      "wait-feedback"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/metadef/issues/63",
+    "working_days_open": 62
+  },
+  {
+    "iid": "62",
+    "state": "closed",
+    "created_at": "2026-03-28",
+    "closed_at": "2026-04-13",
+    "author": "chenyizhou",
+    "author_id": "6884861cbac92f260ce3343c",
+    "title": "[Question|问题咨询]: GetOptionalInputTensor接口使用问题",
+    "labels": [
+      "wait-feedback"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "wqtshg_wt"
+    ],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/metadef/issues/62",
+    "working_days_open": 66
+  },
+  {
+    "iid": "60",
+    "state": "closed",
+    "created_at": "2026-03-24",
+    "closed_at": "2026-03-25",
+    "author": "mei-feiyao",
+    "author_id": "681cc6fcb3a86414eb59ca57",
+    "title": "[Bug-Report|缺陷反馈]: 最新cann包跑程序挂掉，有double free的问题",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "Guanam2020"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/60",
+    "working_days_open": 70
+  },
+  {
+    "iid": "61",
+    "state": "closed",
+    "created_at": "2026-03-24",
+    "closed_at": "2026-03-27",
+    "author": "or_2928",
+    "author_id": "68901d28c466bc1c87a0608d",
+    "title": "[Bug-Report|缺陷反馈]: 算子级别内存采集能力失效",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已解决",
+    "assignees": [
+      "Guanam2020"
+    ],
+    "user_notes_count": 4,
+    "web_url": "https://gitcode.com/cann/metadef/issues/61",
+    "working_days_open": 70
+  },
+  {
+    "iid": "58",
+    "state": "closed",
+    "created_at": "2026-03-20",
+    "closed_at": "2026-04-07",
+    "author": "weixin_42705347",
+    "author_id": "672759421962450a04b302fa",
+    "title": "[Question|问题咨询]: 可以在host的tiling侧修改算子输入吗",
+    "labels": [
+      "wait-feedback"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已解决",
+    "assignees": [
+      "fu-jun2"
+    ],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/metadef/issues/58",
+    "working_days_open": 72
+  },
+  {
+    "iid": "57",
+    "state": "closed",
+    "created_at": "2026-03-20",
+    "closed_at": "2026-03-20",
+    "author": "ascend-robot",
+    "author_id": "680e157b4e445c0df960c4c4",
+    "title": "CVE-2026-33210",
+    "labels": [
+      "CVE/UNAFFECTED"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "fu-jun2"
+    ],
+    "user_notes_count": 5,
+    "web_url": "https://gitcode.com/cann/metadef/issues/57",
+    "working_days_open": 72
+  },
+  {
+    "iid": "56",
+    "state": "closed",
+    "created_at": "2026-03-19",
+    "closed_at": "2026-03-19",
+    "author": "B1anrK",
+    "author_id": "67d2a8de729ec40f0ee0c8e5",
+    "title": "[Question|问题咨询]: TFA2.6.5是否支持TF Serving？",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/56",
+    "working_days_open": 73
+  },
+  {
+    "iid": "54",
+    "state": "closed",
+    "created_at": "2026-03-09",
+    "closed_at": "2026-03-12",
+    "author": "zjun0",
+    "author_id": "67919de4486a2e49301cb19f",
+    "title": "[Bug-Report|缺陷反馈]: 描述格式问题",
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 5,
+    "web_url": "https://gitcode.com/cann/metadef/issues/54",
+    "working_days_open": 81
+  },
+  {
+    "iid": "53",
+    "state": "closed",
+    "created_at": "2026-03-09",
+    "closed_at": "2026-03-11",
+    "author": "zjun0",
+    "author_id": "67919de4486a2e49301cb19f",
+    "title": "[Documentation|文档反馈]:ops只有ops-nn吗？",
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/53",
+    "working_days_open": 81
+  },
+  {
+    "iid": "52",
+    "state": "closed",
+    "created_at": "2026-03-08",
+    "closed_at": "2026-03-12",
+    "author": "zhanghongge",
+    "author_id": "67e3aa1febbeef4e36a06314",
+    "title": "[Bug-Report|缺陷反馈]: 12个文件的版权声明不标准，建议修改成附件E列的内容",
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yelongjian"
+    ],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/metadef/issues/52",
+    "working_days_open": 81
+  },
+  {
+    "iid": "51",
+    "state": "closed",
+    "created_at": "2026-03-06",
+    "closed_at": "2026-03-06",
+    "author": "wuyangzhong",
+    "author_id": "69366a5e3ac3c0435ee29715",
+    "title": "[Question|问题咨询]: 更换环境后，使用ACL_SUCCESS判断时报错NameError: name 'ACL_SUCCESS' is not defined",
+    "labels": [],
+    "issue_type": "咨询",
+    "issue_state": "已解决",
+    "assignees": [
+      "Guanam2020",
+      "hugo111"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/51",
+    "working_days_open": 82
+  },
+  {
+    "iid": "50",
+    "state": "closed",
+    "created_at": "2026-03-05",
+    "closed_at": "2026-03-19",
+    "author": "zlh_00878162",
+    "author_id": "69a7e9e5b655fe009f9d8a01",
+    "title": "[Question|问题咨询]: 调用aclmdlLoadFromFile接口时报了SIGABRT (Aborted)的错，但实际我的modelpath是没有给错的，可能是什么原因",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "fu-jun2"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/50",
+    "working_days_open": 83
+  },
+  {
+    "iid": "49",
+    "state": "closed",
+    "created_at": "2026-03-05",
+    "closed_at": "2026-03-19",
+    "author": "tmj1128",
+    "author_id": "68d527fe2300fb0b99db5af4",
+    "title": "[Documentation|文档反馈]: readme首页中Latest News中未及时更新，最近还是12/26项目首次上线",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "fu-jun2"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/49",
+    "working_days_open": 83
+  },
+  {
+    "iid": "48",
+    "state": "closed",
+    "created_at": "2026-03-04",
+    "closed_at": "2026-03-13",
+    "author": "zlh_00878162",
+    "author_id": "69a7e9e5b655fe009f9d8a01",
+    "title": "[Question|问题咨询]: 使用onnx转om模型时，出现了linux_aarch64的后缀",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "chenqian1365"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/48",
+    "working_days_open": 84
+  },
+  {
+    "iid": "47",
+    "state": "closed",
+    "created_at": "2026-03-03",
+    "closed_at": "2026-03-04",
+    "author": "tmj1128",
+    "author_id": "68d527fe2300fb0b99db5af4",
+    "title": "[Documentation|文档反馈]: 需要说明手工新建opensource文件夹",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/metadef/issues/47",
+    "working_days_open": 85
+  },
+  {
+    "iid": "46",
+    "state": "closed",
+    "created_at": "2026-03-03",
+    "closed_at": "2026-03-24",
+    "author": "tmj1128",
+    "author_id": "68d527fe2300fb0b99db5af4",
+    "title": "编译metadef仓时，存在部分warning告警，建议清理",
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "stevenaw0"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/46",
+    "working_days_open": 85
+  },
+  {
+    "iid": "45",
+    "state": "closed",
+    "created_at": "2026-03-03",
+    "closed_at": "2026-03-16",
+    "author": "tmj1128",
+    "author_id": "68d527fe2300fb0b99db5af4",
+    "title": "[Documentation|文档反馈]:执行metadef ut用例没有汇总数据",
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yelongjian"
+    ],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/metadef/issues/45",
+    "working_days_open": 85
+  },
+  {
+    "iid": "44",
+    "state": "closed",
+    "created_at": "2026-03-02",
+    "closed_at": "2026-03-02",
+    "author": "huang-wei-chen",
+    "author_id": "6822d7c960184036954b1709",
+    "title": "[Question|问题咨询]: 可以修改配置文件来控制算子使用核数吗？",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/44",
+    "working_days_open": 86
+  },
+  {
+    "iid": "43",
+    "state": "closed",
+    "created_at": "2026-02-28",
+    "closed_at": "2026-03-09",
+    "author": "renruhai",
+    "author_id": "6822d30d60184036954b14e5",
+    "title": "[Question|问题咨询]: tilingData的Capacity是如何设置的？",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "chenqian1365"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/43",
+    "working_days_open": 87
+  },
+  {
+    "iid": "42",
+    "state": "closed",
+    "created_at": "2026-02-27",
+    "closed_at": "2026-03-09",
+    "author": "demoauguste",
+    "author_id": "68abc2b14b318436fa929a67",
+    "title": "[Bug-Report|缺陷反馈]: op_impl_registries_不一定能正确析构，存在内存泄漏可能",
+    "labels": [],
+    "issue_type": "缺陷",
+    "issue_state": "已完成",
+    "assignees": [
+      "Guanam2020",
+      "hugo111"
+    ],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/metadef/issues/42",
+    "working_days_open": 88
+  },
+  {
+    "iid": "41",
+    "state": "closed",
+    "created_at": "2026-02-26",
+    "closed_at": "2026-02-26",
+    "author": "tmj1128",
+    "author_id": "68d527fe2300fb0b99db5af4",
+    "title": "[Documentation|文档反馈]: 首页图有格式问题，请修改",
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/41",
+    "working_days_open": 89
+  },
+  {
+    "iid": "40",
+    "state": "closed",
+    "created_at": "2026-02-24",
+    "closed_at": "2026-02-25",
+    "author": "zhou-qilong",
+    "author_id": "6822cc0d6a68fa1fec6cc502",
+    "title": "[Documentation|文档反馈]: 文档导航易用性不好",
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/40",
+    "working_days_open": 91
+  },
+  {
+    "iid": "39",
+    "state": "closed",
+    "created_at": "2026-02-12",
+    "closed_at": "2026-02-24",
+    "author": "yangyang016",
+    "author_id": "6822c8b559bdd61f837dbd1c",
+    "title": "[Requirement|需求建议]: 算子开发tiling交付件的过程中，为什么一定要实现TilingParse和CompileInfo",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/metadef/issues/39",
+    "working_days_open": 94
+  },
+  {
+    "iid": "38",
+    "state": "closed",
+    "created_at": "2026-02-12",
+    "closed_at": "2026-02-13",
+    "author": "tmj1128",
+    "author_id": "68d527fe2300fb0b99db5af4",
+    "title": "[Documentation|文档反馈]: 目录结构与实际目录结构不一致",
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yelongjian"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/38",
+    "working_days_open": 94
+  },
+  {
+    "iid": "37",
+    "state": "closed",
+    "created_at": "2026-02-12",
+    "closed_at": "2026-02-13",
+    "author": "tmj1128",
+    "author_id": "68d527fe2300fb0b99db5af4",
+    "title": "[Documentation|文档反馈]: metadef仓中包下载链接未更新，ge仓已更新至9.0.0，建议保持一致",
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yelongjian"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/37",
+    "working_days_open": 94
+  },
+  {
+    "iid": "36",
+    "state": "closed",
+    "created_at": "2026-02-12",
+    "closed_at": "2026-02-13",
+    "author": "chenhaiyan",
+    "author_id": "695f9789023a5c422ce37b86",
+    "title": "[Bug-Report|缺陷反馈]: CMakelist.txt文件第52行报错提示需要参考Clion配置，但是readme中没有对应的内容",
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yelongjian"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/36",
+    "working_days_open": 94
+  },
+  {
+    "iid": "35",
+    "state": "closed",
+    "created_at": "2026-02-12",
+    "closed_at": "2026-02-13",
+    "author": "munanhw",
+    "author_id": "6864e0b9543b5b4023554e86",
+    "title": "[Documentation|文档反馈]: 确定性计算配置选项的设置方法",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/metadef/issues/35",
+    "working_days_open": 94
+  },
+  {
+    "iid": "34",
+    "state": "closed",
+    "created_at": "2026-02-10",
+    "closed_at": "2026-02-12",
+    "author": "zjun0",
+    "author_id": "67919de4486a2e49301cb19f",
+    "title": "[Documentation|文档反馈]: API描述请优化描述",
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "stevenaw0"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/34",
+    "working_days_open": 96
+  },
+  {
+    "iid": "33",
+    "state": "closed",
+    "created_at": "2026-02-10",
+    "closed_at": "2026-02-13",
+    "author": "zjun0",
+    "author_id": "67919de4486a2e49301cb19f",
+    "title": "[Requirement|需求建议]: 这个metadef仓库开发者能做些什么？是否可以提供示例引导",
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "stevenaw0"
+    ],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/metadef/issues/33",
+    "working_days_open": 96
+  },
+  {
+    "iid": "32",
+    "state": "closed",
+    "created_at": "2026-02-10",
+    "closed_at": "2026-02-24",
+    "author": "zjun0",
+    "author_id": "67919de4486a2e49301cb19f",
+    "title": "[Documentation|文档反馈]: 描述顺序请保持一致",
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "stevenaw0"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/32",
+    "working_days_open": 96
+  },
+  {
+    "iid": "31",
+    "state": "closed",
+    "created_at": "2026-02-10",
+    "closed_at": "2026-02-11",
+    "author": "zjun0",
+    "author_id": "67919de4486a2e49301cb19f",
+    "title": "[Documentation|文档反馈]: 描述不完善",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/31",
+    "working_days_open": 96
+  },
+  {
+    "iid": "30",
+    "state": "closed",
+    "created_at": "2026-02-10",
+    "closed_at": "2026-02-10",
+    "author": "zjun0",
+    "author_id": "67919de4486a2e49301cb19f",
+    "title": "[Bug-Report|缺陷反馈]: 已合并的代码内容，不能查看",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/30",
+    "working_days_open": 96
+  },
+  {
+    "iid": "29",
+    "state": "closed",
+    "created_at": "2026-02-09",
+    "closed_at": "2026-02-24",
+    "author": "zjun0",
+    "author_id": "67919de4486a2e49301cb19f",
+    "title": "[Bug-Report|缺陷反馈]: 编译失败",
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 9,
+    "web_url": "https://gitcode.com/cann/metadef/issues/29",
+    "working_days_open": 97
+  },
+  {
+    "iid": "28",
+    "state": "closed",
+    "created_at": "2026-02-06",
+    "closed_at": "2026-02-09",
+    "author": "ascend-robot",
+    "author_id": "680e157b4e445c0df960c4c4",
+    "title": "CVE-2025-15341",
+    "labels": [
+      "CVE/UNAFFECTED"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/28",
+    "working_days_open": 98
+  },
+  {
+    "iid": "27",
+    "state": "closed",
+    "created_at": "2026-02-05",
+    "closed_at": "2026-02-09",
+    "author": "ascend-robot",
+    "author_id": "680e157b4e445c0df960c4c4",
+    "title": "CVE-2023-24535",
+    "labels": [
+      "CVE/UNAFFECTED"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/27",
+    "working_days_open": 99
+  },
+  {
+    "iid": "26",
+    "state": "closed",
+    "created_at": "2026-02-05",
+    "closed_at": "2026-02-09",
+    "author": "ascend-robot",
+    "author_id": "680e157b4e445c0df960c4c4",
+    "title": "CVE-2024-24786",
+    "labels": [
+      "CVE/UNAFFECTED"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/26",
+    "working_days_open": 99
+  },
+  {
+    "iid": "25",
+    "state": "closed",
+    "created_at": "2026-02-05",
+    "closed_at": "2026-02-09",
+    "author": "ascend-robot",
+    "author_id": "680e157b4e445c0df960c4c4",
+    "title": "CVE-2025-27788",
+    "labels": [
+      "CVE/UNAFFECTED"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/25",
+    "working_days_open": 99
+  },
+  {
+    "iid": "24",
+    "state": "closed",
+    "created_at": "2026-02-05",
+    "closed_at": "2026-02-09",
+    "author": "ascend-robot",
+    "author_id": "680e157b4e445c0df960c4c4",
+    "title": "CVE-2025-53605",
+    "labels": [
+      "CVE/UNAFFECTED"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/24",
+    "working_days_open": 99
+  },
+  {
+    "iid": "23",
+    "state": "closed",
+    "created_at": "2026-02-05",
+    "closed_at": "2026-02-09",
+    "author": "ascend-robot",
+    "author_id": "680e157b4e445c0df960c4c4",
+    "title": "CVE-2022-3509",
+    "labels": [
+      "CVE/UNAFFECTED"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/23",
+    "working_days_open": 99
+  },
+  {
+    "iid": "22",
+    "state": "closed",
+    "created_at": "2026-02-05",
+    "closed_at": "2026-02-09",
+    "author": "ascend-robot",
+    "author_id": "680e157b4e445c0df960c4c4",
+    "title": "CVE-2022-3510",
+    "labels": [
+      "CVE/UNAFFECTED"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/22",
+    "working_days_open": 99
+  },
+  {
+    "iid": "21",
+    "state": "closed",
+    "created_at": "2026-02-04",
+    "closed_at": "2026-02-13",
+    "author": "qzl_10032",
+    "author_id": "69816d8c856d9157f9c6cc22",
+    "title": "[Bug-Report|缺陷反馈]: 使用aclFinalize后仍有aclInit申请的资源未释放，asan检出内存泄漏",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "Guanam2020"
+    ],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/metadef/issues/21",
+    "working_days_open": 100
+  },
+  {
+    "iid": "20",
+    "state": "closed",
+    "created_at": "2026-01-31",
+    "closed_at": "2026-02-05",
+    "author": "ascend-robot",
+    "author_id": "680e157b4e445c0df960c4c4",
+    "title": "CVE-2023-30608",
+    "labels": [
+      "CVE/UNAFFECTED"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/20",
+    "working_days_open": 102
+  },
+  {
+    "iid": "19",
+    "state": "closed",
+    "created_at": "2026-01-31",
+    "closed_at": "2026-02-05",
+    "author": "ascend-robot",
+    "author_id": "680e157b4e445c0df960c4c4",
+    "title": "CVE-2022-1941",
+    "labels": [
+      "CVE/UNAFFECTED"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/19",
+    "working_days_open": 102
+  },
+  {
+    "iid": "18",
+    "state": "closed",
+    "created_at": "2026-01-31",
+    "closed_at": "2026-02-05",
+    "author": "ascend-robot",
+    "author_id": "680e157b4e445c0df960c4c4",
+    "title": "CVE-2025-4565",
+    "labels": [
+      "CVE/UNAFFECTED"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 4,
+    "web_url": "https://gitcode.com/cann/metadef/issues/18",
+    "working_days_open": 102
+  },
+  {
+    "iid": "17",
+    "state": "closed",
+    "created_at": "2026-01-31",
+    "closed_at": "2026-02-05",
+    "author": "ascend-robot",
+    "author_id": "680e157b4e445c0df960c4c4",
+    "title": "CVE-2024-7254",
+    "labels": [
+      "CVE/UNAFFECTED"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 4,
+    "web_url": "https://gitcode.com/cann/metadef/issues/17",
+    "working_days_open": 102
+  },
+  {
+    "iid": "16",
+    "state": "closed",
+    "created_at": "2026-01-31",
+    "closed_at": "2026-02-05",
+    "author": "ascend-robot",
+    "author_id": "680e157b4e445c0df960c4c4",
+    "title": "CVE-2022-3171",
+    "labels": [
+      "CVE/UNAFFECTED"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 4,
+    "web_url": "https://gitcode.com/cann/metadef/issues/16",
+    "working_days_open": 102
+  },
+  {
+    "iid": "15",
+    "state": "closed",
+    "created_at": "2026-01-31",
+    "closed_at": "2026-02-05",
+    "author": "ascend-robot",
+    "author_id": "680e157b4e445c0df960c4c4",
+    "title": "CVE-2024-2410",
+    "labels": [
+      "CVE/UNAFFECTED"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/15",
+    "working_days_open": 102
+  },
+  {
+    "iid": "14",
+    "state": "closed",
+    "created_at": "2026-01-31",
+    "closed_at": "2026-02-28",
+    "author": "capt4in",
+    "author_id": "692e82207156f746d25fae64",
+    "title": "[Requirement|需求建议]: docs/build.md使用的镜像还需要再安装cann包，不易用，建议参考ops-nn，拉取镜像后开箱即用",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yelongjian"
+    ],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/metadef/issues/14",
+    "working_days_open": 102
+  },
+  {
+    "iid": "13",
+    "state": "closed",
+    "created_at": "2026-01-31",
+    "closed_at": "2026-02-05",
+    "author": "weixin_39767879",
+    "author_id": "683fa2da3692723d6ca94b54",
+    "title": "[Bug-Report|缺陷反馈]: license扫描工具的模板文件中license的描述信息不规范，需要修改。",
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yelongjian"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/13",
+    "working_days_open": 102
+  },
+  {
+    "iid": "12",
+    "state": "closed",
+    "created_at": "2026-01-31",
+    "closed_at": "2026-02-14",
+    "author": "demoauguste",
+    "author_id": "68abc2b14b318436fa929a67",
+    "title": "[Bug-Report|缺陷反馈]: 使用SecodeFuzz测试，存在内存泄漏问题",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606",
+      "Guanam2020"
+    ],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/metadef/issues/12",
+    "working_days_open": 102
+  },
+  {
+    "iid": "11",
+    "state": "closed",
+    "created_at": "2026-01-30",
+    "closed_at": "2026-02-05",
+    "author": "ascend-robot",
+    "author_id": "680e157b4e445c0df960c4c4",
+    "title": "CVE-2026-0994",
+    "labels": [
+      "CVE/UNAFFECTED"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yangyongqiang0606"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/11",
+    "working_days_open": 103
+  },
+  {
+    "iid": "10",
+    "state": "closed",
+    "created_at": "2026-01-30",
+    "closed_at": "2026-02-14",
+    "author": "shaun123",
+    "author_id": "6794e6958ad9ff35a220d42c",
+    "title": "[Question|问题咨询]: 自定义算子挂不上optiling",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "Guanam2020"
+    ],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/metadef/issues/10",
+    "working_days_open": 103
+  },
+  {
+    "iid": "8",
+    "state": "closed",
+    "created_at": "2026-01-29",
+    "closed_at": "2026-01-29",
+    "author": "xiong-pan",
+    "author_id": "681cac84e4b985165b49229b",
+    "title": "[Question|问题咨询]: ge::GetConstMemorySize接口返回值为-1，但是没有任何报错日志",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/metadef/issues/8",
+    "working_days_open": 104
+  },
+  {
+    "iid": "7",
+    "state": "closed",
+    "created_at": "2026-01-27",
+    "closed_at": "2026-02-24",
+    "author": "HGHAAQq",
+    "author_id": "68edc687614d904578781b1e",
+    "title": "[Question|问题咨询]: ge::Operator::GetAttr函数问题",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "stevenaw0"
+    ],
+    "user_notes_count": 4,
+    "web_url": "https://gitcode.com/cann/metadef/issues/7",
+    "working_days_open": 106
+  },
+  {
+    "iid": "6",
+    "state": "closed",
+    "created_at": "2026-01-22",
+    "closed_at": "2026-01-28",
+    "author": "markus_",
+    "author_id": "68f092906a54c064933e6a31",
+    "title": "[Question|问题咨询]: TilingParse函数走不进去",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/metadef/issues/6",
+    "working_days_open": 109
+  },
+  {
+    "iid": "5",
+    "state": "closed",
+    "created_at": "2026-01-19",
+    "closed_at": "2026-01-22",
+    "author": "duanbichong",
+    "author_id": "66f4fb6e07ddfc0488c15eb5",
+    "title": "[Question|问题咨询]: 内存增长问题",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 5,
+    "web_url": "https://gitcode.com/cann/metadef/issues/5",
+    "working_days_open": 112
+  },
+  {
+    "iid": "4",
+    "state": "closed",
+    "created_at": "2026-01-18",
+    "closed_at": "2026-02-05",
+    "author": "Nice_try",
+    "author_id": "6753fc88b5b8bb7550ecb6b6",
+    "title": "[Documentation|文档反馈]: 【开源体验活动】文档勘误",
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "wqtshg_wt"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/metadef/issues/4",
+    "working_days_open": 112
+  },
+  {
+    "iid": "2",
+    "state": "closed",
+    "created_at": "2026-01-08",
+    "closed_at": "2026-01-26",
+    "author": "malin0",
+    "author_id": "686b415f70f8532fca2d79d8",
+    "title": "[Question|问题咨询]: 本地验证测试疑问",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/metadef/issues/2",
+    "working_days_open": 119
+  },
+  {
+    "iid": "1",
+    "state": "closed",
+    "created_at": "2025-12-18",
+    "closed_at": "2026-01-30",
+    "author": "huabaoy",
+    "author_id": "690033d7f08b414829576a0a",
+    "title": "[Question|问题咨询]: 当我使用值依赖的tiling时，在tiling函数中使用GetData无法获取tensor值，程序直接出现段错误。如何正确使用值依赖接口？",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 5,
+    "web_url": "https://gitcode.com/cann/metadef/issues/1",
+    "working_days_open": 133
+  }
+]

@@ -1,10 +1,44 @@
 [
   {
+    "iid": 394,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: auto-fix severe documentation issues under docs/",
+    "created_at": "2026-07-03",
+    "updated_at": "2026-07-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "hitwdy",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/394",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 393,
+    "state": "opened",
+    "draft": true,
+    "title": "[wip] improved qwen3-1.7B-sft tutorial usability and out-of-box config",
+    "created_at": "2026-07-03",
+    "updated_at": "2026-07-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "mystri",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/393",
+    "labels": [],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
     "iid": 392,
     "state": "opened",
-    "title": "support mhc/smla kernel of BSND interface for master branch",
+    "draft": false,
+    "title": "【fix】support mhc/smla kernel of BSND interface for master branch",
     "created_at": "2026-07-02",
-    "updated_at": "2026-07-02",
+    "updated_at": "2026-07-03",
     "merged_at": "",
     "closed_at": "",
     "author": "zhaowei1936",
@@ -12,27 +46,33 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 1
+    "working_days_open": 2,
+    "e2e_issues": []
   },
   {
     "iid": 391,
-    "state": "opened",
+    "state": "merged",
+    "draft": false,
     "title": "[fix] p_sum bugfix",
     "created_at": "2026-07-02",
-    "updated_at": "2026-07-02",
-    "merged_at": "",
+    "updated_at": "2026-07-03",
+    "merged_at": "2026-07-03",
     "closed_at": "",
     "author": "rui-zhang",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/391",
     "labels": [
+      "approved",
+      "lgtm",
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 1
+    "working_days_open": 2,
+    "e2e_issues": []
   },
   {
     "iid": 390,
     "state": "closed",
+    "draft": false,
     "title": "use pypto kernerl",
     "created_at": "2026-07-02",
     "updated_at": "2026-07-02",
@@ -43,14 +83,16 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 1
+    "working_days_open": 2,
+    "e2e_issues": []
   },
   {
     "iid": 389,
     "state": "opened",
+    "draft": false,
     "title": "fix: 修复NPU fused_matmul_reduce_scatter忽略reduce_op参数的问题",
     "created_at": "2026-07-01",
-    "updated_at": "2026-07-01",
+    "updated_at": "2026-07-03",
     "merged_at": "",
     "closed_at": "",
     "author": "blueberryan",
@@ -58,11 +100,13 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 2
+    "working_days_open": 3,
+    "e2e_issues": []
   },
   {
     "iid": 388,
     "state": "opened",
+    "draft": false,
     "title": "[refactor]: 模型配置进行整改，规范了模型配置命名",
     "created_at": "2026-07-01",
     "updated_at": "2026-07-01",
@@ -75,11 +119,13 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 2
+    "working_days_open": 3,
+    "e2e_issues": []
   },
   {
     "iid": 387,
     "state": "opened",
+    "draft": false,
     "title": "[test] (deepseek-v4): add TP+compile smoke test, shrink smoke config",
     "created_at": "2026-07-01",
     "updated_at": "2026-07-01",
@@ -92,11 +138,13 @@
       "stat/needs-squash",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 2
+    "working_days_open": 3,
+    "e2e_issues": []
   },
   {
     "iid": 386,
     "state": "merged",
+    "draft": false,
     "title": "fix: deepseek_v4 自定义 RMSNorm 导致 npu_rms_norm 替换不生效",
     "created_at": "2026-06-30",
     "updated_at": "2026-07-01",
@@ -110,11 +158,15 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 3
+    "working_days_open": 4,
+    "e2e_issues": [
+      "59"
+    ]
   },
   {
     "iid": 385,
     "state": "closed",
+    "draft": false,
     "title": "fix: deepseek_v4 RMSNorm npu_rms_norm silent failure",
     "created_at": "2026-06-30",
     "updated_at": "2026-06-30",
@@ -125,28 +177,31 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 3
+    "working_days_open": 4,
+    "e2e_issues": []
   },
   {
     "iid": 384,
     "state": "opened",
+    "draft": false,
     "title": "[fix] Align DSV3 MoE layout for NPU",
     "created_at": "2026-06-27",
-    "updated_at": "2026-07-01",
+    "updated_at": "2026-07-03",
     "merged_at": "",
     "closed_at": "",
     "author": "hitwdy",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/384",
     "labels": [
       "ci-pipeline-failed",
-      "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 4
+    "working_days_open": 5,
+    "e2e_issues": []
   },
   {
     "iid": 383,
     "state": "merged",
+    "draft": false,
     "title": "[fix] (deepseek-v4): make rope inverse compile-traceable (drop is_conj guard)",
     "created_at": "2026-06-27",
     "updated_at": "2026-06-29",
@@ -160,11 +215,15 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 4
+    "working_days_open": 5,
+    "e2e_issues": [
+      "66"
+    ]
   },
   {
     "iid": 382,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Fix DeepSeek V4 npu_mhc_post TP input",
     "created_at": "2026-06-26",
     "updated_at": "2026-06-27",
@@ -178,11 +237,15 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 5
+    "working_days_open": 6,
+    "e2e_issues": [
+      "64"
+    ]
   },
   {
     "iid": 381,
     "state": "merged",
+    "draft": false,
     "title": "[feat] add offline profiling data parse script",
     "created_at": "2026-06-26",
     "updated_at": "2026-07-01",
@@ -197,11 +260,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 5
+    "working_days_open": 6,
+    "e2e_issues": []
   },
   {
     "iid": 380,
     "state": "closed",
+    "draft": false,
     "title": "[fix]: 新增dsv3单机等效8机性能裁剪模型配置并规范化模型配置命名",
     "created_at": "2026-06-26",
     "updated_at": "2026-06-30",
@@ -214,11 +279,13 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 5
+    "working_days_open": 6,
+    "e2e_issues": []
   },
   {
     "iid": 379,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix model_converters in printing the job configs",
     "created_at": "2026-06-25",
     "updated_at": "2026-06-26",
@@ -232,11 +299,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 6
+    "working_days_open": 7,
+    "e2e_issues": []
   },
   {
     "iid": 378,
     "state": "merged",
+    "draft": false,
     "title": "[docs]update: 更新文件 README.md，架构图由相对地址改为绝对地址",
     "created_at": "2026-06-25",
     "updated_at": "2026-06-26",
@@ -250,11 +319,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 6
+    "working_days_open": 7,
+    "e2e_issues": []
   },
   {
     "iid": 377,
     "state": "merged",
+    "draft": false,
     "title": "[fix] 修复torchtitan_npu\\tools\\weight_utils.py中fuse_expert函数可能会出现的将w13误判为w1导致生成垃圾key的问题",
     "created_at": "2026-06-25",
     "updated_at": "2026-07-01",
@@ -269,11 +340,15 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 6
+    "working_days_open": 7,
+    "e2e_issues": [
+      "67"
+    ]
   },
   {
     "iid": 376,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Run DSV4 HcHead on local tensors so TP works under torch.compile",
     "created_at": "2026-06-25",
     "updated_at": "2026-06-27",
@@ -288,26 +363,30 @@
       "lgtm",
       "ci-pipeline-running"
     ],
-    "working_days_open": 6
+    "working_days_open": 7,
+    "e2e_issues": []
   },
   {
     "iid": 375,
-    "state": "opened",
+    "state": "closed",
+    "draft": false,
     "title": "docs: auto-fix severe documentation issues under docs/",
     "created_at": "2026-06-25",
-    "updated_at": "2026-06-25",
+    "updated_at": "2026-07-03",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-03",
     "author": "hitwdy",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/375",
     "labels": [
       "ci-pipeline-passed"
     ],
-    "working_days_open": 6
+    "working_days_open": 7,
+    "e2e_issues": []
   },
   {
     "iid": 374,
     "state": "merged",
+    "draft": false,
     "title": "[docs] bump version to 0.2.2.post2",
     "created_at": "2026-06-24",
     "updated_at": "2026-06-24",
@@ -321,11 +400,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 7
+    "working_days_open": 8,
+    "e2e_issues": []
   },
   {
     "iid": 373,
     "state": "merged",
+    "draft": false,
     "title": "[docs]文档过期路径修改",
     "created_at": "2026-06-24",
     "updated_at": "2026-06-25",
@@ -339,11 +420,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 7
+    "working_days_open": 8,
+    "e2e_issues": []
   },
   {
     "iid": 372,
     "state": "closed",
+    "draft": false,
     "title": "docs: auto-fix severe documentation issues under docs/",
     "created_at": "2026-06-24",
     "updated_at": "2026-06-24",
@@ -354,11 +437,13 @@
     "labels": [
       "ci-pipeline-passed"
     ],
-    "working_days_open": 7
+    "working_days_open": 8,
+    "e2e_issues": []
   },
   {
     "iid": 371,
     "state": "merged",
+    "draft": false,
     "title": "[ci] [fix] fix ci dependency issue caused by huaweicloud mirror not catching up with upstream release",
     "created_at": "2026-06-23",
     "updated_at": "2026-06-23",
@@ -373,11 +458,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 8
+    "working_days_open": 9,
+    "e2e_issues": []
   },
   {
     "iid": 370,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] 删除 npu_bypass_triton_codegen 特性相关的全部实现",
     "created_at": "2026-06-23",
     "updated_at": "2026-07-01",
@@ -392,11 +479,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 8
+    "working_days_open": 9,
+    "e2e_issues": []
   },
   {
     "iid": 369,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix p_sum/kl_loss compute",
     "created_at": "2026-06-23",
     "updated_at": "2026-06-27",
@@ -410,11 +499,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 8
+    "working_days_open": 9,
+    "e2e_issues": []
   },
   {
     "iid": 368,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Enable DSV4 context parallel under torch.compile",
     "created_at": "2026-06-22",
     "updated_at": "2026-06-24",
@@ -429,11 +520,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 9
+    "working_days_open": 10,
+    "e2e_issues": []
   },
   {
     "iid": 367,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] (deepseek-v4, deepseek-v32): reuse upstream apply_rotary_emb_single_complex",
     "created_at": "2026-06-22",
     "updated_at": "2026-06-26",
@@ -448,11 +541,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 9
+    "working_days_open": 10,
+    "e2e_issues": []
   },
   {
     "iid": 366,
     "state": "merged",
+    "draft": false,
     "title": "docs: auto-fix severe documentation issues under docs/",
     "created_at": "2026-06-20",
     "updated_at": "2026-06-23",
@@ -466,11 +561,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 9
+    "working_days_open": 10,
+    "e2e_issues": []
   },
   {
     "iid": 365,
     "state": "merged",
+    "draft": false,
     "title": "[fix] preserve DeepSeek-V4 w13 values in HF export",
     "created_at": "2026-06-18",
     "updated_at": "2026-06-22",
@@ -484,11 +581,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 10
+    "working_days_open": 11,
+    "e2e_issues": []
   },
   {
     "iid": 364,
     "state": "merged",
+    "draft": false,
     "title": "feat(qwen3): add TND attention support for per-document causal attention",
     "created_at": "2026-06-18",
     "updated_at": "2026-07-01",
@@ -502,11 +601,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 10
+    "working_days_open": 11,
+    "e2e_issues": []
   },
   {
     "iid": 363,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] remove redundant checkpoint save monkey-patch",
     "created_at": "2026-06-17",
     "updated_at": "2026-06-23",
@@ -521,11 +622,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 11
+    "working_days_open": 12,
+    "e2e_issues": []
   },
   {
     "iid": 362,
     "state": "merged",
+    "draft": false,
     "title": "[feat] Support MXFP8 training with torchao",
     "created_at": "2026-06-17",
     "updated_at": "2026-06-30",
@@ -540,11 +643,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 11
+    "working_days_open": 12,
+    "e2e_issues": []
   },
   {
     "iid": 361,
     "state": "merged",
+    "draft": false,
     "title": "【fix】fix A5 enable compile, mxfp8 will error bug",
     "created_at": "2026-06-16",
     "updated_at": "2026-06-17",
@@ -558,11 +663,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 12
+    "working_days_open": 13,
+    "e2e_issues": []
   },
   {
     "iid": 360,
     "state": "merged",
+    "draft": false,
     "title": "修改dsv4的toml文件，增加trace_buf_size参数",
     "created_at": "2026-06-16",
     "updated_at": "2026-06-16",
@@ -576,11 +683,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 12
+    "working_days_open": 13,
+    "e2e_issues": []
   },
   {
     "iid": 359,
     "state": "merged",
+    "draft": false,
     "title": "[fix] 解决必须要patch torch上游代码才能运行deepseekv4开启TP=2时的报错",
     "created_at": "2026-06-16",
     "updated_at": "2026-06-16",
@@ -594,11 +703,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 12
+    "working_days_open": 13,
+    "e2e_issues": []
   },
   {
     "iid": 358,
     "state": "merged",
+    "draft": false,
     "title": "[docs]: 修正文档中的文本错误",
     "created_at": "2026-06-16",
     "updated_at": "2026-06-16",
@@ -613,11 +724,13 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 12
+    "working_days_open": 13,
+    "e2e_issues": []
   },
   {
     "iid": 357,
     "state": "merged",
+    "draft": false,
     "title": "【feat】【docs】adapt 16experts of dsv4 flash model for A5 8P",
     "created_at": "2026-06-15",
     "updated_at": "2026-06-16",
@@ -631,11 +744,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 13
+    "working_days_open": 14,
+    "e2e_issues": []
   },
   {
     "iid": 356,
     "state": "opened",
+    "draft": false,
     "title": "[fix] (deepseek-v4): unwrap DTensor in CP collectives for TP+CP",
     "created_at": "2026-06-15",
     "updated_at": "2026-07-01",
@@ -647,11 +762,18 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 13
+    "working_days_open": 14,
+    "e2e_issues": [
+      "3",
+      "2",
+      "1",
+      "64"
+    ]
   },
   {
     "iid": 355,
     "state": "merged",
+    "draft": false,
     "title": "DeepSeekV32ModelNpu.__init__ 忽略 config.norm问题修复",
     "created_at": "2026-06-15",
     "updated_at": "2026-06-22",
@@ -665,11 +787,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 13
+    "working_days_open": 14,
+    "e2e_issues": []
   },
   {
     "iid": 354,
     "state": "merged",
+    "draft": false,
     "title": "[feat] use NPU MoE dispatch in EP dispatcher",
     "created_at": "2026-06-13",
     "updated_at": "2026-06-23",
@@ -683,11 +807,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 13
+    "working_days_open": 14,
+    "e2e_issues": []
   },
   {
     "iid": 353,
     "state": "merged",
+    "draft": false,
     "title": "[docs] auto-fix severe documentation issues under docs/",
     "created_at": "2026-06-13",
     "updated_at": "2026-06-15",
@@ -701,11 +827,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 13
+    "working_days_open": 14,
+    "e2e_issues": []
   },
   {
     "iid": 352,
     "state": "merged",
+    "draft": false,
     "title": "[fix] (deepseek-v32): import reshape_for_broadcast_complex from NPU converter",
     "created_at": "2026-06-12",
     "updated_at": "2026-06-15",
@@ -720,11 +848,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 14
+    "working_days_open": 15,
+    "e2e_issues": []
   },
   {
     "iid": 351,
     "state": "closed",
+    "draft": false,
     "title": "feat: add Wordle SFT config and reproduction recipe for Qwen3-1.7B",
     "created_at": "2026-06-12",
     "updated_at": "2026-06-12",
@@ -735,11 +865,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 14
+    "working_days_open": 15,
+    "e2e_issues": []
   },
   {
     "iid": 350,
     "state": "merged",
+    "draft": false,
     "title": "[fix]  Fix MXLinear comply with the Module Protocol and add the MXFP8 config registry for the ds-v4-flash debug model",
     "created_at": "2026-06-12",
     "updated_at": "2026-06-15",
@@ -754,11 +886,13 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 14
+    "working_days_open": 15,
+    "e2e_issues": []
   },
   {
     "iid": 349,
     "state": "merged",
+    "draft": false,
     "title": "Fix dangling pointer problem caused by optional layout string",
     "created_at": "2026-06-12",
     "updated_at": "2026-06-13",
@@ -772,11 +906,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 14
+    "working_days_open": 15,
+    "e2e_issues": []
   },
   {
     "iid": 348,
     "state": "merged",
+    "draft": false,
     "title": "[Fix] dangling pointer problem caused by optional layout string",
     "created_at": "2026-06-12",
     "updated_at": "2026-06-13",
@@ -790,11 +926,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 14
+    "working_days_open": 15,
+    "e2e_issues": []
   },
   {
     "iid": 347,
     "state": "merged",
+    "draft": false,
     "title": "[docs]: 修正了一些文档错误",
     "created_at": "2026-06-12",
     "updated_at": "2026-06-15",
@@ -809,11 +947,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 14
+    "working_days_open": 15,
+    "e2e_issues": []
   },
   {
     "iid": 346,
     "state": "merged",
+    "draft": false,
     "title": "docs: auto-fix severe documentation issues under docs/",
     "created_at": "2026-06-12",
     "updated_at": "2026-06-12",
@@ -827,11 +967,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 14
+    "working_days_open": 15,
+    "e2e_issues": []
   },
   {
     "iid": 345,
     "state": "merged",
+    "draft": false,
     "title": "ci: update .clang-format, pre-commit config, and apply code formatting",
     "created_at": "2026-06-11",
     "updated_at": "2026-06-12",
@@ -846,11 +988,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 15
+    "working_days_open": 16,
+    "e2e_issues": []
   },
   {
     "iid": 344,
     "state": "merged",
+    "draft": false,
     "title": "【fix】fix bug of README",
     "created_at": "2026-06-11",
     "updated_at": "2026-06-13",
@@ -864,11 +1008,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 15
+    "working_days_open": 16,
+    "e2e_issues": []
   },
   {
     "iid": 343,
     "state": "closed",
+    "draft": false,
     "title": "[fix]  Fix MXLinear comply with the Module Protocol and add the MXFP8 config registry for the ds-v4-flash debug model",
     "created_at": "2026-06-11",
     "updated_at": "2026-06-12",
@@ -880,11 +1026,13 @@
       "stat/needs-squash",
       "cann-cla/no"
     ],
-    "working_days_open": 15
+    "working_days_open": 16,
+    "e2e_issues": []
   },
   {
     "iid": 342,
     "state": "merged",
+    "draft": false,
     "title": "[fix]fix micro_pipeline_tp.py for master.",
     "created_at": "2026-06-11",
     "updated_at": "2026-06-15",
@@ -899,11 +1047,13 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 15
+    "working_days_open": 16,
+    "e2e_issues": []
   },
   {
     "iid": 341,
     "state": "merged",
+    "draft": false,
     "title": "[feat] add DCP-to-HF conversion support for models",
     "created_at": "2026-06-11",
     "updated_at": "2026-06-13",
@@ -918,11 +1068,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 15
+    "working_days_open": 16,
+    "e2e_issues": []
   },
   {
     "iid": 340,
     "state": "merged",
+    "draft": false,
     "title": "DeepSeek-v4 MoE expert_bias/tokens_per_expert 在 meta-init 后未初始化问题修改",
     "created_at": "2026-06-11",
     "updated_at": "2026-06-12",
@@ -936,11 +1088,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 15
+    "working_days_open": 16,
+    "e2e_issues": []
   },
   {
     "iid": 339,
     "state": "closed",
+    "draft": false,
     "title": "fix: 对齐 dsv32 拉起配置",
     "created_at": "2026-06-11",
     "updated_at": "2026-06-24",
@@ -952,11 +1106,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 15
+    "working_days_open": 16,
+    "e2e_issues": []
   },
   {
     "iid": 338,
     "state": "merged",
+    "draft": false,
     "title": "【fix】support config trace_buf_size for dsv4 flash/pro",
     "created_at": "2026-06-11",
     "updated_at": "2026-06-11",
@@ -970,11 +1126,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 15
+    "working_days_open": 16,
+    "e2e_issues": []
   },
   {
     "iid": 337,
     "state": "closed",
+    "draft": true,
     "title": "[WIP] torchtitan-npu仓patch清理",
     "created_at": "2026-06-11",
     "updated_at": "2026-07-02",
@@ -986,11 +1144,13 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 15
+    "working_days_open": 16,
+    "e2e_issues": []
   },
   {
     "iid": 336,
     "state": "merged",
+    "draft": false,
     "title": "[docs] update config guide examples",
     "created_at": "2026-06-11",
     "updated_at": "2026-06-11",
@@ -1005,11 +1165,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 15
+    "working_days_open": 16,
+    "e2e_issues": []
   },
   {
     "iid": 335,
     "state": "merged",
+    "draft": false,
     "title": "[docs]: 修正文档的文本错误",
     "created_at": "2026-06-11",
     "updated_at": "2026-06-11",
@@ -1024,11 +1186,13 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 15
+    "working_days_open": 16,
+    "e2e_issues": []
   },
   {
     "iid": 334,
     "state": "merged",
+    "draft": false,
     "title": "[fix] 避免导出专家权重时额外拷贝 w13",
     "created_at": "2026-06-10",
     "updated_at": "2026-06-11",
@@ -1042,11 +1206,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 16
+    "working_days_open": 17,
+    "e2e_issues": []
   },
   {
     "iid": 333,
     "state": "merged",
+    "draft": false,
     "title": "修改dsv32模型config_registry.py文件，增加配置项",
     "created_at": "2026-06-10",
     "updated_at": "2026-06-11",
@@ -1061,11 +1227,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 16
+    "working_days_open": 17,
+    "e2e_issues": []
   },
   {
     "iid": 332,
     "state": "merged",
+    "draft": false,
     "title": "[perf] fuse experts in place in from_hf to cut HF-load HBM peak",
     "created_at": "2026-06-10",
     "updated_at": "2026-06-12",
@@ -1079,11 +1247,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 16
+    "working_days_open": 17,
+    "e2e_issues": []
   },
   {
     "iid": 331,
     "state": "merged",
+    "draft": false,
     "title": "[fix]: cp+mtp —— enable MTP context-parallel patch on master torchtitan",
     "created_at": "2026-06-10",
     "updated_at": "2026-06-12",
@@ -1097,11 +1267,15 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 16
+    "working_days_open": 17,
+    "e2e_issues": [
+      "57"
+    ]
   },
   {
     "iid": 330,
     "state": "closed",
+    "draft": false,
     "title": "修改dsv32模型的config_registry.py配置项",
     "created_at": "2026-06-10",
     "updated_at": "2026-06-10",
@@ -1114,11 +1288,13 @@
       "cann-cla/no",
       "stat/needs-squash"
     ],
-    "working_days_open": 16
+    "working_days_open": 17,
+    "e2e_issues": []
   },
   {
     "iid": 329,
     "state": "merged",
+    "draft": false,
     "title": "docs: auto-fix severe documentation issues",
     "created_at": "2026-06-10",
     "updated_at": "2026-06-10",
@@ -1132,11 +1308,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 16
+    "working_days_open": 17,
+    "e2e_issues": []
   },
   {
     "iid": 328,
     "state": "merged",
+    "draft": false,
     "title": "[fix] preserve MoE w13 values when exporting HF weights",
     "created_at": "2026-06-09",
     "updated_at": "2026-06-10",
@@ -1150,11 +1328,15 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 17
+    "working_days_open": 18,
+    "e2e_issues": [
+      "55"
+    ]
   },
   {
     "iid": 327,
     "state": "opened",
+    "draft": true,
     "title": "[WIP] add DeepSeek V4 64K config",
     "created_at": "2026-06-09",
     "updated_at": "2026-06-09",
@@ -1165,11 +1347,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 17
+    "working_days_open": 18,
+    "e2e_issues": []
   },
   {
     "iid": 326,
     "state": "merged",
+    "draft": false,
     "title": "[fix] tune DeepSeek V4 expert parallel degree",
     "created_at": "2026-06-09",
     "updated_at": "2026-06-09",
@@ -1183,11 +1367,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 17
+    "working_days_open": 18,
+    "e2e_issues": []
   },
   {
     "iid": 325,
     "state": "merged",
+    "draft": false,
     "title": "[fix] tune DeepSeek V4 expert parallel degree",
     "created_at": "2026-06-09",
     "updated_at": "2026-06-09",
@@ -1201,11 +1387,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 17
+    "working_days_open": 18,
+    "e2e_issues": []
   },
   {
     "iid": 324,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix bug when tp is enabled",
     "created_at": "2026-06-09",
     "updated_at": "2026-06-11",
@@ -1219,11 +1407,13 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 17
+    "working_days_open": 18,
+    "e2e_issues": []
   },
   {
     "iid": 323,
     "state": "merged",
+    "draft": false,
     "title": "补充ninja依赖",
     "created_at": "2026-06-09",
     "updated_at": "2026-06-09",
@@ -1237,11 +1427,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 17
+    "working_days_open": 18,
+    "e2e_issues": []
   },
   {
     "iid": 322,
     "state": "merged",
+    "draft": false,
     "title": "[docs]: 修正文档的文本错误",
     "created_at": "2026-06-09",
     "updated_at": "2026-06-10",
@@ -1256,14 +1448,16 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 17
+    "working_days_open": 18,
+    "e2e_issues": []
   },
   {
     "iid": 321,
     "state": "merged",
+    "draft": false,
     "title": "[feat] add Wordle SFT config and reproduction recipe for Qwen3-1.7B",
     "created_at": "2026-06-08",
-    "updated_at": "2026-06-22",
+    "updated_at": "2026-07-03",
     "merged_at": "2026-06-22",
     "closed_at": "",
     "author": "mystri",
@@ -1275,11 +1469,15 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 18
+    "working_days_open": 19,
+    "e2e_issues": [
+      "71"
+    ]
   },
   {
     "iid": 320,
     "state": "merged",
+    "draft": false,
     "title": "refactor: rope complex64 兜底改为 import-time patch",
     "created_at": "2026-06-08",
     "updated_at": "2026-06-11",
@@ -1294,11 +1492,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 18
+    "working_days_open": 19,
+    "e2e_issues": []
   },
   {
     "iid": 319,
     "state": "merged",
+    "draft": false,
     "title": "【fix】fix dsv4 flash toml config",
     "created_at": "2026-06-08",
     "updated_at": "2026-06-09",
@@ -1312,11 +1512,13 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 18
+    "working_days_open": 19,
+    "e2e_issues": []
   },
   {
     "iid": 318,
     "state": "merged",
+    "draft": false,
     "title": "[docs]: Update DSv4 CP doc",
     "created_at": "2026-06-08",
     "updated_at": "2026-06-08",
@@ -1330,11 +1532,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 18
+    "working_days_open": 19,
+    "e2e_issues": []
   },
   {
     "iid": 317,
     "state": "merged",
+    "draft": false,
     "title": "[fix] requirements 补充 ninja 依赖",
     "created_at": "2026-06-08",
     "updated_at": "2026-06-08",
@@ -1348,11 +1552,15 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 18
+    "working_days_open": 19,
+    "e2e_issues": [
+      "52"
+    ]
   },
   {
     "iid": 316,
     "state": "merged",
+    "draft": false,
     "title": "统一运行脚本，补充脚本参数信息",
     "created_at": "2026-06-08",
     "updated_at": "2026-06-08",
@@ -1366,11 +1574,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 18
+    "working_days_open": 19,
+    "e2e_issues": []
   },
   {
     "iid": 315,
     "state": "merged",
+    "draft": false,
     "title": "[fix]:deepseekv32开启cp,增加npu_dsa算子同步开启校验",
     "created_at": "2026-06-08",
     "updated_at": "2026-06-08",
@@ -1385,11 +1595,13 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 18
+    "working_days_open": 19,
+    "e2e_issues": []
   },
   {
     "iid": 314,
     "state": "merged",
+    "draft": false,
     "title": "docs: auto-fix severe documentation issues under docs/ (2026-06-08)",
     "created_at": "2026-06-08",
     "updated_at": "2026-06-08",
@@ -1403,11 +1615,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 18
+    "working_days_open": 19,
+    "e2e_issues": []
   },
   {
     "iid": 313,
     "state": "merged",
+    "draft": false,
     "title": "[docs]: update torch.compile guide",
     "created_at": "2026-06-06",
     "updated_at": "2026-06-06",
@@ -1421,11 +1635,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 18
+    "working_days_open": 19,
+    "e2e_issues": []
   },
   {
     "iid": 312,
     "state": "merged",
+    "draft": false,
     "title": "[docs]: update torch.compile guide",
     "created_at": "2026-06-06",
     "updated_at": "2026-06-06",
@@ -1439,11 +1655,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 18
+    "working_days_open": 19,
+    "e2e_issues": []
   },
   {
     "iid": 311,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] move NPU deterministic env setup to patch",
     "created_at": "2026-06-05",
     "updated_at": "2026-06-11",
@@ -1458,11 +1676,13 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 19
+    "working_days_open": 20,
+    "e2e_issues": []
   },
   {
     "iid": 310,
     "state": "merged",
+    "draft": false,
     "title": "[feat] (deepseek-v4): support Context Parallel for SMLA attention",
     "created_at": "2026-06-05",
     "updated_at": "2026-06-11",
@@ -1477,11 +1697,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 19
+    "working_days_open": 20,
+    "e2e_issues": []
   },
   {
     "iid": 309,
     "state": "merged",
+    "draft": false,
     "title": "【fix】git apply dsv4 patch for gc and FSDP/EP mesh",
     "created_at": "2026-06-04",
     "updated_at": "2026-06-05",
@@ -1495,11 +1717,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 20
+    "working_days_open": 21,
+    "e2e_issues": []
   },
   {
     "iid": 308,
     "state": "merged",
+    "draft": false,
     "title": "补充单卡脚本的环境变量",
     "created_at": "2026-06-04",
     "updated_at": "2026-06-05",
@@ -1513,11 +1737,13 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 20
+    "working_days_open": 21,
+    "e2e_issues": []
   },
   {
     "iid": 307,
     "state": "merged",
+    "draft": false,
     "title": "[docs]: 修正文本错误",
     "created_at": "2026-06-04",
     "updated_at": "2026-06-04",
@@ -1532,11 +1758,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 20
+    "working_days_open": 21,
+    "e2e_issues": []
   },
   {
     "iid": 306,
     "state": "merged",
+    "draft": false,
     "title": "docs: auto-fix severe documentation issues under docs/",
     "created_at": "2026-06-04",
     "updated_at": "2026-06-04",
@@ -1550,11 +1778,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 20
+    "working_days_open": 21,
+    "e2e_issues": []
   },
   {
     "iid": 305,
     "state": "merged",
+    "draft": false,
     "title": "[fix] modify dsv4 PP schedule to 1F1B",
     "created_at": "2026-06-03",
     "updated_at": "2026-06-03",
@@ -1568,11 +1798,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 21
+    "working_days_open": 22,
+    "e2e_issues": []
   },
   {
     "iid": 304,
     "state": "merged",
+    "draft": false,
     "title": "文档检查错误修改",
     "created_at": "2026-06-03",
     "updated_at": "2026-06-03",
@@ -1586,11 +1818,15 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 21
+    "working_days_open": 22,
+    "e2e_issues": [
+      "47"
+    ]
   },
   {
     "iid": 303,
     "state": "merged",
+    "draft": false,
     "title": "refactor:torch-npu版本升级 patch精简",
     "created_at": "2026-06-03",
     "updated_at": "2026-06-04",
@@ -1605,11 +1841,13 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 21
+    "working_days_open": 22,
+    "e2e_issues": []
   },
   {
     "iid": 302,
     "state": "closed",
+    "draft": false,
     "title": "refactor:torch-npu版本升级 patch精简",
     "created_at": "2026-06-02",
     "updated_at": "2026-06-03",
@@ -1620,11 +1858,13 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 22
+    "working_days_open": 23,
+    "e2e_issues": []
   },
   {
     "iid": 301,
     "state": "merged",
+    "draft": false,
     "title": "[docs]: 修正一些文本错误",
     "created_at": "2026-06-02",
     "updated_at": "2026-06-03",
@@ -1639,11 +1879,13 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 22
+    "working_days_open": 23,
+    "e2e_issues": []
   },
   {
     "iid": 300,
     "state": "merged",
+    "draft": false,
     "title": "[3/3] CP代码回合与重构 - V3/V32 CP迁移到ParallelStyle",
     "created_at": "2026-06-02",
     "updated_at": "2026-06-03",
@@ -1658,11 +1900,13 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 22
+    "working_days_open": 23,
+    "e2e_issues": []
   },
   {
     "iid": 299,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] adapt muon optimizer and swap optimizer from branch v0.2.2-dev",
     "created_at": "2026-06-02",
     "updated_at": "2026-06-22",
@@ -1677,11 +1921,15 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 22
+    "working_days_open": 23,
+    "e2e_issues": [
+      "21"
+    ]
   },
   {
     "iid": 298,
     "state": "merged",
+    "draft": false,
     "title": "[feat][打榜活动]支持 Qwen3-0.6B 模型预训练",
     "created_at": "2026-06-02",
     "updated_at": "2026-06-05",
@@ -1695,11 +1943,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 22
+    "working_days_open": 23,
+    "e2e_issues": []
   },
   {
     "iid": 297,
     "state": "closed",
+    "draft": false,
     "title": "feat: 支持 Qwen3-0.6B 模型预训练和编译",
     "created_at": "2026-06-02",
     "updated_at": "2026-06-02",
@@ -1712,11 +1962,13 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 22
+    "working_days_open": 23,
+    "e2e_issues": []
   },
   {
     "iid": 296,
     "state": "closed",
+    "draft": false,
     "title": "feat: 支持 Qwen3-0.6B 模型预训练和编译",
     "created_at": "2026-06-02",
     "updated_at": "2026-06-02",
@@ -1725,11 +1977,13 @@
     "author": "YueGuoDora",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/296",
     "labels": [],
-    "working_days_open": 22
+    "working_days_open": 23,
+    "e2e_issues": []
   },
   {
     "iid": 295,
     "state": "merged",
+    "draft": false,
     "title": "[fix] remove mtp.0.head.weight and mtp.0.emb.tok_emb.weight in to_hf_mtp for master branch",
     "created_at": "2026-06-02",
     "updated_at": "2026-06-02",
@@ -1743,11 +1997,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 22
+    "working_days_open": 23,
+    "e2e_issues": []
   },
   {
     "iid": 294,
     "state": "merged",
+    "draft": false,
     "title": "[fix] remove mtp.0.head.weight and mtp.0.emb.tok_emb.weight in to_hf_mtp",
     "created_at": "2026-06-02",
     "updated_at": "2026-06-02",
@@ -1761,11 +2017,15 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 22
+    "working_days_open": 23,
+    "e2e_issues": [
+      "45"
+    ]
   },
   {
     "iid": 293,
     "state": "merged",
+    "draft": false,
     "title": "[文档捉虫] 文档链接错误修复",
     "created_at": "2026-06-02",
     "updated_at": "2026-07-02",
@@ -1779,11 +2039,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 22
+    "working_days_open": 23,
+    "e2e_issues": []
   },
   {
     "iid": 292,
     "state": "merged",
+    "draft": false,
     "title": "[文档捉虫] 文档链接错误修复",
     "created_at": "2026-06-02",
     "updated_at": "2026-07-02",
@@ -1797,11 +2059,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 22
+    "working_days_open": 23,
+    "e2e_issues": []
   },
   {
     "iid": 291,
     "state": "closed",
+    "draft": false,
     "title": "[feat] qwen3-0.6b pretrain",
     "created_at": "2026-06-01",
     "updated_at": "2026-06-02",
@@ -1813,11 +2077,13 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 23
+    "working_days_open": 24,
+    "e2e_issues": []
   },
   {
     "iid": 290,
     "state": "merged",
+    "draft": false,
     "title": "[docs]: 修正一些大小写、标点符号的文本问题",
     "created_at": "2026-06-01",
     "updated_at": "2026-06-01",
@@ -1832,11 +2098,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 23
+    "working_days_open": 24,
+    "e2e_issues": []
   },
   {
     "iid": 289,
     "state": "merged",
+    "draft": false,
     "title": "说明文档中路径更新",
     "created_at": "2026-06-01",
     "updated_at": "2026-06-01",
@@ -1850,11 +2118,15 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 23
+    "working_days_open": 24,
+    "e2e_issues": [
+      "43"
+    ]
   },
   {
     "iid": 288,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] Refactor DeepSeek V4 pipeline parallelization",
     "created_at": "2026-06-01",
     "updated_at": "2026-06-01",
@@ -1869,11 +2141,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 23
+    "working_days_open": 24,
+    "e2e_issues": []
   },
   {
     "iid": 287,
     "state": "opened",
+    "draft": true,
     "title": "[WIP] Add VLM DVPP image preprocessing support",
     "created_at": "2026-06-01",
     "updated_at": "2026-06-03",
@@ -1884,11 +2158,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 23
+    "working_days_open": 24,
+    "e2e_issues": []
   },
   {
     "iid": 286,
     "state": "merged",
+    "draft": false,
     "title": "[feat] add premerge numerical accuracy regression check skill",
     "created_at": "2026-05-30",
     "updated_at": "2026-06-04",
@@ -1903,11 +2179,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 23
+    "working_days_open": 24,
+    "e2e_issues": []
   },
   {
     "iid": 285,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix compile bug in dsv4",
     "created_at": "2026-05-30",
     "updated_at": "2026-06-03",
@@ -1922,11 +2200,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 23
+    "working_days_open": 24,
+    "e2e_issues": []
   },
   {
     "iid": 284,
     "state": "merged",
+    "draft": false,
     "title": "[feat] Unified control of NPU determinism with debug flags",
     "created_at": "2026-05-30",
     "updated_at": "2026-06-01",
@@ -1940,11 +2220,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 23
+    "working_days_open": 24,
+    "e2e_issues": []
   },
   {
     "iid": 283,
     "state": "merged",
+    "draft": false,
     "title": "[feat]Optimize probs calculation on branch master",
     "created_at": "2026-05-30",
     "updated_at": "2026-05-30",
@@ -1959,11 +2241,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 23
+    "working_days_open": 24,
+    "e2e_issues": []
   },
   {
     "iid": 282,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix dsv4 tp",
     "created_at": "2026-05-30",
     "updated_at": "2026-05-30",
@@ -1977,11 +2261,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 23
+    "working_days_open": 24,
+    "e2e_issues": []
   },
   {
     "iid": 281,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Fix the issue of parallelize plan update",
     "created_at": "2026-05-29",
     "updated_at": "2026-05-30",
@@ -1995,11 +2281,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 24
+    "working_days_open": 25,
+    "e2e_issues": []
   },
   {
     "iid": 280,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Adapted pytorch main fix: FSDP2 + TP + MixedPrecision: sync DTensor spec.tensor_meta.dtype",
     "created_at": "2026-05-29",
     "updated_at": "2026-05-30",
@@ -2014,11 +2302,15 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 24
+    "working_days_open": 25,
+    "e2e_issues": [
+      "5"
+    ]
   },
   {
     "iid": 279,
     "state": "merged",
+    "draft": false,
     "title": "[docs]补充文档中版本信息",
     "created_at": "2026-05-29",
     "updated_at": "2026-05-29",
@@ -2032,11 +2324,15 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 24
+    "working_days_open": 25,
+    "e2e_issues": [
+      "42"
+    ]
   },
   {
     "iid": 278,
     "state": "merged",
+    "draft": false,
     "title": "[文档捉虫] fix fake_backend with ep",
     "created_at": "2026-05-29",
     "updated_at": "2026-07-02",
@@ -2051,11 +2347,15 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 24
+    "working_days_open": 25,
+    "e2e_issues": [
+      "40"
+    ]
   },
   {
     "iid": 277,
     "state": "merged",
+    "draft": false,
     "title": "[feat] support smla/li/mhc",
     "created_at": "2026-05-28",
     "updated_at": "2026-06-05",
@@ -2069,11 +2369,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 25
+    "working_days_open": 26,
+    "e2e_issues": []
   },
   {
     "iid": 276,
     "state": "merged",
+    "draft": false,
     "title": "[fix]bug_fix for v0.2.2-dev",
     "created_at": "2026-05-28",
     "updated_at": "2026-05-28",
@@ -2087,11 +2389,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 25
+    "working_days_open": 26,
+    "e2e_issues": []
   },
   {
     "iid": 275,
     "state": "merged",
+    "draft": false,
     "title": "[feat] Add agent development pipeline",
     "created_at": "2026-05-28",
     "updated_at": "2026-06-09",
@@ -2106,11 +2410,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 25
+    "working_days_open": 26,
+    "e2e_issues": []
   },
   {
     "iid": 274,
     "state": "merged",
+    "draft": false,
     "title": "[docs]: 修正了docs文档的一些文本错误",
     "created_at": "2026-05-28",
     "updated_at": "2026-05-28",
@@ -2125,11 +2431,13 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 25
+    "working_days_open": 26,
+    "e2e_issues": []
   },
   {
     "iid": 273,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Adapt VLM to new converter registry",
     "created_at": "2026-05-28",
     "updated_at": "2026-05-28",
@@ -2144,11 +2452,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 25
+    "working_days_open": 26,
+    "e2e_issues": []
   },
   {
     "iid": 272,
     "state": "closed",
+    "draft": false,
     "title": "[fix] fix fake_backend with ep",
     "created_at": "2026-05-28",
     "updated_at": "2026-06-01",
@@ -2159,11 +2469,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 25
+    "working_days_open": 26,
+    "e2e_issues": []
   },
   {
     "iid": 271,
     "state": "closed",
+    "draft": false,
     "title": "修改cann包链接",
     "created_at": "2026-05-28",
     "updated_at": "2026-05-28",
@@ -2174,11 +2486,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 25
+    "working_days_open": 26,
+    "e2e_issues": []
   },
   {
     "iid": 270,
     "state": "closed",
+    "draft": false,
     "title": "add qwen3 configs to v0.2.2-dev",
     "created_at": "2026-05-28",
     "updated_at": "2026-06-01",
@@ -2189,11 +2503,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 25
+    "working_days_open": 26,
+    "e2e_issues": []
   },
   {
     "iid": 269,
     "state": "merged",
+    "draft": false,
     "title": "[2/3] CP代码回合与重构 - 注册机制与V4 CP策略实现",
     "created_at": "2026-05-28",
     "updated_at": "2026-06-03",
@@ -2208,11 +2524,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 25
+    "working_days_open": 26,
+    "e2e_issues": []
   },
   {
     "iid": 268,
     "state": "closed",
+    "draft": false,
     "title": "add qwen3 configs to v0.2.2-dev",
     "created_at": "2026-05-28",
     "updated_at": "2026-05-28",
@@ -2224,11 +2542,13 @@
       "stat/needs-squash",
       "cann-cla/no"
     ],
-    "working_days_open": 25
+    "working_days_open": 26,
+    "e2e_issues": []
   },
   {
     "iid": 267,
     "state": "closed",
+    "draft": false,
     "title": "[fix] Fix NPU pipeline stage metadata init",
     "created_at": "2026-05-28",
     "updated_at": "2026-05-28",
@@ -2239,11 +2559,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 25
+    "working_days_open": 26,
+    "e2e_issues": []
   },
   {
     "iid": 266,
     "state": "closed",
+    "draft": false,
     "title": "add qwen3 configs to 0.2.2-dev",
     "created_at": "2026-05-28",
     "updated_at": "2026-05-28",
@@ -2254,11 +2576,13 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 25
+    "working_days_open": 26,
+    "e2e_issues": []
   },
   {
     "iid": 265,
     "state": "merged",
+    "draft": false,
     "title": "修改脚本cann包链接",
     "created_at": "2026-05-27",
     "updated_at": "2026-05-27",
@@ -2272,11 +2596,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 26
+    "working_days_open": 27,
+    "e2e_issues": []
   },
   {
     "iid": 264,
     "state": "closed",
+    "draft": true,
     "title": "[WIP] add qwen3 configs to v0.2.2-dev",
     "created_at": "2026-05-27",
     "updated_at": "2026-05-28",
@@ -2285,11 +2611,13 @@
     "author": "YueGuoDora",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/264",
     "labels": [],
-    "working_days_open": 26
+    "working_days_open": 27,
+    "e2e_issues": []
   },
   {
     "iid": 263,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix mtp hf mapping strategy for master",
     "created_at": "2026-05-27",
     "updated_at": "2026-05-29",
@@ -2304,11 +2632,15 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 26
+    "working_days_open": 27,
+    "e2e_issues": [
+      "36"
+    ]
   },
   {
     "iid": 262,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix fake backend bug",
     "created_at": "2026-05-27",
     "updated_at": "2026-05-29",
@@ -2323,11 +2655,13 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 26
+    "working_days_open": 27,
+    "e2e_issues": []
   },
   {
     "iid": 261,
     "state": "merged",
+    "draft": false,
     "title": "【fix】fix deepseep v4 pp",
     "created_at": "2026-05-27",
     "updated_at": "2026-05-29",
@@ -2342,11 +2676,15 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 26
+    "working_days_open": 27,
+    "e2e_issues": [
+      "17"
+    ]
   },
   {
     "iid": 260,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix mtp hf weight mapping strategy",
     "created_at": "2026-05-27",
     "updated_at": "2026-05-29",
@@ -2360,11 +2698,15 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 26
+    "working_days_open": 27,
+    "e2e_issues": [
+      "36"
+    ]
   },
   {
     "iid": 259,
     "state": "merged",
+    "draft": false,
     "title": "[docs]: 更新dsv3文件 config_registry.py，修复文档文本错误",
     "created_at": "2026-05-27",
     "updated_at": "2026-05-27",
@@ -2379,11 +2721,13 @@
       "ci-pipeline-passed",
       "stat/needs-squash"
     ],
-    "working_days_open": 26
+    "working_days_open": 27,
+    "e2e_issues": []
   },
   {
     "iid": 258,
     "state": "merged",
+    "draft": false,
     "title": "[fix] support swap muon optimizer",
     "created_at": "2026-05-27",
     "updated_at": "2026-06-01",
@@ -2398,14 +2742,16 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 26
+    "working_days_open": 27,
+    "e2e_issues": []
   },
   {
     "iid": 257,
     "state": "merged",
+    "draft": false,
     "title": "[feat] support dsv4 flash sft",
     "created_at": "2026-05-27",
-    "updated_at": "2026-06-29",
+    "updated_at": "2026-07-03",
     "merged_at": "2026-06-29",
     "closed_at": "",
     "author": "zzyyjj012",
@@ -2417,11 +2763,15 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 26
+    "working_days_open": 27,
+    "e2e_issues": [
+      "71"
+    ]
   },
   {
     "iid": 256,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] Merge npu_expert_parallel into npu_permute",
     "created_at": "2026-05-26",
     "updated_at": "2026-05-27",
@@ -2435,11 +2785,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 27
+    "working_days_open": 28,
+    "e2e_issues": []
   },
   {
     "iid": 255,
     "state": "merged",
+    "draft": false,
     "title": "[fix]fix virtual_optimizer for v.2.2-dev",
     "created_at": "2026-05-26",
     "updated_at": "2026-05-28",
@@ -2454,11 +2806,13 @@
       "ci-pipeline-passed",
       "stat/needs-squash"
     ],
-    "working_days_open": 27
+    "working_days_open": 28,
+    "e2e_issues": []
   },
   {
     "iid": 254,
     "state": "merged",
+    "draft": false,
     "title": "【docs】upadate dsv4 flash docs and config toml",
     "created_at": "2026-05-26",
     "updated_at": "2026-05-28",
@@ -2472,11 +2826,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 27
+    "working_days_open": 28,
+    "e2e_issues": []
   },
   {
     "iid": 253,
     "state": "merged",
+    "draft": false,
     "title": "修改cann包链接",
     "created_at": "2026-05-26",
     "updated_at": "2026-05-26",
@@ -2490,11 +2846,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 27
+    "working_days_open": 28,
+    "e2e_issues": []
   },
   {
     "iid": 252,
     "state": "merged",
+    "draft": false,
     "title": "修改cann包版本",
     "created_at": "2026-05-26",
     "updated_at": "2026-05-26",
@@ -2508,11 +2866,15 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 27
+    "working_days_open": 28,
+    "e2e_issues": [
+      "38"
+    ]
   },
   {
     "iid": 251,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Fix DeepSeek V4 MTP TP compile wait path",
     "created_at": "2026-05-26",
     "updated_at": "2026-05-27",
@@ -2527,11 +2889,13 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 27
+    "working_days_open": 28,
+    "e2e_issues": []
   },
   {
     "iid": 250,
     "state": "merged",
+    "draft": false,
     "title": "fix: use module-level LOSS_SCALE global instead of class attribute",
     "created_at": "2026-05-26",
     "updated_at": "2026-05-27",
@@ -2546,11 +2910,15 @@
       "ci-pipeline-passed",
       "stat/needs-squash"
     ],
-    "working_days_open": 27
+    "working_days_open": 28,
+    "e2e_issues": [
+      "34"
+    ]
   },
   {
     "iid": 249,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] Remove the code related to the legacy converter mechanism",
     "created_at": "2026-05-26",
     "updated_at": "2026-05-28",
@@ -2564,11 +2932,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 27
+    "working_days_open": 28,
+    "e2e_issues": []
   },
   {
     "iid": 248,
     "state": "merged",
+    "draft": false,
     "title": "[feat]Optimize probs calculation on branch v0.2.2-dev",
     "created_at": "2026-05-25",
     "updated_at": "2026-05-26",
@@ -2583,11 +2953,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 28
+    "working_days_open": 29,
+    "e2e_issues": []
   },
   {
     "iid": 247,
     "state": "merged",
+    "draft": false,
     "title": "云平台样例删除",
     "created_at": "2026-05-25",
     "updated_at": "2026-05-26",
@@ -2601,11 +2973,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 28
+    "working_days_open": 29,
+    "e2e_issues": []
   },
   {
     "iid": 246,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix dsv4 post attention projection when enable tp",
     "created_at": "2026-05-25",
     "updated_at": "2026-05-26",
@@ -2620,11 +2994,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 28
+    "working_days_open": 29,
+    "e2e_issues": []
   },
   {
     "iid": 245,
     "state": "merged",
+    "draft": false,
     "title": "[fix] 删除错误配置deepseek_v4/train_configs/debug_model.toml",
     "created_at": "2026-05-25",
     "updated_at": "2026-05-25",
@@ -2638,27 +3014,31 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 28
+    "working_days_open": 29,
+    "e2e_issues": []
   },
   {
     "iid": 244,
-    "state": "opened",
+    "state": "closed",
+    "draft": true,
     "title": "[WIP][feat] support tensor checkpoint",
     "created_at": "2026-05-25",
-    "updated_at": "2026-06-30",
+    "updated_at": "2026-07-03",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-03",
     "author": "zhaiyukun",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/244",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 28
+    "working_days_open": 29,
+    "e2e_issues": []
   },
   {
     "iid": 243,
     "state": "merged",
+    "draft": false,
     "title": "[ci] Re-enabled lint and fixed errors",
     "created_at": "2026-05-23",
     "updated_at": "2026-05-23",
@@ -2673,11 +3053,13 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 28
+    "working_days_open": 29,
+    "e2e_issues": []
   },
   {
     "iid": 242,
     "state": "closed",
+    "draft": false,
     "title": "[fix] Fix DeepSeek V4 TP async collectives",
     "created_at": "2026-05-23",
     "updated_at": "2026-05-26",
@@ -2690,11 +3072,13 @@
       "ci-pipeline-passed",
       "stat/needs-squash"
     ],
-    "working_days_open": 28
+    "working_days_open": 29,
+    "e2e_issues": []
   },
   {
     "iid": 241,
     "state": "merged",
+    "draft": false,
     "title": "[docs] modify quickstart.md",
     "created_at": "2026-05-22",
     "updated_at": "2026-05-22",
@@ -2708,11 +3092,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 29
+    "working_days_open": 30,
+    "e2e_issues": []
   },
   {
     "iid": 240,
     "state": "merged",
+    "draft": false,
     "title": "[docs] modify quickstart.md",
     "created_at": "2026-05-22",
     "updated_at": "2026-05-22",
@@ -2726,11 +3112,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 29
+    "working_days_open": 30,
+    "e2e_issues": []
   },
   {
     "iid": 239,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Adapt cann 9.0.0 + triton_ascend 3.2.1 + torch 2.12.0 + torch_npu 2.12.0rc1 , fix triton ascend slice extension",
     "created_at": "2026-05-22",
     "updated_at": "2026-05-26",
@@ -2745,11 +3133,15 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 29
+    "working_days_open": 30,
+    "e2e_issues": [
+      "25"
+    ]
   },
   {
     "iid": 238,
     "state": "merged",
+    "draft": false,
     "title": "[docs] update torch.compile docs",
     "created_at": "2026-05-22",
     "updated_at": "2026-05-27",
@@ -2764,11 +3156,13 @@
       "ci-pipeline-passed",
       "approved"
     ],
-    "working_days_open": 29
+    "working_days_open": 30,
+    "e2e_issues": []
   },
   {
     "iid": 237,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix dsv4 sfa li loss scale",
     "created_at": "2026-05-22",
     "updated_at": "2026-05-22",
@@ -2782,11 +3176,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 29
+    "working_days_open": 30,
+    "e2e_issues": []
   },
   {
     "iid": 236,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] Refactored kl loss to avoid recomputation cost",
     "created_at": "2026-05-21",
     "updated_at": "2026-05-28",
@@ -2801,11 +3197,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 30
+    "working_days_open": 31,
+    "e2e_issues": []
   },
   {
     "iid": 235,
     "state": "merged",
+    "draft": false,
     "title": "[feat]adapter virtual optimizer for master",
     "created_at": "2026-05-21",
     "updated_at": "2026-05-29",
@@ -2820,11 +3218,13 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 30
+    "working_days_open": 31,
+    "e2e_issues": []
   },
   {
     "iid": 234,
     "state": "merged",
+    "draft": false,
     "title": "[feat] 增加DS V4 SFT数据集加载和SFT训练样例配置",
     "created_at": "2026-05-21",
     "updated_at": "2026-06-02",
@@ -2839,11 +3239,13 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 30
+    "working_days_open": 31,
+    "e2e_issues": []
   },
   {
     "iid": 233,
     "state": "merged",
+    "draft": false,
     "title": "[feat] add some github workflow: sync all branches from gitcode/deploy mkdocs",
     "created_at": "2026-05-21",
     "updated_at": "2026-05-22",
@@ -2858,11 +3260,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 30
+    "working_days_open": 31,
+    "e2e_issues": []
   },
   {
     "iid": 232,
     "state": "merged",
+    "draft": false,
     "title": "[fix] avoid NPU copy when checkpointing swap optimizer",
     "created_at": "2026-05-21",
     "updated_at": "2026-05-25",
@@ -2876,11 +3280,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 30
+    "working_days_open": 31,
+    "e2e_issues": []
   },
   {
     "iid": 231,
     "state": "merged",
+    "draft": false,
     "title": "增加aclnn接口封装层去除对MindSpeed依赖",
     "created_at": "2026-05-21",
     "updated_at": "2026-05-25",
@@ -2895,11 +3301,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 30
+    "working_days_open": 31,
+    "e2e_issues": []
   },
   {
     "iid": 230,
     "state": "merged",
+    "draft": false,
     "title": "[1/2] CP代码回合与重构 - 模型代码清理",
     "created_at": "2026-05-21",
     "updated_at": "2026-05-28",
@@ -2914,11 +3322,15 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 30
+    "working_days_open": 31,
+    "e2e_issues": [
+      "5"
+    ]
   },
   {
     "iid": 229,
     "state": "merged",
+    "draft": false,
     "title": "【feat】支持DeepSeek-V4-Pro模型",
     "created_at": "2026-05-21",
     "updated_at": "2026-05-22",
@@ -2932,11 +3344,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 30
+    "working_days_open": 31,
+    "e2e_issues": []
   },
   {
     "iid": 228,
     "state": "merged",
+    "draft": false,
     "title": "[docs]修改CANN包版本链接",
     "created_at": "2026-05-21",
     "updated_at": "2026-05-21",
@@ -2950,11 +3364,15 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 30
+    "working_days_open": 31,
+    "e2e_issues": [
+      "31"
+    ]
   },
   {
     "iid": 227,
     "state": "closed",
+    "draft": false,
     "title": "[feat]: Support DeepSeek V4 pipeline parallel training",
     "created_at": "2026-05-21",
     "updated_at": "2026-05-26",
@@ -2966,11 +3384,13 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 30
+    "working_days_open": 31,
+    "e2e_issues": []
   },
   {
     "iid": 226,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix dsv4 tp",
     "created_at": "2026-05-21",
     "updated_at": "2026-05-21",
@@ -2984,11 +3404,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 30
+    "working_days_open": 31,
+    "e2e_issues": []
   },
   {
     "iid": 225,
     "state": "closed",
+    "draft": false,
     "title": "[docs]贡献指南补充信息",
     "created_at": "2026-05-21",
     "updated_at": "2026-05-26",
@@ -3000,11 +3422,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 30
+    "working_days_open": 31,
+    "e2e_issues": []
   },
   {
     "iid": 224,
     "state": "merged",
+    "draft": false,
     "title": "[fix] 适配 CANN 9.0.0、torch_npu 2.10.0 和 triton_ascend 3.2.1",
     "created_at": "2026-05-21",
     "updated_at": "2026-05-21",
@@ -3019,11 +3443,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 30
+    "working_days_open": 31,
+    "e2e_issues": []
   },
   {
     "iid": 223,
     "state": "closed",
+    "draft": false,
     "title": "【docs】torch_npu and cann version update",
     "created_at": "2026-05-21",
     "updated_at": "2026-05-21",
@@ -3035,11 +3461,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 30
+    "working_days_open": 31,
+    "e2e_issues": []
   },
   {
     "iid": 222,
     "state": "closed",
+    "draft": false,
     "title": "[feat]support distributed muon optimizer and virtual allocator",
     "created_at": "2026-05-21",
     "updated_at": "2026-05-21",
@@ -3048,11 +3476,13 @@
     "author": "depeng1994",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/222",
     "labels": [],
-    "working_days_open": 30
+    "working_days_open": 31,
+    "e2e_issues": []
   },
   {
     "iid": 221,
     "state": "merged",
+    "draft": false,
     "title": "[docs]: 修正metrics_and_debugging.md文档中的文本错误",
     "created_at": "2026-05-21",
     "updated_at": "2026-05-22",
@@ -3066,11 +3496,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 30
+    "working_days_open": 31,
+    "e2e_issues": []
   },
   {
     "iid": 220,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix scatter_/gather input index out of bounds",
     "created_at": "2026-05-20",
     "updated_at": "2026-05-21",
@@ -3084,11 +3516,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 31
+    "working_days_open": 32,
+    "e2e_issues": []
   },
   {
     "iid": 219,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix scatter_/gather input index out of bounds",
     "created_at": "2026-05-20",
     "updated_at": "2026-05-28",
@@ -3102,11 +3536,13 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 31
+    "working_days_open": 32,
+    "e2e_issues": []
   },
   {
     "iid": 218,
     "state": "merged",
+    "draft": false,
     "title": "[feat] 迁移 swap optimizer checkpoint 保存加载到 master",
     "created_at": "2026-05-20",
     "updated_at": "2026-06-03",
@@ -3121,11 +3557,15 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 31
+    "working_days_open": 32,
+    "e2e_issues": [
+      "14"
+    ]
   },
   {
     "iid": 217,
     "state": "merged",
+    "draft": false,
     "title": "[docs]readme增加联系方式",
     "created_at": "2026-05-20",
     "updated_at": "2026-05-21",
@@ -3139,11 +3579,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 31
+    "working_days_open": 32,
+    "e2e_issues": []
   },
   {
     "iid": 216,
     "state": "merged",
+    "draft": false,
     "title": "[docs]: 修改metrics_and_debugging.md中的文本错误",
     "created_at": "2026-05-20",
     "updated_at": "2026-05-22",
@@ -3157,11 +3599,13 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 31
+    "working_days_open": 32,
+    "e2e_issues": []
   },
   {
     "iid": 215,
     "state": "merged",
+    "draft": false,
     "title": "[docs] 修正特性文档的一些错误",
     "created_at": "2026-05-20",
     "updated_at": "2026-05-20",
@@ -3176,11 +3620,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 31
+    "working_days_open": 32,
+    "e2e_issues": []
   },
   {
     "iid": 213,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] Migrate mhc_prepost and deepseek_v4_sfa converters to ModelCustomConfig pattern",
     "created_at": "2026-05-20",
     "updated_at": "2026-05-22",
@@ -3194,11 +3640,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 31
+    "working_days_open": 32,
+    "e2e_issues": []
   },
   {
     "iid": 212,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix swap optimizer config routing",
     "created_at": "2026-05-19",
     "updated_at": "2026-05-20",
@@ -3213,11 +3661,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 32
+    "working_days_open": 33,
+    "e2e_issues": []
   },
   {
     "iid": 211,
     "state": "merged",
+    "draft": false,
     "title": "[feat]Add VLM NPU training support",
     "created_at": "2026-05-19",
     "updated_at": "2026-05-28",
@@ -3232,11 +3682,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 32
+    "working_days_open": 33,
+    "e2e_issues": []
   },
   {
     "iid": 210,
     "state": "merged",
+    "draft": false,
     "title": "[fix] 支持 swap optimizer checkpoint 保存空分片 state",
     "created_at": "2026-05-19",
     "updated_at": "2026-05-19",
@@ -3250,11 +3702,13 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 32
+    "working_days_open": 33,
+    "e2e_issues": []
   },
   {
     "iid": 209,
     "state": "merged",
+    "draft": false,
     "title": "CP support announcement for DeepSeek-V4-Flash",
     "created_at": "2026-05-19",
     "updated_at": "2026-05-20",
@@ -3268,11 +3722,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 32
+    "working_days_open": 33,
+    "e2e_issues": []
   },
   {
     "iid": 208,
     "state": "merged",
+    "draft": false,
     "title": "[文档找虫] 修复了 config_registry.py 中存在硬编码绝对路径问题",
     "created_at": "2026-05-19",
     "updated_at": "2026-07-02",
@@ -3286,11 +3742,15 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 32
+    "working_days_open": 33,
+    "e2e_issues": [
+      "26"
+    ]
   },
   {
     "iid": 207,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix virtual_optimizer",
     "created_at": "2026-05-19",
     "updated_at": "2026-05-20",
@@ -3304,11 +3764,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 32
+    "working_days_open": 33,
+    "e2e_issues": []
   },
   {
     "iid": 206,
     "state": "merged",
+    "draft": false,
     "title": "【docs】support dsv4 pro docs",
     "created_at": "2026-05-19",
     "updated_at": "2026-05-19",
@@ -3322,11 +3784,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 32
+    "working_days_open": 33,
+    "e2e_issues": []
   },
   {
     "iid": 205,
     "state": "merged",
+    "draft": false,
     "title": "[test] adapt ut after refactoring config system",
     "created_at": "2026-05-18",
     "updated_at": "2026-05-27",
@@ -3341,11 +3805,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 33
+    "working_days_open": 34,
+    "e2e_issues": []
   },
   {
     "iid": 204,
     "state": "closed",
+    "draft": false,
     "title": "[fix] fix NPU RMSNorm eps access",
     "created_at": "2026-05-18",
     "updated_at": "2026-05-20",
@@ -3357,11 +3823,13 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 33
+    "working_days_open": 34,
+    "e2e_issues": []
   },
   {
     "iid": 203,
     "state": "merged",
+    "draft": false,
     "title": "[fix] 修复 swap optimizer checkpoint 保存加载",
     "created_at": "2026-05-18",
     "updated_at": "2026-05-19",
@@ -3376,11 +3844,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 33
+    "working_days_open": 34,
+    "e2e_issues": []
   },
   {
     "iid": 202,
     "state": "closed",
+    "draft": false,
     "title": "[fix] Optimize swap optimizer checkpoint save/load",
     "created_at": "2026-05-16",
     "updated_at": "2026-05-18",
@@ -3393,11 +3863,13 @@
       "stat/needs-squash",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 33
+    "working_days_open": 34,
+    "e2e_issues": []
   },
   {
     "iid": 201,
     "state": "merged",
+    "draft": false,
     "title": "DeepSeek-V4支持BSND shape下的序列切分 | 去除MindSpeed算子依赖",
     "created_at": "2026-05-16",
     "updated_at": "2026-05-19",
@@ -3412,11 +3884,13 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 33
+    "working_days_open": 34,
+    "e2e_issues": []
   },
   {
     "iid": 200,
     "state": "closed",
+    "draft": false,
     "title": "[fix] 支持 swap optimizer checkpoint 保存和加载",
     "created_at": "2026-05-16",
     "updated_at": "2026-05-16",
@@ -3429,11 +3903,13 @@
       "stat/needs-squash",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 33
+    "working_days_open": 34,
+    "e2e_issues": []
   },
   {
     "iid": 199,
     "state": "closed",
+    "draft": false,
     "title": "[fix] 支持 swap optimizer checkpoint 保存和加载",
     "created_at": "2026-05-16",
     "updated_at": "2026-05-16",
@@ -3444,11 +3920,13 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 33
+    "working_days_open": 34,
+    "e2e_issues": []
   },
   {
     "iid": 198,
     "state": "merged",
+    "draft": false,
     "title": "[文档找虫] 增加index—loss曲线，修复画图skill步数有小数的问题",
     "created_at": "2026-05-15",
     "updated_at": "2026-07-02",
@@ -3462,11 +3940,13 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 34
+    "working_days_open": 35,
+    "e2e_issues": []
   },
   {
     "iid": 197,
     "state": "merged",
+    "draft": false,
     "title": "[feat] support sft for qwen3-30B-A3B",
     "created_at": "2026-05-14",
     "updated_at": "2026-05-19",
@@ -3481,11 +3961,13 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 35
+    "working_days_open": 36,
+    "e2e_issues": []
   },
   {
     "iid": 196,
     "state": "closed",
+    "draft": false,
     "title": "support smla&li fusion kernel",
     "created_at": "2026-05-14",
     "updated_at": "2026-06-17",
@@ -3498,11 +3980,13 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 35
+    "working_days_open": 36,
+    "e2e_issues": []
   },
   {
     "iid": 195,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] adapt dsv32 model",
     "created_at": "2026-05-14",
     "updated_at": "2026-05-20",
@@ -3517,11 +4001,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 35
+    "working_days_open": 36,
+    "e2e_issues": []
   },
   {
     "iid": 194,
     "state": "merged",
+    "draft": false,
     "title": "[docs] update docs after refacor config system",
     "created_at": "2026-05-14",
     "updated_at": "2026-05-25",
@@ -3536,11 +4022,15 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 35
+    "working_days_open": 36,
+    "e2e_issues": [
+      "32"
+    ]
   },
   {
     "iid": 193,
     "state": "closed",
+    "draft": false,
     "title": "CI TEST",
     "created_at": "2026-05-13",
     "updated_at": "2026-05-20",
@@ -3552,11 +4042,13 @@
       "cann-cla/no",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 36
+    "working_days_open": 37,
+    "e2e_issues": []
   },
   {
     "iid": 192,
     "state": "merged",
+    "draft": false,
     "title": "docs: 更新文件 muon_optimizer.md",
     "created_at": "2026-05-13",
     "updated_at": "2026-05-13",
@@ -3570,11 +4062,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 36
+    "working_days_open": 37,
+    "e2e_issues": []
   },
   {
     "iid": 191,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] Refactored kl loss to avoid recomputation cost - v0.2.2",
     "created_at": "2026-05-13",
     "updated_at": "2026-05-14",
@@ -3589,11 +4083,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 36
+    "working_days_open": 37,
+    "e2e_issues": []
   },
   {
     "iid": 190,
     "state": "merged",
+    "draft": false,
     "title": "【feat】支持DeepSeek-V4-Pro模型",
     "created_at": "2026-05-13",
     "updated_at": "2026-05-16",
@@ -3607,11 +4103,13 @@
       "approved",
       "cann-cla/yes"
     ],
-    "working_days_open": 36
+    "working_days_open": 37,
+    "e2e_issues": []
   },
   {
     "iid": 189,
     "state": "merged",
+    "draft": false,
     "title": "[文档找虫]删除配置文件中的无意义load_step参数",
     "created_at": "2026-05-12",
     "updated_at": "2026-07-02",
@@ -3625,11 +4123,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 37
+    "working_days_open": 38,
+    "e2e_issues": []
   },
   {
     "iid": 188,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] Adapt deepseek-v4 to main",
     "created_at": "2026-05-12",
     "updated_at": "2026-05-16",
@@ -3644,11 +4144,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 37
+    "working_days_open": 38,
+    "e2e_issues": []
   },
   {
     "iid": 187,
     "state": "closed",
+    "draft": false,
     "title": "把load_step = 0 删除，这个冗余参数无意义",
     "created_at": "2026-05-12",
     "updated_at": "2026-05-12",
@@ -3659,11 +4161,13 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 37
+    "working_days_open": 38,
+    "e2e_issues": []
   },
   {
     "iid": 186,
     "state": "closed",
+    "draft": false,
     "title": "[ci] Re-enabled lint(maybe ut)",
     "created_at": "2026-05-12",
     "updated_at": "2026-05-29",
@@ -3675,11 +4179,13 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 37
+    "working_days_open": 38,
+    "e2e_issues": []
   },
   {
     "iid": 185,
     "state": "merged",
+    "draft": false,
     "title": "[fix]triton mhc post support dim=7168",
     "created_at": "2026-05-12",
     "updated_at": "2026-05-12",
@@ -3694,11 +4200,13 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 37
+    "working_days_open": 38,
+    "e2e_issues": []
   },
   {
     "iid": 184,
     "state": "closed",
+    "draft": false,
     "title": "[docs] Modify toml, use virtual_optimizer.",
     "created_at": "2026-05-12",
     "updated_at": "2026-05-19",
@@ -3711,27 +4219,33 @@
       "ci-pipeline-passed",
       "stat/needs-squash"
     ],
-    "working_days_open": 37
+    "working_days_open": 38,
+    "e2e_issues": [
+      "13"
+    ]
   },
   {
     "iid": 183,
-    "state": "opened",
+    "state": "closed",
+    "draft": true,
     "title": "[WIP] Enable mla absorb mode with ModelCustomConfig",
     "created_at": "2026-05-11",
-    "updated_at": "2026-07-01",
+    "updated_at": "2026-07-03",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-03",
     "author": "zhaiyukun",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/183",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 38
+    "working_days_open": 39,
+    "e2e_issues": []
   },
   {
     "iid": 182,
     "state": "closed",
+    "draft": true,
     "title": "[WIP] [refactor] Refactored kl loss to avoid recomputation cost",
     "created_at": "2026-05-09",
     "updated_at": "2026-05-21",
@@ -3744,11 +4258,13 @@
       "ci-pipeline-failed",
       "stat/needs-squash"
     ],
-    "working_days_open": 39
+    "working_days_open": 40,
+    "e2e_issues": []
   },
   {
     "iid": 181,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix virtual_optimizer.py",
     "created_at": "2026-05-09",
     "updated_at": "2026-05-09",
@@ -3762,11 +4278,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 39
+    "working_days_open": 40,
+    "e2e_issues": []
   },
   {
     "iid": 180,
     "state": "merged",
+    "draft": false,
     "title": "[feat]support distributed muon optimizer and virtual allocator",
     "created_at": "2026-05-09",
     "updated_at": "2026-05-11",
@@ -3781,11 +4299,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 39
+    "working_days_open": 40,
+    "e2e_issues": []
   },
   {
     "iid": 179,
     "state": "merged",
+    "draft": false,
     "title": "[feat] cherry-pick：Support checkpoint load and use for virtual_optimizer.",
     "created_at": "2026-05-09",
     "updated_at": "2026-05-09",
@@ -3800,11 +4320,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 39
+    "working_days_open": 40,
+    "e2e_issues": []
   },
   {
     "iid": 178,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix virtual_optimizer.py",
     "created_at": "2026-05-09",
     "updated_at": "2026-05-09",
@@ -3818,11 +4340,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 39
+    "working_days_open": 40,
+    "e2e_issues": []
   },
   {
     "iid": 177,
     "state": "merged",
+    "draft": false,
     "title": "[Feat]cherry-pick: Add virtual_optimizer for torchtitan_npu.",
     "created_at": "2026-05-09",
     "updated_at": "2026-05-09",
@@ -3837,11 +4361,13 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 39
+    "working_days_open": 40,
+    "e2e_issues": []
   },
   {
     "iid": 176,
     "state": "merged",
+    "draft": false,
     "title": "Cherry-picking smoke test scripts",
     "created_at": "2026-05-09",
     "updated_at": "2026-05-09",
@@ -3856,11 +4382,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 39
+    "working_days_open": 40,
+    "e2e_issues": []
   },
   {
     "iid": 175,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] breaking update !  refactor config system to adapt torchtitan main branch",
     "created_at": "2026-05-09",
     "updated_at": "2026-05-11",
@@ -3875,11 +4403,15 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 39
+    "working_days_open": 40,
+    "e2e_issues": [
+      "21"
+    ]
   },
   {
     "iid": 174,
     "state": "merged",
+    "draft": false,
     "title": "[docs] fix low_precision_training.md",
     "created_at": "2026-05-09",
     "updated_at": "2026-05-09",
@@ -3893,11 +4425,15 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 39
+    "working_days_open": 40,
+    "e2e_issues": [
+      "10"
+    ]
   },
   {
     "iid": 173,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Fix MoE hash routing table to select from all experts",
     "created_at": "2026-05-08",
     "updated_at": "2026-05-09",
@@ -3911,11 +4447,13 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 40
+    "working_days_open": 41,
+    "e2e_issues": []
   },
   {
     "iid": 172,
     "state": "merged",
+    "draft": false,
     "title": "[fix]triton mhc post support dim=7168",
     "created_at": "2026-05-07",
     "updated_at": "2026-05-11",
@@ -3930,11 +4468,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 41
+    "working_days_open": 42,
+    "e2e_issues": []
   },
   {
     "iid": 171,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Fix MoE hash routing table to select from all experts",
     "created_at": "2026-05-07",
     "updated_at": "2026-05-07",
@@ -3948,11 +4488,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 41
+    "working_days_open": 42,
+    "e2e_issues": []
   },
   {
     "iid": 170,
     "state": "merged",
+    "draft": false,
     "title": "[feat] Support checkpoint load and use for virtual_optimizer.",
     "created_at": "2026-05-07",
     "updated_at": "2026-05-09",
@@ -3967,11 +4509,15 @@
       "ci-pipeline-passed",
       "stat/needs-squash"
     ],
-    "working_days_open": 41
+    "working_days_open": 42,
+    "e2e_issues": [
+      "14"
+    ]
   },
   {
     "iid": 169,
     "state": "merged",
+    "draft": false,
     "title": "补充云平台开发最小样例README",
     "created_at": "2026-05-07",
     "updated_at": "2026-05-07",
@@ -3985,11 +4531,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 41
+    "working_days_open": 42,
+    "e2e_issues": []
   },
   {
     "iid": 168,
     "state": "closed",
+    "draft": false,
     "title": "[feat]support dist muon and virtual allocator",
     "created_at": "2026-05-06",
     "updated_at": "2026-05-19",
@@ -4002,11 +4550,13 @@
       "cann-cla/no",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 42
+    "working_days_open": 43,
+    "e2e_issues": []
   },
   {
     "iid": 167,
     "state": "merged",
+    "draft": false,
     "title": "[feat] add DeepSeek-V4 CP support for ratio1 and ratio128",
     "created_at": "2026-04-30",
     "updated_at": "2026-05-09",
@@ -4021,11 +4571,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 43
+    "working_days_open": 44,
+    "e2e_issues": []
   },
   {
     "iid": 166,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Fixed several bugs in smoke_test",
     "created_at": "2026-04-30",
     "updated_at": "2026-05-06",
@@ -4040,11 +4592,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 43
+    "working_days_open": 44,
+    "e2e_issues": []
   },
   {
     "iid": 165,
     "state": "merged",
+    "draft": false,
     "title": "[feat] Add hooks for Claude Code , OpenCode  and CodeX to automatically load skills.",
     "created_at": "2026-04-30",
     "updated_at": "2026-05-19",
@@ -4059,11 +4613,13 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 43
+    "working_days_open": 44,
+    "e2e_issues": []
   },
   {
     "iid": 164,
     "state": "merged",
+    "draft": false,
     "title": "[ci] Worked on ci scripts",
     "created_at": "2026-04-30",
     "updated_at": "2026-04-30",
@@ -4078,11 +4634,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 43
+    "working_days_open": 44,
+    "e2e_issues": []
   },
   {
     "iid": 163,
     "state": "merged",
+    "draft": false,
     "title": "feat : 补充云平台单卡用例",
     "created_at": "2026-04-29",
     "updated_at": "2026-04-30",
@@ -4096,11 +4654,13 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 44
+    "working_days_open": 45,
+    "e2e_issues": []
   },
   {
     "iid": 162,
     "state": "closed",
+    "draft": true,
     "title": "[WIP]support muon and adamw for virtual optimizer v2",
     "created_at": "2026-04-28",
     "updated_at": "2026-04-30",
@@ -4111,11 +4671,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 45
+    "working_days_open": 46,
+    "e2e_issues": []
   },
   {
     "iid": 161,
     "state": "opened",
+    "draft": false,
     "title": "[feat] add rms_norm for tilelang",
     "created_at": "2026-04-28",
     "updated_at": "2026-05-08",
@@ -4126,11 +4688,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 45
+    "working_days_open": 46,
+    "e2e_issues": []
   },
   {
     "iid": 160,
     "state": "merged",
+    "draft": false,
     "title": "[文档找虫]文档路径修复",
     "created_at": "2026-04-28",
     "updated_at": "2026-07-02",
@@ -4144,11 +4708,15 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 45
+    "working_days_open": 46,
+    "e2e_issues": [
+      "11"
+    ]
   },
   {
     "iid": 159,
     "state": "merged",
+    "draft": false,
     "title": "[文档找虫]路径拼写错误",
     "created_at": "2026-04-27",
     "updated_at": "2026-07-02",
@@ -4162,11 +4730,15 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 46
+    "working_days_open": 47,
+    "e2e_issues": [
+      "8"
+    ]
   },
   {
     "iid": 158,
     "state": "merged",
+    "draft": false,
     "title": "fix: [文档找虫]DeepSeek名称大小写统一",
     "created_at": "2026-04-27",
     "updated_at": "2026-07-02",
@@ -4180,11 +4752,15 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 46
+    "working_days_open": 47,
+    "e2e_issues": [
+      "9"
+    ]
   },
   {
     "iid": 157,
     "state": "closed",
+    "draft": true,
     "title": "[WIP]fix: DeepSeek 名字大小写统一",
     "created_at": "2026-04-27",
     "updated_at": "2026-04-27",
@@ -4195,11 +4771,15 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 46
+    "working_days_open": 47,
+    "e2e_issues": [
+      "9"
+    ]
   },
   {
     "iid": 156,
     "state": "closed",
+    "draft": true,
     "title": "[WIP]fix: readme文件中DeepSeek 大小写统一化",
     "created_at": "2026-04-27",
     "updated_at": "2026-04-27",
@@ -4210,11 +4790,15 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 46
+    "working_days_open": 47,
+    "e2e_issues": [
+      "9"
+    ]
   },
   {
     "iid": 155,
     "state": "closed",
+    "draft": false,
     "title": "路径拼写错误",
     "created_at": "2026-04-27",
     "updated_at": "2026-04-27",
@@ -4226,11 +4810,13 @@
       "cann-cla/no",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 46
+    "working_days_open": 47,
+    "e2e_issues": []
   },
   {
     "iid": 154,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Added devcontainer workflow; Fixed active UTs",
     "created_at": "2026-04-27",
     "updated_at": "2026-04-28",
@@ -4245,11 +4831,13 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 46
+    "working_days_open": 47,
+    "e2e_issues": []
   },
   {
     "iid": 153,
     "state": "opened",
+    "draft": true,
     "title": "[WIP][feat] add rms_norm for tilelang",
     "created_at": "2026-04-25",
     "updated_at": "2026-05-08",
@@ -4260,11 +4848,13 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 46
+    "working_days_open": 47,
+    "e2e_issues": []
   },
   {
     "iid": 152,
     "state": "merged",
+    "draft": false,
     "title": "[Feat]Add virtual_optimizer for torchtitan_npu.",
     "created_at": "2026-04-25",
     "updated_at": "2026-04-30",
@@ -4279,11 +4869,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 46
+    "working_days_open": 47,
+    "e2e_issues": []
   },
   {
     "iid": 151,
     "state": "opened",
+    "draft": false,
     "title": "[docs] add tilelang_ops.md",
     "created_at": "2026-04-25",
     "updated_at": "2026-05-08",
@@ -4294,11 +4886,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 46
+    "working_days_open": 47,
+    "e2e_issues": []
   },
   {
     "iid": 150,
     "state": "merged",
+    "draft": false,
     "title": "Adjust the import order of mindspeed",
     "created_at": "2026-04-25",
     "updated_at": "2026-04-25",
@@ -4313,11 +4907,13 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 46
+    "working_days_open": 47,
+    "e2e_issues": []
   },
   {
     "iid": 149,
     "state": "closed",
+    "draft": false,
     "title": "fix: support swiglu limit in GMM padding path",
     "created_at": "2026-04-25",
     "updated_at": "2026-04-25",
@@ -4328,11 +4924,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 46
+    "working_days_open": 47,
+    "e2e_issues": []
   },
   {
     "iid": 148,
     "state": "closed",
+    "draft": true,
     "title": "[WIP]feat: support distributed muon optimizer for deepseek-V4, support virtual_allocator for muon",
     "created_at": "2026-04-24",
     "updated_at": "2026-05-19",
@@ -4345,11 +4943,13 @@
       "stat/needs-squash",
       "cann-cla/no"
     ],
-    "working_days_open": 47
+    "working_days_open": 48,
+    "e2e_issues": []
   },
   {
     "iid": 147,
     "state": "merged",
+    "draft": false,
     "title": "Add upstream sync GitHub workflow",
     "created_at": "2026-04-24",
     "updated_at": "2026-04-30",
@@ -4363,11 +4963,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 47
+    "working_days_open": 48,
+    "e2e_issues": []
   },
   {
     "iid": 146,
     "state": "closed",
+    "draft": false,
     "title": "Added mkdocs github.io deployment",
     "created_at": "2026-04-24",
     "updated_at": "2026-05-14",
@@ -4378,11 +4980,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 47
+    "working_days_open": 48,
+    "e2e_issues": []
   },
   {
     "iid": 145,
     "state": "closed",
+    "draft": false,
     "title": "[docs] add tilelang_ops.md",
     "created_at": "2026-04-24",
     "updated_at": "2026-04-25",
@@ -4394,11 +4998,13 @@
       "cann-cla/no",
       "stat/needs-squash"
     ],
-    "working_days_open": 47
+    "working_days_open": 48,
+    "e2e_issues": []
   },
   {
     "iid": 144,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] Refactor BaseConverter to ModelCustomConfig",
     "created_at": "2026-04-24",
     "updated_at": "2026-05-15",
@@ -4412,11 +5018,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 47
+    "working_days_open": 48,
+    "e2e_issues": []
   },
   {
     "iid": 143,
     "state": "merged",
+    "draft": false,
     "title": "[feat] Support DeeepSeek-V4-Flash CPT train",
     "created_at": "2026-04-24",
     "updated_at": "2026-04-24",
@@ -4430,11 +5038,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 47
+    "working_days_open": 48,
+    "e2e_issues": []
   },
   {
     "iid": 142,
     "state": "merged",
+    "draft": false,
     "title": "[docs] add Architecture png & zread ai",
     "created_at": "2026-04-24",
     "updated_at": "2026-04-24",
@@ -4448,11 +5058,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 47
+    "working_days_open": 48,
+    "e2e_issues": []
   },
   {
     "iid": 141,
     "state": "closed",
+    "draft": true,
     "title": "[WIP] add launch skill",
     "created_at": "2026-04-21",
     "updated_at": "2026-06-08",
@@ -4464,11 +5076,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 50
+    "working_days_open": 51,
+    "e2e_issues": []
   },
   {
     "iid": 140,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] Refactored gmm by registering the fused operator with torch.library",
     "created_at": "2026-04-20",
     "updated_at": "2026-06-02",
@@ -4483,11 +5097,13 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 51
+    "working_days_open": 52,
+    "e2e_issues": []
   },
   {
     "iid": 139,
     "state": "closed",
+    "draft": false,
     "title": "new: 新建文件 tilelang_ops.md",
     "created_at": "2026-04-17",
     "updated_at": "2026-04-24",
@@ -4499,11 +5115,13 @@
       "stat/needs-squash",
       "cann-cla/no"
     ],
-    "working_days_open": 52
+    "working_days_open": 53,
+    "e2e_issues": []
   },
   {
     "iid": 138,
     "state": "merged",
+    "draft": false,
     "title": "[feat] add torchtitan-npu env setup skill",
     "created_at": "2026-04-17",
     "updated_at": "2026-06-09",
@@ -4518,11 +5136,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 52
+    "working_days_open": 53,
+    "e2e_issues": []
   },
   {
     "iid": 137,
     "state": "merged",
+    "draft": false,
     "title": "Fixed bugs in docs",
     "created_at": "2026-04-16",
     "updated_at": "2026-04-16",
@@ -4537,11 +5157,13 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 53
+    "working_days_open": 54,
+    "e2e_issues": []
   },
   {
     "iid": 136,
     "state": "closed",
+    "draft": false,
     "title": "[feat] add virtual optimizer",
     "created_at": "2026-04-16",
     "updated_at": "2026-04-25",
@@ -4552,11 +5174,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 53
+    "working_days_open": 54,
+    "e2e_issues": []
   },
   {
     "iid": 135,
     "state": "merged",
+    "draft": false,
     "title": "Updated quickstart",
     "created_at": "2026-04-16",
     "updated_at": "2026-04-16",
@@ -4571,11 +5195,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 53
+    "working_days_open": 54,
+    "e2e_issues": []
   },
   {
     "iid": 134,
     "state": "merged",
+    "draft": false,
     "title": "[docs] 优化部署与上手文档",
     "created_at": "2026-04-16",
     "updated_at": "2026-04-16",
@@ -4589,11 +5215,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 53
+    "working_days_open": 54,
+    "e2e_issues": []
   },
   {
     "iid": 133,
     "state": "merged",
+    "draft": false,
     "title": "[docs] Modify readme.md and License",
     "created_at": "2026-04-16",
     "updated_at": "2026-04-16",
@@ -4607,11 +5235,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 53
+    "working_days_open": 54,
+    "e2e_issues": []
   },
   {
     "iid": 132,
     "state": "merged",
+    "draft": false,
     "title": "[docs] add cache cleanup notice in torch_compile.md",
     "created_at": "2026-04-16",
     "updated_at": "2026-04-16",
@@ -4625,11 +5255,13 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 53
+    "working_days_open": 54,
+    "e2e_issues": []
   },
   {
     "iid": 131,
     "state": "merged",
+    "draft": false,
     "title": "Fixed license headers",
     "created_at": "2026-04-15",
     "updated_at": "2026-04-16",
@@ -4644,11 +5276,13 @@
       "lgtm",
       "stat/needs-squash"
     ],
-    "working_days_open": 54
+    "working_days_open": 55,
+    "e2e_issues": []
   },
   {
     "iid": 130,
     "state": "merged",
+    "draft": false,
     "title": "[docs] [fix] Fixed links in docs",
     "created_at": "2026-04-14",
     "updated_at": "2026-04-14",
@@ -4662,11 +5296,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 55
+    "working_days_open": 56,
+    "e2e_issues": []
   },
   {
     "iid": 129,
     "state": "merged",
+    "draft": false,
     "title": "[docs] Modify readme.md",
     "created_at": "2026-04-14",
     "updated_at": "2026-04-14",
@@ -4681,11 +5317,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 55
+    "working_days_open": 56,
+    "e2e_issues": []
   },
   {
     "iid": 128,
     "state": "merged",
+    "draft": false,
     "title": "Reverted deletion of quickstart",
     "created_at": "2026-04-13",
     "updated_at": "2026-04-14",
@@ -4700,11 +5338,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 56
+    "working_days_open": 57,
+    "e2e_issues": []
   },
   {
     "iid": 127,
     "state": "merged",
+    "draft": false,
     "title": "[feat] add draw log curve skill",
     "created_at": "2026-04-13",
     "updated_at": "2026-04-14",
@@ -4719,11 +5359,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 56
+    "working_days_open": 57,
+    "e2e_issues": []
   },
   {
     "iid": 126,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] Reconstructing the way to custom model",
     "created_at": "2026-04-13",
     "updated_at": "2026-04-30",
@@ -4737,11 +5379,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 56
+    "working_days_open": 57,
+    "e2e_issues": []
   },
   {
     "iid": 125,
     "state": "merged",
+    "draft": false,
     "title": "[docs] Update performance data",
     "created_at": "2026-04-11",
     "updated_at": "2026-04-13",
@@ -4756,11 +5400,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 56
+    "working_days_open": 57,
+    "e2e_issues": []
   },
   {
     "iid": 124,
     "state": "merged",
+    "draft": false,
     "title": "[docs]Delete deepseek_v3_671b_61layers_16die_debug.toml",
     "created_at": "2026-04-11",
     "updated_at": "2026-04-13",
@@ -4774,11 +5420,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 56
+    "working_days_open": 57,
+    "e2e_issues": []
   },
   {
     "iid": 123,
     "state": "merged",
+    "draft": false,
     "title": "[fix] support TP+CP DSA indexer loss and clean llama3 debug preset",
     "created_at": "2026-04-10",
     "updated_at": "2026-04-13",
@@ -4793,11 +5441,13 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 57
+    "working_days_open": 58,
+    "e2e_issues": []
   },
   {
     "iid": 122,
     "state": "closed",
+    "draft": false,
     "title": "[fix]：dsa-indexer-loss-query-head-shape",
     "created_at": "2026-04-10",
     "updated_at": "2026-04-10",
@@ -4806,11 +5456,13 @@
     "author": "zhangwei1177",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/122",
     "labels": [],
-    "working_days_open": 57
+    "working_days_open": 58,
+    "e2e_issues": []
   },
   {
     "iid": 121,
     "state": "merged",
+    "draft": false,
     "title": "[fix] remove redundant DTensor local conversion paths",
     "created_at": "2026-04-09",
     "updated_at": "2026-04-09",
@@ -4825,11 +5477,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 58
+    "working_days_open": 59,
+    "e2e_issues": []
   },
   {
     "iid": 120,
     "state": "merged",
+    "draft": false,
     "title": "[docs]modify toml and readme",
     "created_at": "2026-04-09",
     "updated_at": "2026-04-09",
@@ -4844,11 +5498,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 58
+    "working_days_open": 59,
+    "e2e_issues": []
   },
   {
     "iid": 119,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Add Ascend environment variables for multi-node training script",
     "created_at": "2026-04-09",
     "updated_at": "2026-04-09",
@@ -4862,11 +5518,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 58
+    "working_days_open": 59,
+    "e2e_issues": []
   },
   {
     "iid": 118,
     "state": "merged",
+    "draft": false,
     "title": "Updated several places with readme",
     "created_at": "2026-04-09",
     "updated_at": "2026-04-13",
@@ -4881,11 +5539,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 58
+    "working_days_open": 59,
+    "e2e_issues": []
   },
   {
     "iid": 117,
     "state": "closed",
+    "draft": false,
     "title": "[fix] align deepseek v32 smoke configs for CP tests",
     "created_at": "2026-04-08",
     "updated_at": "2026-05-12",
@@ -4897,11 +5557,13 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 59
+    "working_days_open": 60,
+    "e2e_issues": []
   },
   {
     "iid": 116,
     "state": "merged",
+    "draft": false,
     "title": "[docs] add user_guide.md",
     "created_at": "2026-04-08",
     "updated_at": "2026-04-13",
@@ -4916,11 +5578,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 59
+    "working_days_open": 60,
+    "e2e_issues": []
   },
   {
     "iid": 115,
     "state": "merged",
+    "draft": false,
     "title": "[feat] add oom analysis skill",
     "created_at": "2026-04-08",
     "updated_at": "2026-04-14",
@@ -4935,11 +5599,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 59
+    "working_days_open": 60,
+    "e2e_issues": []
   },
   {
     "iid": 114,
     "state": "merged",
+    "draft": false,
     "title": "[fix] add MTP Context Parallel patch",
     "created_at": "2026-04-08",
     "updated_at": "2026-04-10",
@@ -4954,11 +5620,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 59
+    "working_days_open": 60,
+    "e2e_issues": []
   },
   {
     "iid": 113,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Modify toml.",
     "created_at": "2026-04-08",
     "updated_at": "2026-04-08",
@@ -4973,11 +5641,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 59
+    "working_days_open": 60,
+    "e2e_issues": []
   },
   {
     "iid": 112,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Remove fusion attention meta function code override",
     "created_at": "2026-04-07",
     "updated_at": "2026-04-07",
@@ -4992,11 +5662,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 60
+    "working_days_open": 61,
+    "e2e_issues": []
   },
   {
     "iid": 111,
     "state": "merged",
+    "draft": false,
     "title": "[fix]Modify toml and readme.",
     "created_at": "2026-04-07",
     "updated_at": "2026-04-07",
@@ -5011,11 +5683,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 60
+    "working_days_open": 61,
+    "e2e_issues": []
   },
   {
     "iid": 110,
     "state": "merged",
+    "draft": false,
     "title": "docs: 更新自定义 CP 文档",
     "created_at": "2026-04-07",
     "updated_at": "2026-04-07",
@@ -5030,11 +5704,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 60
+    "working_days_open": 61,
+    "e2e_issues": []
   },
   {
     "iid": 109,
     "state": "merged",
+    "draft": false,
     "title": "Updated License/Copyright headers",
     "created_at": "2026-04-07",
     "updated_at": "2026-04-09",
@@ -5049,11 +5725,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 60
+    "working_days_open": 61,
+    "e2e_issues": []
   },
   {
     "iid": 108,
     "state": "merged",
+    "draft": false,
     "title": "[fix]: 修复rope流程中的bug",
     "created_at": "2026-04-03",
     "updated_at": "2026-04-07",
@@ -5068,11 +5746,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 61
+    "working_days_open": 62,
+    "e2e_issues": []
   },
   {
     "iid": 107,
     "state": "closed",
+    "draft": false,
     "title": "[fix] Update smoke test: add ValueError detection and adjust activation_checkpoint mode",
     "created_at": "2026-04-03",
     "updated_at": "2026-05-12",
@@ -5084,11 +5764,13 @@
       "ci-pipeline-failed",
       "cann-cla/yes"
     ],
-    "working_days_open": 61
+    "working_days_open": 62,
+    "e2e_issues": []
   },
   {
     "iid": 106,
     "state": "merged",
+    "draft": false,
     "title": "[fix]modify deepseek_v32 toml for cp.",
     "created_at": "2026-04-03",
     "updated_at": "2026-04-03",
@@ -5102,11 +5784,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 61
+    "working_days_open": 62,
+    "e2e_issues": []
   },
   {
     "iid": 105,
     "state": "merged",
+    "draft": false,
     "title": "fix: tp/ep/cp同时开启出现的dtensor问题",
     "created_at": "2026-04-03",
     "updated_at": "2026-04-03",
@@ -5121,11 +5805,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 61
+    "working_days_open": 62,
+    "e2e_issues": []
   },
   {
     "iid": 104,
     "state": "merged",
+    "draft": false,
     "title": "feat: Ulysses CP support",
     "created_at": "2026-04-03",
     "updated_at": "2026-04-03",
@@ -5140,11 +5826,13 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 61
+    "working_days_open": 62,
+    "e2e_issues": []
   },
   {
     "iid": 103,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Fix swap optimizer not working correctly with Llama3",
     "created_at": "2026-04-03",
     "updated_at": "2026-04-03",
@@ -5159,11 +5847,13 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 61
+    "working_days_open": 62,
+    "e2e_issues": []
   },
   {
     "iid": 102,
     "state": "closed",
+    "draft": false,
     "title": "[feat] torchtitan-0.2.2版本 ulysses CP 重构适配",
     "created_at": "2026-04-02",
     "updated_at": "2026-04-03",
@@ -5176,11 +5866,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 62
+    "working_days_open": 63,
+    "e2e_issues": []
   },
   {
     "iid": 101,
     "state": "closed",
+    "draft": true,
     "title": "[WIP][Feat] add agent tests",
     "created_at": "2026-04-02",
     "updated_at": "2026-07-02",
@@ -5191,11 +5883,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 62
+    "working_days_open": 63,
+    "e2e_issues": []
   },
   {
     "iid": 100,
     "state": "closed",
+    "draft": true,
     "title": "[WIP][fix] fix deepseek_v32 PP bug caused by MTP code",
     "created_at": "2026-04-02",
     "updated_at": "2026-04-16",
@@ -5208,11 +5902,13 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 62
+    "working_days_open": 63,
+    "e2e_issues": []
   },
   {
     "iid": 99,
     "state": "merged",
+    "draft": false,
     "title": "[docs] [fix] Fixed some bugs in docs",
     "created_at": "2026-04-02",
     "updated_at": "2026-04-02",
@@ -5227,11 +5923,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 62
+    "working_days_open": 63,
+    "e2e_issues": []
   },
   {
     "iid": 98,
     "state": "closed",
+    "draft": false,
     "title": "[Fix] fix PP bug caused by MTP code",
     "created_at": "2026-04-02",
     "updated_at": "2026-04-02",
@@ -5243,11 +5941,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 62
+    "working_days_open": 63,
+    "e2e_issues": []
   },
   {
     "iid": 97,
     "state": "merged",
+    "draft": false,
     "title": "[fix]modify debug.toml",
     "created_at": "2026-04-01",
     "updated_at": "2026-04-01",
@@ -5262,11 +5962,13 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 63
+    "working_days_open": 64,
+    "e2e_issues": []
   },
   {
     "iid": 96,
     "state": "merged",
+    "draft": false,
     "title": "[Feat] add AGENTS.md and rules",
     "created_at": "2026-04-01",
     "updated_at": "2026-04-09",
@@ -5281,11 +5983,13 @@
       "ci-pipeline-passed",
       "stat/needs-squash"
     ],
-    "working_days_open": 63
+    "working_days_open": 64,
+    "e2e_issues": []
   },
   {
     "iid": 95,
     "state": "merged",
+    "draft": false,
     "title": "[feat] adapt for opensource",
     "created_at": "2026-03-30",
     "updated_at": "2026-04-01",
@@ -5300,11 +6004,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 65
+    "working_days_open": 66,
+    "e2e_issues": []
   },
   {
     "iid": 94,
     "state": "merged",
+    "draft": false,
     "title": "[fix] deepseek v3 moe parallelize",
     "created_at": "2026-03-30",
     "updated_at": "2026-03-30",
@@ -5319,11 +6025,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 65
+    "working_days_open": 66,
+    "e2e_issues": []
   },
   {
     "iid": 93,
     "state": "merged",
+    "draft": false,
     "title": "[feat] DSA CP path + 适配 torchtitan v0.2.2",
     "created_at": "2026-03-28",
     "updated_at": "2026-04-02",
@@ -5338,11 +6046,13 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 65
+    "working_days_open": 66,
+    "e2e_issues": []
   },
   {
     "iid": 92,
     "state": "merged",
+    "draft": false,
     "title": "[fix] resolve memory leak during re-computation",
     "created_at": "2026-03-27",
     "updated_at": "2026-03-30",
@@ -5356,11 +6066,13 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 66
+    "working_days_open": 67,
+    "e2e_issues": []
   },
   {
     "iid": 91,
     "state": "closed",
+    "draft": true,
     "title": "[WIP] Optimization Example Test",
     "created_at": "2026-03-27",
     "updated_at": "2026-04-27",
@@ -5372,11 +6084,13 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 66
+    "working_days_open": 67,
+    "e2e_issues": []
   },
   {
     "iid": 90,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] replace permute in token_dispatch with npu_permute",
     "created_at": "2026-03-27",
     "updated_at": "2026-04-13",
@@ -5390,11 +6104,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 66
+    "working_days_open": 67,
+    "e2e_issues": []
   },
   {
     "iid": 89,
     "state": "merged",
+    "draft": false,
     "title": "[feat] deepseek_v3 support inductor + af",
     "created_at": "2026-03-26",
     "updated_at": "2026-04-02",
@@ -5409,11 +6125,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 67
+    "working_days_open": 68,
+    "e2e_issues": []
   },
   {
     "iid": 88,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Fixed variable names error in model.py",
     "created_at": "2026-03-26",
     "updated_at": "2026-03-26",
@@ -5427,11 +6145,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 67
+    "working_days_open": 68,
+    "e2e_issues": []
   },
   {
     "iid": 87,
     "state": "closed",
+    "draft": false,
     "title": "[refactor] Refactored Fused-Kernel ModelConverters",
     "created_at": "2026-03-25",
     "updated_at": "2026-05-12",
@@ -5444,11 +6164,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 68
+    "working_days_open": 69,
+    "e2e_issues": []
   },
   {
     "iid": 86,
     "state": "merged",
+    "draft": false,
     "title": "[Feat] add accuracy debug skill",
     "created_at": "2026-03-25",
     "updated_at": "2026-04-01",
@@ -5463,11 +6185,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 68
+    "working_days_open": 69,
+    "e2e_issues": []
   },
   {
     "iid": 85,
     "state": "merged",
+    "draft": false,
     "title": "[fix]modify ci bugs",
     "created_at": "2026-03-25",
     "updated_at": "2026-03-26",
@@ -5482,11 +6206,13 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 68
+    "working_days_open": 69,
+    "e2e_issues": []
   },
   {
     "iid": 84,
     "state": "merged",
+    "draft": false,
     "title": "[fix] bugfix for use_grouped_mm",
     "created_at": "2026-03-24",
     "updated_at": "2026-03-27",
@@ -5501,11 +6227,13 @@
       "approved",
       "cann-cla/yes"
     ],
-    "working_days_open": 69
+    "working_days_open": 70,
+    "e2e_issues": []
   },
   {
     "iid": 83,
     "state": "merged",
+    "draft": false,
     "title": "[bugfix] fix the profiling patch failure bug",
     "created_at": "2026-03-24",
     "updated_at": "2026-03-27",
@@ -5519,11 +6247,13 @@
       "approved",
       "cann-cla/yes"
     ],
-    "working_days_open": 69
+    "working_days_open": 70,
+    "e2e_issues": []
   },
   {
     "iid": 82,
     "state": "closed",
+    "draft": true,
     "title": "[WIP][docs, feat] Add AI development guide and commit skill",
     "created_at": "2026-03-24",
     "updated_at": "2026-06-17",
@@ -5534,11 +6264,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 69
+    "working_days_open": 70,
+    "e2e_issues": []
   },
   {
     "iid": 81,
     "state": "merged",
+    "draft": false,
     "title": "Updated docs for torch.compile support",
     "created_at": "2026-03-24",
     "updated_at": "2026-04-03",
@@ -5553,11 +6285,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 69
+    "working_days_open": 70,
+    "e2e_issues": []
   },
   {
     "iid": 80,
     "state": "merged",
+    "draft": false,
     "title": "[docs] add doc for low precision training",
     "created_at": "2026-03-23",
     "updated_at": "2026-03-26",
@@ -5572,11 +6306,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 70
+    "working_days_open": 71,
+    "e2e_issues": []
   },
   {
     "iid": 79,
     "state": "closed",
+    "draft": false,
     "title": "[feat] deepseek_v3 performance",
     "created_at": "2026-03-23",
     "updated_at": "2026-05-12",
@@ -5588,11 +6324,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 70
+    "working_days_open": 71,
+    "e2e_issues": []
   },
   {
     "iid": 78,
     "state": "merged",
+    "draft": false,
     "title": "[fix] modify matmul backward custom sharding",
     "created_at": "2026-03-23",
     "updated_at": "2026-03-27",
@@ -5607,11 +6345,13 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 70
+    "working_days_open": 71,
+    "e2e_issues": []
   },
   {
     "iid": 77,
     "state": "merged",
+    "draft": false,
     "title": "[fix] bugfix for npu rope",
     "created_at": "2026-03-21",
     "updated_at": "2026-03-26",
@@ -5626,11 +6366,13 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 70
+    "working_days_open": 71,
+    "e2e_issues": []
   },
   {
     "iid": 76,
     "state": "closed",
+    "draft": false,
     "title": "[fix] modify bugs for rope",
     "created_at": "2026-03-21",
     "updated_at": "2026-03-21",
@@ -5641,11 +6383,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 70
+    "working_days_open": 71,
+    "e2e_issues": []
   },
   {
     "iid": 75,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Supported torch.compile for DS v3.2",
     "created_at": "2026-03-20",
     "updated_at": "2026-04-02",
@@ -5660,11 +6404,13 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 71
+    "working_days_open": 72,
+    "e2e_issues": []
   },
   {
     "iid": 74,
     "state": "merged",
+    "draft": false,
     "title": "[feat] update for torchtitan v0.2.2",
     "created_at": "2026-03-20",
     "updated_at": "2026-03-20",
@@ -5678,11 +6424,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 71
+    "working_days_open": 72,
+    "e2e_issues": []
   },
   {
     "iid": 73,
     "state": "merged",
+    "draft": false,
     "title": "[feat]add muon optimizer",
     "created_at": "2026-03-20",
     "updated_at": "2026-04-01",
@@ -5697,11 +6445,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 71
+    "working_days_open": 72,
+    "e2e_issues": []
   },
   {
     "iid": 72,
     "state": "merged",
+    "draft": false,
     "title": "[ci] [refactor] Integrated lint and type checking to CI",
     "created_at": "2026-03-19",
     "updated_at": "2026-03-25",
@@ -5716,11 +6466,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 72
+    "working_days_open": 73,
+    "e2e_issues": []
   },
   {
     "iid": 71,
     "state": "closed",
+    "draft": false,
     "title": "[fix] Support llama3 positions-aware RoPE broadcast",
     "created_at": "2026-03-18",
     "updated_at": "2026-03-23",
@@ -5733,11 +6485,13 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 73
+    "working_days_open": 74,
+    "e2e_issues": []
   },
   {
     "iid": 70,
     "state": "closed",
+    "draft": false,
     "title": "[fix] Correct indexer loss scale for GA",
     "created_at": "2026-03-18",
     "updated_at": "2026-04-02",
@@ -5750,11 +6504,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 73
+    "working_days_open": 74,
+    "e2e_issues": []
   },
   {
     "iid": 69,
     "state": "merged",
+    "draft": false,
     "title": "[docs] Updated contributing.md",
     "created_at": "2026-03-17",
     "updated_at": "2026-03-23",
@@ -5769,11 +6525,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 74
+    "working_days_open": 75,
+    "e2e_issues": []
   },
   {
     "iid": 68,
     "state": "merged",
+    "draft": false,
     "title": "[test] strengthen DT-related unit and smoke coverage",
     "created_at": "2026-03-17",
     "updated_at": "2026-03-20",
@@ -5788,11 +6546,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 74
+    "working_days_open": 75,
+    "e2e_issues": []
   },
   {
     "iid": 67,
     "state": "closed",
+    "draft": false,
     "title": "[refactor] Refactored swap optimizer to fit torchtitan's ideas",
     "created_at": "2026-03-17",
     "updated_at": "2026-05-12",
@@ -5805,11 +6565,13 @@
       "stat/needs-squash",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 74
+    "working_days_open": 75,
+    "e2e_issues": []
   },
   {
     "iid": 66,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix DSV3.2 indexer loss",
     "created_at": "2026-03-16",
     "updated_at": "2026-03-26",
@@ -5823,11 +6585,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 75
+    "working_days_open": 76,
+    "e2e_issues": []
   },
   {
     "iid": 65,
     "state": "merged",
+    "draft": false,
     "title": "[feat] add MTP module for deepseek-v32 model",
     "created_at": "2026-03-16",
     "updated_at": "2026-04-02",
@@ -5842,11 +6606,13 @@
       "lgtm",
       "stat/needs-squash"
     ],
-    "working_days_open": 75
+    "working_days_open": 76,
+    "e2e_issues": []
   },
   {
     "iid": 64,
     "state": "merged",
+    "draft": false,
     "title": "[Feat] add torchtitan-sync skill",
     "created_at": "2026-03-16",
     "updated_at": "2026-04-01",
@@ -5861,11 +6627,13 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 75
+    "working_days_open": 76,
+    "e2e_issues": []
   },
   {
     "iid": 63,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] Adapted torchtitan's pre-commit workflow",
     "created_at": "2026-03-12",
     "updated_at": "2026-03-16",
@@ -5880,11 +6648,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 77
+    "working_days_open": 78,
+    "e2e_issues": []
   },
   {
     "iid": 62,
     "state": "merged",
+    "draft": false,
     "title": "[feat] Support fake tensor mode",
     "created_at": "2026-03-12",
     "updated_at": "2026-03-18",
@@ -5898,11 +6668,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 77
+    "working_days_open": 78,
+    "e2e_issues": []
   },
   {
     "iid": 61,
     "state": "closed",
+    "draft": false,
     "title": "Added static checks based on pre-commit, with ruff, mypy, black",
     "created_at": "2026-03-12",
     "updated_at": "2026-03-12",
@@ -5914,11 +6686,13 @@
       "stat/needs-squash",
       "cann-cla/no"
     ],
-    "working_days_open": 77
+    "working_days_open": 78,
+    "e2e_issues": []
   },
   {
     "iid": 60,
     "state": "merged",
+    "draft": false,
     "title": "[docs] Add docs for current support for debugging",
     "created_at": "2026-03-12",
     "updated_at": "2026-03-31",
@@ -5932,11 +6706,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 77
+    "working_days_open": 78,
+    "e2e_issues": []
   },
   {
     "iid": 59,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix absorb tp precision",
     "created_at": "2026-03-10",
     "updated_at": "2026-03-11",
@@ -5950,11 +6726,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 79
+    "working_days_open": 80,
+    "e2e_issues": []
   },
   {
     "iid": 58,
     "state": "merged",
+    "draft": false,
     "title": "[fix] execute average allreduce for Lightning Indexer loss log",
     "created_at": "2026-03-10",
     "updated_at": "2026-03-11",
@@ -5969,11 +6747,13 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 79
+    "working_days_open": 80,
+    "e2e_issues": []
   },
   {
     "iid": 57,
     "state": "merged",
+    "draft": false,
     "title": "[docs] add doc for swap_optimizer",
     "created_at": "2026-03-09",
     "updated_at": "2026-03-11",
@@ -5987,11 +6767,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 80
+    "working_days_open": 81,
+    "e2e_issues": []
   },
   {
     "iid": 56,
     "state": "merged",
+    "draft": false,
     "title": "feat: bypass_triton_codegen 增加 llama 模型与新增 tp_async 补丁",
     "created_at": "2026-03-07",
     "updated_at": "2026-03-11",
@@ -6006,11 +6788,13 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 80
+    "working_days_open": 81,
+    "e2e_issues": []
   },
   {
     "iid": 55,
     "state": "merged",
+    "draft": false,
     "title": "[bugfix] DSV3.2 Performance",
     "created_at": "2026-03-07",
     "updated_at": "2026-03-11",
@@ -6025,11 +6809,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 80
+    "working_days_open": 81,
+    "e2e_issues": []
   },
   {
     "iid": 54,
     "state": "closed",
+    "draft": true,
     "title": "[WIP] Add NPU async tp patch and qkv fusion",
     "created_at": "2026-03-05",
     "updated_at": "2026-04-29",
@@ -6041,11 +6827,13 @@
       "cann-cla/no",
       "stat/needs-squash"
     ],
-    "working_days_open": 82
+    "working_days_open": 83,
+    "e2e_issues": []
   },
   {
     "iid": 53,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Fix the parameter issues in state_dict_adapter.py for dsv3 and the clone bug in the split_w13_tensor function.",
     "created_at": "2026-03-05",
     "updated_at": "2026-03-05",
@@ -6059,11 +6847,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 82
+    "working_days_open": 83,
+    "e2e_issues": []
   },
   {
     "iid": 52,
     "state": "merged",
+    "draft": false,
     "title": "[Feat] extend profiling config with step range and rank control",
     "created_at": "2026-03-04",
     "updated_at": "2026-03-14",
@@ -6078,11 +6868,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 83
+    "working_days_open": 84,
+    "e2e_issues": []
   },
   {
     "iid": 51,
     "state": "merged",
+    "draft": false,
     "title": "[docs] Updated readme.md + Feature doc: npu fused ops",
     "created_at": "2026-03-03",
     "updated_at": "2026-03-13",
@@ -6097,11 +6889,13 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 84
+    "working_days_open": 85,
+    "e2e_issues": []
   },
   {
     "iid": 50,
     "state": "closed",
+    "draft": false,
     "title": "【feat】add deepseek_2026 pretrain",
     "created_at": "2026-03-03",
     "updated_at": "2026-03-03",
@@ -6112,11 +6906,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 84
+    "working_days_open": 85,
+    "e2e_issues": []
   },
   {
     "iid": 49,
     "state": "closed",
+    "draft": false,
     "title": "[feat]support dualpipev + activation checkpoint",
     "created_at": "2026-03-03",
     "updated_at": "2026-03-05",
@@ -6127,11 +6923,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 84
+    "working_days_open": 85,
+    "e2e_issues": []
   },
   {
     "iid": 48,
     "state": "merged",
+    "draft": false,
     "title": "[feat] Achieve generalized loading of real weights, supporting networks such as DeepSeekV3,  Llama4.",
     "created_at": "2026-02-28",
     "updated_at": "2026-03-02",
@@ -6146,11 +6944,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 86
+    "working_days_open": 87,
+    "e2e_issues": []
   },
   {
     "iid": 47,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Add Patch for DSA set_loss_scale",
     "created_at": "2026-02-28",
     "updated_at": "2026-03-03",
@@ -6165,11 +6965,13 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 86
+    "working_days_open": 87,
+    "e2e_issues": []
   },
   {
     "iid": 46,
     "state": "merged",
+    "draft": false,
     "title": "[feat] Add patch for train npu memory",
     "created_at": "2026-02-28",
     "updated_at": "2026-03-04",
@@ -6184,11 +6986,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 86
+    "working_days_open": 87,
+    "e2e_issues": []
   },
   {
     "iid": 45,
     "state": "closed",
+    "draft": false,
     "title": "[feat] Achieve generalized loading of real weights, supporting networks such as DeepSeekV3, Llama3 and Llama4.",
     "created_at": "2026-02-27",
     "updated_at": "2026-02-28",
@@ -6201,11 +7005,13 @@
       "ci-pipeline-failed",
       "cann-cla/yes"
     ],
-    "working_days_open": 87
+    "working_days_open": 88,
+    "e2e_issues": []
   },
   {
     "iid": 44,
     "state": "closed",
+    "draft": false,
     "title": "add llama3",
     "created_at": "2026-02-27",
     "updated_at": "2026-02-27",
@@ -6216,11 +7022,13 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 87
+    "working_days_open": 88,
+    "e2e_issues": []
   },
   {
     "iid": 43,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Fix initialization of hccl flight recorder env | Disable FR by default due to false alarm problem",
     "created_at": "2026-02-27",
     "updated_at": "2026-02-27",
@@ -6235,11 +7043,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 87
+    "working_days_open": 88,
+    "e2e_issues": []
   },
   {
     "iid": 42,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] remove unnecessary fsdp Reduce.AVG patch, because torch_npu supports this now",
     "created_at": "2026-02-27",
     "updated_at": "2026-02-28",
@@ -6253,11 +7063,13 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 87
+    "working_days_open": 88,
+    "e2e_issues": []
   },
   {
     "iid": 41,
     "state": "merged",
+    "draft": false,
     "title": "[docs] Updated readme and example feature doc",
     "created_at": "2026-02-27",
     "updated_at": "2026-03-02",
@@ -6272,11 +7084,13 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 87
+    "working_days_open": 88,
+    "e2e_issues": []
   },
   {
     "iid": 40,
     "state": "merged",
+    "draft": false,
     "title": "[feat] Add support for HCCL flight recorder",
     "created_at": "2026-02-26",
     "updated_at": "2026-02-27",
@@ -6290,11 +7104,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 88
+    "working_days_open": 89,
+    "e2e_issues": []
   },
   {
     "iid": 39,
     "state": "merged",
+    "draft": false,
     "title": "[feat] add dsv32 muiltinodes pretrain sample",
     "created_at": "2026-02-25",
     "updated_at": "2026-02-28",
@@ -6308,11 +7124,13 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 89
+    "working_days_open": 90,
+    "e2e_issues": []
   },
   {
     "iid": 38,
     "state": "merged",
+    "draft": false,
     "title": "[Feat] add step time print in logging metrics",
     "created_at": "2026-02-25",
     "updated_at": "2026-02-28",
@@ -6326,11 +7144,13 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 89
+    "working_days_open": 90,
+    "e2e_issues": []
   },
   {
     "iid": 37,
     "state": "merged",
+    "draft": false,
     "title": "[feat] update llama3 toml for aclgraphs",
     "created_at": "2026-02-25",
     "updated_at": "2026-02-25",
@@ -6345,11 +7165,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 89
+    "working_days_open": 90,
+    "e2e_issues": []
   },
   {
     "iid": 36,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix li loss",
     "created_at": "2026-02-25",
     "updated_at": "2026-02-26",
@@ -6364,11 +7186,13 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 89
+    "working_days_open": 90,
+    "e2e_issues": []
   },
   {
     "iid": 35,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix torchtitan v0.2.1 hf_datasets bugs",
     "created_at": "2026-02-24",
     "updated_at": "2026-02-25",
@@ -6382,11 +7206,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 90
+    "working_days_open": 91,
+    "e2e_issues": []
   },
   {
     "iid": 34,
     "state": "merged",
+    "draft": false,
     "title": "[refactor] refactor of model converter",
     "created_at": "2026-02-14",
     "updated_at": "2026-02-27",
@@ -6401,11 +7227,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 91
+    "working_days_open": 92,
+    "e2e_issues": []
   },
   {
     "iid": 33,
     "state": "merged",
+    "draft": false,
     "title": "[fix] fix training accuracy issue",
     "created_at": "2026-02-12",
     "updated_at": "2026-02-26",
@@ -6420,11 +7248,13 @@
       "approved",
       "cann-cla/yes"
     ],
-    "working_days_open": 93
+    "working_days_open": 94,
+    "e2e_issues": []
   },
   {
     "iid": 32,
     "state": "merged",
+    "draft": false,
     "title": "[feat] add support for custom datasets",
     "created_at": "2026-02-12",
     "updated_at": "2026-02-12",
@@ -6438,11 +7268,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 93
+    "working_days_open": 94,
+    "e2e_issues": []
   },
   {
     "iid": 31,
     "state": "merged",
+    "draft": false,
     "title": "[feat] Supported ulysses cp for SDPA",
     "created_at": "2026-02-11",
     "updated_at": "2026-02-24",
@@ -6457,11 +7289,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 94
+    "working_days_open": 95,
+    "e2e_issues": []
   },
   {
     "iid": 30,
     "state": "merged",
+    "draft": false,
     "title": "[fix] optimize matmul_backward op sharding strategy",
     "created_at": "2026-02-11",
     "updated_at": "2026-02-11",
@@ -6475,11 +7309,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 94
+    "working_days_open": 95,
+    "e2e_issues": []
   },
   {
     "iid": 29,
     "state": "closed",
+    "draft": false,
     "title": "[WIP, feat] support dualpipev under ZeRO3 parallel case with torchtitan_v0.2.1",
     "created_at": "2026-02-09",
     "updated_at": "2026-03-05",
@@ -6491,11 +7327,13 @@
       "ci-pipeline-failed",
       "cann-cla/yes"
     ],
-    "working_days_open": 96
+    "working_days_open": 97,
+    "e2e_issues": []
   },
   {
     "iid": 28,
     "state": "merged",
+    "draft": false,
     "title": "[feat] DT support scripts",
     "created_at": "2026-02-09",
     "updated_at": "2026-03-12",
@@ -6510,11 +7348,13 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 96
+    "working_days_open": 97,
+    "e2e_issues": []
   },
   {
     "iid": 27,
     "state": "merged",
+    "draft": false,
     "title": "[fix] 修复param为普通tensor时swap_optimizer中to_local引发的报错",
     "created_at": "2026-02-03",
     "updated_at": "2026-02-04",
@@ -6528,11 +7368,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 100
+    "working_days_open": 101,
+    "e2e_issues": []
   },
   {
     "iid": 26,
     "state": "merged",
+    "draft": false,
     "title": "[feat] adaptor for torchtitan0.2.1",
     "created_at": "2026-02-02",
     "updated_at": "2026-02-24",
@@ -6547,11 +7389,13 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 101
+    "working_days_open": 102,
+    "e2e_issues": []
   },
   {
     "iid": 25,
     "state": "closed",
+    "draft": true,
     "title": "[WIP]Numerical precision alignment vs Mindspeed",
     "created_at": "2026-01-31",
     "updated_at": "2026-04-28",
@@ -6562,11 +7406,13 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 101
+    "working_days_open": 102,
+    "e2e_issues": []
   },
   {
     "iid": 24,
     "state": "merged",
+    "draft": false,
     "title": "[feat] support moe TP for DeepSeek-V3.2",
     "created_at": "2026-01-31",
     "updated_at": "2026-02-04",
@@ -6580,11 +7426,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 101
+    "working_days_open": 102,
+    "e2e_issues": []
   },
   {
     "iid": 23,
     "state": "merged",
+    "draft": false,
     "title": "[fix] weight loading oom bugfix",
     "created_at": "2026-01-30",
     "updated_at": "2026-02-28",
@@ -6599,11 +7447,13 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 102
+    "working_days_open": 103,
+    "e2e_issues": []
   },
   {
     "iid": 22,
     "state": "merged",
+    "draft": false,
     "title": "[bugfix] add patch for torch_npu dtensor op sharding func, to fix abnormal dtensor computation",
     "created_at": "2026-01-30",
     "updated_at": "2026-02-03",
@@ -6618,11 +7468,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 102
+    "working_days_open": 103,
+    "e2e_issues": []
   },
   {
     "iid": 21,
     "state": "closed",
+    "draft": true,
     "title": "[WIP]增加auto-bucketing功能",
     "created_at": "2026-01-29",
     "updated_at": "2026-04-29",
@@ -6634,11 +7486,13 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 103
+    "working_days_open": 104,
+    "e2e_issues": []
   },
   {
     "iid": 20,
     "state": "closed",
+    "draft": false,
     "title": "[feat] interception of kernels",
     "created_at": "2026-01-29",
     "updated_at": "2026-02-03",
@@ -6651,11 +7505,13 @@
       "stat/needs-squash",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 103
+    "working_days_open": 104,
+    "e2e_issues": []
   },
   {
     "iid": 19,
     "state": "merged",
+    "draft": false,
     "title": "[feat] Fuse mul operation of topk_score and route_output into unpermute",
     "created_at": "2026-01-29",
     "updated_at": "2026-02-11",
@@ -6669,11 +7525,13 @@
       "approved",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 103
+    "working_days_open": 104,
+    "e2e_issues": []
   },
   {
     "iid": 18,
     "state": "merged",
+    "draft": false,
     "title": "[bugfix] Fixed implementation bugs in npu_rms_norm kernel that leads to major numerical imprecision",
     "created_at": "2026-01-29",
     "updated_at": "2026-01-29",
@@ -6688,11 +7546,13 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 103
+    "working_days_open": 104,
+    "e2e_issues": []
   },
   {
     "iid": 17,
     "state": "merged",
+    "draft": false,
     "title": "[fix] Fixed implementation bugs in npu_rope that leads to numerical imprecision",
     "created_at": "2026-01-29",
     "updated_at": "2026-01-29",
@@ -6706,11 +7566,13 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 103
+    "working_days_open": 104,
+    "e2e_issues": []
   },
   {
     "iid": 16,
     "state": "merged",
+    "draft": false,
     "title": "[feat] support npu_fusion_attention torch_compile-inductor-reduce_overhead",
     "created_at": "2026-01-29",
     "updated_at": "2026-01-29",
@@ -6724,11 +7586,13 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 103
+    "working_days_open": 104,
+    "e2e_issues": []
   },
   {
     "iid": 15,
     "state": "closed",
+    "draft": false,
     "title": "[feat] support npu_fusion_attention torch_compile-inductor-reduce_overhead",
     "created_at": "2026-01-28",
     "updated_at": "2026-01-29",
@@ -6741,11 +7605,13 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 104
+    "working_days_open": 105,
+    "e2e_issues": []
   },
   {
     "iid": 14,
     "state": "merged",
+    "draft": false,
     "title": "[feat] support TP for DeepSeek-V3.2",
     "created_at": "2026-01-28",
     "updated_at": "2026-01-29",
@@ -6759,11 +7625,13 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 104
+    "working_days_open": 105,
+    "e2e_issues": []
   },
   {
     "iid": 13,
     "state": "merged",
+    "draft": false,
     "title": "[fix] modify standard license&copyright sample",
     "created_at": "2026-01-28",
     "updated_at": "2026-01-28",
@@ -6777,11 +7645,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 104
+    "working_days_open": 105,
+    "e2e_issues": []
   },
   {
     "iid": 12,
     "state": "closed",
+    "draft": false,
     "title": "[feat] support npu_fusion_attention torch_compile-inductor-reduce_overhead",
     "created_at": "2026-01-28",
     "updated_at": "2026-01-28",
@@ -6794,11 +7664,13 @@
       "stat/needs-squash",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 104
+    "working_days_open": 105,
+    "e2e_issues": []
   },
   {
     "iid": 11,
     "state": "merged",
+    "draft": false,
     "title": "[docs] add PR/Issue template",
     "created_at": "2026-01-27",
     "updated_at": "2026-01-27",
@@ -6812,11 +7684,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 105
+    "working_days_open": 106,
+    "e2e_issues": []
   },
   {
     "iid": 10,
     "state": "merged",
+    "draft": false,
     "title": "[bugfix] fix the patch for custom cp",
     "created_at": "2026-01-27",
     "updated_at": "2026-01-28",
@@ -6830,11 +7704,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 105
+    "working_days_open": 106,
+    "e2e_issues": []
   },
   {
     "iid": 9,
     "state": "merged",
+    "draft": false,
     "title": "bugfix for migration",
     "created_at": "2026-01-27",
     "updated_at": "2026-01-27",
@@ -6849,11 +7725,15 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 105
+    "working_days_open": 106,
+    "e2e_issues": [
+      "1"
+    ]
   },
   {
     "iid": 8,
     "state": "merged",
+    "draft": false,
     "title": "[feat] inductor disable fusion triton kernels",
     "created_at": "2026-01-27",
     "updated_at": "2026-01-30",
@@ -6868,11 +7748,13 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 105
+    "working_days_open": 106,
+    "e2e_issues": []
   },
   {
     "iid": 7,
     "state": "merged",
+    "draft": false,
     "title": "[feat]support mxfp8/hif8 for linear and MoE",
     "created_at": "2026-01-27",
     "updated_at": "2026-01-30",
@@ -6887,11 +7769,13 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 105
+    "working_days_open": 106,
+    "e2e_issues": []
   },
   {
     "iid": 6,
     "state": "merged",
+    "draft": false,
     "title": "[feat] support swap optimizer; support custom context_parallel for Deepseek-V3.2",
     "created_at": "2026-01-27",
     "updated_at": "2026-01-28",
@@ -6906,11 +7790,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 105
+    "working_days_open": 106,
+    "e2e_issues": []
   },
   {
     "iid": 5,
     "state": "closed",
+    "draft": true,
     "title": "[WIP] support dsv31 torch_compile-inductor-reduce_overhead",
     "created_at": "2026-01-26",
     "updated_at": "2026-04-27",
@@ -6923,11 +7809,13 @@
       "stat/needs-squash",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 106
+    "working_days_open": 107,
+    "e2e_issues": []
   },
   {
     "iid": 4,
     "state": "merged",
+    "draft": false,
     "title": "add indexer loss display",
     "created_at": "2026-01-26",
     "updated_at": "2026-01-27",
@@ -6942,11 +7830,13 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 106
+    "working_days_open": 107,
+    "e2e_issues": []
   },
   {
     "iid": 3,
     "state": "merged",
+    "draft": false,
     "title": "initial migration for torchtitan-npu",
     "created_at": "2026-01-24",
     "updated_at": "2026-01-26",
@@ -6961,11 +7851,13 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 106
+    "working_days_open": 107,
+    "e2e_issues": []
   },
   {
     "iid": 2,
     "state": "closed",
+    "draft": false,
     "title": "initial migration for torchtitan-npu",
     "created_at": "2026-01-24",
     "updated_at": "2026-01-24",
@@ -6976,11 +7868,13 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 106
+    "working_days_open": 107,
+    "e2e_issues": []
   },
   {
     "iid": 1,
     "state": "closed",
+    "draft": false,
     "title": "ci test",
     "created_at": "2026-01-22",
     "updated_at": "2026-05-19",
@@ -6992,6 +7886,7 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 108
+    "working_days_open": 109,
+    "e2e_issues": []
   }
 ]

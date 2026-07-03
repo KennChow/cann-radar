@@ -1,998 +1,1349 @@
 [
   {
-    "iid": 70,
+    "iid": "72",
+    "state": "opened",
+    "created_at": "2026-07-03",
+    "closed_at": "",
+    "author": "xuyujun",
+    "author_id": "68a80e4b0f9a7255ef78a02b",
+    "title": "[揭榜挑战][S1] DeepSeek V4 npu_rope 重复展开 cos/sin 导致 forward/recompute 性能劣化",
+    "labels": [
+      "good-first-issue"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "xuyujun",
+      "liuyuanchen1"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/72",
+    "working_days_open": 1
+  },
+  {
+    "iid": "71",
+    "state": "opened",
+    "created_at": "2026-07-03",
+    "closed_at": "",
+    "author": "zzyyjj012",
+    "author_id": "68e764f855cfdd7902bb2bff",
+    "title": "[RFC] 支持 DeepSeek-V4 / Qwen3 模型 SFT，支持多轮对话",
+    "labels": [
+      "RFC"
+    ],
+    "issue_type": "文档",
+    "issue_state": "进行中",
+    "assignees": [
+      "zzyyjj012"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/71",
+    "working_days_open": 1
+  },
+  {
+    "iid": "70",
     "state": "opened",
     "created_at": "2026-07-02",
     "closed_at": "",
     "author": "liuyuanchen1",
+    "author_id": "68da801fa3c0221fe7931e07",
     "title": "【活动】torchtitan-npu赏金任务挑战赛",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/70",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
-    "iid": 69,
+    "iid": "69",
     "state": "closed",
     "created_at": "2026-07-01",
     "closed_at": "2026-07-02",
     "author": "ningzhixiong",
+    "author_id": "68a8045a8950f411cb53f240",
     "title": "[Bug-Report|缺陷反馈]: deepseek-v4-flash未开启mtp，保存出的hf权重，最后一个切片文件(mtp权重文件)直接损坏无法读取",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已解决",
     "assignees": [
       "zhangjianshe"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/69",
-    "working_days_open": 2
+    "working_days_open": 3
   },
   {
-    "iid": 68,
+    "iid": "68",
     "state": "opened",
     "created_at": "2026-07-01",
     "closed_at": "",
     "author": "zhong_lin",
+    "author_id": "68233b8f053cff786c915060",
     "title": "[Roadmap] torchtitan-npu 2026年Q3 roadmap",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
     "assignees": [
       "xuyujun"
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/68",
-    "working_days_open": 2
+    "working_days_open": 3
   },
   {
-    "iid": 67,
+    "iid": "67",
     "state": "closed",
     "created_at": "2026-06-29",
     "closed_at": "2026-07-02",
     "author": "liuyuanchen1",
+    "author_id": "68da801fa3c0221fe7931e07",
     "title": "[揭榜挑战]fuse_experts子串匹配误伤已融合的w13权重",
-    "labels": [],
+    "labels": [
+      "good-first-issue",
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已解决",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/67",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
-    "iid": 66,
+    "iid": "66",
     "state": "closed",
     "created_at": "2026-06-29",
     "closed_at": "2026-06-29",
     "author": "dty_30041779",
+    "author_id": "68ca4efb08a9b87054fdcd73",
     "title": "[Bug-Report|缺陷反馈]: dsv31模型开启compile功能后报错",
-    "labels": [],
+    "labels": [
+      "resolved",
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/66",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
-    "iid": 65,
+    "iid": "65",
     "state": "closed",
     "created_at": "2026-06-27",
     "closed_at": "2026-07-02",
     "author": "ningzhixiong",
+    "author_id": "68a8045a8950f411cb53f240",
     "title": "[Question|问题咨询]: deepseek-v4系列训练输入的sequence长度必须满足compress_ratio最大值的整数倍，有没有考虑在模型或算子层进行自适应的计划",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/65",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
-    "iid": 64,
+    "iid": "64",
     "state": "opened",
     "created_at": "2026-06-26",
     "closed_at": "",
     "author": "ningzhixiong",
+    "author_id": "68a8045a8950f411cb53f240",
     "title": "[Bug-Report|缺陷反馈]: deepseek-v4-flash，4层减层版本，mtp关闭，开启TP后训练报错",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
     "assignees": [],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/64",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
-    "iid": 63,
+    "iid": "63",
     "state": "opened",
     "created_at": "2026-06-26",
     "closed_at": "",
     "author": "liuyuanchen1",
+    "author_id": "68da801fa3c0221fe7931e07",
     "title": "[揭榜挑战] NPU fused matmul-reduce-scatter 忽略入参 reduce_op，硬编码 \"sum\"",
-    "labels": [],
+    "labels": [
+      "good-first-issue"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/63",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
-    "iid": 62,
+    "iid": "62",
     "state": "opened",
     "created_at": "2026-06-26",
     "closed_at": "",
     "author": "liuyuanchen1",
+    "author_id": "68da801fa3c0221fe7931e07",
     "title": "[揭榜挑战] NPU grouped experts init 用 normal_，与 DeepSeekV4 MoE fallback 的 trunc_normal_ 不一致",
-    "labels": [],
+    "labels": [
+      "good-first-issue"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/62",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
-    "iid": 61,
+    "iid": "61",
     "state": "opened",
     "created_at": "2026-06-26",
     "closed_at": "",
     "author": "liuyuanchen1",
+    "author_id": "68da801fa3c0221fe7931e07",
     "title": "[揭榜挑战] _grouped_mm 把裸 bias Tensor 传给期望 List[Tensor] 的接口",
-    "labels": [],
+    "labels": [
+      "good-first-issue"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/61",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
-    "iid": 60,
+    "iid": "60",
     "state": "opened",
     "created_at": "2026-06-26",
     "closed_at": "",
     "author": "liuyuanchen1",
+    "author_id": "68da801fa3c0221fe7931e07",
     "title": "[揭榜挑战] frozen MHC 权重时 `grad_weight.t()` 崩溃",
-    "labels": [],
+    "labels": [
+      "good-first-issue"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/60",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
-    "iid": 59,
+    "iid": "59",
     "state": "closed",
     "created_at": "2026-06-26",
     "closed_at": "2026-07-02",
     "author": "liuyuanchen1",
+    "author_id": "68da801fa3c0221fe7931e07",
     "title": "[揭榜挑战] deepseek_v4 自定义 RMSNorm 导致 `npu_rms_norm` 替换不生效",
-    "labels": [],
+    "labels": [
+      "good-first-issue",
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已解决",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/59",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
-    "iid": 58,
+    "iid": "58",
     "state": "opened",
     "created_at": "2026-06-16",
     "closed_at": "",
     "author": "dty_30041779",
+    "author_id": "68ca4efb08a9b87054fdcd73",
     "title": "[Question|问题咨询]: dsv31模型，性能波动很大",
-    "labels": [],
+    "labels": [
+      "question"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/58",
-    "working_days_open": 12
+    "working_days_open": 13
   },
   {
-    "iid": 57,
+    "iid": "57",
     "state": "closed",
     "created_at": "2026-06-11",
     "closed_at": "2026-06-15",
     "author": "dty_30041779",
+    "author_id": "68ca4efb08a9b87054fdcd73",
     "title": "[Bug-Report|缺陷反馈]: master分支下，dsv32模型，单机16die，4layer，设置切分策略为pp1 dp4 cp2 tp2 ep8，开启mtp功能时会报错，不开启mtp能正常跑",
-    "labels": [],
+    "labels": [
+      "resolved",
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/57",
-    "working_days_open": 15
+    "working_days_open": 16
   },
   {
-    "iid": 56,
+    "iid": "56",
     "state": "closed",
     "created_at": "2026-06-11",
     "closed_at": "2026-06-11",
     "author": "dty_30041779",
+    "author_id": "68ca4efb08a9b87054fdcd73",
     "title": "[Bug-Report|缺陷反馈]: 构造异常输入场景，第一次跑没有明确的报错，得再执行一次才能看到正确的报错",
-    "labels": [],
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已解决",
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/56",
-    "working_days_open": 15
+    "working_days_open": 16
   },
   {
-    "iid": 55,
+    "iid": "55",
     "state": "closed",
     "created_at": "2026-06-09",
     "closed_at": "2026-06-10",
     "author": "liux0701",
+    "author_id": "6a05e8b7dcc2646c8151b33a",
     "title": "[Bug-Report|缺陷反馈]:v0.2.2-dev分支-fp32权重保存问题：使用HF权重进行训练export_dtype设置为bf16时，MoE权重仍然存为fp32",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已解决",
     "assignees": [
       "xuyujun"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/55",
-    "working_days_open": 17
+    "working_days_open": 18
   },
   {
-    "iid": 54,
+    "iid": "54",
     "state": "closed",
     "created_at": "2026-06-09",
     "closed_at": "2026-06-23",
     "author": "ningzhixiong",
+    "author_id": "68a8045a8950f411cb53f240",
     "title": "[Question|问题咨询]: 什么时候会对接verl？",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "zhangjianshe"
     ],
     "user_notes_count": 6,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/54",
-    "working_days_open": 17
+    "working_days_open": 18
   },
   {
-    "iid": 53,
+    "iid": "53",
     "state": "opened",
     "created_at": "2026-06-09",
     "closed_at": "",
     "author": "freedom22-cyber",
+    "author_id": "686fbdc82801c5485263e3d0",
     "title": "[Question|问题咨询]: 512Die训练dsv4-pro MFU 过低",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
     "assignees": [
       "zhaowei1936"
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/53",
-    "working_days_open": 17
+    "working_days_open": 18
   },
   {
-    "iid": 52,
+    "iid": "52",
     "state": "closed",
     "created_at": "2026-06-05",
     "closed_at": "2026-06-09",
     "author": "depeng1994",
+    "author_id": "682c3715d3ca53650aa6eafb",
     "title": "[Bug-Report|缺陷反馈]: deepseek_v4_sfa 启用时缺少 ninja 运行依赖导致 C++ extension JIT 失败",
-    "labels": [],
+    "labels": [
+      "resolved",
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/52",
-    "working_days_open": 19
+    "working_days_open": 20
   },
   {
-    "iid": 51,
+    "iid": "51",
     "state": "closed",
     "created_at": "2026-06-05",
     "closed_at": "2026-06-16",
     "author": "www_atomgit",
+    "author_id": "69aa536f2c0e4c0a309c919d",
     "title": "[Question|问题咨询]: 尝试复现deepseek-v4-flash训练 段错误",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 10,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/51",
-    "working_days_open": 19
+    "working_days_open": 20
   },
   {
-    "iid": 50,
+    "iid": "50",
     "state": "closed",
     "created_at": "2026-06-05",
     "closed_at": "2026-06-10",
     "author": "ihujun",
+    "author_id": "68d359153ea9c3041817bca0",
     "title": "[Question|问题咨询]: aclnnLightningIndexer VEC Error Report",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/50",
-    "working_days_open": 19
+    "working_days_open": 20
   },
   {
-    "iid": 49,
+    "iid": "49",
     "state": "opened",
     "created_at": "2026-06-04",
     "closed_at": "",
     "author": "hitwdy",
+    "author_id": "658a6bfa6488920bb9185d17",
     "title": "[Requirement|需求建议]: experts模块入图",
-    "labels": [],
+    "labels": [
+      "requirement"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
     "assignees": [],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/49",
-    "working_days_open": 20
+    "working_days_open": 21
   },
   {
-    "iid": 48,
+    "iid": "48",
     "state": "closed",
     "created_at": "2026-06-04",
     "closed_at": "2026-06-16",
     "author": "liux0701",
+    "author_id": "6a05e8b7dcc2646c8151b33a",
     "title": "[Question|问题咨询]：使用nemotron_pt_specialized_v1_1数据集进行训练作业时显存资源分配不均导致OOM",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已解决",
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/48",
-    "working_days_open": 20
+    "working_days_open": 21
   },
   {
-    "iid": 47,
+    "iid": "47",
     "state": "closed",
     "created_at": "2026-06-02",
     "closed_at": "2026-06-05",
     "author": "liuyuanchen1",
+    "author_id": "68da801fa3c0221fe7931e07",
     "title": "文档内容错误",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/47",
-    "working_days_open": 22
+    "working_days_open": 23
   },
   {
-    "iid": 46,
+    "iid": "46",
     "state": "closed",
     "created_at": "2026-06-02",
     "closed_at": "2026-06-04",
     "author": "hitwdy",
+    "author_id": "658a6bfa6488920bb9185d17",
     "title": "[Bug-Report|缺陷反馈]: compile功能临时规避跟踪",
-    "labels": [],
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/46",
-    "working_days_open": 22
+    "working_days_open": 23
   },
   {
-    "iid": 45,
+    "iid": "45",
     "state": "closed",
     "created_at": "2026-06-02",
     "closed_at": "2026-06-03",
     "author": "gcw_xBCnz8Aq",
+    "author_id": "69fc32bb41313f65c91fbed7",
     "title": "[Bug-Report|缺陷反馈]: DeepSeek V4 Flash/Pro checkpoint 权重命名差异导致 HF checkpoint 保存适配异常",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "zhangjianshe"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/45",
-    "working_days_open": 22
+    "working_days_open": 23
   },
   {
-    "iid": 44,
+    "iid": "44",
     "state": "closed",
     "created_at": "2026-06-01",
     "closed_at": "2026-06-05",
     "author": "ihujun",
+    "author_id": "68d359153ea9c3041817bca0",
     "title": "[Question|问题咨询]:  请问deepSeekV4的稀疏注意力patch是否支持backward？看代码中没有实现backward方法，是fallback到原来的backward吗？",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/44",
-    "working_days_open": 23
+    "working_days_open": 24
   },
   {
-    "iid": 43,
+    "iid": "43",
     "state": "closed",
     "created_at": "2026-06-01",
     "closed_at": "2026-06-02",
     "author": "liuyuanchen1",
+    "author_id": "68da801fa3c0221fe7931e07",
     "title": "文档信息错误",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/43",
-    "working_days_open": 23
+    "working_days_open": 24
   },
   {
-    "iid": 42,
+    "iid": "42",
     "state": "closed",
     "created_at": "2026-05-29",
     "closed_at": "2026-05-30",
     "author": "liuyuanchen1",
+    "author_id": "68da801fa3c0221fe7931e07",
     "title": "文档中版本信息错误",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/42",
-    "working_days_open": 24
+    "working_days_open": 25
   },
   {
-    "iid": 41,
+    "iid": "41",
     "state": "closed",
     "created_at": "2026-05-29",
     "closed_at": "2026-05-30",
     "author": "Lee_worm",
+    "author_id": "67176fd56f4cb25cec8e292e",
     "title": "[Bug-Report|缺陷反馈]: fix 权重对齐hf后，训练mfu异常，8机直接到125%了",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "xuyujun"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/41",
-    "working_days_open": 24
+    "working_days_open": 25
   },
   {
-    "iid": 40,
+    "iid": "40",
     "state": "closed",
     "created_at": "2026-05-28",
     "closed_at": "2026-06-01",
     "author": "hades37",
+    "author_id": "69085d8fed968a794911c444",
     "title": "[Bug-Report|缺陷反馈]: 使用v0.2.2-dev分支开启fake_bakend时出现报错",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "liuyuanchen1",
       "hades37"
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/40",
-    "working_days_open": 25
+    "working_days_open": 26
   },
   {
-    "iid": 39,
+    "iid": "39",
     "state": "closed",
     "created_at": "2026-05-27",
     "closed_at": "2026-05-27",
     "author": "2401_84635199",
+    "author_id": "6953738963bb150764bbce46",
     "title": "FusedBiasLeakyRelu跳转链接失效",
     "labels": [],
+    "issue_type": "文档",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/39",
-    "working_days_open": 26
+    "working_days_open": 27
   },
   {
-    "iid": 38,
+    "iid": "38",
     "state": "closed",
     "created_at": "2026-05-26",
     "closed_at": "2026-05-27",
     "author": "liuyuanchen1",
+    "author_id": "68da801fa3c0221fe7931e07",
     "title": "CANN包文档版本不匹配",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/38",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
-    "iid": 37,
+    "iid": "37",
     "state": "closed",
     "created_at": "2026-05-26",
     "closed_at": "2026-06-03",
     "author": "Lee_worm",
+    "author_id": "67176fd56f4cb25cec8e292e",
     "title": "[Bug-Report|缺陷反馈]: titan训练deepseek-v4完成后，在A3上使用官方镜像会拉不起来报错算子越界问题",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "zzyyjj012"
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/37",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
-    "iid": 36,
+    "iid": "36",
     "state": "closed",
     "created_at": "2026-05-26",
     "closed_at": "2026-05-30",
     "author": "Lee_worm",
+    "author_id": "67176fd56f4cb25cec8e292e",
     "title": "[Bug-Report|缺陷反馈]: 对比了下官方权重。当前torchtitan-npu在有些权重的ckpt存储中感觉存在丢失现象",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已解决",
     "assignees": [
       "zhangjianshe"
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/36",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
-    "iid": 35,
+    "iid": "35",
     "state": "closed",
     "created_at": "2026-05-25",
     "closed_at": "2026-05-29",
     "author": "huilan_li",
+    "author_id": "681c86e692685e00dfb6f521",
     "title": "[Question|问题咨询]: ",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已解决",
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/35",
-    "working_days_open": 28
+    "working_days_open": 29
   },
   {
-    "iid": 34,
+    "iid": "34",
     "state": "closed",
     "created_at": "2026-05-25",
     "closed_at": "2026-05-30",
     "author": "dty_30041779",
+    "author_id": "68ca4efb08a9b87054fdcd73",
     "title": "[Bug-Report|缺陷反馈]: v0.2.2-dev分支，使能compile特性后，功能不通",
-    "labels": [],
+    "labels": [
+      "resolved",
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "mystri"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/34",
-    "working_days_open": 28
+    "working_days_open": 29
   },
   {
-    "iid": 33,
+    "iid": "33",
     "state": "closed",
     "created_at": "2026-05-25",
     "closed_at": "2026-05-25",
     "author": "dty_30041779",
+    "author_id": "68ca4efb08a9b87054fdcd73",
     "title": "[Bug-Report|缺陷反馈]: A3双机，保存checkpoints后，重新加载续训，会有报错AssertionError: metadata is None",
-    "labels": [],
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/33",
-    "working_days_open": 28
+    "working_days_open": 29
   },
   {
-    "iid": 32,
+    "iid": "32",
     "state": "closed",
     "created_at": "2026-05-25",
     "closed_at": "2026-05-30",
     "author": "liuyuanchen1",
+    "author_id": "68da801fa3c0221fe7931e07",
     "title": "文档内容错误",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/32",
-    "working_days_open": 28
+    "working_days_open": 29
   },
   {
-    "iid": 31,
+    "iid": "31",
     "state": "closed",
     "created_at": "2026-05-21",
     "closed_at": "2026-05-22",
     "author": "liuyuanchen1",
+    "author_id": "68da801fa3c0221fe7931e07",
     "title": "文档未说明 ops 包的正确安装参数",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "缺陷",
+    "issue_state": "已完成",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/31",
-    "working_days_open": 30
+    "working_days_open": 31
   },
   {
-    "iid": 30,
+    "iid": "30",
     "state": "closed",
     "created_at": "2026-05-21",
     "closed_at": "2026-05-22",
     "author": "liuyuanchen1",
+    "author_id": "68da801fa3c0221fe7931e07",
     "title": "文档版本配套表与推荐安装方式资源不匹配",
     "labels": [],
+    "issue_type": "需求",
+    "issue_state": "已完成",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/30",
-    "working_days_open": 30
+    "working_days_open": 31
   },
   {
-    "iid": 29,
+    "iid": "29",
     "state": "closed",
     "created_at": "2026-05-21",
     "closed_at": "2026-05-28",
     "author": "zhaowei1936",
+    "author_id": "6822c76de4b985165b4b05c6",
     "title": "[Question|问题咨询]: 【归档】deepseekv4 flash/pro支持FA融合算子的自定义算子包归档",
-    "labels": [],
+    "labels": [
+      "question"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 8,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/29",
-    "working_days_open": 30
+    "working_days_open": 31
   },
   {
-    "iid": 28,
+    "iid": "28",
     "state": "closed",
     "created_at": "2026-05-18",
     "closed_at": "2026-05-19",
     "author": "Lee_worm",
+    "author_id": "67176fd56f4cb25cec8e292e",
     "title": "[Requirement|需求建议]:  测试deepseek-v4-pro报错算子问题，因项目无法使用高版本的os，需要提供22.03的镜像，",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/28",
-    "working_days_open": 33
+    "working_days_open": 34
   },
   {
-    "iid": 27,
+    "iid": "27",
     "state": "closed",
     "created_at": "2026-05-16",
     "closed_at": "2026-06-06",
     "author": "zhaowei1936",
+    "author_id": "6822c76de4b985165b4b05c6",
     "title": "[Question|问题咨询]: DeepSeek-V4-Pro 完整模型在24机192卡上跑时，只能开启fix-router(moe_force_load_balance)才能跑通，否则会存在OOM问题",
-    "labels": [],
+    "labels": [
+      "question"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/27",
-    "working_days_open": 33
+    "working_days_open": 34
   },
   {
-    "iid": 26,
+    "iid": "26",
     "state": "closed",
     "created_at": "2026-05-15",
     "closed_at": "2026-05-22",
     "author": "xuyujun",
+    "author_id": "68a80e4b0f9a7255ef78a02b",
     "title": "[Bug] config_registry.py 中存在硬编码绝对路径和敏感个人信息",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/26",
-    "working_days_open": 34
+    "working_days_open": 35
   },
   {
-    "iid": 25,
+    "iid": "25",
     "state": "closed",
     "created_at": "2026-05-13",
     "closed_at": "2026-05-29",
     "author": "zhong_lin",
+    "author_id": "68233b8f053cff786c915060",
     "title": "[Bug-Report|缺陷反馈]: DeepSeek-V4 moe实现中，num_expert_groups默认值有问题，导致计算逻辑和官方不符",
-    "labels": [],
+    "labels": [
+      "bug-report",
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "hitwdy"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/25",
-    "working_days_open": 36
+    "working_days_open": 37
   },
   {
-    "iid": 24,
+    "iid": "24",
     "state": "closed",
     "created_at": "2026-05-12",
     "closed_at": "2026-05-22",
     "author": "dty_30041779",
+    "author_id": "68ca4efb08a9b87054fdcd73",
     "title": "[Bug-Report|缺陷反馈]: dsv4功能不通，'OptimizersContainer' has no attribute 'Config'报错",
-    "labels": [],
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/24",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
-    "iid": 23,
+    "iid": "23",
     "state": "closed",
     "created_at": "2026-05-12",
     "closed_at": "2026-05-29",
     "author": "dty_30041779",
+    "author_id": "68ca4efb08a9b87054fdcd73",
     "title": "[Question|问题咨询]: dsv32，开启pp切分的场景下，pipeline_parallel_schedule配置为InterleavedZeroBubble时会报错",
-    "labels": [],
+    "labels": [
+      "question"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已解决",
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/23",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
-    "iid": 22,
+    "iid": "22",
     "state": "closed",
     "created_at": "2026-05-11",
     "closed_at": "2026-05-12",
     "author": "calvinhuang",
+    "author_id": "68b151ad55aaf21f7ae61b97",
     "title": "[Requirement|需求建议]:  DeepSeek V4训练在MA云上拉起需要glibc 2.34版本的镜像环境，现有镜像版本为glibc 2.38",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/22",
-    "working_days_open": 38
+    "working_days_open": 39
   },
   {
-    "iid": 21,
+    "iid": "21",
     "state": "closed",
     "created_at": "2026-05-11",
     "closed_at": "2026-06-05",
     "author": "hitwdy",
+    "author_id": "658a6bfa6488920bb9185d17",
     "title": "[Requirement|需求建议]: torchtitan-npu 适配torchtitan主线重构待办事项",
-    "labels": [],
+    "labels": [
+      "requirement",
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "hitwdy"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/21",
-    "working_days_open": 38
+    "working_days_open": 39
   },
   {
-    "iid": 20,
+    "iid": "20",
     "state": "closed",
     "created_at": "2026-05-11",
     "closed_at": "2026-05-15",
     "author": "dty_30041779",
+    "author_id": "68ca4efb08a9b87054fdcd73",
     "title": "[Bug-Report|缺陷反馈]: dsv32，8机加载权重，4k序列，oom报错",
-    "labels": [],
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/20",
-    "working_days_open": 38
+    "working_days_open": 39
   },
   {
-    "iid": 19,
+    "iid": "19",
     "state": "closed",
     "created_at": "2026-05-09",
     "closed_at": "2026-05-11",
     "author": "qq_27037555",
+    "author_id": "65fe8652f967c83861426581",
     "title": "[Question|问题咨询]: DeepSeek v4 dockerfile文件咨询",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已解决",
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/19",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
-    "iid": 18,
+    "iid": "18",
     "state": "closed",
     "created_at": "2026-05-09",
     "closed_at": "2026-05-12",
     "author": "qq_27037555",
+    "author_id": "65fe8652f967c83861426581",
     "title": "[Question|问题咨询]: deepseekv4训练拉起报TCP相关错误",
     "labels": [],
+    "issue_type": "咨询",
+    "issue_state": "已完成",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/18",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
-    "iid": 17,
+    "iid": "17",
     "state": "closed",
     "created_at": "2026-05-08",
     "closed_at": "2026-05-30",
     "author": "weixin_59837223",
+    "author_id": "67ccf4156891be0d6ca594e8",
     "title": "[Bug-Report|缺陷反馈]: A3环境测试dsv4模型，pipeline_parallel_degree = 2切分失败",
-    "labels": [],
+    "labels": [
+      "bug-report",
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "zhangwei1177"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/17",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
-    "iid": 16,
-    "state": "opened",
+    "iid": "16",
+    "state": "closed",
     "created_at": "2026-04-30",
-    "closed_at": "",
+    "closed_at": "2026-07-03",
     "author": "liuyuanchen1",
+    "author_id": "68da801fa3c0221fe7931e07",
     "title": "打榜挑战：Qwen3-0.6B性能优化",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/16",
-    "working_days_open": 43
+    "working_days_open": 44
   },
   {
-    "iid": 15,
+    "iid": "15",
     "state": "closed",
     "created_at": "2026-04-28",
     "closed_at": "2026-05-13",
     "author": "weixin_59837223",
+    "author_id": "67ccf4156891be0d6ca594e8",
     "title": "[Bug-Report|缺陷反馈]: A3环境测试dsv4，设置load_step = 0和initial_load_in_hf = true，checkpoint目录不存在step0，报错FileNotFoundError: --checkpoint.load_step=0 b，     ",
-    "labels": [],
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "xuyujun"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/15",
-    "working_days_open": 45
+    "working_days_open": 46
   },
   {
-    "iid": 14,
+    "iid": "14",
     "state": "closed",
     "created_at": "2026-04-28",
     "closed_at": "2026-05-18",
     "author": "weixin_59837223",
+    "author_id": "67ccf4156891be0d6ca594e8",
     "title": "[Bug-Report|缺陷反馈]: A3环境测试dsv4，加载保存的checkpoint失败，不支持断点续训",
-    "labels": [],
+    "labels": [
+      "resolved",
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "CjianForBetter",
       "xuyujun"
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/14",
-    "working_days_open": 45
+    "working_days_open": 46
   },
   {
-    "iid": 13,
+    "iid": "13",
     "state": "closed",
     "created_at": "2026-04-28",
     "closed_at": "2026-05-18",
     "author": "weixin_59837223",
+    "author_id": "67ccf4156891be0d6ca594e8",
     "title": "[Bug-Report|缺陷反馈]: A3环境测试dsv4，保存checkpoint失败，只能保存最后一步",
-    "labels": [],
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "CjianForBetter"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/13",
-    "working_days_open": 45
+    "working_days_open": 46
   },
   {
-    "iid": 12,
+    "iid": "12",
     "state": "closed",
     "created_at": "2026-04-28",
     "closed_at": "2026-05-20",
     "author": "weixin_59837223",
+    "author_id": "67ccf4156891be0d6ca594e8",
     "title": "[Bug-Report|缺陷反馈]: dsv4，profiling数据采集，设置profile_step_start = 4，实际profiling数据从step2采集",
-    "labels": [],
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已解决",
     "assignees": [
       "hitwdy"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/12",
-    "working_days_open": 45
+    "working_days_open": 46
   },
   {
-    "iid": 11,
+    "iid": "11",
     "state": "closed",
     "created_at": "2026-04-28",
     "closed_at": "2026-05-06",
     "author": "weixin_47893573",
+    "author_id": "66eecba007ddfc0488bf555b",
     "title": "[文档找虫]路径和引号错误",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/11",
-    "working_days_open": 45
+    "working_days_open": 46
   },
   {
-    "iid": 10,
+    "iid": "10",
     "state": "closed",
     "created_at": "2026-04-28",
     "closed_at": "2026-05-09",
     "author": "qiuqiuyahhhh",
+    "author_id": "6637ae3ae9df6d5a496ab5ff",
     "title": "[Bug-Report|缺陷反馈]",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
     "assignees": [
       "MissingPompeii"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/10",
-    "working_days_open": 45
+    "working_days_open": 46
   },
   {
-    "iid": 9,
+    "iid": "9",
     "state": "closed",
     "created_at": "2026-04-27",
     "closed_at": "2026-05-06",
     "author": "aoyoukeji",
+    "author_id": "69ef1372e86a354be61e4715",
     "title": "【文档捉虫-问题类型】: DeepSeek 模型名称大小未统一",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/9",
-    "working_days_open": 46
+    "working_days_open": 47
   },
   {
-    "iid": 8,
+    "iid": "8",
     "state": "closed",
     "created_at": "2026-04-27",
     "closed_at": "2026-05-06",
     "author": "yongan0609",
+    "author_id": "69b8a4091cc6d533ae6ba2a3",
     "title": "[Bug-Report|缺陷反馈]: torchtitan_npu/patches/quantization/quantize.py中gmm路径错误",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "缺陷",
+    "issue_state": "已完成",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/8",
-    "working_days_open": 46
+    "working_days_open": 47
   },
   {
-    "iid": 7,
+    "iid": "7",
     "state": "opened",
     "created_at": "2026-04-24",
     "closed_at": "",
     "author": "liuyuanchen1",
+    "author_id": "68da801fa3c0221fe7931e07",
     "title": "[活动]4-6月trochtitan-npu开源仓任务发布：活动一、定向文档找虫",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/7",
-    "working_days_open": 47
+    "working_days_open": 48
   },
   {
-    "iid": 6,
+    "iid": "6",
     "state": "closed",
     "created_at": "2026-04-23",
     "closed_at": "2026-04-24",
     "author": "dty_30041779",
+    "author_id": "68ca4efb08a9b87054fdcd73",
     "title": "[Bug-Report|缺陷反馈]: SDPA Ulysses CP开与不开的loss存在差异",
-    "labels": [],
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [
       "mystri"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/6",
-    "working_days_open": 48
+    "working_days_open": 49
   },
   {
-    "iid": 5,
+    "iid": "5",
     "state": "closed",
     "created_at": "2026-04-09",
     "closed_at": "2026-07-01",
     "author": "mystri",
+    "author_id": "68d8d3431331e546a2648f95",
     "title": "[Roadmap] torchtitan-npu Q2 2026 roadmap",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/5",
-    "working_days_open": 58
+    "working_days_open": 59
   },
   {
-    "iid": 4,
+    "iid": "4",
     "state": "closed",
     "created_at": "2026-02-13",
     "closed_at": "2026-04-13",
     "author": "mystri",
+    "author_id": "68d8d3431331e546a2648f95",
     "title": "[Bug-Report|缺陷反馈]: Error when setting TP=2 only",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/4",
-    "working_days_open": 92
+    "working_days_open": 93
   },
   {
-    "iid": 3,
+    "iid": "3",
     "state": "closed",
     "created_at": "2026-02-07",
     "closed_at": "2026-02-24",
     "author": "xuyujun",
+    "author_id": "68a80e4b0f9a7255ef78a02b",
     "title": "[Question|问题咨询]: 我该怎么使能swap_optimizer",
     "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/3",
-    "working_days_open": 96
+    "working_days_open": 97
   },
   {
-    "iid": 2,
+    "iid": "2",
     "state": "closed",
     "created_at": "2026-02-01",
     "closed_at": "2026-04-13",
     "author": "lrwei0709",
+    "author_id": "6822c2f22f11da2d75c9552b",
     "title": "[Bug-Report|缺陷反馈]: 单层稠密模型开启npu_gmm converter后，模型计算精度依然发生改变",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/2",
-    "working_days_open": 101
+    "working_days_open": 102
   },
   {
-    "iid": 1,
+    "iid": "1",
     "state": "closed",
     "created_at": "2026-01-27",
     "closed_at": "2026-01-29",
     "author": "zhanghz1",
+    "author_id": "6824b4a424adff5452d89281",
     "title": "[bug] DeepSeek-V3.2训练无法正常使能npu的dsa融合算子",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
+    "issue_type": "缺陷",
+    "issue_state": "已完成",
     "assignees": [
       "xubin787"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/1",
-    "working_days_open": 105
+    "working_days_open": 106
   }
 ]
