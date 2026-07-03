@@ -650,58 +650,56 @@ def main():
     staff_map = load_staff_map()
     repo_admin_map = load_repo_admin_map()
 
-    # 按 (admin, cc) 邮箱对分组 all stale MRs
+    # 按 (admin, cc, repo) 分组
     admin_mrs = defaultdict(list)
     for author, (email, mrs) in has_email_authors.items():
         for mr in mrs:
             repo_admin_cc = repo_admin_map.get(mr["repo"], ("", ""))
             if repo_admin_cc[0]:
-                admin_mrs[repo_admin_cc].append((author, mr, "有邮箱"))
+                admin_mrs[(*repo_admin_cc, mr["repo"])].append((author, mr, "有邮箱"))
     for author, mrs_list in null_email_authors.items():
         for mr in mrs_list:
             repo_admin_cc = repo_admin_map.get(mr["repo"], ("", ""))
             if repo_admin_cc[0]:
-                admin_mrs[repo_admin_cc].append((author, mr, "无邮箱"))
+                admin_mrs[(*repo_admin_cc, mr["repo"])].append((author, mr, "无邮箱"))
     for author, mrs_list in external_authors.items():
         for mr in mrs_list:
             repo_admin_cc = repo_admin_map.get(mr["repo"], ("", ""))
             if repo_admin_cc[0]:
-                admin_mrs[repo_admin_cc].append((author, mr, "外部"))
+                admin_mrs[(*repo_admin_cc, mr["repo"])].append((author, mr, "外部"))
 
     if admin_mrs and not args.dry_run:
-        print(f"\n=== 发送管理员汇总报告（{len(admin_mrs)} 对 admin/cc） ===")
-        for (admin_addr, cc_addr), items in sorted(admin_mrs.items()):
+        print(f"\n=== 发送管理员汇总报告（{len(admin_mrs)} 封） ===")
+        for (admin_addr, cc_addr, repo), items in sorted(admin_mrs.items()):
             items.sort(key=lambda x: -x[1]["days_open"])
             rows = ""
             for author, mr, category in items:
                 display = _author_display(author, staff_map, mail_map)
-                rows += f"<tr><td>{display}</td><td>{mr['title'][:50]}</td><td><a href='{mr['web_url']}'>#{mr['iid']}</a></td><td>{mr['days_open']}天</td><td>{mr['repo']}</td></tr>"
+                rows += f"<tr><td>{display}</td><td>{mr['title'][:50]}</td><td><a href='{mr['web_url']}'>#{mr['iid']}</a></td><td>{mr['days_open']}天</td></tr>"
 
             html = f"""<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:800px">
 <h2>超期 MR 汇总报告</h2>
-<p style="color:#666;font-size:13px">日期: {datetime.now().strftime('%Y-%m-%d')} | 共 {len(items)} 个超期 MR</p>
+<p style="color:#666;font-size:13px">仓库: {repo} | 日期: {datetime.now().strftime('%Y-%m-%d')} | 共 {len(items)} 个超期 MR</p>
 <table style="width:100%;border-collapse:collapse;font-size:13px;border:1px solid #e2e4ea">
 <thead><tr style="background:#f0f2f5">
 <th style="padding:8px 10px;text-align:left">提交人</th>
 <th style="padding:8px 10px;text-align:left">标题</th>
 <th style="padding:8px 10px;text-align:left">链接</th>
 <th style="padding:8px 10px;text-align:center">时长</th>
-<th style="padding:8px 10px;text-align:left">仓库</th>
 </tr></thead>
 <tbody>{rows}</tbody></table>
 <p style="color:#999;font-size:11px;margin-top:16px">CANN Radar 自动生成 · {CONTACT_INFO}</p></div>"""
             try:
-                send_one_email(smtp_cfg, admin_addr, f"[CANN] 超期 MR 汇总报告（{len(items)} 个）", html, cc_email=cc_addr if cc_addr else None)
-                print(f"  ✓ {admin_addr}" + (f" (CC: {cc_addr})" if cc_addr else "") + f": {len(items)} 个 MR")
-                notified_data["admin_report_last_sent"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+                send_one_email(smtp_cfg, admin_addr, f"[CANN] 超期 MR 汇总报告 - {repo}（{len(items)} 个）", html, cc_email=cc_addr if cc_addr else None)
+                print(f"  ✓ {repo} → {admin_addr}" + (f" (CC: {cc_addr})" if cc_addr else "") + f": {len(items)} 个 MR")
                 notified_changed = True
             except Exception as e:
-                print(f"  ✗ {admin_addr}: {e}")
+                print(f"  ✗ {repo} → {admin_addr}: {e}")
     elif admin_mrs and args.dry_run:
         print(f"\n=== 管理员汇总报告 ===")
-        for (admin_addr, cc_addr), items in sorted(admin_mrs.items()):
+        for (admin_addr, cc_addr, repo), items in sorted(admin_mrs.items()):
             cc_str = f" CC:{cc_addr}" if cc_addr else ""
-            print(f"  → {admin_addr}{cc_str}: {len(items)} 个 MR [dry-run]")
+            print(f"  → {repo} → {admin_addr}{cc_str}: {len(items)} 个 MR [dry-run]")
 
     # 保存 tracking 文件
     if notified_changed and not args.dry_run:
