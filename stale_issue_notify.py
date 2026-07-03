@@ -684,6 +684,7 @@ def main():
     sent = 0
     failed = 0
     test_sent = False
+    repo_admin_map = load_repo_admin_map()
 
     for assignee, (email, issues) in sorted(has_email_assignees.items(), key=lambda x: -len(x[1][1])):
         has_stage2 = any(i.get("notify_stage") == 2 for i in issues)
@@ -693,9 +694,15 @@ def main():
             subject += " [二次提醒]"
         html = build_html_email(assignee, issues)
 
-        cc = None
-        if has_stage2 and admin_email and admin_email != email:
-            cc = admin_email
+        # 按仓库找对应管理员抄送
+        cc_addrs = set()
+        if has_stage2:
+            for iss in issues:
+                if iss.get("notify_stage") == 2:
+                    admin_cc = repo_admin_map.get(iss["repo"], ("", ""))
+                    if admin_cc[0] and admin_cc[0] != email:
+                        cc_addrs.add(admin_cc[0])
+        cc = ", ".join(sorted(cc_addrs)) if cc_addrs else None
 
         if args.dry_run:
             cc_str = f" 抄送:{cc}" if cc else ""

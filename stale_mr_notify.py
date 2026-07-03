@@ -475,7 +475,7 @@ def send_one_email(cfg, to_email, subject, html_body, cc_email=None):
         smtp.sendmail(sender, recipients, msg.as_string())
 
 
-def _send_personal_emails(has_email_authors, smtp_cfg, notified_data, admin_email, args):
+def _send_personal_emails(has_email_authors, smtp_cfg, notified_data, repo_admin_map, args):
     sent = 0
     failed = 0
     test_sent = False
@@ -488,9 +488,15 @@ def _send_personal_emails(has_email_authors, smtp_cfg, notified_data, admin_emai
             subject += " [二次提醒]"
         html = build_html_email(author, mrs, is_escalated=has_stage2)
 
-        cc = None
-        if has_stage2 and admin_email and admin_email != email:
-            cc = admin_email
+        # 按仓库找对应管理员抄送
+        cc_addrs = set()
+        if has_stage2:
+            for mr in mrs:
+                if mr.get("notify_stage") == 2:
+                    admin_cc = repo_admin_map.get(mr["repo"], ("", ""))
+                    if admin_cc[0] and admin_cc[0] != email:
+                        cc_addrs.add(admin_cc[0])
+        cc = ", ".join(sorted(cc_addrs)) if cc_addrs else None
 
         if args.dry_run:
             cc_str = f" 抄送:{cc}" if cc else ""
@@ -638,8 +644,9 @@ def main():
     if not has_email_authors:
         print("  （无有邮箱的开发者，跳过个人通知）")
     else:
+        repo_admin_map = load_repo_admin_map()
         sent, failed = _send_personal_emails(
-            has_email_authors, smtp_cfg, notified_data, admin_email, args,
+            has_email_authors, smtp_cfg, notified_data, repo_admin_map, args,
         )
     if sent > 0 and not args.dry_run:
         notified_changed = True
