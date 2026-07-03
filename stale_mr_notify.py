@@ -645,7 +645,7 @@ def main():
         notified_changed = True
 
     # 保存 MR 汇总数据供 admin_summary.py 读取
-    if stale_by_author and not args.dry_run:
+    if stale_by_author:
         summary_mrs = []
         for author, (email, mrs) in has_email_authors.items():
             for mr in mrs:
@@ -658,6 +658,8 @@ def main():
                 summary_mrs.append({"author": author, "category": "外部", **{k: mr[k] for k in ["repo","iid","title","days_open","web_url","notify_stage"]}})
         with open(DATA_DIR / "admin_mr_summary.json", "w", encoding="utf-8") as f:
             json.dump({"mr_items": summary_mrs, "stats": stats, "stale_days": args.stale_days}, f, ensure_ascii=False)
+        if not args.dry_run:
+            pass  # already saved above, same for both modes
         if not args.dry_run:
             print(f"\n  个人通知: 已发送 {sent}, 失败 {failed}")
 

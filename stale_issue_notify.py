@@ -737,7 +737,7 @@ def main():
         _mark_issue_notified(notified_data, matched_issues)
 
     # 保存 Issue 汇总数据供 admin_summary.py 读取
-    if matched_issues and not args.dry_run:
+    if matched_issues:
         summary_issues = []
         for assignee, (email, issues) in has_email_assignees.items():
             for iss in issues:
