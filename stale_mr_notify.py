@@ -114,6 +114,9 @@ def _author_display(author, mail_map):
             return author
         return f"{author} (无邮箱映射)"
     return f"{author} (外部)"
+
+
+def load_repo_admin_map():
     """返回 {repo_path: (admin_email, cc_email)}。"""
     admin_map = {}
     if not REPOS_CONFIG_PATH.exists():
@@ -127,16 +130,6 @@ def _author_display(author, mail_map):
         if path and admin:
             admin_map[path] = (admin, cc)
     return admin_map
-
-
-def _author_display(author, staff_map, mail_map):
-    """返回作者显示名：gitcode_id (姓名/工号) 或 gitcode_id (外部/无邮箱)。"""
-    if author in staff_map:
-        name, eid = staff_map[author]
-        return f"{author} ({name}/{eid})"
-    if author in mail_map:
-        return f"{author} (有映射无邮箱)"
-    return f"{author} (外部)"
 
 
 def load_notified():
