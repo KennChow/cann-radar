@@ -54,7 +54,6 @@ MAIL_MAP_PATH = Path("config/gitcode_2_mail.txt")
 SMTP_CONFIG_PATH = Path("config/smtp_config.ini")
 ADMIN_EMAIL_PATH = Path("config/admin_email.txt")
 NOTIFIED_PATH = DATA_DIR / "stale_issue_notified.json"
-STAFF_MAP_PATH = Path("config/gitcode_2_staff.txt")
 
 DEFAULT_STALE_DAYS = 14
 RESEND_INTERVAL_DAYS = 7
@@ -66,10 +65,11 @@ CONTACT_INFO = "如有疑问请联系夏国正 x00806611"
 def _is_requirement(issue_type, title, labels):
     if issue_type == "需求":
         return True
-    if title:
-        if '[RFC]' in title or '[Feature-Request|需求反馈]' in title:
-            return True
-    if labels and 'requirement' in labels:
+    title_lower = (title or "").lower()
+    if any(kw in title_lower for kw in ["requirement", "feature", "[rfc]"]):
+        return True
+    labels_lower = [l.lower() for l in (labels or [])]
+    if any(kw in labels_lower for kw in ["requirement", "feature"]):
         return True
     return False
 
@@ -162,20 +162,6 @@ def load_admin_email():
     return None
 
 
-def load_staff_map():
-    staff = {}
-    if not STAFF_MAP_PATH.exists():
-        return staff
-    for line in STAFF_MAP_PATH.read_text(encoding="utf-8").splitlines():
-        parts = line.strip().split("\t")
-        if len(parts) < 3:
-            continue
-        uid, name, eid = parts[0], parts[1], parts[2]
-        if uid:
-            staff[uid] = (name, eid)
-    return staff
-
-
 def load_repo_admin_map():
     admin_map = {}
     if not REPOS_CONFIG_PATH.exists():
@@ -191,12 +177,11 @@ def load_repo_admin_map():
     return admin_map
 
 
-def _author_display(author, staff_map, mail_map):
-    if author in staff_map:
-        name, eid = staff_map[author]
-        return f"{author} ({name}/{eid})"
+def _author_display(author, mail_map):
     if author in mail_map:
-        return f"{author} (有映射无邮箱)"
+        if mail_map[author]:
+            return author
+        return f"{author} (无邮箱映射)"
     return f"{author} (外部)"
 
 

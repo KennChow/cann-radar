@@ -1826,12 +1826,11 @@ async function main() {
       // 2. 非requirement且超过14个工作日未关闭的issue
       const nonRequirementOver14d = issues.filter(i => {
         if (i.state !== 'opened') return false;
-        const title = (i.title || '');
-        const labels = (i.labels || []);
+        const title = (i.title || '').toLowerCase();
+        const labels = (i.labels || []).map(l => l.toLowerCase());
         const isRequirement = (i.issue_type === '需求')
-          || title.includes('[RFC]') 
-          || title.includes('[Feature-Request|需求反馈]')
-          || labels.includes('requirement');
+          || ['requirement','feature','[rfc]'].some(kw => title.includes(kw))
+          || ['requirement','feature'].some(kw => labels.includes(kw));
         if (isRequirement) return false;
         const wd = i.working_days_open ?? Math.floor((now - new Date(i.created_at)) / oneDayMs);
         return wd > 14;
@@ -1840,12 +1839,11 @@ async function main() {
       // 3. requirement且超过90个工作日未关闭的issue
       const requirementOver90d = issues.filter(i => {
         if (i.state !== 'opened') return false;
-        const title = (i.title || '');
-        const labels = (i.labels || []);
+        const title = (i.title || '').toLowerCase();
+        const labels = (i.labels || []).map(l => l.toLowerCase());
         const isRequirement = (i.issue_type === '需求')
-          || title.includes('[RFC]') 
-          || title.includes('[Feature-Request|需求反馈]')
-          || labels.includes('requirement');
+          || ['requirement','feature','[rfc]'].some(kw => title.includes(kw))
+          || ['requirement','feature'].some(kw => labels.includes(kw));
         if (!isRequirement) return false;
         const wd = i.working_days_open ?? Math.floor((now - new Date(i.created_at)) / oneDayMs);
         return wd > 90;

@@ -56,7 +56,6 @@ MAIL_MAP_PATH = Path("config/gitcode_2_mail.txt")
 SMTP_CONFIG_PATH = Path("config/smtp_config.ini")
 ADMIN_EMAIL_PATH = Path("config/admin_email.txt")
 NOTIFIED_PATH = DATA_DIR / "stale_mr_notified.json"
-STAFF_MAP_PATH = Path("config/gitcode_2_staff.txt")
 
 DEFAULT_STALE_DAYS = 14
 RESEND_INTERVAL_DAYS = 7
@@ -119,22 +118,12 @@ def load_admin_email():
     return None
 
 
-def load_staff_map():
-    """返回 {gitcode_id: (name, employee_id)}。"""
-    staff = {}
-    if not STAFF_MAP_PATH.exists():
-        return staff
-    for line in STAFF_MAP_PATH.read_text(encoding="utf-8").splitlines():
-        parts = line.strip().split("\t")
-        if len(parts) < 3:
-            continue
-        uid, name, eid = parts[0], parts[1], parts[2]
-        if uid:
-            staff[uid] = (name, eid)
-    return staff
-
-
-def load_repo_admin_map():
+def _author_display(author, mail_map):
+    if author in mail_map:
+        if mail_map[author]:
+            return author
+        return f"{author} (无邮箱映射)"
+    return f"{author} (外部)"
     """返回 {repo_path: (admin_email, cc_email)}。"""
     admin_map = {}
     if not REPOS_CONFIG_PATH.exists():

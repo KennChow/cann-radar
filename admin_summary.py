@@ -31,25 +31,10 @@ DATA_DIR = BASE_DIR / "data"
 REPOS_CONFIG_PATH = Path("config/repos.yml")
 MAIL_MAP_PATH = Path("config/gitcode_2_mail.txt")
 SMTP_CONFIG_PATH = Path("config/smtp_config.ini")
-STAFF_MAP_PATH = Path("config/gitcode_2_staff.txt")
 
 CONTACT_INFO = "如有疑问请联系夏国正 x00806611"
 MR_SUMMARY_FILE = DATA_DIR / "admin_mr_summary.json"
 ISSUE_SUMMARY_FILE = DATA_DIR / "admin_issue_summary.json"
-
-
-def load_staff_map():
-    staff = {}
-    if not STAFF_MAP_PATH.exists():
-        return staff
-    for line in STAFF_MAP_PATH.read_text(encoding="utf-8").splitlines():
-        parts = line.strip().split("\t")
-        if len(parts) < 3:
-            continue
-        uid, name, eid = parts[0], parts[1], parts[2]
-        if uid:
-            staff[uid] = (name, eid)
-    return staff
 
 
 def load_mail_map():
@@ -86,10 +71,7 @@ def load_repo_admin_map():
     return admin_map
 
 
-def _author_display(author, staff_map, mail_map):
-    if author in staff_map:
-        name, eid = staff_map[author]
-        return f"{author} ({name}/{eid})"
+def _author_display(author, mail_map):
     if author in mail_map:
         if mail_map[author]:
             return author
@@ -141,7 +123,6 @@ def main():
     args = parser.parse_args()
 
     mail_map = load_mail_map()
-    staff_map = load_staff_map()
     repo_admin_map = load_repo_admin_map()
 
     mr_data = {}
@@ -185,13 +166,13 @@ def main():
         # MR 表格
         mr_rows = ""
         for item in sorted(items["mr"], key=lambda x: -x["days_open"]):
-            display = _author_display(item["author"], staff_map, mail_map)
+            display = _author_display(item["author"], mail_map)
             mr_rows += f"<tr><td>{display}</td><td>{item['title'][:50]}</td><td><a href='{item['web_url']}'>#{item['iid']}</a></td><td>{item['days_open']}天</td></tr>"
 
         # Issue 表格
         iss_rows = ""
         for item in sorted(items["issue"], key=lambda x: -x["days_open"]):
-            display = _author_display(item.get("assignee_display", item.get("author", "")), staff_map, mail_map)
+            display = _author_display(item.get("assignee_display", item.get("author", "")), mail_map)
             iss_rows += f"<tr><td>{item['title'][:50]}</td><td><a href='{item['web_url']}'>#{item['iid']}</a></td><td>{item['days_open']}天</td><td>{display}</td></tr>"
 
         mr_section = ""
