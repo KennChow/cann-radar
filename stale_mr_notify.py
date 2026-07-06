@@ -54,7 +54,6 @@ MRS_DIR = DATA_DIR / "mrs"
 REPOS_CONFIG_PATH = Path("config/repos.yml")
 MAIL_MAP_PATH = Path("config/gitcode_2_mail.txt")
 SMTP_CONFIG_PATH = Path("config/smtp_config.ini")
-ADMIN_EMAIL_PATH = Path("config/admin_email.txt")
 NOTIFIED_PATH = DATA_DIR / "stale_mr_notified.json"
 
 DEFAULT_STALE_DAYS = 14
@@ -107,15 +106,6 @@ def _has_valid_email(mail_map, author):
 def _has_null_email(mail_map, author):
     """author 在 mail_map 中但两列邮箱均为 null。"""
     return author in mail_map and mail_map[author] is None
-
-
-def load_admin_email():
-    if not ADMIN_EMAIL_PATH.exists():
-        return None
-    text = ADMIN_EMAIL_PATH.read_text(encoding="utf-8").strip()
-    if text:
-        return text.splitlines()[0].strip()
-    return None
 
 
 def _author_display(author, mail_map):
@@ -537,7 +527,7 @@ def main():
     parser = argparse.ArgumentParser(description="超期 MR 扫描与邮件通知")
     parser.add_argument("--dry-run", action="store_true", help="仅打印结果，不发送邮件")
     parser.add_argument("--stale-days", type=int, default=DEFAULT_STALE_DAYS, help=f"超期工作日阈值（默认 {DEFAULT_STALE_DAYS}）")
-    parser.add_argument("--report-to", help="管理员汇总报告发送到此邮箱（覆盖 config/admin_email.txt）")
+    parser.add_argument("--report-to", help="管理员汇总报告发送到此邮箱（测试用）")
     parser.add_argument("--test", metavar="EMAIL", help="测试模式：仅发送1封样本到指定邮箱，不发给实际作者")
     parser.add_argument("--init-smtp", action="store_true", help="生成 SMTP 配置模板到 config/smtp_config.ini")
     args = parser.parse_args()
@@ -568,11 +558,10 @@ def main():
     notified_data = load_notified()
     print(f"  已追踪 MR: {len(notified_data.get('notified', {}))} 个")
 
-    admin_email = args.report_to or load_admin_email()
-    if admin_email:
-        print(f"  管理员邮箱: {admin_email}")
-    else:
-        print(f"  管理员邮箱: 未配置（将不发送汇总报告）")
+    repo_admin_map = load_repo_admin_map()
+    for repo in sorted(notify_paths):
+        if repo not in repo_admin_map or not repo_admin_map[repo][0]:
+            print(f"  ⚠ {repo} 已启用 notify 但未配置 admin，将不发送汇总报告")
 
     stale_by_author, stats = scan_stale_mrs(
         args.stale_days, notify_paths, notified_data.get("notified", {}),
@@ -608,16 +597,6 @@ def main():
     print(f"    有邮箱: {len(has_email_authors)} 人（{sum(len(v[1]) for v in has_email_authors.values())} 个 MR）")
     print(f"    有映射无邮箱: {len(null_email_authors)} 人（{sum(len(v) for v in null_email_authors.values())} 个 MR）")
     print(f"    外部开发者: {len(external_authors)} 人（{sum(len(v) for v in external_authors.values())} 个 MR）")
-
-    if not admin_email:
-        if null_email_authors or external_authors:
-            print(f"\n  ⚠ 管理员邮箱未配置，以下用户无法收到通知：")
-            for a in sorted(null_email_authors.keys()):
-                ids = ", ".join(f"#{m['iid']}" for m in null_email_authors[a])
-                print(f"    有映射无邮箱: {a} ({ids})")
-            for a in sorted(external_authors.keys()):
-                ids = ", ".join(f"#{m['iid']}" for m in external_authors[a])
-                print(f"    外部开发者: {a} ({ids})")
 
     smtp_cfg = None
     if not args.dry_run:
