@@ -82,6 +82,8 @@
 | `display_name` | 前端展示名称 |
 | `enabled` | 设为 `false` 可临时隐藏，无需删除配置 |
 | `notify` | 设为 `true` 启用该仓库的超期 MR/Issue 邮件通知 |
+| `admin` | 该仓库管理员邮箱（接收汇总报告） |
+| `cc` | 抄送邮箱（接收同一封汇总报告） |
 | `goals` | 统一运营目标配置，可选，数组可为空 `[]` |
 
 ### 移除仓库
@@ -155,22 +157,28 @@
 
 | 项目 | MR | Issue |
 |---|---|---|
-| 条件 | opened + 超期 14 个工作日以上 | opened + **非Requirement** + 超期 14 个工作日以上 |
+| 条件 | opened + 非草稿(draft) + 超期 14 个工作日以上 | opened + **非Requirement** + 非自提 + 超期 14 个工作日以上 |
 | 通知对象 | MR 作者 | Issue 的 assignees（负责人） |
-| 升级机制 | 首次提醒本人；≥7 个工作日后仍 open 则二次提醒并抄送管理员；最多 2 次 | 同 MR |
+| 升级机制 | 首次提醒本人；≥7 个工作日后仍 open 则二次提醒并抄送该仓库管理员；最多 2 次 | 同 MR |
 | 去重 | 按 issue/MR 维度，已通知的不会重复 | 同 MR |
 | 工作日 | 排除周末 + 中国法定节假日（`chinese-calendar`） | 同 MR |
 
-### Requirement 判定
+### Requirement 判定（不参与非Requirement 超期通知）
 
-Issue 标题含 `[RFC]` 或 `[Feature-Request|需求反馈]`，或 labels 含 `requirement`，视为 Requirement（不参与非Requirement 超期通知）。
+Issue 满足以下任一条件视为 Requirement：
+- `issue_type == "需求"`（v5 API 直接返回）
+- 标题含 `requirement`、`feature` 或 `[rfc]`（不区分大小写）
+- labels 含 `requirement` 或 `feature`（不区分大小写）
 
-### 管理员报告
+### 自提 Issue 判定（不发送通知）
 
-以下情况汇总发给管理员（邮箱配置在私仓 `admin_email.txt`）：
-- 有映射但邮箱为 null 的开发者
-- 不在 `gitcode_2_mail.txt` 中的外部开发者
-- 未分配负责人的 Issue
+满足以下任一条件视为自提，不发送邮件：
+- Issue 作者是 assignees 之一
+- Issue 关联的 MR 中，有 MR 作者与 Issue 作者为同一人（通过 `e2e_issues` 检测）
+
+### 管理员汇总报告
+
+每天 22:00，`admin_summary.py` 读取 MR 和 Issue 扫描结果，按仓库独立发送一封合并邮件（含 MR + Issue 两张表格），收件人为该仓库的 `admin`，抄送 `cc`。
 
 ### 手动触发
 
@@ -191,6 +199,10 @@ python stale_mr_notify.py --test your_email@example.com
 # Issue 通知
 python stale_issue_notify.py --dry-run
 python stale_issue_notify.py --test your_email@example.com
+
+# 管理员汇总报告
+python admin_summary.py --dry-run
+python admin_summary.py --test your_email@example.com
 ```
 
 ## 数据采集
@@ -256,8 +268,9 @@ config/repos.yml          # 仓库配置（增减仓库、设定目标、启用�
 config/discussions.yml    # 讨论链接配置（外部讨论参与者采集）
 config/internal_developers.txt # 内部开发者用户名名单
 collector.py              # 数据采集器
-stale_mr_notify.py        # 超期 MR 邮件通知
-stale_issue_notify.py     # 超期 Issue 邮件通知
+stale_mr_notify.py        # 超期 MR 个人通知
+stale_issue_notify.py     # 超期 Issue 个人通知
+admin_summary.py          # 合并 MR+Issue 管理员汇总报告
 index.html                # 前端页面（单文件，含所有图表逻辑）
 data/                     # 采集数据（自动生成，已纳入版本控制）
   repos.json              # 仓库基本信息（采集输出）
