@@ -209,7 +209,7 @@ def main():
         html = f"""<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:800px">
 <h2>超期汇总报告 - {repo}</h2>
 <p style="color:#666;font-size:13px">日期: {datetime.now().strftime('%Y-%m-%d')} | MR {total_mr} 个 + Issue {total_iss} 个</p>
-{mr_section}{iss_section}
+{iss_section}{mr_section}
 <p style="color:#999;font-size:11px;margin-top:16px">CANN Radar 自动生成 · {CONTACT_INFO}</p></div>"""
 
         if args.dry_run:
