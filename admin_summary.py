@@ -165,32 +165,45 @@ def main():
 
         # MR 表格
         mr_rows = ""
+        mr_new = mr_waiting = 0
         for item in sorted(items["mr"], key=lambda x: -x["days_open"]):
             display = _author_display(item["author"], mail_map)
-            mr_rows += f"<tr><td>{display}</td><td>{item['title'][:50]}</td><td><a href='{item['web_url']}'>#{item['iid']}</a></td><td>{item['days_open']}天</td></tr>"
+            status = item.get("status", "new")
+            if status == "new": mr_new += 1; label = "新增"
+            elif status == "max": label = "⚠ 需管理员介入（2 次提醒未处理）"
+            else: mr_waiting += 1; label = "跟踪中"
+            mr_rows += f"<tr><td>{display}</td><td>{item['title'][:50]}</td><td><a href='{item['web_url']}'>#{item['iid']}</a></td><td>{item['days_open']}天</td><td>{label}</td></tr>"
 
         # Issue 表格
         iss_rows = ""
+        iss_new = iss_waiting = 0
         for item in sorted(items["issue"], key=lambda x: -x["days_open"]):
             display = _author_display(item.get("assignee_display", item.get("author", "")), mail_map)
-            iss_rows += f"<tr><td>{item['title'][:50]}</td><td><a href='{item['web_url']}'>#{item['iid']}</a></td><td>{item['days_open']}天</td><td>{display}</td></tr>"
+            status = item.get("status", "new")
+            if status == "new": iss_new += 1; label = "新增"
+            elif status == "max": label = "⚠ 需管理员介入（2 次提醒未处理）"
+            else: iss_waiting += 1; label = "跟踪中"
+            iss_rows += f"<tr><td>{item['title'][:50]}</td><td><a href='{item['web_url']}'>#{item['iid']}</a></td><td>{item['days_open']}天</td><td>{display}</td><td>{label}</td></tr>"
 
         mr_section = ""
         if total_mr > 0:
-            mr_section = f"""<h3>超期 MR（{total_mr} 个）</h3>
+            mr_section = f"""<h3>超期 MR（{total_mr} 个）<span style="font-size:12px;font-weight:400;color:#666"> — 新增 {mr_new} 个，跟踪中 {mr_waiting} 个</span></h3>
 <table style="width:100%;border-collapse:collapse;font-size:13px;border:1px solid #e2e4ea;margin-bottom:20px">
 <thead><tr style="background:#f0f2f5">
 <th style="padding:8px 10px;text-align:left">提交人</th><th style="padding:8px 10px;text-align:left">标题</th>
-<th style="padding:8px 10px;text-align:left">链接</th><th style="padding:8px 10px;text-align:center">时长</th>
+<th style="padding:8px 10px;text-align:left">链接</th><th style="padding:8px 10px;text-align:center">工作天数</th>
+<th style="padding:8px 10px;text-align:center">状态</th>
 </tr></thead><tbody>{mr_rows}</tbody></table>"""
 
         iss_section = ""
         if total_iss > 0:
-            iss_section = f"""<h3>超期 Issue（{total_iss} 个）</h3>
+            iss_section = f"""<h3>超期 Issue（{total_iss} 个）<span style="font-size:12px;font-weight:400;color:#666"> — 新增 {iss_new} 个，跟踪中 {iss_waiting} 个</span></h3>
 <table style="width:100%;border-collapse:collapse;font-size:13px;border:1px solid #e2e4ea">
 <thead><tr style="background:#f0f2f5">
 <th style="padding:8px 10px;text-align:left">标题</th><th style="padding:8px 10px;text-align:left">链接</th>
-<th style="padding:8px 10px;text-align:center">时长</th><th style="padding:8px 10px;text-align:left">负责人</th>
+<th style="padding:8px 10px;text-align:center">工作天数</th>
+<th style="padding:8px 10px;text-align:left">负责人</th>
+<th style="padding:8px 10px;text-align:center">状态</th>
 </tr></thead><tbody>{iss_rows}</tbody></table>"""
 
         html = f"""<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:800px">

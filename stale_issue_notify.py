@@ -388,7 +388,7 @@ def build_html_email(assignee, issues):
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">仓库</th>
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">Issue</th>
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">标题</th>
-        <th style="padding:10px 12px;text-align:center;font-weight:600;color:#1a1d2e">开启时长</th>
+        <th style="padding:10px 12px;text-align:center;font-weight:600;color:#1a1d2e">开启工作天数</th>
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">Labels</th>
       </tr>
     </thead>
@@ -416,7 +416,7 @@ def build_admin_report_html(stats, unassigned_issues, null_email_by_assignee, ex
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">仓库</th>
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">Issue</th>
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">标题</th>
-        <th style="padding:10px 12px;text-align:center;font-weight:600;color:#1a1d2e">开启时长</th>
+        <th style="padding:10px 12px;text-align:center;font-weight:600;color:#1a1d2e">开启工作天数</th>
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">Labels</th>
       </tr>
     </thead>
@@ -434,7 +434,7 @@ def build_admin_report_html(stats, unassigned_issues, null_email_by_assignee, ex
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">仓库</th>
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">Issue</th>
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">标题</th>
-        <th style="padding:10px 12px;text-align:center;font-weight:600;color:#1a1d2e">开启时长</th>
+        <th style="padding:10px 12px;text-align:center;font-weight:600;color:#1a1d2e">开启工作天数</th>
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">Labels</th>
       </tr>
     </thead>
@@ -452,7 +452,7 @@ def build_admin_report_html(stats, unassigned_issues, null_email_by_assignee, ex
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">仓库</th>
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">Issue</th>
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">标题</th>
-        <th style="padding:10px 12px;text-align:center;font-weight:600;color:#1a1d2e">开启时长</th>
+        <th style="padding:10px 12px;text-align:center;font-weight:600;color:#1a1d2e">开启工作天数</th>
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">Labels</th>
       </tr>
     </thead>
@@ -524,6 +524,64 @@ def _mark_issue_notified(notified_data, issues):
         }
 
 
+def _save_admin_issue_summary(notify_paths, notified_data, linked_pr_map, mail_map, stale_days, stats):
+    """保存管理员汇总 JSON（含所有 open 超期 Issue，带跟踪状态和自提过滤）。"""
+    notified = notified_data.get("notified", {})
+    summary = []
+    today = date.today()
+
+    for f in sorted(ISSUES_DIR.glob("*.json")):
+        repo_path = f.stem.replace("__", "/", 1)
+        if notify_paths and repo_path not in notify_paths:
+            continue
+        issues = json.loads(f.read_text(encoding="utf-8"))
+        for iss in issues:
+            if iss.get("state") != "opened":
+                continue
+            iid = iss.get("iid")
+            if iid is None:
+                continue
+            title = iss.get("title") or ""
+            labels = iss.get("labels") or []
+            itype = iss.get("issue_type") or ""
+            if _is_requirement(itype, title, labels):
+                continue
+            days_open = iss.get("working_days_open") or _working_days_since(iss.get("created_at", ""))
+            if days_open <= stale_days:
+                continue
+            # self-assigned check
+            if _is_self_assigned(iss, linked_pr_map, mail_map):
+                continue
+
+            key = _issue_key(repo_path, iid)
+            assignees = iss.get("assignees") or []
+            assignee_display = ", ".join(assignees) if assignees else "(未分配)"
+
+            if key in notified:
+                record = notified[key]
+                cnt = record.get("count", 1)
+                status = "new" if cnt < MAX_NOTIFY_COUNT else "max"
+            else:
+                status = "new"
+
+            cat = "未分配" if not assignees else "有邮箱" if any(_has_valid_email(mail_map, a) for a in assignees) else "外部"
+
+            summary.append({
+                "repo": repo_path, "iid": iid, "title": title,
+                "days_open": days_open, "web_url": iss.get("web_url", ""),
+                "assignee_display": assignee_display, "category": cat, "status": status,
+            })
+
+    counts = {"new": 0, "max": 0}
+    for s in summary:
+        counts["new"] += 1 if s["status"] == "new" else 0
+        counts["max"] += 1 if s["status"] == "max" else 0
+
+    with open(DATA_DIR / "admin_issue_summary.json", "w", encoding="utf-8") as f:
+        json.dump({"issue_items": summary, "stale_days": stale_days}, f, ensure_ascii=False)
+    print(f"\n  管理员汇总: {len(summary)} 个 Issue（新发现 {counts['new']}，需介入 {counts['max']}）")
+
+
 def main():
     parser = argparse.ArgumentParser(description="超期 Issue 扫描与邮件通知")
     parser.add_argument("--dry-run", action="store_true", help="仅打印结果，不发送邮件")
@@ -576,6 +634,12 @@ def main():
     print(f"    二次升级: {stats['stage2_count']}")
     print(f"    未到重发间隔跳过: {stats['skipped_waiting']}")
     print(f"    已达上限永久跳过: {stats['skipped_max']}")
+
+    # 构建关联 PR 映射（需在保存前调用）
+    linked_pr_map = _build_linked_pr_map(notify_paths)
+
+    # 保存管理员汇总数据（含所有 open 超期 Issue，带状态）
+    _save_admin_issue_summary(notify_paths, notified_data, linked_pr_map, mail_map, args.stale_days, stats)
 
     if not matched_issues:
         print("\n  ✓ 无新增/待升级超期非Requirement Issue，无需通知")
@@ -703,24 +767,7 @@ def main():
 
     # 标记已通知的 issue
     if sent > 0 and not args.dry_run:
-        _mark_issue_notified(notified_data, matched_issues)
-
-    # 保存 Issue 汇总数据供 admin_summary.py 读取
-    if matched_issues:
-        summary_issues = []
-        for assignee, (email, issues) in has_email_assignees.items():
-            for iss in issues:
-                summary_issues.append({"assignee_display": assignee, "category": "有邮箱", **{k: iss[k] for k in ["repo","iid","title","days_open","web_url","notify_stage"]}})
-        for assignee, iss_list in null_email_assignees.items():
-            for iss in iss_list:
-                summary_issues.append({"assignee_display": assignee, "category": "无邮箱", **{k: iss[k] for k in ["repo","iid","title","days_open","web_url","notify_stage"]}})
-        for assignee, iss_list in external_assignees.items():
-            for iss in iss_list:
-                summary_issues.append({"assignee_display": assignee, "category": "外部", **{k: iss[k] for k in ["repo","iid","title","days_open","web_url","notify_stage"]}})
-        for iss in unassigned_issues:
-            summary_issues.append({"assignee_display": "(未分配)", "category": "未分配", **{k: iss[k] for k in ["repo","iid","title","days_open","web_url","notify_stage"]}})
-        with open(DATA_DIR / "admin_issue_summary.json", "w", encoding="utf-8") as f:
-            json.dump({"issue_items": summary_issues, "stats": stats, "stale_days": args.stale_days}, f, ensure_ascii=False)
+         _mark_issue_notified(notified_data, matched_issues)
 
     if notified_changed and not args.dry_run:
         save_notified(notified_data)

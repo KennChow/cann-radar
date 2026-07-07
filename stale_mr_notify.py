@@ -346,7 +346,7 @@ def build_html_email(author, mrs, is_escalated=False):
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">仓库</th>
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">MR</th>
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">标题</th>
-        <th style="padding:10px 12px;text-align:center;font-weight:600;color:#1a1d2e">开启时长</th>
+        <th style="padding:10px 12px;text-align:center;font-weight:600;color:#1a1d2e">开启工作天数</th>
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">Labels</th>
       </tr>
     </thead>
@@ -375,7 +375,7 @@ def _build_author_mr_section(title, label_color, author_mrs_dict):
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">仓库</th>
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">MR</th>
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">标题</th>
-        <th style="padding:10px 12px;text-align:center;font-weight:600;color:#1a1d2e">开启时长</th>
+        <th style="padding:10px 12px;text-align:center;font-weight:600;color:#1a1d2e">开启工作天数</th>
         <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">Labels</th>
       </tr>
     </thead>
@@ -516,6 +516,65 @@ def _mark_notified(notified_data, mrs):
         notified_data["notified"][key] = {"notified_at": now, "count": new_count}
 
 
+def _save_admin_mr_summary(notify_paths, notified_data, stale_by_author, has_email_authors, null_email_authors, external_authors, stale_days, stats):
+    """保存管理员汇总 JSON（含所有 open 超期 MR，带跟踪状态）。"""
+    notified = notified_data.get("notified", {})
+    summary = []
+    today = date.today()
+
+    # 审核作者分类
+    author_category = {}
+    for author in has_email_authors:
+        author_category[author] = "有邮箱"
+    for author in null_email_authors:
+        author_category[author] = "无邮箱"
+    for author in external_authors:
+        author_category[author] = "外部"
+
+    for f in sorted(MRS_DIR.glob("*.json")):
+        repo_path = f.stem.replace("__", "/", 1)
+        if notify_paths and repo_path not in notify_paths:
+            continue
+        mrs = json.loads(f.read_text(encoding="utf-8"))
+        for mr in mrs:
+            if mr.get("state") != "opened":
+                continue
+            if mr.get("draft"):
+                continue
+            iid = mr.get("iid")
+            if iid is None:
+                continue
+            days_open = mr.get("working_days_open") or _working_days_since(mr.get("created_at", ""))
+            if days_open <= stale_days:
+                continue
+
+            key = _mr_key(repo_path, iid)
+            author = mr.get("author", "")
+            category = author_category.get(author, "外部")
+
+            if key in notified:
+                record = notified[key]
+                cnt = record.get("count", 1)
+                status = "new" if cnt < MAX_NOTIFY_COUNT else "max"
+            else:
+                status = "not_notifying"  # on first notification
+
+            summary.append({
+                "repo": repo_path, "iid": iid, "title": mr.get("title", ""),
+                "days_open": days_open, "web_url": mr.get("web_url", ""),
+                "author": author, "category": category, "status": status,
+            })
+
+    counts = {"new": 0, "waiting": 0, "max": 0}
+    for s in summary:
+        counts["new"] += 1 if s["status"] == "new" else 0
+        counts["max"] += 1 if s["status"] == "max" else 0
+
+    with open(DATA_DIR / "admin_mr_summary.json", "w", encoding="utf-8") as f:
+        json.dump({"mr_items": summary, "stale_days": stale_days}, f, ensure_ascii=False)
+    print(f"\n  管理员汇总: {len(summary)} 个 MR（新发现 {counts['new']}，需介入 {counts['max']}）")
+
+
 def main():
     parser = argparse.ArgumentParser(description="超期 MR 扫描与邮件通知")
     parser.add_argument("--dry-run", action="store_true", help="仅打印结果，不发送邮件")
@@ -570,6 +629,8 @@ def main():
     print(f"    涉及作者: {len(stale_by_author)}")
 
     if not stale_by_author:
+        # 即使无新增，仍需保存管理员汇总（含跟踪中的 item）
+        _save_admin_mr_summary(notify_paths, notified_data, {}, {}, {}, {}, args.stale_days, stats)
         print("\n  ✓ 无新增/待升级超期 MR，无需通知")
         return 0
 
@@ -602,6 +663,8 @@ def main():
 
     # 发送个人通知（有邮箱者）
     print(f"\n=== 发送个人通知 ===")
+    sent = 0
+    failed = 0
     if not has_email_authors:
         print("  （无有邮箱的开发者，跳过个人通知）")
     else:
@@ -612,24 +675,11 @@ def main():
     if sent > 0 and not args.dry_run:
         notified_changed = True
 
-    # 保存 MR 汇总数据供 admin_summary.py 读取
-    if stale_by_author:
-        summary_mrs = []
-        for author, (email, mrs) in has_email_authors.items():
-            for mr in mrs:
-                summary_mrs.append({"author": author, "category": "有邮箱", **{k: mr[k] for k in ["repo","iid","title","days_open","web_url","notify_stage"]}})
-        for author, mrs_list in null_email_authors.items():
-            for mr in mrs_list:
-                summary_mrs.append({"author": author, "category": "无邮箱", **{k: mr[k] for k in ["repo","iid","title","days_open","web_url","notify_stage"]}})
-        for author, mrs_list in external_authors.items():
-            for mr in mrs_list:
-                summary_mrs.append({"author": author, "category": "外部", **{k: mr[k] for k in ["repo","iid","title","days_open","web_url","notify_stage"]}})
-        with open(DATA_DIR / "admin_mr_summary.json", "w", encoding="utf-8") as f:
-            json.dump({"mr_items": summary_mrs, "stats": stats, "stale_days": args.stale_days}, f, ensure_ascii=False)
-        if not args.dry_run:
-            pass  # already saved above, same for both modes
-        if not args.dry_run:
-            print(f"\n  个人通知: 已发送 {sent}, 失败 {failed}")
+    # 保存管理员汇总数据（含所有 open 超期 MR，带状态）
+    _save_admin_mr_summary(notify_paths, notified_data, stale_by_author, has_email_authors, null_email_authors, external_authors, args.stale_days, stats)
+
+    if not args.dry_run:
+        print(f"\n  个人通知: 已发送 {sent}, 失败 {failed}")
 
     # 保存 tracking 文件
     if notified_changed and not args.dry_run:
