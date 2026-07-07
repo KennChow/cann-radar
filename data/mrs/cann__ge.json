@@ -1,12 +1,218 @@
 [
   {
-    "iid": 3901,
+    "iid": 3912,
     "state": "opened",
+    "draft": false,
+    "title": "【PR】feat: sync develop to master 20260707",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhanj",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/3912",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 3911,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: 反合fix detector core修复到8.5.0",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "qq_45842700",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/3911",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 3910,
+    "state": "merged",
+    "draft": false,
+    "title": "【PR】: 简要描述 解决文档描述相关issues问题",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "2026-07-07",
+    "closed_at": "",
+    "author": "wang-bin-789",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/3910",
+    "labels": [
+      "cann-cla/yes",
+      "enhancement",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "459"
+    ]
+  },
+  {
+    "iid": 3909,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: 优化nano memory大小",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "renox",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/3909",
+    "labels": [
+      "cann-cla/no",
+      "enhancement"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 3908,
+    "state": "opened",
+    "draft": false,
+    "title": "[feat]: 离线编译仅支持MC62芯片，其余场景返回不支持",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_xljEvKEv",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/3908",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 3907,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: 简要描述",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "jikai-tyler",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/3907",
+    "labels": [
+      "ci-pipeline-failed",
+      "enhancement",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 3906,
+    "state": "closed",
+    "draft": false,
+    "title": "fix: resolve English documentation issues found in exercise report",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "2026-07-07",
+    "author": "tmj1128",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/3906",
+    "labels": [],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 3905,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: WholeGraph-Jit doc",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "chengyutao3",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/3905",
+    "labels": [
+      "cann-cla/yes",
+      "enhancement"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 3904,
+    "state": "opened",
+    "draft": false,
+    "title": "refactor: 替换runtime内部头文件为rt_external外部头文件",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "tangqunzhang",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/3904",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 3903,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: (rt2) Added validation for block_dim value.",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "liyanrong_9",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/3903",
+    "labels": [
+      "ci-pipeline-failed",
+      "enhancement",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 3902,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: 支持StridedSliceV3 lowering",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "chenweiheng",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/3902",
+    "labels": [
+      "cann-cla/yes",
+      "enhancement",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "482"
+    ]
+  },
+  {
+    "iid": 3901,
+    "state": "merged",
     "draft": false,
     "title": "【PR】: sync develop to master 0707",
     "created_at": "2026-07-07",
     "updated_at": "2026-07-07",
-    "merged_at": "",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "yangyongqiang0606",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3901",
@@ -14,26 +220,29 @@
       "enhancement",
       "cann-cla/yes",
       "stat/needs-squash",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": []
   },
   {
     "iid": 3900,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "build: 将dflow链接目标adump_server替换为ascend_dump和adump_headers",
     "created_at": "2026-07-07",
     "updated_at": "2026-07-07",
-    "merged_at": "",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "lining23666",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3900",
     "labels": [
       "ci-pipeline-passed",
       "cann-cla/yes",
-      "lgtm"
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -51,7 +260,8 @@
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3899",
     "labels": [
       "enhancement",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -88,7 +298,6 @@
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3897",
     "labels": [
       "cann-cla/yes",
-      "stat/needs-squash",
       "ci-pipeline-failed"
     ],
     "working_days_open": 1,
@@ -146,8 +355,8 @@
     "labels": [
       "enhancement",
       "cann-cla/yes",
-      "ci-pipeline-running",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -253,12 +462,12 @@
   },
   {
     "iid": 3888,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix: 修复 autofuse 空指针风险",
     "created_at": "2026-07-06",
     "updated_at": "2026-07-07",
-    "merged_at": "",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "ling-DT",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3888",
@@ -266,6 +475,7 @@
       "stat/needs-squash",
       "ci-pipeline-passed",
       "lgtm",
+      "approved",
       "cann-cla/yes"
     ],
     "working_days_open": 2,
@@ -420,7 +630,7 @@
     "iid": 3880,
     "state": "opened",
     "draft": false,
-    "title": "【PR】: llt偶现失败",
+    "title": "【PR】: 修复llt偶现失败",
     "created_at": "2026-07-06",
     "updated_at": "2026-07-07",
     "merged_at": "",
@@ -428,8 +638,7 @@
     "author": "wx1127857",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3880",
     "labels": [
-      "ci-pipeline-running",
-      "api-check-pass",
+      "ci-pipeline-passed",
       "enhancement",
       "cann-cla/yes"
     ],
@@ -521,17 +730,19 @@
   },
   {
     "iid": 3875,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【FIX】: 注册A5开源流程 Hccl单算子提前展开流",
     "created_at": "2026-07-06",
     "updated_at": "2026-07-07",
-    "merged_at": "",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "Archerls",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3875",
     "labels": [
       "ci-pipeline-passed",
+      "approved",
+      "lgtm",
       "enhancement",
       "stat/needs-squash",
       "cann-cla/yes"
@@ -583,18 +794,20 @@
   },
   {
     "iid": 3872,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
-    "title": "fix: 修复 stridedslice 中有符号整数位操作符运算告警",
+    "title": "fix: 修复静态检查告警 & 符号化推导中的过强断言",
     "created_at": "2026-07-04",
-    "updated_at": "2026-07-06",
-    "merged_at": "",
+    "updated_at": "2026-07-07",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "xiebangrui2025",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3872",
     "labels": [
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm",
+      "cann-cla/yes"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -632,8 +845,9 @@
     "author": "xingzhixiong",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3870",
     "labels": [
-      "SC-FAIL",
-      "BUILD-FAIL",
+      "BUILD-SUCC",
+      "SC-SUCC",
+      "ci-pipeline-passed",
       "cann-cla/yes",
       "enhancement",
       "stat/needs-squash"
@@ -957,19 +1171,19 @@
   },
   {
     "iid": 3853,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【PR】:  Fix double free",
     "created_at": "2026-07-03",
     "updated_at": "2026-07-07",
-    "merged_at": "",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "lihuachao",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3853",
     "labels": [
+      "ci-pipeline-passed",
       "approved",
       "lgtm",
-      "ci-pipeline-running",
       "enhancement",
       "cann-cla/yes",
       "SC-SUCC",
@@ -985,15 +1199,15 @@
     "draft": false,
     "title": "feat(om2): OM2在线编译执行接口支持",
     "created_at": "2026-07-03",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-07",
     "merged_at": "",
     "closed_at": "",
     "author": "wuzheng-hw",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3852",
     "labels": [
+      "ci-pipeline-failed",
       "stat/needs-squash",
-      "cann-cla/yes",
-      "ci-pipeline-failed"
+      "cann-cla/yes"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -1060,17 +1274,17 @@
   },
   {
     "iid": 3848,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】:  支持StridedSliceV3 lowering",
     "created_at": "2026-07-03",
     "updated_at": "2026-07-07",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-07",
     "author": "chenweiheng",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3848",
     "labels": [
-      "ci-pipeline-failed",
+      "ci-pipeline-passed",
       "enhancement",
       "cann-cla/yes"
     ],
@@ -1081,13 +1295,13 @@
   },
   {
     "iid": 3847,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "refactor: 内存分配器日志优化及GELOGI替换为LOG_BY_TYPE",
     "created_at": "2026-07-03",
-    "updated_at": "2026-07-03",
+    "updated_at": "2026-07-07",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-07",
     "author": "tangqunzhang",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3847",
     "labels": [
@@ -1268,7 +1482,7 @@
     "draft": false,
     "title": "【PR】: sync master to develop 20260702",
     "created_at": "2026-07-02",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-07",
     "merged_at": "",
     "closed_at": "",
     "author": "zhanj",
@@ -1347,19 +1561,21 @@
   },
   {
     "iid": 3834,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[feat]: 离线编译仅支持MC62芯片，其余场景返回不支持",
     "created_at": "2026-07-02",
-    "updated_at": "2026-07-06",
-    "merged_at": "",
+    "updated_at": "2026-07-07",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "gcw_xljEvKEv",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3834",
     "labels": [
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved",
       "stat/needs-squash",
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "cann-cla/yes"
     ],
     "working_days_open": 4,
     "e2e_issues": []
@@ -1490,13 +1706,13 @@
   },
   {
     "iid": 3827,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix: 修复aarch环境下llt报错的问题",
     "created_at": "2026-07-02",
-    "updated_at": "2026-07-02",
+    "updated_at": "2026-07-07",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-07",
     "author": "yelongjian",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3827",
     "labels": [
@@ -2022,7 +2238,7 @@
     "draft": false,
     "title": "【PR】: add rt2 perf",
     "created_at": "2026-07-01",
-    "updated_at": "2026-07-02",
+    "updated_at": "2026-07-07",
     "merged_at": "",
     "closed_at": "",
     "author": "tang-haojie",
@@ -2181,17 +2397,19 @@
   },
   {
     "iid": 3793,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
-    "title": "【PR】: 简要描述 兼容bf16的转换算子调换",
+    "title": "【PR】: 简要描述 兼容bf16格式的转换算子调换",
     "created_at": "2026-06-30",
-    "updated_at": "2026-07-06",
-    "merged_at": "",
+    "updated_at": "2026-07-07",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "jiang-mingming01",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3793",
     "labels": [
       "ci-pipeline-passed",
+      "lgtm",
+      "approved",
       "enhancement",
       "cann-cla/yes"
     ],
@@ -2702,13 +2920,13 @@
   },
   {
     "iid": 3768,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】: 打点rt2",
     "created_at": "2026-06-29",
-    "updated_at": "2026-07-01",
+    "updated_at": "2026-07-07",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-07",
     "author": "tang-haojie",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3768",
     "labels": [
@@ -3024,7 +3242,7 @@
     "draft": true,
     "title": "[WIP]feat: 支持切片相关算子符号化 kernel",
     "created_at": "2026-06-27",
-    "updated_at": "2026-07-03",
+    "updated_at": "2026-07-07",
     "merged_at": "",
     "closed_at": "",
     "author": "Mexyy",
@@ -3136,13 +3354,13 @@
   },
   {
     "iid": 3746,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "sync fix: 修复含子图节点(PartitionedCall)的悬空输出offset未正确回填的问题",
     "created_at": "2026-06-27",
-    "updated_at": "2026-06-27",
+    "updated_at": "2026-07-07",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-07",
     "author": "yelongjian",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3746",
     "labels": [
@@ -4114,13 +4332,13 @@
   },
   {
     "iid": 3699,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】: 基于已合入的权重数据的加权算法测试",
     "created_at": "2026-06-25",
-    "updated_at": "2026-07-01",
+    "updated_at": "2026-07-07",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-07",
     "author": "mahaosen",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3699",
     "labels": [
@@ -7382,7 +7600,7 @@
     "draft": false,
     "title": "feat: 升级json版本",
     "created_at": "2026-06-15",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-07",
     "merged_at": "",
     "closed_at": "",
     "author": "likun104",
@@ -7390,8 +7608,7 @@
     "labels": [
       "cann-cla/yes",
       "enhancement",
-      "stat/needs-squash",
-      "ci-pipeline-passed"
+      "stat/needs-squash"
     ],
     "working_days_open": 16,
     "e2e_issues": []
@@ -12887,15 +13104,15 @@
     "draft": false,
     "title": "【fix】: 优化om2 编译耗时",
     "created_at": "2026-05-30",
-    "updated_at": "2026-07-04",
+    "updated_at": "2026-07-07",
     "merged_at": "",
     "closed_at": "",
     "author": "lidaoming1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/3271",
     "labels": [
+      "ci-pipeline-failed",
       "cann-cla/yes",
-      "enhancement",
-      "ci-pipeline-failed"
+      "enhancement"
     ],
     "working_days_open": 26,
     "e2e_issues": []
@@ -63500,14 +63717,14 @@
     "draft": false,
     "title": "ci test",
     "created_at": "2026-02-27",
-    "updated_at": "2026-05-15",
+    "updated_at": "2026-07-07",
     "merged_at": "",
-    "closed_at": "2026-05-15",
+    "closed_at": "2026-07-07",
     "author": "cui_jiahao",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/740",
     "labels": [
       "cann-cla/yes",
-      "api-check-pass"
+      "ci-pipeline-failed"
     ],
     "working_days_open": 90,
     "e2e_issues": []

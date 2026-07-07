@@ -1,5 +1,96 @@
 [
   {
+    "iid": 539,
+    "state": "opened",
+    "draft": false,
+    "title": "[社区任务] low-bit-quant设计方案",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "szdaniel",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/539",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 538,
+    "state": "opened",
+    "draft": false,
+    "title": "[社区任务] prims.ndtri 设计方案",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "aufw",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/538",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 537,
+    "state": "opened",
+    "draft": false,
+    "title": "[社区任务]prims.bessel_i0 设计方案",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "CyndiZ",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/537",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 536,
+    "state": "merged",
+    "draft": false,
+    "title": "【社区任务】GeluGradV2算子",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "2026-07-07",
+    "closed_at": "",
+    "author": "hid3261",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/536",
+    "labels": [
+      "cann-cla/yes",
+      "approved",
+      "ci-pipeline-passed",
+      "lgtm"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 535,
+    "state": "merged",
+    "draft": false,
+    "title": "update 荣誉殿堂",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "2026-07-07",
+    "closed_at": "",
+    "author": "zutao",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/535",
+    "labels": [
+      "cann-cla/yes",
+      "approved",
+      "lgtm",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
     "iid": 534,
     "state": "opened",
     "draft": false,
@@ -11,26 +102,28 @@
     "author": "tangpu",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/534",
     "labels": [
-      "cann-cla/no",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "cann-cla/yes"
     ],
     "working_days_open": 1,
     "e2e_issues": []
   },
   {
     "iid": 533,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "Add TensorEqual solution by Philia093",
     "created_at": "2026-07-07",
     "updated_at": "2026-07-07",
-    "merged_at": "",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "Qianqiuer",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/533",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -193,18 +286,20 @@
   },
   {
     "iid": 524,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "Add NEW DANCE Erfinv and IsNan submissions",
     "created_at": "2026-07-01",
     "updated_at": "2026-07-07",
-    "merged_at": "",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "Delicate02",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/524",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -541,16 +636,18 @@
   },
   {
     "iid": 506,
-    "state": "closed",
+    "state": "opened",
     "draft": false,
     "title": "perf: add wangcai-jarvis GeluV2 submission",
     "created_at": "2026-06-29",
     "updated_at": "2026-07-07",
     "merged_at": "",
-    "closed_at": "2026-07-07",
+    "closed_at": "",
     "author": "gcw_WJCkAUuk",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/506",
     "labels": [
+      "approved",
+      "lgtm",
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
@@ -868,18 +965,19 @@
   },
   {
     "iid": 489,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【社区任务】BiasAdd设计文档",
     "created_at": "2026-06-15",
-    "updated_at": "2026-07-02",
-    "merged_at": "",
+    "updated_at": "2026-07-07",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "TreamTik",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/489",
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
+      "ci-pipeline-passed",
       "approved",
       "lgtm"
     ],
@@ -1087,20 +1185,20 @@
   },
   {
     "iid": 478,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【社区任务】ScatterNd设计文档",
     "created_at": "2026-06-14",
-    "updated_at": "2026-06-29",
-    "merged_at": "",
+    "updated_at": "2026-07-07",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "TreamTik",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/478",
     "labels": [
-      "ci-pipeline-passed",
       "approved",
       "stat/needs-squash",
       "cann-cla/yes",
+      "ci-pipeline-passed",
       "lgtm"
     ],
     "working_days_open": 16,
@@ -1853,12 +1951,12 @@
   },
   {
     "iid": 439,
-    "state": "opened",
-    "draft": true,
-    "title": "[WIP]【社区任务】SyncBatchNormGatherStats算子设计文档",
+    "state": "merged",
+    "draft": false,
+    "title": "【社区任务】SyncBatchNormGatherStats算子设计文档",
     "created_at": "2026-06-09",
-    "updated_at": "2026-06-17",
-    "merged_at": "",
+    "updated_at": "2026-07-07",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "xchencehn",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/439",
@@ -6715,17 +6813,20 @@
   },
   {
     "iid": 190,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[社区任务]Roll算子",
     "created_at": "2026-05-26",
-    "updated_at": "2026-05-26",
-    "merged_at": "",
+    "updated_at": "2026-07-07",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "TreamTik",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/190",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved",
+      "ci-pipeline-passed",
+      "lgtm"
     ],
     "working_days_open": 30,
     "e2e_issues": [

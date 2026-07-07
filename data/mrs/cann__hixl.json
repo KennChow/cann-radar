@@ -1,18 +1,178 @@
 [
   {
-    "iid": 742,
+    "iid": 750,
     "state": "opened",
+    "draft": false,
+    "title": "[refactor]优化日志",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "jiazhaoyang",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/750",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 749,
+    "state": "opened",
+    "draft": false,
+    "title": "修改文档中，容器场景的使用说明范围",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lugang11",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/749",
+    "labels": [
+      "cann-cla/yes",
+      "api-check-pass",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 748,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: fix HIXL_CHK_ACL_RET and HIXL_CHK_ACL macro printf argument order",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhaozhihui",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/748",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 747,
+    "state": "merged",
+    "draft": false,
+    "title": "[feat]: 补充cs模块关键流程错误日志定位信息",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "2026-07-07",
+    "closed_at": "",
+    "author": "lining23666",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/747",
+    "labels": [
+      "cann-cla/yes",
+      "api-check-pass",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 746,
+    "state": "opened",
+    "draft": false,
+    "title": "[docs]: 修正样例A5执行命令的描述",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "M__Cheng",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/746",
+    "labels": [
+      "api-check-pass",
+      "ci-pipeline-passed",
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 745,
+    "state": "opened",
+    "draft": false,
+    "title": "[docs]: 离线编译缺json包，json依赖改为json-3.11.3.tar.gz",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "tangjie66",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/745",
+    "labels": [
+      "lgtm",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "432"
+    ]
+  },
+  {
+    "iid": 744,
+    "state": "opened",
+    "draft": false,
+    "title": "[docs]: 新增日志与文档检视规范并接入PR检视流程",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "tangjie66",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/744",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed",
+      "api-check-pass"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 743,
+    "state": "opened",
+    "draft": false,
+    "title": "[feat]: support H2rH loopback matching by server id",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "jiazhaoyang",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/743",
+    "labels": [
+      "cann-cla/yes",
+      "api-check-pass",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "444"
+    ]
+  },
+  {
+    "iid": 742,
+    "state": "merged",
     "draft": false,
     "title": "[docs]：优化issue模板，修复文档链接",
     "created_at": "2026-07-07",
     "updated_at": "2026-07-07",
-    "merged_at": "",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "A-Liuhao",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/742",
     "labels": [
       "cann-cla/yes",
-      "api-check-pass"
+      "api-check-pass",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -29,7 +189,10 @@
     "author": "zhaozhihui",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/741",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "api-check-pass",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -70,7 +233,8 @@
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/739",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-running"
+      "api-check-pass",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -211,16 +375,18 @@
   },
   {
     "iid": 732,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[docs]: refine hixl-troubleshoot skill structure and env-check reference",
     "created_at": "2026-07-03",
-    "updated_at": "2026-07-03",
-    "merged_at": "",
+    "updated_at": "2026-07-07",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "youyx",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/732",
     "labels": [
+      "lgtm",
+      "approved",
       "api-check-pass",
       "ci-pipeline-passed",
       "cann-cla/yes"
@@ -230,18 +396,20 @@
   },
   {
     "iid": 731,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[feat]: add transfer mode EVENT logs at engine initialization",
     "created_at": "2026-07-03",
-    "updated_at": "2026-07-03",
-    "merged_at": "",
+    "updated_at": "2026-07-07",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "youyx",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/731",
     "labels": [
-      "ci-pipeline-passed",
+      "lgtm",
+      "approved",
       "api-check-pass",
+      "ci-pipeline-passed",
       "cann-cla/yes"
     ],
     "working_days_open": 3,
@@ -489,7 +657,8 @@
     "author": "jiazhaoyang",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/719",
     "labels": [
-      "ci-pipeline-running",
+      "ci-pipeline-passed",
+      "api-check-pass",
       "cann-cla/yes"
     ],
     "working_days_open": 4,
@@ -1724,7 +1893,7 @@
     "draft": false,
     "title": "[feat]: Add HIXL Engine Python binding and whl packaging",
     "created_at": "2026-06-22",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-07",
     "merged_at": "",
     "closed_at": "",
     "author": "qq_43646600",
@@ -15331,15 +15500,14 @@
     "draft": false,
     "title": "ci test",
     "created_at": "2025-10-24",
-    "updated_at": "2026-06-29",
+    "updated_at": "2026-07-07",
     "merged_at": "",
-    "closed_at": "2026-06-29",
+    "closed_at": "2026-07-07",
     "author": "cui_jiahao",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/7",
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "api-check-pass",
       "ci-pipeline-failed"
     ],
     "working_days_open": 174,

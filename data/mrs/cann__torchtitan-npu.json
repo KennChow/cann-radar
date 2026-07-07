@@ -1,5 +1,41 @@
 [
   {
+    "iid": 410,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: auto-fix severe documentation issues under docs/",
+    "created_at": "2026-07-08",
+    "updated_at": "2026-07-08",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "hitwdy",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/410",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 409,
+    "state": "opened",
+    "draft": false,
+    "title": "[feat] default-enable NPU HF32 for matmul/conv with env-var override",
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "MissingPompeii",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/409",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
     "iid": 408,
     "state": "closed",
     "draft": true,
@@ -30,6 +66,7 @@
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/407",
     "labels": [
       "stat/needs-squash",
+      "ci-pipeline-failed",
       "cann-cla/yes"
     ],
     "working_days_open": 2,
@@ -62,10 +99,13 @@
     "author": "blueberryan",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/405",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes"
     ],
     "working_days_open": 2,
-    "e2e_issues": []
+    "e2e_issues": [
+      "63"
+    ]
   },
   {
     "iid": 404,
@@ -204,10 +244,10 @@
   {
     "iid": 397,
     "state": "opened",
-    "draft": true,
-    "title": "[WIP]MXFP8 utilizes dual-axis quantization with compatibility for activation checkpoint",
+    "draft": false,
+    "title": "[feat]MXFP8 utilizes dual-axis quantization with compatibility for activation checkpoint",
     "created_at": "2026-07-03",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-07",
     "merged_at": "",
     "closed_at": "",
     "author": "zhuofanshen",
@@ -221,16 +261,18 @@
   },
   {
     "iid": 396,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[fix] prevent MTP output's dtype from being cast to bf16",
     "created_at": "2026-07-03",
-    "updated_at": "2026-07-06",
-    "merged_at": "",
+    "updated_at": "2026-07-07",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "MissingPompeii",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/396",
     "labels": [
+      "approved",
+      "lgtm",
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
@@ -444,17 +486,19 @@
   },
   {
     "iid": 384,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[fix] Align DSV3 MoE layout with dev-0.2.2 to fix OOM",
     "created_at": "2026-06-27",
     "updated_at": "2026-07-07",
-    "merged_at": "",
+    "merged_at": "2026-07-07",
     "closed_at": "",
     "author": "hitwdy",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/384",
     "labels": [
       "ci-pipeline-passed",
+      "approved",
+      "lgtm",
       "cann-cla/yes",
       "stat/needs-squash"
     ],

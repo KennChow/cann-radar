@@ -1,5 +1,23 @@
 [
   {
+    "iid": "170",
+    "state": "opened",
+    "created_at": "2026-07-07",
+    "closed_at": "",
+    "author": "liyuewei",
+    "author_id": "66faa520baec536c761e7f15",
+    "title": "[Bug-Report|缺陷反馈]: ",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "liyuewei"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/170",
+    "working_days_open": 1
+  },
+  {
     "iid": "169",
     "state": "opened",
     "created_at": "2026-07-07",
@@ -61,13 +79,15 @@
   },
   {
     "iid": "166",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-07-06",
-    "closed_at": "",
+    "closed_at": "2026-07-07",
     "author": "zhang_shengjie",
     "author_id": "681ccf31b3a86414eb59cce0",
     "title": "【bug】Inductor 配置解析时 ub_threshold=0.0 非法阈值未归一化",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [
@@ -515,10 +535,8 @@
     "closed_at": "",
     "author": "gothizzz",
     "author_id": "68555bb1d8f0940af04e58e9",
-    "title": "[Bug-Report|缺陷反馈]: super_kernel CMake 硬编码 python3 -m build 与 venv 文档流程冲突，wheel 构建报 No module named build",
-    "labels": [
-      "bug-report"
-    ],
+    "title": "super_kernel CMake 硬编码 python3 -m build 与 venv 文档流程冲突，wheel 构建报 No module named build",
+    "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [
@@ -1202,8 +1220,8 @@
       "bug",
       "infra-tooling"
     ],
-    "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_type": "需求",
+    "issue_state": "待办的",
     "assignees": [
       "gothizzz"
     ],

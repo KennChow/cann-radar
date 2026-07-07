@@ -93,17 +93,17 @@
   },
   {
     "iid": "479",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-29",
-    "closed_at": "",
+    "closed_at": "2026-07-07",
     "author": "jgx12",
     "author_id": "65b70cedb87f4f07d85a5af0",
     "title": "[Bug-Report|缺陷反馈]: fp16与bf16输入addmm算子WeightNz场景，transdata出现插入不一致问题",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已解决",
     "assignees": [],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/479",
     "working_days_open": 7
   },
@@ -334,9 +334,9 @@
   },
   {
     "iid": "465",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-24",
-    "closed_at": "",
+    "closed_at": "2026-07-07",
     "author": "captainmiaow",
     "author_id": "680a0031c6be6f6a0f719f68",
     "title": "[算子开发][内测体验][Graph Engine][Documentation|文档反馈]: zh/user-guides/dflow/dflow_dev/python/quick_start.md \"获取样例\"链接文本无实际链接",
@@ -352,15 +352,15 @@
   },
   {
     "iid": "464",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-24",
-    "closed_at": "",
+    "closed_at": "2026-07-07",
     "author": "captainmiaow",
     "author_id": "680a0031c6be6f6a0f719f68",
     "title": "[算子开发][内测体验][Graph Engine][Documentation|文档反馈]: docs/zh/user-guides/dflow/dflow_dev/cpp/preparations.md shell注释用#",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "wang-bin-789"
     ],
@@ -370,15 +370,15 @@
   },
   {
     "iid": "463",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-24",
-    "closed_at": "",
+    "closed_at": "2026-07-07",
     "author": "captainmiaow",
     "author_id": "680a0031c6be6f6a0f719f68",
     "title": "[算子开发][内测体验][Graph Engine][Documentation|文档反馈]: docs/zh/user-guides/llm_datadist/llm_datadist_dev/cpp/quick_start.md缺少AUTO_USE_UC_MEMORY描述",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "wang-bin-789"
     ],
@@ -388,15 +388,15 @@
   },
   {
     "iid": "462",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-24",
-    "closed_at": "",
+    "closed_at": "2026-07-07",
     "author": "captainmiaow",
     "author_id": "680a0031c6be6f6a0f719f68",
     "title": "[算子开发][内测体验][Graph Engine] [Documentation|文档反馈]:docs/zh/user-guides/dflow/dflow_dev/python/special_topics.md中FLOW_FUNC_REGISTRAR代码有语法错误",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "wang-bin-789"
     ],
@@ -406,15 +406,15 @@
   },
   {
     "iid": "461",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-24",
-    "closed_at": "",
+    "closed_at": "2026-07-07",
     "author": "captainmiaow",
     "author_id": "680a0031c6be6f6a0f719f68",
     "title": "[算子开发][内测体验][Graph Engine][Documentation|文档反馈]: docs/zh/user-guides/dflow/dflow_dev/python/dataflow_running.md中不同图片编号重复",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "wang-bin-789"
     ],
@@ -424,15 +424,15 @@
   },
   {
     "iid": "460",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-24",
-    "closed_at": "",
+    "closed_at": "2026-07-07",
     "author": "captainmiaow",
     "author_id": "680a0031c6be6f6a0f719f68",
     "title": "[算子开发][内测体验][Graph Engine][Documentation|文档反馈]: docs/zh/quick_install.md中有提及950，但很多子文档中未写明是否支持950或A5",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "wang-bin-789"
     ],
@@ -442,15 +442,17 @@
   },
   {
     "iid": "459",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-24",
-    "closed_at": "",
+    "closed_at": "2026-07-07",
     "author": "captainmiaow",
     "author_id": "680a0031c6be6f6a0f719f68",
     "title": "[算子开发][内测体验][Graph Engine][Documentation|文档反馈]:llm_datadist_dev/python/quick_start.md描述文字重复",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "wang-bin-789"
     ],
@@ -460,9 +462,9 @@
   },
   {
     "iid": "458",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-23",
-    "closed_at": "",
+    "closed_at": "2026-07-07",
     "author": "hugo111",
     "author_id": "681cc3bf398335026944c708",
     "title": "[Documentation|文档反馈]: ",
@@ -470,7 +472,7 @@
       "documentation"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "tang-haojie"
     ],
@@ -555,15 +557,17 @@
   },
   {
     "iid": "451",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-18",
-    "closed_at": "",
+    "closed_at": "2026-07-07",
     "author": "weixin_47253752",
     "author_id": "676bc332b96b3a5f7c9108ba",
     "title": "[Bug-Report|缺陷反馈]: 1952 主线版本 ATC转om，有ERROR日志，但是不应该功能",
-    "labels": [],
+    "labels": [
+      "wait-feedback"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "lidaoming1"
     ],

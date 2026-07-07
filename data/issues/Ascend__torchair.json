@@ -1,5 +1,25 @@
 [
   {
+    "iid": "571",
+    "state": "opened",
+    "created_at": "2026-07-07",
+    "closed_at": "",
+    "author": "wangqinyi817",
+    "author_id": "68fb6294971c93519bd8b30d",
+    "title": "[Bug]: ",
+    "labels": [
+      "bug"
+    ],
+    "issue_type": "Bug-Report",
+    "issue_state": "TODO",
+    "assignees": [
+      "ganon0327"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/571",
+    "working_days_open": 1
+  },
+  {
     "iid": "570",
     "state": "opened",
     "created_at": "2026-07-07",
@@ -32,8 +52,10 @@
     ],
     "issue_type": "Bug-Report",
     "issue_state": "TODO",
-    "assignees": [],
-    "user_notes_count": 0,
+    "assignees": [
+      "PiyZZ"
+    ],
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/Ascend/torchair/issues/569",
     "working_days_open": 2
   },
@@ -176,7 +198,7 @@
     "assignees": [
       "PiyZZ"
     ],
-    "user_notes_count": 0,
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/Ascend/torchair/issues/562",
     "working_days_open": 4
   },
@@ -196,7 +218,7 @@
     "assignees": [
       "PiyZZ"
     ],
-    "user_notes_count": 0,
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/Ascend/torchair/issues/561",
     "working_days_open": 4
   },
@@ -216,7 +238,7 @@
     "assignees": [
       "PiyZZ"
     ],
-    "user_notes_count": 0,
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/Ascend/torchair/issues/560",
     "working_days_open": 4
   },
@@ -301,19 +323,20 @@
   },
   {
     "iid": "555",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-07-01",
-    "closed_at": "",
+    "closed_at": "2026-07-07",
     "author": "panchao-gitcode",
     "author_id": "68ca1485f1b86600ff863404",
     "title": "[Bug]: inductor_npu_ext支持动态shape时报错",
     "labels": [
+      "resolved",
       "bug"
     ],
     "issue_type": "Bug-Report",
-    "issue_state": "TODO",
+    "issue_state": "DONE",
     "assignees": [],
-    "user_notes_count": 0,
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/Ascend/torchair/issues/555",
     "working_days_open": 5
   },
@@ -863,7 +886,6 @@
     "author_id": "6918f43d1b118a07a1641d79",
     "title": "[Feature]: 支持自定义算子在 torch.compile 图模式下的自动注册与 InferShape 推导",
     "labels": [
-      "requirement",
       "feature"
     ],
     "issue_type": "Bug-Report",
@@ -2572,6 +2594,7 @@
     "author_id": "6822c3522f11da2d75c955a5",
     "title": "[Doc]: 用data算子的输入输出进行定精度问题的时候，如何把dump的文件喂给单算子复现问题，缺少资料描述，请增加章节说明",
     "labels": [
+      "feature",
       "document"
     ],
     "issue_type": "Bug-Report",

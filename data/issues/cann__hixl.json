@@ -1,5 +1,23 @@
 [
   {
+    "iid": "445",
+    "state": "opened",
+    "created_at": "2026-07-07",
+    "closed_at": "",
+    "author": "xdnjust",
+    "author_id": "681c800992685e00dfb6f2d2",
+    "title": "社区生态共建与合作开发咨询",
+    "labels": [],
+    "issue_type": "咨询",
+    "issue_state": "进行中",
+    "assignees": [
+      "M__Cheng"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/hixl/issues/445",
+    "working_days_open": 1
+  },
+  {
     "iid": "444",
     "state": "opened",
     "created_at": "2026-07-07",
@@ -68,7 +86,9 @@
     "author": "super_chao_x",
     "author_id": "69c9db0a87fa3a571d8ee951",
     "title": "[Question|问题咨询]: HIXL RoCE场景下故障场景、故障模式分析咨询",
-    "labels": [],
+    "labels": [
+      "wait-feedback"
+    ],
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [
@@ -96,22 +116,6 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/hixl/issues/440",
-    "working_days_open": 1
-  },
-  {
-    "iid": "439",
-    "state": "opened",
-    "created_at": "2026-07-07",
-    "closed_at": "",
-    "author": "lugang11",
-    "author_id": "68e8cb301bca57161c7ee044",
-    "title": "[Feature-Request|需求反馈]: localcommres工具2.0",
-    "labels": [],
-    "issue_type": "任务",
-    "issue_state": "进行中",
-    "assignees": [],
-    "user_notes_count": 0,
-    "web_url": "https://gitcode.com/cann/hixl/issues/439",
     "working_days_open": 1
   },
   {
@@ -162,9 +166,7 @@
     "author": "qq_41932311",
     "author_id": "66b33a9462cde76c5acbcb0d",
     "title": "[Bug-Report|缺陷反馈]: 单卡同时运行推理服务与 ADXL 单边传输，HCCL 固定 16666 端口占用冲突，传输链路建立失败进程 core dump",
-    "labels": [
-      "wait-feedback"
-    ],
+    "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [
@@ -736,7 +738,7 @@
     "assignees": [
       "songmingyang"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/hixl/issues/407",
     "working_days_open": 6
   },
