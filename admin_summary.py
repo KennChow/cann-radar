@@ -98,6 +98,10 @@ def send_one_email(cfg, to_email, subject, html_body, cc_email=None):
     password = cfg.get("smtp", "password").strip()
     sender = cfg.get("mail", "from", fallback=username).strip()
 
+    recipients = [e.strip() for e in to_email.split(",") if e.strip()]
+    if cc_email:
+        recipients += [e.strip() for e in cc_email.split(",") if e.strip()]
+
     msg = MIMEMultipart("alternative")
     msg["From"] = formataddr((str(Header("CANN Radar", "utf-8")), sender))
     msg["To"] = to_email
@@ -106,10 +110,6 @@ def send_one_email(cfg, to_email, subject, html_body, cc_email=None):
     msg["Subject"] = Header(subject, "utf-8")
     msg["Date"] = formatdate(localtime=True)
     msg.attach(MIMEText(html_body, "html", "utf-8"))
-
-    recipients = [to_email]
-    if cc_email:
-        recipients.append(cc_email)
 
     with smtplib.SMTP_SSL(server, port, timeout=30) as smtp:
         smtp.login(username, password)

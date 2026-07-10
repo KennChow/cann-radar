@@ -438,9 +438,9 @@ def send_one_email(cfg, to_email, subject, html_body, cc_email=None):
     msg["Date"] = formatdate(localtime=True)
     msg.attach(MIMEText(html_body, "html", "utf-8"))
 
-    recipients = [to_email]
+    recipients = [e.strip() for e in to_email.split(",") if e.strip()]
     if cc_email:
-        recipients.append(cc_email)
+        recipients += [e.strip() for e in cc_email.split(",") if e.strip()]
 
     with smtplib.SMTP_SSL(server, port, timeout=30) as smtp:
         smtp.login(username, password)
