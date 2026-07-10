@@ -516,20 +516,12 @@ def _mark_notified(notified_data, mrs):
         notified_data["notified"][key] = {"notified_at": now, "count": new_count}
 
 
-def _save_admin_mr_summary(notify_paths, notified_data, stale_by_author, has_email_authors, null_email_authors, external_authors, stale_days, stats):
+def _save_admin_mr_summary(notify_paths, notified_data, stale_days):
     """保存管理员汇总 JSON（含所有 open 超期 MR，带跟踪状态）。"""
     notified = notified_data.get("notified", {})
     summary = []
     today = date.today()
-
-    # 审核作者分类
-    author_category = {}
-    for author in has_email_authors:
-        author_category[author] = "有邮箱"
-    for author in null_email_authors:
-        author_category[author] = "无邮箱"
-    for author in external_authors:
-        author_category[author] = "外部"
+    mail_map = load_mail_map()
 
     for f in sorted(MRS_DIR.glob("*.json")):
         repo_path = f.stem.replace("__", "/", 1)
@@ -550,7 +542,7 @@ def _save_admin_mr_summary(notify_paths, notified_data, stale_by_author, has_ema
 
             key = _mr_key(repo_path, iid)
             author = mr.get("author", "")
-            category = author_category.get(author, "外部")
+            category = "外部" if _has_null_email(mail_map, author) or author not in mail_map else ("有邮箱" if _has_valid_email(mail_map, author) else "无邮箱")
 
             if key in notified:
                 record = notified[key]
@@ -630,7 +622,7 @@ def main():
 
     if not stale_by_author:
         # 即使无新增，仍需保存管理员汇总（含跟踪中的 item）
-        _save_admin_mr_summary(notify_paths, notified_data, {}, {}, {}, {}, args.stale_days, stats)
+        _save_admin_mr_summary(notify_paths, notified_data, args.stale_days)
         print("\n  ✓ 无新增/待升级超期 MR，无需通知")
         return 0
 
@@ -676,7 +668,7 @@ def main():
         notified_changed = True
 
     # 保存管理员汇总数据（含所有 open 超期 MR，带状态）
-    _save_admin_mr_summary(notify_paths, notified_data, stale_by_author, has_email_authors, null_email_authors, external_authors, args.stale_days, stats)
+    _save_admin_mr_summary(notify_paths, notified_data, args.stale_days)
 
     if not args.dry_run:
         print(f"\n  个人通知: 已发送 {sent}, 失败 {failed}")
