@@ -1,0 +1,524 @@
+[
+  {
+    "iid": "30",
+    "state": "opened",
+    "created_at": "2026-07-01",
+    "closed_at": "",
+    "author": "gcw_rBSGAa4S",
+    "author_id": "6a423f51a97ff27d0d109b48",
+    "title": "[Question|问题咨询]: 启动模型服务时总是卡住",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/30",
+    "working_days_open": 8
+  },
+  {
+    "iid": "29",
+    "state": "opened",
+    "created_at": "2026-06-18",
+    "closed_at": "",
+    "author": "shanyang2",
+    "author_id": "6a338efe3bde1e1e90caecf1",
+    "title": "快速入门.md中模型转换为onnx超链接失效",
+    "labels": [],
+    "issue_type": "文档",
+    "issue_state": "进行中",
+    "assignees": [
+      "guoyiwei1111"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/29",
+    "working_days_open": 16
+  },
+  {
+    "iid": "28",
+    "state": "opened",
+    "created_at": "2026-06-17",
+    "closed_at": "",
+    "author": "m0_74248463",
+    "author_id": "6878d09563185a7efec44449",
+    "title": "README.md中Torch模型转换为onnx 超链接不存在",
+    "labels": [],
+    "issue_type": "文档",
+    "issue_state": "进行中",
+    "assignees": [
+      "guoyiwei1111"
+    ],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/28",
+    "working_days_open": 17
+  },
+  {
+    "iid": "27",
+    "state": "closed",
+    "created_at": "2026-06-13",
+    "closed_at": "2026-07-07",
+    "author": "weixin_45065259",
+    "author_id": "674bd2cb04b1b50005181815",
+    "title": "[Question|问题咨询]: 部署yolo11n-pose模型时报错 session_->CompileGraph failed, ret is: 1343225857",
+    "labels": [
+      "Accepted"
+    ],
+    "issue_type": "咨询",
+    "issue_state": "已完成",
+    "assignees": [
+      "guoyiwei1111"
+    ],
+    "user_notes_count": 11,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/27",
+    "working_days_open": 19
+  },
+  {
+    "iid": "26",
+    "state": "closed",
+    "created_at": "2026-06-09",
+    "closed_at": "2026-06-29",
+    "author": "weixin_43540084",
+    "author_id": "6703eee9d1aa8e111c86e01a",
+    "title": "[Question|问题咨询]: 创建容器启动模型推理服务消耗内存过大",
+    "labels": [
+      "Accepted"
+    ],
+    "issue_type": "咨询",
+    "issue_state": "已完成",
+    "assignees": [
+      "guoyiwei1111"
+    ],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/26",
+    "working_days_open": 23
+  },
+  {
+    "iid": "25",
+    "state": "closed",
+    "created_at": "2026-05-20",
+    "closed_at": "2026-05-22",
+    "author": "qq992338041",
+    "author_id": "6755722d29f17e7696945e7f",
+    "title": "[Question|问题咨询]: triton不是已经停止维护了吗？昇腾这边还是使用这个吗？甚至我看Ascend/triton-ascend库已经归档不能提问了",
+    "labels": [
+      "Accepted"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/25",
+    "working_days_open": 37
+  },
+  {
+    "iid": "24",
+    "state": "closed",
+    "created_at": "2026-05-09",
+    "closed_at": "2026-07-07",
+    "author": "u012478603",
+    "author_id": "67c94ec1f200a4103e01b0a9",
+    "title": "[Bug-Report|缺陷反馈]: Triton 加载 deimv2_dinov3_l_coco ONNX 模型时报告 Sublabels_dim_0 have not find",
+    "labels": [
+      "Accepted"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/24",
+    "working_days_open": 45
+  },
+  {
+    "iid": "23",
+    "state": "closed",
+    "created_at": "2026-03-27",
+    "closed_at": "2026-03-28",
+    "author": "marcushan84",
+    "author_id": "681c7cc74e445c0df963ec5b",
+    "title": "trtion断言报错",
+    "labels": [
+      "Accepted"
+    ],
+    "issue_type": "缺陷",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/23",
+    "working_days_open": 72
+  },
+  {
+    "iid": "22",
+    "state": "closed",
+    "created_at": "2026-03-26",
+    "closed_at": "2026-04-26",
+    "author": "zhangpengpeng8",
+    "author_id": "6822c792e4b985165b4b05e6",
+    "title": "首页ReadMe描述缺陷",
+    "labels": [
+      "resolved",
+      "Accepted"
+    ],
+    "issue_type": "文档",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/22",
+    "working_days_open": 73
+  },
+  {
+    "iid": "21",
+    "state": "closed",
+    "created_at": "2026-03-09",
+    "closed_at": "2026-03-09",
+    "author": "kongdeshuo",
+    "author_id": "681c6968c644db757fcc12ef",
+    "title": "镜像启动任务报错",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已解决",
+    "assignees": [],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/21",
+    "working_days_open": 86
+  },
+  {
+    "iid": "20",
+    "state": "closed",
+    "created_at": "2026-03-03",
+    "closed_at": "2026-03-16",
+    "author": "weixin_43918598",
+    "author_id": "66b314bed15e95110a6bf7ac",
+    "title": "启动多个模型显示成功，调用的时候失败",
+    "labels": [
+      "Accepted"
+    ],
+    "issue_type": "缺陷",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 5,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/20",
+    "working_days_open": 90
+  },
+  {
+    "iid": "18",
+    "state": "closed",
+    "created_at": "2026-02-27",
+    "closed_at": "2026-03-03",
+    "author": "zjun0",
+    "author_id": "67919de4486a2e49301cb19f",
+    "title": "建议添加完整使用案例",
+    "labels": [
+      "Accepted",
+      "resolved"
+    ],
+    "issue_type": "文档",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/18",
+    "working_days_open": 93
+  },
+  {
+    "iid": "17",
+    "state": "closed",
+    "created_at": "2026-02-27",
+    "closed_at": "2026-03-03",
+    "author": "zjun0",
+    "author_id": "67919de4486a2e49301cb19f",
+    "title": "TensorFlow模型迁移的链接需要刷新",
+    "labels": [
+      "Accepted"
+    ],
+    "issue_type": "缺陷",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/17",
+    "working_days_open": 93
+  },
+  {
+    "iid": "16",
+    "state": "closed",
+    "created_at": "2026-02-27",
+    "closed_at": "2026-03-12",
+    "author": "gcw_Uw0HwZ0r",
+    "author_id": "69a1102c3f7b7a5ac4e71e67",
+    "title": "onnx 模型0轴为Batch轴，其余轴有-1，推理报错",
+    "labels": [
+      "Accepted"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 4,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/16",
+    "working_days_open": 93
+  },
+  {
+    "iid": "15",
+    "state": "closed",
+    "created_at": "2026-02-26",
+    "closed_at": "2026-03-03",
+    "author": "zjun0",
+    "author_id": "67919de4486a2e49301cb19f",
+    "title": "示例代码中的标点符号不对，导致运行报错，请修复。",
+    "labels": [
+      "Accepted"
+    ],
+    "issue_type": "缺陷",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/15",
+    "working_days_open": 94
+  },
+  {
+    "iid": "14",
+    "state": "closed",
+    "created_at": "2026-02-25",
+    "closed_at": "2026-03-03",
+    "author": "zjun0",
+    "author_id": "67919de4486a2e49301cb19f",
+    "title": "内容补充描述",
+    "labels": [],
+    "issue_type": "文档",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/14",
+    "working_days_open": 95
+  },
+  {
+    "iid": "13",
+    "state": "closed",
+    "created_at": "2026-02-25",
+    "closed_at": "2026-03-03",
+    "author": "zjun0",
+    "author_id": "67919de4486a2e49301cb19f",
+    "title": "文档内容描述优化",
+    "labels": [],
+    "issue_type": "文档",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/13",
+    "working_days_open": 95
+  },
+  {
+    "iid": "12",
+    "state": "closed",
+    "created_at": "2026-02-25",
+    "closed_at": "2026-03-03",
+    "author": "zjun0",
+    "author_id": "67919de4486a2e49301cb19f",
+    "title": "内容有描述错误",
+    "labels": [],
+    "issue_type": "文档",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/12",
+    "working_days_open": 95
+  },
+  {
+    "iid": "11",
+    "state": "closed",
+    "created_at": "2026-02-09",
+    "closed_at": "2026-03-04",
+    "author": "alwin114",
+    "author_id": "66f2c25d07ddfc0488c0a6d5",
+    "title": "triton-ge-ensemble不支持",
+    "labels": [
+      "Accepted"
+    ],
+    "issue_type": "缺陷",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 22,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/11",
+    "working_days_open": 102
+  },
+  {
+    "iid": "10",
+    "state": "closed",
+    "created_at": "2026-01-22",
+    "closed_at": "2026-02-02",
+    "author": "qq_36239257",
+    "author_id": "66f93145eed595591d13c098",
+    "title": "一个server启动多个模型(2个)，不能同时使用的问题如何解决？",
+    "labels": [
+      "Accepted"
+    ],
+    "issue_type": "咨询",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 17,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/10",
+    "working_days_open": 114
+  },
+  {
+    "iid": "9",
+    "state": "closed",
+    "created_at": "2026-01-21",
+    "closed_at": "2026-01-23",
+    "author": "weixin_43540084",
+    "author_id": "6703eee9d1aa8e111c86e01a",
+    "title": "推理传进去的图片读出来是空的",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 9,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/9",
+    "working_days_open": 115
+  },
+  {
+    "iid": "8",
+    "state": "opened",
+    "created_at": "2026-01-19",
+    "closed_at": "",
+    "author": "guoyiwei1111",
+    "author_id": "68ac2fb0bfd92533e8dcdb2b",
+    "title": "[Roadmap] triton-inference-server-ge-backend 2026H1 roadmap",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "guoyiwei1111"
+    ],
+    "user_notes_count": 8,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/8",
+    "working_days_open": 117
+  },
+  {
+    "iid": "7",
+    "state": "closed",
+    "created_at": "2026-01-19",
+    "closed_at": "2026-01-20",
+    "author": "weixin_43540084",
+    "author_id": "6703eee9d1aa8e111c86e01a",
+    "title": "版本不匹配",
+    "labels": [
+      "Accepted"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 4,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/7",
+    "working_days_open": 117
+  },
+  {
+    "iid": "6",
+    "state": "closed",
+    "created_at": "2026-01-17",
+    "closed_at": "2026-01-17",
+    "author": "guoyiwei1111",
+    "author_id": "68ac2fb0bfd92533e8dcdb2b",
+    "title": "补充一个基于pythonbackend 进行OM推理的例子",
+    "labels": [],
+    "issue_type": "文档",
+    "issue_state": "已验收",
+    "assignees": [
+      "guoyiwei1111"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/6",
+    "working_days_open": 117
+  },
+  {
+    "iid": "5",
+    "state": "closed",
+    "created_at": "2026-01-08",
+    "closed_at": "2026-01-21",
+    "author": "qq_36239257",
+    "author_id": "66f93145eed595591d13c098",
+    "title": "大佬能否提供一个yolov5的案例？我本地也没弄成功",
+    "labels": [
+      "Accepted"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 7,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/5",
+    "working_days_open": 124
+  },
+  {
+    "iid": "4",
+    "state": "closed",
+    "created_at": "2026-01-08",
+    "closed_at": "2026-01-21",
+    "author": "qq_36239257",
+    "author_id": "66f93145eed595591d13c098",
+    "title": "能否给一个PP-OCR配置案例？我折腾了很久没成功",
+    "labels": [
+      "Accepted"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 9,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/4",
+    "working_days_open": 124
+  },
+  {
+    "iid": "3",
+    "state": "closed",
+    "created_at": "2026-01-06",
+    "closed_at": "2026-01-19",
+    "author": "xym-31",
+    "author_id": "667a53f8ec0c2d4eb202f745",
+    "title": "支持om模型吗？",
+    "labels": [
+      "Accepted"
+    ],
+    "issue_type": "咨询",
+    "issue_state": "已完成",
+    "assignees": [],
+    "user_notes_count": 8,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/3",
+    "working_days_open": 126
+  },
+  {
+    "iid": "2",
+    "state": "closed",
+    "created_at": "2025-12-19",
+    "closed_at": "2025-12-24",
+    "author": "guoyiwei1111",
+    "author_id": "68ac2fb0bfd92533e8dcdb2b",
+    "title": "#补充文档 当前优化缺少案例",
+    "labels": [
+      "Accepted",
+      "resolved"
+    ],
+    "issue_type": "文档",
+    "issue_state": "已完成",
+    "assignees": [
+      "guoyiwei1111"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/2",
+    "working_days_open": 137
+  },
+  {
+    "iid": "1",
+    "state": "closed",
+    "created_at": "2025-12-19",
+    "closed_at": "2025-12-22",
+    "author": "guoyiwei1111",
+    "author_id": "68ac2fb0bfd92533e8dcdb2b",
+    "title": "#新增能力 自动读取Onnx文件模型配置",
+    "labels": [
+      "Accepted",
+      "resolved"
+    ],
+    "issue_type": "需求",
+    "issue_state": "已完成",
+    "assignees": [
+      "guoyiwei1111"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/1",
+    "working_days_open": 137
+  }
+]
