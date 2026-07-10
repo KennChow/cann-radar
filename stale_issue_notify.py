@@ -560,7 +560,7 @@ def _save_admin_issue_summary(notify_paths, notified_data, linked_pr_map, mail_m
             if key in notified:
                 record = notified[key]
                 cnt = record.get("count", 1)
-                status = "new" if cnt < MAX_NOTIFY_COUNT else "max"
+                status = "max" if cnt >= MAX_NOTIFY_COUNT else "waiting"
             else:
                 status = "new"
 

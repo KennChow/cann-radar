@@ -555,9 +555,9 @@ def _save_admin_mr_summary(notify_paths, notified_data, stale_by_author, has_ema
             if key in notified:
                 record = notified[key]
                 cnt = record.get("count", 1)
-                status = "new" if cnt < MAX_NOTIFY_COUNT else "max"
+                status = "max" if cnt >= MAX_NOTIFY_COUNT else "waiting"
             else:
-                status = "not_notifying"  # on first notification
+                status = "new"  # first discovery
 
             summary.append({
                 "repo": repo_path, "iid": iid, "title": mr.get("title", ""),
