@@ -3,7 +3,7 @@ repos:
   display_name: GE
   enabled: true
   notify: true
-  admin: xiaguozheng1@hisilicon.com
+  admin: xiaguozheng1@hisilicon.com, titan.sheng@huawei.com, wangtao123@huawei.com
   cc: zhanjun6@hisilicon.com
   goals:
   - metric: star
@@ -65,7 +65,7 @@ repos:
   display_name: auto-fusion
   enabled: true
   notify: true
-  admin: wangmingming39@huawei.com, xiaguozheng1@hisilicon.com
+  admin: wangmingming39@huawei.com, xiaguozheng1@hisilicon.com, wangxiaotian4@huawei.com
   cc: wujinteng1@huawei.com
   goals:
   - metric: star
@@ -125,7 +125,7 @@ repos:
   display_name: MetaDef
   enabled: true
   notify: true
-  admin: xiaguozheng1@hisilicon.com
+  admin: xiaguozheng1@hisilicon.com, titan.sheng@huawei.com, wangtao123@huawei.com
   cc: zhanjun6@hisilicon.com
   goals:
   - metric: star
@@ -137,7 +137,7 @@ repos:
   display_name: TensorFlow
   enabled: true
   notify: true
-  admin: xiaguozheng1@hisilicon.com
+  admin: xiaguozheng1@hisilicon.com, titan.sheng@huawei.com, wangtao123@huawei.com
   cc: zhanjun6@hisilicon.com
   goals:
   - metric: star
@@ -175,3 +175,15 @@ repos:
       target: 20
     - date: '2026-12-30'
       target: 30
+- path: cann/triton-inference-server-ge-backend
+  display_name: Triton GE Backend
+  enabled: true
+  notify: true
+  admin: guoyiwei2@huawei.com, titan.sheng@huawei.com, wangtao123@huawei.com
+  cc:
+  goals:
+  - metric: star
+    label: Star 数
+    targets:
+    - label: 2026年底达到300
+      target: 300
