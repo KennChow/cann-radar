@@ -1,5 +1,45 @@
 [
   {
+    "iid": "468",
+    "state": "opened",
+    "created_at": "2026-07-11",
+    "closed_at": "",
+    "author": "zhaozhihui",
+    "author_id": "68c3c7cff31de23a33f20316",
+    "title": "[RFC]: A2/A3支持驱动低于25.5.0场景使用HIXL CS",
+    "labels": [
+      "RFC"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "zhaozhihui"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/468",
+    "working_days_open": 0
+  },
+  {
+    "iid": "467",
+    "state": "opened",
+    "created_at": "2026-07-11",
+    "closed_at": "",
+    "author": "zhaozhihui",
+    "author_id": "68c3c7cff31de23a33f20316",
+    "title": "[RFC]: HIXL CS RoCE 支持同卡建链与传输",
+    "labels": [
+      "RFC"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "zhaozhihui"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/467",
+    "working_days_open": 0
+  },
+  {
     "iid": "466",
     "state": "opened",
     "created_at": "2026-07-10",
@@ -132,7 +172,7 @@
     "closed_at": "",
     "author": "zhaozhihui",
     "author_id": "68c3c7cff31de23a33f20316",
-    "title": "[RFC]: 修复异常断链与设备侧传输任务并发清理问题",
+    "title": "[RFC]: HIXL传输接口新增保障AICPU Kernel展开完成能力",
     "labels": [
       "RFC"
     ],
@@ -152,7 +192,7 @@
     "closed_at": "",
     "author": "zhaozhihui",
     "author_id": "68c3c7cff31de23a33f20316",
-    "title": "[RFC]: 支持通过 EndpointDesc 指定具体通信协议",
+    "title": "[RFC]: HIXL支持通过option指定通信协议",
     "labels": [
       "RFC"
     ],
@@ -172,7 +212,7 @@
     "closed_at": "",
     "author": "zhaozhihui",
     "author_id": "68c3c7cff31de23a33f20316",
-    "title": "[RFC]: 支持 CS Server 侧通信资源监听端口配置",
+    "title": "[RFC]: HIXL支持指定通信资源监听端口",
     "labels": [
       "RFC"
     ],
@@ -192,7 +232,7 @@
     "closed_at": "",
     "author": "zhaozhihui",
     "author_id": "68c3c7cff31de23a33f20316",
-    "title": "[RFC]: 支持配置 CS 设备侧最大活跃传输通道数量",
+    "title": "[RFC]: HIXL新增资源池资源上限配置能力",
     "labels": [
       "RFC"
     ],
@@ -280,9 +320,9 @@
   },
   {
     "iid": "450",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-07-08",
-    "closed_at": "",
+    "closed_at": "2026-07-11",
     "author": "jiangzeyu-2026",
     "author_id": "697c1d654f9d38461d0e7139",
     "title": "Transfer Engine 重建后原有 context id 不连续，cached 映射全部失效",
@@ -291,11 +331,11 @@
       "wait-feedback"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "youyx"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/hixl/issues/450",
     "working_days_open": 3
   },
@@ -471,7 +511,7 @@
       "M__Cheng",
       "zhaozhihui"
     ],
-    "user_notes_count": 3,
+    "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/hixl/issues/441",
     "working_days_open": 4
   },

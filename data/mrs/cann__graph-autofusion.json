@@ -1,5 +1,138 @@
 [
   {
+    "iid": 1260,
+    "state": "opened",
+    "draft": false,
+    "title": "sync develop to master 20260711",
+    "created_at": "2026-07-11",
+    "updated_at": "2026-07-11",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhanj",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1260",
+    "labels": [
+      "stat/needs-squash",
+      "enhancement",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1259,
+    "state": "closed",
+    "draft": false,
+    "title": "sync develop to master 20260711",
+    "created_at": "2026-07-11",
+    "updated_at": "2026-07-11",
+    "merged_at": "",
+    "closed_at": "2026-07-11",
+    "author": "zhanj",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1259",
+    "labels": [
+      "stat/needs-squash",
+      "enhancement",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1258,
+    "state": "closed",
+    "draft": false,
+    "title": "sync develop to master 20260711",
+    "created_at": "2026-07-11",
+    "updated_at": "2026-07-11",
+    "merged_at": "",
+    "closed_at": "2026-07-11",
+    "author": "zhanj",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1258",
+    "labels": [
+      "cann-cla/yes",
+      "enhancement"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1257,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: add ascir adapter",
+    "created_at": "2026-07-11",
+    "updated_at": "2026-07-11",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_WTfSfUy7",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1257",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1256,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: add SoftMax AscIR operator for V2 (A5/v35)",
+    "created_at": "2026-07-11",
+    "updated_at": "2026-07-11",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wei_shi",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1256",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1255,
+    "state": "merged",
+    "draft": false,
+    "title": "【fix】: 修复schedult result与AscIR的输入节点顺序不同",
+    "created_at": "2026-07-11",
+    "updated_at": "2026-07-11",
+    "merged_at": "2026-07-11",
+    "closed_at": "",
+    "author": "WangYanMale",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1255",
+    "labels": [
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved",
+      "cann-cla/yes",
+      "enhancement"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1254,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: support single-buffer fallback for UB constraints",
+    "created_at": "2026-07-11",
+    "updated_at": "2026-07-11",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhang_shengjie",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1254",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1253,
     "state": "opened",
     "draft": false,
@@ -66,15 +199,15 @@
     "draft": false,
     "title": "fix: 同步PR1134的Autofuse CV融合修改",
     "created_at": "2026-07-10",
-    "updated_at": "2026-07-10",
+    "updated_at": "2026-07-11",
     "merged_at": "",
     "closed_at": "",
     "author": "ling-DT",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1250",
     "labels": [
-      "cann-cla/no",
       "stat/needs-squash",
-      "ci-pipeline-failed"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -143,16 +276,15 @@
     "iid": 1246,
     "state": "opened",
     "draft": false,
-    "title": "chebyshev_polynomial",
+    "title": "【feature】: 新增 api_regbase下A5的chebyshev_polynomial算子",
     "created_at": "2026-07-09",
-    "updated_at": "2026-07-10",
+    "updated_at": "2026-07-11",
     "merged_at": "",
     "closed_at": "",
     "author": "wuzhengzhen",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1246",
     "labels": [
-      "stat/needs-squash",
-      "ci-pipeline-failed",
+      "ci-pipeline-passed",
       "enhancement",
       "cann-cla/yes"
     ],
@@ -183,17 +315,18 @@
   },
   {
     "iid": 1244,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【PR】: 更新安装方式",
     "created_at": "2026-07-09",
-    "updated_at": "2026-07-10",
-    "merged_at": "",
+    "updated_at": "2026-07-11",
+    "merged_at": "2026-07-11",
     "closed_at": "",
     "author": "sophia1213",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1244",
     "labels": [
       "lgtm",
+      "approved",
       "stat/needs-squash",
       "cann-cla/yes",
       "enhancement",
@@ -332,17 +465,16 @@
     "draft": false,
     "title": "【feat】enable simt fuse in sk",
     "created_at": "2026-07-09",
-    "updated_at": "2026-07-10",
+    "updated_at": "2026-07-11",
     "merged_at": "",
     "closed_at": "",
     "author": "yrz1027",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1237",
     "labels": [
-      "ci-pipeline-failed",
-      "api-check-pass",
       "enhancement",
       "cann-cla/yes",
-      "stat/needs-squash"
+      "api-check-pass",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -479,7 +611,7 @@
     "draft": false,
     "title": "【feat】: 新增Softmax算子RegBase代码生成与全流程调度支持",
     "created_at": "2026-07-08",
-    "updated_at": "2026-07-08",
+    "updated_at": "2026-07-11",
     "merged_at": "",
     "closed_at": "",
     "author": "wei_shi",
@@ -537,13 +669,13 @@
   },
   {
     "iid": 1227,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-07-07",
-    "updated_at": "2026-07-10",
+    "updated_at": "2026-07-11",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-11",
     "author": "gcw_WTfSfUy7",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1227",
     "labels": [
@@ -685,7 +817,7 @@
     "draft": false,
     "title": "【PR】: 修复x为正整数，q为负数的场景",
     "created_at": "2026-07-07",
-    "updated_at": "2026-07-10",
+    "updated_at": "2026-07-11",
     "merged_at": "",
     "closed_at": "",
     "author": "wuzhengzhen",
@@ -693,6 +825,7 @@
     "labels": [
       "enhancement",
       "cann-cla/yes",
+      "stat/needs-squash",
       "ci-pipeline-failed"
     ],
     "working_days_open": 4,
@@ -1080,13 +1213,14 @@
     "draft": false,
     "title": "docs: add Autofuse device validation skill notes",
     "created_at": "2026-07-04",
-    "updated_at": "2026-07-04",
+    "updated_at": "2026-07-11",
     "merged_at": "",
     "closed_at": "",
     "author": "Jett_Woo",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1201",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "stat/needs-squash"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -1997,14 +2131,14 @@
     "draft": false,
     "title": "feat: add v35 IndirectLoad codegen smoke",
     "created_at": "2026-07-01",
-    "updated_at": "2026-07-09",
+    "updated_at": "2026-07-11",
     "merged_at": "",
     "closed_at": "",
     "author": "xiebangrui2025",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1154",
     "labels": [
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 8,
     "e2e_issues": []
@@ -7704,13 +7838,13 @@
   },
   {
     "iid": 859,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【debug】empty package for test",
     "created_at": "2026-06-15",
-    "updated_at": "2026-07-09",
+    "updated_at": "2026-07-11",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-11",
     "author": "yrz1027",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/859",
     "labels": [
@@ -11249,13 +11383,13 @@
   },
   {
     "iid": 673,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】: 构造sk 中卡死",
     "created_at": "2026-06-05",
-    "updated_at": "2026-06-05",
+    "updated_at": "2026-07-11",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-11",
     "author": "Achilles_d",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/673",
     "labels": [
@@ -14951,13 +15085,13 @@
   },
   {
     "iid": 488,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】:ci test",
     "created_at": "2026-05-26",
-    "updated_at": "2026-05-26",
+    "updated_at": "2026-07-11",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-11",
     "author": "ChenCangtao",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/488",
     "labels": [
