@@ -1,5 +1,25 @@
 [
   {
+    "iid": 3366,
+    "state": "opened",
+    "draft": false,
+    "title": "add inductor check and bench tools for precision check tool",
+    "created_at": "2026-07-12",
+    "updated_at": "2026-07-12",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "yurongkun",
+    "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3366",
+    "labels": [
+      "ascend-cla/yes",
+      "stat/needs-squash",
+      "docs-ci-pipeline-success",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 3365,
     "state": "opened",
     "draft": false,
@@ -814,14 +834,13 @@
     "draft": false,
     "title": "fix: auto-callback bugs for CANN 9.1.0 / torch_npu 2.7.1 compat",
     "created_at": "2026-07-04",
-    "updated_at": "2026-07-11",
+    "updated_at": "2026-07-12",
     "merged_at": "",
     "closed_at": "",
     "author": "yuht9",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3326",
     "labels": [
-      "stat/needs-squash",
-      "ascend-cla/no",
+      "ascend-cla/yes",
       "docs-ci-pipeline-success"
     ],
     "working_days_open": 5,
