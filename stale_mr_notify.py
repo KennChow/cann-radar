@@ -460,15 +460,7 @@ def _send_personal_emails(has_email_authors, smtp_cfg, notified_data, repo_admin
             subject += " [二次提醒]"
         html = build_html_email(author, mrs, is_escalated=has_stage2)
 
-        # 按仓库找对应管理员抄送
-        cc_addrs = set()
-        if has_stage2:
-            for mr in mrs:
-                if mr.get("notify_stage") == 2:
-                    admin_cc = repo_admin_map.get(mr["repo"], ("", ""))
-                    if admin_cc[0] and admin_cc[0] != email:
-                        cc_addrs.add(admin_cc[0])
-        cc = ", ".join(sorted(cc_addrs)) if cc_addrs else None
+        cc = None
 
         if args.dry_run:
             cc_str = f" 抄送:{cc}" if cc else ""
