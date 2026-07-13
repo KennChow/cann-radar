@@ -1,5 +1,124 @@
 [
   {
+    "iid": "180",
+    "state": "closed",
+    "created_at": "2026-07-13",
+    "closed_at": "2026-07-13",
+    "author": "zqmin",
+    "author_id": "6719bf054af15e11abd4951d",
+    "title": "[Requirement|需求建议]: add ascir adapter",
+    "labels": [
+      "requirement"
+    ],
+    "issue_type": "需求",
+    "issue_state": "已解决",
+    "assignees": [
+      "gcw_WTfSfUy7"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/180",
+    "working_days_open": 1
+  },
+  {
+    "iid": "179",
+    "state": "opened",
+    "created_at": "2026-07-13",
+    "closed_at": "",
+    "author": "j18351891940",
+    "author_id": "691bccec9e4c0a1a8648b942",
+    "title": "[Requirement|需求建议]: 开发整网精度对比工具",
+    "labels": [
+      "requirement"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "j18351891940"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/179",
+    "working_days_open": 1
+  },
+  {
+    "iid": "178",
+    "state": "closed",
+    "created_at": "2026-07-13",
+    "closed_at": "2026-07-13",
+    "author": "gcw_WTfSfUy7",
+    "author_id": "69080cb1f91666140de652e7",
+    "title": "[Requirement|需求建议]:  feat: support DT_BOOL in v2/v35 ASCIR",
+    "labels": [
+      "resolved",
+      "requirement"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "zqmin"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/178",
+    "working_days_open": 1
+  },
+  {
+    "iid": "177",
+    "state": "closed",
+    "created_at": "2026-07-13",
+    "closed_at": "2026-07-13",
+    "author": "zqmin",
+    "author_id": "6719bf054af15e11abd4951d",
+    "title": "feat: support DT_BOOL in v2/v35 ASCIR",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "zqmin"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/177",
+    "working_days_open": 1
+  },
+  {
+    "iid": "176",
+    "state": "opened",
+    "created_at": "2026-07-13",
+    "closed_at": "",
+    "author": "ZhaoBaiwei",
+    "author_id": "68e8c2c755cfdd7902bbae91",
+    "title": "[Requirement|需求建议]: api_regbase下log_ndtr接口实现",
+    "labels": [
+      "requirement"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "ZhaoBaiwei"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/176",
+    "working_days_open": 1
+  },
+  {
+    "iid": "175",
+    "state": "opened",
+    "created_at": "2026-07-13",
+    "closed_at": "",
+    "author": "xiebangrui2025",
+    "author_id": "68f6011b49a2234f8cc7d912",
+    "title": "[RFC] inductor 支持 Gather 融合",
+    "labels": [
+      "feature"
+    ],
+    "issue_type": "需求",
+    "issue_state": "待办的",
+    "assignees": [
+      "xiebangrui2025"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/175",
+    "working_days_open": 1
+  },
+  {
     "iid": "174",
     "state": "closed",
     "created_at": "2026-07-09",
@@ -17,7 +136,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/174",
-    "working_days_open": 2
+    "working_days_open": 3
   },
   {
     "iid": "173",
@@ -26,8 +145,9 @@
     "closed_at": "",
     "author": "ZhaoBaiwei",
     "author_id": "68e8c2c755cfdd7902bbae91",
-    "title": "[Requirement|需求建议]: i1e接口实现",
+    "title": "[Requirement|需求建议]: api_regbase下i1e接口实现",
     "labels": [
+      "feature",
       "requirement"
     ],
     "issue_type": "任务",
@@ -37,7 +157,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/173",
-    "working_days_open": 2
+    "working_days_open": 3
   },
   {
     "iid": "172",
@@ -46,8 +166,9 @@
     "closed_at": "",
     "author": "ZhaoBaiwei",
     "author_id": "68e8c2c755cfdd7902bbae91",
-    "title": "[Requirement|需求建议]: I0e接口实现",
+    "title": "[Requirement|需求建议]: api_regbase下i0e接口实现",
     "labels": [
+      "feature",
       "requirement"
     ],
     "issue_type": "任务",
@@ -57,7 +178,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/172",
-    "working_days_open": 2
+    "working_days_open": 3
   },
   {
     "iid": "171",
@@ -77,25 +198,27 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/171",
-    "working_days_open": 2
+    "working_days_open": 3
   },
   {
     "iid": "170",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-07-07",
-    "closed_at": "",
+    "closed_at": "2026-07-13",
     "author": "liyuewei",
     "author_id": "66faa520baec536c761e7f15",
     "title": "[Bug-Report|缺陷反馈]: ",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "liyuewei"
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/170",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "169",
@@ -115,7 +238,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/169",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "168",
@@ -124,7 +247,7 @@
     "closed_at": "",
     "author": "ZhaoBaiwei",
     "author_id": "68e8c2c755cfdd7902bbae91",
-    "title": "[Requirement|需求建议]: Polygamma接口实现",
+    "title": "[Requirement|需求建议]: api_regbase 下polygamma接口实现",
     "labels": [
       "requirement"
     ],
@@ -135,7 +258,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/168",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "167",
@@ -155,7 +278,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/167",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "166",
@@ -175,27 +298,28 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/166",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "165",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-07-06",
-    "closed_at": "",
+    "closed_at": "2026-07-13",
     "author": "wuzhengzhen",
     "author_id": "691c181b896853189b5eb0a7",
     "title": "新增 api_regbase下A5的chebyshev_polynomial算子",
     "labels": [
-      "requirement"
+      "requirement",
+      "resolved"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "wuzhengzhen"
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/165",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "164",
@@ -213,7 +337,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/164",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "163",
@@ -233,7 +357,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/163",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "162",
@@ -254,7 +378,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/162",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "161",
@@ -274,7 +398,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/161",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "160",
@@ -294,7 +418,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/160",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "159",
@@ -314,7 +438,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/159",
-    "working_days_open": 7
+    "working_days_open": 8
   },
   {
     "iid": "158",
@@ -334,25 +458,27 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/158",
-    "working_days_open": 7
+    "working_days_open": 8
   },
   {
     "iid": "157",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-07-02",
-    "closed_at": "",
+    "closed_at": "2026-07-13",
     "author": "zhang_shengjie",
     "author_id": "681ccf31b3a86414eb59cce0",
     "title": "[Bug] TopN PGO候选tiling外层block_dim残留导致下发tiling非法",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "zhang_shengjie"
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/157",
-    "working_days_open": 7
+    "working_days_open": 8
   },
   {
     "iid": "156",
@@ -370,7 +496,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/156",
-    "working_days_open": 8
+    "working_days_open": 9
   },
   {
     "iid": "155",
@@ -388,7 +514,7 @@
     "assignees": [],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/155",
-    "working_days_open": 9
+    "working_days_open": 10
   },
   {
     "iid": "154",
@@ -408,7 +534,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/154",
-    "working_days_open": 9
+    "working_days_open": 10
   },
   {
     "iid": "153",
@@ -428,7 +554,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/153",
-    "working_days_open": 9
+    "working_days_open": 10
   },
   {
     "iid": "152",
@@ -448,7 +574,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/152",
-    "working_days_open": 10
+    "working_days_open": 11
   },
   {
     "iid": "151",
@@ -468,7 +594,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/151",
-    "working_days_open": 10
+    "working_days_open": 11
   },
   {
     "iid": "150",
@@ -488,7 +614,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/150",
-    "working_days_open": 10
+    "working_days_open": 11
   },
   {
     "iid": "149",
@@ -508,7 +634,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/149",
-    "working_days_open": 10
+    "working_days_open": 11
   },
   {
     "iid": "148",
@@ -528,7 +654,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/148",
-    "working_days_open": 10
+    "working_days_open": 11
   },
   {
     "iid": "147",
@@ -548,7 +674,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/147",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "146",
@@ -568,7 +694,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/146",
-    "working_days_open": 12
+    "working_days_open": 13
   },
   {
     "iid": "145",
@@ -589,7 +715,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/145",
-    "working_days_open": 12
+    "working_days_open": 13
   },
   {
     "iid": "144",
@@ -609,25 +735,25 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/144",
-    "working_days_open": 12
+    "working_days_open": 13
   },
   {
     "iid": "143",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-25",
-    "closed_at": "",
+    "closed_at": "2026-07-13",
     "author": "gothizzz",
     "author_id": "68555bb1d8f0940af04e58e9",
     "title": "super_kernel CMake 硬编码 python3 -m build 与 venv 文档流程冲突，wheel 构建报 No module named build",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已解决",
     "assignees": [
       "gothizzz"
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/143",
-    "working_days_open": 12
+    "working_days_open": 13
   },
   {
     "iid": "141",
@@ -648,7 +774,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/141",
-    "working_days_open": 13
+    "working_days_open": 14
   },
   {
     "iid": "140",
@@ -666,7 +792,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/140",
-    "working_days_open": 14
+    "working_days_open": 15
   },
   {
     "iid": "139",
@@ -686,7 +812,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/139",
-    "working_days_open": 14
+    "working_days_open": 15
   },
   {
     "iid": "138",
@@ -706,7 +832,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/138",
-    "working_days_open": 14
+    "working_days_open": 15
   },
   {
     "iid": "137",
@@ -726,7 +852,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/137",
-    "working_days_open": 14
+    "working_days_open": 15
   },
   {
     "iid": "136",
@@ -746,7 +872,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/136",
-    "working_days_open": 15
+    "working_days_open": 16
   },
   {
     "iid": "135",
@@ -764,7 +890,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/135",
-    "working_days_open": 15
+    "working_days_open": 16
   },
   {
     "iid": "134",
@@ -784,7 +910,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/134",
-    "working_days_open": 15
+    "working_days_open": 16
   },
   {
     "iid": "133",
@@ -804,7 +930,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/133",
-    "working_days_open": 15
+    "working_days_open": 16
   },
   {
     "iid": "132",
@@ -825,7 +951,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/132",
-    "working_days_open": 15
+    "working_days_open": 16
   },
   {
     "iid": "131",
@@ -847,7 +973,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/131",
-    "working_days_open": 15
+    "working_days_open": 16
   },
   {
     "iid": "130",
@@ -867,7 +993,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/130",
-    "working_days_open": 17
+    "working_days_open": 18
   },
   {
     "iid": "129",
@@ -887,7 +1013,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/129",
-    "working_days_open": 17
+    "working_days_open": 18
   },
   {
     "iid": "128",
@@ -907,7 +1033,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/128",
-    "working_days_open": 17
+    "working_days_open": 18
   },
   {
     "iid": "127",
@@ -927,7 +1053,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/127",
-    "working_days_open": 17
+    "working_days_open": 18
   },
   {
     "iid": "126",
@@ -947,7 +1073,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/126",
-    "working_days_open": 17
+    "working_days_open": 18
   },
   {
     "iid": "125",
@@ -968,7 +1094,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/125",
-    "working_days_open": 17
+    "working_days_open": 18
   },
   {
     "iid": "124",
@@ -989,7 +1115,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/124",
-    "working_days_open": 18
+    "working_days_open": 19
   },
   {
     "iid": "123",
@@ -1009,7 +1135,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/123",
-    "working_days_open": 18
+    "working_days_open": 19
   },
   {
     "iid": "122",
@@ -1030,7 +1156,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/122",
-    "working_days_open": 18
+    "working_days_open": 19
   },
   {
     "iid": "121",
@@ -1050,7 +1176,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/121",
-    "working_days_open": 18
+    "working_days_open": 19
   },
   {
     "iid": "120",
@@ -1068,7 +1194,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/120",
-    "working_days_open": 18
+    "working_days_open": 19
   },
   {
     "iid": "119",
@@ -1088,7 +1214,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/119",
-    "working_days_open": 18
+    "working_days_open": 19
   },
   {
     "iid": "118",
@@ -1108,7 +1234,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/118",
-    "working_days_open": 19
+    "working_days_open": 20
   },
   {
     "iid": "117",
@@ -1126,7 +1252,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/117",
-    "working_days_open": 19
+    "working_days_open": 20
   },
   {
     "iid": "114",
@@ -1146,7 +1272,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/114",
-    "working_days_open": 19
+    "working_days_open": 20
   },
   {
     "iid": "113",
@@ -1167,7 +1293,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/113",
-    "working_days_open": 19
+    "working_days_open": 20
   },
   {
     "iid": "112",
@@ -1188,7 +1314,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/112",
-    "working_days_open": 19
+    "working_days_open": 20
   },
   {
     "iid": "111",
@@ -1209,7 +1335,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/111",
-    "working_days_open": 19
+    "working_days_open": 20
   },
   {
     "iid": "110",
@@ -1229,7 +1355,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/110",
-    "working_days_open": 20
+    "working_days_open": 21
   },
   {
     "iid": "109",
@@ -1249,7 +1375,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/109",
-    "working_days_open": 20
+    "working_days_open": 21
   },
   {
     "iid": "108",
@@ -1269,7 +1395,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/108",
-    "working_days_open": 20
+    "working_days_open": 21
   },
   {
     "iid": "107",
@@ -1289,13 +1415,13 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/107",
-    "working_days_open": 21
+    "working_days_open": 22
   },
   {
     "iid": "106",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-11",
-    "closed_at": "",
+    "closed_at": "2026-07-13",
     "author": "gothizzz",
     "author_id": "68555bb1d8f0940af04e58e9",
     "title": "fix(init_env): CANN_VERSION 硬编码 9.0.0 与 master 镜像源最新 9.1.0 不一致,导致 404",
@@ -1304,13 +1430,13 @@
       "infra-tooling"
     ],
     "issue_type": "需求",
-    "issue_state": "待办的",
+    "issue_state": "已解决",
     "assignees": [
       "gothizzz"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/106",
-    "working_days_open": 21
+    "working_days_open": 22
   },
   {
     "iid": "105",
@@ -1331,7 +1457,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/105",
-    "working_days_open": 21
+    "working_days_open": 22
   },
   {
     "iid": "104",
@@ -1351,7 +1477,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/104",
-    "working_days_open": 21
+    "working_days_open": 22
   },
   {
     "iid": "103",
@@ -1372,7 +1498,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/103",
-    "working_days_open": 23
+    "working_days_open": 24
   },
   {
     "iid": "102",
@@ -1392,7 +1518,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/102",
-    "working_days_open": 23
+    "working_days_open": 24
   },
   {
     "iid": "101",
@@ -1413,7 +1539,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/101",
-    "working_days_open": 23
+    "working_days_open": 24
   },
   {
     "iid": "100",
@@ -1433,7 +1559,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/100",
-    "working_days_open": 23
+    "working_days_open": 24
   },
   {
     "iid": "99",
@@ -1453,7 +1579,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/99",
-    "working_days_open": 23
+    "working_days_open": 24
   },
   {
     "iid": "98",
@@ -1473,7 +1599,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/98",
-    "working_days_open": 23
+    "working_days_open": 24
   },
   {
     "iid": "97",
@@ -1494,7 +1620,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/97",
-    "working_days_open": 23
+    "working_days_open": 24
   },
   {
     "iid": "96",
@@ -1515,7 +1641,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/96",
-    "working_days_open": 23
+    "working_days_open": 24
   },
   {
     "iid": "95",
@@ -1535,7 +1661,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/95",
-    "working_days_open": 23
+    "working_days_open": 24
   },
   {
     "iid": "94",
@@ -1555,7 +1681,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/94",
-    "working_days_open": 24
+    "working_days_open": 25
   },
   {
     "iid": "93",
@@ -1575,7 +1701,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/93",
-    "working_days_open": 25
+    "working_days_open": 26
   },
   {
     "iid": "92",
@@ -1596,7 +1722,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/92",
-    "working_days_open": 25
+    "working_days_open": 26
   },
   {
     "iid": "91",
@@ -1617,7 +1743,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/91",
-    "working_days_open": 25
+    "working_days_open": 26
   },
   {
     "iid": "90",
@@ -1637,7 +1763,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/90",
-    "working_days_open": 26
+    "working_days_open": 27
   },
   {
     "iid": "89",
@@ -1657,7 +1783,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/89",
-    "working_days_open": 26
+    "working_days_open": 27
   },
   {
     "iid": "88",
@@ -1677,7 +1803,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/88",
-    "working_days_open": 26
+    "working_days_open": 27
   },
   {
     "iid": "87",
@@ -1697,7 +1823,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/87",
-    "working_days_open": 26
+    "working_days_open": 27
   },
   {
     "iid": "86",
@@ -1715,7 +1841,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/86",
-    "working_days_open": 26
+    "working_days_open": 27
   },
   {
     "iid": "85",
@@ -1735,7 +1861,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/85",
-    "working_days_open": 26
+    "working_days_open": 27
   },
   {
     "iid": "84",
@@ -1756,7 +1882,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/84",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
     "iid": "83",
@@ -1776,7 +1902,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/83",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
     "iid": "82",
@@ -1797,7 +1923,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/82",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
     "iid": "81",
@@ -1818,7 +1944,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/81",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
     "iid": "80",
@@ -1838,7 +1964,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/80",
-    "working_days_open": 28
+    "working_days_open": 29
   },
   {
     "iid": "79",
@@ -1858,7 +1984,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/79",
-    "working_days_open": 28
+    "working_days_open": 29
   },
   {
     "iid": "78",
@@ -1878,7 +2004,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/78",
-    "working_days_open": 28
+    "working_days_open": 29
   },
   {
     "iid": "77",
@@ -1898,7 +2024,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/77",
-    "working_days_open": 28
+    "working_days_open": 29
   },
   {
     "iid": "76",
@@ -1918,7 +2044,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/76",
-    "working_days_open": 28
+    "working_days_open": 29
   },
   {
     "iid": "75",
@@ -1938,7 +2064,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/75",
-    "working_days_open": 28
+    "working_days_open": 29
   },
   {
     "iid": "74",
@@ -1956,7 +2082,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/74",
-    "working_days_open": 28
+    "working_days_open": 29
   },
   {
     "iid": "73",
@@ -1976,7 +2102,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/73",
-    "working_days_open": 28
+    "working_days_open": 29
   },
   {
     "iid": "72",
@@ -1997,7 +2123,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/72",
-    "working_days_open": 29
+    "working_days_open": 30
   },
   {
     "iid": "71",
@@ -2017,7 +2143,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/71",
-    "working_days_open": 29
+    "working_days_open": 30
   },
   {
     "iid": "60",
@@ -2037,7 +2163,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/60",
-    "working_days_open": 29
+    "working_days_open": 30
   },
   {
     "iid": "59",
@@ -2057,7 +2183,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/59",
-    "working_days_open": 30
+    "working_days_open": 31
   },
   {
     "iid": "58",
@@ -2078,7 +2204,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/58",
-    "working_days_open": 30
+    "working_days_open": 31
   },
   {
     "iid": "52",
@@ -2098,7 +2224,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/52",
-    "working_days_open": 34
+    "working_days_open": 35
   },
   {
     "iid": "51",
@@ -2119,7 +2245,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/51",
-    "working_days_open": 38
+    "working_days_open": 39
   },
   {
     "iid": "50",
@@ -2137,7 +2263,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/50",
-    "working_days_open": 44
+    "working_days_open": 45
   },
   {
     "iid": "49",
@@ -2155,7 +2281,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/49",
-    "working_days_open": 46
+    "working_days_open": 47
   },
   {
     "iid": "48",
@@ -2176,7 +2302,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/48",
-    "working_days_open": 49
+    "working_days_open": 50
   },
   {
     "iid": "47",
@@ -2196,7 +2322,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/47",
-    "working_days_open": 49
+    "working_days_open": 50
   },
   {
     "iid": "46",
@@ -2216,7 +2342,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/46",
-    "working_days_open": 49
+    "working_days_open": 50
   },
   {
     "iid": "45",
@@ -2237,7 +2363,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/45",
-    "working_days_open": 49
+    "working_days_open": 50
   },
   {
     "iid": "44",
@@ -2257,7 +2383,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/44",
-    "working_days_open": 51
+    "working_days_open": 52
   },
   {
     "iid": "43",
@@ -2275,7 +2401,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/43",
-    "working_days_open": 52
+    "working_days_open": 53
   },
   {
     "iid": "42",
@@ -2295,7 +2421,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/42",
-    "working_days_open": 52
+    "working_days_open": 53
   },
   {
     "iid": "41",
@@ -2316,7 +2442,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/41",
-    "working_days_open": 57
+    "working_days_open": 58
   },
   {
     "iid": "40",
@@ -2336,7 +2462,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/40",
-    "working_days_open": 58
+    "working_days_open": 59
   },
   {
     "iid": "38",
@@ -2354,7 +2480,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/38",
-    "working_days_open": 63
+    "working_days_open": 64
   },
   {
     "iid": "37",
@@ -2374,7 +2500,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/37",
-    "working_days_open": 63
+    "working_days_open": 64
   },
   {
     "iid": "36",
@@ -2394,7 +2520,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/36",
-    "working_days_open": 63
+    "working_days_open": 64
   },
   {
     "iid": "35",
@@ -2410,7 +2536,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/35",
-    "working_days_open": 64
+    "working_days_open": 65
   },
   {
     "iid": "34",
@@ -2428,7 +2554,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/34",
-    "working_days_open": 67
+    "working_days_open": 68
   },
   {
     "iid": "33",
@@ -2449,7 +2575,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/33",
-    "working_days_open": 68
+    "working_days_open": 69
   },
   {
     "iid": "32",
@@ -2467,7 +2593,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/32",
-    "working_days_open": 86
+    "working_days_open": 87
   },
   {
     "iid": "31",
@@ -2483,7 +2609,7 @@
     "assignees": [],
     "user_notes_count": 6,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/31",
-    "working_days_open": 96
+    "working_days_open": 97
   },
   {
     "iid": "30",
@@ -2501,7 +2627,7 @@
     "assignees": [],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/30",
-    "working_days_open": 96
+    "working_days_open": 97
   },
   {
     "iid": "29",
@@ -2517,7 +2643,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/29",
-    "working_days_open": 96
+    "working_days_open": 97
   },
   {
     "iid": "28",
@@ -2537,7 +2663,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/28",
-    "working_days_open": 100
+    "working_days_open": 101
   },
   {
     "iid": "27",
@@ -2555,7 +2681,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/27",
-    "working_days_open": 100
+    "working_days_open": 101
   },
   {
     "iid": "26",
@@ -2573,7 +2699,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/26",
-    "working_days_open": 100
+    "working_days_open": 101
   },
   {
     "iid": "25",
@@ -2591,7 +2717,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/25",
-    "working_days_open": 100
+    "working_days_open": 101
   },
   {
     "iid": "24",
@@ -2609,7 +2735,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/24",
-    "working_days_open": 107
+    "working_days_open": 108
   },
   {
     "iid": "23",
@@ -2629,7 +2755,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/23",
-    "working_days_open": 107
+    "working_days_open": 108
   },
   {
     "iid": "22",
@@ -2645,7 +2771,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/22",
-    "working_days_open": 115
+    "working_days_open": 116
   },
   {
     "iid": "21",
@@ -2661,7 +2787,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/21",
-    "working_days_open": 119
+    "working_days_open": 120
   },
   {
     "iid": "20",
@@ -2681,7 +2807,7 @@
     ],
     "user_notes_count": 6,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/20",
-    "working_days_open": 120
+    "working_days_open": 121
   },
   {
     "iid": "19",
@@ -2699,7 +2825,7 @@
     ],
     "user_notes_count": 8,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/19",
-    "working_days_open": 120
+    "working_days_open": 121
   },
   {
     "iid": "18",
@@ -2717,7 +2843,7 @@
     ],
     "user_notes_count": 7,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/18",
-    "working_days_open": 120
+    "working_days_open": 121
   },
   {
     "iid": "17",
@@ -2737,7 +2863,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/17",
-    "working_days_open": 120
+    "working_days_open": 121
   },
   {
     "iid": "16",
@@ -2755,7 +2881,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/16",
-    "working_days_open": 120
+    "working_days_open": 121
   },
   {
     "iid": "15",
@@ -2773,7 +2899,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/15",
-    "working_days_open": 120
+    "working_days_open": 121
   },
   {
     "iid": "14",
@@ -2791,7 +2917,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/14",
-    "working_days_open": 120
+    "working_days_open": 121
   },
   {
     "iid": "13",
@@ -2809,7 +2935,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/13",
-    "working_days_open": 145
+    "working_days_open": 146
   },
   {
     "iid": "12",
@@ -2827,7 +2953,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/12",
-    "working_days_open": 145
+    "working_days_open": 146
   },
   {
     "iid": "11",
@@ -2845,7 +2971,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/11",
-    "working_days_open": 151
+    "working_days_open": 152
   },
   {
     "iid": "10",
@@ -2863,7 +2989,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/10",
-    "working_days_open": 152
+    "working_days_open": 153
   },
   {
     "iid": "9",
@@ -2881,7 +3007,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/9",
-    "working_days_open": 160
+    "working_days_open": 161
   },
   {
     "iid": "8",
@@ -2899,7 +3025,7 @@
     ],
     "user_notes_count": 16,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/8",
-    "working_days_open": 161
+    "working_days_open": 162
   },
   {
     "iid": "7",
@@ -2918,7 +3044,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/7",
-    "working_days_open": 162
+    "working_days_open": 163
   },
   {
     "iid": "6",
@@ -2938,7 +3064,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/6",
-    "working_days_open": 165
+    "working_days_open": 166
   },
   {
     "iid": "5",
@@ -2958,7 +3084,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/5",
-    "working_days_open": 168
+    "working_days_open": 169
   },
   {
     "iid": "4",
@@ -2978,7 +3104,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/4",
-    "working_days_open": 171
+    "working_days_open": 172
   },
   {
     "iid": "3",
@@ -2998,7 +3124,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/3",
-    "working_days_open": 171
+    "working_days_open": 172
   },
   {
     "iid": "2",
@@ -3018,7 +3144,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/2",
-    "working_days_open": 171
+    "working_days_open": 172
   },
   {
     "iid": "1",
@@ -3039,6 +3165,6 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/1",
-    "working_days_open": 172
+    "working_days_open": 173
   }
 ]
