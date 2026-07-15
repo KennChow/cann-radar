@@ -22,5 +22,9 @@ config/admin_email.txt
 # GitCode API Token（敏感数据，通过 CI Secret / 私有仓注入）
 config/gitcode_token.txt
 
+# 管理员汇总临时文件
+data/admin_mr_summary.json
+data/admin_issue_summary.json
+
 # Python 缓存
 __pycache__/
