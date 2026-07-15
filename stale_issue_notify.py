@@ -161,9 +161,8 @@ def load_repo_admin_map():
     for repo in (config.get("repos") or []):
         path = repo.get("path", "")
         admin = repo.get("admin", "")
-        cc = repo.get("cc", "")
         if path and admin:
-            admin_map[path] = (admin, cc)
+            admin_map[path] = admin
     return admin_map
 
 
@@ -619,7 +618,7 @@ def main():
 
     repo_admin_map = load_repo_admin_map()
     for repo in sorted(notify_paths):
-        if repo not in repo_admin_map or not repo_admin_map[repo][0]:
+        if repo not in repo_admin_map or not repo_admin_map[repo]:
             print(f"  ⚠ {repo} 已启用 notify 但未配置 admin，将不发送汇总报告")
 
     matched_issues, stats = scan_stale_issues(
@@ -710,7 +709,6 @@ def main():
     sent = 0
     failed = 0
     test_sent = False
-    repo_admin_map = load_repo_admin_map()
 
     for assignee, (email, issues) in sorted(has_email_assignees.items(), key=lambda x: -len(x[1][1])):
         has_stage2 = any(i.get("notify_stage") == 2 for i in issues)

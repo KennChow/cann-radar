@@ -65,9 +65,8 @@ def load_repo_admin_map():
     for repo in (config.get("repos") or []):
         path = repo.get("path", "")
         admin = repo.get("admin", "")
-        cc = repo.get("cc", "")
         if path and admin:
-            admin_map[path] = (admin, cc)
+            admin_map[path] = admin
     return admin_map
 
 
@@ -146,6 +145,13 @@ def main():
     for item in issue_items:
         repo_data[item["repo"]]["issue"].append(item)
 
+    # 按管理员邮箱合并多仓
+    admin_repos = defaultdict(list)
+    for repo in sorted(repo_data.keys()):
+        admin_str = repo_admin_map.get(repo, "")
+        for admin_addr in [a.strip() for a in admin_str.split(",") if a.strip()]:
+            admin_repos[admin_addr].append(repo)
+
     smtp_cfg = None
     if not args.dry_run:
         smtp_cfg = load_smtp_config()
@@ -153,52 +159,56 @@ def main():
             print("✗ SMTP 配置不可用")
             return 1
 
-    for repo in sorted(repo_data.keys()):
-        items = repo_data[repo]
-        admin_cc = repo_admin_map.get(repo, ("", ""))
-        admin_addr, cc_addr = admin_cc
-        if not admin_addr:
-            continue
+    for admin_addr in sorted(admin_repos.keys()):
+        repos = admin_repos[admin_addr]
+        all_sections = ""
+        total_mr_all = total_iss_all = 0
 
-        total_mr = len(items["mr"])
-        total_iss = len(items["issue"])
+        for repo in repos:
+            items = repo_data[repo]
+            total_mr = len(items["mr"])
+            total_iss = len(items["issue"])
+            total_mr_all += total_mr
+            total_iss_all += total_iss
 
-        # MR 表格
-        mr_rows = ""
-        mr_new = mr_waiting = 0
-        for item in sorted(items["mr"], key=lambda x: -x["days_open"]):
-            display = _author_display(item["author"], mail_map)
-            status = item.get("status", "new")
-            if status == "new": mr_new += 1; label = "新增"
-            elif status == "max": label = "⚠ 需管理员介入（2 次提醒未处理）"
-            else: mr_waiting += 1; label = "跟踪中"
-            mr_rows += f"<tr><td>{display}</td><td>{item['title'][:50]}</td><td><a href='{item['web_url']}'>#{item['iid']}</a></td><td>{item['days_open']}天</td><td>{label}</td></tr>"
+            if total_mr == 0 and total_iss == 0:
+                continue
 
-        # Issue 表格
-        iss_rows = ""
-        iss_new = iss_waiting = 0
-        for item in sorted(items["issue"], key=lambda x: -x["days_open"]):
-            display = _author_display(item.get("assignee_display", item.get("author", "")), mail_map)
-            status = item.get("status", "new")
-            if status == "new": iss_new += 1; label = "新增"
-            elif status == "max": label = "⚠ 需管理员介入（2 次提醒未处理）"
-            else: iss_waiting += 1; label = "跟踪中"
-            iss_rows += f"<tr><td>{item['title'][:50]}</td><td><a href='{item['web_url']}'>#{item['iid']}</a></td><td>{item['days_open']}天</td><td>{display}</td><td>{label}</td></tr>"
+            # MR 表格
+            mr_rows = ""
+            mr_new = mr_waiting = 0
+            for item in sorted(items["mr"], key=lambda x: -x["days_open"]):
+                display = _author_display(item["author"], mail_map)
+                status = item.get("status", "new")
+                if status == "new": mr_new += 1; label = "新增"
+                elif status == "max": label = "⚠ 需管理员介入（2 次提醒未处理）"
+                else: mr_waiting += 1; label = "跟踪中"
+                mr_rows += f"<tr><td>{display}</td><td>{item['title'][:50]}</td><td><a href='{item['web_url']}'>#{item['iid']}</a></td><td>{item['days_open']}天</td><td>{label}</td></tr>"
 
-        mr_section = ""
-        if total_mr > 0:
-            mr_section = f"""<h3>超期 MR（{total_mr} 个）<span style="font-size:12px;font-weight:400;color:#666"> — 新增 {mr_new} 个，跟踪中 {mr_waiting} 个</span></h3>
-<table style="width:100%;border-collapse:collapse;font-size:13px;border:1px solid #e2e4ea;margin-bottom:20px">
+            iss_rows = ""
+            iss_new = iss_waiting = 0
+            for item in sorted(items["issue"], key=lambda x: -x["days_open"]):
+                display = _author_display(item.get("assignee_display", item.get("author", "")), mail_map)
+                status = item.get("status", "new")
+                if status == "new": iss_new += 1; label = "新增"
+                elif status == "max": label = "⚠ 需管理员介入（2 次提醒未处理）"
+                else: iss_waiting += 1; label = "跟踪中"
+                iss_rows += f"<tr><td>{item['title'][:50]}</td><td><a href='{item['web_url']}'>#{item['iid']}</a></td><td>{item['days_open']}天</td><td>{display}</td><td>{label}</td></tr>"
+
+            repo_section = f"<h3 style='margin-top:24px;border-bottom:1px solid #e2e4ea;padding-bottom:6px'>{repo} — MR {total_mr} 个 + Issue {total_iss} 个</h3>"
+
+            if total_mr > 0:
+                repo_section += f"""<h4>超期 MR<span style="font-size:12px;font-weight:400;color:#666"> — 新增 {mr_new} 个，跟踪中 {mr_waiting} 个</span></h4>
+<table style="width:100%;border-collapse:collapse;font-size:13px;border:1px solid #e2e4ea;margin-bottom:16px">
 <thead><tr style="background:#f0f2f5">
 <th style="padding:8px 10px;text-align:left">提交人</th><th style="padding:8px 10px;text-align:left">标题</th>
 <th style="padding:8px 10px;text-align:left">链接</th><th style="padding:8px 10px;text-align:center">工作天数</th>
 <th style="padding:8px 10px;text-align:center">状态</th>
 </tr></thead><tbody>{mr_rows}</tbody></table>"""
 
-        iss_section = ""
-        if total_iss > 0:
-            iss_section = f"""<h3>超期 Issue（{total_iss} 个）<span style="font-size:12px;font-weight:400;color:#666"> — 新增 {iss_new} 个，跟踪中 {iss_waiting} 个</span></h3>
-<table style="width:100%;border-collapse:collapse;font-size:13px;border:1px solid #e2e4ea">
+            if total_iss > 0:
+                repo_section += f"""<h4>超期 Issue<span style="font-size:12px;font-weight:400;color:#666"> — 新增 {iss_new} 个，跟踪中 {iss_waiting} 个</span></h4>
+<table style="width:100%;border-collapse:collapse;font-size:13px;border:1px solid #e2e4ea;margin-bottom:16px">
 <thead><tr style="background:#f0f2f5">
 <th style="padding:8px 10px;text-align:left">标题</th><th style="padding:8px 10px;text-align:left">链接</th>
 <th style="padding:8px 10px;text-align:center">工作天数</th>
@@ -206,27 +216,32 @@ def main():
 <th style="padding:8px 10px;text-align:center">状态</th>
 </tr></thead><tbody>{iss_rows}</tbody></table>"""
 
+            all_sections += repo_section
+
+        if not all_sections:
+            continue
+
+        repo_list = "、".join(repos)
         html = f"""<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:800px">
-<h2>超期汇总报告 - {repo}</h2>
-<p style="color:#666;font-size:13px">日期: {datetime.now().strftime('%Y-%m-%d')} | MR {total_mr} 个 + Issue {total_iss} 个</p>
-{iss_section}{mr_section}
+<h2>超期汇总报告</h2>
+<p style="color:#666;font-size:13px">日期: {datetime.now().strftime('%Y-%m-%d')} | 仓库: {repo_list} | 共 MR {total_mr_all} + Issue {total_iss_all}</p>
+{all_sections}
 <p style="color:#999;font-size:11px;margin-top:16px">CANN Radar 自动生成 · {CONTACT_INFO}</p></div>"""
 
         if args.dry_run:
-            cc_str = f" CC:{cc_addr}" if cc_addr else ""
-            print(f"  → {repo} → {admin_addr}{cc_str}: MR {total_mr} + Issue {total_iss} [dry-run]")
+            print(f"  → {admin_addr}: {len(repos)} 仓 (MR {total_mr_all} + Issue {total_iss_all}) [dry-run]")
         elif args.test:
             try:
-                send_one_email(smtp_cfg, args.test, f"[CANN] 超期汇总 - {repo}（MR {total_mr} + Issue {total_iss}）", html, cc_email=cc_addr if cc_addr else None)
-                print(f"  ✓ {repo} → {args.test} (CC: {cc_addr if cc_addr else '无'}): MR {total_mr} + Issue {total_iss}")
+                send_one_email(smtp_cfg, args.test, f"[CANN] 超期汇总 - {repo_list}（MR {total_mr_all} + Issue {total_iss_all}）", html)
+                print(f"  ✓ {args.test}: {len(repos)} 仓 → MR {total_mr_all} + Issue {total_iss_all}")
             except Exception as e:
-                print(f"  ✗ {repo} → {args.test}: {e}")
+                print(f"  ✗ {args.test}: {e}")
         else:
             try:
-                send_one_email(smtp_cfg, admin_addr, f"[CANN] 超期汇总 - {repo}（MR {total_mr} + Issue {total_iss}）", html, cc_email=cc_addr if cc_addr else None)
-                print(f"  ✓ {repo} → {admin_addr}" + (f" (CC: {cc_addr})" if cc_addr else "") + f": MR {total_mr} + Issue {total_iss}")
+                send_one_email(smtp_cfg, admin_addr, f"[CANN] 超期汇总 - {repo_list}（MR {total_mr_all} + Issue {total_iss_all}）", html)
+                print(f"  ✓ {admin_addr}: {len(repos)} 仓 → MR {total_mr_all} + Issue {total_iss_all}")
             except Exception as e:
-                print(f"  ✗ {repo} → {admin_addr}: {e}")
+                print(f"  ✗ {admin_addr}: {e}")
 
     return 0
 

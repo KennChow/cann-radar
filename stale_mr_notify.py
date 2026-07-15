@@ -117,7 +117,7 @@ def _author_display(author, mail_map):
 
 
 def load_repo_admin_map():
-    """返回 {repo_path: (admin_email, cc_email)}。"""
+    """返回 {repo_path: admin_email_string}。"""
     admin_map = {}
     if not REPOS_CONFIG_PATH.exists():
         return admin_map
@@ -126,9 +126,8 @@ def load_repo_admin_map():
     for repo in (config.get("repos") or []):
         path = repo.get("path", "")
         admin = repo.get("admin", "")
-        cc = repo.get("cc", "")
         if path and admin:
-            admin_map[path] = (admin, cc)
+            admin_map[path] = admin
     return admin_map
 
 
@@ -447,7 +446,7 @@ def send_one_email(cfg, to_email, subject, html_body, cc_email=None):
         smtp.sendmail(sender, recipients, msg.as_string())
 
 
-def _send_personal_emails(has_email_authors, smtp_cfg, notified_data, repo_admin_map, args):
+def _send_personal_emails(has_email_authors, smtp_cfg, notified_data, args):
     sent = 0
     failed = 0
     test_sent = False
@@ -596,7 +595,7 @@ def main():
 
     repo_admin_map = load_repo_admin_map()
     for repo in sorted(notify_paths):
-        if repo not in repo_admin_map or not repo_admin_map[repo][0]:
+        if repo not in repo_admin_map or not repo_admin_map[repo]:
             print(f"  ⚠ {repo} 已启用 notify 但未配置 admin，将不发送汇总报告")
 
     stale_by_author, stats = scan_stale_mrs(
@@ -652,9 +651,8 @@ def main():
     if not has_email_authors:
         print("  （无有邮箱的开发者，跳过个人通知）")
     else:
-        repo_admin_map = load_repo_admin_map()
         sent, failed = _send_personal_emails(
-            has_email_authors, smtp_cfg, notified_data, repo_admin_map, args,
+            has_email_authors, smtp_cfg, notified_data, args,
         )
     if sent > 0 and not args.dry_run:
         notified_changed = True
