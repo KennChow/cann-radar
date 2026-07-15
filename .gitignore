@@ -16,9 +16,6 @@ config/gitcode_2_mail.txt
 # SMTP 发送配置（敏感数据，通过 CI Secret / 私有仓注入）
 config/smtp_config.ini
 
-# 管理员邮箱（敏感数据，通过 CI Secret / 私有仓注入）
-config/admin_email.txt
-
 # GitCode API Token（敏感数据，通过 CI Secret / 私有仓注入）
 config/gitcode_token.txt
 
