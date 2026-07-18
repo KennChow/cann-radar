@@ -1,5 +1,25 @@
 [
   {
+    "iid": 443,
+    "state": "opened",
+    "draft": false,
+    "title": "[fix] 修复 GMM 专家权重分片融合顺序",
+    "created_at": "2026-07-18",
+    "updated_at": "2026-07-18",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "xuyujun",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/443",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "85"
+    ]
+  },
+  {
     "iid": 442,
     "state": "opened",
     "draft": false,
@@ -36,17 +56,19 @@
   },
   {
     "iid": 440,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[fix] Prevent DSV4 P2P compile memory leak",
     "created_at": "2026-07-17",
-    "updated_at": "2026-07-17",
-    "merged_at": "",
+    "updated_at": "2026-07-18",
+    "merged_at": "2026-07-18",
     "closed_at": "",
     "author": "xuyujun",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/440",
     "labels": [
       "ci-pipeline-passed",
+      "approved",
+      "lgtm",
       "cann-cla/yes"
     ],
     "working_days_open": 1,
@@ -129,7 +151,7 @@
     "draft": false,
     "title": "[refactor]修改dsv3和dsv32的配置,增加单机性能等效裁剪模型，统一配置项名字，删除未使用的配置",
     "created_at": "2026-07-16",
-    "updated_at": "2026-07-17",
+    "updated_at": "2026-07-18",
     "merged_at": "",
     "closed_at": "",
     "author": "roadnotstop",
@@ -260,7 +282,7 @@
     "draft": false,
     "title": "[fix] (deepseek-v4): skip CP-hooked and DTensor-op modules from torch.compile",
     "created_at": "2026-07-14",
-    "updated_at": "2026-07-17",
+    "updated_at": "2026-07-18",
     "merged_at": "",
     "closed_at": "",
     "author": "weixin_69877254",
@@ -273,17 +295,19 @@
   },
   {
     "iid": 427,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[refactor] remove dsv4-sft config and migrate to CLI",
     "created_at": "2026-07-13",
-    "updated_at": "2026-07-17",
-    "merged_at": "",
+    "updated_at": "2026-07-18",
+    "merged_at": "2026-07-18",
     "closed_at": "",
     "author": "zzyyjj012",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/427",
     "labels": [
-      "ci-pipeline-failed",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm",
       "cann-cla/yes",
       "stat/needs-squash"
     ],
@@ -318,7 +342,7 @@
     "draft": false,
     "title": "[fix] (deepseek-v4) apply SwiGLU clamp to shared expert",
     "created_at": "2026-07-13",
-    "updated_at": "2026-07-17",
+    "updated_at": "2026-07-18",
     "merged_at": "",
     "closed_at": "",
     "author": "zcklllyao",

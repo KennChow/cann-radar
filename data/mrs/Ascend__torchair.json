@@ -1,36 +1,57 @@
 [
   {
+    "iid": 3414,
+    "state": "merged",
+    "draft": false,
+    "title": "fix: block matmul shared input cv fusion",
+    "created_at": "2026-07-18",
+    "updated_at": "2026-07-18",
+    "merged_at": "2026-07-18",
+    "closed_at": "",
+    "author": "ling-DT",
+    "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3414",
+    "labels": [
+      "approved",
+      "lgtm",
+      "ascend-cla/yes",
+      "stat/needs-squash",
+      "docs-ci-pipeline-success",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 3413,
     "state": "opened",
     "draft": false,
     "title": "feat: 实现自定义算子自动回调系统",
     "created_at": "2026-07-17",
-    "updated_at": "2026-07-17",
+    "updated_at": "2026-07-18",
     "merged_at": "",
     "closed_at": "",
     "author": "yuht9",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3413",
     "labels": [
       "ascend-cla/yes",
-      "smoke-pipeline-passed",
-      "ci-pipeline-failed"
+      "docs-ci-pipeline-success",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
   },
   {
     "iid": 3412,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "add duration for codegen&&compile",
     "created_at": "2026-07-17",
-    "updated_at": "2026-07-17",
+    "updated_at": "2026-07-18",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-18",
     "author": "j18351891940",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3412",
     "labels": [
-      "smoke-pipeline-passed",
       "ascend-cla/yes",
       "docs-ci-pipeline-success"
     ],
@@ -80,16 +101,18 @@
   },
   {
     "iid": 3409,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix(docs): add the english documents",
     "created_at": "2026-07-17",
-    "updated_at": "2026-07-17",
-    "merged_at": "",
+    "updated_at": "2026-07-18",
+    "merged_at": "2026-07-18",
     "closed_at": "",
     "author": "lyz0328",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3409",
     "labels": [
+      "approved",
+      "lgtm",
       "ci-pipeline-passed",
       "stat/needs-squash",
       "docs-ci-pipeline-success",
@@ -184,7 +207,7 @@
     "draft": false,
     "title": "insert broadcast after scalar in asc_graph",
     "created_at": "2026-07-16",
-    "updated_at": "2026-07-17",
+    "updated_at": "2026-07-18",
     "merged_at": "",
     "closed_at": "",
     "author": "dingdairong",
@@ -192,7 +215,8 @@
     "labels": [
       "stat/needs-squash",
       "docs-ci-pipeline-success",
-      "ascend-cla/yes"
+      "ascend-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -203,7 +227,7 @@
     "draft": false,
     "title": "屏蔽W0102 W0401等pre-commit问题",
     "created_at": "2026-07-16",
-    "updated_at": "2026-07-17",
+    "updated_at": "2026-07-18",
     "merged_at": "",
     "closed_at": "",
     "author": "feng_zhenqiang",
@@ -560,14 +584,14 @@
     "draft": false,
     "title": "gmm支持shape维度带1",
     "created_at": "2026-07-14",
-    "updated_at": "2026-07-15",
+    "updated_at": "2026-07-18",
     "merged_at": "",
     "closed_at": "",
     "author": "zhoushaolong",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3385",
     "labels": [
-      "stat/needs-squash",
       "docs-ci-pipeline-success",
+      "stat/needs-squash",
       "ascend-cla/yes"
     ],
     "working_days_open": 4,
@@ -825,14 +849,14 @@
     "draft": false,
     "title": "convert_npu_sparse_flash_attention接口增加可选参数sinks",
     "created_at": "2026-07-13",
-    "updated_at": "2026-07-13",
+    "updated_at": "2026-07-18",
     "merged_at": "",
     "closed_at": "",
     "author": "qq_48757028",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3372",
     "labels": [
-      "ascend-cla/yes",
-      "docs-ci-pipeline-success"
+      "docs-ci-pipeline-success",
+      "ascend-cla/yes"
     ],
     "working_days_open": 5,
     "e2e_issues": []

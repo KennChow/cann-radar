@@ -1,5 +1,44 @@
 [
   {
+    "iid": 780,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 新增 cann-toolkit-installer skill 支持 Toolkit 与 ops 安装",
+    "created_at": "2026-07-18",
+    "updated_at": "2026-07-18",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "M__Cheng",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/780",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 779,
+    "state": "merged",
+    "draft": false,
+    "title": "[docs]补充soc_name与芯片型号的对应关系",
+    "created_at": "2026-07-18",
+    "updated_at": "2026-07-18",
+    "merged_at": "2026-07-18",
+    "closed_at": "",
+    "author": "M__Cheng",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/779",
+    "labels": [
+      "lgtm",
+      "approved",
+      "cann-cla/yes",
+      "api-check-pass",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 778,
     "state": "merged",
     "draft": false,
@@ -256,14 +295,12 @@
     "draft": true,
     "title": "WIP: feat: FabricMem AICPU unfold with NotifyRecord completion",
     "created_at": "2026-07-13",
-    "updated_at": "2026-07-17",
+    "updated_at": "2026-07-18",
     "merged_at": "",
     "closed_at": "",
     "author": "youyx",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/766",
     "labels": [
-      "ci-pipeline-passed",
-      "api-check-pass",
       "cann-cla/yes"
     ],
     "working_days_open": 5,
