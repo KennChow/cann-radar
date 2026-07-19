@@ -23,15 +23,15 @@
     "draft": false,
     "title": "【PR】:  sync develop to master 20260718",
     "created_at": "2026-07-18",
-    "updated_at": "2026-07-18",
+    "updated_at": "2026-07-19",
     "merged_at": "",
     "closed_at": "",
     "author": "zhanj",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4068",
     "labels": [
+      "ci-pipeline-passed",
       "stat/needs-squash",
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "cann-cla/yes"
     ],
     "working_days_open": 0,
     "e2e_issues": []
@@ -81,12 +81,13 @@
     "draft": false,
     "title": "feat:重构声明式地址刷新自定义算子的workspace地址两段式申请逻辑",
     "created_at": "2026-07-18",
-    "updated_at": "2026-07-18",
+    "updated_at": "2026-07-19",
     "merged_at": "",
     "closed_at": "",
     "author": "Chang-an-HW",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4065",
     "labels": [
+      "stat/needs-squash",
       "ci-pipeline-failed",
       "enhancement",
       "cann-cla/yes"
@@ -316,7 +317,7 @@
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-07-17",
-    "updated_at": "2026-07-18",
+    "updated_at": "2026-07-19",
     "merged_at": "",
     "closed_at": "",
     "author": "wang-bin-789",
@@ -355,14 +356,14 @@
     "draft": false,
     "title": "fix: 修复 G.FUN.02-CPP 参数名一致性告警",
     "created_at": "2026-07-17",
-    "updated_at": "2026-07-18",
+    "updated_at": "2026-07-19",
     "merged_at": "",
     "closed_at": "",
     "author": "Chang-an-HW",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4051",
     "labels": [
-      "ci-pipeline-passed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -1059,15 +1060,14 @@
     "iid": 4016,
     "state": "opened",
     "draft": false,
-    "title": "fix: 修复 tiny包 custom_op_runtime 安装及 stub 符号缺失",
+    "title": "fix: 修复Python自定义算子未初始化、动态加载后退出崩溃",
     "created_at": "2026-07-15",
-    "updated_at": "2026-07-16",
+    "updated_at": "2026-07-19",
     "merged_at": "",
     "closed_at": "",
     "author": "du-hua1024",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4016",
     "labels": [
-      "stat/needs-squash",
       "cann-cla/yes",
       "enhancement"
     ],
@@ -37777,13 +37777,13 @@
   },
   {
     "iid": 2182,
-    "state": "closed",
+    "state": "opened",
     "draft": true,
     "title": "[WIP] 穿刺使用",
     "created_at": "2026-04-22",
-    "updated_at": "2026-07-04",
+    "updated_at": "2026-07-19",
     "merged_at": "",
-    "closed_at": "2026-07-04",
+    "closed_at": "",
     "author": "kantao1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/2182",
     "labels": [
