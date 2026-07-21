@@ -1,5 +1,23 @@
 [
   {
+    "iid": "88",
+    "state": "opened",
+    "created_at": "2026-07-21",
+    "closed_at": "",
+    "author": "xuyujun",
+    "author_id": "68a80e4b0f9a7255ef78a02b",
+    "title": "[揭榜挑战][S2] DeepSeek V4 Router gate 未使用 FP32 autocast",
+    "labels": [
+      "good-first-issue"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/88",
+    "working_days_open": 1
+  },
+  {
     "iid": "87",
     "state": "closed",
     "created_at": "2026-07-20",
@@ -17,7 +35,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/87",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "86",
@@ -27,15 +45,13 @@
     "author": "pan-boyi",
     "author_id": "6822d571e4b985165b4b0b6e",
     "title": "# [RFC] 使用 PyPTO 实现 Lightning-Indexer 正反向算子",
-    "labels": [
-      "RFC"
-    ],
+    "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/86",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "85",
@@ -56,7 +72,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/85",
-    "working_days_open": 2
+    "working_days_open": 3
   },
   {
     "iid": "84",
@@ -77,7 +93,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/84",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "83",
@@ -87,9 +103,7 @@
     "author": "rui-zhang",
     "author_id": "6863392b543b5b402354189d",
     "title": "[RFC] DeepSeek-V4 mHC、SparseFlashMLA 与 LightningIndexer AscendC 融合算子 TND 支持",
-    "labels": [
-      "RFC"
-    ],
+    "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [
@@ -97,7 +111,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/83",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "82",
@@ -107,9 +121,7 @@
     "author": "zhuofanshen",
     "author_id": "68c8c4b6bf2bee2835bd0bcd",
     "title": "[RFC] 支持使用 torchao 进行 DeepSeek-V4 模型的 MxFP8 量化预训练",
-    "labels": [
-      "RFC"
-    ],
+    "labels": [],
     "issue_type": "文档",
     "issue_state": "进行中",
     "assignees": [
@@ -117,7 +129,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/82",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "81",
@@ -127,9 +139,7 @@
     "author": "panchao-gitcode",
     "author_id": "68ca1485f1b86600ff863404",
     "title": "[RFC] Experimental VLM Training Support on Ascend NPU",
-    "labels": [
-      "RFC"
-    ],
+    "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [
@@ -137,7 +147,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/81",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "80",
@@ -147,9 +157,7 @@
     "author": "caoshuyang",
     "author_id": "69f3065ce86a354be62004cb",
     "title": "[RFC]支持DeepSeek V4 QAT的权重侧的实现",
-    "labels": [
-      "RFC"
-    ],
+    "labels": [],
     "issue_type": "需求",
     "issue_state": "待办的",
     "assignees": [
@@ -157,7 +165,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/80",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "79",
@@ -177,7 +185,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/79",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "78",
@@ -195,7 +203,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/78",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "77",
@@ -215,27 +223,28 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/77",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "76",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-07-10",
-    "closed_at": "",
+    "closed_at": "2026-07-21",
     "author": "xuyujun",
     "author_id": "68a80e4b0f9a7255ef78a02b",
     "title": "[揭榜挑战][S1] DeepSeek V4 共享专家缺少 SwiGLU clamp 导致数值语义与 Hugging Face 不一致",
     "labels": [
+      "resolved",
       "good-first-issue"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/76",
-    "working_days_open": 7
+    "working_days_open": 8
   },
   {
     "iid": "75",
@@ -255,7 +264,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/75",
-    "working_days_open": 8
+    "working_days_open": 9
   },
   {
     "iid": "74",
@@ -275,7 +284,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/74",
-    "working_days_open": 9
+    "working_days_open": 10
   },
   {
     "iid": "73",
@@ -285,9 +294,7 @@
     "author": "depeng1994",
     "author_id": "682c3715d3ca53650aa6eafb",
     "title": "RFC: Config Registry 精简与 Examples 启动入口治理",
-    "labels": [
-      "RFC"
-    ],
+    "labels": [],
     "issue_type": "需求",
     "issue_state": "待办的",
     "assignees": [
@@ -295,7 +302,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/73",
-    "working_days_open": 12
+    "working_days_open": 13
   },
   {
     "iid": "72",
@@ -316,7 +323,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/72",
-    "working_days_open": 12
+    "working_days_open": 13
   },
   {
     "iid": "71",
@@ -326,9 +333,7 @@
     "author": "zzyyjj012",
     "author_id": "68e764f855cfdd7902bb2bff",
     "title": "[RFC] 支持 DeepSeek-V4 / Qwen3 模型 SFT，支持多轮对话",
-    "labels": [
-      "RFC"
-    ],
+    "labels": [],
     "issue_type": "文档",
     "issue_state": "进行中",
     "assignees": [
@@ -336,7 +341,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/71",
-    "working_days_open": 12
+    "working_days_open": 13
   },
   {
     "iid": "70",
@@ -354,7 +359,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/70",
-    "working_days_open": 13
+    "working_days_open": 14
   },
   {
     "iid": "69",
@@ -372,7 +377,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/69",
-    "working_days_open": 14
+    "working_days_open": 15
   },
   {
     "iid": "68",
@@ -390,7 +395,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/68",
-    "working_days_open": 14
+    "working_days_open": 15
   },
   {
     "iid": "67",
@@ -411,7 +416,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/67",
-    "working_days_open": 16
+    "working_days_open": 17
   },
   {
     "iid": "66",
@@ -430,7 +435,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/66",
-    "working_days_open": 16
+    "working_days_open": 17
   },
   {
     "iid": "65",
@@ -446,7 +451,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/65",
-    "working_days_open": 16
+    "working_days_open": 17
   },
   {
     "iid": "64",
@@ -464,27 +469,28 @@
     "assignees": [],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/64",
-    "working_days_open": 17
+    "working_days_open": 18
   },
   {
     "iid": "63",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-26",
-    "closed_at": "",
+    "closed_at": "2026-07-21",
     "author": "liuyuanchen1",
     "author_id": "68da801fa3c0221fe7931e07",
     "title": "[揭榜挑战] NPU fused matmul-reduce-scatter 忽略入参 reduce_op，硬编码 \"sum\"",
     "labels": [
-      "good-first-issue"
+      "good-first-issue",
+      "resolved"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "liuyuanchen1"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/63",
-    "working_days_open": 17
+    "working_days_open": 18
   },
   {
     "iid": "62",
@@ -504,7 +510,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/62",
-    "working_days_open": 17
+    "working_days_open": 18
   },
   {
     "iid": "61",
@@ -525,7 +531,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/61",
-    "working_days_open": 17
+    "working_days_open": 18
   },
   {
     "iid": "60",
@@ -545,7 +551,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/60",
-    "working_days_open": 17
+    "working_days_open": 18
   },
   {
     "iid": "59",
@@ -566,7 +572,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/59",
-    "working_days_open": 17
+    "working_days_open": 18
   },
   {
     "iid": "58",
@@ -586,7 +592,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/58",
-    "working_days_open": 24
+    "working_days_open": 25
   },
   {
     "iid": "57",
@@ -605,7 +611,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/57",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
     "iid": "56",
@@ -623,7 +629,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/56",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
     "iid": "55",
@@ -643,7 +649,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/55",
-    "working_days_open": 29
+    "working_days_open": 30
   },
   {
     "iid": "54",
@@ -661,7 +667,7 @@
     ],
     "user_notes_count": 6,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/54",
-    "working_days_open": 29
+    "working_days_open": 30
   },
   {
     "iid": "53",
@@ -679,7 +685,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/53",
-    "working_days_open": 29
+    "working_days_open": 30
   },
   {
     "iid": "52",
@@ -700,7 +706,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/52",
-    "working_days_open": 31
+    "working_days_open": 32
   },
   {
     "iid": "51",
@@ -716,7 +722,7 @@
     "assignees": [],
     "user_notes_count": 10,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/51",
-    "working_days_open": 31
+    "working_days_open": 32
   },
   {
     "iid": "50",
@@ -732,7 +738,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/50",
-    "working_days_open": 31
+    "working_days_open": 32
   },
   {
     "iid": "49",
@@ -750,7 +756,7 @@
     "assignees": [],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/49",
-    "working_days_open": 32
+    "working_days_open": 33
   },
   {
     "iid": "48",
@@ -766,7 +772,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/48",
-    "working_days_open": 32
+    "working_days_open": 33
   },
   {
     "iid": "47",
@@ -786,7 +792,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/47",
-    "working_days_open": 34
+    "working_days_open": 35
   },
   {
     "iid": "46",
@@ -804,7 +810,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/46",
-    "working_days_open": 34
+    "working_days_open": 35
   },
   {
     "iid": "45",
@@ -824,7 +830,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/45",
-    "working_days_open": 34
+    "working_days_open": 35
   },
   {
     "iid": "44",
@@ -840,7 +846,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/44",
-    "working_days_open": 35
+    "working_days_open": 36
   },
   {
     "iid": "43",
@@ -860,7 +866,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/43",
-    "working_days_open": 35
+    "working_days_open": 36
   },
   {
     "iid": "42",
@@ -880,7 +886,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/42",
-    "working_days_open": 36
+    "working_days_open": 37
   },
   {
     "iid": "41",
@@ -898,7 +904,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/41",
-    "working_days_open": 36
+    "working_days_open": 37
   },
   {
     "iid": "40",
@@ -919,7 +925,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/40",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "39",
@@ -935,7 +941,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/39",
-    "working_days_open": 38
+    "working_days_open": 39
   },
   {
     "iid": "38",
@@ -955,7 +961,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/38",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "37",
@@ -973,7 +979,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/37",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "36",
@@ -993,7 +999,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/36",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "35",
@@ -1009,7 +1015,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/35",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "34",
@@ -1030,7 +1036,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/34",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "33",
@@ -1048,7 +1054,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/33",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "32",
@@ -1066,7 +1072,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/32",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "31",
@@ -1086,7 +1092,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/31",
-    "working_days_open": 42
+    "working_days_open": 43
   },
   {
     "iid": "30",
@@ -1104,7 +1110,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/30",
-    "working_days_open": 42
+    "working_days_open": 43
   },
   {
     "iid": "29",
@@ -1122,7 +1128,7 @@
     "assignees": [],
     "user_notes_count": 8,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/29",
-    "working_days_open": 42
+    "working_days_open": 43
   },
   {
     "iid": "28",
@@ -1138,7 +1144,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/28",
-    "working_days_open": 45
+    "working_days_open": 46
   },
   {
     "iid": "27",
@@ -1156,7 +1162,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/27",
-    "working_days_open": 45
+    "working_days_open": 46
   },
   {
     "iid": "26",
@@ -1174,7 +1180,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/26",
-    "working_days_open": 46
+    "working_days_open": 47
   },
   {
     "iid": "25",
@@ -1195,7 +1201,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/25",
-    "working_days_open": 48
+    "working_days_open": 49
   },
   {
     "iid": "24",
@@ -1213,7 +1219,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/24",
-    "working_days_open": 49
+    "working_days_open": 50
   },
   {
     "iid": "23",
@@ -1231,7 +1237,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/23",
-    "working_days_open": 49
+    "working_days_open": 50
   },
   {
     "iid": "22",
@@ -1247,7 +1253,7 @@
     "assignees": [],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/22",
-    "working_days_open": 50
+    "working_days_open": 51
   },
   {
     "iid": "21",
@@ -1268,7 +1274,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/21",
-    "working_days_open": 50
+    "working_days_open": 51
   },
   {
     "iid": "20",
@@ -1288,7 +1294,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/20",
-    "working_days_open": 50
+    "working_days_open": 51
   },
   {
     "iid": "19",
@@ -1304,7 +1310,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/19",
-    "working_days_open": 51
+    "working_days_open": 52
   },
   {
     "iid": "18",
@@ -1322,7 +1328,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/18",
-    "working_days_open": 51
+    "working_days_open": 52
   },
   {
     "iid": "17",
@@ -1343,7 +1349,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/17",
-    "working_days_open": 52
+    "working_days_open": 53
   },
   {
     "iid": "16",
@@ -1361,7 +1367,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/16",
-    "working_days_open": 55
+    "working_days_open": 56
   },
   {
     "iid": "15",
@@ -1381,7 +1387,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/15",
-    "working_days_open": 57
+    "working_days_open": 58
   },
   {
     "iid": "14",
@@ -1403,7 +1409,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/14",
-    "working_days_open": 57
+    "working_days_open": 58
   },
   {
     "iid": "13",
@@ -1423,7 +1429,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/13",
-    "working_days_open": 57
+    "working_days_open": 58
   },
   {
     "iid": "12",
@@ -1443,7 +1449,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/12",
-    "working_days_open": 57
+    "working_days_open": 58
   },
   {
     "iid": "11",
@@ -1463,7 +1469,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/11",
-    "working_days_open": 57
+    "working_days_open": 58
   },
   {
     "iid": "10",
@@ -1483,7 +1489,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/10",
-    "working_days_open": 57
+    "working_days_open": 58
   },
   {
     "iid": "9",
@@ -1501,7 +1507,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/9",
-    "working_days_open": 58
+    "working_days_open": 59
   },
   {
     "iid": "8",
@@ -1521,7 +1527,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/8",
-    "working_days_open": 58
+    "working_days_open": 59
   },
   {
     "iid": "7",
@@ -1539,7 +1545,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/7",
-    "working_days_open": 59
+    "working_days_open": 60
   },
   {
     "iid": "6",
@@ -1559,7 +1565,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/6",
-    "working_days_open": 60
+    "working_days_open": 61
   },
   {
     "iid": "5",
@@ -1577,7 +1583,7 @@
     "assignees": [],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/5",
-    "working_days_open": 70
+    "working_days_open": 71
   },
   {
     "iid": "4",
@@ -1593,7 +1599,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/4",
-    "working_days_open": 104
+    "working_days_open": 105
   },
   {
     "iid": "3",
@@ -1609,7 +1615,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/3",
-    "working_days_open": 108
+    "working_days_open": 109
   },
   {
     "iid": "2",
@@ -1627,7 +1633,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/2",
-    "working_days_open": 113
+    "working_days_open": 114
   },
   {
     "iid": "1",
@@ -1647,6 +1653,6 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/1",
-    "working_days_open": 117
+    "working_days_open": 118
   }
 ]

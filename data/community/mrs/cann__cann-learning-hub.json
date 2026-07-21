@@ -1,5 +1,234 @@
 [
   {
+    "iid": 391,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: add data structures compute 03_graph",
+    "created_at": "2026-07-21",
+    "updated_at": "2026-07-21",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "ustc_sa25",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/391",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 390,
+    "state": "merged",
+    "draft": false,
+    "title": "fix problems with setup environment",
+    "created_at": "2026-07-21",
+    "updated_at": "2026-07-21",
+    "merged_at": "2026-07-21",
+    "closed_at": "",
+    "author": "mystri",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/390",
+    "labels": [
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 389,
+    "state": "merged",
+    "draft": false,
+    "title": "fix: 修复notebook目录返回问题",
+    "created_at": "2026-07-21",
+    "updated_at": "2026-07-21",
+    "merged_at": "2026-07-21",
+    "closed_at": "",
+    "author": "ink_polymer",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/389",
+    "labels": [
+      "cann-cla/yes",
+      "lgtm",
+      "approved"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 388,
+    "state": "opened",
+    "draft": false,
+    "title": "修复first_custom_operator.ipynb中3.11的错误，错误的将核函数代码对应的3.4章节索引写作2.4，导致找不到add_bak.asc的问题",
+    "created_at": "2026-07-21",
+    "updated_at": "2026-07-21",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "dlaerbinjwy",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/388",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 387,
+    "state": "merged",
+    "draft": false,
+    "title": "fix: update notebooks in chapter 06",
+    "created_at": "2026-07-21",
+    "updated_at": "2026-07-21",
+    "merged_at": "2026-07-21",
+    "closed_at": "",
+    "author": "ink_polymer",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/387",
+    "labels": [
+      "cann-cla/yes",
+      "lgtm",
+      "approved"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "178"
+    ]
+  },
+  {
+    "iid": 386,
+    "state": "opened",
+    "draft": false,
+    "title": "update: 补充 Matmul 教程的 README.md",
+    "created_at": "2026-07-21",
+    "updated_at": "2026-07-21",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhengyifei",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/386",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "174"
+    ]
+  },
+  {
+    "iid": 385,
+    "state": "merged",
+    "draft": false,
+    "title": "updated sft problmes",
+    "created_at": "2026-07-21",
+    "updated_at": "2026-07-21",
+    "merged_at": "2026-07-21",
+    "closed_at": "",
+    "author": "mystri",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/385",
+    "labels": [
+      "ci-pipeline-passed",
+      "lgtm",
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "approved"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 384,
+    "state": "opened",
+    "draft": false,
+    "title": "修正Bias矩阵形状",
+    "created_at": "2026-07-21",
+    "updated_at": "2026-07-21",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_DS4cmz2b",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/384",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 383,
+    "state": "opened",
+    "draft": false,
+    "title": "修正Bias矩阵的形状",
+    "created_at": "2026-07-21",
+    "updated_at": "2026-07-21",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_DS4cmz2b",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/383",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 382,
+    "state": "merged",
+    "draft": false,
+    "title": "docs(ge): 02.02 编译传 soc_version 并补 README 软硬件/在线体验环境",
+    "created_at": "2026-07-21",
+    "updated_at": "2026-07-21",
+    "merged_at": "2026-07-21",
+    "closed_at": "",
+    "author": "KenChow",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/382",
+    "labels": [
+      "approved",
+      "lgtm",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 381,
+    "state": "merged",
+    "draft": false,
+    "title": "修改文档返回问题",
+    "created_at": "2026-07-21",
+    "updated_at": "2026-07-21",
+    "merged_at": "2026-07-21",
+    "closed_at": "",
+    "author": "ink_polymer",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/381",
+    "labels": [
+      "lgtm",
+      "cann-cla/yes",
+      "approved"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 380,
+    "state": "merged",
+    "draft": false,
+    "title": "修改notebook目录返回问题",
+    "created_at": "2026-07-21",
+    "updated_at": "2026-07-21",
+    "merged_at": "2026-07-21",
+    "closed_at": "",
+    "author": "ink_polymer",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/380",
+    "labels": [
+      "approved",
+      "lgtm",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "175"
+    ]
+  },
+  {
     "iid": 379,
     "state": "merged",
     "draft": false,
@@ -16,7 +245,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -33,7 +262,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -50,7 +279,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -68,7 +297,7 @@
       "stat/needs-squash",
       "cann-cla/no"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -88,7 +317,7 @@
       "lgtm",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -108,7 +337,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -126,7 +355,7 @@
       "cann-cla/no",
       "stat/needs-squash"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -143,7 +372,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -152,7 +381,7 @@
     "draft": false,
     "title": "修正02_what_is_npu.ipynb的格式错误，其中第8节的表格，Cube unit）缺乏（，修复为（Cube unit）",
     "created_at": "2026-07-20",
-    "updated_at": "2026-07-20",
+    "updated_at": "2026-07-21",
     "merged_at": "",
     "closed_at": "",
     "author": "dlaerbinjwy",
@@ -161,7 +390,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -179,7 +408,7 @@
       "stat/needs-squash",
       "cann-cla/no"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -196,7 +425,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -213,7 +442,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -231,7 +460,7 @@
       "cann-cla/no",
       "stat/needs-squash"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -248,25 +477,28 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
     "iid": 365,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "updated sft and rl tutorial",
     "created_at": "2026-07-20",
-    "updated_at": "2026-07-20",
-    "merged_at": "",
+    "updated_at": "2026-07-21",
+    "merged_at": "2026-07-21",
     "closed_at": "",
     "author": "mystri",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/365",
     "labels": [
       "cann-cla/yes",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "approved",
+      "lgtm",
+      "ci-pipeline-passed"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -281,7 +513,7 @@
     "author": "mystri",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/364",
     "labels": [],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -301,7 +533,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -321,7 +553,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": [
       "87",
       "171"
@@ -333,7 +565,7 @@
     "draft": false,
     "title": "feat: add data structures compute ReduceLab course",
     "created_at": "2026-07-19",
-    "updated_at": "2026-07-20",
+    "updated_at": "2026-07-21",
     "merged_at": "",
     "closed_at": "",
     "author": "m0_74153744",
@@ -341,7 +573,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -358,7 +590,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -378,7 +610,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": []
   },
   {
@@ -397,7 +629,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": []
   },
   {
@@ -417,7 +649,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": [
       "87",
       "171"
@@ -435,7 +667,7 @@
     "author": "ink_polymer",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/356",
     "labels": [],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": []
   },
   {
@@ -453,7 +685,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": []
   },
   {
@@ -471,7 +703,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": []
   },
   {
@@ -490,7 +722,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": []
   },
   {
@@ -509,7 +741,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": []
   },
   {
@@ -529,7 +761,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": []
   },
   {
@@ -538,15 +770,17 @@
     "draft": false,
     "title": "修复vector课程中SIMD部分用例代码和指令的错误",
     "created_at": "2026-07-17",
-    "updated_at": "2026-07-17",
+    "updated_at": "2026-07-21",
     "merged_at": "",
     "closed_at": "",
     "author": "LuckySun",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/350",
     "labels": [
+      "approved",
+      "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": []
   },
   {
@@ -555,7 +789,7 @@
     "draft": false,
     "title": "关于《第2章 Ascend C算子开发基础知识》的修改意见",
     "created_at": "2026-07-17",
-    "updated_at": "2026-07-17",
+    "updated_at": "2026-07-21",
     "merged_at": "",
     "closed_at": "",
     "author": "Hacker_DL",
@@ -564,7 +798,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": [
       "172"
     ]
@@ -585,7 +819,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": []
   },
   {
@@ -603,7 +837,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": [
       "172"
     ]
@@ -625,7 +859,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": []
   },
   {
@@ -643,7 +877,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": []
   },
   {
@@ -661,7 +895,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 3,
+    "working_days_open": 4,
     "e2e_issues": []
   },
   {
@@ -679,7 +913,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 3,
+    "working_days_open": 4,
     "e2e_issues": []
   },
   {
@@ -697,7 +931,7 @@
       "cann-cla/no",
       "stat/needs-squash"
     ],
-    "working_days_open": 3,
+    "working_days_open": 4,
     "e2e_issues": [
       "87",
       "171"
@@ -709,7 +943,7 @@
     "draft": false,
     "title": "新增simd&simt混合编程实践",
     "created_at": "2026-07-16",
-    "updated_at": "2026-07-16",
+    "updated_at": "2026-07-21",
     "merged_at": "",
     "closed_at": "",
     "author": "shaonaite",
@@ -717,7 +951,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 3,
+    "working_days_open": 4,
     "e2e_issues": []
   },
   {
@@ -736,7 +970,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 3,
+    "working_days_open": 4,
     "e2e_issues": [
       "146",
       "139",
@@ -760,7 +994,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 3,
+    "working_days_open": 4,
     "e2e_issues": []
   },
   {
@@ -778,7 +1012,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 3,
+    "working_days_open": 4,
     "e2e_issues": []
   },
   {
@@ -795,7 +1029,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 4,
+    "working_days_open": 5,
     "e2e_issues": []
   },
   {
@@ -815,7 +1049,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 4,
+    "working_days_open": 5,
     "e2e_issues": []
   },
   {
@@ -833,7 +1067,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 4,
+    "working_days_open": 5,
     "e2e_issues": []
   },
   {
@@ -852,7 +1086,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 4,
+    "working_days_open": 5,
     "e2e_issues": []
   },
   {
@@ -869,7 +1103,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 5,
+    "working_days_open": 6,
     "e2e_issues": []
   },
   {
@@ -886,7 +1120,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 5,
+    "working_days_open": 6,
     "e2e_issues": []
   },
   {
@@ -905,7 +1139,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 5,
+    "working_days_open": 6,
     "e2e_issues": []
   },
   {
@@ -925,7 +1159,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 5,
+    "working_days_open": 6,
     "e2e_issues": []
   },
   {
@@ -943,7 +1177,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 5,
+    "working_days_open": 6,
     "e2e_issues": []
   },
   {
@@ -960,7 +1194,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 5,
+    "working_days_open": 6,
     "e2e_issues": []
   },
   {
@@ -977,7 +1211,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 5,
+    "working_days_open": 6,
     "e2e_issues": []
   },
   {
@@ -994,24 +1228,27 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 5,
+    "working_days_open": 6,
     "e2e_issues": []
   },
   {
     "iid": 325,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "c api入门课程检视意见修改",
     "created_at": "2026-07-13",
-    "updated_at": "2026-07-20",
-    "merged_at": "",
+    "updated_at": "2026-07-21",
+    "merged_at": "2026-07-21",
     "closed_at": "",
     "author": "pangfd",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/325",
     "labels": [
+      "approved",
+      "lgtm",
+      "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 6,
+    "working_days_open": 7,
     "e2e_issues": []
   },
   {
@@ -1032,7 +1269,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 6,
+    "working_days_open": 7,
     "e2e_issues": []
   },
   {
@@ -1051,7 +1288,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 6,
+    "working_days_open": 7,
     "e2e_issues": []
   },
   {
@@ -1072,7 +1309,7 @@
       "ci-pipeline-failed",
       "lgtm"
     ],
-    "working_days_open": 6,
+    "working_days_open": 7,
     "e2e_issues": []
   },
   {
@@ -1092,7 +1329,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 6,
+    "working_days_open": 7,
     "e2e_issues": []
   },
   {
@@ -1111,26 +1348,26 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 6,
+    "working_days_open": 7,
     "e2e_issues": [
       "158"
     ]
   },
   {
     "iid": 319,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix pytorch bug",
     "created_at": "2026-07-11",
-    "updated_at": "2026-07-11",
+    "updated_at": "2026-07-21",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-21",
     "author": "YANXI_ZHAO",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/319",
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 6,
+    "working_days_open": 7,
     "e2e_issues": []
   },
   {
@@ -1139,15 +1376,15 @@
     "draft": false,
     "title": "feat: 北林数据结构-课内实验2-基于平衡二叉树的并行前缀和实验",
     "created_at": "2026-07-11",
-    "updated_at": "2026-07-19",
+    "updated_at": "2026-07-21",
     "merged_at": "",
     "closed_at": "",
     "author": "m0_73961305",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/318",
     "labels": [
-      "cann-cla/no"
+      "cann-cla/yes"
     ],
-    "working_days_open": 6,
+    "working_days_open": 7,
     "e2e_issues": []
   },
   {
@@ -1167,7 +1404,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 6,
+    "working_days_open": 7,
     "e2e_issues": []
   },
   {
@@ -1186,7 +1423,7 @@
       "stat/needs-squash",
       "approved"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": []
   },
   {
@@ -1206,7 +1443,7 @@
       "ci-pipeline-passed",
       "approved"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": []
   },
   {
@@ -1226,26 +1463,28 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": []
   },
   {
     "iid": 313,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【matmul教程/test分支】matmul_operator_development 低错与易用性问题汇总 ——解决",
     "created_at": "2026-07-10",
-    "updated_at": "2026-07-17",
-    "merged_at": "",
+    "updated_at": "2026-07-21",
+    "merged_at": "2026-07-21",
     "closed_at": "",
     "author": "Alpha123_",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/313",
     "labels": [
       "cann-cla/yes",
+      "approved",
       "ci-pipeline-passed",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "lgtm"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": [
       "86"
     ]
@@ -1265,7 +1504,7 @@
       "cann-cla/no",
       "stat/needs-squash"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": [
       "86"
     ]
@@ -1285,7 +1524,7 @@
       "cann-cla/no",
       "stat/needs-squash"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": [
       "86"
     ]
@@ -1304,7 +1543,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": [
       "86"
     ]
@@ -1326,7 +1565,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": []
   },
   {
@@ -1341,7 +1580,7 @@
     "author": "waimaidaole",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/308",
     "labels": [],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": []
   },
   {
@@ -1361,7 +1600,7 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 8,
+    "working_days_open": 9,
     "e2e_issues": [
       "134"
     ]
@@ -1383,7 +1622,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 8,
+    "working_days_open": 9,
     "e2e_issues": []
   },
   {
@@ -1400,7 +1639,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 8,
+    "working_days_open": 9,
     "e2e_issues": []
   },
   {
@@ -1421,7 +1660,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 8,
+    "working_days_open": 9,
     "e2e_issues": []
   },
   {
@@ -1441,7 +1680,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 8,
+    "working_days_open": 9,
     "e2e_issues": [
       "146",
       "139",
@@ -1462,7 +1701,7 @@
     "author": "ink_polymer",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/302",
     "labels": [],
-    "working_days_open": 8,
+    "working_days_open": 9,
     "e2e_issues": [
       "146",
       "139",
@@ -1486,7 +1725,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": []
   },
   {
@@ -1505,7 +1744,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": []
   },
   {
@@ -1525,7 +1764,7 @@
       "stat/needs-squash",
       "lgtm"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": []
   },
   {
@@ -1545,7 +1784,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": []
   },
   {
@@ -1564,7 +1803,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": []
   },
   {
@@ -1579,7 +1818,7 @@
     "author": "liangbinglong",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/296",
     "labels": [],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": []
   },
   {
@@ -1598,7 +1837,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": []
   },
   {
@@ -1618,7 +1857,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": []
   },
   {
@@ -1638,7 +1877,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": []
   },
   {
@@ -1658,7 +1897,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": []
   },
   {
@@ -1677,7 +1916,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": []
   },
   {
@@ -1698,7 +1937,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": [
       "138"
     ]
@@ -1719,7 +1958,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": []
   },
   {
@@ -1738,7 +1977,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 11,
+    "working_days_open": 12,
     "e2e_issues": []
   },
   {
@@ -1757,7 +1996,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 11,
+    "working_days_open": 12,
     "e2e_issues": [
       "129"
     ]
@@ -1778,7 +2017,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 11,
+    "working_days_open": 12,
     "e2e_issues": []
   },
   {
@@ -1796,7 +2035,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 11,
+    "working_days_open": 12,
     "e2e_issues": []
   },
   {
@@ -1811,7 +2050,7 @@
     "author": "gcw_LOWUheSx",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/284",
     "labels": [],
-    "working_days_open": 11,
+    "working_days_open": 12,
     "e2e_issues": []
   },
   {
@@ -1831,7 +2070,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 11,
+    "working_days_open": 12,
     "e2e_issues": [
       "122",
       "92",
@@ -1855,7 +2094,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 11,
+    "working_days_open": 12,
     "e2e_issues": []
   },
   {
@@ -1872,7 +2111,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 11,
+    "working_days_open": 12,
     "e2e_issues": []
   },
   {
@@ -1892,7 +2131,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 11,
+    "working_days_open": 12,
     "e2e_issues": [
       "127"
     ]
@@ -1914,7 +2153,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 11,
+    "working_days_open": 12,
     "e2e_issues": []
   },
   {
@@ -1932,7 +2171,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 12,
+    "working_days_open": 13,
     "e2e_issues": []
   },
   {
@@ -1949,7 +2188,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 12,
+    "working_days_open": 13,
     "e2e_issues": []
   },
   {
@@ -1966,7 +2205,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 12,
+    "working_days_open": 13,
     "e2e_issues": [
       "97"
     ]
@@ -1985,7 +2224,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 12,
+    "working_days_open": 13,
     "e2e_issues": []
   },
   {
@@ -1994,16 +2233,15 @@
     "draft": false,
     "title": "完成d2l_ai_pypto的第5章05.01和05.02小节开发",
     "created_at": "2026-07-02",
-    "updated_at": "2026-07-07",
+    "updated_at": "2026-07-21",
     "merged_at": "",
     "closed_at": "",
     "author": "dmh_hmd",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/274",
     "labels": [
-      "approved",
       "cann-cla/yes"
     ],
-    "working_days_open": 13,
+    "working_days_open": 14,
     "e2e_issues": []
   },
   {
@@ -2021,7 +2259,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 13,
+    "working_days_open": 14,
     "e2e_issues": []
   },
   {
@@ -2030,7 +2268,7 @@
     "draft": false,
     "title": "完成d2l_ai_pypto第四章04.07和04.09章节开发",
     "created_at": "2026-07-02",
-    "updated_at": "2026-07-18",
+    "updated_at": "2026-07-21",
     "merged_at": "",
     "closed_at": "",
     "author": "Approach1999",
@@ -2038,7 +2276,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 13,
+    "working_days_open": 14,
     "e2e_issues": []
   },
   {
@@ -2047,7 +2285,7 @@
     "draft": false,
     "title": "完成d2l_ai_pypto第四章04.03到04.06及04.08章节开发",
     "created_at": "2026-07-02",
-    "updated_at": "2026-07-19",
+    "updated_at": "2026-07-21",
     "merged_at": "",
     "closed_at": "",
     "author": "Approach1999",
@@ -2055,7 +2293,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 13,
+    "working_days_open": 14,
     "e2e_issues": []
   },
   {
@@ -2074,7 +2312,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 13,
+    "working_days_open": 14,
     "e2e_issues": []
   },
   {
@@ -2095,7 +2333,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 13,
+    "working_days_open": 14,
     "e2e_issues": []
   },
   {
@@ -2115,7 +2353,7 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 13,
+    "working_days_open": 14,
     "e2e_issues": []
   },
   {
@@ -2134,7 +2372,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 13,
+    "working_days_open": 14,
     "e2e_issues": []
   },
   {
@@ -2151,24 +2389,27 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 14,
+    "working_days_open": 15,
     "e2e_issues": []
   },
   {
     "iid": 265,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "c api中级课程",
     "created_at": "2026-07-01",
-    "updated_at": "2026-07-20",
-    "merged_at": "",
+    "updated_at": "2026-07-21",
+    "merged_at": "2026-07-21",
     "closed_at": "",
     "author": "pangfd",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/265",
     "labels": [
+      "approved",
+      "ci-pipeline-passed",
+      "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 14,
+    "working_days_open": 15,
     "e2e_issues": []
   },
   {
@@ -2183,7 +2424,7 @@
     "author": "pangfd",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/264",
     "labels": [],
-    "working_days_open": 14,
+    "working_days_open": 15,
     "e2e_issues": []
   },
   {
@@ -2202,7 +2443,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 14,
+    "working_days_open": 15,
     "e2e_issues": []
   },
   {
@@ -2221,7 +2462,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 14,
+    "working_days_open": 15,
     "e2e_issues": []
   },
   {
@@ -2242,7 +2483,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 14,
+    "working_days_open": 15,
     "e2e_issues": []
   },
   {
@@ -2251,16 +2492,15 @@
     "draft": false,
     "title": "添加aclnn算子工程化开发课程",
     "created_at": "2026-07-01",
-    "updated_at": "2026-07-18",
+    "updated_at": "2026-07-21",
     "merged_at": "",
     "closed_at": "",
     "author": "zhanglong99",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/260",
     "labels": [
-      "cann-cla/yes",
-      "stat/needs-squash"
+      "cann-cla/yes"
     ],
-    "working_days_open": 14,
+    "working_days_open": 15,
     "e2e_issues": []
   },
   {
@@ -2280,7 +2520,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 14,
+    "working_days_open": 15,
     "e2e_issues": []
   },
   {
@@ -2298,7 +2538,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": [
       "91"
     ]
@@ -2319,7 +2559,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": []
   },
   {
@@ -2339,7 +2579,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": []
   },
   {
@@ -2359,7 +2599,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": []
   },
   {
@@ -2377,7 +2617,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": []
   },
   {
@@ -2397,25 +2637,27 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": []
   },
   {
     "iid": 252,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix: 修复HCCL点对点通信算子文档中的拼写和格式错误",
     "created_at": "2026-06-30",
-    "updated_at": "2026-07-07",
-    "merged_at": "",
+    "updated_at": "2026-07-21",
+    "merged_at": "2026-07-21",
     "closed_at": "",
     "author": "wch0810",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/252",
     "labels": [
       "ci-pipeline-passed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "lgtm",
+      "approved"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": []
   },
   {
@@ -2435,7 +2677,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": []
   },
   {
@@ -2455,7 +2697,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": [
       "106",
       "104",
@@ -2479,7 +2721,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": []
   },
   {
@@ -2499,7 +2741,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": [
       "89"
     ]
@@ -2519,7 +2761,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": []
   },
   {
@@ -2539,7 +2781,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": []
   },
   {
@@ -2559,7 +2801,7 @@
       "ci-pipeline-passed",
       "approved"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2579,7 +2821,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2597,7 +2839,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2617,7 +2859,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2635,7 +2877,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2654,7 +2896,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2671,7 +2913,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2692,7 +2934,7 @@
       "lgtm",
       "stat/needs-squash"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2707,7 +2949,7 @@
     "author": "Sunyp01",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/237",
     "labels": [],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2724,7 +2966,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2744,7 +2986,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2765,7 +3007,7 @@
       "ci-pipeline-passed",
       "stat/needs-squash"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2783,7 +3025,7 @@
       "cann-cla/no",
       "stat/needs-squash"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2801,7 +3043,7 @@
       "stat/needs-squash",
       "cann-cla/no"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2819,7 +3061,7 @@
       "cann-cla/no",
       "stat/needs-squash"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2836,7 +3078,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2854,7 +3096,7 @@
       "cann-cla/no",
       "stat/needs-squash"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2872,7 +3114,7 @@
       "stat/needs-squash",
       "cann-cla/no"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2887,7 +3129,7 @@
     "author": "user36330",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/227",
     "labels": [],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2902,7 +3144,7 @@
     "author": "user36330",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/226",
     "labels": [],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -2923,7 +3165,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 17,
+    "working_days_open": 18,
     "e2e_issues": []
   },
   {
@@ -2944,7 +3186,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 17,
+    "working_days_open": 18,
     "e2e_issues": []
   },
   {
@@ -2962,7 +3204,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 17,
+    "working_days_open": 18,
     "e2e_issues": []
   },
   {
@@ -2980,7 +3222,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 17,
+    "working_days_open": 18,
     "e2e_issues": []
   },
   {
@@ -3000,7 +3242,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 17,
+    "working_days_open": 18,
     "e2e_issues": []
   },
   {
@@ -3015,7 +3257,7 @@
     "author": "desperateW",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/220",
     "labels": [],
-    "working_days_open": 17,
+    "working_days_open": 18,
     "e2e_issues": []
   },
   {
@@ -3035,7 +3277,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 17,
+    "working_days_open": 18,
     "e2e_issues": []
   },
   {
@@ -3054,7 +3296,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 17,
+    "working_days_open": 18,
     "e2e_issues": []
   },
   {
@@ -3073,7 +3315,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 17,
+    "working_days_open": 18,
     "e2e_issues": []
   },
   {
@@ -3093,7 +3335,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 17,
+    "working_days_open": 18,
     "e2e_issues": []
   },
   {
@@ -3108,7 +3350,7 @@
     "author": "KenChow",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/215",
     "labels": [],
-    "working_days_open": 17,
+    "working_days_open": 18,
     "e2e_issues": []
   },
   {
@@ -3126,7 +3368,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 17,
+    "working_days_open": 18,
     "e2e_issues": []
   },
   {
@@ -3145,7 +3387,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3163,7 +3405,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3182,7 +3424,7 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3200,7 +3442,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3219,7 +3461,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3240,7 +3482,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3259,7 +3501,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3279,7 +3521,7 @@
       "lgtm",
       "stat/needs-squash"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3297,7 +3539,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3316,7 +3558,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3334,7 +3576,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3354,7 +3596,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": [
       "83"
     ]
@@ -3371,7 +3613,7 @@
     "author": "user36330",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/201",
     "labels": [],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3390,7 +3632,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3410,7 +3652,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3428,25 +3670,25 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
     "iid": 197,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "新增",
     "created_at": "2026-06-25",
-    "updated_at": "2026-06-25",
+    "updated_at": "2026-07-21",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-21",
     "author": "weixin_73885050",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/197",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3464,7 +3706,7 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3484,7 +3726,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3504,7 +3746,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3522,7 +3764,7 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3541,7 +3783,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -3561,7 +3803,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3580,7 +3822,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3599,7 +3841,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3608,16 +3850,16 @@
     "draft": false,
     "title": "修正拼写错误（commiter->committer）",
     "created_at": "2026-06-24",
-    "updated_at": "2026-07-10",
+    "updated_at": "2026-07-21",
     "merged_at": "",
-    "closed_at": "2026-07-10",
+    "closed_at": "2026-07-21",
     "author": "zhunaipan",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/188",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3636,7 +3878,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3654,7 +3896,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3671,7 +3913,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3692,7 +3934,7 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3709,7 +3951,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3728,7 +3970,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3745,7 +3987,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3765,7 +4007,7 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3783,7 +4025,7 @@
       "stat/needs-squash",
       "cann-cla/no"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3801,7 +4043,7 @@
       "cann-cla/no",
       "stat/needs-squash"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3820,7 +4062,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3840,7 +4082,7 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3860,7 +4102,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3878,7 +4120,7 @@
       "stat/needs-squash",
       "cann-cla/no"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3895,7 +4137,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3915,7 +4157,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -3933,7 +4175,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 20,
+    "working_days_open": 21,
     "e2e_issues": []
   },
   {
@@ -3953,7 +4195,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 20,
+    "working_days_open": 21,
     "e2e_issues": []
   },
   {
@@ -3971,7 +4213,7 @@
       "stat/needs-squash",
       "cann-cla/no"
     ],
-    "working_days_open": 20,
+    "working_days_open": 21,
     "e2e_issues": []
   },
   {
@@ -3989,7 +4231,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 20,
+    "working_days_open": 21,
     "e2e_issues": []
   },
   {
@@ -4010,7 +4252,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 20,
+    "working_days_open": 21,
     "e2e_issues": []
   },
   {
@@ -4028,7 +4270,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 20,
+    "working_days_open": 21,
     "e2e_issues": []
   },
   {
@@ -4049,7 +4291,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 21,
+    "working_days_open": 22,
     "e2e_issues": []
   },
   {
@@ -4068,7 +4310,7 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 21,
+    "working_days_open": 22,
     "e2e_issues": []
   },
   {
@@ -4086,7 +4328,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 21,
+    "working_days_open": 22,
     "e2e_issues": []
   },
   {
@@ -4104,7 +4346,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 21,
+    "working_days_open": 22,
     "e2e_issues": []
   },
   {
@@ -4123,7 +4365,7 @@
       "stat/needs-squash",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 21,
+    "working_days_open": 22,
     "e2e_issues": []
   },
   {
@@ -4143,7 +4385,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 22,
+    "working_days_open": 23,
     "e2e_issues": []
   },
   {
@@ -4162,7 +4404,7 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 22,
+    "working_days_open": 23,
     "e2e_issues": []
   },
   {
@@ -4180,7 +4422,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 23,
+    "working_days_open": 24,
     "e2e_issues": []
   },
   {
@@ -4199,7 +4441,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 23,
+    "working_days_open": 24,
     "e2e_issues": []
   },
   {
@@ -4218,7 +4460,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 24,
+    "working_days_open": 25,
     "e2e_issues": []
   },
   {
@@ -4238,7 +4480,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -4258,7 +4500,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -4278,7 +4520,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -4298,7 +4540,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -4318,7 +4560,7 @@
       "stat/needs-squash",
       "lgtm"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -4335,7 +4577,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -4353,7 +4595,7 @@
       "stat/needs-squash",
       "cann-cla/no"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -4371,7 +4613,7 @@
       "cann-cla/no",
       "stat/needs-squash"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -4388,7 +4630,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -4405,7 +4647,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -4422,7 +4664,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -4439,7 +4681,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -4459,7 +4701,7 @@
       "approved",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -4479,7 +4721,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": [
       "68"
     ]
@@ -4501,7 +4743,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -4522,7 +4764,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -4541,7 +4783,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 26,
+    "working_days_open": 27,
     "e2e_issues": []
   },
   {
@@ -4561,7 +4803,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 26,
+    "working_days_open": 27,
     "e2e_issues": []
   },
   {
@@ -4580,7 +4822,7 @@
       "approved",
       "cann-cla/yes"
     ],
-    "working_days_open": 26,
+    "working_days_open": 27,
     "e2e_issues": []
   },
   {
@@ -4601,7 +4843,7 @@
       "lgtm",
       "stat/needs-squash"
     ],
-    "working_days_open": 26,
+    "working_days_open": 27,
     "e2e_issues": []
   },
   {
@@ -4621,7 +4863,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 26,
+    "working_days_open": 27,
     "e2e_issues": [
       "65"
     ]
@@ -4644,7 +4886,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 26,
+    "working_days_open": 27,
     "e2e_issues": [
       "75"
     ]
@@ -4666,7 +4908,7 @@
       "stat/needs-squash",
       "approved"
     ],
-    "working_days_open": 26,
+    "working_days_open": 27,
     "e2e_issues": []
   },
   {
@@ -4681,7 +4923,7 @@
     "author": "jiangxiuhan1",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/132",
     "labels": [],
-    "working_days_open": 26,
+    "working_days_open": 27,
     "e2e_issues": []
   },
   {
@@ -4700,7 +4942,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 27,
+    "working_days_open": 28,
     "e2e_issues": []
   },
   {
@@ -4720,7 +4962,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 27,
+    "working_days_open": 28,
     "e2e_issues": []
   },
   {
@@ -4739,7 +4981,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 27,
+    "working_days_open": 28,
     "e2e_issues": []
   },
   {
@@ -4758,7 +5000,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 27,
+    "working_days_open": 28,
     "e2e_issues": []
   },
   {
@@ -4776,7 +5018,7 @@
       "stat/needs-squash",
       "cann-cla/no"
     ],
-    "working_days_open": 27,
+    "working_days_open": 28,
     "e2e_issues": []
   },
   {
@@ -4793,7 +5035,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 27,
+    "working_days_open": 28,
     "e2e_issues": []
   },
   {
@@ -4812,7 +5054,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 28,
+    "working_days_open": 29,
     "e2e_issues": [
       "68"
     ]
@@ -4832,7 +5074,7 @@
       "approved",
       "cann-cla/yes"
     ],
-    "working_days_open": 28,
+    "working_days_open": 29,
     "e2e_issues": []
   },
   {
@@ -4850,7 +5092,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 28,
+    "working_days_open": 29,
     "e2e_issues": []
   },
   {
@@ -4868,7 +5110,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 28,
+    "working_days_open": 29,
     "e2e_issues": []
   },
   {
@@ -4887,7 +5129,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 29,
+    "working_days_open": 30,
     "e2e_issues": []
   },
   {
@@ -4904,7 +5146,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 30,
+    "working_days_open": 31,
     "e2e_issues": []
   },
   {
@@ -4924,7 +5166,7 @@
       "approved",
       "stat/needs-squash"
     ],
-    "working_days_open": 30,
+    "working_days_open": 31,
     "e2e_issues": []
   },
   {
@@ -4942,7 +5184,7 @@
       "stat/needs-squash",
       "cann-cla/no"
     ],
-    "working_days_open": 30,
+    "working_days_open": 31,
     "e2e_issues": []
   },
   {
@@ -4960,7 +5202,7 @@
       "stat/needs-squash",
       "cann-cla/no"
     ],
-    "working_days_open": 30,
+    "working_days_open": 31,
     "e2e_issues": []
   },
   {
@@ -4978,7 +5220,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 30,
+    "working_days_open": 31,
     "e2e_issues": []
   },
   {
@@ -4997,7 +5239,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 31,
+    "working_days_open": 32,
     "e2e_issues": []
   },
   {
@@ -5017,7 +5259,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 31,
+    "working_days_open": 32,
     "e2e_issues": []
   },
   {
@@ -5035,7 +5277,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 32,
+    "working_days_open": 33,
     "e2e_issues": []
   },
   {
@@ -5055,7 +5297,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 32,
+    "working_days_open": 33,
     "e2e_issues": []
   },
   {
@@ -5075,7 +5317,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 32,
+    "working_days_open": 33,
     "e2e_issues": []
   },
   {
@@ -5095,7 +5337,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 32,
+    "working_days_open": 33,
     "e2e_issues": []
   },
   {
@@ -5113,7 +5355,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 32,
+    "working_days_open": 33,
     "e2e_issues": []
   },
   {
@@ -5130,7 +5372,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 32,
+    "working_days_open": 33,
     "e2e_issues": []
   },
   {
@@ -5149,7 +5391,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 32,
+    "working_days_open": 33,
     "e2e_issues": []
   },
   {
@@ -5167,7 +5409,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 32,
+    "working_days_open": 33,
     "e2e_issues": []
   },
   {
@@ -5187,7 +5429,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 32,
+    "working_days_open": 33,
     "e2e_issues": []
   },
   {
@@ -5205,7 +5447,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 33,
+    "working_days_open": 34,
     "e2e_issues": []
   },
   {
@@ -5225,7 +5467,7 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 33,
+    "working_days_open": 34,
     "e2e_issues": []
   },
   {
@@ -5242,7 +5484,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 35,
+    "working_days_open": 36,
     "e2e_issues": []
   },
   {
@@ -5260,7 +5502,7 @@
       "stat/needs-squash",
       "cann-cla/no"
     ],
-    "working_days_open": 35,
+    "working_days_open": 36,
     "e2e_issues": []
   },
   {
@@ -5279,7 +5521,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 36,
+    "working_days_open": 37,
     "e2e_issues": [
       "49"
     ]
@@ -5301,7 +5543,7 @@
       "stat/needs-squash",
       "lgtm"
     ],
-    "working_days_open": 36,
+    "working_days_open": 37,
     "e2e_issues": []
   },
   {
@@ -5320,7 +5562,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 36,
+    "working_days_open": 37,
     "e2e_issues": []
   },
   {
@@ -5335,7 +5577,7 @@
     "author": "chentianyu19",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/97",
     "labels": [],
-    "working_days_open": 36,
+    "working_days_open": 37,
     "e2e_issues": []
   },
   {
@@ -5354,7 +5596,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 38,
+    "working_days_open": 39,
     "e2e_issues": []
   },
   {
@@ -5372,7 +5614,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 38,
+    "working_days_open": 39,
     "e2e_issues": []
   },
   {
@@ -5389,7 +5631,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 38,
+    "working_days_open": 39,
     "e2e_issues": []
   },
   {
@@ -5408,7 +5650,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 38,
+    "working_days_open": 39,
     "e2e_issues": []
   },
   {
@@ -5426,7 +5668,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 39,
+    "working_days_open": 40,
     "e2e_issues": []
   },
   {
@@ -5443,7 +5685,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 39,
+    "working_days_open": 40,
     "e2e_issues": []
   },
   {
@@ -5460,7 +5702,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 39,
+    "working_days_open": 40,
     "e2e_issues": []
   },
   {
@@ -5481,7 +5723,7 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 39,
+    "working_days_open": 40,
     "e2e_issues": []
   },
   {
@@ -5499,7 +5741,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 40,
+    "working_days_open": 41,
     "e2e_issues": []
   },
   {
@@ -5516,7 +5758,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 40,
+    "working_days_open": 41,
     "e2e_issues": []
   },
   {
@@ -5536,7 +5778,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 41,
+    "working_days_open": 42,
     "e2e_issues": []
   },
   {
@@ -5556,7 +5798,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 42,
+    "working_days_open": 43,
     "e2e_issues": []
   },
   {
@@ -5576,7 +5818,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 43,
+    "working_days_open": 44,
     "e2e_issues": []
   },
   {
@@ -5594,7 +5836,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 43,
+    "working_days_open": 44,
     "e2e_issues": []
   },
   {
@@ -5614,7 +5856,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 44,
+    "working_days_open": 45,
     "e2e_issues": []
   },
   {
@@ -5631,7 +5873,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 44,
+    "working_days_open": 45,
     "e2e_issues": []
   },
   {
@@ -5649,7 +5891,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 44,
+    "working_days_open": 45,
     "e2e_issues": []
   },
   {
@@ -5667,7 +5909,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 45,
+    "working_days_open": 46,
     "e2e_issues": []
   },
   {
@@ -5686,7 +5928,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 45,
+    "working_days_open": 46,
     "e2e_issues": []
   },
   {
@@ -5705,7 +5947,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 45,
+    "working_days_open": 46,
     "e2e_issues": []
   },
   {
@@ -5724,7 +5966,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 46,
+    "working_days_open": 47,
     "e2e_issues": []
   },
   {
@@ -5744,7 +5986,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 46,
+    "working_days_open": 47,
     "e2e_issues": []
   },
   {
@@ -5764,7 +6006,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 47,
+    "working_days_open": 48,
     "e2e_issues": []
   },
   {
@@ -5785,7 +6027,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 49,
+    "working_days_open": 50,
     "e2e_issues": []
   },
   {
@@ -5804,7 +6046,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 49,
+    "working_days_open": 50,
     "e2e_issues": []
   },
   {
@@ -5824,7 +6066,7 @@
       "stat/needs-squash",
       "approved"
     ],
-    "working_days_open": 49,
+    "working_days_open": 50,
     "e2e_issues": []
   },
   {
@@ -5841,7 +6083,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 49,
+    "working_days_open": 50,
     "e2e_issues": []
   },
   {
@@ -5861,7 +6103,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 49,
+    "working_days_open": 50,
     "e2e_issues": []
   },
   {
@@ -5878,7 +6120,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 49,
+    "working_days_open": 50,
     "e2e_issues": []
   },
   {
@@ -5897,7 +6139,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 52,
+    "working_days_open": 53,
     "e2e_issues": [
       "29",
       "30"
@@ -5920,7 +6162,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 52,
+    "working_days_open": 53,
     "e2e_issues": []
   },
   {
@@ -5941,7 +6183,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 52,
+    "working_days_open": 53,
     "e2e_issues": []
   },
   {
@@ -5958,7 +6200,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 53,
+    "working_days_open": 54,
     "e2e_issues": []
   },
   {
@@ -5978,7 +6220,7 @@
       "lgtm",
       "stat/needs-squash"
     ],
-    "working_days_open": 54,
+    "working_days_open": 55,
     "e2e_issues": []
   },
   {
@@ -5996,7 +6238,7 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 54,
+    "working_days_open": 55,
     "e2e_issues": []
   },
   {
@@ -6014,7 +6256,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 55,
+    "working_days_open": 56,
     "e2e_issues": []
   },
   {
@@ -6034,7 +6276,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 56,
+    "working_days_open": 57,
     "e2e_issues": []
   },
   {
@@ -6053,7 +6295,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 56,
+    "working_days_open": 57,
     "e2e_issues": []
   },
   {
@@ -6070,7 +6312,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 56,
+    "working_days_open": 57,
     "e2e_issues": []
   },
   {
@@ -6087,7 +6329,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 57,
+    "working_days_open": 58,
     "e2e_issues": []
   },
   {
@@ -6107,7 +6349,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 57,
+    "working_days_open": 58,
     "e2e_issues": []
   },
   {
@@ -6126,7 +6368,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 60,
+    "working_days_open": 61,
     "e2e_issues": []
   },
   {
@@ -6145,7 +6387,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 60,
+    "working_days_open": 61,
     "e2e_issues": []
   },
   {
@@ -6163,7 +6405,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 62,
+    "working_days_open": 63,
     "e2e_issues": []
   },
   {
@@ -6183,7 +6425,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 63,
+    "working_days_open": 64,
     "e2e_issues": []
   },
   {
@@ -6202,7 +6444,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 63,
+    "working_days_open": 64,
     "e2e_issues": []
   },
   {
@@ -6222,7 +6464,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 64,
+    "working_days_open": 65,
     "e2e_issues": []
   },
   {
@@ -6242,7 +6484,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 64,
+    "working_days_open": 65,
     "e2e_issues": []
   },
   {
@@ -6261,7 +6503,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 64,
+    "working_days_open": 65,
     "e2e_issues": []
   },
   {
@@ -6281,7 +6523,7 @@
       "stat/needs-squash",
       "lgtm"
     ],
-    "working_days_open": 65,
+    "working_days_open": 66,
     "e2e_issues": []
   },
   {
@@ -6301,7 +6543,7 @@
       "cann-cla/no",
       "lgtm"
     ],
-    "working_days_open": 65,
+    "working_days_open": 66,
     "e2e_issues": []
   },
   {
@@ -6321,7 +6563,7 @@
       "cann-cla/no",
       "stat/needs-squash"
     ],
-    "working_days_open": 65,
+    "working_days_open": 66,
     "e2e_issues": []
   },
   {
@@ -6340,7 +6582,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 66,
+    "working_days_open": 67,
     "e2e_issues": []
   },
   {
@@ -6359,7 +6601,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 66,
+    "working_days_open": 67,
     "e2e_issues": [
       "16"
     ]
@@ -6378,7 +6620,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 66,
+    "working_days_open": 67,
     "e2e_issues": [
       "16"
     ]
@@ -6397,7 +6639,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 66,
+    "working_days_open": 67,
     "e2e_issues": []
   },
   {
@@ -6416,7 +6658,7 @@
       "approved",
       "cann-cla/yes"
     ],
-    "working_days_open": 66,
+    "working_days_open": 67,
     "e2e_issues": []
   },
   {
@@ -6435,7 +6677,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 66,
+    "working_days_open": 67,
     "e2e_issues": []
   },
   {
@@ -6454,7 +6696,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 68,
+    "working_days_open": 69,
     "e2e_issues": []
   },
   {
@@ -6473,7 +6715,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 68,
+    "working_days_open": 69,
     "e2e_issues": []
   },
   {
@@ -6493,7 +6735,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 70,
+    "working_days_open": 71,
     "e2e_issues": []
   },
   {
@@ -6512,7 +6754,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 70,
+    "working_days_open": 71,
     "e2e_issues": []
   },
   {
@@ -6532,7 +6774,7 @@
       "stat/needs-squash",
       "lgtm"
     ],
-    "working_days_open": 70,
+    "working_days_open": 71,
     "e2e_issues": []
   },
   {
@@ -6551,7 +6793,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 71,
+    "working_days_open": 72,
     "e2e_issues": []
   },
   {
@@ -6570,7 +6812,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 72,
+    "working_days_open": 73,
     "e2e_issues": []
   },
   {
@@ -6589,7 +6831,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 72,
+    "working_days_open": 73,
     "e2e_issues": []
   },
   {
@@ -6608,7 +6850,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 72,
+    "working_days_open": 73,
     "e2e_issues": []
   },
   {
@@ -6626,7 +6868,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 72,
+    "working_days_open": 73,
     "e2e_issues": []
   },
   {
@@ -6646,7 +6888,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 72,
+    "working_days_open": 73,
     "e2e_issues": []
   },
   {
@@ -6666,7 +6908,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 75,
+    "working_days_open": 76,
     "e2e_issues": []
   },
   {
@@ -6685,7 +6927,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 75,
+    "working_days_open": 76,
     "e2e_issues": []
   },
   {
@@ -6704,7 +6946,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 76,
+    "working_days_open": 77,
     "e2e_issues": []
   },
   {
@@ -6724,7 +6966,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 77,
+    "working_days_open": 78,
     "e2e_issues": []
   },
   {
@@ -6743,7 +6985,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 78,
+    "working_days_open": 79,
     "e2e_issues": []
   },
   {
@@ -6763,7 +7005,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 79,
+    "working_days_open": 80,
     "e2e_issues": []
   },
   {
@@ -6782,7 +7024,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 80,
+    "working_days_open": 81,
     "e2e_issues": []
   },
   {
@@ -6799,7 +7041,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 80,
+    "working_days_open": 81,
     "e2e_issues": []
   },
   {
@@ -6818,7 +7060,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 82,
+    "working_days_open": 83,
     "e2e_issues": []
   },
   {
@@ -6837,7 +7079,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 84,
+    "working_days_open": 85,
     "e2e_issues": []
   },
   {
@@ -6857,7 +7099,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 84,
+    "working_days_open": 85,
     "e2e_issues": []
   },
   {
@@ -6876,7 +7118,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 85,
+    "working_days_open": 86,
     "e2e_issues": []
   },
   {
@@ -6895,7 +7137,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 85,
+    "working_days_open": 86,
     "e2e_issues": []
   },
   {
@@ -6914,7 +7156,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 85,
+    "working_days_open": 86,
     "e2e_issues": []
   },
   {
@@ -6933,7 +7175,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 88,
+    "working_days_open": 89,
     "e2e_issues": []
   },
   {
@@ -6953,7 +7195,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 88,
+    "working_days_open": 89,
     "e2e_issues": []
   },
   {
@@ -6972,7 +7214,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 89,
+    "working_days_open": 90,
     "e2e_issues": []
   },
   {
@@ -6989,7 +7231,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 90,
+    "working_days_open": 91,
     "e2e_issues": []
   },
   {
@@ -7008,7 +7250,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 92,
+    "working_days_open": 93,
     "e2e_issues": []
   },
   {
@@ -7027,7 +7269,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 93,
+    "working_days_open": 94,
     "e2e_issues": []
   },
   {
@@ -7046,7 +7288,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 93,
+    "working_days_open": 94,
     "e2e_issues": []
   },
   {
@@ -7065,7 +7307,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 94,
+    "working_days_open": 95,
     "e2e_issues": [
       "2"
     ]
@@ -7086,7 +7328,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 94,
+    "working_days_open": 95,
     "e2e_issues": []
   },
   {
@@ -7105,7 +7347,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 94,
+    "working_days_open": 95,
     "e2e_issues": []
   },
   {
@@ -7124,7 +7366,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 94,
+    "working_days_open": 95,
     "e2e_issues": []
   },
   {
@@ -7143,7 +7385,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 94,
+    "working_days_open": 95,
     "e2e_issues": [
       "1"
     ]
@@ -7165,7 +7407,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 94,
+    "working_days_open": 95,
     "e2e_issues": []
   }
 ]
