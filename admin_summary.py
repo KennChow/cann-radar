@@ -181,7 +181,7 @@ def main():
                 display = _author_display(item["author"], mail_map)
                 status = item.get("status", "new")
                 if status == "new": mr_new += 1; label = "新增"
-                elif status == "max": label = "⚠ 需管理员介入（2 次提醒未处理）"
+                elif status == "daily": label = "持续提醒中"
                 else: mr_waiting += 1; label = "跟踪中"
                 mr_rows += f"<tr><td>{display}</td><td>{item['title'][:50]}</td><td><a href='{item['web_url']}'>#{item['iid']}</a></td><td>{item['days_open']}天</td><td>{label}</td></tr>"
 
@@ -191,7 +191,7 @@ def main():
                 display = _author_display(item.get("assignee_display", item.get("author", "")), mail_map)
                 status = item.get("status", "new")
                 if status == "new": iss_new += 1; label = "新增"
-                elif status == "max": label = "⚠ 需管理员介入（2 次提醒未处理）"
+                elif status == "daily": label = "持续提醒中"
                 else: iss_waiting += 1; label = "跟踪中"
                 iss_rows += f"<tr><td>{item['title'][:50]}</td><td><a href='{item['web_url']}'>#{item['iid']}</a></td><td>{item['days_open']}天</td><td>{display}</td><td>{label}</td></tr>"
 

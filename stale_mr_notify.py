@@ -58,7 +58,7 @@ NOTIFIED_PATH = DATA_DIR / "stale_mr_notified.json"
 
 DEFAULT_STALE_DAYS = 14
 RESEND_INTERVAL_DAYS = 7
-MAX_NOTIFY_COUNT = 2
+DAILY_INTERVAL_DAYS = 1
 
 CONTACT_INFO = "如有疑问请联系夏国正 x00806611"
 
@@ -210,24 +210,22 @@ def load_smtp_config():
 
 def _check_mr_notify_status(key, notified, today):
     """返回 (should_notify, notify_stage, skip_reason)。
-    notify_stage: 0=跳过, 1=首次通知, 2=二次升级通知
-    skip_reason: ''=不跳过, 'waiting'=未到重发间隔, 'max'=已达上限
+    count=1 间隔 7 天，count>=2 间隔 1 天持续提醒。
     """
     if key not in notified:
         return True, 1, ''
     record = notified[key]
     count = record.get("count", 1)
-    if count >= MAX_NOTIFY_COUNT:
-        return False, 0, 'max'
     last_at = record.get("notified_at", "")
     if not last_at:
-        return False, 0, 'max'
+        return True, 1, ''
     try:
         last_date = datetime.strptime(last_at[:10], "%Y-%m-%d").date()
     except ValueError:
-        return False, 0, 'max'
+        return True, 1, ''
+    interval = RESEND_INTERVAL_DAYS if count == 1 else DAILY_INTERVAL_DAYS
     working_days = _working_days_between(last_date, today)
-    if working_days >= RESEND_INTERVAL_DAYS:
+    if working_days >= interval:
         return True, count + 1, ''
     return False, 0, 'waiting'
 
@@ -237,7 +235,7 @@ def scan_stale_mrs(stale_days, notify_paths=None, notified=None):
     stale_by_author = defaultdict(list)
     stats = {
         "total_opened": 0, "stale_all": 0, "stale_matched": 0,
-        "repos_scanned": 0, "skipped_waiting": 0, "skipped_max": 0,
+        "repos_scanned": 0, "skipped_waiting": 0,
         "stage1_count": 0, "stage2_count": 0,
     }
 
@@ -269,10 +267,7 @@ def scan_stale_mrs(stale_days, notify_paths=None, notified=None):
 
             should_notify, stage, skip_reason = _check_mr_notify_status(key, notified, today.date())
             if not should_notify:
-                if skip_reason == 'max':
-                    stats["skipped_max"] += 1
-                else:
-                    stats["skipped_waiting"] += 1
+                stats["skipped_waiting"] += 1
                 continue
 
             created_at = mr.get("created_at", "")
@@ -538,7 +533,7 @@ def _save_admin_mr_summary(notify_paths, notified_data, stale_days):
             if key in notified:
                 record = notified[key]
                 cnt = record.get("count", 1)
-                status = "max" if cnt >= MAX_NOTIFY_COUNT else "waiting"
+                status = "daily" if cnt >= 2 else "waiting"
             else:
                 status = "new"  # first discovery
 
@@ -548,14 +543,14 @@ def _save_admin_mr_summary(notify_paths, notified_data, stale_days):
                 "author": author, "category": category, "status": status,
             })
 
-    counts = {"new": 0, "waiting": 0, "max": 0}
+    counts = {"new": 0, "waiting": 0, "daily": 0}
     for s in summary:
         counts["new"] += 1 if s["status"] == "new" else 0
-        counts["max"] += 1 if s["status"] == "max" else 0
+        counts["daily"] += 1 if s["status"] == "daily" else 0
 
     with open(DATA_DIR / "admin_mr_summary.json", "w", encoding="utf-8") as f:
         json.dump({"mr_items": summary, "stale_days": stale_days}, f, ensure_ascii=False)
-    print(f"\n  管理员汇总: {len(summary)} 个 MR（新发现 {counts['new']}，需介入 {counts['max']}）")
+    print(f"\n  管理员汇总: {len(summary)} 个 MR（新发现 {counts['new']}，需介入 {counts['daily']}）")
 
 
 def main():
@@ -573,7 +568,7 @@ def main():
 
     print(f"=== 超期 MR 扫描 ===")
     print(f"  超期天数: >{args.stale_days} 个工作日")
-    print(f"  升级间隔: 距上次通知≥{RESEND_INTERVAL_DAYS} 个工作日可重发（最多{MAX_NOTIFY_COUNT}次）")
+    print(f"  升级间隔: 首次后 {RESEND_INTERVAL_DAYS} 天，二次后每日持续提醒")
     if args.test:
         print(f"  模式: 测试（仅1封样本发送到 {args.test}）")
     elif args.dry_run:
@@ -608,7 +603,6 @@ def main():
     print(f"    首次通知: {stats['stage1_count']}")
     print(f"    二次升级: {stats['stage2_count']}")
     print(f"    未到重发间隔跳过: {stats['skipped_waiting']}")
-    print(f"    已达上限永久跳过: {stats['skipped_max']}")
     print(f"    涉及作者: {len(stale_by_author)}")
 
     if not stale_by_author:
