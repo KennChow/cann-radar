@@ -1,5 +1,117 @@
 [
   {
+    "iid": 806,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: latch transfer failure for subsequent CS transfers",
+    "created_at": "2026-07-25",
+    "updated_at": "2026-07-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhaozhihui",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/806",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 805,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: latch transfer failure for subsequent CS transfers",
+    "created_at": "2026-07-25",
+    "updated_at": "2026-07-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhaozhihui",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/805",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 804,
+    "state": "closed",
+    "draft": false,
+    "title": "[bugfix]: add env-configurable notify wait interval",
+    "created_at": "2026-07-25",
+    "updated_at": "2026-07-25",
+    "merged_at": "",
+    "closed_at": "2026-07-25",
+    "author": "zhaozhihui",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/804",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 803,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: reserve GetRemoteMem slot for builtin finished flag",
+    "created_at": "2026-07-25",
+    "updated_at": "2026-07-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "M__Cheng",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/803",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 802,
+    "state": "opened",
+    "draft": false,
+    "title": "[refactor]: rename hccl-prefixed symbols with component prefixes",
+    "created_at": "2026-07-25",
+    "updated_at": "2026-07-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "tangjie66",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/802",
+    "labels": [
+      "stat/needs-squash",
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "515"
+    ]
+  },
+  {
+    "iid": 801,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: update Docker build image docs for AscendHub CANN",
+    "created_at": "2026-07-25",
+    "updated_at": "2026-07-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "M__Cheng",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/801",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 800,
     "state": "opened",
     "draft": false,
@@ -37,35 +149,37 @@
   {
     "iid": 798,
     "state": "opened",
-    "draft": true,
-    "title": "[WIP][feat]: add read data verification to comm_benchmark",
+    "draft": false,
+    "title": "[feat]: add read data verification to comm_benchmark",
     "created_at": "2026-07-24",
-    "updated_at": "2026-07-24",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "lining23666",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/798",
     "labels": [
       "cann-cla/yes",
-      "stat/needs-squash"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
   },
   {
     "iid": 797,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "hixl仓添加workflow",
     "created_at": "2026-07-23",
-    "updated_at": "2026-07-24",
-    "merged_at": "",
+    "updated_at": "2026-07-25",
+    "merged_at": "2026-07-25",
     "closed_at": "",
     "author": "wangchuang616",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/797",
     "labels": [
       "ci-pipeline-passed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": [
@@ -569,13 +683,14 @@
     "draft": false,
     "title": "feat: add transfer backend option to Python samples and modify example/README.md",
     "created_at": "2026-07-15",
-    "updated_at": "2026-07-24",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "M__Cheng",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/772",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 8,
     "e2e_issues": []
@@ -687,17 +802,17 @@
   {
     "iid": 766,
     "state": "opened",
-    "draft": true,
-    "title": "WIP: feat: FabricMem AICPU unfold with NotifyRecord completion",
+    "draft": false,
+    "title": "feat: FabricMem AICPU unfold with NotifyRecord completion",
     "created_at": "2026-07-13",
-    "updated_at": "2026-07-24",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "youyx",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/766",
     "labels": [
-      "ci-pipeline-passed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 10,
     "e2e_issues": []
@@ -2481,7 +2596,7 @@
     "draft": true,
     "title": "[WIP][feat]: add HixlSyncTransferCtx device kernel for exception reporting",
     "created_at": "2026-06-26",
-    "updated_at": "2026-07-23",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "lining23666",
@@ -2952,7 +3067,7 @@
     "draft": false,
     "title": "[feat]: Add HIXL Engine Python binding and whl packaging",
     "created_at": "2026-06-22",
-    "updated_at": "2026-07-22",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "qq_43646600",

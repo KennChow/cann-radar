@@ -1,19 +1,92 @@
 [
   {
-    "iid": 422,
+    "iid": 426,
     "state": "opened",
+    "draft": false,
+    "title": "为 ascendc_operator_development_V2添加README",
+    "created_at": "2026-07-25",
+    "updated_at": "2026-07-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "ning_x",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/426",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 425,
+    "state": "opened",
+    "draft": false,
+    "title": "add adapter02",
+    "created_at": "2026-07-25",
+    "updated_at": "2026-07-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_WTfSfUy7",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/425",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 424,
+    "state": "opened",
+    "draft": false,
+    "title": "SIMT算子transpose实践",
+    "created_at": "2026-07-25",
+    "updated_at": "2026-07-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shaonaite",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/424",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 423,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 北林数据结构-课外实验2.3-稀疏矩阵存储格式与分块计算优化实验",
+    "created_at": "2026-07-25",
+    "updated_at": "2026-07-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "m0_73961305",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/423",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 422,
+    "state": "merged",
     "draft": false,
     "title": "feat(docs): Update pypto tutorial exercises and chapter practices",
     "created_at": "2026-07-24",
-    "updated_at": "2026-07-24",
-    "merged_at": "",
+    "updated_at": "2026-07-25",
+    "merged_at": "2026-07-25",
     "closed_at": "",
     "author": "gcw_QGrqFtj5",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/422",
     "labels": [
       "ci-pipeline-passed",
       "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -206,19 +279,20 @@
   },
   {
     "iid": 411,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "修改llm_quantization_fundamentals课件中的对称量化中的部分错误",
     "created_at": "2026-07-24",
-    "updated_at": "2026-07-24",
-    "merged_at": "",
+    "updated_at": "2026-07-25",
+    "merged_at": "2026-07-25",
     "closed_at": "",
     "author": "wanghui0",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/411",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-failed",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": [
@@ -338,18 +412,20 @@
   },
   {
     "iid": 404,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "新增pyasc第三章课程",
     "created_at": "2026-07-23",
-    "updated_at": "2026-07-24",
-    "merged_at": "",
+    "updated_at": "2026-07-25",
+    "merged_at": "2026-07-25",
     "closed_at": "",
     "author": "li-yuanjie-da",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/404",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -597,7 +673,7 @@
     "draft": false,
     "title": "feat: add data structures compute 03_graph",
     "created_at": "2026-07-21",
-    "updated_at": "2026-07-22",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "ustc_sa25",
@@ -1543,7 +1619,7 @@
     "draft": false,
     "title": "新增simd&simt混合编程实践",
     "created_at": "2026-07-16",
-    "updated_at": "2026-07-24",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "shaonaite",
@@ -1712,7 +1788,7 @@
     "draft": false,
     "title": "docs(ge): 新增进阶开发教程（图编译与模型执行优化）",
     "created_at": "2026-07-14",
-    "updated_at": "2026-07-23",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "qq_45842700",

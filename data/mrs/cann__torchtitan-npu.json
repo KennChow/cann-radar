@@ -1,5 +1,81 @@
 [
   {
+    "iid": 464,
+    "state": "merged",
+    "draft": false,
+    "title": "Initial commit for override refactor",
+    "created_at": "2026-07-25",
+    "updated_at": "2026-07-25",
+    "merged_at": "2026-07-25",
+    "closed_at": "",
+    "author": "lrwei0709",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/464",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 463,
+    "state": "opened",
+    "draft": false,
+    "title": "[refactor] add DeepSeek-V4 model and overrides",
+    "created_at": "2026-07-25",
+    "updated_at": "2026-07-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "hitwdy",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/463",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 462,
+    "state": "opened",
+    "draft": true,
+    "title": "[WIP]feat: extend NPU TorchFT support for DeepSeekV4",
+    "created_at": "2026-07-25",
+    "updated_at": "2026-07-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhangyifan999",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/462",
+    "labels": [
+      "cann-cla/no",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 461,
+    "state": "merged",
+    "draft": false,
+    "title": "[fix] fix bug of dsv4 tnd",
+    "created_at": "2026-07-25",
+    "updated_at": "2026-07-25",
+    "merged_at": "2026-07-25",
+    "closed_at": "",
+    "author": "zhaowei1936",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/461",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 460,
     "state": "opened",
     "draft": false,
@@ -57,7 +133,7 @@
     "draft": false,
     "title": "[feat] add tilelang topk",
     "created_at": "2026-07-23",
-    "updated_at": "2026-07-24",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "zouqian",
@@ -136,7 +212,7 @@
     "draft": false,
     "title": "[refactor]接入mxfp4 到 block fp8的融合算子",
     "created_at": "2026-07-21",
-    "updated_at": "2026-07-24",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "caoshuyang",
@@ -307,14 +383,15 @@
     "draft": false,
     "title": "[feat] Integrate inplace-partial-rotary-mul op for DeepSeek-V4 RoPE",
     "created_at": "2026-07-20",
-    "updated_at": "2026-07-24",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "zhangwei1177",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/444",
     "labels": [
       "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -400,13 +477,14 @@
     "draft": false,
     "title": "[fix] disable greedy packing for SDPA to ensure correct per-doc attn masking",
     "created_at": "2026-07-17",
-    "updated_at": "2026-07-24",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "mystri",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/439",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "stat/needs-squash"
     ],
     "working_days_open": 6,
     "e2e_issues": []

@@ -25,15 +25,17 @@
     "draft": false,
     "title": "【PR】: 简要描述 metadef的workflows,actions",
     "created_at": "2026-07-21",
-    "updated_at": "2026-07-24",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "wangyunxiang1",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/403",
     "labels": [
-      "ci-pipeline-failed",
       "enhancement",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "api-check-pass",
+      "ci-pipeline-failed",
+      "stat/needs-squash"
     ],
     "working_days_open": 4,
     "e2e_issues": []

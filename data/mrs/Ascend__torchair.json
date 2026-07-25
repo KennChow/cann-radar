@@ -1,11 +1,89 @@
 [
   {
+    "iid": 3457,
+    "state": "opened",
+    "draft": false,
+    "title": "fix compile for tiling warpper reuse",
+    "created_at": "2026-07-25",
+    "updated_at": "2026-07-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "yurongkun",
+    "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3457",
+    "labels": [
+      "ascend-cla/yes",
+      "docs-ci-pipeline-success",
+      "smoke-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 3456,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(docs): fix bug",
+    "created_at": "2026-07-25",
+    "updated_at": "2026-07-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lyz0328",
+    "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3456",
+    "labels": [
+      "ascend-cla/yes",
+      "ci-pipeline-passed",
+      "docs-ci-pipeline-failed",
+      "smoke-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 3455,
+    "state": "opened",
+    "draft": false,
+    "title": "refactor(inductor_npu_ext): remove unnecessary fork check in _detect_soc",
+    "created_at": "2026-07-25",
+    "updated_at": "2026-07-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "dingdairong",
+    "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3455",
+    "labels": [
+      "ascend-cla/no",
+      "docs-ci-pipeline-success",
+      "smoke-pipeline-passed",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 3454,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(docs): Fix bugs",
+    "created_at": "2026-07-25",
+    "updated_at": "2026-07-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lyz0328",
+    "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3454",
+    "labels": [
+      "ascend-cla/yes",
+      "ci-pipeline-passed",
+      "docs-ci-pipeline-success"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 3453,
     "state": "opened",
     "draft": false,
     "title": "host tensor value symblize",
     "created_at": "2026-07-24",
-    "updated_at": "2026-07-24",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "chengyutao3",
@@ -13,19 +91,20 @@
     "labels": [
       "ascend-cla/yes",
       "stat/needs-squash",
-      "docs-ci-pipeline-success"
+      "docs-ci-pipeline-success",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
   },
   {
     "iid": 3452,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
-    "title": "【bugfix】cpu 0-D Tensor 识别 到MultioutputLayout 报错",
+    "title": "【bugfix】cpu 0-D Tensor 识别 到MultioutputLayout 报错修复",
     "created_at": "2026-07-24",
-    "updated_at": "2026-07-24",
-    "merged_at": "",
+    "updated_at": "2026-07-25",
+    "merged_at": "2026-07-25",
     "closed_at": "",
     "author": "mihudan",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3452",
@@ -33,7 +112,9 @@
       "ascend-cla/yes",
       "docs-ci-pipeline-success",
       "stat/needs-squash",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -66,18 +147,20 @@
     "draft": false,
     "title": "bug fix all_to_all_single support mulit dim in eager model",
     "created_at": "2026-07-24",
-    "updated_at": "2026-07-24",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "glf2016",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3450",
     "labels": [
-      "ci-pipeline-passed",
       "ascend-cla/yes",
-      "docs-ci-pipeline-success"
+      "docs-ci-pipeline-success",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
-    "e2e_issues": []
+    "e2e_issues": [
+      "611"
+    ]
   },
   {
     "iid": 3449,
@@ -228,31 +311,33 @@
   },
   {
     "iid": 3442,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[feature]支持inductor+af路径在profiling中展示融合算子shape",
     "created_at": "2026-07-23",
-    "updated_at": "2026-07-24",
-    "merged_at": "",
+    "updated_at": "2026-07-25",
+    "merged_at": "2026-07-25",
     "closed_at": "",
     "author": "chenweiheng",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3442",
     "labels": [
       "docs-ci-pipeline-success",
       "ascend-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": []
   },
   {
     "iid": 3441,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[bugfix] concat输入为select切片时squeeze size=1维度对齐canonical轴修复非法asc_graph",
     "created_at": "2026-07-23",
-    "updated_at": "2026-07-24",
-    "merged_at": "",
+    "updated_at": "2026-07-25",
+    "merged_at": "2026-07-25",
     "closed_at": "",
     "author": "dingdairong",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3441",
@@ -260,19 +345,21 @@
       "ci-pipeline-passed",
       "ascend-cla/yes",
       "stat/needs-squash",
-      "docs-ci-pipeline-success"
+      "docs-ci-pipeline-success",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": []
   },
   {
     "iid": 3440,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix: avoid reusing shared cv fusion inputs",
     "created_at": "2026-07-23",
-    "updated_at": "2026-07-24",
-    "merged_at": "",
+    "updated_at": "2026-07-25",
+    "merged_at": "2026-07-25",
     "closed_at": "",
     "author": "ling-DT",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3440",
@@ -280,7 +367,9 @@
       "stat/needs-squash",
       "docs-ci-pipeline-success",
       "ci-pipeline-passed",
-      "ascend-cla/yes"
+      "ascend-cla/yes",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -539,14 +628,14 @@
     "draft": false,
     "title": "AddRmsNormDynamicQuant算子torchair新增特性",
     "created_at": "2026-07-21",
-    "updated_at": "2026-07-21",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "clwsy1",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3427",
     "labels": [
-      "docs-ci-pipeline-success",
-      "ascend-cla/yes"
+      "ascend-cla/yes",
+      "docs-ci-pipeline-success"
     ],
     "working_days_open": 4,
     "e2e_issues": []
@@ -979,7 +1068,7 @@
     "draft": false,
     "title": "添加gather适配逻辑",
     "created_at": "2026-07-16",
-    "updated_at": "2026-07-24",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "weizhaoyang",
@@ -1136,19 +1225,21 @@
   },
   {
     "iid": 3398,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "npu_grouped_dynamic_mx_quant add input format and parameter",
     "created_at": "2026-07-15",
-    "updated_at": "2026-07-24",
-    "merged_at": "",
+    "updated_at": "2026-07-25",
+    "merged_at": "2026-07-25",
     "closed_at": "",
     "author": "yeeyanghsia",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3398",
     "labels": [
       "docs-ci-pipeline-success",
       "ci-pipeline-passed",
-      "ascend-cla/yes"
+      "ascend-cla/yes",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 8,
     "e2e_issues": []
@@ -1180,7 +1271,7 @@
     "draft": false,
     "title": "bugfix for sizevars",
     "created_at": "2026-07-15",
-    "updated_at": "2026-07-15",
+    "updated_at": "2026-07-25",
     "merged_at": "2026-07-15",
     "closed_at": "",
     "author": "medivh-x",
@@ -1402,17 +1493,18 @@
     "iid": 3385,
     "state": "opened",
     "draft": false,
-    "title": "gmm支持shape维度带1",
+    "title": "fix: 图模式 GMM 支持含单位轴转置的输入与权重布局",
     "created_at": "2026-07-14",
-    "updated_at": "2026-07-24",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "zhoushaolong",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3385",
     "labels": [
-      "docs-ci-pipeline-success",
       "stat/needs-squash",
-      "ascend-cla/yes"
+      "ascend-cla/yes",
+      "docs-ci-pipeline-success",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 9,
     "e2e_issues": []
@@ -1626,17 +1718,16 @@
   },
   {
     "iid": 3374,
-    "state": "closed",
+    "state": "opened",
     "draft": false,
     "title": "set host_tensor",
     "created_at": "2026-07-14",
-    "updated_at": "2026-07-17",
+    "updated_at": "2026-07-25",
     "merged_at": "",
-    "closed_at": "2026-07-17",
+    "closed_at": "",
     "author": "glf2016",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3374",
     "labels": [
-      "ci-pipeline-passed",
       "ascend-cla/yes",
       "docs-ci-pipeline-success"
     ],
@@ -2098,7 +2189,7 @@
     "draft": false,
     "title": "add softmax axis <= 3 can decompose handle",
     "created_at": "2026-07-09",
-    "updated_at": "2026-07-14",
+    "updated_at": "2026-07-25",
     "merged_at": "",
     "closed_at": "",
     "author": "yurongkun",
@@ -3096,13 +3187,13 @@
   },
   {
     "iid": 3304,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "mmallreduce change A5 default comm engine to aicpu",
     "created_at": "2026-07-02",
-    "updated_at": "2026-07-02",
+    "updated_at": "2026-07-25",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-25",
     "author": "Kiana1216",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3304",
     "labels": [
@@ -3957,13 +4048,13 @@
   },
   {
     "iid": 3263,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "empty",
     "created_at": "2026-06-26",
-    "updated_at": "2026-06-26",
+    "updated_at": "2026-07-25",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-25",
     "author": "hujiawen_kaven",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3263",
     "labels": [
