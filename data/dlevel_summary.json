@@ -1,91 +1,91 @@
 {
-  "generated_at": "2026-07-26",
+  "generated_at": "2026-07-27",
   "global_counts": {
-    "d0": 1400,
-    "d1": 1018,
-    "d2": 616,
-    "total": 3034,
-    "d0_external": 1061,
-    "d1_external": 796,
-    "d2_external": 196
+    "d0": 1408,
+    "d1": 1020,
+    "d2": 617,
+    "total": 3045,
+    "d0_external": 1069,
+    "d1_external": 795,
+    "d2_external": 197
   },
   "repo_counts": {
     "cann/ge": {
-      "d0": 504,
-      "d1": 343,
+      "d0": 508,
+      "d1": 346,
       "d2": 196,
-      "total": 1043,
-      "d0_external": 244,
+      "total": 1050,
+      "d0_external": 249,
       "d1_external": 239,
       "d2_external": 26,
       "discussion_d1_external": 113
     },
     "cann/hixl": {
-      "d0": 652,
+      "d0": 653,
       "d1": 160,
       "d2": 45,
-      "total": 857,
-      "d0_external": 368,
+      "total": 858,
+      "d0_external": 369,
       "d1_external": 115,
       "d2_external": 18,
       "discussion_d1_external": 21
     },
     "cann/graph-autofusion": {
-      "d0": 432,
-      "d1": 147,
-      "d2": 84,
-      "total": 663,
-      "d0_external": 194,
-      "d1_external": 129,
-      "d2_external": 16,
+      "d0": 435,
+      "d1": 146,
+      "d2": 86,
+      "total": 667,
+      "d0_external": 198,
+      "d1_external": 128,
+      "d2_external": 17,
       "discussion_d1_external": 107
     },
     "cann/torchtitan-npu": {
-      "d0": 353,
-      "d1": 96,
+      "d0": 354,
+      "d1": 97,
       "d2": 43,
-      "total": 492,
-      "d0_external": 287,
+      "total": 494,
+      "d0_external": 288,
       "d1_external": 90,
       "d2_external": 19,
       "discussion_d1_external": 68
     },
     "cann/metadef": {
       "d0": 386,
-      "d1": 53,
-      "d2": 49,
-      "total": 488,
-      "d0_external": 98,
+      "d1": 54,
+      "d2": 50,
+      "total": 490,
+      "d0_external": 99,
       "d1_external": 23,
       "d2_external": 1,
       "discussion_d1_external": 0
     },
     "cann/tensorflow": {
-      "d0": 41,
-      "d1": 10,
+      "d0": 42,
+      "d1": 11,
       "d2": 11,
-      "total": 62,
-      "d0_external": 34,
+      "total": 64,
+      "d0_external": 35,
       "d1_external": 2,
       "d2_external": 1,
       "discussion_d1_external": 0
     },
     "Ascend/torchair": {
-      "d0": 668,
+      "d0": 671,
       "d1": 361,
       "d2": 332,
-      "total": 1361,
-      "d0_external": 450,
+      "total": 1364,
+      "d0_external": 453,
       "d1_external": 233,
       "d2_external": 119,
       "discussion_d1_external": 70
     },
     "cann/triton-inference-server-ge-backend": {
-      "d0": 228,
+      "d0": 230,
       "d1": 17,
       "d2": 3,
-      "total": 248,
-      "d0_external": 70,
+      "total": 250,
+      "d0_external": 72,
       "d1_external": 13,
       "d2_external": 1,
       "discussion_d1_external": 0
@@ -1442,6 +1442,22 @@
         "developer_source": "external"
       },
       {
+        "user_name": "GelinType",
+        "nick_name": "Zhihong Wang",
+        "level": "d0",
+        "sources": [
+          "star"
+        ],
+        "star_time": "2026-07-27T08:28:57.000+00:00",
+        "fans_count": 0,
+        "original_repo_count": 1,
+        "total_contributions": 289,
+        "starred_repos": [
+          "cann/ge"
+        ],
+        "developer_source": "external"
+      },
+      {
         "user_name": "GuBig",
         "nick_name": "马杰001",
         "level": "d0",
@@ -1752,6 +1768,25 @@
         "original_repo_count": null,
         "total_contributions": null,
         "starred_repos": [],
+        "developer_source": "external"
+      },
+      {
+        "user_name": "JacsonPile",
+        "nick_name": "JacsonPile",
+        "level": "d0",
+        "sources": [
+          "star"
+        ],
+        "star_time": "2026-07-27T01:18:06.000+00:00",
+        "fans_count": 0,
+        "original_repo_count": 0,
+        "total_contributions": 3,
+        "starred_repos": [
+          "cann/ge",
+          "cann/graph-autofusion",
+          "cann/torchtitan-npu",
+          "Ascend/torchair"
+        ],
         "developer_source": "external"
       },
       {
@@ -3979,10 +4014,9 @@
       },
       {
         "user_name": "cai1493105270",
-        "nick_name": "caikunlun",
+        "nick_name": "cai1493105270",
         "level": "d2",
         "sources": [
-          "fork",
           "pr",
           "merged_pr"
         ],
@@ -4070,6 +4104,20 @@
           "cann/triton-inference-server-ge-backend"
         ],
         "developer_source": "internal"
+      },
+      {
+        "user_name": "cann_wangyq",
+        "nick_name": "cann_wangyq",
+        "level": "d0",
+        "sources": [
+          "fork"
+        ],
+        "star_time": "",
+        "fans_count": null,
+        "original_repo_count": null,
+        "total_contributions": null,
+        "starred_repos": [],
+        "developer_source": "external"
       },
       {
         "user_name": "cannellery",
@@ -9185,7 +9233,7 @@
       },
       {
         "user_name": "li-yuan-67",
-        "nick_name": "li-yuan-67",
+        "nick_name": "DreamJor",
         "level": "d0",
         "sources": [
           "star"
@@ -10962,6 +11010,20 @@
         "developer_source": "external"
       },
       {
+        "user_name": "magicor",
+        "nick_name": "kx",
+        "level": "d0",
+        "sources": [
+          "fork"
+        ],
+        "star_time": "",
+        "fans_count": null,
+        "original_repo_count": null,
+        "total_contributions": null,
+        "starred_repos": [],
+        "developer_source": "external"
+      },
+      {
         "user_name": "mahaosen",
         "nick_name": "mahaosen",
         "level": "d2",
@@ -12608,6 +12670,21 @@
           "cann/ge"
         ],
         "developer_source": "external"
+      },
+      {
+        "user_name": "renyumin",
+        "nick_name": "renyumin",
+        "level": "d1",
+        "sources": [
+          "fork",
+          "pr"
+        ],
+        "star_time": "",
+        "fans_count": null,
+        "original_repo_count": null,
+        "total_contributions": null,
+        "starred_repos": [],
+        "developer_source": "internal"
       },
       {
         "user_name": "richelieuqian",
@@ -14443,6 +14520,20 @@
         "developer_source": "internal"
       },
       {
+        "user_name": "wangxun21",
+        "nick_name": "wangxun21",
+        "level": "d1",
+        "sources": [
+          "issue"
+        ],
+        "star_time": "",
+        "fans_count": null,
+        "original_repo_count": null,
+        "total_contributions": null,
+        "starred_repos": [],
+        "developer_source": "internal"
+      },
+      {
         "user_name": "wangyujiang98",
         "nick_name": "wangyujiang98",
         "level": "d0",
@@ -14755,6 +14846,7 @@
           "cann/hixl",
           "cann/graph-autofusion",
           "cann/metadef",
+          "Ascend/torchair",
           "cann/triton-inference-server-ge-backend"
         ],
         "developer_source": "external"
@@ -16659,7 +16751,8 @@
         "nick_name": "yring_8",
         "level": "d0",
         "sources": [
-          "star"
+          "star",
+          "fork"
         ],
         "star_time": "2025-12-30T01:18:33.000+00:00",
         "fans_count": 0,
@@ -16918,6 +17011,28 @@
           "cann/ge",
           "cann/graph-autofusion",
           "cann/metadef",
+          "cann/triton-inference-server-ge-backend"
+        ],
+        "developer_source": "external"
+      },
+      {
+        "user_name": "yyyy176",
+        "nick_name": "yyyy176",
+        "level": "d0",
+        "sources": [
+          "star"
+        ],
+        "star_time": "2026-07-27T14:30:33.000+00:00",
+        "fans_count": 0,
+        "original_repo_count": 0,
+        "total_contributions": 0,
+        "starred_repos": [
+          "cann/ge",
+          "cann/hixl",
+          "cann/graph-autofusion",
+          "cann/torchtitan-npu",
+          "cann/metadef",
+          "cann/tensorflow",
           "cann/triton-inference-server-ge-backend"
         ],
         "developer_source": "external"
@@ -17730,9 +17845,10 @@
       {
         "user_name": "zhaoyingdong",
         "nick_name": "zhaoyingdong",
-        "level": "d0",
+        "level": "d1",
         "sources": [
-          "fork"
+          "fork",
+          "pr"
         ],
         "star_time": "",
         "fans_count": null,
@@ -18272,7 +18388,8 @@
         "total_contributions": 0,
         "starred_repos": [
           "cann/ge",
-          "cann/graph-autofusion"
+          "cann/graph-autofusion",
+          "Ascend/torchair"
         ],
         "developer_source": "external"
       },
@@ -30405,6 +30522,7 @@
           "cann/hixl",
           "cann/graph-autofusion",
           "cann/metadef",
+          "Ascend/torchair",
           "cann/triton-inference-server-ge-backend"
         ],
         "developer_source": "external"
@@ -30965,13 +31083,16 @@
         "nick_name": "wulu0120",
         "level": "d1",
         "sources": [
+          "star",
           "issue"
         ],
-        "star_time": "",
-        "fans_count": null,
-        "original_repo_count": null,
-        "total_contributions": null,
-        "starred_repos": [],
+        "star_time": "2026-07-27T13:12:16.000+00:00",
+        "fans_count": 0,
+        "original_repo_count": 0,
+        "total_contributions": 3,
+        "starred_repos": [
+          "cann/hixl"
+        ],
         "developer_source": "external"
       },
       {
@@ -32308,6 +32429,28 @@
         "total_contributions": 0,
         "starred_repos": [
           "cann/hixl"
+        ],
+        "developer_source": "external"
+      },
+      {
+        "user_name": "yyyy176",
+        "nick_name": "yyyy176",
+        "level": "d0",
+        "sources": [
+          "star"
+        ],
+        "star_time": "2026-07-27T14:30:40.000+00:00",
+        "fans_count": 0,
+        "original_repo_count": 0,
+        "total_contributions": 0,
+        "starred_repos": [
+          "cann/ge",
+          "cann/hixl",
+          "cann/graph-autofusion",
+          "cann/torchtitan-npu",
+          "cann/metadef",
+          "cann/tensorflow",
+          "cann/triton-inference-server-ge-backend"
         ],
         "developer_source": "external"
       },
@@ -34875,10 +35018,25 @@
         "original_repo_count": 0,
         "total_contributions": 3,
         "starred_repos": [
+          "cann/ge",
           "cann/graph-autofusion",
           "cann/torchtitan-npu",
           "Ascend/torchair"
         ],
+        "developer_source": "external"
+      },
+      {
+        "user_name": "JasonZhao03",
+        "nick_name": "JasonZhao03",
+        "level": "d0",
+        "sources": [
+          "fork"
+        ],
+        "star_time": "",
+        "fans_count": null,
+        "original_repo_count": null,
+        "total_contributions": null,
+        "starred_repos": [],
         "developer_source": "external"
       },
       {
@@ -35257,6 +35415,22 @@
           "cann/triton-inference-server-ge-backend"
         ],
         "developer_source": "internal"
+      },
+      {
+        "user_name": "MIILN",
+        "nick_name": "MIILN",
+        "level": "d0",
+        "sources": [
+          "star"
+        ],
+        "star_time": "2026-07-27T01:43:20.000+00:00",
+        "fans_count": 0,
+        "original_repo_count": 0,
+        "total_contributions": 35,
+        "starred_repos": [
+          "cann/graph-autofusion"
+        ],
+        "developer_source": "external"
       },
       {
         "user_name": "MMMM_DDD",
@@ -39529,7 +39703,7 @@
       },
       {
         "user_name": "jingkai-2026",
-        "nick_name": "弱鸡大学生",
+        "nick_name": "olpk",
         "level": "d0",
         "sources": [
           "star"
@@ -40811,11 +40985,12 @@
       {
         "user_name": "m0_56712298",
         "nick_name": "m0_56712298",
-        "level": "d1",
+        "level": "d2",
         "sources": [
           "fork",
           "issue",
-          "pr"
+          "pr",
+          "merged_pr"
         ],
         "star_time": "",
         "fans_count": null,
@@ -40939,11 +41114,27 @@
         "developer_source": "internal"
       },
       {
-        "user_name": "maohaodi",
-        "nick_name": "毛浩地",
+        "user_name": "magicor",
+        "nick_name": "kx",
         "level": "d0",
         "sources": [
-          "star"
+          "fork"
+        ],
+        "star_time": "",
+        "fans_count": null,
+        "original_repo_count": null,
+        "total_contributions": null,
+        "starred_repos": [],
+        "developer_source": "external"
+      },
+      {
+        "user_name": "maohaodi",
+        "nick_name": "毛浩地",
+        "level": "d1",
+        "sources": [
+          "star",
+          "fork",
+          "pr"
         ],
         "star_time": "2025-11-01T00:54:05.000+00:00",
         "fans_count": 0,
@@ -43556,6 +43747,7 @@
           "cann/hixl",
           "cann/graph-autofusion",
           "cann/metadef",
+          "Ascend/torchair",
           "cann/triton-inference-server-ge-backend"
         ],
         "developer_source": "external"
@@ -44217,12 +44409,13 @@
       {
         "user_name": "xiebangrui2025",
         "nick_name": "xiebangrui2025",
-        "level": "d1",
+        "level": "d2",
         "sources": [
           "star",
           "fork",
           "issue",
-          "pr"
+          "pr",
+          "merged_pr"
         ],
         "star_time": "2025-10-31T07:20:14.000+00:00",
         "fans_count": 0,
@@ -44881,7 +45074,8 @@
         "nick_name": "yring_8",
         "level": "d0",
         "sources": [
-          "star"
+          "star",
+          "fork"
         ],
         "star_time": "2025-12-30T01:19:47.000+00:00",
         "fans_count": 0,
@@ -45098,6 +45292,28 @@
           "cann/ge",
           "cann/graph-autofusion",
           "cann/metadef",
+          "cann/triton-inference-server-ge-backend"
+        ],
+        "developer_source": "external"
+      },
+      {
+        "user_name": "yyyy176",
+        "nick_name": "yyyy176",
+        "level": "d0",
+        "sources": [
+          "star"
+        ],
+        "star_time": "2026-07-27T14:30:32.000+00:00",
+        "fans_count": 0,
+        "original_repo_count": 0,
+        "total_contributions": 0,
+        "starred_repos": [
+          "cann/ge",
+          "cann/hixl",
+          "cann/graph-autofusion",
+          "cann/torchtitan-npu",
+          "cann/metadef",
+          "cann/tensorflow",
           "cann/triton-inference-server-ge-backend"
         ],
         "developer_source": "external"
@@ -46075,13 +46291,14 @@
         "sources": [
           "star"
         ],
-        "star_time": "2026-06-23T12:26:16.000+00:00",
+        "star_time": "2026-07-27T08:17:11.000+00:00",
         "fans_count": 0,
         "original_repo_count": 0,
         "total_contributions": 0,
         "starred_repos": [
           "cann/ge",
-          "cann/graph-autofusion"
+          "cann/graph-autofusion",
+          "Ascend/torchair"
         ],
         "developer_source": "external"
       },
@@ -47168,6 +47385,7 @@
         "original_repo_count": 0,
         "total_contributions": 3,
         "starred_repos": [
+          "cann/ge",
           "cann/graph-autofusion",
           "cann/torchtitan-npu",
           "Ascend/torchair"
@@ -54050,6 +54268,28 @@
         "developer_source": "external"
       },
       {
+        "user_name": "yyyy176",
+        "nick_name": "yyyy176",
+        "level": "d0",
+        "sources": [
+          "star"
+        ],
+        "star_time": "2026-07-27T14:30:28.000+00:00",
+        "fans_count": 0,
+        "original_repo_count": 0,
+        "total_contributions": 0,
+        "starred_repos": [
+          "cann/ge",
+          "cann/hixl",
+          "cann/graph-autofusion",
+          "cann/torchtitan-npu",
+          "cann/metadef",
+          "cann/tensorflow",
+          "cann/triton-inference-server-ge-backend"
+        ],
+        "developer_source": "external"
+      },
+      {
         "user_name": "z_c_218",
         "nick_name": "z_c_218",
         "level": "d0",
@@ -54192,6 +54432,21 @@
         "starred_repos": [
           "cann/torchtitan-npu"
         ],
+        "developer_source": "internal"
+      },
+      {
+        "user_name": "zhangguoguang",
+        "nick_name": "zhangguoguang",
+        "level": "d1",
+        "sources": [
+          "fork",
+          "pr"
+        ],
+        "star_time": "",
+        "fans_count": null,
+        "original_repo_count": null,
+        "total_contributions": null,
+        "starred_repos": [],
         "developer_source": "internal"
       },
       {
@@ -58946,10 +59201,12 @@
       {
         "user_name": "kantao1",
         "nick_name": "kantao1",
-        "level": "d0",
+        "level": "d2",
         "sources": [
           "star",
-          "fork"
+          "fork",
+          "pr",
+          "merged_pr"
         ],
         "star_time": "2025-12-26T07:05:52.000+00:00",
         "fans_count": 0,
@@ -59117,7 +59374,7 @@
       },
       {
         "user_name": "li-yuan-67",
-        "nick_name": "li-yuan-67",
+        "nick_name": "DreamJor",
         "level": "d0",
         "sources": [
           "star"
@@ -59927,6 +60184,24 @@
           "cann/graph-autofusion",
           "cann/metadef",
           "cann/triton-inference-server-ge-backend"
+        ],
+        "developer_source": "internal"
+      },
+      {
+        "user_name": "lwx1255555",
+        "nick_name": "lwx1255555",
+        "level": "d1",
+        "sources": [
+          "fork",
+          "pr"
+        ],
+        "star_time": "",
+        "fans_count": 0,
+        "original_repo_count": 0,
+        "total_contributions": 397,
+        "starred_repos": [
+          "cann/ge",
+          "cann/hixl"
         ],
         "developer_source": "internal"
       },
@@ -62296,6 +62571,7 @@
           "cann/hixl",
           "cann/graph-autofusion",
           "cann/metadef",
+          "Ascend/torchair",
           "cann/triton-inference-server-ge-backend"
         ],
         "developer_source": "external"
@@ -63352,6 +63628,28 @@
           "cann/ge",
           "cann/graph-autofusion",
           "cann/metadef",
+          "cann/triton-inference-server-ge-backend"
+        ],
+        "developer_source": "external"
+      },
+      {
+        "user_name": "yyyy176",
+        "nick_name": "yyyy176",
+        "level": "d0",
+        "sources": [
+          "star"
+        ],
+        "star_time": "2026-07-27T14:30:45.000+00:00",
+        "fans_count": 0,
+        "original_repo_count": 0,
+        "total_contributions": 0,
+        "starred_repos": [
+          "cann/ge",
+          "cann/hixl",
+          "cann/graph-autofusion",
+          "cann/torchtitan-npu",
+          "cann/metadef",
+          "cann/tensorflow",
           "cann/triton-inference-server-ge-backend"
         ],
         "developer_source": "external"
@@ -65289,6 +65587,23 @@
         "developer_source": "external"
       },
       {
+        "user_name": "wangzhensheng",
+        "nick_name": "wangzhensheng",
+        "level": "d1",
+        "sources": [
+          "issue"
+        ],
+        "star_time": "",
+        "fans_count": 0,
+        "original_repo_count": 0,
+        "total_contributions": 668,
+        "starred_repos": [
+          "cann/ge",
+          "cann/metadef"
+        ],
+        "developer_source": "internal"
+      },
+      {
         "user_name": "weixin_42123873",
         "nick_name": "weixin_42123873",
         "level": "d1",
@@ -65347,6 +65662,28 @@
           "Ascend/torchair"
         ],
         "developer_source": "internal"
+      },
+      {
+        "user_name": "yyyy176",
+        "nick_name": "yyyy176",
+        "level": "d0",
+        "sources": [
+          "star"
+        ],
+        "star_time": "2026-07-27T14:31:15.000+00:00",
+        "fans_count": 0,
+        "original_repo_count": 0,
+        "total_contributions": 0,
+        "starred_repos": [
+          "cann/ge",
+          "cann/hixl",
+          "cann/graph-autofusion",
+          "cann/torchtitan-npu",
+          "cann/metadef",
+          "cann/tensorflow",
+          "cann/triton-inference-server-ge-backend"
+        ],
+        "developer_source": "external"
       },
       {
         "user_name": "zhangfands",
@@ -66350,7 +66687,8 @@
         "nick_name": "Chang-an-HW",
         "level": "d0",
         "sources": [
-          "star"
+          "star",
+          "fork"
         ],
         "star_time": "2025-11-21T01:34:32.000+00:00",
         "fans_count": 0,
@@ -67118,6 +67456,7 @@
         "original_repo_count": 0,
         "total_contributions": 3,
         "starred_repos": [
+          "cann/ge",
           "cann/graph-autofusion",
           "cann/torchtitan-npu",
           "Ascend/torchair"
@@ -69482,6 +69821,22 @@
           "star"
         ],
         "star_time": "2026-05-21T10:31:51.000+00:00",
+        "fans_count": 0,
+        "original_repo_count": 0,
+        "total_contributions": 0,
+        "starred_repos": [
+          "Ascend/torchair"
+        ],
+        "developer_source": "external"
+      },
+      {
+        "user_name": "abo",
+        "nick_name": "abo",
+        "level": "d0",
+        "sources": [
+          "star"
+        ],
+        "star_time": "2026-07-27T07:07:26.000+00:00",
         "fans_count": 0,
         "original_repo_count": 0,
         "total_contributions": 0,
@@ -83256,6 +83611,27 @@
         "developer_source": "external"
       },
       {
+        "user_name": "weixin_42886776",
+        "nick_name": "豳州牧之",
+        "level": "d0",
+        "sources": [
+          "star"
+        ],
+        "star_time": "2026-07-27T00:51:27.000+00:00",
+        "fans_count": 0,
+        "original_repo_count": 0,
+        "total_contributions": 132,
+        "starred_repos": [
+          "cann/ge",
+          "cann/hixl",
+          "cann/graph-autofusion",
+          "cann/metadef",
+          "Ascend/torchair",
+          "cann/triton-inference-server-ge-backend"
+        ],
+        "developer_source": "external"
+      },
+      {
         "user_name": "weixin_43388678",
         "nick_name": "weixin_43388678",
         "level": "d0",
@@ -86950,6 +87326,20 @@
         "developer_source": "internal"
       },
       {
+        "user_name": "zhangyinxia",
+        "nick_name": "zhangyinxia",
+        "level": "d0",
+        "sources": [
+          "fork"
+        ],
+        "star_time": "",
+        "fans_count": null,
+        "original_repo_count": null,
+        "total_contributions": null,
+        "starred_repos": [],
+        "developer_source": "external"
+      },
+      {
         "user_name": "zhangyuxiang0119",
         "nick_name": "zhangyuxiang0119",
         "level": "d1",
@@ -86969,6 +87359,7 @@
         "level": "d2",
         "sources": [
           "fork",
+          "issue",
           "pr",
           "merged_pr"
         ],
@@ -87971,15 +88362,17 @@
         "nick_name": "zwx1002032",
         "level": "d1",
         "sources": [
+          "star",
           "issue"
         ],
-        "star_time": "",
+        "star_time": "2026-07-27T08:17:50.000+00:00",
         "fans_count": 0,
         "original_repo_count": 0,
         "total_contributions": 0,
         "starred_repos": [
           "cann/ge",
-          "cann/graph-autofusion"
+          "cann/graph-autofusion",
+          "Ascend/torchair"
         ],
         "developer_source": "external"
       },
@@ -90346,6 +90739,20 @@
         "developer_source": "external"
       },
       {
+        "user_name": "keecin",
+        "nick_name": "alkasa",
+        "level": "d0",
+        "sources": [
+          "fork"
+        ],
+        "star_time": "",
+        "fans_count": null,
+        "original_repo_count": null,
+        "total_contributions": null,
+        "starred_repos": [],
+        "developer_source": "external"
+      },
+      {
         "user_name": "keke_x",
         "nick_name": "keke_xu",
         "level": "d0",
@@ -92229,6 +92636,7 @@
           "cann/hixl",
           "cann/graph-autofusion",
           "cann/metadef",
+          "Ascend/torchair",
           "cann/triton-inference-server-ge-backend"
         ],
         "developer_source": "external"
@@ -92623,6 +93031,28 @@
           "cann/ge",
           "cann/graph-autofusion",
           "cann/metadef",
+          "cann/triton-inference-server-ge-backend"
+        ],
+        "developer_source": "external"
+      },
+      {
+        "user_name": "yyyy176",
+        "nick_name": "yyyy176",
+        "level": "d0",
+        "sources": [
+          "star"
+        ],
+        "star_time": "2026-07-27T14:31:09.000+00:00",
+        "fans_count": 0,
+        "original_repo_count": 0,
+        "total_contributions": 0,
+        "starred_repos": [
+          "cann/ge",
+          "cann/hixl",
+          "cann/graph-autofusion",
+          "cann/torchtitan-npu",
+          "cann/metadef",
+          "cann/tensorflow",
           "cann/triton-inference-server-ge-backend"
         ],
         "developer_source": "external"
@@ -93037,24 +93467,24 @@
     {
       "month": "2025-10",
       "d0": 167,
-      "d1": 21,
-      "d2": 44,
+      "d1": 20,
+      "d2": 45,
       "new_stars": 232,
       "cumulative": 232
     },
     {
       "month": "2025-11",
-      "d0": 227,
-      "d1": 36,
+      "d0": 226,
+      "d1": 37,
       "d2": 42,
       "new_stars": 305,
       "cumulative": 537
     },
     {
       "month": "2025-12",
-      "d0": 990,
+      "d0": 989,
       "d1": 53,
-      "d2": 146,
+      "d2": 147,
       "new_stars": 1189,
       "cumulative": 1726
     },
@@ -93100,19 +93530,19 @@
     },
     {
       "month": "2026-06",
-      "d0": 428,
+      "d0": 427,
       "d1": 22,
       "d2": 23,
-      "new_stars": 473,
-      "cumulative": 3681
+      "new_stars": 472,
+      "cumulative": 3680
     },
     {
       "month": "2026-07",
-      "d0": 183,
-      "d1": 18,
+      "d0": 196,
+      "d1": 20,
       "d2": 10,
-      "new_stars": 211,
-      "cumulative": 3892
+      "new_stars": 226,
+      "cumulative": 3906
     }
   ],
   "discussion_commenter_assignment": {
