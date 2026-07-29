@@ -18,6 +18,7 @@ config/smtp_config.ini
 
 # GitCode API Token（敏感数据，通过 CI Secret / 私有仓注入）
 config/gitcode_token.txt
+config/gitcode_token_rw.txt
 
 # 管理员汇总临时文件
 data/admin_mr_summary.json

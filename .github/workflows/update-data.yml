@@ -72,6 +72,7 @@ jobs:
           cp .private/gitcode_2_mail.txt config/gitcode_2_mail.txt
           cp .private/smtp_config.ini config/smtp_config.ini
           cp .private/gitcode_token.txt config/gitcode_token.txt
+          cp .private/gitcode_token_rw.txt config/gitcode_token_rw.txt
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -114,6 +115,10 @@ jobs:
 
       - name: Collect community data
         run: python collector.py community-all
+
+      - name: Add wait-feedback labels
+        if: github.event_name == 'schedule'
+        run: python add_wait_feedback_label.py
 
       - name: Commit and push updated data
         run: |
