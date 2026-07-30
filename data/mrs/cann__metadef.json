@@ -1,21 +1,101 @@
 [
   {
-    "iid": 410,
+    "iid": 414,
     "state": "opened",
+    "draft": false,
+    "title": "【PR】:  sync develop to master 20260730",
+    "created_at": "2026-07-30",
+    "updated_at": "2026-07-30",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhanj",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/414",
+    "labels": [
+      "api-check-pass",
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 413,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 支持batch一致性资料及头文件注释修改",
+    "created_at": "2026-07-30",
+    "updated_at": "2026-07-30",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "ClarkXie",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/413",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 412,
+    "state": "merged",
+    "draft": false,
+    "title": "fix: update metadef version to 9.2.0",
+    "created_at": "2026-07-30",
+    "updated_at": "2026-07-30",
+    "merged_at": "2026-07-30",
+    "closed_at": "",
+    "author": "yelongjian",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/412",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 411,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: 简要描述 增加冒烟always参数，抢占策略",
+    "created_at": "2026-07-30",
+    "updated_at": "2026-07-30",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wangyunxiang1",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/411",
+    "labels": [
+      "approved",
+      "enhancement",
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 410,
+    "state": "merged",
     "draft": false,
     "title": "【PR】:  sync develop to master 20260729",
     "created_at": "2026-07-29",
-    "updated_at": "2026-07-29",
-    "merged_at": "",
+    "updated_at": "2026-07-30",
+    "merged_at": "2026-07-30",
     "closed_at": "",
     "author": "zhanj",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/410",
     "labels": [
+      "lgtm",
       "ci-pipeline-passed",
       "cann-cla/yes",
-      "api-check-pass"
+      "api-check-pass",
+      "approved"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -38,7 +118,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -56,7 +136,7 @@
       "ci-pipeline-passed",
       "api-check-pass"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": []
   },
   {
@@ -76,7 +156,7 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 3,
+    "working_days_open": 4,
     "e2e_issues": []
   },
   {
@@ -98,7 +178,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 3,
+    "working_days_open": 4,
     "e2e_issues": []
   },
   {
@@ -119,7 +199,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 3,
+    "working_days_open": 4,
     "e2e_issues": [
       "86"
     ]
@@ -130,7 +210,7 @@
     "draft": false,
     "title": "【PR】:  sync master to develop 20260723",
     "created_at": "2026-07-23",
-    "updated_at": "2026-07-29",
+    "updated_at": "2026-07-30",
     "merged_at": "",
     "closed_at": "",
     "author": "zhanj",
@@ -139,7 +219,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 5,
+    "working_days_open": 6,
     "e2e_issues": []
   },
   {
@@ -161,25 +241,25 @@
       "ci-pipeline-passed",
       "api-check-pass"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": []
   },
   {
     "iid": 402,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "feat: support node deterministic level",
     "created_at": "2026-07-13",
-    "updated_at": "2026-07-21",
+    "updated_at": "2026-07-30",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-07-30",
     "author": "ClarkXie",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/402",
     "labels": [
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 13,
+    "working_days_open": 14,
     "e2e_issues": []
   },
   {
@@ -202,7 +282,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 13,
+    "working_days_open": 14,
     "e2e_issues": []
   },
   {
@@ -221,7 +301,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 13,
+    "working_days_open": 14,
     "e2e_issues": []
   },
   {
@@ -245,7 +325,7 @@
       "AscendC-SUCC",
       "approved"
     ],
-    "working_days_open": 14,
+    "working_days_open": 15,
     "e2e_issues": []
   },
   {
@@ -263,7 +343,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 14,
+    "working_days_open": 15,
     "e2e_issues": []
   },
   {
@@ -285,7 +365,7 @@
       "stat/needs-squash",
       "approved"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": []
   },
   {
@@ -306,7 +386,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": []
   },
   {
@@ -326,7 +406,7 @@
       "ci-pipeline-passed",
       "approved"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": []
   },
   {
@@ -347,7 +427,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": []
   },
   {
@@ -356,7 +436,7 @@
     "draft": false,
     "title": "fix: fix clean code warnings",
     "created_at": "2026-07-09",
-    "updated_at": "2026-07-28",
+    "updated_at": "2026-07-30",
     "merged_at": "",
     "closed_at": "",
     "author": "likun104",
@@ -366,7 +446,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": []
   },
   {
@@ -386,7 +466,7 @@
       "approved",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": []
   },
   {
@@ -408,7 +488,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": []
   },
   {
@@ -429,7 +509,7 @@
       "ci-pipeline-passed",
       "approved"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -448,7 +528,7 @@
       "enhancement",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -469,7 +549,7 @@
       "api-check-pass",
       "cann-cla/yes"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -491,7 +571,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -511,7 +591,7 @@
       "ci-pipeline-failed",
       "stat/needs-squash"
     ],
-    "working_days_open": 17,
+    "working_days_open": 18,
     "e2e_issues": []
   },
   {
@@ -532,7 +612,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 17,
+    "working_days_open": 18,
     "e2e_issues": []
   },
   {
@@ -554,7 +634,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 21,
+    "working_days_open": 22,
     "e2e_issues": []
   },
   {
@@ -576,7 +656,7 @@
       "ci-pipeline-passed",
       "approved"
     ],
-    "working_days_open": 23,
+    "working_days_open": 24,
     "e2e_issues": []
   },
   {
@@ -598,7 +678,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 23,
+    "working_days_open": 24,
     "e2e_issues": []
   },
   {
@@ -621,7 +701,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -643,7 +723,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": [
       "80"
     ]
@@ -667,7 +747,7 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": [
       "79",
       "81"
@@ -694,7 +774,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -712,7 +792,7 @@
       "ci-pipeline-failed",
       "cann-cla/yes"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -729,7 +809,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": []
   },
   {
@@ -746,7 +826,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": [
       "81"
     ]
@@ -765,7 +845,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": [
       "80"
     ]
@@ -784,7 +864,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 25,
+    "working_days_open": 26,
     "e2e_issues": [
       "79"
     ]
@@ -807,7 +887,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 26,
+    "working_days_open": 27,
     "e2e_issues": []
   },
   {
@@ -824,7 +904,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 26,
+    "working_days_open": 27,
     "e2e_issues": []
   },
   {
@@ -845,7 +925,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 27,
+    "working_days_open": 28,
     "e2e_issues": []
   },
   {
@@ -866,7 +946,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 27,
+    "working_days_open": 28,
     "e2e_issues": []
   },
   {
@@ -888,7 +968,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 28,
+    "working_days_open": 29,
     "e2e_issues": []
   },
   {
@@ -910,7 +990,7 @@
       "approved",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 31,
+    "working_days_open": 32,
     "e2e_issues": []
   },
   {
@@ -931,7 +1011,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 31,
+    "working_days_open": 32,
     "e2e_issues": []
   },
   {
@@ -950,7 +1030,7 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 32,
+    "working_days_open": 33,
     "e2e_issues": []
   },
   {
@@ -971,7 +1051,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 32,
+    "working_days_open": 33,
     "e2e_issues": []
   },
   {
@@ -992,7 +1072,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 32,
+    "working_days_open": 33,
     "e2e_issues": []
   },
   {
@@ -1014,7 +1094,7 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 33,
+    "working_days_open": 34,
     "e2e_issues": []
   },
   {
@@ -1036,7 +1116,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 33,
+    "working_days_open": 34,
     "e2e_issues": []
   },
   {
@@ -1056,7 +1136,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 33,
+    "working_days_open": 34,
     "e2e_issues": []
   },
   {
@@ -1075,7 +1155,7 @@
       "cann-cla/no",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 33,
+    "working_days_open": 34,
     "e2e_issues": []
   },
   {
@@ -1093,7 +1173,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 33,
+    "working_days_open": 34,
     "e2e_issues": []
   },
   {
@@ -1114,7 +1194,7 @@
       "enhancement",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 33,
+    "working_days_open": 34,
     "e2e_issues": []
   },
   {
@@ -1135,7 +1215,7 @@
       "ci-pipeline-passed",
       "approved"
     ],
-    "working_days_open": 34,
+    "working_days_open": 35,
     "e2e_issues": []
   },
   {
@@ -1156,7 +1236,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 34,
+    "working_days_open": 35,
     "e2e_issues": []
   },
   {
@@ -1178,7 +1258,7 @@
       "enhancement",
       "stat/needs-squash"
     ],
-    "working_days_open": 34,
+    "working_days_open": 35,
     "e2e_issues": []
   },
   {
@@ -1196,7 +1276,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 34,
+    "working_days_open": 35,
     "e2e_issues": []
   },
   {
@@ -1218,7 +1298,7 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 35,
+    "working_days_open": 36,
     "e2e_issues": []
   },
   {
@@ -1239,7 +1319,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 35,
+    "working_days_open": 36,
     "e2e_issues": []
   },
   {
@@ -1260,7 +1340,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 35,
+    "working_days_open": 36,
     "e2e_issues": []
   },
   {
@@ -1281,7 +1361,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 36,
+    "working_days_open": 37,
     "e2e_issues": []
   },
   {
@@ -1302,7 +1382,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 36,
+    "working_days_open": 37,
     "e2e_issues": []
   },
   {
@@ -1322,7 +1402,7 @@
       "ci-pipeline-failed",
       "api-check-pass"
     ],
-    "working_days_open": 36,
+    "working_days_open": 37,
     "e2e_issues": []
   },
   {
@@ -1343,7 +1423,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 37,
+    "working_days_open": 38,
     "e2e_issues": []
   },
   {
@@ -1364,7 +1444,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 37,
+    "working_days_open": 38,
     "e2e_issues": []
   },
   {
@@ -1385,7 +1465,7 @@
       "enhancement",
       "approved"
     ],
-    "working_days_open": 37,
+    "working_days_open": 38,
     "e2e_issues": []
   },
   {
@@ -1407,7 +1487,7 @@
       "stat/needs-squash",
       "enhancement"
     ],
-    "working_days_open": 38,
+    "working_days_open": 39,
     "e2e_issues": []
   },
   {
@@ -1428,7 +1508,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 38,
+    "working_days_open": 39,
     "e2e_issues": []
   },
   {
@@ -1446,7 +1526,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 38,
+    "working_days_open": 39,
     "e2e_issues": []
   },
   {
@@ -1468,7 +1548,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 39,
+    "working_days_open": 40,
     "e2e_issues": []
   },
   {
@@ -1489,7 +1569,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 39,
+    "working_days_open": 40,
     "e2e_issues": []
   },
   {
@@ -1510,7 +1590,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 39,
+    "working_days_open": 40,
     "e2e_issues": []
   },
   {
@@ -1529,7 +1609,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 40,
+    "working_days_open": 41,
     "e2e_issues": []
   },
   {
@@ -1548,7 +1628,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 40,
+    "working_days_open": 41,
     "e2e_issues": []
   },
   {
@@ -1570,7 +1650,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 41,
+    "working_days_open": 42,
     "e2e_issues": []
   },
   {
@@ -1592,7 +1672,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 41,
+    "working_days_open": 42,
     "e2e_issues": []
   },
   {
@@ -1613,7 +1693,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 42,
+    "working_days_open": 43,
     "e2e_issues": []
   },
   {
@@ -1632,7 +1712,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 42,
+    "working_days_open": 43,
     "e2e_issues": []
   },
   {
@@ -1653,7 +1733,7 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 42,
+    "working_days_open": 43,
     "e2e_issues": []
   },
   {
@@ -1672,7 +1752,7 @@
       "enhancement",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 42,
+    "working_days_open": 43,
     "e2e_issues": []
   },
   {
@@ -1694,7 +1774,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 42,
+    "working_days_open": 43,
     "e2e_issues": []
   },
   {
@@ -1714,7 +1794,7 @@
       "stat/needs-squash",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 42,
+    "working_days_open": 43,
     "e2e_issues": []
   },
   {
@@ -1736,7 +1816,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 42,
+    "working_days_open": 43,
     "e2e_issues": []
   },
   {
@@ -1758,7 +1838,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 43,
+    "working_days_open": 44,
     "e2e_issues": []
   },
   {
@@ -1780,7 +1860,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 43,
+    "working_days_open": 44,
     "e2e_issues": []
   },
   {
@@ -1799,7 +1879,7 @@
       "enhancement",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 43,
+    "working_days_open": 44,
     "e2e_issues": []
   },
   {
@@ -1822,7 +1902,7 @@
       "BUILD-SUCC",
       "approved"
     ],
-    "working_days_open": 43,
+    "working_days_open": 44,
     "e2e_issues": []
   },
   {
@@ -1844,7 +1924,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 44,
+    "working_days_open": 45,
     "e2e_issues": []
   },
   {
@@ -1865,7 +1945,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 44,
+    "working_days_open": 45,
     "e2e_issues": []
   },
   {
@@ -1884,7 +1964,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 44,
+    "working_days_open": 45,
     "e2e_issues": []
   },
   {
@@ -1905,7 +1985,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 44,
+    "working_days_open": 45,
     "e2e_issues": []
   },
   {
@@ -1926,7 +2006,7 @@
       "enhancement",
       "approved"
     ],
-    "working_days_open": 44,
+    "working_days_open": 45,
     "e2e_issues": []
   },
   {
@@ -1948,7 +2028,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 45,
+    "working_days_open": 46,
     "e2e_issues": []
   },
   {
@@ -1969,7 +2049,7 @@
       "enhancement",
       "lgtm"
     ],
-    "working_days_open": 45,
+    "working_days_open": 46,
     "e2e_issues": []
   },
   {
@@ -1990,7 +2070,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 45,
+    "working_days_open": 46,
     "e2e_issues": []
   },
   {
@@ -2013,7 +2093,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 46,
+    "working_days_open": 47,
     "e2e_issues": []
   },
   {
@@ -2033,7 +2113,7 @@
       "stat/needs-squash",
       "approved"
     ],
-    "working_days_open": 46,
+    "working_days_open": 47,
     "e2e_issues": []
   },
   {
@@ -2052,7 +2132,7 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 46,
+    "working_days_open": 47,
     "e2e_issues": []
   },
   {
@@ -2074,7 +2154,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 47,
+    "working_days_open": 48,
     "e2e_issues": []
   },
   {
@@ -2095,7 +2175,7 @@
       "enhancement",
       "lgtm"
     ],
-    "working_days_open": 47,
+    "working_days_open": 48,
     "e2e_issues": []
   },
   {
@@ -2115,7 +2195,7 @@
       "enhancement",
       "cann-cla/no"
     ],
-    "working_days_open": 47,
+    "working_days_open": 48,
     "e2e_issues": []
   },
   {
@@ -2136,7 +2216,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 47,
+    "working_days_open": 48,
     "e2e_issues": []
   },
   {
@@ -2156,7 +2236,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 47,
+    "working_days_open": 48,
     "e2e_issues": []
   },
   {
@@ -2178,7 +2258,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 47,
+    "working_days_open": 48,
     "e2e_issues": []
   },
   {
@@ -2200,7 +2280,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 48,
+    "working_days_open": 49,
     "e2e_issues": []
   },
   {
@@ -2221,7 +2301,7 @@
       "approved",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 48,
+    "working_days_open": 49,
     "e2e_issues": []
   },
   {
@@ -2239,7 +2319,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 48,
+    "working_days_open": 49,
     "e2e_issues": []
   },
   {
@@ -2259,7 +2339,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 48,
+    "working_days_open": 49,
     "e2e_issues": []
   },
   {
@@ -2280,7 +2360,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 48,
+    "working_days_open": 49,
     "e2e_issues": []
   },
   {
@@ -2302,7 +2382,7 @@
       "enhancement",
       "api-check-pass"
     ],
-    "working_days_open": 49,
+    "working_days_open": 50,
     "e2e_issues": []
   },
   {
@@ -2323,7 +2403,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 49,
+    "working_days_open": 50,
     "e2e_issues": []
   },
   {
@@ -2345,7 +2425,7 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 49,
+    "working_days_open": 50,
     "e2e_issues": []
   },
   {
@@ -2365,7 +2445,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 49,
+    "working_days_open": 50,
     "e2e_issues": [
       "72"
     ]
@@ -2386,7 +2466,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 50,
+    "working_days_open": 51,
     "e2e_issues": []
   },
   {
@@ -2408,7 +2488,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 50,
+    "working_days_open": 51,
     "e2e_issues": []
   },
   {
@@ -2427,7 +2507,7 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 51,
+    "working_days_open": 52,
     "e2e_issues": []
   },
   {
@@ -2448,7 +2528,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 52,
+    "working_days_open": 53,
     "e2e_issues": []
   },
   {
@@ -2468,7 +2548,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 52,
+    "working_days_open": 53,
     "e2e_issues": []
   },
   {
@@ -2489,7 +2569,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 54,
+    "working_days_open": 55,
     "e2e_issues": []
   },
   {
@@ -2509,7 +2589,7 @@
       "api-check-pass",
       "stat/needs-squash"
     ],
-    "working_days_open": 54,
+    "working_days_open": 55,
     "e2e_issues": []
   },
   {
@@ -2530,7 +2610,7 @@
       "api-check-pass",
       "lgtm"
     ],
-    "working_days_open": 55,
+    "working_days_open": 56,
     "e2e_issues": []
   },
   {
@@ -2551,7 +2631,7 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 55,
+    "working_days_open": 56,
     "e2e_issues": []
   },
   {
@@ -2571,7 +2651,7 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 56,
+    "working_days_open": 57,
     "e2e_issues": []
   },
   {
@@ -2592,7 +2672,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 57,
+    "working_days_open": 58,
     "e2e_issues": []
   },
   {
@@ -2612,7 +2692,7 @@
       "enhancement",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 57,
+    "working_days_open": 58,
     "e2e_issues": []
   },
   {
@@ -2633,7 +2713,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 57,
+    "working_days_open": 58,
     "e2e_issues": []
   },
   {
@@ -2652,7 +2732,7 @@
       "enhancement",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 57,
+    "working_days_open": 58,
     "e2e_issues": []
   },
   {
@@ -2673,7 +2753,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 58,
+    "working_days_open": 59,
     "e2e_issues": []
   },
   {
@@ -2692,7 +2772,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 58,
+    "working_days_open": 59,
     "e2e_issues": []
   },
   {
@@ -2713,7 +2793,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 58,
+    "working_days_open": 59,
     "e2e_issues": []
   },
   {
@@ -2732,7 +2812,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 58,
+    "working_days_open": 59,
     "e2e_issues": []
   },
   {
@@ -2755,7 +2835,7 @@
       "enhancement",
       "api-check-pass"
     ],
-    "working_days_open": 59,
+    "working_days_open": 60,
     "e2e_issues": []
   },
   {
@@ -2776,7 +2856,7 @@
       "ci-pipeline-passed",
       "api-check-pass"
     ],
-    "working_days_open": 59,
+    "working_days_open": 60,
     "e2e_issues": []
   },
   {
@@ -2795,7 +2875,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 59,
+    "working_days_open": 60,
     "e2e_issues": []
   },
   {
@@ -2814,7 +2894,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 60,
+    "working_days_open": 61,
     "e2e_issues": []
   },
   {
@@ -2835,7 +2915,7 @@
       "api-check-pass",
       "lgtm"
     ],
-    "working_days_open": 61,
+    "working_days_open": 62,
     "e2e_issues": []
   },
   {
@@ -2856,7 +2936,7 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 61,
+    "working_days_open": 62,
     "e2e_issues": []
   },
   {
@@ -2878,7 +2958,7 @@
       "ci-confirmed",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 61,
+    "working_days_open": 62,
     "e2e_issues": []
   },
   {
@@ -2899,7 +2979,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 61,
+    "working_days_open": 62,
     "e2e_issues": []
   },
   {
@@ -2919,7 +2999,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 62,
+    "working_days_open": 63,
     "e2e_issues": []
   },
   {
@@ -2941,7 +3021,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 64,
+    "working_days_open": 65,
     "e2e_issues": []
   },
   {
@@ -2963,7 +3043,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 64,
+    "working_days_open": 65,
     "e2e_issues": []
   },
   {
@@ -2984,7 +3064,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 64,
+    "working_days_open": 65,
     "e2e_issues": []
   },
   {
@@ -3005,7 +3085,7 @@
       "enhancement",
       "lgtm"
     ],
-    "working_days_open": 64,
+    "working_days_open": 65,
     "e2e_issues": []
   },
   {
@@ -3026,7 +3106,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 64,
+    "working_days_open": 65,
     "e2e_issues": []
   },
   {
@@ -3047,7 +3127,7 @@
       "ci-pipeline-passed",
       "api-check-pass"
     ],
-    "working_days_open": 65,
+    "working_days_open": 66,
     "e2e_issues": []
   },
   {
@@ -3066,7 +3146,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 65,
+    "working_days_open": 66,
     "e2e_issues": []
   },
   {
@@ -3087,7 +3167,7 @@
       "approved",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 65,
+    "working_days_open": 66,
     "e2e_issues": []
   },
   {
@@ -3109,7 +3189,7 @@
       "api-check-pass",
       "lgtm"
     ],
-    "working_days_open": 66,
+    "working_days_open": 67,
     "e2e_issues": []
   },
   {
@@ -3128,7 +3208,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 66,
+    "working_days_open": 67,
     "e2e_issues": []
   },
   {
@@ -3149,7 +3229,7 @@
       "api-check-pass",
       "lgtm"
     ],
-    "working_days_open": 66,
+    "working_days_open": 67,
     "e2e_issues": []
   },
   {
@@ -3168,7 +3248,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 66,
+    "working_days_open": 67,
     "e2e_issues": []
   },
   {
@@ -3189,7 +3269,7 @@
       "enhancement",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 67,
+    "working_days_open": 68,
     "e2e_issues": []
   },
   {
@@ -3211,7 +3291,7 @@
       "stat/needs-squash",
       "approved"
     ],
-    "working_days_open": 68,
+    "working_days_open": 69,
     "e2e_issues": []
   },
   {
@@ -3233,7 +3313,7 @@
       "api-check-failed",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 68,
+    "working_days_open": 69,
     "e2e_issues": []
   },
   {
@@ -3253,7 +3333,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 68,
+    "working_days_open": 69,
     "e2e_issues": []
   },
   {
@@ -3274,7 +3354,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 68,
+    "working_days_open": 69,
     "e2e_issues": []
   },
   {
@@ -3295,7 +3375,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 68,
+    "working_days_open": 69,
     "e2e_issues": []
   },
   {
@@ -3316,7 +3396,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 68,
+    "working_days_open": 69,
     "e2e_issues": []
   },
   {
@@ -3337,7 +3417,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 68,
+    "working_days_open": 69,
     "e2e_issues": []
   },
   {
@@ -3358,7 +3438,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 69,
+    "working_days_open": 70,
     "e2e_issues": []
   },
   {
@@ -3379,7 +3459,7 @@
       "api-check-pass",
       "lgtm"
     ],
-    "working_days_open": 69,
+    "working_days_open": 70,
     "e2e_issues": []
   },
   {
@@ -3400,7 +3480,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 69,
+    "working_days_open": 70,
     "e2e_issues": []
   },
   {
@@ -3421,7 +3501,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 69,
+    "working_days_open": 70,
     "e2e_issues": []
   },
   {
@@ -3443,7 +3523,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 70,
+    "working_days_open": 71,
     "e2e_issues": []
   },
   {
@@ -3464,7 +3544,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 70,
+    "working_days_open": 71,
     "e2e_issues": []
   },
   {
@@ -3485,7 +3565,7 @@
       "approved",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 70,
+    "working_days_open": 71,
     "e2e_issues": []
   },
   {
@@ -3506,7 +3586,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 70,
+    "working_days_open": 71,
     "e2e_issues": []
   },
   {
@@ -3528,7 +3608,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 70,
+    "working_days_open": 71,
     "e2e_issues": []
   },
   {
@@ -3549,7 +3629,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 71,
+    "working_days_open": 72,
     "e2e_issues": []
   },
   {
@@ -3570,7 +3650,7 @@
       "api-check-pass",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 72,
+    "working_days_open": 73,
     "e2e_issues": []
   },
   {
@@ -3591,7 +3671,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 72,
+    "working_days_open": 73,
     "e2e_issues": []
   },
   {
@@ -3610,7 +3690,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 72,
+    "working_days_open": 73,
     "e2e_issues": []
   },
   {
@@ -3628,7 +3708,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 72,
+    "working_days_open": 73,
     "e2e_issues": []
   },
   {
@@ -3650,7 +3730,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 74,
+    "working_days_open": 75,
     "e2e_issues": []
   },
   {
@@ -3671,7 +3751,7 @@
       "ci-pipeline-failed",
       "stat/needs-squash"
     ],
-    "working_days_open": 74,
+    "working_days_open": 75,
     "e2e_issues": []
   },
   {
@@ -3692,7 +3772,7 @@
       "enhancement",
       "api-check-pass"
     ],
-    "working_days_open": 74,
+    "working_days_open": 75,
     "e2e_issues": []
   },
   {
@@ -3714,7 +3794,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 74,
+    "working_days_open": 75,
     "e2e_issues": []
   },
   {
@@ -3733,7 +3813,7 @@
       "enhancement",
       "stat/needs-squash"
     ],
-    "working_days_open": 74,
+    "working_days_open": 75,
     "e2e_issues": []
   },
   {
@@ -3755,7 +3835,7 @@
       "ci-pipeline-passed",
       "api-check-pass"
     ],
-    "working_days_open": 75,
+    "working_days_open": 76,
     "e2e_issues": []
   },
   {
@@ -3776,7 +3856,7 @@
       "ci-pipeline-passed",
       "approved"
     ],
-    "working_days_open": 75,
+    "working_days_open": 76,
     "e2e_issues": []
   },
   {
@@ -3797,7 +3877,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 75,
+    "working_days_open": 76,
     "e2e_issues": []
   },
   {
@@ -3818,7 +3898,7 @@
       "approved",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 75,
+    "working_days_open": 76,
     "e2e_issues": []
   },
   {
@@ -3838,7 +3918,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 75,
+    "working_days_open": 76,
     "e2e_issues": []
   },
   {
@@ -3860,7 +3940,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 75,
+    "working_days_open": 76,
     "e2e_issues": []
   },
   {
@@ -3881,7 +3961,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 75,
+    "working_days_open": 76,
     "e2e_issues": []
   },
   {
@@ -3902,7 +3982,7 @@
       "approved",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 75,
+    "working_days_open": 76,
     "e2e_issues": []
   },
   {
@@ -3923,7 +4003,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 75,
+    "working_days_open": 76,
     "e2e_issues": []
   },
   {
@@ -3943,7 +4023,7 @@
       "stat/needs-squash",
       "api-check-pass"
     ],
-    "working_days_open": 76,
+    "working_days_open": 77,
     "e2e_issues": []
   },
   {
@@ -3965,7 +4045,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 76,
+    "working_days_open": 77,
     "e2e_issues": []
   },
   {
@@ -3983,7 +4063,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 76,
+    "working_days_open": 77,
     "e2e_issues": []
   },
   {
@@ -4004,7 +4084,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 76,
+    "working_days_open": 77,
     "e2e_issues": []
   },
   {
@@ -4025,7 +4105,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 76,
+    "working_days_open": 77,
     "e2e_issues": []
   },
   {
@@ -4047,7 +4127,7 @@
       "stat/needs-squash",
       "lgtm"
     ],
-    "working_days_open": 77,
+    "working_days_open": 78,
     "e2e_issues": []
   },
   {
@@ -4068,7 +4148,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 77,
+    "working_days_open": 78,
     "e2e_issues": []
   },
   {
@@ -4087,7 +4167,7 @@
       "enhancement",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 77,
+    "working_days_open": 78,
     "e2e_issues": []
   },
   {
@@ -4108,7 +4188,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 78,
+    "working_days_open": 79,
     "e2e_issues": []
   },
   {
@@ -4130,7 +4210,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 78,
+    "working_days_open": 79,
     "e2e_issues": []
   },
   {
@@ -4152,7 +4232,7 @@
       "ci-pipeline-passed",
       "api-check-pass"
     ],
-    "working_days_open": 79,
+    "working_days_open": 80,
     "e2e_issues": []
   },
   {
@@ -4173,7 +4253,7 @@
       "enhancement",
       "lgtm"
     ],
-    "working_days_open": 79,
+    "working_days_open": 80,
     "e2e_issues": []
   },
   {
@@ -4193,7 +4273,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 79,
+    "working_days_open": 80,
     "e2e_issues": []
   },
   {
@@ -4212,7 +4292,7 @@
       "enhancement",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 79,
+    "working_days_open": 80,
     "e2e_issues": []
   },
   {
@@ -4232,7 +4312,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 79,
+    "working_days_open": 80,
     "e2e_issues": []
   },
   {
@@ -4253,7 +4333,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 79,
+    "working_days_open": 80,
     "e2e_issues": []
   },
   {
@@ -4274,7 +4354,7 @@
       "enhancement",
       "approved"
     ],
-    "working_days_open": 79,
+    "working_days_open": 80,
     "e2e_issues": []
   },
   {
@@ -4291,7 +4371,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 79,
+    "working_days_open": 80,
     "e2e_issues": []
   },
   {
@@ -4311,7 +4391,7 @@
       "approved",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 79,
+    "working_days_open": 80,
     "e2e_issues": []
   },
   {
@@ -4328,7 +4408,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 79,
+    "working_days_open": 80,
     "e2e_issues": []
   },
   {
@@ -4351,7 +4431,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 80,
+    "working_days_open": 81,
     "e2e_issues": []
   },
   {
@@ -4372,7 +4452,7 @@
       "ci-pipeline-passed",
       "stat/needs-squash"
     ],
-    "working_days_open": 80,
+    "working_days_open": 81,
     "e2e_issues": []
   },
   {
@@ -4393,7 +4473,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 80,
+    "working_days_open": 81,
     "e2e_issues": []
   },
   {
@@ -4414,7 +4494,7 @@
       "ci-pipeline-passed",
       "approved"
     ],
-    "working_days_open": 80,
+    "working_days_open": 81,
     "e2e_issues": []
   },
   {
@@ -4436,7 +4516,7 @@
       "ci-pipeline-passed",
       "api-check-pass"
     ],
-    "working_days_open": 81,
+    "working_days_open": 82,
     "e2e_issues": []
   },
   {
@@ -4457,7 +4537,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 81,
+    "working_days_open": 82,
     "e2e_issues": []
   },
   {
@@ -4478,7 +4558,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 81,
+    "working_days_open": 82,
     "e2e_issues": []
   },
   {
@@ -4497,7 +4577,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 81,
+    "working_days_open": 82,
     "e2e_issues": []
   },
   {
@@ -4518,7 +4598,7 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 82,
+    "working_days_open": 83,
     "e2e_issues": []
   },
   {
@@ -4537,7 +4617,7 @@
       "enhancement",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 82,
+    "working_days_open": 83,
     "e2e_issues": []
   },
   {
@@ -4559,7 +4639,7 @@
       "cann-cla/yes",
       "api-check-pass"
     ],
-    "working_days_open": 83,
+    "working_days_open": 84,
     "e2e_issues": []
   },
   {
@@ -4578,7 +4658,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 83,
+    "working_days_open": 84,
     "e2e_issues": []
   },
   {
@@ -4600,7 +4680,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 83,
+    "working_days_open": 84,
     "e2e_issues": []
   },
   {
@@ -4621,7 +4701,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 83,
+    "working_days_open": 84,
     "e2e_issues": []
   },
   {
@@ -4639,7 +4719,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 84,
+    "working_days_open": 85,
     "e2e_issues": []
   },
   {
@@ -4660,7 +4740,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 84,
+    "working_days_open": 85,
     "e2e_issues": []
   },
   {
@@ -4681,7 +4761,7 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 85,
+    "working_days_open": 86,
     "e2e_issues": []
   },
   {
@@ -4702,7 +4782,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 85,
+    "working_days_open": 86,
     "e2e_issues": []
   },
   {
@@ -4723,7 +4803,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 85,
+    "working_days_open": 86,
     "e2e_issues": []
   },
   {
@@ -4742,7 +4822,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 85,
+    "working_days_open": 86,
     "e2e_issues": []
   },
   {
@@ -4760,7 +4840,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 86,
+    "working_days_open": 87,
     "e2e_issues": []
   },
   {
@@ -4782,7 +4862,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 86,
+    "working_days_open": 87,
     "e2e_issues": []
   },
   {
@@ -4802,7 +4882,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 86,
+    "working_days_open": 87,
     "e2e_issues": []
   },
   {
@@ -4824,7 +4904,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 87,
+    "working_days_open": 88,
     "e2e_issues": []
   },
   {
@@ -4845,7 +4925,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 87,
+    "working_days_open": 88,
     "e2e_issues": []
   },
   {
@@ -4865,7 +4945,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 87,
+    "working_days_open": 88,
     "e2e_issues": []
   },
   {
@@ -4886,7 +4966,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 88,
+    "working_days_open": 89,
     "e2e_issues": []
   },
   {
@@ -4907,7 +4987,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 88,
+    "working_days_open": 89,
     "e2e_issues": []
   },
   {
@@ -4926,7 +5006,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 89,
+    "working_days_open": 90,
     "e2e_issues": []
   },
   {
@@ -4945,7 +5025,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 89,
+    "working_days_open": 90,
     "e2e_issues": []
   },
   {
@@ -4966,7 +5046,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 90,
+    "working_days_open": 91,
     "e2e_issues": []
   },
   {
@@ -4989,7 +5069,7 @@
       "SC-SUCC",
       "BUILD-SUCC"
     ],
-    "working_days_open": 90,
+    "working_days_open": 91,
     "e2e_issues": []
   },
   {
@@ -5011,7 +5091,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 91,
+    "working_days_open": 92,
     "e2e_issues": []
   },
   {
@@ -5029,7 +5109,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 91,
+    "working_days_open": 92,
     "e2e_issues": []
   },
   {
@@ -5052,7 +5132,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 91,
+    "working_days_open": 92,
     "e2e_issues": []
   },
   {
@@ -5072,7 +5152,7 @@
       "ci-pipeline-passed",
       "api-check-failed"
     ],
-    "working_days_open": 91,
+    "working_days_open": 92,
     "e2e_issues": []
   },
   {
@@ -5091,7 +5171,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 91,
+    "working_days_open": 92,
     "e2e_issues": []
   },
   {
@@ -5110,7 +5190,7 @@
       "cann-cla/yes",
       "api-check-pass"
     ],
-    "working_days_open": 91,
+    "working_days_open": 92,
     "e2e_issues": []
   },
   {
@@ -5130,7 +5210,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 92,
+    "working_days_open": 93,
     "e2e_issues": []
   },
   {
@@ -5148,7 +5228,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 92,
+    "working_days_open": 93,
     "e2e_issues": []
   },
   {
@@ -5168,7 +5248,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 93,
+    "working_days_open": 94,
     "e2e_issues": []
   },
   {
@@ -5190,7 +5270,7 @@
       "api-check-failed",
       "approved"
     ],
-    "working_days_open": 93,
+    "working_days_open": 94,
     "e2e_issues": []
   },
   {
@@ -5213,7 +5293,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 93,
+    "working_days_open": 94,
     "e2e_issues": [
       "46"
     ]
@@ -5237,7 +5317,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 93,
+    "working_days_open": 94,
     "e2e_issues": []
   },
   {
@@ -5259,7 +5339,7 @@
       "ci-pipeline-passed",
       "approved"
     ],
-    "working_days_open": 94,
+    "working_days_open": 95,
     "e2e_issues": []
   },
   {
@@ -5278,7 +5358,7 @@
       "enhancement",
       "stat/needs-squash"
     ],
-    "working_days_open": 94,
+    "working_days_open": 95,
     "e2e_issues": []
   },
   {
@@ -5298,7 +5378,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 94,
+    "working_days_open": 95,
     "e2e_issues": []
   },
   {
@@ -5317,7 +5397,7 @@
       "stat/needs-squash",
       "enhancement"
     ],
-    "working_days_open": 94,
+    "working_days_open": 95,
     "e2e_issues": []
   },
   {
@@ -5336,7 +5416,7 @@
       "stat/needs-squash",
       "enhancement"
     ],
-    "working_days_open": 94,
+    "working_days_open": 95,
     "e2e_issues": []
   },
   {
@@ -5355,7 +5435,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 94,
+    "working_days_open": 95,
     "e2e_issues": []
   },
   {
@@ -5376,7 +5456,7 @@
       "enhancement",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 95,
+    "working_days_open": 96,
     "e2e_issues": []
   },
   {
@@ -5396,7 +5476,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 95,
+    "working_days_open": 96,
     "e2e_issues": []
   },
   {
@@ -5414,7 +5494,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 95,
+    "working_days_open": 96,
     "e2e_issues": []
   },
   {
@@ -5435,7 +5515,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 96,
+    "working_days_open": 97,
     "e2e_issues": []
   },
   {
@@ -5454,7 +5534,7 @@
       "enhancement",
       "stat/needs-squash"
     ],
-    "working_days_open": 96,
+    "working_days_open": 97,
     "e2e_issues": []
   },
   {
@@ -5475,7 +5555,7 @@
       "api-check-failed",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 96,
+    "working_days_open": 97,
     "e2e_issues": []
   },
   {
@@ -5497,7 +5577,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 96,
+    "working_days_open": 97,
     "e2e_issues": [
       "45"
     ]
@@ -5518,7 +5598,7 @@
       "api-check-failed",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 96,
+    "working_days_open": 97,
     "e2e_issues": []
   },
   {
@@ -5539,7 +5619,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 97,
+    "working_days_open": 98,
     "e2e_issues": []
   },
   {
@@ -5563,7 +5643,7 @@
       "AscendC-SUCC",
       "cann-cla/yes"
     ],
-    "working_days_open": 97,
+    "working_days_open": 98,
     "e2e_issues": []
   },
   {
@@ -5584,7 +5664,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 97,
+    "working_days_open": 98,
     "e2e_issues": []
   },
   {
@@ -5605,7 +5685,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 98,
+    "working_days_open": 99,
     "e2e_issues": []
   },
   {
@@ -5626,7 +5706,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 99,
+    "working_days_open": 100,
     "e2e_issues": []
   },
   {
@@ -5647,7 +5727,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 99,
+    "working_days_open": 100,
     "e2e_issues": [
       "54"
     ]
@@ -5666,7 +5746,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 99,
+    "working_days_open": 100,
     "e2e_issues": []
   },
   {
@@ -5688,7 +5768,7 @@
       "lgtm",
       "api-check-pass"
     ],
-    "working_days_open": 99,
+    "working_days_open": 100,
     "e2e_issues": []
   },
   {
@@ -5709,7 +5789,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 99,
+    "working_days_open": 100,
     "e2e_issues": [
       "53"
     ]
@@ -5732,7 +5812,7 @@
       "approved",
       "cann-cla/yes"
     ],
-    "working_days_open": 99,
+    "working_days_open": 100,
     "e2e_issues": []
   },
   {
@@ -5753,7 +5833,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 99,
+    "working_days_open": 100,
     "e2e_issues": [
       "52"
     ]
@@ -5777,7 +5857,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 99,
+    "working_days_open": 100,
     "e2e_issues": []
   },
   {
@@ -5798,7 +5878,7 @@
       "stat/needs-squash",
       "lgtm"
     ],
-    "working_days_open": 101,
+    "working_days_open": 102,
     "e2e_issues": []
   },
   {
@@ -5819,7 +5899,7 @@
       "approved",
       "cann-cla/yes"
     ],
-    "working_days_open": 101,
+    "working_days_open": 102,
     "e2e_issues": []
   },
   {
@@ -5840,7 +5920,7 @@
       "ci-pipeline-passed",
       "approved"
     ],
-    "working_days_open": 102,
+    "working_days_open": 103,
     "e2e_issues": []
   },
   {
@@ -5859,7 +5939,7 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 102,
+    "working_days_open": 103,
     "e2e_issues": []
   },
   {
@@ -5880,7 +5960,7 @@
       "api-check-failed",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 102,
+    "working_days_open": 103,
     "e2e_issues": []
   },
   {
@@ -5901,7 +5981,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 102,
+    "working_days_open": 103,
     "e2e_issues": []
   },
   {
@@ -5922,7 +6002,7 @@
       "ci-pipeline-passed",
       "api-check-failed"
     ],
-    "working_days_open": 102,
+    "working_days_open": 103,
     "e2e_issues": []
   },
   {
@@ -5943,7 +6023,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 102,
+    "working_days_open": 103,
     "e2e_issues": []
   },
   {
@@ -5964,7 +6044,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 103,
+    "working_days_open": 104,
     "e2e_issues": []
   },
   {
@@ -5983,7 +6063,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 103,
+    "working_days_open": 104,
     "e2e_issues": []
   },
   {
@@ -6004,7 +6084,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 103,
+    "working_days_open": 104,
     "e2e_issues": []
   },
   {
@@ -6024,7 +6104,7 @@
       "cann-cla/yes",
       "api-check-failed"
     ],
-    "working_days_open": 103,
+    "working_days_open": 104,
     "e2e_issues": []
   },
   {
@@ -6045,7 +6125,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 104,
+    "working_days_open": 105,
     "e2e_issues": []
   },
   {
@@ -6062,7 +6142,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 104,
+    "working_days_open": 105,
     "e2e_issues": []
   },
   {
@@ -6082,7 +6162,7 @@
       "api-check-failed",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 105,
+    "working_days_open": 106,
     "e2e_issues": []
   },
   {
@@ -6103,7 +6183,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 105,
+    "working_days_open": 106,
     "e2e_issues": []
   },
   {
@@ -6124,7 +6204,7 @@
       "approved",
       "cann-cla/yes"
     ],
-    "working_days_open": 105,
+    "working_days_open": 106,
     "e2e_issues": []
   },
   {
@@ -6144,7 +6224,7 @@
       "api-check-pass",
       "lgtm"
     ],
-    "working_days_open": 106,
+    "working_days_open": 107,
     "e2e_issues": []
   },
   {
@@ -6164,7 +6244,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 107,
+    "working_days_open": 108,
     "e2e_issues": []
   },
   {
@@ -6185,7 +6265,7 @@
       "stat/needs-squash",
       "lgtm"
     ],
-    "working_days_open": 107,
+    "working_days_open": 108,
     "e2e_issues": []
   },
   {
@@ -6206,7 +6286,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 107,
+    "working_days_open": 108,
     "e2e_issues": []
   },
   {
@@ -6224,7 +6304,7 @@
       "cann-cla/yes",
       "ci-pipeline-running"
     ],
-    "working_days_open": 107,
+    "working_days_open": 108,
     "e2e_issues": []
   },
   {
@@ -6245,7 +6325,7 @@
       "ci-pipeline-passed",
       "api-check-pass"
     ],
-    "working_days_open": 107,
+    "working_days_open": 108,
     "e2e_issues": [
       "41"
     ]
@@ -6268,7 +6348,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 108,
+    "working_days_open": 109,
     "e2e_issues": []
   },
   {
@@ -6289,7 +6369,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 108,
+    "working_days_open": 109,
     "e2e_issues": []
   },
   {
@@ -6311,7 +6391,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 108,
+    "working_days_open": 109,
     "e2e_issues": [
       "40"
     ]
@@ -6334,7 +6414,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 108,
+    "working_days_open": 109,
     "e2e_issues": []
   },
   {
@@ -6354,7 +6434,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 108,
+    "working_days_open": 109,
     "e2e_issues": []
   },
   {
@@ -6375,7 +6455,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 108,
+    "working_days_open": 109,
     "e2e_issues": []
   },
   {
@@ -6395,7 +6475,7 @@
       "ci-pipeline-passed",
       "api-check-pass"
     ],
-    "working_days_open": 109,
+    "working_days_open": 110,
     "e2e_issues": []
   },
   {
@@ -6416,7 +6496,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 109,
+    "working_days_open": 110,
     "e2e_issues": []
   },
   {
@@ -6436,7 +6516,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 109,
+    "working_days_open": 110,
     "e2e_issues": []
   },
   {
@@ -6456,7 +6536,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 111,
+    "working_days_open": 112,
     "e2e_issues": []
   },
   {
@@ -6476,7 +6556,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 112,
+    "working_days_open": 113,
     "e2e_issues": []
   },
   {
@@ -6497,7 +6577,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 112,
+    "working_days_open": 113,
     "e2e_issues": [
       "14",
       "38",
@@ -6519,7 +6599,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 112,
+    "working_days_open": 113,
     "e2e_issues": []
   },
   {
@@ -6539,7 +6619,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 112,
+    "working_days_open": 113,
     "e2e_issues": []
   },
   {
@@ -6560,7 +6640,7 @@
       "api-check-pass",
       "lgtm"
     ],
-    "working_days_open": 112,
+    "working_days_open": 113,
     "e2e_issues": []
   },
   {
@@ -6579,7 +6659,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 112,
+    "working_days_open": 113,
     "e2e_issues": []
   },
   {
@@ -6600,7 +6680,7 @@
       "api-check-pass",
       "approved"
     ],
-    "working_days_open": 113,
+    "working_days_open": 114,
     "e2e_issues": [
       "33"
     ]
@@ -6623,7 +6703,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 113,
+    "working_days_open": 114,
     "e2e_issues": [
       "32"
     ]
@@ -6646,7 +6726,7 @@
       "api-check-pass",
       "approved"
     ],
-    "working_days_open": 113,
+    "working_days_open": 114,
     "e2e_issues": [
       "34"
     ]
@@ -6665,7 +6745,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 113,
+    "working_days_open": 114,
     "e2e_issues": []
   },
   {
@@ -6684,7 +6764,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 113,
+    "working_days_open": 114,
     "e2e_issues": [
       "14"
     ]
@@ -6705,7 +6785,7 @@
       "api-check-pass",
       "cann-cla/yes"
     ],
-    "working_days_open": 113,
+    "working_days_open": 114,
     "e2e_issues": []
   },
   {
@@ -6725,7 +6805,7 @@
       "approved",
       "cann-cla/yes"
     ],
-    "working_days_open": 113,
+    "working_days_open": 114,
     "e2e_issues": []
   },
   {
@@ -6745,7 +6825,7 @@
       "ci-pipeline-passed",
       "api-check-failed"
     ],
-    "working_days_open": 113,
+    "working_days_open": 114,
     "e2e_issues": []
   },
   {
@@ -6762,7 +6842,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 114,
+    "working_days_open": 115,
     "e2e_issues": []
   },
   {
@@ -6779,7 +6859,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 114,
+    "working_days_open": 115,
     "e2e_issues": []
   },
   {
@@ -6796,7 +6876,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 114,
+    "working_days_open": 115,
     "e2e_issues": []
   },
   {
@@ -6815,7 +6895,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 114,
+    "working_days_open": 115,
     "e2e_issues": []
   },
   {
@@ -6832,7 +6912,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 114,
+    "working_days_open": 115,
     "e2e_issues": []
   },
   {
@@ -6853,7 +6933,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 114,
+    "working_days_open": 115,
     "e2e_issues": [
       "31"
     ]
@@ -6872,7 +6952,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 114,
+    "working_days_open": 115,
     "e2e_issues": [
       "31"
     ]
@@ -6894,7 +6974,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 114,
+    "working_days_open": 115,
     "e2e_issues": []
   },
   {
@@ -6915,7 +6995,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 115,
+    "working_days_open": 116,
     "e2e_issues": []
   },
   {
@@ -6935,7 +7015,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 115,
+    "working_days_open": 116,
     "e2e_issues": []
   },
   {
@@ -6956,7 +7036,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 115,
+    "working_days_open": 116,
     "e2e_issues": [
       "29"
     ]
@@ -6979,7 +7059,7 @@
       "approved",
       "cann-cla/yes"
     ],
-    "working_days_open": 115,
+    "working_days_open": 116,
     "e2e_issues": []
   },
   {
@@ -7000,7 +7080,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 116,
+    "working_days_open": 117,
     "e2e_issues": []
   },
   {
@@ -7019,7 +7099,7 @@
       "api-check-pass",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 116,
+    "working_days_open": 117,
     "e2e_issues": []
   },
   {
@@ -7041,7 +7121,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 116,
+    "working_days_open": 117,
     "e2e_issues": []
   },
   {
@@ -7062,7 +7142,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 116,
+    "working_days_open": 117,
     "e2e_issues": []
   },
   {
@@ -7082,7 +7162,7 @@
       "ci-pipeline-failed",
       "api-check-failed"
     ],
-    "working_days_open": 116,
+    "working_days_open": 117,
     "e2e_issues": []
   },
   {
@@ -7102,7 +7182,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 117,
+    "working_days_open": 118,
     "e2e_issues": []
   },
   {
@@ -7122,7 +7202,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 117,
+    "working_days_open": 118,
     "e2e_issues": []
   },
   {
@@ -7139,7 +7219,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 117,
+    "working_days_open": 118,
     "e2e_issues": []
   },
   {
@@ -7160,7 +7240,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 117,
+    "working_days_open": 118,
     "e2e_issues": [
       "4"
     ]
@@ -7183,7 +7263,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 118,
+    "working_days_open": 119,
     "e2e_issues": []
   },
   {
@@ -7204,7 +7284,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 118,
+    "working_days_open": 119,
     "e2e_issues": []
   },
   {
@@ -7225,7 +7305,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 118,
+    "working_days_open": 119,
     "e2e_issues": [
       "13"
     ]
@@ -7247,7 +7327,7 @@
       "api-check-pass",
       "lgtm"
     ],
-    "working_days_open": 119,
+    "working_days_open": 120,
     "e2e_issues": []
   },
   {
@@ -7266,7 +7346,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 119,
+    "working_days_open": 120,
     "e2e_issues": []
   },
   {
@@ -7287,7 +7367,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 119,
+    "working_days_open": 120,
     "e2e_issues": []
   },
   {
@@ -7308,7 +7388,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 119,
+    "working_days_open": 120,
     "e2e_issues": []
   },
   {
@@ -7329,7 +7409,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 119,
+    "working_days_open": 120,
     "e2e_issues": []
   },
   {
@@ -7348,7 +7428,7 @@
       "api-check-failed",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 119,
+    "working_days_open": 120,
     "e2e_issues": []
   },
   {
@@ -7366,7 +7446,7 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 119,
+    "working_days_open": 120,
     "e2e_issues": []
   },
   {
@@ -7385,7 +7465,7 @@
       "ci-pipeline-passed",
       "api-check-pass"
     ],
-    "working_days_open": 119,
+    "working_days_open": 120,
     "e2e_issues": []
   },
   {
@@ -7406,7 +7486,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 120,
+    "working_days_open": 121,
     "e2e_issues": []
   },
   {
@@ -7425,7 +7505,7 @@
       "api-check-failed",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 120,
+    "working_days_open": 121,
     "e2e_issues": []
   },
   {
@@ -7446,7 +7526,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 120,
+    "working_days_open": 121,
     "e2e_issues": []
   },
   {
@@ -7467,7 +7547,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 120,
+    "working_days_open": 121,
     "e2e_issues": []
   },
   {
@@ -7488,7 +7568,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 120,
+    "working_days_open": 121,
     "e2e_issues": []
   },
   {
@@ -7507,7 +7587,7 @@
       "api-check-pass",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 120,
+    "working_days_open": 121,
     "e2e_issues": []
   },
   {
@@ -7528,7 +7608,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 121,
+    "working_days_open": 122,
     "e2e_issues": []
   },
   {
@@ -7549,7 +7629,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 122,
+    "working_days_open": 123,
     "e2e_issues": []
   },
   {
@@ -7570,7 +7650,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 122,
+    "working_days_open": 123,
     "e2e_issues": []
   },
   {
@@ -7589,7 +7669,7 @@
       "ci-pipeline-passed",
       "api-check-pass"
     ],
-    "working_days_open": 122,
+    "working_days_open": 123,
     "e2e_issues": []
   },
   {
@@ -7610,7 +7690,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 123,
+    "working_days_open": 124,
     "e2e_issues": []
   },
   {
@@ -7631,7 +7711,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 123,
+    "working_days_open": 124,
     "e2e_issues": []
   },
   {
@@ -7652,7 +7732,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 123,
+    "working_days_open": 124,
     "e2e_issues": []
   },
   {
@@ -7673,7 +7753,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 125,
+    "working_days_open": 126,
     "e2e_issues": []
   },
   {
@@ -7695,7 +7775,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 126,
+    "working_days_open": 127,
     "e2e_issues": []
   },
   {
@@ -7716,7 +7796,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 126,
+    "working_days_open": 127,
     "e2e_issues": []
   },
   {
@@ -7737,7 +7817,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 126,
+    "working_days_open": 127,
     "e2e_issues": []
   },
   {
@@ -7759,7 +7839,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 127,
+    "working_days_open": 128,
     "e2e_issues": []
   },
   {
@@ -7780,7 +7860,7 @@
       "cann-cla/yes",
       "lgtm"
     ],
-    "working_days_open": 130,
+    "working_days_open": 131,
     "e2e_issues": []
   },
   {
@@ -7801,7 +7881,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 130,
+    "working_days_open": 131,
     "e2e_issues": []
   },
   {
@@ -7822,7 +7902,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -7843,7 +7923,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -7864,7 +7944,7 @@
       "ci-pipeline-passed",
       "approved"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -7885,7 +7965,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -7906,7 +7986,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -7927,7 +8007,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -7948,7 +8028,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -7966,7 +8046,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -7984,7 +8064,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -8005,7 +8085,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -8026,7 +8106,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -8047,7 +8127,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -8068,7 +8148,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -8089,7 +8169,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -8110,7 +8190,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -8131,7 +8211,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -8150,7 +8230,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -8169,7 +8249,7 @@
       "ci-pipeline-passed",
       "api-check-pass"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -8188,7 +8268,7 @@
       "cann-cla/yes",
       "api-check-pass"
     ],
-    "working_days_open": 131,
+    "working_days_open": 132,
     "e2e_issues": []
   },
   {
@@ -8206,7 +8286,7 @@
       "ci-pipeline-failed",
       "cann-cla/yes"
     ],
-    "working_days_open": 134,
+    "working_days_open": 135,
     "e2e_issues": []
   },
   {
@@ -8227,7 +8307,7 @@
       "approved",
       "api-check-pass"
     ],
-    "working_days_open": 135,
+    "working_days_open": 136,
     "e2e_issues": []
   },
   {
@@ -8248,7 +8328,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 135,
+    "working_days_open": 136,
     "e2e_issues": []
   },
   {
@@ -8269,7 +8349,7 @@
       "ci-pipeline-passed",
       "api-check-pass"
     ],
-    "working_days_open": 135,
+    "working_days_open": 136,
     "e2e_issues": []
   },
   {
@@ -8288,7 +8368,7 @@
       "cann-cla/yes",
       "api-check-pass"
     ],
-    "working_days_open": 135,
+    "working_days_open": 136,
     "e2e_issues": []
   },
   {
@@ -8307,7 +8387,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 135,
+    "working_days_open": 136,
     "e2e_issues": []
   },
   {
@@ -8328,7 +8408,7 @@
       "lgtm",
       "api-check-pass"
     ],
-    "working_days_open": 136,
+    "working_days_open": 137,
     "e2e_issues": []
   },
   {
@@ -8349,7 +8429,7 @@
       "ci-pipeline-passed",
       "api-check-pass"
     ],
-    "working_days_open": 137,
+    "working_days_open": 138,
     "e2e_issues": []
   },
   {
@@ -8370,7 +8450,7 @@
       "api-check-pass",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 137,
+    "working_days_open": 138,
     "e2e_issues": []
   },
   {
@@ -8391,7 +8471,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 144,
+    "working_days_open": 145,
     "e2e_issues": []
   },
   {
@@ -8412,7 +8492,7 @@
       "cann-cla/yes",
       "approved"
     ],
-    "working_days_open": 144,
+    "working_days_open": 145,
     "e2e_issues": []
   },
   {
@@ -8430,7 +8510,7 @@
       "cann-cla/yes",
       "api-check-failed"
     ],
-    "working_days_open": 144,
+    "working_days_open": 145,
     "e2e_issues": []
   },
   {
@@ -8451,7 +8531,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 145,
+    "working_days_open": 146,
     "e2e_issues": []
   }
 ]
