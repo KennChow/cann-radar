@@ -56,9 +56,8 @@ MAIL_MAP_PATH = Path("config/gitcode_2_mail.txt")
 SMTP_CONFIG_PATH = Path("config/smtp_config.ini")
 NOTIFIED_PATH = DATA_DIR / "stale_mr_notified.json"
 
-DEFAULT_STALE_DAYS = 14
-RESEND_INTERVAL_DAYS = 7
-DAILY_INTERVAL_DAYS = 1
+DEFAULT_STALE_DAYS = 10
+RESEND_INTERVAL_DAYS = 1
 
 CONTACT_INFO = "如有疑问请联系夏国正 x00806611"
 
@@ -209,13 +208,10 @@ def load_smtp_config():
 
 
 def _check_mr_notify_status(key, notified, today):
-    """返回 (should_notify, notify_stage, skip_reason)。
-    count=1 间隔 7 天，count>=2 间隔 1 天持续提醒。
-    """
+    """首次后每日持续提醒"""
     if key not in notified:
         return True, 1, ''
     record = notified[key]
-    count = record.get("count", 1)
     last_at = record.get("notified_at", "")
     if not last_at:
         return True, 1, ''
@@ -223,9 +219,9 @@ def _check_mr_notify_status(key, notified, today):
         last_date = datetime.strptime(last_at[:10], "%Y-%m-%d").date()
     except ValueError:
         return True, 1, ''
-    interval = RESEND_INTERVAL_DAYS if count == 1 else DAILY_INTERVAL_DAYS
+    count = record.get("count", 1)
     working_days = _working_days_between(last_date, today)
-    if working_days >= interval:
+    if working_days >= RESEND_INTERVAL_DAYS:
         return True, count + 1, ''
     return False, 0, 'waiting'
 
@@ -568,7 +564,7 @@ def main():
 
     print(f"=== 超期 MR 扫描 ===")
     print(f"  超期天数: >{args.stale_days} 个工作日")
-    print(f"  升级间隔: 首次后 {RESEND_INTERVAL_DAYS} 天，二次后每日持续提醒")
+    print(f"  超期阈值: >{args.stale_days} 个工作日，首次后每日持续提醒")
     if args.test:
         print(f"  模式: 测试（仅1封样本发送到 {args.test}）")
     elif args.dry_run:
