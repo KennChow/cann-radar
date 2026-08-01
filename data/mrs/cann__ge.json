@@ -1,16 +1,91 @@
 [
   {
+    "iid": 4238,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: acl code warning",
+    "created_at": "2026-08-01",
+    "updated_at": "2026-08-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "tang-haojie",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4238",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4237,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: 简要描述",
+    "created_at": "2026-08-01",
+    "updated_at": "2026-08-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wang-bin-789",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4237",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4236,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 迁移Python自定义算子样例至schema-bound execute接口",
+    "created_at": "2026-08-01",
+    "updated_at": "2026-08-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "kobemini",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4236",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4235,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: 修复OM2构建配置校验异常",
+    "created_at": "2026-08-01",
+    "updated_at": "2026-08-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "ClarkXie",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4235",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 4234,
     "state": "opened",
     "draft": false,
     "title": "feat: 新增ATC自动多流并行参数",
     "created_at": "2026-07-31",
-    "updated_at": "2026-07-31",
+    "updated_at": "2026-08-01",
     "merged_at": "",
     "closed_at": "",
     "author": "Mexyy",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4234",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
@@ -41,9 +116,9 @@
     "iid": 4232,
     "state": "opened",
     "draft": false,
-    "title": "【PR】: 简要描述 合规性修改",
+    "title": "【PR】: 简要描述 action 补充健壮性",
     "created_at": "2026-07-31",
-    "updated_at": "2026-07-31",
+    "updated_at": "2026-08-01",
     "merged_at": "",
     "closed_at": "",
     "author": "wangyunxiang1",
@@ -51,7 +126,8 @@
     "labels": [
       "enhancement",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -703,27 +779,30 @@
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-07-30",
-    "updated_at": "2026-07-30",
+    "updated_at": "2026-08-01",
     "merged_at": "",
     "closed_at": "",
     "author": "Chang-an-HW",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4198",
     "labels": [
+      "enhancement",
+      "stat/needs-squash",
       "cann-cla/yes",
-      "enhancement"
+      "ci-pipeline-running",
+      "api-check-pass"
     ],
     "working_days_open": 2,
     "e2e_issues": []
   },
   {
     "iid": 4197,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-07-30",
-    "updated_at": "2026-07-30",
+    "updated_at": "2026-08-01",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-01",
     "author": "Chang-an-HW",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4197",
     "labels": [
@@ -848,14 +927,15 @@
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-07-30",
-    "updated_at": "2026-07-30",
+    "updated_at": "2026-08-01",
     "merged_at": "",
     "closed_at": "",
     "author": "du-hua1024",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4190",
     "labels": [
       "enhancement",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "stat/needs-squash"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -1785,7 +1865,7 @@
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-07-27",
-    "updated_at": "2026-07-30",
+    "updated_at": "2026-08-01",
     "merged_at": "",
     "closed_at": "",
     "author": "wuzheng-hw",
@@ -1793,8 +1873,8 @@
     "labels": [
       "enhancement",
       "stat/needs-squash",
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -2041,13 +2121,13 @@
   },
   {
     "iid": 4130,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】: 修改获取deviceid的获取方式，临时出包",
     "created_at": "2026-07-24",
-    "updated_at": "2026-07-24",
+    "updated_at": "2026-08-01",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-01",
     "author": "wuzheng-hw",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4130",
     "labels": [
@@ -3586,13 +3666,13 @@
   },
   {
     "iid": 4053,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-07-17",
-    "updated_at": "2026-07-31",
+    "updated_at": "2026-08-01",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-01",
     "author": "wang-bin-789",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4053",
     "labels": [
