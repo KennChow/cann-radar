@@ -1,5 +1,45 @@
 [
   {
+    "iid": 3487,
+    "state": "opened",
+    "draft": false,
+    "title": "fix lowering for var or var_mean op",
+    "created_at": "2026-08-02",
+    "updated_at": "2026-08-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "yurongkun",
+    "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3487",
+    "labels": [
+      "stat/needs-squash",
+      "ascend-cla/yes",
+      "docs-ci-pipeline-success",
+      "smoke-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 3486,
+    "state": "opened",
+    "draft": false,
+    "title": "增强_normalize_grid函数以支持嵌套列表的规范化",
+    "created_at": "2026-08-02",
+    "updated_at": "2026-08-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Chang-an-HW",
+    "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3486",
+    "labels": [
+      "docs-ci-pipeline-success",
+      "stat/needs-squash",
+      "ascend-cla/no",
+      "smoke-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 3485,
     "state": "merged",
     "draft": false,
@@ -87,7 +127,7 @@
     "draft": false,
     "title": "lowering/fallback统计信息改为按图级别打印",
     "created_at": "2026-07-31",
-    "updated_at": "2026-08-01",
+    "updated_at": "2026-08-02",
     "merged_at": "",
     "closed_at": "",
     "author": "mihudan",
@@ -95,7 +135,8 @@
     "labels": [
       "stat/needs-squash",
       "ascend-cla/yes",
-      "docs-ci-pipeline-success"
+      "docs-ci-pipeline-success",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []

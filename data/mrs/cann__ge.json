@@ -24,15 +24,16 @@
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-08-01",
-    "updated_at": "2026-08-01",
+    "updated_at": "2026-08-02",
     "merged_at": "",
     "closed_at": "",
     "author": "wang-bin-789",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4237",
     "labels": [
       "enhancement",
-      "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-failed",
+      "stat/needs-squash",
+      "cann-cla/yes"
     ],
     "working_days_open": 0,
     "e2e_issues": []
@@ -777,9 +778,9 @@
     "iid": 4198,
     "state": "opened",
     "draft": false,
-    "title": "【PR】: 简要描述",
+    "title": "fix: 修复模型 While 条件子图输出映射错误",
     "created_at": "2026-07-30",
-    "updated_at": "2026-08-01",
+    "updated_at": "2026-08-02",
     "merged_at": "",
     "closed_at": "",
     "author": "Chang-an-HW",
@@ -788,8 +789,7 @@
       "enhancement",
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-running",
-      "api-check-pass"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -41165,13 +41165,13 @@
   },
   {
     "iid": 2182,
-    "state": "opened",
+    "state": "closed",
     "draft": true,
     "title": "[WIP] 穿刺使用",
     "created_at": "2026-04-22",
-    "updated_at": "2026-07-31",
+    "updated_at": "2026-08-02",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-02",
     "author": "kantao1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/2182",
     "labels": [
