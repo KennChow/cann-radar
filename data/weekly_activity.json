@@ -158,13 +158,14 @@
     "2026-W28",
     "2026-W29",
     "2026-W30",
-    "2026-W31"
+    "2026-W31",
+    "2026-W32"
   ],
   "repos": [
     {
       "name": "ge",
       "path": "cann/ge",
-      "total": 4228,
+      "total": 4238,
       "data": [
         0,
         0,
@@ -324,13 +325,14 @@
         100,
         95,
         72,
-        97
+        98,
+        9
       ]
     },
     {
       "name": "torchair",
       "path": "Ascend/torchair",
-      "total": 3481,
+      "total": 3487,
       "data": [
         1,
         8,
@@ -490,13 +492,14 @@
         36,
         49,
         42,
-        30
+        30,
+        6
       ]
     },
     {
       "name": "graph-autofusion",
       "path": "cann/graph-autofusion",
-      "total": 1611,
+      "total": 1629,
       "data": [
         0,
         0,
@@ -656,13 +659,14 @@
         59,
         91,
         153,
-        108
+        108,
+        18
       ]
     },
     {
       "name": "hixl",
       "path": "cann/hixl",
-      "total": 847,
+      "total": 852,
       "data": [
         0,
         0,
@@ -822,13 +826,14 @@
         32,
         15,
         27,
-        40
+        41,
+        4
       ]
     },
     {
       "name": "torchtitan-npu",
       "path": "cann/torchtitan-npu",
-      "total": 500,
+      "total": 502,
       "data": [
         0,
         0,
@@ -988,13 +993,14 @@
         22,
         21,
         21,
-        37
+        37,
+        2
       ]
     },
     {
       "name": "metadef",
       "path": "cann/metadef",
-      "total": 416,
+      "total": 417,
       "data": [
         0,
         0,
@@ -1154,7 +1160,8 @@
         15,
         3,
         2,
-        12
+        12,
+        1
       ]
     },
     {
@@ -1320,13 +1327,14 @@
         1,
         2,
         2,
-        3
+        3,
+        0
       ]
     },
     {
       "name": "triton-inference-server-ge-backend",
       "path": "cann/triton-inference-server-ge-backend",
-      "total": 15,
+      "total": 16,
       "data": [
         0,
         0,
@@ -1486,9 +1494,10 @@
         0,
         0,
         0,
+        1,
         0
       ]
     }
   ],
-  "generated_at": "2026-08-02"
+  "generated_at": "2026-08-03"
 }

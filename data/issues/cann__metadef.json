@@ -1,9 +1,25 @@
 [
   {
-    "iid": "89",
+    "iid": "90",
     "state": "opened",
-    "created_at": "2026-07-16",
+    "created_at": "2026-08-03",
     "closed_at": "",
+    "author": "Almost_CANN",
+    "author_id": "69ea2d9d67428e61d0321d46",
+    "title": "[Bug-Report|缺陷反馈]: op_def_impl.cc:649 的 sstream << float_value 和 op_def_impl.cc:662 的 s << v 使用 std::ostream 默认 6 位有效数字精度，会导致精度丢失",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/metadef/issues/90",
+    "working_days_open": 1
+  },
+  {
+    "iid": "89",
+    "state": "closed",
+    "created_at": "2026-07-16",
+    "closed_at": "2026-08-03",
     "author": "showcase",
     "author_id": "697c3c1ad667b95ebedb9060",
     "title": "[TTFHW] 示例样例 tc_ge_irrun_open_api_0014 使用已弃用头文件（nn_calculation_ops.h/array_ops.h 等）触发 -W",
@@ -11,19 +27,19 @@
       "wait-feedback"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "lidaoming1"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/89",
-    "working_days_open": 12
+    "working_days_open": 13
   },
   {
     "iid": "88",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-07-16",
-    "closed_at": "",
+    "closed_at": "2026-08-03",
     "author": "showcase",
     "author_id": "697c3c1ad667b95ebedb9060",
     "title": "[TTFHW] 仓库未配置 .devcontainer，无法直接使用容器化开发环境",
@@ -31,19 +47,19 @@
       "wait-feedback"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "lidaoming1"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/88",
-    "working_days_open": 12
+    "working_days_open": 13
   },
   {
     "iid": "87",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-07-16",
-    "closed_at": "",
+    "closed_at": "2026-08-03",
     "author": "showcase",
     "author_id": "697c3c1ad667b95ebedb9060",
     "title": "[TTFHW] 仓库未提供 Dockerfile，依赖信息散落在 docs/build.md、scripts/check_env.sh、scripts/init_env.sh、",
@@ -51,13 +67,13 @@
       "wait-feedback"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "lidaoming1"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/87",
-    "working_days_open": 12
+    "working_days_open": 13
   },
   {
     "iid": "86",
@@ -77,7 +93,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/86",
-    "working_days_open": 13
+    "working_days_open": 14
   },
   {
     "iid": "85",
@@ -95,7 +111,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/85",
-    "working_days_open": 15
+    "working_days_open": 16
   },
   {
     "iid": "84",
@@ -113,7 +129,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/84",
-    "working_days_open": 15
+    "working_days_open": 16
   },
   {
     "iid": "83",
@@ -131,7 +147,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/83",
-    "working_days_open": 15
+    "working_days_open": 16
   },
   {
     "iid": "81",
@@ -152,7 +168,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/81",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
     "iid": "80",
@@ -173,7 +189,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/80",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
     "iid": "79",
@@ -193,7 +209,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/79",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
     "iid": "78",
@@ -213,7 +229,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/78",
-    "working_days_open": 31
+    "working_days_open": 32
   },
   {
     "iid": "77",
@@ -231,7 +247,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/77",
-    "working_days_open": 42
+    "working_days_open": 43
   },
   {
     "iid": "76",
@@ -249,7 +265,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/76",
-    "working_days_open": 45
+    "working_days_open": 46
   },
   {
     "iid": "75",
@@ -267,7 +283,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/75",
-    "working_days_open": 48
+    "working_days_open": 49
   },
   {
     "iid": "74",
@@ -283,7 +299,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/74",
-    "working_days_open": 49
+    "working_days_open": 50
   },
   {
     "iid": "73",
@@ -301,7 +317,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/73",
-    "working_days_open": 50
+    "working_days_open": 51
   },
   {
     "iid": "72",
@@ -321,7 +337,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/72",
-    "working_days_open": 54
+    "working_days_open": 55
   },
   {
     "iid": "71",
@@ -341,7 +357,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/71",
-    "working_days_open": 58
+    "working_days_open": 59
   },
   {
     "iid": "70",
@@ -359,7 +375,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/70",
-    "working_days_open": 63
+    "working_days_open": 64
   },
   {
     "iid": "69",
@@ -377,7 +393,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/69",
-    "working_days_open": 63
+    "working_days_open": 64
   },
   {
     "iid": "68",
@@ -395,7 +411,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/68",
-    "working_days_open": 67
+    "working_days_open": 68
   },
   {
     "iid": "67",
@@ -413,7 +429,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/67",
-    "working_days_open": 71
+    "working_days_open": 72
   },
   {
     "iid": "65",
@@ -431,7 +447,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/65",
-    "working_days_open": 76
+    "working_days_open": 77
   },
   {
     "iid": "64",
@@ -449,7 +465,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/64",
-    "working_days_open": 78
+    "working_days_open": 79
   },
   {
     "iid": "63",
@@ -469,7 +485,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/63",
-    "working_days_open": 82
+    "working_days_open": 83
   },
   {
     "iid": "62",
@@ -489,7 +505,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/62",
-    "working_days_open": 86
+    "working_days_open": 87
   },
   {
     "iid": "60",
@@ -503,11 +519,11 @@
     "issue_type": "任务",
     "issue_state": "已完成",
     "assignees": [
-      "Guanam2020"
+      "LyriCheng"
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/60",
-    "working_days_open": 90
+    "working_days_open": 91
   },
   {
     "iid": "61",
@@ -521,11 +537,11 @@
     "issue_type": "任务",
     "issue_state": "已解决",
     "assignees": [
-      "Guanam2020"
+      "LyriCheng"
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/metadef/issues/61",
-    "working_days_open": 90
+    "working_days_open": 91
   },
   {
     "iid": "58",
@@ -545,7 +561,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/58",
-    "working_days_open": 92
+    "working_days_open": 93
   },
   {
     "iid": "57",
@@ -565,7 +581,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/metadef/issues/57",
-    "working_days_open": 92
+    "working_days_open": 93
   },
   {
     "iid": "56",
@@ -581,7 +597,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/56",
-    "working_days_open": 93
+    "working_days_open": 94
   },
   {
     "iid": "54",
@@ -601,7 +617,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/metadef/issues/54",
-    "working_days_open": 101
+    "working_days_open": 102
   },
   {
     "iid": "53",
@@ -621,7 +637,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/53",
-    "working_days_open": 101
+    "working_days_open": 102
   },
   {
     "iid": "52",
@@ -641,7 +657,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/52",
-    "working_days_open": 101
+    "working_days_open": 102
   },
   {
     "iid": "51",
@@ -655,12 +671,12 @@
     "issue_type": "咨询",
     "issue_state": "已解决",
     "assignees": [
-      "Guanam2020",
+      "LyriCheng",
       "hugo111"
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/51",
-    "working_days_open": 102
+    "working_days_open": 103
   },
   {
     "iid": "50",
@@ -678,7 +694,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/50",
-    "working_days_open": 103
+    "working_days_open": 104
   },
   {
     "iid": "49",
@@ -696,7 +712,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/49",
-    "working_days_open": 103
+    "working_days_open": 104
   },
   {
     "iid": "48",
@@ -714,7 +730,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/48",
-    "working_days_open": 104
+    "working_days_open": 105
   },
   {
     "iid": "47",
@@ -730,7 +746,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/47",
-    "working_days_open": 105
+    "working_days_open": 106
   },
   {
     "iid": "46",
@@ -750,7 +766,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/46",
-    "working_days_open": 105
+    "working_days_open": 106
   },
   {
     "iid": "45",
@@ -770,7 +786,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/45",
-    "working_days_open": 105
+    "working_days_open": 106
   },
   {
     "iid": "44",
@@ -788,7 +804,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/44",
-    "working_days_open": 106
+    "working_days_open": 107
   },
   {
     "iid": "43",
@@ -806,7 +822,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/43",
-    "working_days_open": 107
+    "working_days_open": 108
   },
   {
     "iid": "42",
@@ -820,12 +836,12 @@
     "issue_type": "缺陷",
     "issue_state": "已完成",
     "assignees": [
-      "Guanam2020",
+      "LyriCheng",
       "hugo111"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/42",
-    "working_days_open": 108
+    "working_days_open": 109
   },
   {
     "iid": "41",
@@ -843,7 +859,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/41",
-    "working_days_open": 109
+    "working_days_open": 110
   },
   {
     "iid": "40",
@@ -861,7 +877,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/40",
-    "working_days_open": 111
+    "working_days_open": 112
   },
   {
     "iid": "39",
@@ -879,7 +895,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/39",
-    "working_days_open": 114
+    "working_days_open": 115
   },
   {
     "iid": "38",
@@ -899,7 +915,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/38",
-    "working_days_open": 114
+    "working_days_open": 115
   },
   {
     "iid": "37",
@@ -919,7 +935,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/37",
-    "working_days_open": 114
+    "working_days_open": 115
   },
   {
     "iid": "36",
@@ -939,7 +955,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/36",
-    "working_days_open": 114
+    "working_days_open": 115
   },
   {
     "iid": "35",
@@ -957,7 +973,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/35",
-    "working_days_open": 114
+    "working_days_open": 115
   },
   {
     "iid": "34",
@@ -977,7 +993,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/34",
-    "working_days_open": 116
+    "working_days_open": 117
   },
   {
     "iid": "33",
@@ -997,7 +1013,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/33",
-    "working_days_open": 116
+    "working_days_open": 117
   },
   {
     "iid": "32",
@@ -1017,7 +1033,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/32",
-    "working_days_open": 116
+    "working_days_open": 117
   },
   {
     "iid": "31",
@@ -1033,7 +1049,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/31",
-    "working_days_open": 116
+    "working_days_open": 117
   },
   {
     "iid": "30",
@@ -1049,7 +1065,7 @@
     "assignees": [],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/30",
-    "working_days_open": 116
+    "working_days_open": 117
   },
   {
     "iid": "29",
@@ -1067,7 +1083,7 @@
     "assignees": [],
     "user_notes_count": 9,
     "web_url": "https://gitcode.com/cann/metadef/issues/29",
-    "working_days_open": 117
+    "working_days_open": 118
   },
   {
     "iid": "28",
@@ -1087,7 +1103,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/28",
-    "working_days_open": 118
+    "working_days_open": 119
   },
   {
     "iid": "27",
@@ -1107,7 +1123,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/27",
-    "working_days_open": 119
+    "working_days_open": 120
   },
   {
     "iid": "26",
@@ -1127,7 +1143,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/26",
-    "working_days_open": 119
+    "working_days_open": 120
   },
   {
     "iid": "25",
@@ -1147,7 +1163,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/25",
-    "working_days_open": 119
+    "working_days_open": 120
   },
   {
     "iid": "24",
@@ -1167,7 +1183,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/24",
-    "working_days_open": 119
+    "working_days_open": 120
   },
   {
     "iid": "23",
@@ -1187,7 +1203,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/23",
-    "working_days_open": 119
+    "working_days_open": 120
   },
   {
     "iid": "22",
@@ -1207,7 +1223,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/22",
-    "working_days_open": 119
+    "working_days_open": 120
   },
   {
     "iid": "21",
@@ -1221,11 +1237,11 @@
     "issue_type": "任务",
     "issue_state": "已完成",
     "assignees": [
-      "Guanam2020"
+      "LyriCheng"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/21",
-    "working_days_open": 120
+    "working_days_open": 121
   },
   {
     "iid": "20",
@@ -1245,7 +1261,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/20",
-    "working_days_open": 122
+    "working_days_open": 123
   },
   {
     "iid": "19",
@@ -1265,7 +1281,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/19",
-    "working_days_open": 122
+    "working_days_open": 123
   },
   {
     "iid": "18",
@@ -1285,7 +1301,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/metadef/issues/18",
-    "working_days_open": 122
+    "working_days_open": 123
   },
   {
     "iid": "17",
@@ -1305,7 +1321,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/metadef/issues/17",
-    "working_days_open": 122
+    "working_days_open": 123
   },
   {
     "iid": "16",
@@ -1325,7 +1341,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/metadef/issues/16",
-    "working_days_open": 122
+    "working_days_open": 123
   },
   {
     "iid": "15",
@@ -1345,7 +1361,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/15",
-    "working_days_open": 122
+    "working_days_open": 123
   },
   {
     "iid": "14",
@@ -1363,7 +1379,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/14",
-    "working_days_open": 122
+    "working_days_open": 123
   },
   {
     "iid": "13",
@@ -1383,7 +1399,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/13",
-    "working_days_open": 122
+    "working_days_open": 123
   },
   {
     "iid": "12",
@@ -1398,11 +1414,11 @@
     "issue_state": "已完成",
     "assignees": [
       "yangyongqiang0606",
-      "Guanam2020"
+      "LyriCheng"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/12",
-    "working_days_open": 122
+    "working_days_open": 123
   },
   {
     "iid": "11",
@@ -1422,7 +1438,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/11",
-    "working_days_open": 123
+    "working_days_open": 124
   },
   {
     "iid": "10",
@@ -1436,11 +1452,11 @@
     "issue_type": "任务",
     "issue_state": "已完成",
     "assignees": [
-      "Guanam2020"
+      "LyriCheng"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/10",
-    "working_days_open": 123
+    "working_days_open": 124
   },
   {
     "iid": "8",
@@ -1456,7 +1472,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/8",
-    "working_days_open": 124
+    "working_days_open": 125
   },
   {
     "iid": "7",
@@ -1474,7 +1490,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/metadef/issues/7",
-    "working_days_open": 126
+    "working_days_open": 127
   },
   {
     "iid": "6",
@@ -1490,7 +1506,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/6",
-    "working_days_open": 129
+    "working_days_open": 130
   },
   {
     "iid": "5",
@@ -1506,7 +1522,7 @@
     "assignees": [],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/metadef/issues/5",
-    "working_days_open": 132
+    "working_days_open": 133
   },
   {
     "iid": "4",
@@ -1526,7 +1542,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/4",
-    "working_days_open": 132
+    "working_days_open": 133
   },
   {
     "iid": "2",
@@ -1542,7 +1558,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/2",
-    "working_days_open": 139
+    "working_days_open": 140
   },
   {
     "iid": "1",
@@ -1558,6 +1574,6 @@
     "assignees": [],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/metadef/issues/1",
-    "working_days_open": 153
+    "working_days_open": 154
   }
 ]
