@@ -23,9 +23,9 @@ on:
         type: boolean
         default: false
       stale_days:
-        description: '超期天数（默认 14）'
+        description: '超期天数（默认 10）'
         type: number
-        default: 14
+        default: 10
       test_email:
         description: '测试邮箱（填写后仅发送到该邮箱，不发给实际作者）'
         type: string
@@ -39,9 +39,9 @@ on:
         type: boolean
         default: false
       issue_stale_days:
-        description: 'Issue 超期工作日数（默认 14）'
+        description: 'Issue 超期工作日数（默认 10）'
         type: number
-        default: 14
+        default: 10
       issue_test_email:
         description: 'Issue 通知测试邮箱（填写后仅发送到该邮箱）'
         type: string
@@ -133,7 +133,7 @@ jobs:
       - name: Notify stale MR authors
         if: github.event.inputs.run_stale_notify == 'true' || github.event_name == 'schedule'
         run: |
-          ARGS="--stale-days ${{ github.event.inputs.stale_days || 14 }}"
+          ARGS="--stale-days ${{ github.event.inputs.stale_days || 10 }}"
           if [ -n "${{ github.event.inputs.test_email }}" ]; then
             ARGS="$ARGS --test ${{ github.event.inputs.test_email }}"
           fi
@@ -156,7 +156,7 @@ jobs:
       - name: Notify stale issue assignees
         if: github.event.inputs.run_issue_notify == 'true' || github.event_name == 'schedule'
         run: |
-          ARGS="--stale-days ${{ github.event.inputs.issue_stale_days || 14 }}"
+          ARGS="--stale-days ${{ github.event.inputs.issue_stale_days || 10 }}"
           if [ -n "${{ github.event.inputs.issue_test_email }}" ]; then
             ARGS="$ARGS --test ${{ github.event.inputs.issue_test_email }}"
           fi
