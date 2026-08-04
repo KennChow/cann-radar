@@ -23,6 +23,8 @@ import json
 import re
 import time
 import os
+import tempfile
+import threading
 import sys
 import urllib.request
 import urllib.parse
@@ -61,6 +63,9 @@ COMMUNITY_CONFIG_PATH = Path("config/community.yml")
 
 GITCODE_TOKEN_PATH = Path("config/gitcode_token.txt")
 V5_BASE = "https://gitcode.com/api/v5"
+FALLBACK_DATA_DIR = Path(os.environ["CANN_RADAR_FALLBACK_DATA"]) if os.environ.get("CANN_RADAR_FALLBACK_DATA") else None
+COLLECTION_FAILURES_PATH = DATA_DIR / "collection_failures.json"
+_FAILURE_LOCK = threading.Lock()
 
 
 def _load_token():
@@ -227,9 +232,76 @@ def get(url, retries=3, delay=REQUEST_DELAY, timeout=8, headers=None):
     return None
 
 
+def get_required(url, **kwargs):
+    """获取必须成功的 API 页面；失败时抛错，避免被误判为分页结束。"""
+    data = get(url, **kwargs)
+    if data is None:
+        raise RuntimeError(f"API 请求失败: {url}")
+    return data
+
+
 def save_json(path, data):
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    """同目录原子写入，进程中断时不破坏上一份有效 JSON。"""
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp_path = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            "w", encoding="utf-8", dir=path.parent, delete=False,
+        ) as f:
+            tmp_path = Path(f.name)
+            json.dump(data, f, ensure_ascii=False, indent=2)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp_path, path)
+    finally:
+        if tmp_path and tmp_path.exists():
+            tmp_path.unlink()
+
+
+def record_collection_failure(category, repo_path, error, fallback_used):
+    entry = {
+        "category": category, "repo": repo_path, "error": str(error),
+        "fallback_used": fallback_used,
+        "recorded_at": datetime.now().isoformat(timespec="seconds"),
+    }
+    with _FAILURE_LOCK:
+        existing = load_json(COLLECTION_FAILURES_PATH) or []
+        existing.append(entry)
+        save_json(COLLECTION_FAILURES_PATH, existing)
+
+
+def restore_fallback(target, category, repo_path, error):
+    target = Path(target)
+    fallback = None
+    if FALLBACK_DATA_DIR:
+        try:
+            fallback = FALLBACK_DATA_DIR / target.relative_to(DATA_DIR)
+        except ValueError:
+            fallback = None
+    data = load_json(fallback) if fallback and fallback.exists() else None
+    used = data is not None
+    if used:
+        save_json(target, data)
+        print(f"  ⚠ {repo_path}: {category} 采集失败，使用上一版完整数据")
+    record_collection_failure(category, repo_path, error, used)
+    return data
+
+
+def restore_missing_fallback_tree(target_dir, category, error):
+    target_dir = Path(target_dir)
+    fallback_dir = None
+    if FALLBACK_DATA_DIR:
+        fallback_dir = FALLBACK_DATA_DIR / target_dir.relative_to(DATA_DIR)
+    restored = 0
+    if fallback_dir and fallback_dir.exists():
+        for source in fallback_dir.glob("*.json"):
+            target = target_dir / source.name
+            if not target.exists():
+                save_json(target, load_json(source))
+                restored += 1
+    record_collection_failure(category, "community", error, restored > 0)
+    return restored
 
 
 def load_json(path):
@@ -692,6 +764,11 @@ def collect_repo_discussions():
 
             time.sleep(REQUEST_DELAY)
 
+        output_path = repo_discussions_dir / f"{repo_path.replace('/', '__')}.json"
+        if errors:
+            restore_fallback(output_path, "repo-discussions", repo_path, errors)
+            continue
+
         if not fetched:
             print(f"  {repo_path}: 未成功采集任何讨论帖")
             continue
@@ -726,6 +803,8 @@ def collect_repos():
     print(f"  目标仓库：{', '.join(target_paths)}")
 
     repos_detail = []
+    fallback_repos = load_json(FALLBACK_DATA_DIR / "repos.json") if FALLBACK_DATA_DIR else []
+    fallback_by_path = {r.get("path"): r for r in (fallback_repos or [])}
     for i, path in enumerate(target_paths, start=1):
         encoded = urllib.parse.quote(path, safe="")
         url = f"{BASE_URL}/api/v1/projects/{encoded}"
@@ -751,7 +830,13 @@ def collect_repos():
             })
             print(f"  [{i}/{len(target_paths)}] {path}: star={repos_detail[-1]['star_count']} fork={repos_detail[-1]['forks_count']} issue={repos_detail[-1]['open_issues_count']}")
         else:
-            print(f"  [{i}/{len(target_paths)}] {path}: 获取失败")
+            fallback = fallback_by_path.get(path)
+            if fallback:
+                repos_detail.append(fallback)
+                print(f"  [{i}/{len(target_paths)}] {path}: 获取失败，使用上一版元数据")
+            else:
+                print(f"  [{i}/{len(target_paths)}] {path}: 获取失败且无回退数据")
+            record_collection_failure("repos", path, "仓库详情 API 请求失败", bool(fallback))
         time.sleep(REQUEST_DELAY)
 
     save_json(DATA_DIR / "repos.json", repos_detail)
@@ -800,7 +885,14 @@ def collect_stars():
             per_page = 100
             while True:
                 url = f"{BASE_URL}/api/v2/projects/{repo_id}/star_users?page={page}&per_page={per_page}"
-                data = get(url)
+                try:
+                    data = get_required(url)
+                except Exception as e:
+                    fallback = restore_fallback(cache_file, "stars", repo_path, e)
+                    if fallback is None:
+                        raise
+                    users = fallback
+                    break
                 if not data or not data.get("content"):
                     break
                 users.extend(data["content"])
@@ -983,8 +1075,10 @@ def _fetch_repo_activities(repo):
     mr_count = 0
     while True:
         url  = f"{BASE_URL}/api/v1/projects/{repo_id}/merge_requests?page={mr_page}&per_page=100&state=all"
-        data = get(url)
-        if not data or not data.get("content"):
+        data = get_required(url)
+        if not isinstance(data, dict) or not isinstance(data.get("content"), list):
+            raise RuntimeError(f"MR API 返回格式异常: {repo_path} page={mr_page}")
+        if not data["content"]:
             break
         for mr in data["content"]:
             uname = (mr.get("author") or {}).get("username")
@@ -1002,7 +1096,7 @@ def _fetch_repo_activities(repo):
     issue_count = 0
     while True:
         url  = f"{BASE_URL}/api/v1/issue/{encoded}/issues?page={issue_page}&per_page=100&state=all"
-        data = get(url)
+        data = get_required(url)
         if not data or not data.get("issues"):
             break
         for issue in data["issues"]:
@@ -1036,6 +1130,7 @@ def collect_activities():
     issue_authors = set()
 
     t_start = time.time()
+    failures = []
     with ThreadPoolExecutor(max_workers=len(repos)) as pool:
         futures = {pool.submit(_fetch_repo_activities, repo): repo for repo in repos}
         for future in as_completed(futures):
@@ -1048,6 +1143,14 @@ def collect_activities():
             except Exception as e:
                 repo_path = futures[future]["path"]
                 print(f"  ✗ {repo_path}: {e}")
+                failures.append(repo_path)
+
+    if failures:
+        error = f"失败仓库: {', '.join(failures)}"
+        fallback = restore_fallback(DATA_DIR / "activity_users.json", "activities", "multiple", error)
+        if fallback is None:
+            raise RuntimeError(f"活动数据采集失败: {error}")
+        return fallback
 
     result = {
         "mr_authors":    sorted(mr_authors),
@@ -1076,7 +1179,7 @@ def _fetch_repo_forks(repo, forks_dir):
     per_page = 100
     while True:
         url = f"{BASE_URL}/api/v1/projects/{repo_id}/forks?page={page}&per_page={per_page}"
-        data = get(url)
+        data = get_required(url)
         items = (data or {}).get("content") or []
         for item in items:
             creator = item.get("creator") or {}
@@ -1117,6 +1220,7 @@ def collect_forks():
 
     result = {}
     t_start = time.time()
+    failures = []
     with ThreadPoolExecutor(max_workers=len(repos)) as pool:
         futures = {pool.submit(_fetch_repo_forks, repo, forks_dir): repo for repo in repos}
         for future in as_completed(futures):
@@ -1130,6 +1234,15 @@ def collect_forks():
             except Exception as e:
                 repo_path = futures[future]["path"]
                 print(f"  ✗ {repo_path}: {e}")
+                target = forks_dir / f"{repo_path.replace('/', '__')}.json"
+                fallback = restore_fallback(target, "forks", repo_path, e)
+                if fallback is None:
+                    failures.append(repo_path)
+                else:
+                    result[repo_path] = fallback
+
+    if failures:
+        raise RuntimeError(f"Fork 采集失败: {', '.join(failures)}")
 
     elapsed = time.time() - t_start
     print(f"\n  ✓ 各仓库 Fork 明细已保存到 data/forks/（耗时 {elapsed:.0f}s）")
@@ -1222,8 +1335,10 @@ def _fetch_repo_issues(repo, issues_dir):
 
     while True:
         url = f"{V5_BASE}/repos/{owner}/{name}/issues?state=all&page={page}&per_page=100"
-        data = get(url, headers=headers)
-        if not data or not isinstance(data, list) or len(data) == 0:
+        data = get_required(url, headers=headers)
+        if not isinstance(data, list):
+            raise RuntimeError(f"Issue API 返回格式异常: {repo_path} page={page}")
+        if not data:
             break
 
         for issue in data:
@@ -1274,6 +1389,7 @@ def collect_issues():
     issues_dir.mkdir(exist_ok=True)
 
     t_start = time.time()
+    failures = []
     with ThreadPoolExecutor(max_workers=len(repos)) as pool:
         futures = {pool.submit(_fetch_repo_issues, repo, issues_dir): repo for repo in repos}
         for future in as_completed(futures):
@@ -1287,6 +1403,13 @@ def collect_issues():
             except Exception as e:
                 repo_path = futures[future]["path"]
                 print(f"  ✗ {repo_path}: {e}")
+                target = issues_dir / f"{repo_path.replace('/', '__')}.json"
+                fallback = restore_fallback(target, "issues", repo_path, e)
+                if fallback is None:
+                    failures.append(repo_path)
+
+    if failures:
+        raise RuntimeError(f"Issue 采集失败，未生成下游汇总: {', '.join(failures)}")
 
     elapsed = time.time() - t_start
     print(f"\n  ✓ 各仓库 Issue 已保存到 data/issues/（耗时 {elapsed:.0f}s）")
@@ -1311,8 +1434,10 @@ def _fetch_repo_mrs(repo, mrs_dir):
 
     while True:
         url  = f"{BASE_URL}/api/v1/projects/{repo_id}/merge_requests?page={page}&per_page=100&state=all"
-        data = get(url)
-        if not data or not data.get("content"):
+        data = get_required(url)
+        if not isinstance(data, dict) or not isinstance(data.get("content"), list):
+            raise RuntimeError(f"MR API 返回格式异常: {repo_path} page={page}")
+        if not data["content"]:
             break
 
         if total is None:
@@ -1366,6 +1491,7 @@ def collect_mrs():
     mrs_dir.mkdir(exist_ok=True)
 
     t_start = time.time()
+    failures = []
     with ThreadPoolExecutor(max_workers=len(repos)) as pool:
         futures = {pool.submit(_fetch_repo_mrs, repo, mrs_dir): repo for repo in repos}
         for future in as_completed(futures):
@@ -1379,6 +1505,13 @@ def collect_mrs():
             except Exception as e:
                 repo_path = futures[future]["path"]
                 print(f"  ✗ {repo_path}: {e}")
+                target = mrs_dir / f"{repo_path.replace('/', '__')}.json"
+                fallback = restore_fallback(target, "mrs", repo_path, e)
+                if fallback is None:
+                    failures.append(repo_path)
+
+    if failures:
+        raise RuntimeError(f"MR 采集失败，未生成下游汇总: {', '.join(failures)}")
 
     elapsed = time.time() - t_start
     print(f"\n  ✓ 各仓库 MR 已保存到 data/mrs/（耗时 {elapsed:.0f}s）")
@@ -1978,7 +2111,7 @@ def collect_community_stars():
         per_page = 100
         while True:
             url = f"{BASE_URL}/api/v2/projects/{repo_id}/star_users?page={page}&per_page={per_page}"
-            data = get(url)
+            data = get_required(url)
             if not data or not data.get("content"):
                 break
             users.extend(data["content"])
@@ -2027,7 +2160,7 @@ def collect_community_issues():
 
         while True:
             url = f"{V5_BASE}/repos/{owner}/{name}/issues?state=all&page={page}&per_page=100"
-            data = get(url, headers=headers)
+            data = get_required(url, headers=headers)
             if not data or not isinstance(data, list) or len(data) == 0:
                 break
 
@@ -2089,7 +2222,7 @@ def collect_community_mrs():
         page = 1
         while True:
             url = f"{BASE_URL}/api/v1/projects/{repo_id}/merge_requests?page={page}&per_page=100&state=all"
-            data = get(url)
+            data = get_required(url)
             if not data or not data.get("content"):
                 break
             for mr in data["content"]:
@@ -2193,6 +2326,11 @@ def collect_community_discussions():
                 print(f"      ✗ 失败: {e}")
             time.sleep(REQUEST_DELAY)
 
+        output_path = discussions_dir / f"{safe_name}.json"
+        if errors:
+            restore_fallback(output_path, "community-discussions", repo_path, errors)
+            continue
+
         if not fetched:
             print(f"  {repo_path}: 未成功采集任何讨论帖")
             continue
@@ -2201,7 +2339,7 @@ def collect_community_discussions():
         summary["repo_path"] = repo_path
         summary["errors"] = errors
 
-        save_json(discussions_dir / f"{safe_name}.json", summary)
+        save_json(output_path, summary)
         print(f"  ✓ {repo_path}: 共 {summary['total_unique_participants']} 位参与者（内部 {summary['internal_count']}，外部 {summary['external_count']}）")
 
 
@@ -2254,7 +2392,7 @@ def collect_community_coauthors():
             mr_author = mr.get("author", "")
 
             url = f"{BASE_URL}/api/v1/projects/{repo_id}/merge_requests/{iid}/commits"
-            commits_data = get(url)
+            commits_data = get_required(url)
             if not commits_data or not commits_data.get("content"):
                 continue
 
@@ -2320,6 +2458,7 @@ def collect_community_all():
                 future.result()
             except Exception as e:
                 print(f"  ✗ {name} 失败: {e}")
+                restore_missing_fallback_tree(COMMUNITY_DATA_DIR / name, f"community-{name}", e)
 
     collect_community_discussions()
     collect_community_coauthors()

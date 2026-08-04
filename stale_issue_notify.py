@@ -4,13 +4,10 @@
 
 扫描 data/issues/ 中所有 opened 状态的 Issue，筛选出：
   1. 非 Requirement 类型（见 _is_requirement()）
-  2. 开启时间超过指定工作日数（默认 14 个工作日）
-  3. 距离上次通知 ≥ 7 个工作日 或 尚未通知（通过 data/stale_issue_notified.json 去重）
+  2. 开启时间达到指定工作日数（默认 10 个工作日）
+  3. 首次通知后，每个工作日持续提醒（通过 data/stale_issue_notified.json 记录）
 
-升级机制：
-  - 第 1 次通知：提醒所有当前 assignees
-  - 第 2 次通知（距上次 ≥7 个工作日 issue 仍 open）：提醒 assignees 并抄送管理员
-  - 此后永久跳过
+提醒机制：首次提醒当前 assignees；之后每个工作日持续提醒，直到 Issue 关闭。
 
 去重按 issue 维度（{repo}!{iid}），issue 的当前 assignees 各自收个人通知。
 
@@ -26,6 +23,7 @@
 
 import argparse
 import configparser
+import html
 import json
 import smtplib
 import sys
@@ -73,7 +71,7 @@ def _is_requirement(issue_type, title, labels):
 
 
 def _build_linked_pr_map(notify_paths):
-    """从 MR 数据构建 issue → set of linked MR authors 的映射（用于自提判定）。"""
+    """从 MR 数据构建 (repo, issue) → MR authors 映射，避免跨仓串号。"""
     linked = defaultdict(set)
     mrs_dir = Path("data/mrs")
     if not mrs_dir.exists():
@@ -91,11 +89,11 @@ def _build_linked_pr_map(notify_paths):
             if not mr_author:
                 continue
             for issue_num in mr.get("e2e_issues") or []:
-                linked[issue_num].add(mr_author)
+                linked[(repo_path, str(issue_num))].add(mr_author)
     return linked
 
 
-def _is_self_assigned(issue, linked_pr_map, mail_map):
+def _is_self_assigned(issue, repo_path, linked_pr_map):
     """判定 issue 是否自提（无需发送邮件提醒）。"""
     author = issue.get("author", "")
     assignees = issue.get("assignees") or []
@@ -106,7 +104,7 @@ def _is_self_assigned(issue, linked_pr_map, mail_map):
 
     # 提单人关联了自己的 PR
     iid = str(issue.get("iid", ""))
-    linked_authors = linked_pr_map.get(iid, set())
+    linked_authors = linked_pr_map.get((repo_path, iid), set())
     if author and author in linked_authors:
         return True
 
@@ -249,7 +247,7 @@ def load_smtp_config():
 
 
 def _check_issue_notify_status(key, notified, today):
-    """首次后每日持续提醒"""
+    """首次后每个工作日持续提醒"""
     if key not in notified:
         return True, 1, ''
     record = notified[key]
@@ -260,6 +258,8 @@ def _check_issue_notify_status(key, notified, today):
         last_date = datetime.strptime(last_at[:10], "%Y-%m-%d").date()
     except ValueError:
         return True, 1, ''
+    if last_date >= today:
+        return False, 0, 'waiting'
     count = record.get("count", 1)
     working_days = _working_days_between(last_date, today)
     if working_days >= RESEND_INTERVAL_DAYS:
@@ -318,11 +318,11 @@ def scan_stale_issues(stale_days, notify_paths=None, notified=None):
             if not created_at:
                 continue
             days_open = issue.get("working_days_open") or _working_days_since(created_at)
-            if days_open <= stale_days:
+            if days_open < stale_days:
                 continue
             stats["stale_matched"] += 1
 
-            if stage == 2:
+            if stage > 1:
                 stats["stage2_count"] += 1
             else:
                 stats["stage1_count"] += 1
@@ -346,33 +346,38 @@ def scan_stale_issues(stale_days, notify_paths=None, notified=None):
 def _build_issue_table_rows(issues):
     rows = ""
     for iss in sorted(issues, key=lambda x: -x["days_open"]):
-        labels_str = ", ".join(iss["labels"]) if iss["labels"] else "-"
-        stage_note = " <span style='color:#e05f5f;font-size:11px'>(二次提醒)</span>" if iss.get("notify_stage") == 2 else ""
+        labels_str = html.escape(", ".join(iss["labels"]) if iss["labels"] else "-")
+        stage_note = " <span style='color:#e05f5f;font-size:11px'>（持续提醒）</span>" if iss.get("notify_stage", 1) > 1 else ""
         rows += f"""<tr>
-  <td style="padding:8px 12px;border-bottom:1px solid #eee">{iss['repo']}</td>
+  <td style="padding:8px 12px;border-bottom:1px solid #eee">{html.escape(str(iss['repo']))}</td>
   <td style="padding:8px 12px;border-bottom:1px solid #eee">
-    <a href="{iss['web_url']}" style="color:#2563eb;text-decoration:none">#{iss['iid']}</a>
+    <a href="{_safe_web_url(iss.get('web_url'))}" style="color:#2563eb;text-decoration:none">#{html.escape(str(iss['iid']))}</a>
   </td>
-  <td style="padding:8px 12px;border-bottom:1px solid #eee;max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{iss['title']}{stage_note}</td>
+  <td style="padding:8px 12px;border-bottom:1px solid #eee;max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{html.escape(str(iss['title']))}{stage_note}</td>
   <td style="padding:8px 12px;border-bottom:1px solid #eee;text-align:center">{iss['days_open']}天</td>
   <td style="padding:8px 12px;border-bottom:1px solid #eee;font-size:12px;color:#666">{labels_str}</td>
 </tr>"""
     return rows
 
 
-def build_html_email(assignee, issues):
-    stage2_count = sum(1 for i in issues if i.get("notify_stage") == 2)
+def _safe_web_url(value):
+    value = str(value or "")
+    return html.escape(value, quote=True) if value.startswith(("https://", "http://")) else "#"
+
+
+def build_html_email(assignee, issues, stale_days=DEFAULT_STALE_DAYS):
+    stage2_count = sum(1 for i in issues if i.get("notify_stage", 1) > 1)
     rows = _build_issue_table_rows(issues)
     escalation_note = ""
     if stage2_count:
         escalation_note = f"""
   <div style="background:#fff3cd;border:1px solid #ffc107;border-radius:6px;padding:12px 16px;margin-bottom:16px">
-    <strong style="color:#856404">⚠ 以下 {stage2_count} 个 Issue 已二次提醒，并抄送管理员跟进。</strong>
+    <strong style="color:#856404">以下 {stage2_count} 个 Issue 正在持续提醒中。</strong>
   </div>"""
     return f"""<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:720px;margin:0 auto">
   <h2 style="color:#1a1d2e;font-size:18px;margin-bottom:4px">超期 Issue 提醒</h2>
   <p style="color:#666;font-size:13px;margin-bottom:16px">
-    Hi {assignee}，您有 <strong style="color:#e05f5f">{len(issues)}</strong> 个非 Requirement Issue 已开启超过 14 个工作日，请及时处理。
+    Hi {html.escape(str(assignee))}，您有 <strong style="color:#e05f5f">{len(issues)}</strong> 个非 Requirement Issue 已开启达到 {stale_days} 个工作日，请及时处理。
   </p>
   {escalation_note}
   <table style="width:100%;border-collapse:collapse;font-size:13px;border:1px solid #e2e4ea;border-radius:8px;overflow:hidden">
@@ -391,90 +396,6 @@ def build_html_email(assignee, issues):
     此邮件由 CANN Radar 自动发送，请检查 Issue 状态后及时处理。
   </p>
   <p style="color:#999;font-size:11px">{CONTACT_INFO}</p>
-</div>"""
-
-
-def build_admin_report_html(stats, unassigned_issues, null_email_by_assignee, external_by_assignee, stale_days):
-    sections = ""
-
-    if unassigned_issues:
-        rows = _build_issue_table_rows(unassigned_issues)
-        sections += f"""
-  <h3 style="font-size:15px;margin-top:24px;color:#e05f5f;border-bottom:1px solid #e2e4ea;padding-bottom:6px">
-    未分配负责人（{len(unassigned_issues)} 个 Issue）
-  </h3>
-  <table style="width:100%;border-collapse:collapse;font-size:13px;border:1px solid #e2e4ea;border-radius:8px;overflow:hidden;margin-bottom:16px">
-    <thead>
-      <tr style="background:#f0f2f5">
-        <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">仓库</th>
-        <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">Issue</th>
-        <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">标题</th>
-        <th style="padding:10px 12px;text-align:center;font-weight:600;color:#1a1d2e">开启工作天数</th>
-        <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">Labels</th>
-      </tr>
-    </thead>
-    <tbody>{rows}</tbody>
-  </table>"""
-
-    for assignee in sorted(null_email_by_assignee.keys()):
-        issues = null_email_by_assignee[assignee]
-        rows = _build_issue_table_rows(issues)
-        sections += f"""
-  <h4 style="font-size:14px;margin:20px 0 8px;color:#e05f5f">{assignee}（有映射无邮箱，{len(issues)} 个 Issue）</h4>
-  <table style="width:100%;border-collapse:collapse;font-size:13px;border:1px solid #e2e4ea;border-radius:8px;overflow:hidden;margin-bottom:16px">
-    <thead>
-      <tr style="background:#f0f2f5">
-        <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">仓库</th>
-        <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">Issue</th>
-        <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">标题</th>
-        <th style="padding:10px 12px;text-align:center;font-weight:600;color:#1a1d2e">开启工作天数</th>
-        <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">Labels</th>
-      </tr>
-    </thead>
-    <tbody>{rows}</tbody>
-  </table>"""
-
-    for assignee in sorted(external_by_assignee.keys()):
-        issues = external_by_assignee[assignee]
-        rows = _build_issue_table_rows(issues)
-        sections += f"""
-  <h4 style="font-size:14px;margin:20px 0 8px;color:#f5a623">{assignee}（外部，{len(issues)} 个 Issue）</h4>
-  <table style="width:100%;border-collapse:collapse;font-size:13px;border:1px solid #e2e4ea;border-radius:8px;overflow:hidden;margin-bottom:16px">
-    <thead>
-      <tr style="background:#f0f2f5">
-        <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">仓库</th>
-        <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">Issue</th>
-        <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">标题</th>
-        <th style="padding:10px 12px;text-align:center;font-weight:600;color:#1a1d2e">开启工作天数</th>
-        <th style="padding:10px 12px;text-align:left;font-weight:600;color:#1a1d2e">Labels</th>
-      </tr>
-    </thead>
-    <tbody>{rows}</tbody>
-  </table>"""
-
-    null_count = sum(len(v) for v in null_email_by_assignee.values())
-    ext_count = sum(len(v) for v in external_by_assignee.values())
-
-    return f"""<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:720px;margin:0 auto">
-  <h2 style="color:#1a1d2e;font-size:18px;margin-bottom:4px">超期 Issue 管理员汇总报告</h2>
-  <p style="color:#666;font-size:13px;margin-bottom:16px">
-    扫描条件：非Requirement、开启超过 <strong>{stale_days}</strong> 个工作日（距上次通知≥{RESEND_INTERVAL_DAYS}个工作日可重发，最多{MAX_NOTIFY_COUNT}次）
-  </p>
-  <table style="font-size:13px;border-collapse:collapse;margin-bottom:20px">
-    <tr><td style="padding:4px 16px 4px 0;color:#666">扫描仓库</td><td><strong>{stats['repos_scanned']}</strong></td></tr>
-    <tr><td style="padding:4px 16px 4px 0;color:#666">Opened Issue 总数</td><td><strong>{stats['total_opened']}</strong></td></tr>
-    <tr><td style="padding:4px 16px 4px 0;color:#666">Requirement（排除）</td><td><strong>{stats['total_requirement']}</strong></td></tr>
-    <tr><td style="padding:4px 16px 4px 0;color:#666">超期非Requirement</td><td><strong>{stats['stale_matched']}</strong></td></tr>
-    <tr><td style="padding:4px 16px 4px 0;color:#666">首次通知</td><td><strong>{stats.get('stage1_count', 0)}</strong></td></tr>
-    <tr><td style="padding:4px 16px 4px 0;color:#666">二次升级通知</td><td><strong style="color:#e05f5f">{stats.get('stage2_count', 0)}</strong></td></tr>
-    <tr><td style="padding:4px 16px 4px 0;color:#666">未到重发间隔跳过</td><td><strong>{stats['skipped_waiting']}</strong></td></tr>
-    <tr><td style="padding:4px 16px 4px 0;color:#666">已达上限永久跳过</td><td><strong>{stats['skipped_max']}</strong></td></tr>
-    <tr><td style="padding:4px 16px 4px 0;color:#666">未分配负责人</td><td><strong style="color:#e05f5f">{len(unassigned_issues)}</strong></td></tr>
-    <tr><td style="padding:4px 16px 4px 0;color:#666">有映射无邮箱</td><td><strong style="color:#e05f5f">{null_count}</strong></td></tr>
-    <tr><td style="padding:4px 16px 4px 0;color:#666">外部 assignees</td><td><strong style="color:#f5a623">{ext_count}</strong></td></tr>
-  </table>
-  {sections}
-  <p style="color:#999;font-size:11px;margin-top:20px">CANN Radar 自动生成 · {CONTACT_INFO}</p>
 </div>"""
 
 
@@ -540,10 +461,10 @@ def _save_admin_issue_summary(notify_paths, notified_data, linked_pr_map, mail_m
             if _is_requirement(itype, title, labels):
                 continue
             days_open = iss.get("working_days_open") or _working_days_since(iss.get("created_at", ""))
-            if days_open <= stale_days:
+            if days_open < stale_days:
                 continue
             # self-assigned check
-            if _is_self_assigned(iss, linked_pr_map, mail_map):
+            if _is_self_assigned(iss, repo_path, linked_pr_map):
                 continue
 
             key = _issue_key(repo_path, iid)
@@ -575,6 +496,17 @@ def _save_admin_issue_summary(notify_paths, notified_data, linked_pr_map, mail_m
     print(f"\n  管理员汇总: {len(summary)} 个 Issue（新发现 {counts['new']}，需介入 {counts['daily']}）")
 
 
+def _fully_delivered_issues(issues, required_recipients, delivered_recipients):
+    """只返回所有可通知负责人均已成功收到邮件的 Issue。"""
+    result = []
+    for issue in issues:
+        key = _issue_key(issue["repo"], issue["iid"])
+        required = required_recipients.get(key, set())
+        if required and required <= delivered_recipients.get(key, set()):
+            result.append(issue)
+    return result
+
+
 def main():
     parser = argparse.ArgumentParser(description="超期 Issue 扫描与邮件通知")
     parser.add_argument("--dry-run", action="store_true", help="仅打印结果，不发送邮件")
@@ -589,8 +521,8 @@ def main():
         return 0
 
     print(f"=== 超期 Issue 扫描 ===")
-    print(f"  超期天数: >{args.stale_days} 个工作日")
-    print(f"  超期阈值: >{args.stale_days} 个工作日，首次后每日持续提醒")
+    print(f"  超期天数: ≥{args.stale_days} 个工作日")
+    print(f"  超期阈值: ≥{args.stale_days} 个工作日，首次后每个工作日持续提醒")
     if args.test:
         print(f"  模式: 测试（仅1封样本发送到 {args.test}）")
     elif args.dry_run:
@@ -624,7 +556,7 @@ def main():
     print(f"    Requirement（排除）: {stats['total_requirement']}")
     print(f"    超期非Requirement: {stats['stale_matched']}")
     print(f"    首次通知: {stats['stage1_count']}")
-    print(f"    二次升级: {stats['stage2_count']}")
+    print(f"    持续提醒: {stats['stage2_count']}")
     print(f"    未到重发间隔跳过: {stats['skipped_waiting']}")
 
     # 构建关联 PR 映射（需在保存前调用）
@@ -634,7 +566,7 @@ def main():
     _save_admin_issue_summary(notify_paths, notified_data, linked_pr_map, mail_map, args.stale_days, stats)
 
     if not matched_issues:
-        print("\n  ✓ 无新增/待升级超期非Requirement Issue，无需通知")
+        print("\n  ✓ 无首次/持续提醒待发送超期非Requirement Issue，无需通知")
         return 0
 
     # 自提过滤
@@ -643,15 +575,15 @@ def main():
     self_assigned_count = 0
     remaining_issues = []
     for iss in matched_issues:
-        if _is_self_assigned(iss, linked_pr_map, mail_map):
+        if _is_self_assigned(iss, iss["repo"], linked_pr_map):
             self_assigned_count += 1
         else:
             remaining_issues.append(iss)
     if self_assigned_count:
         print(f"  自提排除: {self_assigned_count} 个 Issue")
         for iss in matched_issues:
-            if _is_self_assigned(iss, linked_pr_map, mail_map):
-                print(f"    #{iss['iid']} author={iss['author']} (自提)")
+            if _is_self_assigned(iss, iss["repo"], linked_pr_map):
+                print(f"    #{html.escape(str(iss['iid']))} author={iss['author']} (自提)")
     matched_issues = remaining_issues
 
     if not matched_issues:
@@ -695,6 +627,12 @@ def main():
             print("\n  ✗ SMTP 配置不可用，请使用 --dry-run 测试或先配置 SMTP")
             return 1
 
+    required_recipients = defaultdict(set)
+    for assignee, (_, issues) in has_email_assignees.items():
+        for issue in issues:
+            required_recipients[_issue_key(issue["repo"], issue["iid"])].add(assignee)
+    delivered_recipients = defaultdict(set)
+
     notified_changed = False
 
     # 发送个人通知
@@ -704,26 +642,26 @@ def main():
     test_sent = False
 
     for assignee, (email, issues) in sorted(has_email_assignees.items(), key=lambda x: -len(x[1][1])):
-        has_stage2 = any(i.get("notify_stage") == 2 for i in issues)
-        stage2_count = sum(1 for i in issues if i.get("notify_stage") == 2)
+        has_stage2 = any(i.get("notify_stage", 1) > 1 for i in issues)
+        stage2_count = sum(1 for i in issues if i.get("notify_stage", 1) > 1)
         subject = f"[CANN] 您有 {len(issues)} 个超期未关闭的 Issue（非Requirement）"
         if has_stage2:
-            subject += " [二次提醒]"
-        html = build_html_email(assignee, issues)
+            subject += " [持续提醒]"
+        email_html = build_html_email(assignee, issues, args.stale_days)
 
         cc = None
 
         if args.dry_run:
             cc_str = f" 抄送:{cc}" if cc else ""
-            stage_note = f" 其中{stage2_count}个二次提醒" if has_stage2 else ""
+            stage_note = f" 其中{stage2_count}个持续提醒" if has_stage2 else ""
             print(f"  → {assignee} <{email}>{cc_str}: {len(issues)} 个 Issue{stage_note} [dry-run，未发送]")
         elif args.test:
             if not test_sent:
                 try:
-                    send_one_email(smtp_cfg, args.test, subject, html, cc_email=cc)
+                    send_one_email(smtp_cfg, args.test, subject, email_html, cc_email=cc)
                     sent += 1
                     test_sent = True
-                    stage_note = f" 含{stage2_count}个二次提醒" if has_stage2 else ""
+                    stage_note = f" 含{stage2_count}个持续提醒" if has_stage2 else ""
                     print(f"  ✓ {assignee} <{email}> → {args.test}: {len(issues)} 个 Issue{stage_note} [测试样本，仅此1封]")
                 except Exception as e:
                     failed += 1
@@ -733,24 +671,26 @@ def main():
                 print(f"  ⊘ {assignee} <{email}>: {len(issues)} 个 Issue [测试模式，跳过]")
         else:
             try:
-                send_one_email(smtp_cfg, email, subject, html, cc_email=cc)
+                send_one_email(smtp_cfg, email, subject, email_html, cc_email=cc)
                 sent += 1
+                for issue in issues:
+                    delivered_recipients[_issue_key(issue["repo"], issue["iid"])].add(assignee)
                 cc_str = f"，抄送管理员" if cc else ""
-                stage_note = f" 含{stage2_count}个二次提醒" if has_stage2 else ""
+                stage_note = f" 含{stage2_count}个持续提醒" if has_stage2 else ""
                 print(f"  ✓ {assignee} <{email}>: {len(issues)} 个 Issue{stage_note}{cc_str}")
             except Exception as e:
                 failed += 1
                 ids = ", ".join(f"#{i['iid']}" for i in issues)
                 print(f"  ✗ {assignee} <{email}>: {e}  Issue: {ids}")
 
-    if sent > 0 and not args.dry_run:
+    fully_delivered = _fully_delivered_issues(
+        matched_issues, required_recipients, delivered_recipients,
+    )
+    if fully_delivered and not args.dry_run and not args.test:
+        _mark_issue_notified(notified_data, fully_delivered)
         notified_changed = True
     if not args.dry_run:
         print(f"\n  个人通知: 已发送 {sent}, 失败 {failed}")
-
-    # 标记已通知的 issue
-    if sent > 0 and not args.dry_run:
-         _mark_issue_notified(notified_data, matched_issues)
 
     if notified_changed and not args.dry_run:
         save_notified(notified_data)

@@ -25,6 +25,12 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install test dependencies
+        run: python -m pip install PyYAML chinese-calendar pytest
+
+      - name: Run tests
+        run: python -m pytest -q
+
       - name: Fetch internal developers list from private repo
         run: |
           mkdir -p config
@@ -36,6 +42,9 @@ jobs:
 
       - name: Clear stale caches
         run: |
+          rm -rf .last-good-data
+          cp -a data .last-good-data
+          rm -f data/collection_failures.json
           rm -f data/repos.json data/org_timeline.json data/weekly_activity.json
           rm -f data/dlevel_summary.json data/users_slim.json
           rm -f data/issue_summary.json data/mr_summary.json
@@ -45,7 +54,7 @@ jobs:
         run: python -m pip install PyYAML
 
       - name: Collect all data
-        run: python collector.py all
+        run: CANN_RADAR_FALLBACK_DATA=.last-good-data python collector.py all
 
       - name: Commit updated data
         run: |

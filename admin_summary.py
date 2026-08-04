@@ -4,6 +4,7 @@
 
 import argparse
 import configparser
+import html
 import json
 import smtplib
 import sys
@@ -87,6 +88,11 @@ def send_one_email(cfg, to_email, subject, html_body, cc_email=None):
         smtp.sendmail(sender, recipients, msg.as_string())
 
 
+def _safe_web_url(value):
+    value = str(value or "")
+    return html.escape(value, quote=True) if value.startswith(("https://", "http://")) else "#"
+
+
 def _build_table(items, mail_map, by_field, display_fn, is_mr=True):
     grouped = defaultdict(list)
     for item in items:
@@ -98,14 +104,14 @@ def _build_table(items, mail_map, by_field, display_fn, is_mr=True):
     for key in sorted(grouped, key=lambda k: -len(grouped[k])):
         sub = sorted(grouped[key], key=lambda x: -x["days_open"])
         cnt = len(sub)
-        disp = display_fn(key, mail_map) if callable(display_fn) else key
+        disp = html.escape(str(display_fn(key, mail_map) if callable(display_fn) else key))
         for idx, item in enumerate(sub):
             st = item.get("status", "new")
             if st == "new": new_count += 1; label = "新增"
             elif st == "daily": label = "持续提醒中"
             else: waiting_count += 1; label = "跟踪中"
             cols = f"<td rowspan='{cnt}'>{disp}</td><td rowspan='{cnt}' style='text-align:center'>{cnt}个</td>" if idx == 0 else ""
-            rows += f"<tr>{cols}<td>{item['title'][:50]}</td><td><a href='{item['web_url']}'>#{item['iid']}</a></td><td>{item['days_open']}天</td><td>{label}</td></tr>"
+            rows += f"<tr>{cols}<td>{html.escape(str(item['title'][:50]))}</td><td><a href='{_safe_web_url(item.get('web_url'))}'>#{html.escape(str(item['iid']))}</a></td><td>{item['days_open']}天</td><td>{label}</td></tr>"
     return rows, new_count, waiting_count
 
 

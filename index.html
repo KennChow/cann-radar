@@ -858,7 +858,7 @@ async function main() {
             ${discussionExternalsList.slice(0, 50).map(p => `
               <div style="background:var(--bg-2);padding:12px;border-radius:8px;border:1px solid var(--border)">
                 <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
-                  <a href="https://gitcode.com/${p.user_name}" target="_blank" style="font-weight:600;color:var(--text);text-decoration:none">${p.user_name}</a>
+                  <a href="https://gitcode.com/${encodeURIComponent(p.user_name)}" target="_blank" style="font-weight:600;color:var(--text);text-decoration:none">${escapeHTML(p.user_name)}</a>
                 </div>
                 <div style="font-size:11px;color:var(--text-3)">
                   评论 ${p.top_comments || 0} 条 · 回复 ${p.replies || 0} 条
@@ -1402,6 +1402,15 @@ async function main() {
     }[c]));
   }
 
+  function safeWebUrl(value, fallback = "#") {
+    try {
+      const url = new URL(String(value || fallback), window.location.href);
+      return ["http:", "https:"].includes(url.protocol) ? escapeHTML(url.href) : "#";
+    } catch {
+      return "#";
+    }
+  }
+
   function renderDiscussionParticipants() {
     const section = document.getElementById('discussion-section');
     if (!discussionData) {
@@ -1662,7 +1671,7 @@ async function main() {
       if (!targets.length) return '';
       return `
         <div class="goal-item">
-          <div class="goal-label">${goal.label || metric.display}</div>
+          <div class="goal-label">${escapeHTML(goal.label || metric.display)}</div>
           <div class="goal-target">${metric.current.toLocaleString()} <span>${metric.unit || ''}</span></div>
           <div class="goal-meta">
             ${targets.map(target => {
@@ -1672,7 +1681,7 @@ async function main() {
               const isSuccess = gap <= 0;
               return `
                 <div class="goal-target-group">
-                  <div style="color:var(--text-2); margin-bottom: 2px;">${formatMetricTargetLabel(target)}：<strong style="color:var(--text)">${target.target}${unitText}</strong></div>
+                  <div style="color:var(--text-2); margin-bottom: 2px;">${escapeHTML(formatMetricTargetLabel(target))}：<strong style="color:var(--text)">${target.target}${unitText}</strong></div>
                   <div class="goal-progress-wrap"><div class="goal-progress-bar ${isSuccess ? 'success' : ''}" style="width: ${progress}%"></div></div>
                   <div class="goal-progress-text">
                     <span style="color: ${isSuccess ? '#4ecdc4' : 'var(--accent)'}; font-weight: 600;">${progress}%</span>
@@ -1897,8 +1906,8 @@ async function main() {
 
         const listHtml = pageItems.map((i, idx) => {
           const days = i.working_days_open ?? Math.floor((now - new Date(i.created_at)) / oneDayMs);
-          const url = i.web_url || `https://gitcode.com/${repoPath}/issues/${i.iid}`;
-          const labelStr = type === 'noReply' ? '' : ` · ${(i.labels || []).join(', ') || '无标签'}`;
+          const url = safeWebUrl(i.web_url || `https://gitcode.com/${repoPath}/issues/${i.iid}`);
+          const labelStr = type === 'noReply' ? '' : ` · ${escapeHTML((i.labels || []).join(', ') || '无标签')}`;
           return `<div style="margin-bottom:4px"><span style="color:var(--text-4);font-size:11px">${start + idx + 1}</span> <a href="${url}" target="_blank" style="color:var(--accent);text-decoration:none">#${i.iid}</a> · 创建 ${i.created_at} · 已 ${days} 个工作日${type === 'noReply' ? '未回复' : ''}${labelStr}</div>`;
         }).join('');
         document.getElementById(containerId).innerHTML = listHtml;
@@ -2174,13 +2183,13 @@ async function main() {
             tbody.innerHTML = '<tr><td colspan="4" style="text-align:center;padding:20px;color:var(--text-4)">暂无匹配数据</td></tr>';
           } else {
             tbody.innerHTML = pageItems.map(m => {
-              const url = m.web_url || `https://gitcode.com/${repoPath}/merge_requests/${m.iid}`;
-              const fullTitle = (m.title || '').replace(/"/g, '&quot;');
-              const displayTitle = (m.title || '').length > 50 ? (m.title || '').slice(0, 50) + '…' : (m.title || '');
+              const url = safeWebUrl(m.web_url || `https://gitcode.com/${repoPath}/merge_requests/${m.iid}`);
+              const fullTitle = escapeHTML(m.title || '');
+              const displayTitle = escapeHTML((m.title || '').length > 50 ? (m.title || '').slice(0, 50) + '…' : (m.title || ''));
               return `<tr>
                 <td title="${fullTitle}" style="max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${displayTitle}</td>
                 <td><a href="${url}" target="_blank" style="color:var(--accent);text-decoration:none">#${m.iid}</a></td>
-                <td>${m.author || '-'}</td>
+                <td>${escapeHTML(m.author || '-')}</td>
                 <td>${m.openDays} 天</td>
               </tr>`;
             }).join('');
@@ -2324,7 +2333,7 @@ async function main() {
               ${discussionCommentersInRepo.slice(0, 50).map(p => `
                 <div style="background:var(--bg-2);padding:12px;border-radius:8px;border:1px solid var(--border)">
                   <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
-                    <a href="https://gitcode.com/${p.user_name}" target="_blank" style="font-weight:600;color:var(--text);text-decoration:none">${p.nick_name || p.user_name}</a>
+                    <a href="https://gitcode.com/${encodeURIComponent(p.user_name)}" target="_blank" style="font-weight:600;color:var(--text);text-decoration:none">${escapeHTML(p.nick_name || p.user_name)}</a>
                     <div style="font-size:11px;color:var(--text-3);margin-left:auto">外部D1</div>
                   </div>
                   <div style="font-size:11px;color:var(--text-3)">
@@ -2481,8 +2490,8 @@ async function main() {
         const starredRepoCount = getStarredRepoCount(u);
         return `<tr>
           <td style="color:var(--text-4)">${start + i + 1}</td>
-          <td><a class="user-link" href="https://gitcode.com/${u.user_name}" target="_blank">${u.user_name}</a></td>
-          <td style="color:var(--text-2)">${u.nick_name || '-'}</td>
+          <td><a class="user-link" href="https://gitcode.com/${encodeURIComponent(u.user_name)}" target="_blank">${escapeHTML(u.user_name)}</a></td>
+          <td style="color:var(--text-2)">${escapeHTML(u.nick_name || '-')}</td>
           <td><span class="badge badge-${type}">${TYPE_LABELS[type]}</span></td>
           <td><span class="badge badge-source-${developerSource}">${DEVELOPER_SOURCE_LABELS[developerSource]}</span></td>
           <td>${p?.fans_count ?? '-'}</td>

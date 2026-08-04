@@ -22,6 +22,7 @@ TOKEN_PATH = Path("config/gitcode_token_rw.txt")
 V5_BASE = "https://gitcode.com/api/v5"
 LABEL_NAME = "wait-feedback"
 REQUEST_DELAY = 0.3
+COLLECTION_FAILURES_PATH = DATA_DIR / "collection_failures.json"
 
 
 def load_token():
@@ -42,6 +43,19 @@ def load_wait_feedback_repos():
     return paths
 
 
+def load_failed_issue_repos():
+    if not COLLECTION_FAILURES_PATH.exists():
+        return set()
+    try:
+        failures = json.loads(COLLECTION_FAILURES_PATH.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return set()
+    return {
+        item.get("repo") for item in failures
+        if item.get("category") == "issues" and item.get("repo")
+    }
+
+
 def _is_requirement(issue_type, title, labels):
     if issue_type == "需求":
         return True
@@ -60,8 +74,40 @@ def api_get(url, token):
         req = urllib.request.Request(url, headers=headers)
         with urllib.request.urlopen(req, timeout=10) as resp:
             return json.loads(resp.read().decode("utf-8"))
-    except Exception:
+    except Exception as exc:
+        print(f"  ✗ GET {url}: {exc}")
         return None
+
+
+def fetch_all_comments(owner, repo, iid, token, per_page=100):
+    """分页获取全部评论；返回 (comments, error)，不混淆空列表与请求失败。"""
+    comments = []
+    page = 1
+    while True:
+        url = (
+            f"{V5_BASE}/repos/{owner}/{repo}/issues/{iid}/comments"
+            f"?page={page}&per_page={per_page}"
+        )
+        data = api_get(url, token)
+        if data is None:
+            return [], f"第 {page} 页请求失败"
+        if not isinstance(data, list):
+            return [], f"第 {page} 页返回格式异常"
+        comments.extend(data)
+        if len(data) < per_page:
+            return comments, None
+        page += 1
+        time.sleep(REQUEST_DELAY)
+
+
+def latest_comment(comments):
+    """按服务端时间选择最新评论，时间缺失时以稳定的 id 兜底。"""
+    if not comments:
+        return None
+    return max(comments, key=lambda c: (
+        c.get("updated_at") or c.get("created_at") or "",
+        str(c.get("id") or ""),
+    ))
 
 
 def api_patch_labels(owner, repo, number, labels_str, token):
@@ -90,9 +136,13 @@ def main():
         return 1 if not args.dry_run else 0
 
     repos = load_wait_feedback_repos()
+    failed_repos = load_failed_issue_repos()
+    if failed_repos:
+        repos -= failed_repos
+        print(f"跳过 Issue 采集失败仓库: {', '.join(sorted(failed_repos))}")
     if not repos:
-        print("✗ 无仓库配置 wait_feedback: true")
-        return 1
+        print("⚠ 没有可安全处理 wait-feedback 的仓库")
+        return 0
     print(f"目标仓库: {', '.join(sorted(repos))}")
     print(f"模式: {'dry-run' if args.dry_run else '正式'}")
 
@@ -122,11 +172,20 @@ def main():
             if iid is None:
                 continue
 
-            comments = api_get(f"{V5_BASE}/repos/{owner}/{repo}/issues/{iid}/comments", token) or []
-            if not comments:
+            comments, error = fetch_all_comments(owner, repo, iid, token)
+            if error:
+                stats["api_err"] += 1
+                print(f"  ✗ {repo_path} #{iid}: 评论 API {error}")
+                continue
+            comment = latest_comment(comments)
+            if comment is None:
                 continue
 
-            last_author = (comments[-1].get("user") or {}).get("login", "")
+            last_author = (comment.get("user") or {}).get("login", "")
+            if not last_author:
+                stats["api_err"] += 1
+                print(f"  ✗ {repo_path} #{iid}: 最新评论缺少作者，跳过")
+                continue
             if last_author == iss.get("author", ""):
                 stats["skipped_self"] += 1
                 continue

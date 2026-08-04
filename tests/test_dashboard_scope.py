@@ -16,7 +16,10 @@ class DashboardScopeTests(unittest.TestCase):
             'cann/hixl',
             'cann/graph-autofusion',
             'cann/torchtitan-npu',
+            'cann/metadef',
+            'cann/tensorflow',
             'Ascend/torchair',
+            'cann/triton-inference-server-ge-backend',
         ])
         for repo in repos:
             self.assertNotIn('operation_metrics', repo)
@@ -41,8 +44,10 @@ class DashboardScopeTests(unittest.TestCase):
         self.assertEqual(goals['cann/hixl']['d1']['targets'][1]['target'], 150)
         self.assertEqual(goals['cann/torchtitan-npu']['d1']['targets'][0]['target'], 50)
         for repo_goals in goals.values():
-            self.assertEqual(repo_goals['d1']['label'], '外部D1 开发者数量')
-            self.assertEqual(repo_goals['d2']['label'], '外部D2 开发者数量')
+            if 'd1' in repo_goals:
+                self.assertEqual(repo_goals['d1']['label'], '外部D1 开发者数量')
+            if 'd2' in repo_goals:
+                self.assertEqual(repo_goals['d2']['label'], '外部D2 开发者数量')
 
     def test_repos_json_only_contains_requested_repos(self):
         repos = json.loads((ROOT / 'data' / 'repos.json').read_text(encoding='utf-8'))
@@ -52,7 +57,10 @@ class DashboardScopeTests(unittest.TestCase):
             'cann/hixl',
             'cann/graph-autofusion',
             'cann/torchtitan-npu',
+            'cann/metadef',
+            'cann/tensorflow',
             'Ascend/torchair',
+            'cann/triton-inference-server-ge-backend',
         ])
 
     def test_collector_uses_config_file_for_repo_scope(self):
@@ -131,13 +139,16 @@ class DashboardScopeTests(unittest.TestCase):
 
     def test_dlevel_summary_contains_expected_structure(self):
         summary = json.loads((ROOT / 'data' / 'dlevel_summary.json').read_text(encoding='utf-8'))
-        self.assertEqual(sorted(summary['global_counts'].keys()), ['d0', 'd1', 'd2', 'total'])
+        self.assertEqual(sorted(summary['global_counts'].keys()), ['d0', 'd0_external', 'd1', 'd1_external', 'd2', 'd2_external', 'total'])
         self.assertEqual(sorted(summary['repo_counts'].keys()), [
             'Ascend/torchair',
             'cann/ge',
             'cann/graph-autofusion',
             'cann/hixl',
+            'cann/metadef',
+            'cann/tensorflow',
             'cann/torchtitan-npu',
+            'cann/triton-inference-server-ge-backend',
         ])
         self.assertIn('repo_users', summary)
         self.assertIn('star_timeline', summary)
