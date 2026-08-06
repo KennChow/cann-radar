@@ -136,10 +136,6 @@ jobs:
         continue-on-error: true
         run: python collection_failure_notify.py --to caoqiancheng@huawei.com
 
-      - name: Add wait-feedback labels
-        if: github.event_name == 'schedule'
-        run: python add_wait_feedback_label.py
-
       - name: Commit and push updated data
         run: |
           git config user.name "github-actions[bot]"

@@ -70,5 +70,49 @@ class NotifyLogicTests(unittest.TestCase):
         self.assertIn('达到 10 个工作日', rendered)
 
 
+    def test_scan_preserves_author_for_self_assignment_filter(self):
+        issue = {
+            "iid": 7, "state": "opened", "author": "alice",
+            "assignees": ["alice"], "created_at": "2026-08-01",
+            "working_days_open": 1, "title": "bug", "labels": [],
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)
+            (path / "org__repo.json").write_text(
+                json.dumps([issue]), encoding="utf-8")
+            with patch.object(issue_notify, "ISSUES_DIR", path), \
+                 patch.object(issue_notify, "_working_days_since", return_value=10):
+                matched, _ = issue_notify.scan_stale_issues(10, {"org/repo"}, {})
+        self.assertEqual(matched[0]["author"], "alice")
+        self.assertTrue(issue_notify._is_self_assigned(
+            matched[0], matched[0]["repo"], {}))
+
+    def test_notification_ignores_frozen_cached_working_days(self):
+        issue = {
+            "iid": 1, "state": "opened", "author": "alice",
+            "assignees": ["bob"], "created_at": "2026-08-01",
+            "working_days_open": 1, "title": "bug", "labels": [],
+        }
+        mr = {
+            "iid": 2, "state": "opened", "draft": False, "author": "alice",
+            "created_at": "2026-08-01", "working_days_open": 1,
+            "title": "fix", "labels": [],
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            issues_dir, mrs_dir = root / "issues", root / "mrs"
+            issues_dir.mkdir(); mrs_dir.mkdir()
+            (issues_dir / "org__repo.json").write_text(json.dumps([issue]), encoding="utf-8")
+            (mrs_dir / "org__repo.json").write_text(json.dumps([mr]), encoding="utf-8")
+            with patch.object(issue_notify, "ISSUES_DIR", issues_dir), \
+                 patch.object(issue_notify, "_working_days_since", return_value=10):
+                issues, _ = issue_notify.scan_stale_issues(10, {"org/repo"}, {})
+            with patch.object(mr_notify, "MRS_DIR", mrs_dir), \
+                 patch.object(mr_notify, "_working_days_since", return_value=10):
+                mrs, _ = mr_notify.scan_stale_mrs(10, {"org/repo"}, {})
+        self.assertEqual(issues[0]["days_open"], 10)
+        self.assertEqual(mrs["alice"][0]["days_open"], 10)
+
+
 if __name__ == '__main__':
     unittest.main()

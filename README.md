@@ -83,7 +83,6 @@
 | `enabled` | 设为 `false` 可临时隐藏，无需删除配置 |
 | `notify` | 设为 `true` 启用该仓库的超期 MR/Issue 邮件通知 |
 | `admin` | 该仓库管理员邮箱（接收汇总报告，逗号分隔多人） |
-| `wait_feedback` | 设为 `true` 启用自动打 `wait-feedback` 标签（有回复的 issue） |
 
 ### 移除仓库
 
@@ -187,17 +186,6 @@ Issue 满足以下任一条件视为 Requirement：
 | 跟踪中 | 已提醒过，开发者仍在处理中 |
 | 持续提醒中 | 首次后每个工作日持续提醒 |
 
-### 自动打 wait-feedback 标签
-
-对 `repos.yml` 中 `wait_feedback: true` 的仓库，每日定时扫描 opened 且非 Requirement 的 issue，如果最后一条评论的作者不是 issue 创建者（表示有人回复），则通过 API 自动添加 `wait-feedback` 标签，配合 cannbot 在 14 天后自动关闭已回复的 issue。
-
-需要私仓配置 `gitcode_token_rw.txt`（写权限 token）。
-
-```bash
-# 本地测试
-python add_wait_feedback_label.py --dry-run
-```
-
 ### 手动触发
 
 在 GitHub Actions 页面 → `Daily Data Update` → `Run workflow`，可填写参数手动触发通知：
@@ -289,7 +277,6 @@ collector.py              # 数据采集器
 stale_mr_notify.py        # 超期 MR 个人通知
 stale_issue_notify.py     # 超期 Issue 个人通知
 admin_summary.py          # 合并 MR+Issue 管理员汇总报告
-add_wait_feedback_label.py # 对有回复的 issue 自动打标签
 index.html                # 前端页面（单文件，含所有图表逻辑）
 data/                     # 采集数据（自动生成，已纳入版本控制）
   repos.json              # 仓库基本信息（采集输出）

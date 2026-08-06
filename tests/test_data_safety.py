@@ -3,32 +3,11 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-import add_wait_feedback_label as wait_feedback
 import collection_failure_notify
 import collector
 
 
 class DataSafetyTests(unittest.TestCase):
-    def test_comments_are_paginated_and_latest_is_selected_by_time(self):
-        first = [
-            {'id': i, 'created_at': f'2026-01-01T00:{i:02d}:00Z'}
-            for i in range(2)
-        ]
-        second = [{'id': 3, 'created_at': '2026-01-02T00:00:00Z'}]
-        with patch.object(wait_feedback, 'api_get', side_effect=[first, second]) as get:
-            comments, error = wait_feedback.fetch_all_comments(
-                'org', 'repo', 1, 'token', per_page=2,
-            )
-        self.assertIsNone(error)
-        self.assertEqual(get.call_count, 2)
-        self.assertEqual(wait_feedback.latest_comment(comments)['id'], 3)
-
-    def test_comment_api_failure_is_not_treated_as_no_comments(self):
-        with patch.object(wait_feedback, 'api_get', return_value=None):
-            comments, error = wait_feedback.fetch_all_comments('org', 'repo', 1, 'token')
-        self.assertEqual(comments, [])
-        self.assertIn('请求失败', error)
-
     def test_issue_pagination_failure_does_not_write_partial_cache(self):
         page = [{'number': i, 'state': 'opened'} for i in range(100)]
         repo = {'path': 'org/repo'}
@@ -81,14 +60,6 @@ class DataSafetyTests(unittest.TestCase):
                     target, "issues", "org/repo", RuntimeError("timeout"))
             self.assertEqual(restored, [{"iid": 1}])
             self.assertTrue(collector.load_json(failures)[0]["fallback_used"])
-
-    def test_wait_feedback_skips_failed_issue_repos(self):
-        data = [{"category": "issues", "repo": "org/repo"}]
-        with tempfile.TemporaryDirectory() as tmp:
-            path = Path(tmp) / "failures.json"
-            path.write_text(__import__("json").dumps(data), encoding="utf-8")
-            with patch.object(wait_feedback, "COLLECTION_FAILURES_PATH", path):
-                self.assertEqual(wait_feedback.load_failed_issue_repos(), {"org/repo"})
 
     def test_failure_alert_defaults_to_requested_recipient(self):
         self.assertEqual(collection_failure_notify.DEFAULT_RECIPIENT,

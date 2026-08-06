@@ -317,7 +317,7 @@ def scan_stale_issues(stale_days, notify_paths=None, notified=None):
             created_at = issue.get("created_at", "")
             if not created_at:
                 continue
-            days_open = issue.get("working_days_open") or _working_days_since(created_at)
+            days_open = _working_days_since(created_at)
             if days_open < stale_days:
                 continue
             stats["stale_matched"] += 1
@@ -333,6 +333,7 @@ def scan_stale_issues(stale_days, notify_paths=None, notified=None):
                 "iid": iid,
                 "title": title,
                 "created_at": created_at,
+                "author": issue.get("author", ""),
                 "days_open": days_open,
                 "web_url": issue.get("web_url", ""),
                 "labels": labels,
@@ -460,7 +461,7 @@ def _save_admin_issue_summary(notify_paths, notified_data, linked_pr_map, mail_m
             itype = iss.get("issue_type") or ""
             if _is_requirement(itype, title, labels):
                 continue
-            days_open = iss.get("working_days_open") or _working_days_since(iss.get("created_at", ""))
+            days_open = _working_days_since(iss.get("created_at", ""))
             if days_open < stale_days:
                 continue
             # self-assigned check
@@ -583,7 +584,7 @@ def main():
         print(f"  自提排除: {self_assigned_count} 个 Issue")
         for iss in matched_issues:
             if _is_self_assigned(iss, iss["repo"], linked_pr_map):
-                print(f"    #{html.escape(str(iss['iid']))} author={iss['author']} (自提)")
+                print(f"    #{html.escape(str(iss['iid']))} author={iss.get('author', '')} (自提)")
     matched_issues = remaining_issues
 
     if not matched_issues:
