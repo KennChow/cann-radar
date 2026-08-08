@@ -1,5 +1,58 @@
 [
   {
+    "iid": 531,
+    "state": "opened",
+    "draft": false,
+    "title": "[feat] add DeepSeek V4 compile cache experiments",
+    "created_at": "2026-08-08",
+    "updated_at": "2026-08-08",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "hwcaifubi",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/531",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 530,
+    "state": "opened",
+    "draft": true,
+    "title": "[WIP] Backport pre-W2 router score absorption",
+    "created_at": "2026-08-08",
+    "updated_at": "2026-08-08",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "mystri",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/530",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 529,
+    "state": "opened",
+    "draft": false,
+    "title": "[perf] Overlap optimizer state transfer with compute",
+    "created_at": "2026-08-08",
+    "updated_at": "2026-08-08",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "panchao-gitcode",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/529",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 528,
     "state": "opened",
     "draft": false,
@@ -22,14 +75,14 @@
     "draft": false,
     "title": "[docs] add readme",
     "created_at": "2026-08-07",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "hitwdy",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/527",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-failed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -57,13 +110,14 @@
     "draft": false,
     "title": "[fix] allow unmatched FSDP precision patterns on PP stages",
     "created_at": "2026-08-07",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "rui-zhang",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/525",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": [
@@ -76,7 +130,7 @@
     "draft": false,
     "title": "test ci",
     "created_at": "2026-08-07",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "wangyunxiang1",
@@ -94,14 +148,14 @@
     "draft": false,
     "title": "[feat] support loading MXFP8 Hugging Face weights",
     "created_at": "2026-08-07",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "rui-zhang",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/523",
     "labels": [
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -168,12 +222,16 @@
     "draft": false,
     "title": "DeepSeek-V4模型代码整理及patch回合",
     "created_at": "2026-08-06",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "lrwei0709",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/519",
-    "labels": [],
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
     "working_days_open": 2,
     "e2e_issues": []
   },
@@ -975,7 +1033,7 @@
     "draft": true,
     "title": "[WIP][feat] Add pre-AOT graph pattern fusion",
     "created_at": "2026-07-28",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "xuyujun",
@@ -1132,7 +1190,7 @@
     "draft": false,
     "title": "[feat] integrate A5 SwigluGroup expert fusion",
     "created_at": "2026-07-27",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "zhangwei1177",
@@ -1140,7 +1198,7 @@
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-failed"
     ],
     "working_days_open": 10,
     "e2e_issues": []
@@ -1170,13 +1228,13 @@
     "draft": false,
     "title": "[fix] support swap optimizer checkpoints",
     "created_at": "2026-07-27",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "weixin_69877254",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/466",
     "labels": [
-      "ci-pipeline-failed",
+      "ci-pipeline-passed",
       "cann-cla/yes"
     ],
     "working_days_open": 10,

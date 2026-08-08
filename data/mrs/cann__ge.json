@@ -1,5 +1,63 @@
 [
   {
+    "iid": 4311,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: 简要描述",
+    "created_at": "2026-08-08",
+    "updated_at": "2026-08-08",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lidaoming1",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4311",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4310,
+    "state": "opened",
+    "draft": false,
+    "title": "perf: 优化 OM2 模型加载内存使用，消除反序列化过程中的不必要拷贝",
+    "created_at": "2026-08-08",
+    "updated_at": "2026-08-08",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wuzheng-hw",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4310",
+    "labels": [
+      "ci-pipeline-failed",
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4309,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: restore reshape axis padding before autofuse can-fuse",
+    "created_at": "2026-08-08",
+    "updated_at": "2026-08-08",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "ling-DT",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4309",
+    "labels": [
+      "stat/needs-squash",
+      "ci-pipeline-failed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 4308,
     "state": "opened",
     "draft": false,
@@ -179,7 +237,7 @@
     "draft": false,
     "title": "fix: 统一HCCL零拷贝判断使用IsGraphFeatureMapRefreshable",
     "created_at": "2026-08-07",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "tangqunzhang",
@@ -217,12 +275,13 @@
     "draft": false,
     "title": "feat(om2): 新增OM2运行时变量管理器(RTVarManager)",
     "created_at": "2026-08-07",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "wuzheng-hw",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4297",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
@@ -267,17 +326,19 @@
   },
   {
     "iid": 4294,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【PR】:  sync develop to master 20260806",
     "created_at": "2026-08-06",
-    "updated_at": "2026-08-07",
-    "merged_at": "",
+    "updated_at": "2026-08-08",
+    "merged_at": "2026-08-08",
     "closed_at": "",
     "author": "depeng1994",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4294",
     "labels": [
       "ci-pipeline-passed",
+      "lgtm",
+      "approved",
       "cann-cla/yes",
       "stat/needs-squash"
     ],
@@ -442,14 +503,16 @@
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-08-06",
-    "updated_at": "2026-08-06",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "lidaoming1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4285",
     "labels": [
+      "cann-cla/yes",
       "enhancement",
-      "cann-cla/yes"
+      "ci-pipeline-failed",
+      "stat/needs-squash"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -683,13 +746,13 @@
   },
   {
     "iid": 4273,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】: test profiling",
     "created_at": "2026-08-05",
-    "updated_at": "2026-08-05",
+    "updated_at": "2026-08-08",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-08",
     "author": "lidaoming1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4273",
     "labels": [
@@ -724,7 +787,7 @@
     "draft": false,
     "title": "feat: OM2支持自定义算子",
     "created_at": "2026-08-05",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "fary86",
@@ -815,13 +878,13 @@
   },
   {
     "iid": 4266,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】: profiling mix",
     "created_at": "2026-08-05",
-    "updated_at": "2026-08-05",
+    "updated_at": "2026-08-08",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-08",
     "author": "lidaoming1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4266",
     "labels": [
@@ -1155,13 +1218,13 @@
   },
   {
     "iid": 4249,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】: 空PR，用于验证CI流程",
     "created_at": "2026-08-04",
-    "updated_at": "2026-08-04",
+    "updated_at": "2026-08-08",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-08",
     "author": "lidaoming1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4249",
     "labels": [
@@ -1398,16 +1461,16 @@
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-08-01",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "wang-bin-789",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4237",
     "labels": [
       "enhancement",
+      "ci-pipeline-failed",
       "cann-cla/yes",
-      "stat/needs-squash",
-      "ci-pipeline-failed"
+      "stat/needs-squash"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -2030,13 +2093,13 @@
   },
   {
     "iid": 4205,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix: UnloadModel使用model自身的device_id替代GetContext().DeviceId()",
     "created_at": "2026-07-30",
-    "updated_at": "2026-08-06",
+    "updated_at": "2026-08-08",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-08",
     "author": "lidaoming1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4205",
     "labels": [
@@ -3412,7 +3475,7 @@
     "draft": false,
     "title": "refactor: 拆分block_mem_assigner.cc为多个独立文件",
     "created_at": "2026-07-25",
-    "updated_at": "2026-07-28",
+    "updated_at": "2026-08-08",
     "merged_at": "2026-07-28",
     "closed_at": "",
     "author": "tangqunzhang",
@@ -3424,7 +3487,9 @@
       "lgtm"
     ],
     "working_days_open": 10,
-    "e2e_issues": []
+    "e2e_issues": [
+      "494"
+    ]
   },
   {
     "iid": 4135,
@@ -3488,13 +3553,13 @@
   },
   {
     "iid": 4132,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】: test",
     "created_at": "2026-07-24",
-    "updated_at": "2026-07-24",
+    "updated_at": "2026-08-07",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-07",
     "author": "zhanj",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4132",
     "labels": [
@@ -4838,7 +4903,7 @@
     "draft": false,
     "title": "feat:重构声明式地址刷新自定义算子的workspace地址两段式申请逻辑",
     "created_at": "2026-07-18",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "Chang-an-HW",
@@ -4846,9 +4911,8 @@
     "labels": [
       "stat/needs-squash",
       "enhancement",
-      "ci-pipeline-passed",
       "cann-cla/yes",
-      "lgtm"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 15,
     "e2e_issues": []

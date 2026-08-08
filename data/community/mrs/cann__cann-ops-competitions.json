@@ -1,5 +1,58 @@
 [
   {
+    "iid": 1036,
+    "state": "opened",
+    "draft": false,
+    "title": "更新社区任务aclnnRemainderTensorTensor设计文档，修改了一些错误",
+    "created_at": "2026-08-08",
+    "updated_at": "2026-08-08",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "longlifeseelive",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1036",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1035,
+    "state": "opened",
+    "draft": false,
+    "title": "【社区任务】ELU算子设计文档",
+    "created_at": "2026-08-07",
+    "updated_at": "2026-08-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "xuli99",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1035",
+    "labels": [
+      "ai-co-authored",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1034,
+    "state": "opened",
+    "draft": false,
+    "title": "gather_coo算子设计文档评审申请",
+    "created_at": "2026-08-07",
+    "updated_at": "2026-08-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zpnb666",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1034",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
     "iid": 1033,
     "state": "opened",
     "draft": false,
@@ -41,12 +94,13 @@
     "draft": false,
     "title": "【社区任务】8月社区任务-radius算子开发设计文档",
     "created_at": "2026-08-07",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "ty1202",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1031",
     "labels": [
+      "ci-pipeline-passed",
       "cann-cla/yes"
     ],
     "working_days_open": 1,
@@ -186,7 +240,7 @@
     "draft": false,
     "title": "【2026 HCCL通信库创新大赛-粤港澳赛区】【IKUN】初赛及决赛代码归档",
     "created_at": "2026-08-07",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "2301_78565107",
@@ -264,15 +318,15 @@
     "draft": false,
     "title": "【社区任务】HuberLoss 算子设计文档",
     "created_at": "2026-08-07",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "kwannyyy",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1019",
     "labels": [
       "ai-docs-only",
-      "cann-cla/yes",
       "ai-compliance-successful",
+      "cann-cla/yes",
       "ai-co-authored"
     ],
     "working_days_open": 1,
@@ -341,15 +395,15 @@
     "draft": false,
     "title": "【社区任务】MatMul算子设计文档",
     "created_at": "2026-08-06",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_DmEcQNNx",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1015",
     "labels": [
       "ai-co-authored",
-      "ai-docs-only",
       "cann-cla/yes",
+      "ai-docs-only",
       "ai-compliance-successful"
     ],
     "working_days_open": 2,
@@ -689,18 +743,18 @@
     "draft": false,
     "title": "【社区任务】Scatter算子设计文档",
     "created_at": "2026-08-05",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_OToCspAD",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/997",
     "labels": [
-      "cann-cla/yes",
       "stat/needs-squash",
-      "ci-pipeline-passed",
       "ai-co-authored",
       "ai-docs-only",
-      "ai-compliance-successful"
+      "ai-compliance-failed",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -1920,14 +1974,17 @@
     "draft": false,
     "title": "【CANN社区任务】ELU算子设计文档",
     "created_at": "2026-08-03",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_93rlw6ed",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/935",
     "labels": [
+      "ai-docs-only",
+      "ai-co-authored",
+      "cann-cla/yes",
       "stat/needs-squash",
-      "cann-cla/yes"
+      "ai-compliance-successful"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -7027,7 +7084,7 @@
     "draft": false,
     "title": "【社区任务】7月社区任务-SHMEM Python 接口开发设计文档",
     "created_at": "2026-07-25",
-    "updated_at": "2026-08-04",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "XYTer",
@@ -9580,7 +9637,7 @@
     "draft": false,
     "title": "[社区任务] low-bit-quant设计方案",
     "created_at": "2026-07-07",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "szdaniel",
@@ -10504,15 +10561,14 @@
     "draft": false,
     "title": "【社区任务】aclsolverCheevj 三对角化实现 + 板上验证（设计文档+代码+结果）",
     "created_at": "2026-06-16",
-    "updated_at": "2026-07-25",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "dahfgakf",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/492",
     "labels": [
       "stat/needs-squash",
-      "cann-cla/no",
-      "ci-pipeline-passed"
+      "cann-cla/no"
     ],
     "working_days_open": 38,
     "e2e_issues": []

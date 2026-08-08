@@ -1,5 +1,120 @@
 [
   {
+    "iid": 1683,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: [feat] 封装schedInfo的循环轴以及循环轴路径查询接口.",
+    "created_at": "2026-08-08",
+    "updated_at": "2026-08-08",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "xingzhixiong",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1683",
+    "labels": [
+      "cann-cla/yes",
+      "enhancement"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1682,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: 简要描述",
+    "created_at": "2026-08-08",
+    "updated_at": "2026-08-08",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wangchuang616",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1682",
+    "labels": [
+      "cann-cla/yes",
+      "enhancement",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1681,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: 简要描述",
+    "created_at": "2026-08-08",
+    "updated_at": "2026-08-08",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wangchuang616",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1681",
+    "labels": [
+      "cann-cla/yes",
+      "enhancement",
+      "ci-pipeline-passed",
+      "api-check-pass"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1680,
+    "state": "merged",
+    "draft": false,
+    "title": "修复UT镜像获取",
+    "created_at": "2026-08-08",
+    "updated_at": "2026-08-08",
+    "merged_at": "2026-08-08",
+    "closed_at": "",
+    "author": "wangchuang616",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1680",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "api-check-pass",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1679,
+    "state": "closed",
+    "draft": false,
+    "title": "docs: 单独优化 MLIR 技术文档可读性",
+    "created_at": "2026-08-08",
+    "updated_at": "2026-08-08",
+    "merged_at": "",
+    "closed_at": "2026-08-08",
+    "author": "niuyuhu",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1679",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1678,
+    "state": "opened",
+    "draft": false,
+    "title": "perf: remove transpose score function",
+    "created_at": "2026-08-08",
+    "updated_at": "2026-08-08",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_V3YyYBt1",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1678",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1677,
     "state": "opened",
     "draft": false,
@@ -99,17 +214,19 @@
   },
   {
     "iid": 1672,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【PR】:  sync develop to master 20260806",
     "created_at": "2026-08-06",
-    "updated_at": "2026-08-07",
-    "merged_at": "",
+    "updated_at": "2026-08-08",
+    "merged_at": "2026-08-08",
     "closed_at": "",
     "author": "depeng1994",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1672",
     "labels": [
-      "ci-pipeline-failed",
+      "lgtm",
+      "approved",
+      "ci-pipeline-passed",
       "stat/needs-squash",
       "cann-cla/yes"
     ],
@@ -122,14 +239,15 @@
     "draft": false,
     "title": "【Feat】: Implement C interface for ge+sk deadlock detection",
     "created_at": "2026-08-06",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "Achilles_d",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1671",
     "labels": [
-      "cann-cla/yes",
-      "enhancement"
+      "enhancement",
+      "stat/needs-squash",
+      "cann-cla/yes"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -291,7 +409,7 @@
     "iid": 1662,
     "state": "opened",
     "draft": false,
-    "title": "fix: ensure deterministic codegen across processes",
+    "title": "fix: ensure deterministic codegen and reliable PGO fallback",
     "created_at": "2026-08-05",
     "updated_at": "2026-08-07",
     "merged_at": "",
@@ -301,7 +419,7 @@
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -312,7 +430,7 @@
     "draft": false,
     "title": "【PR】: 打通TF动态shape的CV融合",
     "created_at": "2026-08-05",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "s003576sgd",
@@ -329,17 +447,17 @@
     "iid": 1660,
     "state": "opened",
     "draft": false,
-    "title": "fix: 修复IndirectLoad流水同步和内存分配问题",
+    "title": "feat: 支持 IndirectLoad SIMD 多实现并修复精度问题",
     "created_at": "2026-08-05",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "xiebangrui2025",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1660",
     "labels": [
-      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -412,14 +530,14 @@
     "draft": false,
     "title": "fix: 禁用有功能风险的动态 Reduce Tile 换轴",
     "created_at": "2026-08-05",
-    "updated_at": "2026-08-05",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "zhang_shengjie",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1656",
     "labels": [
-      "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-failed",
+      "cann-cla/yes"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -620,17 +738,17 @@
     "iid": 1645,
     "state": "opened",
     "draft": false,
-    "title": "【PR】: [autofuse] Encapsulate the serialize and dump api of schedInfo.",
+    "title": "【PR】: [feat] 封装schedInfo的序列化和dump接口.",
     "created_at": "2026-08-04",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "xingzhixiong",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1645",
     "labels": [
       "enhancement",
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 4,
     "e2e_issues": []
@@ -927,7 +1045,7 @@
     "draft": false,
     "title": "【PR】: 简要描述 broadcast backward opt",
     "created_at": "2026-08-03",
-    "updated_at": "2026-08-06",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "czways",
@@ -982,15 +1100,15 @@
     "draft": false,
     "title": "【feat】: 支持norm融合R轴分tile",
     "created_at": "2026-08-03",
-    "updated_at": "2026-08-06",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "WangYanMale",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1626",
     "labels": [
+      "enhancement",
       "cann-cla/yes",
-      "ci-pipeline-failed",
-      "enhancement"
+      "ci-pipeline-failed"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -1112,16 +1230,16 @@
     "draft": false,
     "title": "feat: 完善 Autofuse MLIR 基础设施与 AFIR 转换链路",
     "created_at": "2026-08-03",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "niuyuhu",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1619",
     "labels": [
+      "cann-cla/yes",
       "stat/needs-squash",
       "enhancement",
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "ci-pipeline-failed"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -1629,12 +1747,14 @@
     "draft": false,
     "title": "feat:增加可选编译诊断参数及编译优化",
     "created_at": "2026-08-01",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "Ren_Jie",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1591",
     "labels": [
+      "lgtm",
+      "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
@@ -1831,7 +1951,7 @@
     "draft": false,
     "title": "feat: 优化Where性能建模",
     "created_at": "2026-07-31",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_V3YyYBt1",
@@ -2423,15 +2543,14 @@
     "draft": true,
     "title": "【WIP】: 支持IndirectLoad融合BroadCast节点和非连续输入",
     "created_at": "2026-07-29",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "luo-lipeng",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1549",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-failed",
-      "stat/needs-squash",
+      "ci-pipeline-passed",
       "enhancement"
     ],
     "working_days_open": 8,
@@ -3977,7 +4096,7 @@
     "draft": false,
     "title": "【PR】: 打通TF框架+动态Shape的 CV 融合",
     "created_at": "2026-07-24",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "s003576sgd",
@@ -8548,7 +8667,7 @@
     "draft": false,
     "title": "【feat】enable simt fuse in sk",
     "created_at": "2026-07-09",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "yrz1027",
@@ -8556,8 +8675,8 @@
     "labels": [
       "enhancement",
       "stat/needs-squash",
-      "cann-cla/yes",
-      "api-check-pass"
+      "api-check-pass",
+      "cann-cla/yes"
     ],
     "working_days_open": 22,
     "e2e_issues": []
@@ -15952,16 +16071,17 @@
     "draft": false,
     "title": "【debug】empty package for test",
     "created_at": "2026-06-15",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-08",
     "merged_at": "",
     "closed_at": "",
     "author": "yrz1027",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/859",
     "labels": [
       "enhancement",
+      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed",
-      "api-check-pass"
+      "api-check-pass",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 39,
     "e2e_issues": []
