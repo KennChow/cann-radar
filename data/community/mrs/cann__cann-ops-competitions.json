@@ -1,5 +1,58 @@
 [
   {
+    "iid": 1039,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: add Gather COO design",
+    "created_at": "2026-08-09",
+    "updated_at": "2026-08-09",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "weixin_66067674",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1039",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1038,
+    "state": "opened",
+    "draft": false,
+    "title": "【CANN社区任务】TensorLikePair算子设计文档",
+    "created_at": "2026-08-09",
+    "updated_at": "2026-08-09",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_bagVLnJN",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1038",
+    "labels": [
+      "ai-co-authored",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1037,
+    "state": "opened",
+    "draft": false,
+    "title": "【社区任务】huber_loss 算子设计文档",
+    "created_at": "2026-08-09",
+    "updated_at": "2026-08-09",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhangfeng1133",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1037",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1036,
     "state": "opened",
     "draft": false,
@@ -38,9 +91,9 @@
     "iid": 1034,
     "state": "opened",
     "draft": false,
-    "title": "gather_coo算子设计文档评审申请",
+    "title": "【社区任务】gather_coo算子设计文档",
     "created_at": "2026-08-07",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-09",
     "merged_at": "",
     "closed_at": "",
     "author": "zpnb666",
@@ -338,12 +391,14 @@
     "draft": false,
     "title": "【社区任务】ELU算子设计文档",
     "created_at": "2026-08-06",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-09",
     "merged_at": "",
     "closed_at": "",
     "author": "socean",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1018",
     "labels": [
+      "ai-docs-only",
+      "ai-compliance-failed",
       "ai-co-authored",
       "cann-cla/yes",
       "ci-pipeline-passed"
@@ -467,9 +522,9 @@
     "iid": 1011,
     "state": "opened",
     "draft": false,
-    "title": "docs: add SHMEM Python API design for gcw_F4nbZni2",
+    "title": "【社区任务】SHMEM Python 接口开发设计文档",
     "created_at": "2026-08-06",
-    "updated_at": "2026-08-06",
+    "updated_at": "2026-08-09",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_F4nbZni2",
@@ -477,9 +532,8 @@
     "labels": [
       "ai-docs-only",
       "ai-compliance-successful",
-      "cann-cla/yes",
-      "ci-pipeline-passed",
-      "ai-co-authored"
+      "ai-co-authored",
+      "cann-cla/yes"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -531,13 +585,13 @@
     "draft": false,
     "title": "feat: add design for gather_loss ops",
     "created_at": "2026-08-05",
-    "updated_at": "2026-08-06",
+    "updated_at": "2026-08-09",
     "merged_at": "",
     "closed_at": "",
     "author": "slamkuntech",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1008",
     "labels": [
-      "cann-cla/no"
+      "cann-cla/yes"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -548,13 +602,13 @@
     "draft": false,
     "title": "feat: add design document",
     "created_at": "2026-08-05",
-    "updated_at": "2026-08-06",
+    "updated_at": "2026-08-09",
     "merged_at": "",
     "closed_at": "",
     "author": "yueyeying",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1007",
     "labels": [
-      "cann-cla/no"
+      "cann-cla/yes"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -743,18 +797,18 @@
     "draft": false,
     "title": "【社区任务】Scatter算子设计文档",
     "created_at": "2026-08-05",
-    "updated_at": "2026-08-08",
+    "updated_at": "2026-08-09",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_OToCspAD",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/997",
     "labels": [
       "stat/needs-squash",
-      "ai-co-authored",
-      "ai-docs-only",
-      "ai-compliance-failed",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ai-compliance-successful",
+      "ci-pipeline-passed",
+      "ai-co-authored",
+      "ai-docs-only"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -1247,13 +1301,13 @@
   },
   {
     "iid": 971,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【社区任务】huber_loss 算子设计文档",
     "created_at": "2026-08-04",
-    "updated_at": "2026-08-04",
+    "updated_at": "2026-08-09",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-09",
     "author": "qq_64858158",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/971",
     "labels": [
@@ -1720,7 +1774,7 @@
     "draft": false,
     "title": "【社区任务】MatMul设计文档评审申请",
     "created_at": "2026-08-03",
-    "updated_at": "2026-08-07",
+    "updated_at": "2026-08-09",
     "merged_at": "",
     "closed_at": "",
     "author": "leecyang",
@@ -2110,7 +2164,7 @@
     "draft": false,
     "title": "[团队提交] 2026 HCCL通信库创新大赛华北赛区初赛及决赛 AllGather 代码提交：GG",
     "created_at": "2026-08-03",
-    "updated_at": "2026-08-06",
+    "updated_at": "2026-08-09",
     "merged_at": "",
     "closed_at": "",
     "author": "2402_87469259",
@@ -5489,14 +5543,13 @@
     "draft": true,
     "title": "[WIP]refactor: add design-documents for 08-05 huber_loss",
     "created_at": "2026-07-27",
-    "updated_at": "2026-08-06",
+    "updated_at": "2026-08-09",
     "merged_at": "",
     "closed_at": "",
     "author": "Tridu",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/754",
     "labels": [
-      "ci-pipeline-passed",
-      "cann-cla/no"
+      "cann-cla/yes"
     ],
     "working_days_open": 10,
     "e2e_issues": []
@@ -10561,7 +10614,7 @@
     "draft": false,
     "title": "【社区任务】aclsolverCheevj 三对角化实现 + 板上验证（设计文档+代码+结果）",
     "created_at": "2026-06-16",
-    "updated_at": "2026-08-08",
+    "updated_at": "2026-08-09",
     "merged_at": "",
     "closed_at": "",
     "author": "dahfgakf",
