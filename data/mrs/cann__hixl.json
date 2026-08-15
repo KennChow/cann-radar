@@ -1,12 +1,70 @@
 [
   {
-    "iid": 901,
+    "iid": 904,
+    "state": "merged",
+    "draft": false,
+    "title": "revert//切换CCE集群",
+    "created_at": "2026-08-15",
+    "updated_at": "2026-08-15",
+    "merged_at": "2026-08-15",
+    "closed_at": "",
+    "author": "cann-robot",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/904",
+    "labels": [
+      "cann-cla/yes",
+      "Revert",
+      "ci-confirmed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 903,
     "state": "opened",
+    "draft": false,
+    "title": "[feat]: package hixl Python binding as wheel with __init__.py and platform-tagged .so",
+    "created_at": "2026-08-15",
+    "updated_at": "2026-08-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhaozhihui",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/903",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed",
+      "api-check-pass"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 902,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: skip device build and packaging for host-only",
+    "created_at": "2026-08-15",
+    "updated_at": "2026-08-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhaozhihui",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/902",
+    "labels": [
+      "api-check-pass",
+      "ci-pipeline-failed",
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 901,
+    "state": "merged",
     "draft": false,
     "title": "hixl切换CCE集群",
     "created_at": "2026-08-14",
-    "updated_at": "2026-08-14",
-    "merged_at": "",
+    "updated_at": "2026-08-15",
+    "merged_at": "2026-08-15",
     "closed_at": "",
     "author": "wangchuang616",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/901",
@@ -14,7 +72,8 @@
       "api-check-pass",
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -25,15 +84,15 @@
     "draft": false,
     "title": "[bugfix]: fix deadlock, LOG type mismatch and accept retryable error handling",
     "created_at": "2026-08-14",
-    "updated_at": "2026-08-14",
+    "updated_at": "2026-08-15",
     "merged_at": "",
     "closed_at": "",
     "author": "lining23666",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/900",
     "labels": [
-      "cann-cla/yes",
       "ci-pipeline-passed",
-      "api-check-pass"
+      "api-check-pass",
+      "cann-cla/yes"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -151,14 +210,14 @@
     "draft": false,
     "title": "refactor: replace private profiling APIs with aclprof",
     "created_at": "2026-08-13",
-    "updated_at": "2026-08-14",
+    "updated_at": "2026-08-15",
     "merged_at": "",
     "closed_at": "",
     "author": "M__Cheng",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/894",
     "labels": [
-      "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "stat/needs-squash"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -426,14 +485,14 @@
     "draft": false,
     "title": "fail over",
     "created_at": "2026-08-11",
-    "updated_at": "2026-08-14",
+    "updated_at": "2026-08-15",
     "merged_at": "",
     "closed_at": "",
     "author": "WujingChen",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/881",
     "labels": [
-      "cann-cla/yes",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "cann-cla/yes"
     ],
     "working_days_open": 4,
     "e2e_issues": []

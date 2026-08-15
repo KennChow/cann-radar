@@ -1,5 +1,80 @@
 [
   {
+    "iid": 581,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: split override MHC pre backward path",
+    "created_at": "2026-08-15",
+    "updated_at": "2026-08-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "xuyujun",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/581",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 580,
+    "state": "merged",
+    "draft": false,
+    "title": "[feat] 支持 Qwen3.5/Qwen3.6 NPU 训练",
+    "created_at": "2026-08-15",
+    "updated_at": "2026-08-15",
+    "merged_at": "2026-08-15",
+    "closed_at": "",
+    "author": "botcanlearn",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/580",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 579,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: mHC Triton 算子重构为标准 torch 自定义算子，删除 add triton 算子",
+    "created_at": "2026-08-15",
+    "updated_at": "2026-08-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "LiNuohang",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/579",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 578,
+    "state": "opened",
+    "draft": false,
+    "title": "[feat] adapt NPU batch-invariant mode to override-refactor",
+    "created_at": "2026-08-15",
+    "updated_at": "2026-08-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "rui-zhang",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/578",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 577,
     "state": "opened",
     "draft": false,
@@ -53,19 +128,21 @@
   },
   {
     "iid": 574,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[fix] fix ckpt loading bug and update DeepSeek-V4 model configuration",
     "created_at": "2026-08-14",
-    "updated_at": "2026-08-14",
-    "merged_at": "",
+    "updated_at": "2026-08-15",
+    "merged_at": "2026-08-15",
     "closed_at": "",
     "author": "hitwdy",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/574",
     "labels": [
       "cann-cla/yes",
       "stat/needs-squash",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -96,26 +173,28 @@
     "draft": false,
     "title": "[refactor] Migrate the torchao patch modules into the `ao_npu` directory within experiments",
     "created_at": "2026-08-14",
-    "updated_at": "2026-08-14",
+    "updated_at": "2026-08-15",
     "merged_at": "",
     "closed_at": "",
     "author": "zhuofanshen",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/572",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "stat/needs-squash"
     ],
     "working_days_open": 1,
     "e2e_issues": []
   },
   {
     "iid": 571,
-    "state": "closed",
+    "state": "opened",
     "draft": false,
     "title": "ci test",
     "created_at": "2026-08-14",
-    "updated_at": "2026-08-14",
+    "updated_at": "2026-08-15",
     "merged_at": "",
-    "closed_at": "2026-08-14",
+    "closed_at": "",
     "author": "botcanlearn",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/571",
     "labels": [
@@ -258,7 +337,7 @@
     "draft": false,
     "title": "[feat] adapt batch-invariant mode for NPU",
     "created_at": "2026-08-13",
-    "updated_at": "2026-08-14",
+    "updated_at": "2026-08-15",
     "merged_at": "",
     "closed_at": "",
     "author": "rui-zhang",
@@ -378,12 +457,13 @@
     "draft": false,
     "title": "[fix]: enable Muon for single-node debug for deepseek-v4",
     "created_at": "2026-08-12",
-    "updated_at": "2026-08-14",
+    "updated_at": "2026-08-15",
     "merged_at": "",
     "closed_at": "",
     "author": "zhaowei1936",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/557",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
@@ -396,14 +476,14 @@
     "draft": false,
     "title": "add actions",
     "created_at": "2026-08-12",
-    "updated_at": "2026-08-14",
+    "updated_at": "2026-08-15",
     "merged_at": "",
     "closed_at": "",
     "author": "wangyunxiang1",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/556",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -622,7 +702,7 @@
     "draft": false,
     "title": "feat: add DeepSeek-V4 multi-node training launchers",
     "created_at": "2026-08-11",
-    "updated_at": "2026-08-14",
+    "updated_at": "2026-08-15",
     "merged_at": "",
     "closed_at": "",
     "author": "hitwdy",
@@ -717,7 +797,7 @@
     "draft": false,
     "title": "[feat] add data process & fix  smoketest & RFC mini 1b",
     "created_at": "2026-08-11",
-    "updated_at": "2026-08-13",
+    "updated_at": "2026-08-15",
     "merged_at": "",
     "closed_at": "",
     "author": "zhaoxi1029",
@@ -756,7 +836,7 @@
     "draft": false,
     "title": "feat: add DeepSeek-V4 numerical alignment tools",
     "created_at": "2026-08-10",
-    "updated_at": "2026-08-11",
+    "updated_at": "2026-08-15",
     "merged_at": "",
     "closed_at": "",
     "author": "hitwdy",
@@ -1054,17 +1134,20 @@
   },
   {
     "iid": 521,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[fix] 文档版本描述修改及ci脚本修改",
     "created_at": "2026-08-06",
-    "updated_at": "2026-08-13",
-    "merged_at": "",
+    "updated_at": "2026-08-15",
+    "merged_at": "2026-08-15",
     "closed_at": "",
     "author": "liuyuanchen1",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/521",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 7,
     "e2e_issues": [
@@ -2023,14 +2106,14 @@
     "draft": false,
     "title": "chore: add torchtitan-npu documentation skill",
     "created_at": "2026-07-27",
-    "updated_at": "2026-08-12",
+    "updated_at": "2026-08-15",
     "merged_at": "",
     "closed_at": "",
     "author": "hitwdy",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/471",
     "labels": [
-      "cann-cla/yes",
       "ci-pipeline-failed",
+      "cann-cla/yes",
       "stat/needs-squash"
     ],
     "working_days_open": 15,

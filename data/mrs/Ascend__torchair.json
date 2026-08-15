@@ -1,5 +1,24 @@
 [
   {
+    "iid": 3557,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: support 4-bit compact NZ/ND weight of npu_weight_quant_batchmatmul in graph mode",
+    "created_at": "2026-08-15",
+    "updated_at": "2026-08-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "maqijun",
+    "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3557",
+    "labels": [
+      "smoke-pipeline-passed",
+      "ascend-cla/yes",
+      "docs-ci-pipeline-success"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 3556,
     "state": "opened",
     "draft": false,
@@ -163,16 +182,17 @@
     "draft": false,
     "title": "fix: WelfordReduce重构与smoke用例补充",
     "created_at": "2026-08-13",
-    "updated_at": "2026-08-14",
+    "updated_at": "2026-08-15",
     "merged_at": "",
     "closed_at": "",
     "author": "wei_shi",
     "web_url": "https://gitcode.com/Ascend/torchair/merge_requests/3548",
     "labels": [
-      "stat/needs-squash",
       "ascend-cla/yes",
       "docs-ci-pipeline-success",
-      "ci-pipeline-failed"
+      "smoke-pipeline-passed",
+      "ci-pipeline-passed",
+      "stat/needs-squash"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -592,9 +612,9 @@
     "iid": 3528,
     "state": "opened",
     "draft": false,
-    "title": "feat(add_rms_norm_dynamic_mx_quant): 新增可选 x0 输入、A5 芯片校验",
+    "title": "feat(add_rms_norm_dynamic_mx_quant): 新增可选 x0 输入及 CANN 版本约束",
     "created_at": "2026-08-11",
-    "updated_at": "2026-08-14",
+    "updated_at": "2026-08-15",
     "merged_at": "",
     "closed_at": "",
     "author": "wangqi_ai",
