@@ -1,19 +1,38 @@
 [
   {
+    "iid": 1753,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: keep frontend shape ABI symbols in sync between tiling signature and static shape judgment",
+    "created_at": "2026-08-15",
+    "updated_at": "2026-08-16",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhang_shengjie",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1753",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1752,
     "state": "opened",
     "draft": false,
     "title": "feat: support IndexExpr and Arange composition in Autofuse",
     "created_at": "2026-08-15",
-    "updated_at": "2026-08-15",
+    "updated_at": "2026-08-16",
     "merged_at": "",
     "closed_at": "",
     "author": "Jett_Woo",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1752",
     "labels": [
-      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-failed",
+      "stat/needs-squash"
     ],
     "working_days_open": 0,
     "e2e_issues": []
@@ -2431,7 +2450,7 @@
     "draft": false,
     "title": "【PR】: 简要描述 broadcast backward opt",
     "created_at": "2026-08-03",
-    "updated_at": "2026-08-15",
+    "updated_at": "2026-08-16",
     "merged_at": "",
     "closed_at": "",
     "author": "czways",
