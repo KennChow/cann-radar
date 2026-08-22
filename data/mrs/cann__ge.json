@@ -1,11 +1,147 @@
 [
   {
+    "iid": 4513,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: fix GraphNodeSettedFormatPass input check",
+    "created_at": "2026-08-22",
+    "updated_at": "2026-08-22",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lushiming0",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4513",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4512,
+    "state": "opened",
+    "draft": false,
+    "title": "refactor(om2): 重构model_meta序列化格式，删除冗余字段",
+    "created_at": "2026-08-22",
+    "updated_at": "2026-08-22",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wuzheng-hw",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4512",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4511,
+    "state": "opened",
+    "draft": false,
+    "title": "【质量加固】补充成员函数与不可变数据的 const 修饰",
+    "created_at": "2026-08-22",
+    "updated_at": "2026-08-22",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wxh456",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4511",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "517"
+    ]
+  },
+  {
+    "iid": 4510,
+    "state": "opened",
+    "draft": false,
+    "title": "【Fix】：ATC生成OM2模型文件失败问题修复",
+    "created_at": "2026-08-22",
+    "updated_at": "2026-08-22",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wang-bin-789",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4510",
+    "labels": [
+      "cann-cla/yes",
+      "lgtm",
+      "ci-pipeline-passed",
+      "enhancement"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4509,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: add AscendQuant lowering func",
+    "created_at": "2026-08-22",
+    "updated_at": "2026-08-22",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "j18351891940",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4509",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4508,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 逻辑流分配后dump图",
+    "created_at": "2026-08-22",
+    "updated_at": "2026-08-22",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Mexyy",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4508",
+    "labels": [
+      "stat/needs-squash",
+      "lgtm",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4507,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】:fix(cleancode)",
+    "created_at": "2026-08-22",
+    "updated_at": "2026-08-22",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "niyi01",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4507",
+    "labels": [
+      "cann-cla/yes",
+      "enhancement",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 4506,
     "state": "opened",
     "draft": false,
     "title": "【PR】: 简要描述 OM2 兼容性修改",
     "created_at": "2026-08-21",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "fary86",
@@ -98,7 +234,7 @@
     "draft": false,
     "title": "【fix】: add mutex in AddHandle",
     "created_at": "2026-08-21",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "tang-haojie",
@@ -137,12 +273,13 @@
     "draft": true,
     "title": "【WIP】: 简要描述",
     "created_at": "2026-08-21",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "zhanj",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4499",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
       "enhancement"
     ],
@@ -173,7 +310,7 @@
     "draft": false,
     "title": "【质量加固】修复若干符合编码规范规则和提交代码规范的问题",
     "created_at": "2026-08-21",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "Fiee16267377383",
@@ -184,7 +321,9 @@
       "enhancement"
     ],
     "working_days_open": 1,
-    "e2e_issues": []
+    "e2e_issues": [
+      "517"
+    ]
   },
   {
     "iid": 4496,
@@ -250,13 +389,13 @@
   },
   {
     "iid": 4493,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【质量加固】补充成员函数与不可变数据的 const 修饰",
     "created_at": "2026-08-21",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-22",
     "author": "QWH789456",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4493",
     "labels": [
@@ -474,14 +613,14 @@
     "draft": false,
     "title": "FE Log Rectification",
     "created_at": "2026-08-20",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "liyanrong_9",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4482",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-failed",
+      "ci-pipeline-passed",
       "enhancement"
     ],
     "working_days_open": 2,
@@ -567,14 +706,15 @@
     "iid": 4477,
     "state": "opened",
     "draft": false,
-    "title": "feat: add Python compilable custom-op example",
+    "title": "feat: complete Python compilable custom-op online and offline example",
     "created_at": "2026-08-20",
-    "updated_at": "2026-08-20",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "shangdf",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4477",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes"
     ],
     "working_days_open": 2,
@@ -954,15 +1094,15 @@
     "draft": false,
     "title": "fix: fix op splitV no_task attribute",
     "created_at": "2026-08-19",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "lushiming0",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4458",
     "labels": [
       "enhancement",
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -994,14 +1134,15 @@
     "draft": false,
     "title": "fix(aclnn): RT2执行前设置确定性配置",
     "created_at": "2026-08-19",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "ClarkXie",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4456",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "lgtm",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -1012,14 +1153,14 @@
     "draft": false,
     "title": "feat: 接入ONNX Plugin Python bridge到真实ParseParamsFn",
     "created_at": "2026-08-19",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "gentle-knight",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4455",
     "labels": [
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -1046,19 +1187,19 @@
   },
   {
     "iid": 4453,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】: add AscendQuant lowering func",
     "created_at": "2026-08-19",
-    "updated_at": "2026-08-19",
+    "updated_at": "2026-08-22",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-22",
     "author": "j18351891940",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4453",
     "labels": [
+      "cann-cla/yes",
       "enhancement",
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "ci-pipeline-failed"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -2129,14 +2270,14 @@
     "draft": false,
     "title": "feat: 新增RealDiv算子symbolic kernel注册",
     "created_at": "2026-08-15",
-    "updated_at": "2026-08-20",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "xiebangrui2025",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4400",
     "labels": [
-      "ci-pipeline-failed",
       "cann-cla/yes",
+      "ci-pipeline-failed",
       "stat/needs-squash"
     ],
     "working_days_open": 5,
@@ -2363,7 +2504,7 @@
     "draft": false,
     "title": "feat: Python化可编译自定义算子",
     "created_at": "2026-08-14",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "shangdf",
@@ -2371,7 +2512,7 @@
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 6,
     "e2e_issues": []
@@ -3118,16 +3259,16 @@
     "draft": false,
     "title": "【PR】: llibom2_model_data.so 提取",
     "created_at": "2026-08-12",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "lidaoming1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4350",
     "labels": [
       "enhancement",
+      "ci-pipeline-failed",
       "stat/needs-squash",
-      "cann-cla/yes",
-      "ci-pipeline-failed"
+      "cann-cla/yes"
     ],
     "working_days_open": 8,
     "e2e_issues": []
@@ -3580,13 +3721,13 @@
   },
   {
     "iid": 4326,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "Refactor: RT2 Kernel Launch Interface Replacement",
     "created_at": "2026-08-10",
-    "updated_at": "2026-08-19",
+    "updated_at": "2026-08-22",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-22",
     "author": "liyanrong_9",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4326",
     "labels": [
@@ -3798,13 +3939,13 @@
   },
   {
     "iid": 4315,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "Refactor: RT2 Kernel Launch Interface Replacement",
     "created_at": "2026-08-10",
-    "updated_at": "2026-08-10",
+    "updated_at": "2026-08-22",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-22",
     "author": "liyanrong_9",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4315",
     "labels": [
@@ -3881,13 +4022,13 @@
   },
   {
     "iid": 4311,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】:修复om2 profiling",
     "created_at": "2026-08-08",
-    "updated_at": "2026-08-13",
+    "updated_at": "2026-08-22",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-22",
     "author": "lidaoming1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4311",
     "labels": [
@@ -4927,15 +5068,15 @@
     "draft": false,
     "title": "fix: 修复离线动态Shape多OM控核配置冲突",
     "created_at": "2026-08-04",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "KenChow",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4259",
     "labels": [
-      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed",
+      "stat/needs-squash"
     ],
     "working_days_open": 14,
     "e2e_issues": []
@@ -5630,13 +5771,13 @@
   },
   {
     "iid": 4224,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-07-31",
-    "updated_at": "2026-08-19",
+    "updated_at": "2026-08-22",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-22",
     "author": "ClarkXie",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4224",
     "labels": [

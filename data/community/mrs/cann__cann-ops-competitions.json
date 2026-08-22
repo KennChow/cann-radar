@@ -1,5 +1,44 @@
 [
   {
+    "iid": 1125,
+    "state": "opened",
+    "draft": false,
+    "title": "【社区任务】aclsparseSpMM算子设计文档",
+    "created_at": "2026-08-22",
+    "updated_at": "2026-08-22",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "2501_92946710",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1125",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1124,
+    "state": "opened",
+    "draft": false,
+    "title": "【社区任务】aclsparseSpMM(950) 算子设计文档",
+    "created_at": "2026-08-22",
+    "updated_at": "2026-08-22",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Twilight-Fanyi",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1124",
+    "labels": [
+      "ai-co-authored",
+      "ai-docs-only",
+      "cann-cla/yes",
+      "ai-compliance-successful",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1123,
     "state": "opened",
     "draft": false,
@@ -139,8 +178,7 @@
     "author": "zhangfeng1133",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1116",
     "labels": [
-      "cann-cla/yes",
-      "stat/needs-squash"
+      "cann-cla/yes"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -298,7 +336,7 @@
     "draft": false,
     "title": "【社区任务】aclsparseSpGemm A2/A3 算子设计文档",
     "created_at": "2026-08-19",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "dahfgakf",
@@ -335,14 +373,14 @@
     "draft": false,
     "title": "【CANN社区任务】aclsparseSpMM算子设计文档",
     "created_at": "2026-08-19",
-    "updated_at": "2026-08-20",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_4dpQHq9b",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1105",
     "labels": [
-      "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -486,15 +524,17 @@
     "draft": false,
     "title": "[tasklist] 08-matmul_series 复数矩阵乘系列算子设计文档（chemm/cher2k/cherk/csymm/csyrk）",
     "created_at": "2026-08-19",
-    "updated_at": "2026-08-20",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "baicai-1145",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1097",
     "labels": [
+      "ai-docs-only",
+      "cann-cla/yes",
+      "ai-compliance-successful",
       "ci-pipeline-passed",
-      "ai-co-authored",
-      "cann-cla/yes"
+      "ai-co-authored"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -607,7 +647,7 @@
     "draft": false,
     "title": "社区任务：矩阵乘系列算子设计文档（chemm/cher2k/cherk/csymm/csyrk）",
     "created_at": "2026-08-18",
-    "updated_at": "2026-08-20",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "luzhangchi",
@@ -615,8 +655,9 @@
     "labels": [
       "ai-co-authored",
       "ai-docs-only",
-      "cann-cla/yes",
-      "ai-compliance-successful"
+      "ai-compliance-successful",
+      "stat/needs-squash",
+      "cann-cla/yes"
     ],
     "working_days_open": 4,
     "e2e_issues": []
@@ -871,15 +912,15 @@
     "draft": false,
     "title": "【CANN社区任务】矩阵乘系列算子设计文档",
     "created_at": "2026-08-17",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "Euler_teng",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1078",
     "labels": [
+      "ai-co-authored",
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "ai-co-authored",
       "ai-docs-only",
       "ai-compliance-successful"
     ],

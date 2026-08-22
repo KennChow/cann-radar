@@ -1,5 +1,26 @@
 [
   {
+    "iid": 616,
+    "state": "merged",
+    "draft": false,
+    "title": "【feat】支持 Qwen 3.6 CP",
+    "created_at": "2026-08-22",
+    "updated_at": "2026-08-22",
+    "merged_at": "2026-08-22",
+    "closed_at": "",
+    "author": "botcanlearn",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/616",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 615,
     "state": "opened",
     "draft": false,
@@ -23,7 +44,7 @@
     "draft": false,
     "title": "[perf] isolate EP communication process group",
     "created_at": "2026-08-21",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "hitwdy",
@@ -58,7 +79,7 @@
     "draft": false,
     "title": "debug",
     "created_at": "2026-08-21",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "MissingPompeii",
@@ -125,18 +146,21 @@
   },
   {
     "iid": 608,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[feat] use NPU MoE rerouting in EP token dispatcher override",
     "created_at": "2026-08-20",
-    "updated_at": "2026-08-21",
-    "merged_at": "",
+    "updated_at": "2026-08-22",
+    "merged_at": "2026-08-22",
     "closed_at": "",
     "author": "sun_xuexin",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/608",
     "labels": [
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "approved",
+      "lgtm",
+      "ci-pipeline-running",
+      "stat/needs-squash",
+      "cann-cla/yes"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -147,14 +171,14 @@
     "draft": false,
     "title": "[feat] default enable HF32",
     "created_at": "2026-08-20",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "hitwdy",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/607",
     "labels": [
-      "cann-cla/yes",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "cann-cla/yes"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -165,15 +189,15 @@
     "draft": false,
     "title": "[feat] torchtitan_npu override分支使能torchAO能力",
     "created_at": "2026-08-20",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "wanghui0",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/606",
     "labels": [
+      "stat/needs-squash",
       "ci-pipeline-failed",
-      "cann-cla/yes",
-      "stat/needs-squash"
+      "cann-cla/yes"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -272,7 +296,7 @@
     "draft": false,
     "title": "feat: add static SDC support",
     "created_at": "2026-08-18",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "jiangna1111",
@@ -379,18 +403,21 @@
   },
   {
     "iid": 594,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[feat] GMM replace BMM in Muon optimizer",
     "created_at": "2026-08-18",
-    "updated_at": "2026-08-21",
-    "merged_at": "",
+    "updated_at": "2026-08-22",
+    "merged_at": "2026-08-22",
     "closed_at": "",
     "author": "YueGuoDora",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/594",
     "labels": [
-      "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm",
+      "stat/needs-squash"
     ],
     "working_days_open": 4,
     "e2e_issues": []
@@ -580,7 +607,7 @@
     "draft": false,
     "title": "[feat] Add ckpt sha256 integrity verification via override.",
     "created_at": "2026-08-16",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "zhangguoguang",
@@ -588,7 +615,7 @@
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-failed"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -836,15 +863,15 @@
     "draft": false,
     "title": "ci test",
     "created_at": "2026-08-14",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-22",
     "merged_at": "",
     "closed_at": "",
     "author": "botcanlearn",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/571",
     "labels": [
       "ci-pipeline-failed",
-      "cann-cla/no",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "cann-cla/yes"
     ],
     "working_days_open": 6,
     "e2e_issues": []
@@ -1632,19 +1659,21 @@
   },
   {
     "iid": 530,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[feat]: Backport pre-W2 router score absorption",
     "created_at": "2026-08-08",
-    "updated_at": "2026-08-21",
-    "merged_at": "",
+    "updated_at": "2026-08-22",
+    "merged_at": "2026-08-22",
     "closed_at": "",
     "author": "mystri",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/530",
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "approved",
+      "lgtm",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 10,
     "e2e_issues": []
