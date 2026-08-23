@@ -1,5 +1,43 @@
 [
   {
+    "iid": 4515,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 模型级自定义算子原型管理能力",
+    "created_at": "2026-08-23",
+    "updated_at": "2026-08-23",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Chang-an-HW",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4515",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed",
+      "enhancement"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4514,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: 简要描述",
+    "created_at": "2026-08-23",
+    "updated_at": "2026-08-23",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Chang-an-HW",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4514",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 4513,
     "state": "opened",
     "draft": false,
@@ -516,15 +554,16 @@
     "draft": false,
     "title": "feat: 添加声明式地址刷新自定义算子data dump的功能",
     "created_at": "2026-08-21",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-08-23",
     "merged_at": "",
     "closed_at": "",
     "author": "Chang-an-HW",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4487",
     "labels": [
-      "enhancement",
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "enhancement"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -708,7 +747,7 @@
     "draft": false,
     "title": "feat: complete Python compilable custom-op online and offline example",
     "created_at": "2026-08-20",
-    "updated_at": "2026-08-22",
+    "updated_at": "2026-08-23",
     "merged_at": "",
     "closed_at": "",
     "author": "shangdf",
@@ -1153,14 +1192,14 @@
     "draft": false,
     "title": "feat: 接入ONNX Plugin Python bridge到真实ParseParamsFn",
     "created_at": "2026-08-19",
-    "updated_at": "2026-08-22",
+    "updated_at": "2026-08-23",
     "merged_at": "",
     "closed_at": "",
     "author": "gentle-knight",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4455",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -2270,15 +2309,15 @@
     "draft": false,
     "title": "feat: 新增RealDiv算子symbolic kernel注册",
     "created_at": "2026-08-15",
-    "updated_at": "2026-08-22",
+    "updated_at": "2026-08-23",
     "merged_at": "",
     "closed_at": "",
     "author": "xiebangrui2025",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4400",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed",
-      "stat/needs-squash"
+      "ci-pipeline-failed"
     ],
     "working_days_open": 5,
     "e2e_issues": []

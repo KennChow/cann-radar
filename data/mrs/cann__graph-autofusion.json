@@ -1,5 +1,81 @@
 [
   {
+    "iid": 1806,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: reduce tiling function max expression compile cost",
+    "created_at": "2026-08-23",
+    "updated_at": "2026-08-23",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhang_shengjie",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1806",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-running"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1805,
+    "state": "closed",
+    "draft": false,
+    "title": "fix: reduce tiling function max expression compile cost",
+    "created_at": "2026-08-23",
+    "updated_at": "2026-08-23",
+    "merged_at": "",
+    "closed_at": "2026-08-23",
+    "author": "zhang_shengjie",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1805",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1804,
+    "state": "opened",
+    "draft": false,
+    "title": "【质量加固】style: add const to immutable tiling locals(#238)",
+    "created_at": "2026-08-23",
+    "updated_at": "2026-08-23",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wfm15093726359",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1804",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "238"
+    ]
+  },
+  {
+    "iid": 1803,
+    "state": "closed",
+    "draft": false,
+    "title": "【质量加固】style: add const to immutable tiling locals(#238)",
+    "created_at": "2026-08-23",
+    "updated_at": "2026-08-23",
+    "merged_at": "",
+    "closed_at": "2026-08-23",
+    "author": "wfm15093726359",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1803",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "238"
+    ]
+  },
+  {
     "iid": 1802,
     "state": "opened",
     "draft": false,
@@ -200,7 +276,7 @@
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1792",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-failed",
+      "ci-pipeline-passed",
       "stat/needs-squash"
     ],
     "working_days_open": 1,
@@ -295,9 +371,9 @@
     "author": "zhang_shengjie",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1788",
     "labels": [
-      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "stat/needs-squash"
     ],
     "working_days_open": 2,
     "e2e_issues": []
