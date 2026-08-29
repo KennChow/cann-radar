@@ -1,5 +1,46 @@
 [
   {
+    "iid": 455,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: sync develop to master 0829",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "depeng1994",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/455",
+    "labels": [
+      "enhancement",
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 454,
+    "state": "merged",
+    "draft": false,
+    "title": "Log Rectification",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
+    "closed_at": "",
+    "author": "liyanrong_9",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/454",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 453,
     "state": "merged",
     "draft": false,
@@ -22,38 +63,40 @@
   },
   {
     "iid": 452,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
-    "title": "【PR】: 简要描述",
+    "title": "Log Rectification",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-27",
+    "updated_at": "2026-08-29",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-29",
     "author": "liyanrong_9",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/452",
     "labels": [
-      "ci-pipeline-passed",
       "enhancement",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "stat/needs-squash"
     ],
     "working_days_open": 2,
     "e2e_issues": []
   },
   {
     "iid": 451,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix: improve log usability",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "m0_50621083",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/451",
     "labels": [
       "enhancement",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -150,15 +193,14 @@
     "draft": false,
     "title": "feat: support GenSimplifiedKey registration through OpDef",
     "created_at": "2026-08-26",
-    "updated_at": "2026-08-26",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "m0_56712298",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/446",
     "labels": [
       "cann-cla/yes",
-      "stat/needs-squash",
-      "ci-pipeline-passed"
+      "stat/needs-squash"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -211,12 +253,13 @@
     "draft": false,
     "title": "[Fix] 修复 Shape 和 Stride 扩展 rank 的 off-by-one",
     "created_at": "2026-08-24",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/443",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
@@ -482,15 +525,16 @@
     "draft": false,
     "title": "【feat】: Support PCIe Through",
     "created_at": "2026-08-14",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "kantao1",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/430",
     "labels": [
       "enhancement",
+      "cann-cla/yes",
       "ci-pipeline-passed",
-      "cann-cla/yes"
+      "lgtm"
     ],
     "working_days_open": 11,
     "e2e_issues": []

@@ -1,15 +1,32 @@
 [
   {
-    "iid": 653,
+    "iid": 660,
+    "state": "opened",
+    "draft": true,
+    "title": "[WIP] 代码结构规范刷新和重构",
+    "created_at": "2026-08-30",
+    "updated_at": "2026-08-30",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lrwei0709",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/660",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 659,
     "state": "opened",
     "draft": false,
-    "title": "[feat] add A5 DeepSeek V4 flash and pro scripts",
+    "title": "fix: skip HF gate.bias mapping for DSV4 hash layers",
     "created_at": "2026-08-29",
     "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
-    "author": "zhaowei1936",
-    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/653",
+    "author": "xuyujun",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/659",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed"
@@ -18,19 +35,138 @@
     "e2e_issues": []
   },
   {
-    "iid": 652,
+    "iid": 658,
     "state": "opened",
+    "draft": false,
+    "title": "[fix] fix HF safetensors save crash for wrapper tensors",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_bImVmzsb",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/658",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 657,
+    "state": "opened",
+    "draft": false,
+    "title": "[fix] fix HF safetensors save crash for wrapper tensors",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_bImVmzsb",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/657",
+    "labels": [
+      "stat/needs-squash",
+      "ci-pipeline-failed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 656,
+    "state": "merged",
+    "draft": false,
+    "title": "fix: correct log levels in training-log-visualization script",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
+    "closed_at": "",
+    "author": "xuyujun",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/656",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 655,
+    "state": "opened",
+    "draft": false,
+    "title": "PR600 static SDC transfer validation",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "jiangna1111",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/655",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 654,
+    "state": "merged",
+    "draft": false,
+    "title": "docs: add EP process group guide",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
+    "closed_at": "",
+    "author": "hitwdy",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/654",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 653,
+    "state": "merged",
+    "draft": false,
+    "title": "[feat] add A5 DeepSeek V4 flash and pro scripts",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
+    "closed_at": "",
+    "author": "zhaowei1936",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/653",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 652,
+    "state": "merged",
     "draft": false,
     "title": "Import torchtitan_npu.patches earlier than everything else",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "lrwei0709",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/652",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -38,17 +174,18 @@
   {
     "iid": 651,
     "state": "opened",
-    "draft": false,
-    "title": "fix: 修复低精度训练不能保存权重的问题",
+    "draft": true,
+    "title": "[WIP]fix: 修复低精度训练不能保存权重的问题",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "wanghui0",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/651",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -94,13 +231,15 @@
     "draft": false,
     "title": "docs: add fused operator integration guide",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "hitwdy",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/648",
     "labels": [
-      "cann-cla/yes"
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -144,7 +283,7 @@
     "draft": false,
     "title": "[refactor] Move NPU training config into TrainerEx",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "hwcaifubi",
@@ -162,7 +301,7 @@
     "draft": false,
     "title": "[feat] 支持 TorchFT NPU 单仓集成",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "zhangyifan999",
@@ -170,7 +309,7 @@
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -181,16 +320,19 @@
     "draft": false,
     "title": "refactor(deepseek):dspark",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-27",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "zhenyu10",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/643",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes"
     ],
     "working_days_open": 2,
-    "e2e_issues": []
+    "e2e_issues": [
+      "100"
+    ]
   },
   {
     "iid": 642,
@@ -367,13 +509,15 @@
     "draft": false,
     "title": "[feat] avoid saving permuted_tokens in unpermute backward when probs is frozen",
     "created_at": "2026-08-26",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "xuyujun",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/633",
     "labels": [
-      "cann-cla/yes"
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -399,10 +543,10 @@
   {
     "iid": 631,
     "state": "opened",
-    "draft": true,
-    "title": "[WIP] Enable DeepSeek V4 Muon optimizer support",
+    "draft": false,
+    "title": "Enable DeepSeek V4 Muon optimizer support",
     "created_at": "2026-08-25",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "zzyyjj012",
@@ -494,19 +638,21 @@
   },
   {
     "iid": 626,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "test: draft UT and ST cases for latest override PRs",
     "created_at": "2026-08-24",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "mystri",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/626",
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -553,7 +699,7 @@
     "draft": false,
     "title": "[feat] add swiglu_group fused kernel",
     "created_at": "2026-08-24",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "hitwdy",
@@ -717,8 +863,8 @@
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/615",
     "labels": [
       "stat/needs-squash",
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 6,
     "e2e_issues": []
@@ -774,8 +920,8 @@
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/612",
     "labels": [
       "stat/needs-squash",
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 6,
     "e2e_issues": []
@@ -1002,8 +1148,7 @@
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/600",
     "labels": [
       "stat/needs-squash",
-      "cann-cla/yes",
-      "ci-pipeline-failed"
+      "cann-cla/yes"
     ],
     "working_days_open": 9,
     "e2e_issues": []
@@ -2294,18 +2439,21 @@
   },
   {
     "iid": 534,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "feat:DSV3.2\\V4 MTP功能支持",
     "created_at": "2026-08-10",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "zhenyu10",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/534",
     "labels": [
       "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 15,
     "e2e_issues": [

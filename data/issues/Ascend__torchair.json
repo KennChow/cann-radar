@@ -1,5 +1,103 @@
 [
   {
+    "iid": "727",
+    "state": "opened",
+    "created_at": "2026-08-29",
+    "closed_at": "",
+    "author": "sun_xuexin",
+    "author_id": "67e6105c2099e56f65a66a27",
+    "title": "[Feature]: le,minimum,neg 支持inductor+af融合及dtype smoke测试",
+    "labels": [
+      "feature"
+    ],
+    "issue_type": "Bug-Report",
+    "issue_state": "TODO",
+    "assignees": [
+      "Sunyp01"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/727",
+    "working_days_open": 0
+  },
+  {
+    "iid": "726",
+    "state": "opened",
+    "created_at": "2026-08-29",
+    "closed_at": "",
+    "author": "ling-DT",
+    "author_id": "6822c1d1096b0e7b44aa5974",
+    "title": "MatMul fusion should fallback for mixed input dtypes",
+    "labels": [],
+    "issue_type": "Bug-Report",
+    "issue_state": "TODO",
+    "assignees": [
+      "Sunyp01"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/726",
+    "working_days_open": 0
+  },
+  {
+    "iid": "725",
+    "state": "opened",
+    "created_at": "2026-08-29",
+    "closed_at": "",
+    "author": "LyriCheng",
+    "author_id": "67fe31bf88e7c46e3ad86734",
+    "title": "[Feature]:lt/gt/log支持inductor+af融合及dtype smoke测试",
+    "labels": [
+      "feature"
+    ],
+    "issue_type": "Bug-Report",
+    "issue_state": "TODO",
+    "assignees": [
+      "Sunyp01"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/725",
+    "working_days_open": 0
+  },
+  {
+    "iid": "723",
+    "state": "opened",
+    "created_at": "2026-08-29",
+    "closed_at": "",
+    "author": "dingdairong",
+    "author_id": "6822c3522f11da2d75c955a5",
+    "title": "[Feature]:eq/ne/where/masked_fill支持inductor+af融合",
+    "labels": [
+      "feature"
+    ],
+    "issue_type": "Bug-Report",
+    "issue_state": "TODO",
+    "assignees": [
+      "Sunyp01"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/723",
+    "working_days_open": 0
+  },
+  {
+    "iid": "722",
+    "state": "opened",
+    "created_at": "2026-08-29",
+    "closed_at": "",
+    "author": "zhangquanxin",
+    "author_id": "66d4586d3bc7a021dbf90e34",
+    "title": "[Bug]: 图模式控核数的时候当vector核数传入0的时候， 传到算子核数是0还是最大值？",
+    "labels": [
+      "bug"
+    ],
+    "issue_type": "Bug-Report",
+    "issue_state": "TODO",
+    "assignees": [
+      "Sunyp01"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/722",
+    "working_days_open": 0
+  },
+  {
     "iid": "721",
     "state": "opened",
     "created_at": "2026-08-28",

@@ -1,11 +1,283 @@
 [
   {
-    "iid": 4624,
+    "iid": 4638,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: sync develop to master 0829",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "depeng1994",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4638",
+    "labels": [
+      "stat/needs-squash",
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4637,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: 补齐 CompileInfo 查询路径的互斥保护",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "du-hua1024",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4637",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4636,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: OM2 pbody接管主工作内存",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "ClarkXie",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4636",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4635,
     "state": "opened",
     "draft": false,
     "title": "【PR】: 简要描述",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "chenqian1365",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4635",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4634,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: backport 符号化推导与AutoFuse整图JIT特性到9.1.0-beta.3(!3457 !3526 !4443 !4479 !4566)",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "xiebangrui2025",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4634",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4633,
+    "state": "merged",
+    "draft": false,
+    "title": "fe代码静态检查问题修复",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
+    "closed_at": "",
+    "author": "liyanrong_9",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4633",
+    "labels": [
+      "cann-cla/yes",
+      "enhancement",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4632,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: sync master to develop 02260829",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "ling-DT",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4632",
+    "labels": [
+      "stat/needs-squash",
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4631,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: OM2兼容性修改struct重命名和类型调整",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "fary86",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4631",
+    "labels": [
+      "enhancement",
+      "ci-pipeline-failed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4630,
+    "state": "merged",
+    "draft": false,
+    "title": "fix: 完善 HostCPU 自定义算子的引擎选择",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
+    "closed_at": "",
+    "author": "du-hua1024",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4630",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "api-check-pass",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4629,
+    "state": "opened",
+    "draft": false,
+    "title": "【fix】: add _soft_sync_schedule_mode superkernel attr",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Helmar",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4629",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4628,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: om2 executor支持资源申请",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lidaoming1",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4628",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4627,
+    "state": "opened",
+    "draft": true,
+    "title": "【wip】: testut",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "SeasonChu",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4627",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4626,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: 简要描述 no task",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "jiang-mingming01",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4626",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4625,
+    "state": "merged",
+    "draft": false,
+    "title": "fix: correct NetOutput type comparison in DAG adapter",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
+    "closed_at": "",
+    "author": "KenChow",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4625",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4624,
+    "state": "opened",
+    "draft": false,
+    "title": "FE Log Rectification",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "liyanrong_9",
@@ -20,13 +292,13 @@
   },
   {
     "iid": 4623,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】: sync develop to master 0828",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-29",
     "author": "yangyongqiang0606",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4623",
     "labels": [
@@ -61,50 +333,53 @@
   },
   {
     "iid": 4621,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "feat(om2): add compatibility field to manifest.json with version validation",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "wuzheng-hw",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4621",
     "labels": [
-      "stat/needs-squash",
+      "cann-cla/yes",
       "ci-pipeline-passed",
-      "cann-cla/yes"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": []
   },
   {
     "iid": 4620,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【fix】: 防止重复AdxDataDumpServerInit初始化",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "lidaoming1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4620",
     "labels": [
       "enhancement",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": []
   },
   {
     "iid": 4619,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【fix】: delete some unuse file",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "tang-haojie",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4619",
@@ -112,7 +387,8 @@
       "enhancement",
       "cann-cla/yes",
       "lgtm",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": [
@@ -121,12 +397,12 @@
   },
   {
     "iid": 4618,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【质量加固】修改若干符合代码规范的问题",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "2402_87730846",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4618",
@@ -134,7 +410,9 @@
       "cann-cla/yes",
       "enhancement",
       "stat/needs-squash",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": [
@@ -181,12 +459,12 @@
   },
   {
     "iid": 4615,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【质量加固】为只读成员函数补充 const 修饰",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "WXQ123123",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4615",
@@ -194,7 +472,8 @@
       "cann-cla/yes",
       "stat/needs-squash",
       "ci-pipeline-passed",
-      "lgtm"
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": [
@@ -249,7 +528,7 @@
     "draft": false,
     "title": "【feat】: HostCPU 融合 Codegen 迁移至标准 CustomOp SO",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "SeasonChu",
@@ -258,19 +537,21 @@
       "enhancement",
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": []
   },
   {
     "iid": 4611,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【质量加固】补充 const 修饰、参数 const 修饰",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "cnsd_turtle",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4611",
@@ -279,7 +560,8 @@
       "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "lgtm"
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": [
@@ -288,12 +570,12 @@
   },
   {
     "iid": 4610,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix: 修复arm环境下llt编译问题",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "yelongjian",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4610",
@@ -303,7 +585,8 @@
       "cann-cla/yes",
       "api-check-pass",
       "ci-pipeline-passed",
-      "lgtm"
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -314,33 +597,33 @@
     "draft": false,
     "title": "perf: 缓存batch_all_memory_size引用消除重复查找",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "tangqunzhang",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4609",
     "labels": [
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "cann-cla/yes"
     ],
     "working_days_open": 1,
     "e2e_issues": []
   },
   {
     "iid": 4608,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【质量加固】补充成员函数 const 修饰以符合编码规范(#517)",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "qoosong",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4608",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "lgtm"
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": [
@@ -391,12 +674,12 @@
   },
   {
     "iid": 4605,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix: fix GraphNodeSettedFormatPass get valid node name",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "lushiming0",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4605",
@@ -404,7 +687,8 @@
       "enhancement",
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "lgtm"
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -472,19 +756,21 @@
   },
   {
     "iid": 4601,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【PR】: 修复读写加锁不全的问题",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "jiang-mingming01",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4601",
     "labels": [
       "enhancement",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -552,12 +838,12 @@
   },
   {
     "iid": 4597,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【质量加固】为只读成员函数补充 const 修饰",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "wxh456",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4597",
@@ -565,7 +851,8 @@
       "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "lgtm"
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 2,
     "e2e_issues": [
@@ -574,18 +861,20 @@
   },
   {
     "iid": 4596,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "feat: 统一 OM2 任务启动回调并支持多类任务",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "ClarkXie",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4596",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -613,12 +902,12 @@
   },
   {
     "iid": 4594,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【质量加固】修复若干符合修复规则一和规则二的若干问题的代码问题",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "wys222111",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4594",
@@ -627,7 +916,8 @@
       "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "lgtm"
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 2,
     "e2e_issues": [
@@ -677,12 +967,12 @@
   },
   {
     "iid": 4591,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix: 在ConstructInputInfo中处理特殊输入大小，优化输入尺寸获取逻辑",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "Chang-an-HW",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4591",
@@ -691,7 +981,8 @@
       "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "lgtm"
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 2,
     "e2e_issues": [
@@ -759,12 +1050,12 @@
   },
   {
     "iid": 4587,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【fix】:修复GraphUnfolder展开同源RefData产生同名节点问题",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "chengyutao3",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4587",
@@ -773,7 +1064,8 @@
       "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "lgtm"
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -805,7 +1097,7 @@
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "wang-bin-789",
@@ -813,7 +1105,8 @@
     "labels": [
       "enhancement",
       "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -985,30 +1278,34 @@
   },
   {
     "iid": 4576,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【质量加固】修复 lambda 默认捕获与成员函数缺少 const 修饰问题",
     "created_at": "2026-08-26",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "zyzoe",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4576",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 3,
-    "e2e_issues": []
+    "e2e_issues": [
+      "517"
+    ]
   },
   {
     "iid": 4575,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【feat】:add core limit info to aclskScopeVerify",
     "created_at": "2026-08-26",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "tang-haojie",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4575",
@@ -1016,7 +1313,8 @@
       "enhancement",
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "lgtm"
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -1370,7 +1668,7 @@
     "draft": false,
     "title": "feat(rt2): V2执行器增加用户输入buffer大小校验",
     "created_at": "2026-08-25",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "wuzheng-hw",
@@ -1378,8 +1676,7 @@
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed",
-      "api-check-pass"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 4,
     "e2e_issues": [
@@ -1392,7 +1689,7 @@
     "draft": false,
     "title": "fix: improve log usability",
     "created_at": "2026-08-25",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "m0_50621083",
@@ -1862,16 +2159,16 @@
     "iid": 4533,
     "state": "opened",
     "draft": false,
-    "title": "feat: 集成 HostCPU 接口并迁移 AICPU 常量折叠（master 验证）",
+    "title": "feat: 加载 opbase AICPU ordinary 常量折叠 Router",
     "created_at": "2026-08-24",
-    "updated_at": "2026-08-25",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "pan-tong",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4533",
     "labels": [
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -2573,12 +2870,12 @@
   },
   {
     "iid": 4497,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【质量加固】修复若干符合编码规范规则和提交代码规范的问题",
     "created_at": "2026-08-21",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "Fiee16267377383",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4497",
@@ -2586,7 +2883,8 @@
       "cann-cla/yes",
       "enhancement",
       "lgtm",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved"
     ],
     "working_days_open": 6,
     "e2e_issues": [
@@ -2595,19 +2893,20 @@
   },
   {
     "iid": 4496,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【质量加固】补充成员函数与不可变数据的 const 修饰",
     "created_at": "2026-08-21",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "QWH789456",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4496",
     "labels": [
       "lgtm",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved"
     ],
     "working_days_open": 6,
     "e2e_issues": [
@@ -2937,13 +3236,14 @@
     "draft": false,
     "title": "feat: 扩展符号化 Shape 推导并修复 StridedSlice",
     "created_at": "2026-08-20",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "xiebangrui2025",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4479",
     "labels": [
       "ci-pipeline-failed",
+      "stat/needs-squash",
       "cann-cla/yes"
     ],
     "working_days_open": 7,
@@ -3365,7 +3665,7 @@
     "draft": false,
     "title": "fix: fix op splitV no_task attribute",
     "created_at": "2026-08-19",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "lushiming0",
@@ -3608,19 +3908,21 @@
   },
   {
     "iid": 4446,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【feature】: superkernel适配MC2算子AICPU模式record/notify task处理",
     "created_at": "2026-08-18",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "jsong27",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4446",
     "labels": [
       "enhancement",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 9,
     "e2e_issues": []
@@ -3750,13 +4052,13 @@
   },
   {
     "iid": 4439,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "feat: 集成 HostCPU 接口并迁移 AICPU 常量折叠",
     "created_at": "2026-08-18",
-    "updated_at": "2026-08-25",
+    "updated_at": "2026-08-29",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-29",
     "author": "pan-tong",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4439",
     "labels": [
@@ -6535,7 +6837,7 @@
     "draft": false,
     "title": "fix: skip empty anchors in reshape repeat search",
     "created_at": "2026-08-07",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "ling-DT",
@@ -8079,7 +8381,7 @@
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-07-31",
-    "updated_at": "2026-08-26",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "ye-sheng16",
@@ -49003,14 +49305,13 @@
     "draft": true,
     "title": "[WIP] 穿刺使用",
     "created_at": "2026-04-22",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
-    "closed_at": "2026-08-28",
+    "closed_at": "2026-08-29",
     "author": "kantao1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/2182",
     "labels": [
       "enhancement",
-      "stat/needs-squash",
       "ci-pipeline-failed",
       "cann-cla/yes"
     ],

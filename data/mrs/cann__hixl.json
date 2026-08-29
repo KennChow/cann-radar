@@ -1,19 +1,151 @@
 [
   {
-    "iid": 960,
+    "iid": 967,
     "state": "opened",
+    "draft": false,
+    "title": "feat: add device RoCE latency and throughput e2e perf test",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhaozhihui",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/967",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 966,
+    "state": "opened",
+    "draft": false,
+    "title": "[refactor]: add missing unistd.h includes in msg_handler_plugin",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lining23666",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/966",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 965,
+    "state": "opened",
+    "draft": false,
+    "title": "[feat]: add experimental capability support with build flag and directory scaffolding",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhaozhihui",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/965",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "616"
+    ]
+  },
+  {
+    "iid": 964,
+    "state": "opened",
+    "draft": false,
+    "title": "[docs]: add host affinity guidance to performance benchmark doc",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lining23666",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/964",
+    "labels": [
+      "stat/needs-squash",
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 963,
+    "state": "closed",
+    "draft": false,
+    "title": "feat: optimize CS client kernel launch to aclrtLaunchKernelV2",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "2026-08-29",
+    "author": "zhaozhihui",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/963",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 962,
+    "state": "opened",
+    "draft": false,
+    "title": "remove the warning print during the makeself building",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_UQE6G7Ro",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/962",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 961,
+    "state": "opened",
+    "draft": false,
+    "title": "[docs]: add header include and zh-en doc sync check points to hixl-review skill",
+    "created_at": "2026-08-29",
+    "updated_at": "2026-08-29",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lining23666",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/961",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 960,
+    "state": "merged",
     "draft": false,
     "title": "[docs][style]: 【质量加固】根据代码检查规则修复头文件包含及文档错误",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "horizonkk",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/960",
     "labels": [
       "stat/needs-squash",
+      "cann-cla/yes",
       "ci-pipeline-passed",
-      "cann-cla/yes"
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -42,7 +174,7 @@
     "draft": false,
     "title": "[bugfix]: fix 229 log quality issues found by full-repo log alarm scan",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "HMJ_711",
@@ -57,36 +189,40 @@
   },
   {
     "iid": 957,
-    "state": "opened",
-    "draft": true,
-    "title": "[wip]feat: upgrade CI gcc from 14 to 15 with matched lib_cache",
+    "state": "merged",
+    "draft": false,
+    "title": "feat: upgrade CI gcc from 14 to 15 with matched lib_cache",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "lining23666",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/957",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": []
   },
   {
     "iid": 956,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[bugfix]: align link_clusters local_ip_info_list check with C++ semantics",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "zhaozhihui",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/956",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -191,13 +327,13 @@
   },
   {
     "iid": 950,
-    "state": "opened",
+    "state": "closed",
     "draft": true,
     "title": "[WIP]: decouple kernel payload from doorbell granularity (HIXL_KERNEL_BATCH_SIZE / HIXL_DB_INTERVAL)",
     "created_at": "2026-08-26",
-    "updated_at": "2026-08-27",
+    "updated_at": "2026-08-29",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-08-29",
     "author": "tangjie66",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/950",
     "labels": [
@@ -213,7 +349,7 @@
     "draft": false,
     "title": "[feat]修改topo文件的选用逻辑，允许用户自行传入topo文件，同时修改fullmesh和clos的获取逻辑",
     "created_at": "2026-08-26",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "lugang11",
@@ -221,7 +357,7 @@
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-failed"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -398,10 +534,10 @@
   {
     "iid": 940,
     "state": "opened",
-    "draft": true,
-    "title": "[WIP]: support multi-channel concurrent transfer for all protocols at engine layer",
+    "draft": false,
+    "title": "[feat]: support multi-channel concurrent transfer for uboe/ub_rtp via GlobalResourceConfig",
     "created_at": "2026-08-24",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "tangjie66",
@@ -409,7 +545,6 @@
     "labels": [
       "api-check-pass",
       "ci-pipeline-failed",
-      "stat/needs-squash",
       "cann-cla/yes"
     ],
     "working_days_open": 5,
@@ -787,21 +922,21 @@
   },
   {
     "iid": 921,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[feat]: support UB protocol configuration and transfer diagnostics",
     "created_at": "2026-08-19",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-29",
+    "merged_at": "2026-08-29",
     "closed_at": "",
     "author": "jiazhaoyang",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/921",
     "labels": [
       "api-check-pass",
       "cann-cla/yes",
-      "ci-pipeline-running",
       "lgtm",
-      "approved"
+      "approved",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 8,
     "e2e_issues": []
@@ -3545,18 +3680,19 @@
   {
     "iid": 788,
     "state": "opened",
-    "draft": true,
-    "title": "[WIP]：LocalCommRes中Endpoint支持指定多个dst_eid",
+    "draft": false,
+    "title": "[feat]：LocalCommRes中Endpoint支持指定多个dst_eid",
     "created_at": "2026-07-21",
-    "updated_at": "2026-08-25",
+    "updated_at": "2026-08-29",
     "merged_at": "",
     "closed_at": "",
     "author": "jiazhaoyang",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/788",
     "labels": [
+      "api-check-pass",
       "cann-cla/yes",
-      "ci-pipeline-passed",
-      "api-check-pass"
+      "stat/needs-squash",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 29,
     "e2e_issues": [
