@@ -1,5 +1,473 @@
 [
   {
+    "iid": "692",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "mengyijia_2026",
+    "author_id": "6815c80a4e445c0df96276e4",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】课程开发指南列出的 PR 字段与仓库实际模板不一致",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "mengyijia_2026"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/692",
+    "working_days_open": 0
+  },
+  {
+    "iid": "691",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "mengyijia_2026",
+    "author_id": "6815c80a4e445c0df96276e4",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】支持环境的并列写法容易误解 CPU 模拟环境的所属关系",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "mengyijia_2026"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/691",
+    "working_days_open": 0
+  },
+  {
+    "iid": "690",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "Glenn_118",
+    "author_id": "6a5097c1a3f3924d44490f6f",
+    "title": "【Documentation|文档反馈】06 自定义 matmul 算子章节 qmm_custom 编译必然失败：CMakeLists 采集 TORCH_NPU_PATH 被 stdout 噪声污染导致 flags.make 语法错误 + qmm_custom.asc 使用 CANN 8.5.0 已不存在的 aclprof Range API",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Glenn_118"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/690",
+    "working_days_open": 0
+  },
+  {
+    "iid": "689",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "Glenn_118",
+    "author_id": "6a5097c1a3f3924d44490f6f",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】05 章会 git clone 固定版本 AMCT 源码，README 未说明",
+    "labels": [],
+    "issue_type": "文档",
+    "issue_state": "进行中",
+    "assignees": [
+      "Glenn_118"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/689",
+    "working_days_open": 0
+  },
+  {
+    "iid": "688",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "Glenn_118",
+    "author_id": "6a5097c1a3f3924d44490f6f",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】04.03 练习 host 侧 %%writefile 内容为空",
+    "labels": [],
+    "issue_type": "文档",
+    "issue_state": "进行中",
+    "assignees": [
+      "Glenn_118"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/688",
+    "working_days_open": 0
+  },
+  {
+    "iid": "687",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "mengyijia_2026",
+    "author_id": "6815c80a4e445c0df96276e4",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】验收标准中的参考写法被渲染为正文二级标题",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "mengyijia_2026"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/687",
+    "working_days_open": 0
+  },
+  {
+    "iid": "686",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "Glenn_118",
+    "author_id": "6a5097c1a3f3924d44490f6f",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】03.03 练习要求 shape [128,256] float32，骨架仍是 {8,2048}/aclFloat16",
+    "labels": [],
+    "issue_type": "文档",
+    "issue_state": "进行中",
+    "assignees": [
+      "Glenn_118"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/686",
+    "working_days_open": 0
+  },
+  {
+    "iid": "685",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "Glenn_118",
+    "author_id": "6a5097c1a3f3924d44490f6f",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】01.03 CMake 依赖 teams/ops-direct-invoke，仓内不存在且无获取说明",
+    "labels": [],
+    "issue_type": "文档",
+    "issue_state": "进行中",
+    "assignees": [
+      "Glenn_118"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/685",
+    "working_days_open": 0
+  },
+  {
+    "iid": "684",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "Glenn_118",
+    "author_id": "6a5097c1a3f3924d44490f6f",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】04.03 cell 26 markdown 残留 %%writefile，且把 5.3.3 误写成 4.3.3",
+    "labels": [],
+    "issue_type": "文档",
+    "issue_state": "进行中",
+    "assignees": [
+      "Glenn_118"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/684",
+    "working_days_open": 0
+  },
+  {
+    "iid": "683",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "mengyijia_2026",
+    "author_id": "6815c80a4e445c0df96276e4",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】课程开发指南与验收标准的章节实践题量要求不一致",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "mengyijia_2026"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/683",
+    "working_days_open": 0
+  },
+  {
+    "iid": "682",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "yzq369861178",
+    "author_id": "6917e7d67550ad7d95046ebc",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】课后练习 Q5 选项 C「大数据需要多次分片传输」的干扰项无正文依据(正文只讲打包,未讲分片)",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yzq369861178"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/682",
+    "working_days_open": 0
+  },
+  {
+    "iid": "681",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "yzq369861178",
+    "author_id": "6917e7d67550ad7d95046ebc",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】配置项 `options[\"BufferPool\"] = \"8:16\"` 与 02.05 章的 `options[OPTION_BUFFER_POOL] = \"0:0\"` 写法不一致,学生易混淆。",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yzq369861178"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/681",
+    "working_days_open": 0
+  },
+  {
+    "iid": "680",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "yzq369861178",
+    "author_id": "6917e7d67550ad7d95046ebc",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】A2 场景的性能：机内实测带宽(GB/s)不支持HCCS H2rD/HCCS D2rH/HCCS H2rH，而跨机实测带宽(GB/s)支持有数值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yzq369861178"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/680",
+    "working_days_open": 0
+  },
+  {
+    "iid": "679",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "yzq369861178",
+    "author_id": "6917e7d67550ad7d95046ebc",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】md 写「Bias 形状为 [1, N]」,规格表与测试代码用 `(640)` 一维。",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yzq369861178"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/679",
+    "working_days_open": 0
+  },
+  {
+    "iid": "678",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "yzq369861178",
+    "author_id": "6917e7d67550ad7d95046ebc",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】练习骨架中ASCENDC_LOGE日志字符串，移除日志内`aclnnAdd failed`，替换为与aclnnAddCustomTemplate自定义算子匹配的报错描述。",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yzq369861178"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/678",
+    "working_days_open": 0
+  },
+  {
+    "iid": "677",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "yzq369861178",
+    "author_id": "6917e7d67550ad7d95046ebc",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】为默认安装场景,实际 cell#10 用 `--install-path=${HOME}/` 装到 `~/vendors`,两者不一致",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yzq369861178"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/677",
+    "working_days_open": 0
+  },
+  {
+    "iid": "676",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "yzq369861178",
+    "author_id": "6917e7d67550ad7d95046ebc",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】咨询pybind是否必须是pybind11",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yzq369861178"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/676",
+    "working_days_open": 0
+  },
+  {
+    "iid": "675",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "yzq369861178",
+    "author_id": "6917e7d67550ad7d95046ebc",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】`cp -r src/custom_op/test Sources/03.02/test` 重复执行会嵌套复制(无 rm -rf 前置);多行 `!` 间 cd 不生效(碰巧路径正确)。",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yzq369861178"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/675",
+    "working_days_open": 0
+  },
+  {
+    "iid": "674",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "yzq369861178",
+    "author_id": "6917e7d67550ad7d95046ebc",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】--npu-arch 为必选项\"与\"asc 后缀时 std 默认为 c++17\"表述自相矛盾(表格内选项表述)。",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yzq369861178"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/674",
+    "working_days_open": 0
+  },
+  {
+    "iid": "673",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "allenli178",
+    "author_id": "667531327be1ad70b521a80c",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】验签命令/注释/标题语义互相冲突；白名单配置行格式损坏（install _path 空格）；引用不存在的「阶段三」",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "allenli178"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/673",
+    "working_days_open": 0
+  },
+  {
+    "iid": "672",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "yzq369861178",
+    "author_id": "6917e7d67550ad7d95046ebc",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】(无答案引用；09_course_practice/ 下无 answer 目录) 作为收官综合实践，不给参考答案可以理解 (测试用例由 run.sh 自动验证), 但与其余所有章节「cat answer」模式不一致，学习者无自查途径；README 也未说明为何无答案。",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yzq369861178"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/672",
+    "working_days_open": 0
+  },
+  {
+    "iid": "671",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "Glenn_118",
+    "author_id": "6a5097c1a3f3924d44490f6f",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】Tiling 示例中 tile_num 计算与文档描述不一致",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Glenn_118"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/671",
+    "working_days_open": 0
+  },
+  {
+    "iid": "670",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "yzq369861178",
+    "author_id": "6917e7d67550ad7d95046ebc",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】文档代码样例实现没有依据，引用链接失效",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "yzq369861178"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/670",
+    "working_days_open": 0
+  },
+  {
+    "iid": "669",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "Glenn_118",
+    "author_id": "6a5097c1a3f3924d44490f6f",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】cubeTiling.SetDim(2) 与 context->SetBlockDim(1) 注释“必须一致”与实际代码矛盾，且未解释 SetDim（矢量核数）与 SetBlockDim（Cube核数）的语义差异",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Glenn_118"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/669",
+    "working_days_open": 0
+  },
+  {
+    "iid": "668",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "allenli178",
+    "author_id": "667531327be1ad70b521a80c",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】文档代码样例实现没有依据，引用链接失效",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "allenli178"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/668",
+    "working_days_open": 0
+  },
+  {
+    "iid": "667",
+    "state": "opened",
+    "created_at": "2026-08-30",
+    "closed_at": "",
+    "author": "Glenn_118",
+    "author_id": "6a5097c1a3f3924d44490f6f",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】04_pytorch_op_extension_develop_and_apply.ipynb cell #7中集合通信模拟代码存在字符串转义语法错误",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Glenn_118"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/667",
+    "working_days_open": 0
+  },
+  {
     "iid": "666",
     "state": "opened",
     "created_at": "2026-08-29",
@@ -10,8 +478,10 @@
     "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
-    "assignees": [],
-    "user_notes_count": 0,
+    "assignees": [
+      "allenli178"
+    ],
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/666",
     "working_days_open": 0
   },
@@ -26,8 +496,10 @@
     "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
-    "assignees": [],
-    "user_notes_count": 0,
+    "assignees": [
+      "allenli178"
+    ],
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/665",
     "working_days_open": 0
   },
@@ -96,8 +568,10 @@
     "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
-    "assignees": [],
-    "user_notes_count": 0,
+    "assignees": [
+      "allenli178"
+    ],
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/661",
     "working_days_open": 0
   },
@@ -112,8 +586,10 @@
     "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
-    "assignees": [],
-    "user_notes_count": 0,
+    "assignees": [
+      "allenli178"
+    ],
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/660",
     "working_days_open": 0
   },
@@ -436,7 +912,7 @@
     "closed_at": "",
     "author": "m0_61228391",
     "author_id": "6617da48431454566492635f",
-    "title": "[Documentation|文档反馈]: 【开发者成长计划】SM 术语错误（NVIDIA GPU 流处理器概念用于昇腾），且 2.3 表 5P8/6P8 配比算术不成立",
+    "title": "[Documentation|文档反馈]: 【开发者成长计划】 2.3 表 5P8/6P8 配比算术不成立",
     "labels": [
       "good-first-issue"
     ],
@@ -667,7 +1143,7 @@
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [],
-    "user_notes_count": 44,
+    "user_notes_count": 45,
     "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/629",
     "working_days_open": 1
   },
@@ -923,7 +1399,7 @@
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [],
-    "user_notes_count": 2,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/614",
     "working_days_open": 3
   },
@@ -1791,7 +2267,7 @@
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [],
-    "user_notes_count": 348,
+    "user_notes_count": 349,
     "web_url": "https://gitcode.com/cann/cann-learning-hub/issues/559",
     "working_days_open": 4
   },

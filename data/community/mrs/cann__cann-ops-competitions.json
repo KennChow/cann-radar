@@ -1,5 +1,157 @@
 [
   {
+    "iid": 1260,
+    "state": "opened",
+    "draft": false,
+    "title": "【社区任务】aclblasCsyrk算子设计文档（950）",
+    "created_at": "2026-08-31",
+    "updated_at": "2026-08-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "ji096929",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1260",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1259,
+    "state": "opened",
+    "draft": false,
+    "title": "【社区任务】SpMV 算子设计文档（Ascend 950PR）",
+    "created_at": "2026-08-31",
+    "updated_at": "2026-08-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "fffjjjlll1005",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1259",
+    "labels": [
+      "cann-cla/no",
+      "ai-co-authored"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1258,
+    "state": "opened",
+    "draft": false,
+    "title": "【社区任务】Cdotc算子设计文档",
+    "created_at": "2026-08-30",
+    "updated_at": "2026-08-30",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "LLl312",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1258",
+    "labels": [
+      "ai-co-authored",
+      "ai-docs-only",
+      "cann-cla/yes",
+      "ai-compliance-successful",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1257,
+    "state": "opened",
+    "draft": false,
+    "title": "【CANN社区任务】aclblasCdotc算子设计文档",
+    "created_at": "2026-08-30",
+    "updated_at": "2026-08-30",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "weixin_51261442",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1257",
+    "labels": [
+      "ai-co-authored",
+      "ai-compliance-successful",
+      "ai-docs-only",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1256,
+    "state": "closed",
+    "draft": false,
+    "title": "【社区任务】Cdotc算子设计文档",
+    "created_at": "2026-08-30",
+    "updated_at": "2026-08-30",
+    "merged_at": "",
+    "closed_at": "2026-08-30",
+    "author": "LLl312",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1256",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ai-co-authored",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1255,
+    "state": "opened",
+    "draft": false,
+    "title": "【社区任务】aclblasCgeru 算子设计文档（Ascend 950PR）",
+    "created_at": "2026-08-30",
+    "updated_at": "2026-08-30",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "weixin_55333113",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1255",
+    "labels": [
+      "ai-co-authored",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1254,
+    "state": "opened",
+    "draft": false,
+    "title": "add aclblasCtbmv(A2A3) design doc",
+    "created_at": "2026-08-30",
+    "updated_at": "2026-08-30",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "mqm001",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1254",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1253,
+    "state": "closed",
+    "draft": false,
+    "title": "add aclblasCtbmv(A2A3) design doc",
+    "created_at": "2026-08-30",
+    "updated_at": "2026-08-30",
+    "merged_at": "",
+    "closed_at": "2026-08-30",
+    "author": "mqm001",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1253",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1252,
     "state": "opened",
     "draft": false,
@@ -118,7 +270,7 @@
     "draft": false,
     "title": "【CANN社区任务】UpsampleNearest3d算子设计文档",
     "created_at": "2026-08-29",
-    "updated_at": "2026-08-29",
+    "updated_at": "2026-08-30",
     "merged_at": "",
     "closed_at": "",
     "author": "LLLAAAAA",
@@ -266,38 +418,40 @@
   },
   {
     "iid": 1238,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【CANN社区任务】Equal算子设计文档",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-30",
+    "merged_at": "2026-08-30",
     "closed_at": "",
     "author": "gcw_43p8U2Xh",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1238",
     "labels": [
       "ci-pipeline-passed",
       "cann-cla/yes",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": []
   },
   {
     "iid": 1237,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【社区任务】aclblasCsymm 算子设计文档（Ascend 950PR）",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-30",
+    "merged_at": "2026-08-30",
     "closed_at": "",
     "author": "JaneConan",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1237",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -324,12 +478,12 @@
   },
   {
     "iid": 1235,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【社区任务】8月社区任务-aclblasIcamax算子开发设计文档",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-30",
+    "merged_at": "2026-08-30",
     "closed_at": "",
     "author": "gcw_CsSzbDgb",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1235",
@@ -339,26 +493,28 @@
       "cann-cla/yes",
       "ai-compliance-successful",
       "ci-pipeline-passed",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": []
   },
   {
     "iid": 1234,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【社区任务】aclblasCher2k算子设计文档",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-30",
+    "merged_at": "2026-08-30",
     "closed_at": "",
     "author": "dengdeng122",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1234",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -456,19 +612,20 @@
   },
   {
     "iid": 1228,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【社区任务】aclblasCsyr2算子设计文档",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-30",
+    "merged_at": "2026-08-30",
     "closed_at": "",
     "author": "gcw_648Mce95",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1228",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -615,19 +772,20 @@
   },
   {
     "iid": 1220,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【CANN社区任务】aclblasCcopy算子设计文档",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-30",
+    "merged_at": "2026-08-30",
     "closed_at": "",
     "author": "shashasha123",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1220",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -924,76 +1082,80 @@
   },
   {
     "iid": 1204,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【CANN社区任务】aclnnEqual算子设计文档",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-30",
+    "merged_at": "2026-08-30",
     "closed_at": "",
     "author": "dzzw123",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1204",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": []
   },
   {
     "iid": 1203,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【CANN社区任务】aclblasCcopy算子开发",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-30",
+    "merged_at": "2026-08-30",
     "closed_at": "",
     "author": "xukunming2025",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1203",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": []
   },
   {
     "iid": 1202,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【社区任务】aclblasCgetrfBatched算子设计文档",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-30",
+    "merged_at": "2026-08-30",
     "closed_at": "",
     "author": "zhouhongzhe",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1202",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": []
   },
   {
     "iid": 1201,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【社区任务】aclblasCgetriBatched 算子设计文档",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-30",
+    "merged_at": "2026-08-30",
     "closed_at": "",
     "author": "yhh-max",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1201",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -1058,19 +1220,20 @@
   },
   {
     "iid": 1197,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "docs: 08-26-aclblasScasum-950 design with test and kernel details",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-30",
+    "merged_at": "2026-08-30",
     "closed_at": "",
     "author": "lihaokun-2026",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1197",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -1116,19 +1279,20 @@
   },
   {
     "iid": 1194,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【CANN社区任务】SlidingTileAttention算子设计文档",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-30",
+    "merged_at": "2026-08-30",
     "closed_at": "",
     "author": "gcw_FGO3DNh6",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1194",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -1197,19 +1361,20 @@
   },
   {
     "iid": 1190,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【CANN社区任务】aclblasChemm算子设计文档",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-30",
+    "merged_at": "2026-08-30",
     "closed_at": "",
     "author": "2302_77045051",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1190",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -1314,19 +1479,20 @@
   },
   {
     "iid": 1184,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【社区任务】8月社区任务-aclblasCdotu算子开发设计文档",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-30",
+    "merged_at": "2026-08-30",
     "closed_at": "",
     "author": "ggg_0963",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1184",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -1355,32 +1521,34 @@
     "draft": false,
     "title": "【社区任务】8月社区任务-aclblasScasum算子开发设计文档",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-30",
     "merged_at": "",
     "closed_at": "",
     "author": "anning-2026",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1182",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved"
     ],
     "working_days_open": 2,
     "e2e_issues": []
   },
   {
     "iid": 1181,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【社区任务】aclblasCgerc（950）算子设计文档",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
+    "updated_at": "2026-08-30",
+    "merged_at": "2026-08-30",
     "closed_at": "",
     "author": "m0_66866146",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1181",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -2172,7 +2340,7 @@
     "draft": false,
     "title": "【社区任务】aclsparseSpGemm 算子开发(950) 设计文档",
     "created_at": "2026-08-25",
-    "updated_at": "2026-08-28",
+    "updated_at": "2026-08-30",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_gYpnrvNC",
@@ -2487,7 +2655,7 @@
     "draft": false,
     "title": "【社区任务】aclsparseSpMM算子设计文档",
     "created_at": "2026-08-22",
-    "updated_at": "2026-08-29",
+    "updated_at": "2026-08-30",
     "merged_at": "",
     "closed_at": "",
     "author": "2501_92946710",

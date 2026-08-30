@@ -1,5 +1,46 @@
 [
   {
+    "iid": 1889,
+    "state": "opened",
+    "draft": false,
+    "title": "refactor: decouple device validation framework",
+    "created_at": "2026-08-31",
+    "updated_at": "2026-08-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Jett_Woo",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1889",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-running"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1888,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: 修复对齐推导在 compact Reduce 多消费者场景下的布局错误",
+    "created_at": "2026-08-30",
+    "updated_at": "2026-08-30",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "JacsonPile",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1888",
+    "labels": [
+      "enhancement",
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "196"
+    ]
+  },
+  {
     "iid": 1887,
     "state": "opened",
     "draft": false,
@@ -477,7 +518,7 @@
     "draft": false,
     "title": "fix: 完善 IndirectLoad SIMD/SIMT 拓扑调度与多输出 codegen",
     "created_at": "2026-08-28",
-    "updated_at": "2026-08-29",
+    "updated_at": "2026-08-30",
     "merged_at": "",
     "closed_at": "",
     "author": "xiebangrui2025",
@@ -602,7 +643,7 @@
     "draft": false,
     "title": "feat: add ATT execution and report integration",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-29",
+    "updated_at": "2026-08-30",
     "merged_at": "",
     "closed_at": "",
     "author": "zhang_shengjie",
@@ -620,7 +661,7 @@
     "draft": false,
     "title": "feat: add ATT evidence diagnosis skill",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-29",
+    "updated_at": "2026-08-30",
     "merged_at": "",
     "closed_at": "",
     "author": "zhang_shengjie",
@@ -1418,7 +1459,7 @@
     "draft": false,
     "title": "[Fix] 检查 SuperKernel 动态子 Kernel 拆分命令返回码",
     "created_at": "2026-08-24",
-    "updated_at": "2026-08-29",
+    "updated_at": "2026-08-30",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -2776,14 +2817,15 @@
     "draft": false,
     "title": "【PR】: feat: IndexExpr/Arange 全图融合与 Ascend950 Legacy ABI 真机验证",
     "created_at": "2026-08-15",
-    "updated_at": "2026-08-30",
+    "updated_at": "2026-08-31",
     "merged_at": "",
     "closed_at": "",
     "author": "Jett_Woo",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1752",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 10,
     "e2e_issues": []
@@ -4621,7 +4663,7 @@
     "draft": false,
     "title": "【PR】: 打通TF动态shape的CV融合",
     "created_at": "2026-08-05",
-    "updated_at": "2026-08-29",
+    "updated_at": "2026-08-30",
     "merged_at": "",
     "closed_at": "",
     "author": "s003576sgd",
@@ -8295,7 +8337,7 @@
     "draft": false,
     "title": "【PR】: 打通TF框架+动态Shape的 CV 融合",
     "created_at": "2026-07-24",
-    "updated_at": "2026-08-29",
+    "updated_at": "2026-08-31",
     "merged_at": "",
     "closed_at": "",
     "author": "s003576sgd",
