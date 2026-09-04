@@ -1,20 +1,83 @@
 [
   {
+    "iid": 53,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: 简要描述：优化资料中的卸载插件中描述",
+    "created_at": "2026-09-04",
+    "updated_at": "2026-09-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "flyswa",
+    "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/53",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 52,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: 简要描述：优化资料中卸载插件包的描述",
+    "created_at": "2026-09-04",
+    "updated_at": "2026-09-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "flyswa",
+    "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/52",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "19"
+    ]
+  },
+  {
+    "iid": 51,
+    "state": "opened",
+    "draft": true,
+    "title": "[WIP] fix: improve log usability and incremental test coverage",
+    "created_at": "2026-09-04",
+    "updated_at": "2026-09-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "m0_50621083",
+    "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/51",
+    "labels": [
+      "cann-cla/yes",
+      "enhancement",
+      "stat/needs-squash",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "18"
+    ]
+  },
+  {
     "iid": 50,
     "state": "opened",
     "draft": false,
     "title": "docs: 补充 aicore_num 配置说明",
     "created_at": "2026-09-03",
-    "updated_at": "2026-09-03",
+    "updated_at": "2026-09-04",
     "merged_at": "",
     "closed_at": "",
     "author": "KenChow",
     "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/50",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "approved"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -23,7 +86,7 @@
     "draft": false,
     "title": "docs: fill in Main features section of RELEASE.md（修复 #9）",
     "created_at": "2026-09-03",
-    "updated_at": "2026-09-03",
+    "updated_at": "2026-09-04",
     "merged_at": "",
     "closed_at": "",
     "author": "2403_87936996",
@@ -32,10 +95,8 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 1,
-    "e2e_issues": [
-      "9"
-    ]
+    "working_days_open": 2,
+    "e2e_issues": []
   },
   {
     "iid": 48,
@@ -43,7 +104,7 @@
     "draft": false,
     "title": "fix: fix use-after-free in MappingDTStringTensor2DataItem scalar branch（修复 #15）",
     "created_at": "2026-09-03",
-    "updated_at": "2026-09-03",
+    "updated_at": "2026-09-04",
     "merged_at": "",
     "closed_at": "",
     "author": "2403_87936996",
@@ -52,7 +113,7 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": [
       "15"
     ]
@@ -63,7 +124,7 @@
     "draft": false,
     "title": "build: replace deprecated abl/slog include path with runtime/src/dfx/log（修复 #14）",
     "created_at": "2026-09-03",
-    "updated_at": "2026-09-03",
+    "updated_at": "2026-09-04",
     "merged_at": "",
     "closed_at": "",
     "author": "2403_87936996",
@@ -71,7 +132,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": [
       "14"
     ]
@@ -91,7 +152,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": [
       "15"
     ]
@@ -114,7 +175,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 3,
+    "working_days_open": 4,
     "e2e_issues": []
   },
   {
@@ -136,7 +197,7 @@
       "ci-confirmed",
       "approved"
     ],
-    "working_days_open": 6,
+    "working_days_open": 7,
     "e2e_issues": []
   },
   {
@@ -157,7 +218,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 8,
+    "working_days_open": 9,
     "e2e_issues": [
       "16"
     ]
@@ -176,7 +237,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": [
       "14"
     ]
@@ -199,27 +260,29 @@
       "approved",
       "enhancement"
     ],
-    "working_days_open": 11,
+    "working_days_open": 12,
     "e2e_issues": [
       "7"
     ]
   },
   {
     "iid": 40,
-    "state": "closed",
+    "state": "merged",
     "draft": false,
-    "title": "docs: 补全RELEASE.md中Main features章节内容",
+    "title": "docs: remove obsolete RELEASE.md",
     "created_at": "2026-08-14",
-    "updated_at": "2026-08-28",
-    "merged_at": "",
-    "closed_at": "2026-08-28",
+    "updated_at": "2026-09-04",
+    "merged_at": "2026-09-04",
+    "closed_at": "",
     "author": "yelongjian",
     "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/40",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": [
       "9"
     ]
@@ -242,7 +305,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -263,7 +326,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 19,
+    "working_days_open": 20,
     "e2e_issues": []
   },
   {
@@ -284,7 +347,7 @@
       "lgtm",
       "enhancement"
     ],
-    "working_days_open": 21,
+    "working_days_open": 22,
     "e2e_issues": []
   },
   {
@@ -305,26 +368,28 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 27,
+    "working_days_open": 28,
     "e2e_issues": []
   },
   {
     "iid": 35,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "feat: add new interfaces set_schedule_aicore_task_early & get_schedule_aicore_task_early",
     "created_at": "2026-07-28",
-    "updated_at": "2026-09-03",
-    "merged_at": "",
+    "updated_at": "2026-09-04",
+    "merged_at": "2026-09-04",
     "closed_at": "",
     "author": "likun104",
     "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/35",
     "labels": [
       "enhancement",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
-    "working_days_open": 28,
+    "working_days_open": 29,
     "e2e_issues": []
   },
   {
@@ -343,7 +408,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 28,
+    "working_days_open": 29,
     "e2e_issues": []
   },
   {
@@ -364,7 +429,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 30,
+    "working_days_open": 31,
     "e2e_issues": []
   },
   {
@@ -385,7 +450,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 32,
+    "working_days_open": 33,
     "e2e_issues": []
   },
   {
@@ -405,7 +470,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 35,
+    "working_days_open": 36,
     "e2e_issues": []
   },
   {
@@ -426,7 +491,7 @@
       "enhancement",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 38,
+    "working_days_open": 39,
     "e2e_issues": []
   },
   {
@@ -445,7 +510,7 @@
       "ci-pipeline-failed",
       "enhancement"
     ],
-    "working_days_open": 41,
+    "working_days_open": 42,
     "e2e_issues": []
   },
   {
@@ -466,7 +531,7 @@
       "lgtm",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 50,
+    "working_days_open": 51,
     "e2e_issues": []
   },
   {
@@ -486,7 +551,7 @@
       "ci-pipeline-passed",
       "stat/needs-squash"
     ],
-    "working_days_open": 55,
+    "working_days_open": 56,
     "e2e_issues": [
       "470"
     ]
@@ -509,7 +574,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 56,
+    "working_days_open": 57,
     "e2e_issues": []
   },
   {
@@ -529,7 +594,7 @@
       "enhancement",
       "stat/needs-squash"
     ],
-    "working_days_open": 58,
+    "working_days_open": 59,
     "e2e_issues": []
   },
   {
@@ -549,7 +614,7 @@
       "ci-pipeline-failed",
       "cann-cla/yes"
     ],
-    "working_days_open": 62,
+    "working_days_open": 63,
     "e2e_issues": []
   },
   {
@@ -571,7 +636,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 62,
+    "working_days_open": 63,
     "e2e_issues": []
   },
   {
@@ -592,7 +657,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 63,
+    "working_days_open": 64,
     "e2e_issues": []
   },
   {
@@ -611,7 +676,7 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 64,
+    "working_days_open": 65,
     "e2e_issues": []
   },
   {
@@ -632,7 +697,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 65,
+    "working_days_open": 66,
     "e2e_issues": []
   },
   {
@@ -653,7 +718,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 68,
+    "working_days_open": 69,
     "e2e_issues": []
   },
   {
@@ -672,7 +737,7 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 68,
+    "working_days_open": 69,
     "e2e_issues": []
   },
   {
@@ -693,7 +758,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 69,
+    "working_days_open": 70,
     "e2e_issues": []
   },
   {
@@ -712,7 +777,7 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 73,
+    "working_days_open": 74,
     "e2e_issues": []
   },
   {
@@ -732,7 +797,7 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 73,
+    "working_days_open": 74,
     "e2e_issues": []
   },
   {
@@ -749,7 +814,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 74,
+    "working_days_open": 75,
     "e2e_issues": []
   },
   {
@@ -768,7 +833,7 @@
       "cann-cla/no",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 76,
+    "working_days_open": 77,
     "e2e_issues": []
   },
   {
@@ -787,7 +852,7 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 79,
+    "working_days_open": 80,
     "e2e_issues": []
   },
   {
@@ -808,7 +873,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 80,
+    "working_days_open": 81,
     "e2e_issues": []
   },
   {
@@ -827,7 +892,7 @@
       "enhancement",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 87,
+    "working_days_open": 88,
     "e2e_issues": []
   },
   {
@@ -846,7 +911,7 @@
       "enhancement",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 91,
+    "working_days_open": 92,
     "e2e_issues": []
   },
   {
@@ -867,7 +932,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 91,
+    "working_days_open": 92,
     "e2e_issues": []
   },
   {
@@ -886,7 +951,7 @@
       "enhancement",
       "cann-cla/yes"
     ],
-    "working_days_open": 91,
+    "working_days_open": 92,
     "e2e_issues": []
   },
   {
@@ -908,7 +973,7 @@
       "stat/needs-squash",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 91,
+    "working_days_open": 92,
     "e2e_issues": []
   },
   {
@@ -929,7 +994,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 92,
+    "working_days_open": 93,
     "e2e_issues": []
   },
   {
@@ -948,7 +1013,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 93,
+    "working_days_open": 94,
     "e2e_issues": []
   },
   {
@@ -969,7 +1034,7 @@
       "cann-cla/yes",
       "enhancement"
     ],
-    "working_days_open": 96,
+    "working_days_open": 97,
     "e2e_issues": [
       "2"
     ]
@@ -993,7 +1058,7 @@
       "ci-pipeline-passed",
       "SC-FAIL"
     ],
-    "working_days_open": 103,
+    "working_days_open": 104,
     "e2e_issues": []
   },
   {
@@ -1002,16 +1067,16 @@
     "draft": false,
     "title": "empty.02",
     "created_at": "2026-04-09",
-    "updated_at": "2026-09-03",
+    "updated_at": "2026-09-04",
     "merged_at": "",
-    "closed_at": "2026-09-03",
+    "closed_at": "2026-09-04",
     "author": "likun104",
     "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/1",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 103,
+    "working_days_open": 104,
     "e2e_issues": []
   }
 ]
