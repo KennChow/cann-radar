@@ -1,5 +1,271 @@
 [
   {
+    "iid": 4764,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 启用离线模型原型收集与真实链路验证",
+    "created_at": "2026-09-05",
+    "updated_at": "2026-09-06",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Chang-an-HW",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4764",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4763,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 传递模型原型到运行时执行链路",
+    "created_at": "2026-09-05",
+    "updated_at": "2026-09-06",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Chang-an-HW",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4763",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4762,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 统一 Eager 与 Host 原型查询上下文",
+    "created_at": "2026-09-05",
+    "updated_at": "2026-09-06",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Chang-an-HW",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4762",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4761,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 接入模型原型到 IR 与旧式回调",
+    "created_at": "2026-09-05",
+    "updated_at": "2026-09-06",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Chang-an-HW",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4761",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4760,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 添加模型级算子原型数据结构",
+    "created_at": "2026-09-05",
+    "updated_at": "2026-09-06",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Chang-an-HW",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4760",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4759,
+    "state": "opened",
+    "draft": false,
+    "title": "【Fix】:OM2 dump配置下发BUG修复(mode_name和layer错误配置导致dump功能异常)",
+    "created_at": "2026-09-05",
+    "updated_at": "2026-09-05",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wang-bin-789",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4759",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4758,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: sync develop to master 0905",
+    "created_at": "2026-09-05",
+    "updated_at": "2026-09-05",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "yangyongqiang0606",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4758",
+    "labels": [
+      "cann-cla/yes",
+      "enhancement",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4757,
+    "state": "merged",
+    "draft": false,
+    "title": "refactor: 为 SplitV 符号化推导上下文增加 const 修饰",
+    "created_at": "2026-09-05",
+    "updated_at": "2026-09-05",
+    "merged_at": "2026-09-05",
+    "closed_at": "",
+    "author": "xiebangrui2025",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4757",
+    "labels": [
+      "cann-cla/yes",
+      "approved",
+      "ci-pipeline-passed",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4756,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(om2): 恢复生成源码完整校验并规范 ABI 填充命名",
+    "created_at": "2026-09-05",
+    "updated_at": "2026-09-05",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "ClarkXie",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4756",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4755,
+    "state": "merged",
+    "draft": false,
+    "title": "【PR】: sync develop to master 0905 fast",
+    "created_at": "2026-09-05",
+    "updated_at": "2026-09-05",
+    "merged_at": "2026-09-05",
+    "closed_at": "",
+    "author": "yangyongqiang0606",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4755",
+    "labels": [
+      "cann-cla/yes",
+      "enhancement",
+      "stat/needs-squash",
+      "lgtm",
+      "approved",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4754,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 新增模型调度模式配置特性，支持加载前配置普通/独占调度",
+    "created_at": "2026-09-05",
+    "updated_at": "2026-09-05",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Chang-an-HW",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4754",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4753,
+    "state": "opened",
+    "draft": false,
+    "title": "fix ci",
+    "created_at": "2026-09-05",
+    "updated_at": "2026-09-05",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "liyanrong_9",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4753",
+    "labels": [
+      "cann-cla/yes",
+      "enhancement",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4752,
+    "state": "merged",
+    "draft": false,
+    "title": "【feat】: dynamic aipp verify",
+    "created_at": "2026-09-05",
+    "updated_at": "2026-09-05",
+    "merged_at": "2026-09-05",
+    "closed_at": "",
+    "author": "tang-haojie",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4752",
+    "labels": [
+      "cann-cla/yes",
+      "enhancement",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 4751,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: remove GraphNodeSettedFormatPass roll back code",
+    "created_at": "2026-09-05",
+    "updated_at": "2026-09-05",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lushiming0",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/4751",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 4750,
     "state": "opened",
     "draft": false,
@@ -20,12 +286,12 @@
   },
   {
     "iid": 4749,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【PR】: sync develop to master 0904 fast",
     "created_at": "2026-09-04",
-    "updated_at": "2026-09-04",
-    "merged_at": "",
+    "updated_at": "2026-09-05",
+    "merged_at": "2026-09-05",
     "closed_at": "",
     "author": "yangyongqiang0606",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4749",
@@ -34,7 +300,8 @@
       "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "lgtm"
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -98,20 +365,21 @@
   },
   {
     "iid": 4745,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
-    "title": "【PR】: 简要描述",
+    "title": "【Fix】：OM2 AI CPU算子精度问题修复",
     "created_at": "2026-09-04",
-    "updated_at": "2026-09-04",
-    "merged_at": "",
+    "updated_at": "2026-09-05",
+    "merged_at": "2026-09-05",
     "closed_at": "",
     "author": "wang-bin-789",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4745",
     "labels": [
       "enhancement",
-      "stat/needs-squash",
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "ci-pipeline-passed",
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -159,7 +427,7 @@
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-09-04",
-    "updated_at": "2026-09-04",
+    "updated_at": "2026-09-05",
     "merged_at": "",
     "closed_at": "",
     "author": "liyanrong_9",
@@ -167,7 +435,7 @@
     "labels": [
       "enhancement",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -209,13 +477,13 @@
   },
   {
     "iid": 4739,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-09-04",
-    "updated_at": "2026-09-04",
+    "updated_at": "2026-09-05",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-05",
     "author": "lidaoming1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4739",
     "labels": [
@@ -367,7 +635,7 @@
     "draft": false,
     "title": "【PR】: ci_test",
     "created_at": "2026-09-04",
-    "updated_at": "2026-09-04",
+    "updated_at": "2026-09-05",
     "merged_at": "",
     "closed_at": "",
     "author": "wx1127857",
@@ -419,12 +687,12 @@
   },
   {
     "iid": 4728,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "docs: 补充dflow部署流程入口衔接与全流程时序图",
     "created_at": "2026-09-04",
-    "updated_at": "2026-09-04",
-    "merged_at": "",
+    "updated_at": "2026-09-05",
+    "merged_at": "2026-09-05",
     "closed_at": "",
     "author": "lining23666",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4728",
@@ -432,7 +700,8 @@
       "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "lgtm"
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -522,13 +791,14 @@
     "draft": false,
     "title": "feat: OM2反序列化增加必要文件完整性校验",
     "created_at": "2026-09-03",
-    "updated_at": "2026-09-03",
+    "updated_at": "2026-09-05",
     "merged_at": "",
     "closed_at": "",
     "author": "lidaoming1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4723",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -756,7 +1026,7 @@
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-09-03",
-    "updated_at": "2026-09-03",
+    "updated_at": "2026-09-05",
     "merged_at": "",
     "closed_at": "",
     "author": "gaoyong10",
@@ -851,12 +1121,12 @@
   },
   {
     "iid": 4706,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "docs: 明确控核参数配置0的行为与取值约束",
     "created_at": "2026-09-03",
-    "updated_at": "2026-09-04",
-    "merged_at": "",
+    "updated_at": "2026-09-05",
+    "merged_at": "2026-09-05",
     "closed_at": "",
     "author": "KenChow",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4706",
@@ -864,7 +1134,8 @@
       "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "lgtm"
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -1173,12 +1444,12 @@
   },
   {
     "iid": 4690,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix: fix op splitV no_task attribute",
     "created_at": "2026-09-02",
-    "updated_at": "2026-09-04",
-    "merged_at": "",
+    "updated_at": "2026-09-05",
+    "merged_at": "2026-09-05",
     "closed_at": "",
     "author": "lushiming0",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4690",
@@ -1186,7 +1457,8 @@
       "enhancement",
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "lgtm"
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -2191,12 +2463,12 @@
   },
   {
     "iid": 4639,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【质量加固】修改若干符合规则要求的代码规范问题",
     "created_at": "2026-08-31",
-    "updated_at": "2026-09-04",
-    "merged_at": "",
+    "updated_at": "2026-09-05",
+    "merged_at": "2026-09-05",
     "closed_at": "",
     "author": "zlp1703",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4639",
@@ -2205,7 +2477,8 @@
       "stat/needs-squash",
       "cann-cla/yes",
       "lgtm",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved"
     ],
     "working_days_open": 5,
     "e2e_issues": [
@@ -4752,20 +5025,20 @@
   },
   {
     "iid": 4515,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "feat: 模型级自定义算子原型管理能力",
     "created_at": "2026-08-23",
-    "updated_at": "2026-09-04",
+    "updated_at": "2026-09-05",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-05",
     "author": "Chang-an-HW",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4515",
     "labels": [
       "ci-pipeline-failed",
       "enhancement",
-      "cann-cla/yes",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "cann-cla/yes"
     ],
     "working_days_open": 10,
     "e2e_issues": []
@@ -4914,13 +5187,13 @@
   },
   {
     "iid": 4507,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】:fix(cleancode)",
     "created_at": "2026-08-22",
-    "updated_at": "2026-08-22",
+    "updated_at": "2026-09-05",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-05",
     "author": "niyi01",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4507",
     "labels": [
@@ -6832,7 +7105,7 @@
     "draft": true,
     "title": "[WIP]【PR】: weight prefetch temp test",
     "created_at": "2026-08-17",
-    "updated_at": "2026-08-18",
+    "updated_at": "2026-09-05",
     "merged_at": "",
     "closed_at": "",
     "author": "zhao-diran666",
