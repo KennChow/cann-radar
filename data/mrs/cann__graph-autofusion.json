@@ -1,5 +1,47 @@
 [
   {
+    "iid": 1981,
+    "state": "opened",
+    "draft": false,
+    "title": "test: 补充 ATT 边界与异常单元测试并提升目录覆盖率 (#211)",
+    "created_at": "2026-09-06",
+    "updated_at": "2026-09-06",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "jwcjtnllm",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1981",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "211"
+    ]
+  },
+  {
+    "iid": 1980,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: complete Arange fallback path (#302)",
+    "created_at": "2026-09-06",
+    "updated_at": "2026-09-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Jett_Woo",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1980",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "302"
+    ]
+  },
+  {
     "iid": 1979,
     "state": "closed",
     "draft": false,
@@ -418,14 +460,15 @@
     "iid": 1958,
     "state": "opened",
     "draft": false,
-    "title": "feat: apply Round5 NDDMA transpose model",
+    "title": "feat: apply NDDMA transpose model",
     "created_at": "2026-09-03",
-    "updated_at": "2026-09-03",
+    "updated_at": "2026-09-06",
     "merged_at": "",
     "closed_at": "",
     "author": "zhang_shengjie",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1958",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes"
     ],
     "working_days_open": 2,
@@ -822,7 +865,8 @@
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1938",
     "labels": [
       "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -2471,7 +2515,7 @@
     "draft": false,
     "title": "feat: add ATT execution and report integration",
     "created_at": "2026-08-27",
-    "updated_at": "2026-08-31",
+    "updated_at": "2026-09-06",
     "merged_at": "",
     "closed_at": "",
     "author": "zhang_shengjie",
@@ -2479,7 +2523,7 @@
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 7,
     "e2e_issues": []
