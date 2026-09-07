@@ -1,6 +1,12 @@
 name: Issue Response SLA Notify
 
 on:
+  pull_request:
+    paths:
+      - 'issue_response_notify.py'
+      - 'config/issue_response_notify.yml'
+      - 'tests/**'
+      - '.github/workflows/issue-response-notify.yml'
   schedule:
     - cron: '17 * * * *'  # 每小时扫描一次
   workflow_dispatch:
@@ -43,6 +49,7 @@ jobs:
         run: python -m pytest -q
 
   notify:
+    if: github.event_name != 'pull_request'
     needs: test
     runs-on: ubuntu-latest
     steps:
