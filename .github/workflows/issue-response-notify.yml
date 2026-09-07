@@ -1,1 +1,103 @@
-m«ëˆ§½©buªàºg§¶­†æÿÂŠä~Z0³ø¬²ç«zÊhÇ§¢ØŸË)¥RÆ y¶¬{®vçºh¢ø¥zŠ.µø¥y¶ëy©­æ¤zw(uçhºÚn¶êbÚ%Šw¬¡ù^aéƒu×œ¡×yÊz)éºØazZ]ŠÊek+aŠÉ²Æ z(§¦ëb›­~)^uçÚº[_¢»-v)è¢ëiºÚ.¶›­~)^uçÚº[_¢»-v‹­
+name: Issue Response SLA Notify
+
+on:
+  schedule:
+    - cron: '17 * * * *'  # æ¯å°æ—¶æ‰«æä¸€æ¬¡
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'ä»…æ‰«æï¼Œä¸å‘é€é‚®ä»¶æˆ–æ›´æ–°çŠ¶æ€'
+        type: boolean
+        default: true
+      test_email:
+        description: 'æµ‹è¯•é‚®ç®±ï¼ˆåªå‘é€ä¸€å°æ ·æœ¬ï¼‰'
+        type: string
+        default: ''
+      initial_hours:
+        description: 'é¦–æ¬¡æ— äººå“åº”é˜ˆå€¼ï¼ˆå°æ—¶ï¼‰'
+        type: number
+        default: 12
+      followup_hours:
+        description: 'åˆ›å»ºè€…è¿½é—®æ— äººå“åº”é˜ˆå€¼ï¼ˆå°æ—¶ï¼‰'
+        type: number
+        default: 3
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cann-radar-data-writes
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install test dependencies
+        run: python -m pip install PyYAML chinese-calendar pytest
+      - name: Run tests
+        run: python -m pytest -q
+
+  notify:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Checkout private configuration
+        uses: actions/checkout@v4
+        with:
+          repository: KennChow/cann-radar-private
+          token: ${{ secrets.PRIVATE_REPO_PAT }}
+          path: .private
+
+      - name: Inject private configuration
+        run: |
+          cp .private/gitcode_2_mail.txt config/gitcode_2_mail.txt
+          cp .private/smtp_config.ini config/smtp_config.ini
+          cp .private/gitcode_token.txt config/gitcode_token.txt
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: python -m pip install PyYAML
+
+      - name: Scan and notify
+        env:
+          ISSUE_RESPONSE_ESCALATION_TO: ${{ secrets.ISSUE_RESPONSE_ESCALATION_TO }}
+          RUN_EVENT: ${{ github.event_name }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          TEST_EMAIL: ${{ inputs.test_email }}
+          INITIAL_HOURS: ${{ inputs.initial_hours }}
+          FOLLOWUP_HOURS: ${{ inputs.followup_hours }}
+        run: |
+          CMD=(python issue_response_notify.py)
+          if [ "$RUN_EVENT" = "workflow_dispatch" ]; then
+            CMD+=(--initial-hours "$INITIAL_HOURS" --followup-hours "$FOLLOWUP_HOURS")
+            if [ "$DRY_RUN" = "true" ]; then
+              CMD+=(--dry-run)
+            elif [ -n "$TEST_EMAIL" ]; then
+              CMD+=(--test "$TEST_EMAIL")
+            fi
+          fi
+          "${CMD[@]}"
+
+      - name: Commit notification state
+        if: github.event_name == 'schedule' || (inputs.dry_run == false && inputs.test_email == '')
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/issue_response_notified.json
+          git diff --staged --quiet && echo "No tracking changes" || (
+            git commit -m "chore: æ›´æ–° Issue å“åº”æé†’è®°å½• $(date -u '+%Y-%m-%dT%H:%MZ')"
+            git push
+          )
