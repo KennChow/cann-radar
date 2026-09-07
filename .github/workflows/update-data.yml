@@ -50,6 +50,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: cann-radar-data-writes
+  cancel-in-progress: false
+
 jobs:
   test:
     runs-on: ubuntu-latest

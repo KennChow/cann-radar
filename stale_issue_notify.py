@@ -218,6 +218,11 @@ password = your_auth_code
 
 [mail]
 from = your_name@huawei.com
+
+[issue_response]
+# xgz、hyc、wrq 的邮箱，逗号分隔；也可通过 GitHub Secret
+# ISSUE_RESPONSE_ESCALATION_TO 提供。
+escalation_to =
 """
 
 

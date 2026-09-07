@@ -211,6 +211,56 @@ python admin_summary.py --dry-run
 python admin_summary.py --test your_email@example.com
 ```
 
+## Issue 响应时效提醒
+
+`issue_response_notify.py` 每小时读取 GitCode 的实时 Issue、评论和关联 PR 数据，
+仅处理 `config/repos.yml` 中启用了 `notify: true` 的仓库。
+
+### 判定规则
+
+只扫描未关闭、非自处理的 Issue。Issue 创建者是任一责任人，或创建者是任一
+关联 PR 的创建者时，均视为自处理并排除。
+
+| 场景 | 触发条件 | 收件人 |
+|---|---|---|
+| 首次响应超时 | 创建超过 12 小时，仍无非创建者的有效评论 | 有责任人：责任人 + xgz、hyc、wrq；无责任人：xgz、hyc、wrq |
+| 创建者追问超时 | 曾有非创建者响应，最新评论为创建者且已超过 3 小时 | 有责任人：责任人；无责任人：xgz、hyc、wrq |
+
+机器人评论不计为有效评论。创建者连续评论属于同一轮等待，以最后一条评论
+重新计算 3 小时；同一轮只提醒一次。状态记录保存在
+`data/issue_response_notified.json`。
+
+### 部署配置
+
+在 GitHub 仓库设置中创建 Secret `ISSUE_RESPONSE_ESCALATION_TO`，值为 xgz、
+hyc、wrq 的完整邮箱地址，以英文逗号分隔。也可以在私有仓库的
+`smtp_config.ini` 中增加：
+
+```ini
+[issue_response]
+escalation_to = xgz@example.com,hyc@example.com,wrq@example.com
+```
+
+邮箱示例必须替换为真实地址。责任人的邮箱继续从私有的
+`gitcode_2_mail.txt` 读取。
+
+### 测试方式
+
+```bash
+# 只扫描，不发邮件、不修改去重状态
+python issue_response_notify.py --dry-run
+
+# 将第一封候选邮件发送到测试邮箱，不通知真实收件人、不修改去重状态
+python issue_response_notify.py --test your_email@example.com
+
+# 缩短阈值进行测试
+python issue_response_notify.py --dry-run --initial-hours 0.1 --followup-hours 0.1
+```
+
+也可以在 GitHub Actions 页面手动运行 `Issue Response SLA Notify`。该工作流
+默认开启 dry-run，取消 dry-run 后才会向实际收件人发信。定时任务每小时执行
+一次，因此实际提醒时间可能比阈值晚不到约一小时。
+
 ## 数据采集
 
 ```bash
