@@ -135,6 +135,10 @@ def load_rules_config():
 
 
 def load_notify_repos():
+    rules = load_rules_config()
+    configured = _dedupe(rules.get("repos") or [])
+    if configured:
+        return configured
     with open(REPOS_CONFIG_PATH, encoding="utf-8") as f:
         config = yaml.safe_load(f) or {}
     return [r["path"] for r in config.get("repos", [])

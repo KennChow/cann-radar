@@ -213,8 +213,17 @@ python admin_summary.py --test your_email@example.com
 
 ## Issue 响应时效提醒
 
-`issue_response_notify.py` 每小时读取 GitCode 的实时 Issue、评论和关联 PR 数据，
-仅处理 `config/repos.yml` 中启用了 `notify: true` 的仓库。
+`issue_response_notify.py` 每小时读取 GitCode 的实时 Issue、评论和关联 PR 数据。
+本功能的扫描范围在 `config/issue_response_notify.yml` 中独立配置，当前仅包含：
+
+```yaml
+repos:
+  - cann/ge
+  - cann/metadef
+  - cann/tensorflow
+```
+
+该配置不改变 Radar 原有数据采集和其他邮件提醒的仓库范围。
 
 ### 判定规则
 

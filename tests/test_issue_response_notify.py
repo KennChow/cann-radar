@@ -46,6 +46,14 @@ def event(kind="initial", current_issue=None, notification=None):
 
 
 class IssueResponseNotifyTests(unittest.TestCase):
+    def test_new_notifier_has_independent_three_repo_scope(self):
+        with patch.object(notify, "load_rules_config", return_value={
+            "repos": ["cann/ge", "cann/metadef", "cann/tensorflow"],
+        }):
+            self.assertEqual(notify.load_notify_repos(), [
+                "cann/ge", "cann/metadef", "cann/tensorflow",
+            ])
+
     def test_self_handled_by_assignee_or_linked_pr_author(self):
         self.assertTrue(notify._is_self_handled(issue(assignees=["alice"]), set()))
         self.assertTrue(notify._is_self_handled(issue(), {"alice"}))
