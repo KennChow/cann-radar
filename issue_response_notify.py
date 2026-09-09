@@ -14,7 +14,6 @@ import argparse
 import configparser
 import html
 import json
-import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -23,7 +22,7 @@ from urllib.parse import quote
 import yaml
 
 from collector import V5_BASE, _load_token, _v5_headers, get_required, save_json
-from stale_issue_notify import MAIL_MAP_PATH, SMTP_CONFIG_PATH, load_mail_map, send_one_email
+from stale_issue_notify import SMTP_CONFIG_PATH, load_mail_map, send_one_email
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -33,6 +32,7 @@ STATE_PATH = BASE_DIR / "data" / "issue_response_notified.json"
 
 DEFAULT_INITIAL_HOURS = 12
 DEFAULT_FOLLOWUP_HOURS = 3
+STATE_VERSION = 2
 
 
 def _utc_now():
@@ -143,14 +143,18 @@ def load_notify_repos():
 
 def load_state():
     if not STATE_PATH.exists():
-        return {"version": 1, "issues": {}}
+        return {"version": STATE_VERSION, "issues": {}}
     try:
         data = json.loads(STATE_PATH.read_text(encoding="utf-8"))
-    except (OSError, ValueError):
-        return {"version": 1, "issues": {}}
+    except (OSError, ValueError) as exc:
+        raise RuntimeError(
+            "通知状态文件无法读取，为避免重复发信，本次任务已停止"
+        ) from exc
+    if not isinstance(data, dict):
+        raise RuntimeError("通知状态文件格式错误，本次任务已停止")
     if not isinstance(data.get("issues"), dict):
-        data["issues"] = {}
-    data["version"] = 1
+        raise RuntimeError("通知状态文件缺少 issues 字典，本次任务已停止")
+    data["version"] = STATE_VERSION
     return data
 
 
@@ -174,27 +178,40 @@ def _paged_get(url, headers):
         page += 1
 
 
+def _normalize_issue(repo, item):
+    assignees = [_login(v) for v in (item.get("assignees") or [])]
+    state = str(item.get("state") or "").lower()
+    return {
+        "repo": repo,
+        "iid": item.get("number"),
+        "title": item.get("title") or "",
+        "state": "closed" if state == "closed" else "opened",
+        "author": _login(item.get("user")),
+        "created_at": item.get("created_at") or "",
+        "updated_at": item.get("updated_at") or "",
+        "assignees": [v for v in assignees if v],
+        "comment_count": int(item.get("comments") or 0),
+        "web_url": item.get("html_url") or
+                   f"https://gitcode.com/{repo}/issues/{item.get('number')}",
+    }
+
+
 def fetch_open_issues(repo, headers):
     owner, name = repo.split("/", 1)
     raw = _paged_get(f"{V5_BASE}/repos/{owner}/{name}/issues?state=open", headers)
-    issues = []
-    for item in raw:
-        if item.get("state") == "closed":
-            continue
-        assignees = [_login(v) for v in (item.get("assignees") or [])]
-        issues.append({
-            "repo": repo,
-            "iid": item.get("number"),
-            "title": item.get("title") or "",
-            "state": "opened",
-            "author": _login(item.get("user")),
-            "created_at": item.get("created_at") or "",
-            "updated_at": item.get("updated_at") or "",
-            "assignees": [v for v in assignees if v],
-            "comment_count": int(item.get("comments") or 0),
-            "web_url": item.get("html_url") or f"https://gitcode.com/{repo}/issues/{item.get('number')}",
-        })
-    return issues
+    return [_normalize_issue(repo, item) for item in raw
+            if str(item.get("state") or "").lower() != "closed"]
+
+
+def fetch_issue(repo, iid, headers):
+    owner, name = repo.split("/", 1)
+    item = get_required(
+        f"{V5_BASE}/repos/{owner}/{name}/issues/{quote(str(iid))}",
+        headers=headers,
+    )
+    if not isinstance(item, dict):
+        raise RuntimeError(f"Issue API returned a non-object payload: {repo}#{iid}")
+    return _normalize_issue(repo, item)
 
 
 def fetch_issue_comments(repo, iid, headers):
@@ -207,42 +224,42 @@ def fetch_issue_comments(repo, iid, headers):
 
 def fetch_linked_pr_authors(repo, iid, headers):
     owner, name = repo.split("/", 1)
-    prs = get_required(
+    prs = _paged_get(
         f"{V5_BASE}/repos/{owner}/{name}/issues/{quote(str(iid))}/pull_requests",
-        headers=headers,
+        headers,
     )
-    if not isinstance(prs, list):
-        raise RuntimeError(f"Linked PR API returned a non-list payload: {repo}#{iid}")
     return {_login(pr.get("user")) for pr in prs if _login(pr.get("user"))}
 
 
-def _load_escalation_emails(smtp_cfg):
-    raw = os.environ.get("ISSUE_RESPONSE_ESCALATION_TO", "").strip()
-    if not raw and smtp_cfg is not None:
-        raw = smtp_cfg.get("issue_response", "escalation_to", fallback="").strip()
-    return _split_emails(raw)
-
-
-def _split_emails(value):
+def _dedupe(values):
     result = []
     seen = set()
-    for email in str(value or "").split(","):
-        email = email.strip()
-        if email and email not in seen:
-            result.append(email)
-            seen.add(email)
+    for value in values:
+        value = str(value or "").strip()
+        if value and value not in seen:
+            result.append(value)
+            seen.add(value)
     return result
 
 
-def _event_recipients(issue, kind, mail_map, escalation_emails):
-    assignees = issue.get("assignees") or []
-    missing = [name for name in assignees if not mail_map.get(name)]
-    assignee_emails = [mail_map[name] for name in assignees if mail_map.get(name)]
+def _required_recipient_users(issue, kind, escalation_users):
+    assignees = _dedupe(issue.get("assignees") or [])
     if kind == "initial":
-        emails = assignee_emails + escalation_emails
-    else:
-        emails = assignee_emails if assignees else escalation_emails
-    return _split_emails(",".join(emails)), missing
+        return _dedupe(assignees + list(escalation_users))
+    return assignees if assignees else _dedupe(escalation_users)
+
+
+def _resolve_recipient_users(usernames, mail_map):
+    """Return email -> GitCode users and users without an email mapping."""
+    by_email = {}
+    missing = []
+    for username in _dedupe(usernames):
+        email = str(mail_map.get(username) or "").strip()
+        if not email:
+            missing.append(username)
+            continue
+        by_email.setdefault(email, []).append(username)
+    return by_email, missing
 
 
 def build_html_email(issue, kind, waited_hours):
@@ -276,12 +293,17 @@ def _smtp_config_or_none():
     return cfg
 
 
-def scan_events(repos, state, headers, now, initial_hours, followup_hours, bot_users):
+def scan_events(repos, state, headers, now, initial_hours, followup_hours, bot_users,
+                target_iid=None):
     events = []
     successful_repos = set()
     open_keys_by_repo = {}
     for repo in repos:
-        issues = fetch_open_issues(repo, headers)
+        if target_iid is None:
+            issues = fetch_open_issues(repo, headers)
+        else:
+            target = fetch_issue(repo, target_iid, headers)
+            issues = [] if target.get("state") == "closed" else [target]
         open_keys = set()
         for issue in issues:
             if issue.get("iid") is None or not issue.get("author"):
@@ -315,39 +337,83 @@ def scan_events(repos, state, headers, now, initial_hours, followup_hours, bot_u
             event_key = f"{kind}:{token}"
             notifications = record.setdefault("notifications", {})
             notification = notifications.setdefault(
-                event_key, {"delivered": [], "completed": False},
+                event_key, {"delivered_users": {}},
             )
-            if not notification.get("completed"):
-                events.append({
-                    "issue": issue, "kind": kind, "token": token,
-                    "event_key": event_key, "waited_hours": waited_hours,
-                    "notification": notification,
-                })
+            if not isinstance(notification.get("delivered_users"), dict):
+                notification["delivered_users"] = {}
+            events.append({
+                "issue": issue, "kind": kind, "token": token,
+                "event_key": event_key, "waited_hours": waited_hours,
+                "notification": notification,
+            })
         open_keys_by_repo[repo] = open_keys
         successful_repos.add(repo)
 
-    # Prune closed Issues only for repositories whose live scan succeeded.
-    for key in list(state["issues"]):
-        repo = state["issues"][key].get("repo")
-        if not repo:
-            repo = key.rsplit("!", 1)[0].replace("__", "/", 1)
-        if repo in successful_repos and key not in open_keys_by_repo[repo]:
-            del state["issues"][key]
+    # A full repository scan can safely prune closed Issues. A targeted scan
+    # cannot infer anything about other Issue keys in the same repository.
+    if target_iid is None:
+        for key in list(state["issues"]):
+            repo = state["issues"][key].get("repo")
+            if not repo:
+                repo = key.rsplit("!", 1)[0].replace("__", "/", 1)
+            if repo in successful_repos and key not in open_keys_by_repo[repo]:
+                del state["issues"][key]
     return events
+
+
+def revalidate_event(event, headers, now, initial_hours, followup_hours, bot_users):
+    """Re-read one Issue immediately before mail delivery."""
+    old_issue = event["issue"]
+    repo, iid = old_issue["repo"], old_issue["iid"]
+    issue = fetch_issue(repo, iid, headers)
+    if issue.get("state") == "closed" or not issue.get("author"):
+        return None
+    comments = _comment_summary(
+        fetch_issue_comments(repo, iid, headers), issue["author"], bot_users,
+    )
+    linked_authors = fetch_linked_pr_authors(repo, iid, headers)
+    if _is_self_handled(issue, linked_authors):
+        return None
+    classified = _classify_waiting_event(
+        issue, comments, now, initial_hours, followup_hours,
+    )
+    if not classified:
+        return None
+    kind, token, waited_hours = classified
+    if f"{kind}:{token}" != event["event_key"]:
+        return None
+    refreshed = dict(event)
+    refreshed.update({
+        "issue": issue,
+        "kind": kind,
+        "token": token,
+        "waited_hours": waited_hours,
+    })
+    return refreshed
 
 
 def main():
     parser = argparse.ArgumentParser(description="Issue 首响与追问超时邮件提醒")
     parser.add_argument("--dry-run", action="store_true", help="扫描并展示，不发送邮件、不更新状态")
     parser.add_argument("--test", metavar="EMAIL", help="只发送一封测试样本，不更新状态")
+    parser.add_argument("--repo", help="仅扫描指定仓库，例如 cann/ge")
+    parser.add_argument("--issue", help="仅处理指定 Issue 编号（需要同时指定 --repo）")
     parser.add_argument("--initial-hours", type=float, help="首次无人响应阈值")
     parser.add_argument("--followup-hours", type=float, help="创建者追问无人响应阈值")
     args = parser.parse_args()
+    if args.issue and not args.repo:
+        parser.error("--issue 需要同时指定 --repo")
 
     rules = load_rules_config()
-    initial_hours = args.initial_hours or rules.get("initial_no_response_hours", DEFAULT_INITIAL_HOURS)
-    followup_hours = args.followup_hours or rules.get("author_followup_hours", DEFAULT_FOLLOWUP_HOURS)
+    initial_hours = (args.initial_hours if args.initial_hours is not None else
+                     rules.get("initial_no_response_hours", DEFAULT_INITIAL_HOURS))
+    followup_hours = (args.followup_hours if args.followup_hours is not None else
+                      rules.get("author_followup_hours", DEFAULT_FOLLOWUP_HOURS))
     bot_users = set(rules.get("bot_users") or [])
+    escalation_users = _dedupe(rules.get("escalation_users") or [])
+    if not escalation_users:
+        print("✗ 未配置 xgz、hyc、yrq 的 GitCode 用户名")
+        return 1
     token = _load_token()
     if not token:
         print("✗ 缺少 config/gitcode_token.txt，无法读取实时 Issue 数据")
@@ -355,67 +421,109 @@ def main():
 
     state = load_state()
     original_state = json.dumps(state, ensure_ascii=False, sort_keys=True)
+    repos = load_notify_repos()
+    if args.repo:
+        if args.repo not in repos:
+            print(f"✗ 仓库 {args.repo} 未在通知范围内")
+            return 1
+        repos = [args.repo]
+    headers = _v5_headers(token)
     events = scan_events(
-        load_notify_repos(), state, _v5_headers(token), _utc_now(),
+        repos, state, headers, _utc_now(),
         float(initial_hours), float(followup_hours), bot_users,
+        target_iid=args.issue,
     )
     print(f"扫描完成：发现 {len(events)} 个待提醒事件")
+    if args.issue and not events:
+        print(f"→ {args.repo}#{args.issue} 当前未命中超时提醒规则")
 
     smtp_cfg = _smtp_config_or_none()
-    escalation_emails = _load_escalation_emails(smtp_cfg)
     mail_map = load_mail_map()
     test_sent = False
     failures = 0
 
     for event in events:
+        if not args.dry_run:
+            try:
+                event = revalidate_event(
+                    event, headers, _utc_now(), float(initial_hours),
+                    float(followup_hours), bot_users,
+                )
+            except Exception as exc:
+                failures += 1
+                issue = event["issue"]
+                print(f"✗ {issue['repo']}#{issue['iid']} 发信前复核失败: {exc}")
+                continue
+            if event is None:
+                print("→ Issue 状态已变化，取消本次发送")
+                continue
         issue = event["issue"]
-        recipients, missing = _event_recipients(
-            issue, event["kind"], mail_map, escalation_emails,
+        required_users = _required_recipient_users(
+            issue, event["kind"], escalation_users,
         )
-        delivered = set(event["notification"].get("delivered") or [])
-        pending = [email for email in recipients if email not in delivered]
+        notification = event["notification"]
+        delivered_users = dict(notification.get("delivered_users") or {})
+        # Compatibility with the unmerged v1 state format.
+        legacy_emails = set(notification.get("delivered") or [])
+        for username in required_users:
+            email = str(mail_map.get(username) or "").strip()
+            if email and email in legacy_emails and username not in delivered_users:
+                delivered_users[username] = {"email": email, "migrated": True}
+        pending_users = [user for user in required_users
+                         if user not in delivered_users]
+        recipients_by_email, missing = _resolve_recipient_users(
+            pending_users, mail_map,
+        )
         label = "首次响应超时" if event["kind"] == "initial" else "创建者追问超时"
         subject = f"[CANN Radar] {label}: {issue['repo']}#{issue['iid']}"
         body = build_html_email(issue, event["kind"], event["waited_hours"])
 
         if args.dry_run:
-            print(f"→ {issue['repo']}#{issue['iid']} {label}: {len(recipients)} 位收件人 [dry-run]")
+            _, dry_run_missing = _resolve_recipient_users(required_users, mail_map)
+            print(f"→ {issue['repo']}#{issue['iid']} {label}: "
+                  f"{len(required_users) - len(dry_run_missing)} 位收件人 [dry-run]")
             continue
         if args.test:
             if not test_sent:
                 if smtp_cfg is None:
                     print("✗ SMTP 配置不存在")
                     return 1
-                send_one_email(smtp_cfg, args.test, f"[TEST] {subject}", body)
-                print(f"✓ 已发送测试样本到 {args.test}")
-                test_sent = True
-            continue
-        if event["kind"] == "initial" and not escalation_emails:
-            print("✗ 未配置 xgz、hyc、wrq 的升级邮箱（ISSUE_RESPONSE_ESCALATION_TO）")
-            failures += 1
-            continue
-        if event["kind"] == "followup" and not issue.get("assignees") and not escalation_emails:
-            print("✗ Issue 无责任人且未配置 xgz、hyc、wrq 的升级邮箱")
-            failures += 1
+                try:
+                    send_one_email(smtp_cfg, args.test, f"[TEST] {subject}", body)
+                except Exception as exc:
+                    print(f"✗ 测试邮件发送失败: {exc}")
+                    return 1
+                else:
+                    print(f"✓ 已发送测试样本到 {args.test}")
+                    test_sent = True
             continue
         if smtp_cfg is None:
             print("✗ SMTP 配置不存在")
             return 1
 
-        for email in pending:
+        for email, usernames in recipients_by_email.items():
             try:
                 send_one_email(smtp_cfg, email, subject, body)
-                delivered.add(email)
+                sent_at = _utc_now().isoformat(timespec="seconds")
+                for username in usernames:
+                    delivered_users[username] = {
+                        "email": email,
+                        "sent_at": sent_at,
+                    }
             except Exception as exc:
                 failures += 1
                 print(f"✗ {issue['repo']}#{issue['iid']} 邮件发送失败: {exc}")
-        event["notification"]["delivered"] = sorted(delivered)
         if missing:
             failures += 1
-            print(f"⚠ 以下责任人缺少邮箱映射，事件将继续重试: {', '.join(missing)}")
-        event["notification"]["completed"] = not missing and set(recipients) <= delivered
-        if event["notification"]["completed"]:
-            event["notification"]["completed_at"] = _utc_now().isoformat(timespec="seconds")
+            print(f"⚠ 以下收件人缺少邮箱映射，后续将继续尝试: {', '.join(missing)}")
+        notification["delivered_users"] = delivered_users
+        notification["required_users"] = required_users
+        notification["satisfied"] = all(
+            username in delivered_users for username in required_users
+        )
+        notification["last_checked_at"] = _utc_now().isoformat(timespec="seconds")
+        if notification["satisfied"]:
+            notification["satisfied_at"] = notification["last_checked_at"]
 
     if not args.dry_run and not args.test:
         state["last_run"] = _utc_now().isoformat(timespec="seconds")

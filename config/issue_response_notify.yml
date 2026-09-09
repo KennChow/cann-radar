@@ -1,5 +1,12 @@
 initial_no_response_hours: 12
 author_followup_hours: 3
 
+# 固定升级联系人：xgz、hyc、yrq。邮箱由私有的
+# gitcode_2_mail.txt 在运行时按 GitCode 用户名解析。
+escalation_users:
+  - Mexyy
+  - m0_50621083
+  - spring_yb
+
 # 机器人评论不计为有效响应。按实际 GitCode 用户名补充。
 bot_users: []

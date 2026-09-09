@@ -223,26 +223,28 @@ python admin_summary.py --test your_email@example.com
 
 | 场景 | 触发条件 | 收件人 |
 |---|---|---|
-| 首次响应超时 | 创建超过 12 小时，仍无非创建者的有效评论 | 有责任人：责任人 + xgz、hyc、wrq；无责任人：xgz、hyc、wrq |
-| 创建者追问超时 | 曾有非创建者响应，最新评论为创建者且已超过 3 小时 | 有责任人：责任人；无责任人：xgz、hyc、wrq |
+| 首次响应超时 | 创建超过 12 小时，仍无非创建者的有效评论 | 有责任人：责任人 + xgz、hyc、yrq；无责任人：xgz、hyc、yrq |
+| 创建者追问超时 | 曾有非创建者响应，最新评论为创建者且已超过 3 小时 | 有责任人：责任人；无责任人：xgz、hyc、yrq |
 
 机器人评论不计为有效评论。创建者连续评论属于同一轮等待，以最后一条评论
-重新计算 3 小时；同一轮只提醒一次。状态记录保存在
+重新计算 3 小时。同一轮对同一位 GitCode 用户只成功发送一次；责任人变化时，
+只对新增责任人补发。状态记录保存在
 `data/issue_response_notified.json`。
 
 ### 部署配置
 
-在 GitHub 仓库设置中创建 Secret `ISSUE_RESPONSE_ESCALATION_TO`，值为 xgz、
-hyc、wrq 的完整邮箱地址，以英文逗号分隔。也可以在私有仓库的
-`smtp_config.ini` 中增加：
+固定联系人在 `config/issue_response_notify.yml` 中使用 GitCode 用户名配置：
 
-```ini
-[issue_response]
-escalation_to = xgz@example.com,hyc@example.com,wrq@example.com
+```yaml
+escalation_users:
+  - Mexyy       # xgz
+  - m0_50621083 # hyc
+  - spring_yb   # yrq
 ```
 
-邮箱示例必须替换为真实地址。责任人的邮箱继续从私有的
-`gitcode_2_mail.txt` 读取。
+固定联系人和责任人的邮箱均在运行时从私有的
+`gitcode_2_mail.txt` 读取，公开仓库不保存真实邮箱。正式发信前会重新读取
+Issue 状态、责任人、评论和关联 PR，状态已变化时取消发送。
 
 ### 测试方式
 
@@ -252,6 +254,9 @@ python issue_response_notify.py --dry-run
 
 # 将第一封候选邮件发送到测试邮箱，不通知真实收件人、不修改去重状态
 python issue_response_notify.py --test your_email@example.com
+
+# 指定仓库和 Issue 发送一封测试样本
+python issue_response_notify.py --test your_email@example.com --repo cann/ge --issue 558
 
 # 缩短阈值进行测试
 python issue_response_notify.py --dry-run --initial-hours 0.1 --followup-hours 0.1

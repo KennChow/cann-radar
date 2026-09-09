@@ -16,9 +16,17 @@ on:
         type: boolean
         default: true
       test_email:
-        description: '测试邮箱（只发送一封样本）'
+        description: '测试邮箱（只发送一封样本，不通知真实责任人）'
         type: string
-        default: ''
+        default: 'hongyuecheng@huawei.com'
+      test_repo:
+        description: '指定测试仓库'
+        type: string
+        default: 'cann/ge'
+      test_issue:
+        description: '指定测试 Issue 编号（留空则使用第一个候选）'
+        type: string
+        default: '558'
       initial_hours:
         description: '首次无人响应阈值（小时）'
         type: number
@@ -80,16 +88,20 @@ jobs:
 
       - name: Scan and notify
         env:
-          ISSUE_RESPONSE_ESCALATION_TO: ${{ secrets.ISSUE_RESPONSE_ESCALATION_TO }}
           RUN_EVENT: ${{ github.event_name }}
           DRY_RUN: ${{ inputs.dry_run }}
           TEST_EMAIL: ${{ inputs.test_email }}
+          TEST_REPO: ${{ inputs.test_repo }}
+          TEST_ISSUE: ${{ inputs.test_issue }}
           INITIAL_HOURS: ${{ inputs.initial_hours }}
           FOLLOWUP_HOURS: ${{ inputs.followup_hours }}
         run: |
           CMD=(python issue_response_notify.py)
           if [ "$RUN_EVENT" = "workflow_dispatch" ]; then
             CMD+=(--initial-hours "$INITIAL_HOURS" --followup-hours "$FOLLOWUP_HOURS")
+            if [ -n "$TEST_ISSUE" ] && { [ "$DRY_RUN" = "true" ] || [ -n "$TEST_EMAIL" ]; }; then
+              CMD+=(--repo "$TEST_REPO" --issue "$TEST_ISSUE")
+            fi
             if [ "$DRY_RUN" = "true" ]; then
               CMD+=(--dry-run)
             elif [ -n "$TEST_EMAIL" ]; then
@@ -106,5 +118,6 @@ jobs:
           git add data/issue_response_notified.json
           git diff --staged --quiet && echo "No tracking changes" || (
             git commit -m "chore: 更新 Issue 响应提醒记录 $(date -u '+%Y-%m-%dT%H:%MZ')"
-            git push
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
           )
