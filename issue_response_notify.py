@@ -472,7 +472,7 @@ def main():
         for username in required_users:
             email = str(mail_map.get(username) or "").strip()
             if email and email in legacy_emails and username not in delivered_users:
-                delivered_users[username] = {"email": email, "migrated": True}
+                delivered_users[username] = {"migrated": True}
         pending_users = [user for user in required_users
                          if user not in delivered_users]
         recipients_by_email, missing = _resolve_recipient_users(
@@ -511,7 +511,6 @@ def main():
                 sent_at = _utc_now().isoformat(timespec="seconds")
                 for username in usernames:
                     delivered_users[username] = {
-                        "email": email,
                         "sent_at": sent_at,
                     }
             except Exception as exc:

@@ -1,3 +1,4 @@
+import json
 import sys
 import tempfile
 import unittest
@@ -164,7 +165,7 @@ class IssueResponseNotifyTests(unittest.TestCase):
                     "repo": "cann/ge", "comment_count": 0, "comments": summary,
                     "notifications": {
                         "initial:2026-09-07T00:00:00+00:00": {
-                            "delivered_users": {"bob": {"email": "bob@example.com"}},
+                            "delivered_users": {"bob": {"sent_at": "2026-09-07T01:00:00Z"}},
                             "satisfied": True,
                         }
                     },
@@ -257,7 +258,7 @@ class IssueResponseNotifyTests(unittest.TestCase):
 
     def test_main_only_sends_to_new_assignee_in_same_event(self):
         notification = {
-            "delivered_users": {"bob": {"email": "bob@example.com"}},
+            "delivered_users": {"bob": {"sent_at": "2026-09-07T01:00:00Z"}},
             "satisfied": True,
         }
         refreshed = event(
@@ -282,6 +283,7 @@ class IssueResponseNotifyTests(unittest.TestCase):
         send.assert_called_once()
         self.assertEqual(send.call_args.args[1], "carol@example.com")
         self.assertEqual(set(notification["delivered_users"]), {"bob", "carol"})
+        self.assertNotIn("carol@example.com", json.dumps(notification))
         self.assertTrue(notification["satisfied"])
         save.assert_called_once()
 
