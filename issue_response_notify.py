@@ -412,7 +412,7 @@ def main():
     bot_users = set(rules.get("bot_users") or [])
     escalation_users = _dedupe(rules.get("escalation_users") or [])
     if not escalation_users:
-        print("✗ 未配置 xgz、hyc、yrq 的 GitCode 用户名")
+        print("✗ 未配置 xia、hong、yuan 的 GitCode 用户名")
         return 1
     token = _load_token()
     if not token:

@@ -123,11 +123,11 @@ class IssueResponseNotifyTests(unittest.TestCase):
             ["bob", "Mexyy", "m0_50621083", "spring_yb"],
             {
                 "bob": "shared@example.com", "Mexyy": "shared@example.com",
-                "m0_50621083": "hyc@example.com",
+                "m0_50621083": "hong@example.com",
             },
         )
         self.assertEqual(by_email["shared@example.com"], ["bob", "Mexyy"])
-        self.assertEqual(by_email["hyc@example.com"], ["m0_50621083"])
+        self.assertEqual(by_email["hong@example.com"], ["m0_50621083"])
         self.assertEqual(missing, ["spring_yb"])
 
     def test_scan_reuses_comment_summary_when_count_is_unchanged(self):

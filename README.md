@@ -223,8 +223,8 @@ python admin_summary.py --test your_email@example.com
 
 | 场景 | 触发条件 | 收件人 |
 |---|---|---|
-| 首次响应超时 | 创建超过 12 小时，仍无非创建者的有效评论 | 有责任人：责任人 + xgz、hyc、yrq；无责任人：xgz、hyc、yrq |
-| 创建者追问超时 | 曾有非创建者响应，最新评论为创建者且已超过 3 小时 | 有责任人：责任人；无责任人：xgz、hyc、yrq |
+| 首次响应超时 | 创建超过 12 小时，仍无非创建者的有效评论 | 有责任人：责任人 + xia、hong、yuan；无责任人：xia、hong、yuan |
+| 创建者追问超时 | 曾有非创建者响应，最新评论为创建者且已超过 3 小时 | 有责任人：责任人；无责任人：xia、hong、yuan |
 
 机器人评论不计为有效评论。创建者连续评论属于同一轮等待，以最后一条评论
 重新计算 3 小时。同一轮对同一位 GitCode 用户只成功发送一次；责任人变化时，
@@ -237,9 +237,9 @@ python admin_summary.py --test your_email@example.com
 
 ```yaml
 escalation_users:
-  - Mexyy       # xgz
-  - m0_50621083 # hyc
-  - spring_yb   # yrq
+  - Mexyy       # xia
+  - m0_50621083 # hong
+  - spring_yb   # yuan
 ```
 
 固定联系人和责任人的邮箱均在运行时从私有的
