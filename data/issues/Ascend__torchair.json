@@ -1,5 +1,23 @@
 [
   {
+    "iid": "780",
+    "state": "opened",
+    "created_at": "2026-09-12",
+    "closed_at": "",
+    "author": "WSs_321",
+    "author_id": "6822b062e4b985165b4af599",
+    "title": "新增 GitCode CI/CD 流水线：构建、ST、代码检查与覆盖率",
+    "labels": [],
+    "issue_type": "Bug-Report",
+    "issue_state": "TODO",
+    "assignees": [
+      "stevenaw0"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/780",
+    "working_days_open": 0
+  },
+  {
     "iid": "779",
     "state": "opened",
     "created_at": "2026-09-11",
@@ -124,17 +142,18 @@
   },
   {
     "iid": "773",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-10",
-    "closed_at": "",
+    "closed_at": "2026-09-12",
     "author": "stevenaw0",
     "author_id": "6916dca9c78473272b7d572b",
     "title": "[Bug]: AscendC 后端 upsample_nearest2d 分解导致多间接索引报错与 AICPU Index 性能问题",
     "labels": [
-      "bug"
+      "bug",
+      "resolved"
     ],
     "issue_type": "Bug-Report",
-    "issue_state": "TODO",
+    "issue_state": "DONE",
     "assignees": [
       "stevenaw0"
     ],

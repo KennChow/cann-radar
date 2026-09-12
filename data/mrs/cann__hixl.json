@@ -1,5 +1,24 @@
 [
   {
+    "iid": 1045,
+    "state": "opened",
+    "draft": false,
+    "title": "[docs]: 补齐 mooncake store 样例必填 --rank 并说明 HCCS 仅支持 D2D",
+    "created_at": "2026-09-12",
+    "updated_at": "2026-09-12",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "M__Cheng",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1045",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1044,
     "state": "opened",
     "draft": false,
@@ -2325,7 +2344,7 @@
     "draft": false,
     "title": "feat: 支持配置每批最大传输数量及队列深度(#559)",
     "created_at": "2026-08-20",
-    "updated_at": "2026-09-11",
+    "updated_at": "2026-09-12",
     "merged_at": "",
     "closed_at": "",
     "author": "jiazhaoyang",
@@ -2333,7 +2352,8 @@
     "labels": [
       "api-check-pass",
       "cann-cla/yes",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 17,
     "e2e_issues": [
@@ -3068,15 +3088,14 @@
     "draft": false,
     "title": "[feat]: 放开HixlEngine注销内存必须断链的限制",
     "created_at": "2026-08-13",
-    "updated_at": "2026-09-11",
+    "updated_at": "2026-09-12",
     "merged_at": "",
     "closed_at": "",
     "author": "M__Cheng",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/893",
     "labels": [
       "stat/needs-squash",
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "cann-cla/yes"
     ],
     "working_days_open": 22,
     "e2e_issues": []
