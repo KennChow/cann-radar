@@ -191,11 +191,11 @@ class IssueResponseNotifyTests(unittest.TestCase):
 
     def test_targeted_scan_does_not_prune_other_issue_state(self):
         state = {"version": 2, "issues": {"cann__ge!9": {"repo": "cann/ge"}}}
-        with patch.object(notify, "fetch_issue", return_value=issue(iid="558")), \
+        with patch.object(notify, "fetch_issue", return_value=issue(iid="123")), \
              patch.object(notify, "fetch_issue_comments", return_value=[]), \
              patch.object(notify, "fetch_linked_pr_authors", return_value=set()):
             events = notify.scan_events(
-                ["cann/ge"], state, {}, NOW, 12, 3, set(), target_iid="558",
+                ["cann/ge"], state, {}, NOW, 12, 3, set(), target_iid="123",
             )
         self.assertEqual(len(events), 1)
         self.assertIn("cann__ge!9", state["issues"])
@@ -348,12 +348,12 @@ class IssueResponseNotifyTests(unittest.TestCase):
 
     def test_main_test_mode_uses_exact_issue_and_does_not_save_state(self):
         notification = {"delivered_users": {}}
-        selected = event(current_issue=issue(iid="558"), notification=notification)
+        selected = event(current_issue=issue(iid="123"), notification=notification)
         state = {"version": 2, "issues": {}}
-        test_email = "hongyuecheng@huawei.com"
+        test_email = "test@example.com"
         with patch.object(
             sys, "argv", ["issue_response_notify.py", "--test", test_email,
-                          "--repo", "cann/ge", "--issue", "558"]
+                          "--repo", "cann/ge", "--issue", "123"]
         ), patch.object(notify, "_load_token", return_value="token"), \
              patch.object(notify, "load_rules_config", return_value=rules()), \
              patch.object(notify, "load_notify_repos", return_value=["cann/ge"]), \
@@ -365,11 +365,11 @@ class IssueResponseNotifyTests(unittest.TestCase):
              patch.object(notify, "send_one_email") as send, \
              patch.object(notify, "save_json") as save:
             self.assertEqual(notify.main(), 0)
-        self.assertEqual(scan.call_args.kwargs["target_iid"], "558")
+        self.assertEqual(scan.call_args.kwargs["target_iid"], "123")
         send.assert_called_once()
         self.assertEqual(send.call_args.args[1], test_email)
         self.assertTrue(send.call_args.args[2].startswith("[TEST] "))
-        self.assertIn("#558", send.call_args.args[3])
+        self.assertIn("#123", send.call_args.args[3])
         save.assert_not_called()
         self.assertEqual(notification, {"delivered_users": {}})
 

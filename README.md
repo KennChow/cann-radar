@@ -265,7 +265,7 @@ python issue_response_notify.py --dry-run
 python issue_response_notify.py --test your_email@example.com
 
 # 指定仓库和 Issue 发送一封测试样本
-python issue_response_notify.py --test your_email@example.com --repo cann/ge --issue 558
+python issue_response_notify.py --test your_email@example.com --repo cann/ge --issue 123
 
 # 缩短阈值进行测试
 python issue_response_notify.py --dry-run --initial-hours 0.1 --followup-hours 0.1

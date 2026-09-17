@@ -18,7 +18,7 @@ on:
       test_email:
         description: '测试邮箱（只发送一封样本，不通知真实责任人）'
         type: string
-        default: 'hongyuecheng@huawei.com'
+        default: ''
       test_repo:
         description: '指定测试仓库'
         type: string
@@ -26,7 +26,7 @@ on:
       test_issue:
         description: '指定测试 Issue 编号（留空则使用第一个候选）'
         type: string
-        default: '558'
+        default: ''
       initial_hours:
         description: '首次无人响应阈值（小时）'
         type: number
