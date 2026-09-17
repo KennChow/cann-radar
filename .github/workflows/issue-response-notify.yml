@@ -111,7 +111,8 @@ jobs:
           "${CMD[@]}"
 
       - name: Commit notification state
-        if: github.event_name == 'schedule' || (inputs.dry_run == false && inputs.test_email == '')
+        # 即使部分收件人发送失败，也必须保存其他收件人的成功记录，避免下次重复发送。
+        if: always() && (github.event_name == 'schedule' || (inputs.dry_run == false && inputs.test_email == ''))
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

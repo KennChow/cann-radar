@@ -11,6 +11,7 @@ persisted so unchanged Issues do not repeatedly fetch all comments or resend mai
 """
 
 import argparse
+import copy
 import configparser
 import html
 import json
@@ -77,25 +78,28 @@ def _comment_summary(comments, author, bot_users=None):
     """Return only the state needed by the two reminder rules."""
     bot_users = set(bot_users or [])
     valid = []
-    for comment in comments:
+    for sequence, comment in enumerate(comments):
         login = _login(comment.get("user"))
         created_at = comment.get("created_at") or ""
-        if not login or not _parse_time(created_at) or _is_bot_comment(comment, bot_users):
+        parsed_at = _parse_time(created_at)
+        if not login or not parsed_at or _is_bot_comment(comment, bot_users):
             continue
         valid.append((
-            _parse_time(created_at), str(comment.get("id") or created_at),
-            login, created_at,
+            parsed_at, sequence, str(comment.get("id") or created_at), login, created_at,
         ))
+    # The API is requested with order=asc. Preserve that order when multiple
+    # comments share the same timestamp instead of comparing string IDs (where
+    # e.g. "9" would sort after "10").
     valid.sort(key=lambda item: (item[0], item[1]))
-    non_author = [item for item in valid if item[2] != author]
+    non_author = [item for item in valid if item[3] != author]
     latest = valid[-1] if valid else None
     latest_non_author = non_author[-1] if non_author else None
     return {
         "has_non_author_response": bool(non_author),
-        "latest_comment_id": latest[1] if latest else "",
-        "latest_comment_author": latest[2] if latest else "",
-        "latest_comment_at": latest[3] if latest else "",
-        "latest_non_author_comment_id": latest_non_author[1] if latest_non_author else "",
+        "latest_comment_id": latest[2] if latest else "",
+        "latest_comment_author": latest[3] if latest else "",
+        "latest_comment_at": latest[4] if latest else "",
+        "latest_non_author_comment_id": latest_non_author[2] if latest_non_author else "",
     }
 
 
@@ -297,69 +301,89 @@ def _smtp_config_or_none():
     return cfg
 
 
+def _state_record_repo(key, record):
+    return record.get("repo") or key.rsplit("!", 1)[0].replace("__", "/", 1)
+
+
 def scan_events(repos, state, headers, now, initial_hours, followup_hours, bot_users,
-                target_iid=None):
+                target_iid=None, repo_failures=None):
     events = []
     successful_repos = set()
     open_keys_by_repo = {}
+    repo_failures = repo_failures if repo_failures is not None else []
     for repo in repos:
-        if target_iid is None:
-            issues = fetch_open_issues(repo, headers)
-        else:
-            target = fetch_issue(repo, target_iid, headers)
-            issues = [] if target.get("state") == "closed" else [target]
-        open_keys = set()
-        for issue in issues:
-            if issue.get("iid") is None or not issue.get("author"):
-                continue
-            key = _issue_key(repo, issue["iid"])
-            open_keys.add(key)
-            record = state["issues"].setdefault(key, {})
-            record["repo"] = repo
-            cached_summary = record.get("comments")
-            comments_changed = (
-                cached_summary is None
-                or record.get("comment_count") != issue["comment_count"]
-                or bool(issue.get("updated_at") and
-                        record.get("issue_updated_at") != issue["updated_at"])
-            )
-            if comments_changed:
-                comments = fetch_issue_comments(repo, issue["iid"], headers)
-                cached_summary = _comment_summary(comments, issue["author"], bot_users)
-                record["comments"] = cached_summary
-                record["comment_count"] = issue["comment_count"]
-                record["issue_updated_at"] = issue.get("updated_at") or ""
-            event = _classify_waiting_event(
-                issue, cached_summary, now, initial_hours, followup_hours,
-            )
-            if not event:
-                continue
-            linked_authors = fetch_linked_pr_authors(repo, issue["iid"], headers)
-            if _is_self_handled(issue, linked_authors):
-                continue
-            kind, token, waited_hours = event
-            event_key = f"{kind}:{token}"
-            notifications = record.setdefault("notifications", {})
-            notification = notifications.setdefault(
-                event_key, {"delivered_users": {}},
-            )
-            if not isinstance(notification.get("delivered_users"), dict):
-                notification["delivered_users"] = {}
-            events.append({
-                "issue": issue, "kind": kind, "token": token,
-                "event_key": event_key, "waited_hours": waited_hours,
-                "notification": notification,
-            })
-        open_keys_by_repo[repo] = open_keys
-        successful_repos.add(repo)
+        repo_snapshot = {
+            key: copy.deepcopy(record)
+            for key, record in state["issues"].items()
+            if _state_record_repo(key, record) == repo
+        }
+        event_start = len(events)
+        try:
+            if target_iid is None:
+                issues = fetch_open_issues(repo, headers)
+            else:
+                target = fetch_issue(repo, target_iid, headers)
+                issues = [] if target.get("state") == "closed" else [target]
+            open_keys = set()
+            for issue in issues:
+                if issue.get("iid") is None or not issue.get("author"):
+                    continue
+                key = _issue_key(repo, issue["iid"])
+                open_keys.add(key)
+                record = state["issues"].setdefault(key, {})
+                record["repo"] = repo
+                cached_summary = record.get("comments")
+                comments_changed = (
+                    cached_summary is None
+                    or record.get("comment_count") != issue["comment_count"]
+                    or bool(issue.get("updated_at") and
+                            record.get("issue_updated_at") != issue["updated_at"])
+                )
+                if comments_changed:
+                    comments = fetch_issue_comments(repo, issue["iid"], headers)
+                    cached_summary = _comment_summary(comments, issue["author"], bot_users)
+                    record["comments"] = cached_summary
+                    record["comment_count"] = issue["comment_count"]
+                    record["issue_updated_at"] = issue.get("updated_at") or ""
+                event = _classify_waiting_event(
+                    issue, cached_summary, now, initial_hours, followup_hours,
+                )
+                if not event:
+                    continue
+                linked_authors = fetch_linked_pr_authors(repo, issue["iid"], headers)
+                if _is_self_handled(issue, linked_authors):
+                    continue
+                kind, token, waited_hours = event
+                event_key = f"{kind}:{token}"
+                notifications = record.setdefault("notifications", {})
+                notification = notifications.setdefault(
+                    event_key, {"delivered_users": {}},
+                )
+                if not isinstance(notification.get("delivered_users"), dict):
+                    notification["delivered_users"] = {}
+                events.append({
+                    "issue": issue, "kind": kind, "token": token,
+                    "event_key": event_key, "waited_hours": waited_hours,
+                    "notification": notification,
+                })
+            open_keys_by_repo[repo] = open_keys
+            successful_repos.add(repo)
+        except Exception as exc:
+            # Discard partial observations for this repository only. Other
+            # repositories can still be scanned and notified in this run.
+            for key in list(state["issues"]):
+                if _state_record_repo(key, state["issues"][key]) == repo:
+                    del state["issues"][key]
+            state["issues"].update(repo_snapshot)
+            del events[event_start:]
+            repo_failures.append((repo, str(exc)))
+            print(f"✗ {repo} 扫描失败，继续处理其他仓库: {exc}")
 
     # A full repository scan can safely prune closed Issues. A targeted scan
     # cannot infer anything about other Issue keys in the same repository.
     if target_iid is None:
         for key in list(state["issues"]):
-            repo = state["issues"][key].get("repo")
-            if not repo:
-                repo = key.rsplit("!", 1)[0].replace("__", "/", 1)
+            repo = _state_record_repo(key, state["issues"][key])
             if repo in successful_repos and key not in open_keys_by_repo[repo]:
                 del state["issues"][key]
     return events
@@ -432,10 +456,11 @@ def main():
             return 1
         repos = [args.repo]
     headers = _v5_headers(token)
+    repo_failures = []
     events = scan_events(
         repos, state, headers, _utc_now(),
         float(initial_hours), float(followup_hours), bot_users,
-        target_iid=args.issue,
+        target_iid=args.issue, repo_failures=repo_failures,
     )
     print(f"扫描完成：发现 {len(events)} 个待提醒事件")
     if args.issue and not events:
@@ -444,7 +469,7 @@ def main():
     smtp_cfg = _smtp_config_or_none()
     mail_map = load_mail_map()
     test_sent = False
-    failures = 0
+    failures = len(repo_failures)
 
     for event in events:
         if not args.dry_run:

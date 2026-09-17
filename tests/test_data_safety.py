@@ -38,6 +38,7 @@ class DataSafetyTests(unittest.TestCase):
         self.assertIn('needs: test', response)
         self.assertIn('python -m pytest -q', response)
         self.assertIn('git pull --rebase', response)
+        self.assertIn('if: always()', response)
         self.assertIn('python -m pytest -q', gitcode)
 
     def test_legacy_admin_email_builders_are_removed(self):

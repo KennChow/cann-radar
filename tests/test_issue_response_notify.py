@@ -89,6 +89,14 @@ class IssueResponseNotifyTests(unittest.TestCase):
         ], "alice")
         self.assertIsNone(notify._classify_waiting_event(issue(), summary, NOW, 12, 3))
 
+    def test_comments_in_same_second_preserve_api_order(self):
+        summary = notify._comment_summary([
+            comment(9, "bob", "2026-09-07T09:00:00+00:00"),
+            comment(10, "alice", "2026-09-07T09:00:00+00:00"),
+        ], "alice")
+        self.assertEqual(summary["latest_comment_id"], "10")
+        self.assertEqual(summary["latest_comment_author"], "alice")
+
     def test_bot_comment_is_ignored(self):
         summary = notify._comment_summary([
             comment(1, "service", "2026-09-07T08:00:00+00:00", "Bot"),
@@ -192,6 +200,28 @@ class IssueResponseNotifyTests(unittest.TestCase):
         self.assertEqual(len(events), 1)
         self.assertIn("cann__ge!9", state["issues"])
 
+    def test_repository_failure_does_not_block_other_repositories(self):
+        state = {
+            "version": 2,
+            "issues": {
+                "cann__ge!9": {"repo": "cann/ge", "marker": "keep"},
+            },
+        }
+        repo_failures = []
+        metadef_issue = issue(repo="cann/metadef")
+        with patch.object(notify, "fetch_open_issues", side_effect=[
+            RuntimeError("temporary API error"), [metadef_issue],
+        ]), patch.object(notify, "fetch_issue_comments", return_value=[]), \
+             patch.object(notify, "fetch_linked_pr_authors", return_value=set()):
+            events = notify.scan_events(
+                ["cann/ge", "cann/metadef"], state, {}, NOW, 12, 3, set(),
+                repo_failures=repo_failures,
+            )
+        self.assertEqual(repo_failures, [("cann/ge", "temporary API error")])
+        self.assertEqual(len(events), 1)
+        self.assertEqual(events[0]["issue"]["repo"], "cann/metadef")
+        self.assertEqual(state["issues"]["cann__ge!9"]["marker"], "keep")
+
     def test_revalidation_cancels_when_issue_is_closed(self):
         with patch.object(notify, "fetch_issue", return_value=issue(state="closed")), \
              patch.object(notify, "fetch_issue_comments") as fetch_comments:
@@ -285,6 +315,35 @@ class IssueResponseNotifyTests(unittest.TestCase):
         self.assertEqual(set(notification["delivered_users"]), {"bob", "carol"})
         self.assertNotIn("carol@example.com", json.dumps(notification))
         self.assertTrue(notification["satisfied"])
+        save.assert_called_once()
+
+    def test_main_saves_successful_recipient_when_another_send_fails(self):
+        notification = {"delivered_users": {}}
+        current = event(
+            kind="followup",
+            current_issue=issue(assignees=["bob", "carol"]),
+            notification=notification,
+        )
+        state = {"version": 2, "issues": {}}
+        with patch.object(sys, "argv", ["issue_response_notify.py"]), \
+             patch.object(notify, "_load_token", return_value="token"), \
+             patch.object(notify, "load_rules_config", return_value=rules()), \
+             patch.object(notify, "load_notify_repos", return_value=["cann/ge"]), \
+             patch.object(notify, "load_state", return_value=state), \
+             patch.object(notify, "scan_events", return_value=[current]), \
+             patch.object(notify, "revalidate_event", return_value=current), \
+             patch.object(notify, "_smtp_config_or_none", return_value=object()), \
+             patch.object(notify, "load_mail_map", return_value={
+                 "bob": "bob@example.com", "carol": "carol@example.com",
+             }), patch.object(notify, "_utc_now", return_value=NOW), \
+             patch.object(
+                 notify, "send_one_email",
+                 side_effect=[None, RuntimeError("SMTP timeout")],
+             ), patch.object(notify, "save_json") as save:
+            self.assertEqual(notify.main(), 1)
+        self.assertIn("bob", notification["delivered_users"])
+        self.assertNotIn("carol", notification["delivered_users"])
+        self.assertFalse(notification["satisfied"])
         save.assert_called_once()
 
     def test_main_test_mode_uses_exact_issue_and_does_not_save_state(self):
