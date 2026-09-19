@@ -1,18 +1,234 @@
 [
   {
-    "iid": 2186,
+    "iid": 2197,
     "state": "opened",
     "draft": false,
-    "title": "fix: IndirectLoad SIMT gather补齐UB窗口对齐尾区，修复融合Reduce非对齐场景板上精度问题",
-    "created_at": "2026-09-18",
+    "title": "fix(att): propagate evidence command failures",
+    "created_at": "2026-09-19",
     "updated_at": "2026-09-19",
     "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2197",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "323"
+    ]
+  },
+  {
+    "iid": 2196,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(att): propagate summary command failures",
+    "created_at": "2026-09-19",
+    "updated_at": "2026-09-19",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2196",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "322"
+    ]
+  },
+  {
+    "iid": 2195,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: propagate ATT compare failures",
+    "created_at": "2026-09-19",
+    "updated_at": "2026-09-19",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2195",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "321"
+    ]
+  },
+  {
+    "iid": 2194,
+    "state": "merged",
+    "draft": false,
+    "title": "ci: SuperKernel Cpp UT/ST 仅在 master 基线执行",
+    "created_at": "2026-09-19",
+    "updated_at": "2026-09-19",
+    "merged_at": "2026-09-19",
+    "closed_at": "",
+    "author": "songchangxia",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2194",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "133"
+    ]
+  },
+  {
+    "iid": 2193,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 放开多输入多级Broadcast非单公共轴-base master",
+    "created_at": "2026-09-19",
+    "updated_at": "2026-09-19",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wei_shi",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2193",
+    "labels": [
+      "enhancement",
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2192,
+    "state": "opened",
+    "draft": true,
+    "title": "[WIP]【PR】: 适配int64->bf16",
+    "created_at": "2026-09-19",
+    "updated_at": "2026-09-19",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wangdingjun",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2192",
+    "labels": [
+      "cann-cla/no",
+      "enhancement"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2191,
+    "state": "closed",
+    "draft": false,
+    "title": "【PR】: 简要描述",
+    "created_at": "2026-09-19",
+    "updated_at": "2026-09-19",
+    "merged_at": "",
+    "closed_at": "2026-09-19",
+    "author": "wangdingjun",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2191",
+    "labels": [
+      "cann-cla/no",
+      "enhancement",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2190,
+    "state": "closed",
+    "draft": false,
+    "title": "【PR】: 简要描述",
+    "created_at": "2026-09-19",
+    "updated_at": "2026-09-19",
+    "merged_at": "",
+    "closed_at": "2026-09-19",
+    "author": "wangdingjun",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2190",
+    "labels": [
+      "cann-cla/no",
+      "enhancement",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2189,
+    "state": "opened",
+    "draft": false,
+    "title": "【fix】: 增加nddma模板处理过程越界保护&&适配A6 9201",
+    "created_at": "2026-09-19",
+    "updated_at": "2026-09-19",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "WangYanMale",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2189",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed",
+      "enhancement"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2188,
+    "state": "closed",
+    "draft": false,
+    "title": "【PR】: 支持int64->bf16",
+    "created_at": "2026-09-19",
+    "updated_at": "2026-09-19",
+    "merged_at": "",
+    "closed_at": "2026-09-19",
+    "author": "wangdingjun",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2188",
+    "labels": [
+      "stat/needs-squash",
+      "enhancement",
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2187,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 放开多输入多级Broadcast非单公共轴",
+    "created_at": "2026-09-19",
+    "updated_at": "2026-09-19",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wei_shi",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2187",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2186,
+    "state": "merged",
+    "draft": false,
+    "title": "fix: 激活IndirectLoad SIMT的SIMT保留区宏，修复maskBuf与SIMT运行时冲突导致的融合Reduce板上精度问题",
+    "created_at": "2026-09-18",
+    "updated_at": "2026-09-19",
+    "merged_at": "2026-09-19",
     "closed_at": "",
     "author": "xiebangrui2025",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2186",
     "labels": [
-      "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm",
+      "cann-cla/yes"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -42,15 +258,14 @@
     "draft": false,
     "title": "[PR]:  sync develop to master 20260918",
     "created_at": "2026-09-18",
-    "updated_at": "2026-09-18",
+    "updated_at": "2026-09-19",
     "merged_at": "",
     "closed_at": "",
     "author": "yangyongqiang0606",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2184",
     "labels": [
-      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "stat/needs-squash"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -402,13 +617,14 @@
     "draft": false,
     "title": "fix: 暂停Broadcast backward局部判断",
     "created_at": "2026-09-18",
-    "updated_at": "2026-09-18",
+    "updated_at": "2026-09-19",
     "merged_at": "",
     "closed_at": "",
     "author": "wei_shi",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2166",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "stat/needs-squash"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -459,14 +675,16 @@
     "draft": false,
     "title": "【PR】: 简要描述 修复精度问题",
     "created_at": "2026-09-17",
-    "updated_at": "2026-09-18",
+    "updated_at": "2026-09-19",
     "merged_at": "",
     "closed_at": "",
     "author": "luo-lipeng",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2163",
     "labels": [
       "enhancement",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed",
+      "stat/needs-squash"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -603,15 +821,16 @@
   {
     "iid": 2156,
     "state": "opened",
-    "draft": true,
-    "title": "[WIP]【PR】: reduce算子融合问题分析：vf算子不支持融合Broadcast",
+    "draft": false,
+    "title": "【PR】bugfix: reduce算子融合case，1）针对ATT与Codegen校验merge_size问题统一取向量化轴repeats 2)针对codegen生成代码时2个broadcast算子消费同一父节点导致生成代码变量名冲突问题进行兼容解决",
     "created_at": "2026-09-17",
-    "updated_at": "2026-09-18",
+    "updated_at": "2026-09-19",
     "merged_at": "",
     "closed_at": "",
     "author": "tourse",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2156",
     "labels": [
+      "ci-pipeline-failed",
       "enhancement",
       "cann-cla/no",
       "stat/needs-squash"
@@ -741,13 +960,13 @@
   },
   {
     "iid": 2149,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix: 增加广播反向公共轴诊断日志",
     "created_at": "2026-09-16",
-    "updated_at": "2026-09-17",
+    "updated_at": "2026-09-19",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-19",
     "author": "wei_shi",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2149",
     "labels": [
@@ -2385,13 +2604,13 @@
   },
   {
     "iid": 2069,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix: 同步 PR 2057 和 PR 2017 修改",
     "created_at": "2026-09-11",
-    "updated_at": "2026-09-11",
+    "updated_at": "2026-09-19",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-19",
     "author": "wei_shi",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2069",
     "labels": [
@@ -2491,7 +2710,7 @@
     "draft": false,
     "title": "feat: 支持Gather后置Norm复合区域识别与多阶段融合候选生成",
     "created_at": "2026-09-11",
-    "updated_at": "2026-09-18",
+    "updated_at": "2026-09-19",
     "merged_at": "",
     "closed_at": "",
     "author": "JaydenChu",
@@ -2526,13 +2745,13 @@
   },
   {
     "iid": 2062,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "revert: 回退 PR 1834 并恢复广播反向优化",
     "created_at": "2026-09-11",
-    "updated_at": "2026-09-11",
+    "updated_at": "2026-09-19",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-19",
     "author": "wei_shi",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2062",
     "labels": [
@@ -2861,13 +3080,13 @@
   },
   {
     "iid": 2046,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix: 恢复AllLoad通用任务生成",
     "created_at": "2026-09-10",
-    "updated_at": "2026-09-10",
+    "updated_at": "2026-09-19",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-19",
     "author": "wei_shi",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2046",
     "labels": [
@@ -3457,13 +3676,13 @@
   },
   {
     "iid": 2017,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "refactor: 调整广播反向优化策略",
     "created_at": "2026-09-09",
-    "updated_at": "2026-09-11",
+    "updated_at": "2026-09-19",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-19",
     "author": "wei_shi",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2017",
     "labels": [
@@ -3763,13 +3982,13 @@
   },
   {
     "iid": 2002,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix: cherry-pick PR 1929 broadcast backward opt",
     "created_at": "2026-09-08",
-    "updated_at": "2026-09-08",
+    "updated_at": "2026-09-19",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-19",
     "author": "wei_shi",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2002",
     "labels": [
@@ -5523,13 +5742,13 @@
   },
   {
     "iid": 1916,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix: adjust broadcast optimization pass order (#1887)",
     "created_at": "2026-09-01",
-    "updated_at": "2026-09-02",
+    "updated_at": "2026-09-19",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-19",
     "author": "wei_shi",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/1916",
     "labels": [

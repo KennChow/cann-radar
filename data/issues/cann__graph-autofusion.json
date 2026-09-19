@@ -1,5 +1,77 @@
 [
   {
+    "iid": "324",
+    "state": "opened",
+    "created_at": "2026-09-19",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Documentation|文档反馈]: 设计文档 11 处图片引用全部失效——docs/en/autofuse/figures 目录为空，图片文件在仓库中不存在",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/324",
+    "working_days_open": 0
+  },
+  {
+    "iid": "323",
+    "state": "opened",
+    "created_at": "2026-09-19",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: ATT evidence 输入失败时退出码仍为 0",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/323",
+    "working_days_open": 0
+  },
+  {
+    "iid": "322",
+    "state": "opened",
+    "created_at": "2026-09-19",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: ATT summary 输入失败时退出码仍为 0",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/322",
+    "working_days_open": 0
+  },
+  {
+    "iid": "321",
+    "state": "opened",
+    "created_at": "2026-09-19",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: ATT compare 输入错误时退出码仍为 0",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/321",
+    "working_days_open": 0
+  },
+  {
     "iid": "320",
     "state": "opened",
     "created_at": "2026-09-17",
@@ -3605,7 +3677,8 @@
     "author_id": "681cc3b0e4b985165b4930b9",
     "title": "[Requirement|需求建议]: 支持concat类与计算类算子的融合能力",
     "labels": [
-      "requirement"
+      "requirement",
+      "resolved"
     ],
     "issue_type": "任务",
     "issue_state": "已完成",

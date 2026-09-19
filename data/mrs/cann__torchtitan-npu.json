@@ -1,16 +1,76 @@
 [
   {
+    "iid": 858,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(tooling): report zero-baseline relative divergence",
+    "created_at": "2026-09-19",
+    "updated_at": "2026-09-19",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/858",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "120"
+    ]
+  },
+  {
+    "iid": 857,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(examples): repair DSV4 USE_GOLDEN paths, align DSV4.1 launchers",
+    "created_at": "2026-09-19",
+    "updated_at": "2026-09-19",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "xuyujun",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/857",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 856,
+    "state": "merged",
+    "draft": false,
+    "title": "fix(ops): materialize the split-K layout for degenerate R=0/1 inputs",
+    "created_at": "2026-09-19",
+    "updated_at": "2026-09-19",
+    "merged_at": "2026-09-19",
+    "closed_at": "",
+    "author": "panchao-gitcode",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/856",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 855,
     "state": "opened",
     "draft": false,
     "title": "[feat] DeepSeek-V4.1 LightningIndexer 接入 LI/SLIKG 融合算子（自动反向 autograd.Function）",
     "created_at": "2026-09-18",
-    "updated_at": "2026-09-18",
+    "updated_at": "2026-09-19",
     "merged_at": "",
     "closed_at": "",
     "author": "zhaowei1936",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/855",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
@@ -140,7 +200,7 @@
     "draft": false,
     "title": "perf(dsv4): hide 1M dataloader latency and reduce CP metadata overhead",
     "created_at": "2026-09-18",
-    "updated_at": "2026-09-18",
+    "updated_at": "2026-09-19",
     "merged_at": "",
     "closed_at": "",
     "author": "depeng1994",
@@ -148,7 +208,7 @@
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": [
@@ -456,13 +516,13 @@
   },
   {
     "iid": 832,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "test: remove dsv4 checkpoint-resume and EMA integration cases",
     "created_at": "2026-09-17",
-    "updated_at": "2026-09-17",
+    "updated_at": "2026-09-19",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-19",
     "author": "depeng1994",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/832",
     "labels": [
@@ -767,8 +827,8 @@
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/816",
     "labels": [
       "stat/needs-squash",
-      "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-failed",
+      "cann-cla/yes"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -1314,9 +1374,9 @@
     "author": "NoGood",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/787",
     "labels": [
-      "ci-pipeline-passed",
       "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 6,
     "e2e_issues": []
@@ -2129,7 +2189,7 @@
     "draft": false,
     "title": "feat: add SDC + NPU GraphTrainerEx support",
     "created_at": "2026-09-07",
-    "updated_at": "2026-09-18",
+    "updated_at": "2026-09-19",
     "merged_at": "",
     "closed_at": "",
     "author": "jiangna1111",
@@ -3130,18 +3190,20 @@
   },
   {
     "iid": 694,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[feat] Qwen3.5-VL NPU Context Parallel 适配迁移至 master",
     "created_at": "2026-09-03",
-    "updated_at": "2026-09-18",
-    "merged_at": "",
+    "updated_at": "2026-09-19",
+    "merged_at": "2026-09-19",
     "closed_at": "",
     "author": "zhaowei1936",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/694",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
+      "approved",
+      "lgtm",
       "stat/needs-squash"
     ],
     "working_days_open": 12,

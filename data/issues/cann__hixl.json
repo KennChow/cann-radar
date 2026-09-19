@@ -1,5 +1,77 @@
 [
   {
+    "iid": "744",
+    "state": "opened",
+    "created_at": "2026-09-19",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "[Bug-Report|缺陷反馈]: Transfer stream 创建失败后 std::call_once 阻止后续重试",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/744",
+    "working_days_open": 0
+  },
+  {
+    "iid": "743",
+    "state": "opened",
+    "created_at": "2026-09-19",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "[Bug-Report|缺陷反馈]: PullCacheByGet 未校验 source range 导致越界访问",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/743",
+    "working_days_open": 0
+  },
+  {
+    "iid": "742",
+    "state": "opened",
+    "created_at": "2026-09-19",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "[Bug-Report|缺陷反馈]: CommMemManager 共享内存注册未按 cache 引用计数管理",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/742",
+    "working_days_open": 0
+  },
+  {
+    "iid": "741",
+    "state": "opened",
+    "created_at": "2026-09-19",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: 不完整的 benchmark CSV 行导致报告与绘图整体失败",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/741",
+    "working_days_open": 0
+  },
+  {
     "iid": "740",
     "state": "opened",
     "created_at": "2026-09-18",
@@ -1117,7 +1189,7 @@
     "assignees": [
       "A-Liuhao"
     ],
-    "user_notes_count": 8,
+    "user_notes_count": 10,
     "web_url": "https://gitcode.com/cann/hixl/issues/644",
     "working_days_open": 6
   },
@@ -1677,7 +1749,7 @@
     "assignees": [
       "A-Liuhao"
     ],
-    "user_notes_count": 3,
+    "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/hixl/issues/613",
     "working_days_open": 17
   },

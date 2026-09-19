@@ -1,16 +1,57 @@
 [
   {
-    "iid": 5056,
+    "iid": 5058,
     "state": "opened",
+    "draft": false,
+    "title": "fix(docs): remove duplicated sections 6/7/8 in dynamic_gear.md",
+    "created_at": "2026-09-19",
+    "updated_at": "2026-09-20",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5058",
+    "labels": [
+      "ci-pipeline-failed",
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "570"
+    ]
+  },
+  {
+    "iid": 5057,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 值依赖识别支持前向触发打通计算型shape链值符号传播",
+    "created_at": "2026-09-19",
+    "updated_at": "2026-09-19",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "xiebangrui2025",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5057",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5056,
+    "state": "merged",
     "draft": false,
     "title": "fix: 符号化推导非const输入优雅降级并修复Transpose未初始化问题",
     "created_at": "2026-09-18",
-    "updated_at": "2026-09-18",
-    "merged_at": "",
+    "updated_at": "2026-09-19",
+    "merged_at": "2026-09-19",
     "closed_at": "",
     "author": "xiebangrui2025",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5056",
     "labels": [
+      "approved",
+      "lgtm",
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
@@ -44,15 +85,15 @@
     "draft": false,
     "title": "[PR]:  sync develop to master 20260918",
     "created_at": "2026-09-18",
-    "updated_at": "2026-09-18",
+    "updated_at": "2026-09-19",
     "merged_at": "",
     "closed_at": "",
     "author": "yangyongqiang0606",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5054",
     "labels": [
+      "cann-cla/yes",
       "stat/needs-squash",
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "ci-pipeline-failed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
