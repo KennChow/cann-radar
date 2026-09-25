@@ -1,17 +1,132 @@
 [
   {
+    "iid": 1883,
+    "state": "opened",
+    "draft": false,
+    "title": "【社区任务】split_qkv_rmsnorm_mrope A2 算子设计文档",
+    "created_at": "2026-09-25",
+    "updated_at": "2026-09-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Irene-",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1883",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1882,
+    "state": "opened",
+    "draft": false,
+    "title": "【CANN社区任务】aclblasCtrsmBatched算子设计文档",
+    "created_at": "2026-09-25",
+    "updated_at": "2026-09-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "xy200303",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1882",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1881,
+    "state": "closed",
+    "draft": false,
+    "title": "【CANN社区任务】aclblasCtrsmBatched算子设计文档",
+    "created_at": "2026-09-25",
+    "updated_at": "2026-09-25",
+    "merged_at": "",
+    "closed_at": "2026-09-25",
+    "author": "m0_73370855",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1881",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1880,
+    "state": "opened",
+    "draft": false,
+    "title": "修正 `submit_code` 中江山赛区预赛提交目录示例",
+    "created_at": "2026-09-25",
+    "updated_at": "2026-09-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1880",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "102"
+    ]
+  },
+  {
+    "iid": 1879,
+    "state": "opened",
+    "draft": false,
+    "title": "【CANN社区任务】MatmulLayerNormMatmul算子设计文档",
+    "created_at": "2026-09-25",
+    "updated_at": "2026-09-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Judith-13",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1879",
+    "labels": [
+      "ai-docs-only",
+      "cann-cla/yes",
+      "ai-compliance-successful",
+      "ci-pipeline-passed",
+      "ai-co-authored"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1878,
+    "state": "opened",
+    "draft": false,
+    "title": "【CANN社区任务】Ctrmm算子设计文档",
+    "created_at": "2026-09-25",
+    "updated_at": "2026-09-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_LxlU8H9L",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1878",
+    "labels": [
+      "ci-pipeline-passed",
+      "ai-co-authored",
+      "ai-docs-only",
+      "cann-cla/yes",
+      "ai-compliance-successful"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1877,
     "state": "opened",
     "draft": false,
     "title": "【社区任务】aclblasStrmm A2/A3 算子设计文档",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-25",
     "merged_at": "",
     "closed_at": "",
     "author": "Guts0117",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1877",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -584,9 +699,10 @@
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1847",
     "labels": [
       "ai-co-authored",
-      "stat/needs-squash",
       "cann-cla/yes",
-      "ai-docs-only"
+      "ai-compliance-successful",
+      "ai-docs-only",
+      "stat/needs-squash"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -657,14 +773,12 @@
     "draft": false,
     "title": "【社区任务】aclblasStrmm (A2/A3) 设计文档",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-25",
     "merged_at": "",
     "closed_at": "",
     "author": "weixin_73749601",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1843",
     "labels": [
-      "ci-pipeline-passed",
-      "stat/needs-squash",
       "cann-cla/yes"
     ],
     "working_days_open": 2,
@@ -20486,7 +20600,7 @@
     "draft": false,
     "title": "[团队提交] 2026 HCCL通信库创新大赛粤港澳赛区 初赛及决赛 ReduceScatter：华南师范大学+lsrl",
     "created_at": "2026-08-02",
-    "updated_at": "2026-08-21",
+    "updated_at": "2026-09-25",
     "merged_at": "2026-08-21",
     "closed_at": "",
     "author": "lsrl",

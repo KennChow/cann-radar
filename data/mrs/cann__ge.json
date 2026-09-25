@@ -1,5 +1,26 @@
 [
   {
+    "iid": 5183,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(llm): 拒绝超出 int32 范围的等待时间",
+    "created_at": "2026-09-25",
+    "updated_at": "2026-09-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "dududu121",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5183",
+    "labels": [
+      "ai-co-authored",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "580"
+    ]
+  },
+  {
     "iid": 5182,
     "state": "opened",
     "draft": false,
@@ -479,13 +500,12 @@
     "draft": false,
     "title": "feat: 支持Eager自定义算子辅流资源编译期统计",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-25",
     "merged_at": "",
     "closed_at": "",
     "author": "Chang-an-HW",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5158",
     "labels": [
-      "ci-pipeline-passed",
       "stat/needs-squash",
       "cann-cla/yes"
     ],
