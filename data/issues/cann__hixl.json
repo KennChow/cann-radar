@@ -1,5 +1,39 @@
 [
   {
+    "iid": "883",
+    "state": "opened",
+    "created_at": "2026-09-26",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "[Documentation|文档反馈]: 构建指南安装命令遗漏 build_out 路径",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/883",
+    "working_days_open": 0
+  },
+  {
+    "iid": "882",
+    "state": "opened",
+    "created_at": "2026-09-26",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "[Documentation|文档反馈]: 修正 HIXL switch_roles 示例中的 decoder 远端地址",
+    "labels": [
+      "documentation"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/882",
+    "working_days_open": 0
+  },
+  {
     "iid": "881",
     "state": "opened",
     "created_at": "2026-09-25",
@@ -305,9 +339,9 @@
   },
   {
     "iid": "864",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-24",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "[Bug-Report|缺陷反馈]: 校验 hccn_tool 返回的 bond IP",
@@ -319,7 +353,7 @@
     "assignees": [
       "lining23666"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/hixl/issues/864",
     "working_days_open": 1
   },
@@ -841,9 +875,9 @@
   },
   {
     "iid": "833",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-23",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "[Bug-Report|缺陷反馈]: 重初始化时重置 TaskBatcher 状态",
@@ -855,15 +889,15 @@
     "assignees": [
       "jiazhaoyang"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/hixl/issues/833",
     "working_days_open": 2
   },
   {
     "iid": "832",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-23",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "[Bug-Report|缺陷反馈]: TemporaryRtContext 对空 current context 的 RAII 恢复",
@@ -875,7 +909,7 @@
     "assignees": [
       "lining23666"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/hixl/issues/832",
     "working_days_open": 2
   },
@@ -1160,9 +1194,9 @@
   },
   {
     "iid": "816",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-23",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "[Bug-Report|缺陷反馈]: ConnMsgHandler 丢失远端建链响应的具体错误码",
@@ -1174,7 +1208,7 @@
     "assignees": [
       "lining23666"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/hixl/issues/816",
     "working_days_open": 2
   },
@@ -1660,7 +1694,7 @@
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [
-      "M__Cheng"
+      "KaranocaVe"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/hixl/issues/790",
@@ -1668,9 +1702,9 @@
   },
   {
     "iid": "789",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-22",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "[Bug-Report|缺陷反馈]: HixlCSClientDestroy 清理失败后的句柄丢失",
@@ -1682,7 +1716,7 @@
     "assignees": [
       "jiazhaoyang"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/hixl/issues/789",
     "working_days_open": 3
   },
@@ -1698,6 +1732,7 @@
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [
+      "KaranocaVe",
       "M__Cheng"
     ],
     "user_notes_count": 1,
@@ -2456,7 +2491,7 @@
     "closed_at": "",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
-    "title": "[Bug-Report|缺陷反馈]: Transfer stream 创建失败后 std::call_once 阻止后续重试",
+    "title": "[Bug-Report|缺陷反馈]: Transfer stream 创建失败后无法重试",
     "labels": [
       "bug-report"
     ],
@@ -2465,7 +2500,7 @@
     "assignees": [
       "youyx"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/hixl/issues/744",
     "working_days_open": 5
   },
@@ -2491,9 +2526,9 @@
   },
   {
     "iid": "742",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-19",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "[Bug-Report|缺陷反馈]: 按 cache 引用计数维护 CommMemManager 共享注册生命周期",
@@ -2501,11 +2536,11 @@
       "bug-report"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "lugang11"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/hixl/issues/742",
     "working_days_open": 5
   },
@@ -3069,9 +3104,9 @@
   },
   {
     "iid": "672",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-14",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "[Bug-Report|缺陷反馈]: MsgHandlerPlugin::Finalize 未停止连接线程池导致任务跨生命周期执行",
@@ -3083,7 +3118,7 @@
     "assignees": [
       "zhaozhihui"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/hixl/issues/672",
     "working_days_open": 10
   },

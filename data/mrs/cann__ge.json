@@ -1,5 +1,106 @@
 [
   {
+    "iid": 5188,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: fix GE package install and uninstall path",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5188",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "583"
+    ]
+  },
+  {
+    "iid": 5187,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: Re-apply \"feat: add h2d overlapped with compute compiler plan\"",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "kobemini",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5187",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5186,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(mmpa): 校验 mmRealPath 输出缓冲区容量",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "dududu121",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5186",
+    "labels": [
+      "ai-co-authored",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "581"
+    ]
+  },
+  {
+    "iid": 5185,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: Python融合Pass桥接get_matcher_config回调改裸指针传递，消除未定义符号依赖",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "kobemini",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5185",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "BUILD-SUCC"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5184,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(easy_graph): 保留同端点的不同类型边",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "dududu121",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5184",
+    "labels": [
+      "ai-co-authored",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "582"
+    ]
+  },
+  {
     "iid": 5183,
     "state": "opened",
     "draft": false,
@@ -26,14 +127,14 @@
     "draft": false,
     "title": "[L1] fix: gen_stubapi.py 两处 stack_template[-1] 漏 self. 前缀 → NameError",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "wsnidie1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5182",
     "labels": [
       "stat/needs-squash",
-      "cann-cla/no",
+      "cann-cla/yes",
       "ci-pipeline-passed"
     ],
     "working_days_open": 1,
@@ -66,7 +167,7 @@
     "draft": false,
     "title": "【PR】:  sync develop to master 20260924",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "Jett_Woo",
@@ -74,7 +175,9 @@
     "labels": [
       "cann-cla/yes",
       "stat/needs-squash",
-      "enhancement"
+      "enhancement",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -341,7 +444,7 @@
     "draft": false,
     "title": "fix(onnx_parser): opset版本冲突告警与origin miss诊断增强",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "gentle-knight",
@@ -17995,7 +18098,7 @@
     "draft": false,
     "title": "fix: skip empty anchors in reshape repeat search",
     "created_at": "2026-08-07",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "ling-DT",

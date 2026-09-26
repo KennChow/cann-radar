@@ -1,5 +1,23 @@
 [
   {
+    "iid": 936,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(deepseek_v4_1): 稳定融合 LI 重算与异常梯度处理",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "panchao-gitcode",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/936",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 935,
     "state": "opened",
     "draft": true,
@@ -958,7 +976,7 @@
     "draft": false,
     "title": "docs: add TorchTitan-NPU high availability overview",
     "created_at": "2026-09-21",
-    "updated_at": "2026-09-22",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "hwcaifubi",
@@ -2596,13 +2614,13 @@
   },
   {
     "iid": 804,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[refactor] RoPE compile-pass: canonicalization, unified pattern manager, generic fallback",
     "created_at": "2026-09-14",
-    "updated_at": "2026-09-14",
+    "updated_at": "2026-09-26",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "depeng1994",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/804",
     "labels": [
@@ -3303,10 +3321,10 @@
   {
     "iid": 767,
     "state": "opened",
-    "draft": false,
-    "title": "feat(dsv4): add CPU activation offload policy",
+    "draft": true,
+    "title": "[WIP]feat(dsv4): add CPU activation offload policy",
     "created_at": "2026-09-10",
-    "updated_at": "2026-09-10",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "panchao-gitcode",
@@ -5984,13 +6002,13 @@
   },
   {
     "iid": 628,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[perf] overlap Muon FSDP update all-to-all with GMM compute",
     "created_at": "2026-08-25",
-    "updated_at": "2026-08-26",
+    "updated_at": "2026-09-26",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "panchao-gitcode",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/628",
     "labels": [

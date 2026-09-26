@@ -1,13 +1,112 @@
 [
   {
-    "iid": 1303,
+    "iid": 1308,
     "state": "opened",
+    "draft": false,
+    "title": "[docs]: 修正 HIXL switch_roles 示例中的 decoder 远端地址",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1308",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "882"
+    ]
+  },
+  {
+    "iid": 1307,
+    "state": "opened",
+    "draft": false,
+    "title": "[docs]: 修正 HIXL 构建指南的安装包路径",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1307",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "883"
+    ]
+  },
+  {
+    "iid": 1306,
+    "state": "closed",
+    "draft": false,
+    "title": "[修复] 校验 VirtualMemoryManager 容量边界与溢出",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "2026-09-26",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1306",
+    "labels": [
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "838"
+    ]
+  },
+  {
+    "iid": 1305,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: 公开 Server C API 拒绝已销毁句柄",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1305",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "862"
+    ]
+  },
+  {
+    "iid": 1304,
+    "state": "opened",
+    "draft": false,
+    "title": "[修复] 恢复 TransferPool abort 后失败 reinit 的 free_list slot",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1304",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "834"
+    ]
+  },
+  {
+    "iid": 1303,
+    "state": "closed",
     "draft": false,
     "title": "[修复] 修复 HIXL urma_admin 非零退出状态未传播",
     "created_at": "2026-09-26",
     "updated_at": "2026-09-26",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1303",
     "labels": [],
@@ -28,7 +127,8 @@
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1302",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -47,7 +147,8 @@
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1301",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -66,7 +167,8 @@
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1300",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -85,7 +187,8 @@
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1299",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -104,7 +207,8 @@
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1298",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -115,14 +219,17 @@
     "iid": 1297,
     "state": "opened",
     "draft": false,
-    "title": "[修复] 让 FabricMem 建链接收路径共享 timeout deadline",
+    "title": "[bugfix]: 修复 HIXL CS 建链重复使用完整 timeout",
     "created_at": "2026-09-26",
     "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1297",
-    "labels": [],
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
     "working_days_open": 0,
     "e2e_issues": [
       "866"
@@ -130,13 +237,13 @@
   },
   {
     "iid": 1296,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[bugfix] 修复 ConnectPoolExecutor 重初始化时复活 Shutdown 前遗留任务",
     "created_at": "2026-09-26",
     "updated_at": "2026-09-26",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1296",
     "labels": [
@@ -149,13 +256,13 @@
   },
   {
     "iid": 1295,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "修复 HixlCSServer 销毁通道时错误吞掉底层失败",
     "created_at": "2026-09-26",
     "updated_at": "2026-09-26",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1295",
     "labels": [
@@ -270,7 +377,7 @@
     "draft": false,
     "title": "[修复] 防止 CtrlMsgPlugin::Recv 的 timeout_ms 窄化为负 poll 超时",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -290,7 +397,7 @@
     "draft": false,
     "title": "[修复] 保留 SendCache 批量提交失败后的未提交任务",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -392,7 +499,7 @@
     "draft": false,
     "title": "[修复] PushKvCache 默认全层范围使用注册 cache 元数据",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -433,7 +540,7 @@
     "draft": false,
     "title": "[修复] 拒绝非对象类型的 fabric_memory 配置",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -449,13 +556,13 @@
   },
   {
     "iid": 1280,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[修复] 校验 hccn_tool 返回的 bond IP",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-26",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1280",
     "labels": [
@@ -533,14 +640,15 @@
     "draft": false,
     "title": "[bugfix] 缺少版本元数据时返回失败",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_Z57idahf",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1276",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 2,
     "e2e_issues": [
@@ -553,14 +661,15 @@
     "draft": false,
     "title": "[bugfix] benchmark 全部失败时返回非零状态",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_Z57idahf",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1275",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "stat/needs-squash",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 2,
     "e2e_issues": [
@@ -569,13 +678,13 @@
   },
   {
     "iid": 1274,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[修复] 拒绝 HixlCSServerRegProc 的空消息处理器",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-26",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1274",
     "labels": [
@@ -589,13 +698,13 @@
   },
   {
     "iid": 1273,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[修复] 保留 DisconnectAsync 的断链失败状态",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-26",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1273",
     "labels": [
@@ -796,13 +905,13 @@
   },
   {
     "iid": 1263,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "修复 TemporaryRtContext 对空 current context 的 RAII 恢复",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-26",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1263",
     "labels": [
@@ -815,13 +924,13 @@
   },
   {
     "iid": 1262,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[修复] 重初始化时重置 TaskBatcher 状态",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-09-26",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1262",
     "labels": [
@@ -1142,7 +1251,7 @@
     "draft": false,
     "title": "[修复] 传播 SendState 超时响应发送错误",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-25",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -1181,14 +1290,14 @@
     "draft": false,
     "title": "[修复] 保留 FabricMem AICPU 请求资源释放失败后的重试句柄",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1244",
     "labels": [
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-failed",
+      "cann-cla/yes"
     ],
     "working_days_open": 2,
     "e2e_issues": [
@@ -1221,12 +1330,13 @@
     "draft": false,
     "title": "[修复] 修复 MsgReceiver 将 EOF 和致命 recv 错误报告为成功",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1242",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
@@ -1259,13 +1369,13 @@
   },
   {
     "iid": 1240,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[修复] 修复 HixlCSClient::Create 失败重试时 endpoint 资源丢失",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-25",
+    "updated_at": "2026-09-26",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1240",
     "labels": [
@@ -1288,7 +1398,8 @@
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1239",
     "labels": [
-      "ci-pipeline-failed"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 2,
     "e2e_issues": [
@@ -1589,15 +1700,15 @@
     "draft": false,
     "title": "[bugfix] 校验 tensor_num_per_layer 不超过缓存 tensor 数量",
     "created_at": "2026-09-22",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-09-27",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1224",
     "labels": [
+      "ci-pipeline-passed",
       "cann-cla/yes",
-      "stat/needs-squash",
-      "ci-pipeline-passed"
+      "stat/needs-squash"
     ],
     "working_days_open": 3,
     "e2e_issues": [
@@ -1814,13 +1925,13 @@
   },
   {
     "iid": 1213,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[bugfix]: 保留 HixlCSClientDestroy 失败后的可重试句柄",
     "created_at": "2026-09-22",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-09-26",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1213",
     "labels": [
@@ -2157,13 +2268,14 @@
     "draft": false,
     "title": "[Fix] 修复 HIXL backend IPv6 监听地址重建",
     "created_at": "2026-09-21",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-09-27",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1197",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 4,
     "e2e_issues": [
@@ -2174,19 +2286,20 @@
     "iid": 1196,
     "state": "opened",
     "draft": false,
-    "title": "修复 ImportRemoteMem 部分导入失败后的记录回滚",
+    "title": "补充 ImportRemoteMem 部分导入失败回滚回归测试",
     "created_at": "2026-09-21",
-    "updated_at": "2026-09-22",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1196",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 4,
     "e2e_issues": [
-      "775"
+      "799"
     ]
   },
   {
@@ -2345,7 +2458,7 @@
     "draft": false,
     "title": "[bugfix] 修复 HixlOptions::Parse 重入状态残留",
     "created_at": "2026-09-20",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -2612,13 +2725,14 @@
     "draft": false,
     "title": "[bugfix]: honor disconnect timeout during cleanup",
     "created_at": "2026-09-20",
-    "updated_at": "2026-09-22",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1174",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 5,
     "e2e_issues": [
@@ -2961,13 +3075,13 @@
   },
   {
     "iid": 1156,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[修复] 按 cache 引用计数维护 CommMemManager 共享注册生命周期",
     "created_at": "2026-09-20",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-09-26",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1156",
     "labels": [
@@ -2986,13 +3100,14 @@
     "draft": false,
     "title": "[Fix] 修复 transfer stream 创建失败后无法重试",
     "created_at": "2026-09-19",
-    "updated_at": "2026-09-22",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1155",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 5,
     "e2e_issues": [
@@ -3929,15 +4044,15 @@
     "draft": false,
     "title": "chore: 修复17处问题：16处头文件自包含（规则6）+ 1处注释拼写（规则2）【质量加固#613】",
     "created_at": "2026-09-15",
-    "updated_at": "2026-09-25",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_93rlw6ed",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1110",
     "labels": [
-      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "stat/needs-squash"
     ],
     "working_days_open": 9,
     "e2e_issues": [
@@ -4310,13 +4425,13 @@
   },
   {
     "iid": 1092,
-    "state": "opened",
+    "state": "closed",
     "draft": true,
     "title": "[WIP][feat]: configure quickstart resource and memory type",
     "created_at": "2026-09-14",
-    "updated_at": "2026-09-16",
+    "updated_at": "2026-09-26",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "M__Cheng",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1092",
     "labels": [
@@ -4579,15 +4694,14 @@
     "draft": false,
     "title": "[Fix] 修复 HixlMemStore 同址注册元数据冲突",
     "created_at": "2026-09-14",
-    "updated_at": "2026-09-22",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1079",
     "labels": [
-      "lgtm",
-      "approved",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 10,
     "e2e_issues": [
@@ -4659,13 +4773,13 @@
   },
   {
     "iid": 1075,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[Fix] Finalize 时停止 MsgHandlerPlugin 的连接线程池",
     "created_at": "2026-09-14",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-09-26",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1075",
     "labels": [
@@ -4749,14 +4863,14 @@
     "draft": false,
     "title": "[Fix] 修复 HIXL FSM 非法状态索引和状态污染",
     "created_at": "2026-09-14",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1071",
     "labels": [
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "cann-cla/yes"
     ],
     "working_days_open": 10,
     "e2e_issues": [
@@ -5066,13 +5180,13 @@
     "draft": false,
     "title": "[Fix] 回复 H2D 异步传输失败并清理请求",
     "created_at": "2026-09-14",
-    "updated_at": "2026-09-22",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1056",
     "labels": [
-      "ci-pipeline-failed",
+      "ci-pipeline-passed",
       "cann-cla/yes",
       "stat/needs-squash"
     ],
@@ -6789,13 +6903,13 @@
   },
   {
     "iid": 971,
-    "state": "opened",
+    "state": "closed",
     "draft": true,
     "title": "[WIP][test]: test aclprofiling interafce refactor",
     "created_at": "2026-08-31",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-09-26",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "M__Cheng",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/971",
     "labels": [

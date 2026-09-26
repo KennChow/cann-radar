@@ -1,5 +1,26 @@
 [
   {
+    "iid": "836",
+    "state": "closed",
+    "created_at": "2026-09-26",
+    "closed_at": "2026-09-26",
+    "author": "ling-DT",
+    "author_id": "6822c1d1096b0e7b44aa5974",
+    "title": "[Bug]: BatchMatMul epilogue 融合未拦截输入沿 batch 轴广播导致精度异常",
+    "labels": [
+      "bug",
+      "resolved"
+    ],
+    "issue_type": "Bug-Report",
+    "issue_state": "DONE",
+    "assignees": [
+      "ling-DT"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/836",
+    "working_days_open": 0
+  },
+  {
     "iid": "833",
     "state": "closed",
     "created_at": "2026-09-23",

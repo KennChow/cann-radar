@@ -1,5 +1,379 @@
 [
   {
+    "iid": 2392,
+    "state": "opened",
+    "draft": false,
+    "title": "【fix】: 修复reduce的brc缓存条件不对的问题",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "WangYanMale",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2392",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "BUILD-SUCC",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2391,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: sync develop to master 20260926",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Jett_Woo",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2391",
+    "labels": [
+      "cann-cla/yes",
+      "enhancement",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2390,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: propagate graph pass failures from BasePassRunner",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2390",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "358"
+    ]
+  },
+  {
+    "iid": 2389,
+    "state": "opened",
+    "draft": false,
+    "title": "【fix】: 修复reduce的brc缓存条件不对的问题",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "WangYanMale",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2389",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2388,
+    "state": "merged",
+    "draft": false,
+    "title": "revert：撤销Revert 修复broadcast后移pass兄弟广播提前删除导致的图半改写问题",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "2026-09-26",
+    "closed_at": "",
+    "author": "wangdingjun",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2388",
+    "labels": [
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved",
+      "enhancement",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2387,
+    "state": "merged",
+    "draft": false,
+    "title": "【PR】:  sync develop to master 20260924",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "2026-09-26",
+    "closed_at": "",
+    "author": "Jett_Woo",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2387",
+    "labels": [
+      "stat/needs-squash",
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2386,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: [chore] 放开superkernel打包的setuptools <80版本上限",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_WTfSfUy7",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2386",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2385,
+    "state": "merged",
+    "draft": false,
+    "title": "Revert 修复broadcast后移pass兄弟广播提前删除导致的图半改写问题",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "2026-09-26",
+    "closed_at": "",
+    "author": "wangdingjun",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2385",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2384,
+    "state": "opened",
+    "draft": false,
+    "title": "merge: 同步master分支修改到develop",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Jett_Woo",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2384",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2383,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: SK分段化——R轴超单核UB的gather+Reduce/复合Norm图生成有效融合kernel",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "JaydenChu",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2383",
+    "labels": [
+      "ci-pipeline-failed",
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2382,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: onerec网络优化",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "luo-lipeng",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2382",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2381,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: 放行BroadcastBackward Arange退化轴公共轴后移（含workspace与broadcast regbase最小回合） [9.2.0]",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Jett_Woo",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2381",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-running",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "302",
+      "348"
+    ]
+  },
+  {
+    "iid": 2380,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: 简要描述",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "yrz1027",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2380",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2379,
+    "state": "opened",
+    "draft": false,
+    "title": "master同步dev",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_WTfSfUy7",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2379",
+    "labels": [
+      "enhancement",
+      "stat/needs-squash",
+      "ci-pipeline-failed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2378,
+    "state": "closed",
+    "draft": false,
+    "title": "【PR】: 简要描述",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "2026-09-26",
+    "author": "yrz1027",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2378",
+    "labels": [
+      "enhancement",
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2377,
+    "state": "opened",
+    "draft": false,
+    "title": "dev同步master",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_WTfSfUy7",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2377",
+    "labels": [
+      "enhancement",
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2376,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: develop ci",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_WTfSfUy7",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2376",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2375,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: 防止SuperKernel测试流程卸载pylocal安装包【sk代码同步】",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_WTfSfUy7",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2375",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2374,
+    "state": "opened",
+    "draft": false,
+    "title": "修复离线构建文档未恢复工作目录的问题",
+    "created_at": "2026-09-26",
+    "updated_at": "2026-09-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2374",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "357"
+    ]
+  },
+  {
     "iid": 2373,
     "state": "opened",
     "draft": false,
@@ -21,19 +395,20 @@
   },
   {
     "iid": 2372,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】:  sync develop to master 20260924",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-26",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-26",
     "author": "Jett_Woo",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2372",
     "labels": [
-      "cann-cla/yes",
       "stat/needs-squash",
-      "enhancement"
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -84,16 +459,16 @@
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "Achilles_d",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2369",
     "labels": [
-      "enhancement",
       "cann-cla/yes",
-      "stat/needs-squash",
-      "ci-pipeline-failed"
+      "ci-pipeline-failed",
+      "enhancement",
+      "stat/needs-squash"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -399,16 +774,19 @@
     "iid": 2353,
     "state": "opened",
     "draft": false,
-    "title": "【PR】: 简要描述",
+    "title": "【PR】: [fix] load-cast-brc场景生成的nddma的输出向量化轴只有一根时未按cast之前的dtype对齐",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "xingzhixiong",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2353",
     "labels": [
-      "enhancement",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "SC-SUCC",
+      "ci-pipeline-passed",
+      "lgtm",
+      "enhancement"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -711,15 +1089,16 @@
     "draft": false,
     "title": "test 0923",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_WTfSfUy7",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2337",
     "labels": [
-      "enhancement",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "stat/needs-squash",
+      "ci-pipeline-failed",
+      "enhancement"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -789,14 +1168,15 @@
     "iid": 2333,
     "state": "opened",
     "draft": false,
-    "title": "fix: BroadcastBackward Arange门控降粒度并放行退化轴公共轴后移 [9.2.0]",
+    "title": "fix: BroadcastBackward Arange门控降粒度并放行退化轴公共轴后移（含9.2.0过渡Reduce守卫） [9.2.0]",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "Jett_Woo",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2333",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
@@ -1181,22 +1561,23 @@
   },
   {
     "iid": 2314,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix: BroadcastBackward Arange门控降粒度并放行退化轴公共轴后移",
     "created_at": "2026-09-22",
-    "updated_at": "2026-09-24",
-    "merged_at": "",
+    "updated_at": "2026-09-26",
+    "merged_at": "2026-09-26",
     "closed_at": "",
     "author": "Jett_Woo",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2314",
     "labels": [
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 3,
     "e2e_issues": [
-      "302",
       "348"
     ]
   },
@@ -4238,16 +4619,16 @@
     "draft": false,
     "title": "【PR】: 优化 SIMT IndirectLoad/Gather 后接 AR Reduce场景性能",
     "created_at": "2026-09-17",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "luo-lipeng",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2163",
     "labels": [
       "enhancement",
-      "ci-pipeline-failed",
+      "stat/needs-squash",
       "cann-cla/yes",
-      "stat/needs-squash"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 7,
     "e2e_issues": []
@@ -6865,15 +7246,15 @@
     "draft": false,
     "title": "fix: decouple PGO from MSPTI with ACL event timing",
     "created_at": "2026-09-10",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "zhang_shengjie",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2036",
     "labels": [
-      "ci-pipeline-passed",
+      "cann-cla/yes",
       "stat/needs-squash",
-      "cann-cla/yes"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 12,
     "e2e_issues": []
@@ -7073,7 +7454,7 @@
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-09-09",
-    "updated_at": "2026-09-09",
+    "updated_at": "2026-09-26",
     "merged_at": "",
     "closed_at": "",
     "author": "wangyichao0421",
