@@ -1,5 +1,57 @@
 [
   {
+    "iid": 1896,
+    "state": "opened",
+    "draft": false,
+    "title": "【CANN社区任务】KvCacheTurboQuant算子设计文档",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_5x5Ew5Ms",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1896",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1895,
+    "state": "opened",
+    "draft": false,
+    "title": "【社区任务】Ctrmm算子设计文档",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "mohaoyuan",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1895",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1894,
+    "state": "opened",
+    "draft": false,
+    "title": "9月社区任务-aclblasCtrsmBatched算子开发(A2/A3)的设计文档",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "aihos",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1894",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1893,
     "state": "opened",
     "draft": false,
@@ -23,14 +75,15 @@
     "draft": false,
     "title": "【社区任务】aclblasSgemmGroupedBatched（A2/A3）设计文档",
     "created_at": "2026-09-26",
-    "updated_at": "2026-09-26",
+    "updated_at": "2026-09-28",
     "merged_at": "",
     "closed_at": "",
     "author": "Student_ZZX",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1892",
     "labels": [
-      "ci-pipeline-passed",
-      "cann-cla/yes"
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 0,
     "e2e_issues": []
@@ -628,13 +681,14 @@
     "draft": false,
     "title": "【社区任务】aclblasCgemmStridedBatched（A2/A3）算子设计文档",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-26",
+    "updated_at": "2026-09-28",
     "merged_at": "",
     "closed_at": "",
     "author": "ASpringDay",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1860",
     "labels": [
-      "cann-cla/no",
+      "stat/needs-squash",
+      "cann-cla/yes",
       "ci-pipeline-passed"
     ],
     "working_days_open": 1,
@@ -786,15 +840,17 @@
     "draft": false,
     "title": "【202609社区任务】docs: add aclblasCtrsmBatched 设计文档 (qwe499827902)",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-26",
+    "updated_at": "2026-09-27",
     "merged_at": "",
     "closed_at": "",
     "author": "qwe499827902",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1852",
     "labels": [
-      "ci-pipeline-passed",
       "cann-cla/no",
-      "ai-co-authored"
+      "ai-co-authored",
+      "ai-docs-only",
+      "ai-compliance-failed",
+      "stat/needs-squash"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -865,15 +921,13 @@
     "draft": false,
     "title": "docs: 9月社区任务-aclblasCgemmStridedBatched(A2A3) 设计文档 zhangfeng1133",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-26",
+    "updated_at": "2026-09-27",
     "merged_at": "",
     "closed_at": "",
     "author": "zhangfeng1133",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1848",
     "labels": [
       "cann-cla/yes",
-      "stat/needs-squash",
-      "approved",
       "ci-pipeline-passed"
     ],
     "working_days_open": 2,
@@ -1438,15 +1492,15 @@
     "draft": false,
     "title": "【设计文档】9月社区任务-kv_cache_turbo_quant算子开发（weixin_53562472）",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-26",
+    "updated_at": "2026-09-28",
     "merged_at": "",
     "closed_at": "",
     "author": "weixin_53562472",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1819",
     "labels": [
-      "stat/needs-squash",
+      "ci-pipeline-passed",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "stat/needs-squash"
     ],
     "working_days_open": 2,
     "e2e_issues": []

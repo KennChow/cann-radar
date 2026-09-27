@@ -1,5 +1,186 @@
 [
   {
+    "iid": 1317,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: 修复 CommEngine::GetNotifies 复用输出时残留旧通知",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1317",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "890"
+    ]
+  },
+  {
+    "iid": 1316,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: validate MemType in HixlServer::RegisterMem to prevent overlap check bypass (#842)",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "M__Cheng",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1316",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "842"
+    ]
+  },
+  {
+    "iid": 1315,
+    "state": "opened",
+    "draft": false,
+    "title": "修复 HIXL CS Client 重复注册泄漏",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1315",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "792"
+    ]
+  },
+  {
+    "iid": 1314,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: preserve benchmark signal failures (#889)",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1314",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "889"
+    ]
+  },
+  {
+    "iid": 1313,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: annotate transfer diagnostics with byte units (#888)",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1313",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "888"
+    ]
+  },
+  {
+    "iid": 1312,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: import DataType in CacheDesc example (#887)",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1312",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "887"
+    ]
+  },
+  {
+    "iid": 1311,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: reject operations on finalized CacheManager (#886)",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1311",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "886"
+    ]
+  },
+  {
+    "iid": 1310,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: preserve sparse performance chart coordinates (#885)",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1310",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "885"
+    ]
+  },
+  {
+    "iid": 1309,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: isolate cache descriptor kind state (#884)",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1309",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "884"
+    ]
+  },
+  {
     "iid": 1308,
     "state": "opened",
     "draft": false,
@@ -25,7 +206,7 @@
     "draft": false,
     "title": "[docs]: 修正 HIXL 构建指南的安装包路径",
     "created_at": "2026-09-26",
-    "updated_at": "2026-09-26",
+    "updated_at": "2026-09-27",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -279,28 +460,28 @@
     "draft": false,
     "title": "feat: add remote_accessible to MemDesc and skip remote registration for local-only memory",
     "created_at": "2026-09-25",
-    "updated_at": "2026-09-26",
+    "updated_at": "2026-09-27",
     "merged_at": "",
     "closed_at": "",
     "author": "youyx",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1294",
     "labels": [
-      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "stat/needs-squash"
     ],
     "working_days_open": 0,
     "e2e_issues": []
   },
   {
     "iid": 1293,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "bugfix: validate MemType in memory registration (#842)",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-27",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-09-27",
     "author": "M__Cheng",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1293",
     "labels": [
@@ -1288,16 +1469,17 @@
     "iid": 1244,
     "state": "opened",
     "draft": false,
-    "title": "[修复] 保留 FabricMem AICPU 请求资源释放失败后的重试句柄",
+    "title": "[修复] 保留 UB_MEM AICPU 请求资源释放失败后的重试句柄",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-26",
+    "updated_at": "2026-09-28",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1244",
     "labels": [
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-running"
     ],
     "working_days_open": 2,
     "e2e_issues": [
@@ -1330,7 +1512,7 @@
     "draft": false,
     "title": "[修复] 修复 MsgReceiver 将 EOF 和致命 recv 错误报告为成功",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-26",
+    "updated_at": "2026-09-28",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -1781,15 +1963,15 @@
     "draft": false,
     "title": "修复 CacheDesc 派生值与 shape 不一致",
     "created_at": "2026-09-22",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-09-28",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1220",
     "labels": [
-      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-running"
+      "ci-pipeline-passed",
+      "stat/needs-squash"
     ],
     "working_days_open": 3,
     "e2e_issues": [
@@ -2424,12 +2606,15 @@
     "draft": false,
     "title": "[Fix] 回滚 CacheAccessTableUpdater 初始化失败后的设备 buffer",
     "created_at": "2026-09-20",
-    "updated_at": "2026-09-22",
+    "updated_at": "2026-09-27",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1189",
-    "labels": [],
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
     "working_days_open": 5,
     "e2e_issues": [
       "767"
@@ -3120,15 +3305,15 @@
     "draft": false,
     "title": "[Fix] 校验 Pull layer range 的 source 范围",
     "created_at": "2026-09-19",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-09-28",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1154",
     "labels": [
-      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed",
+      "stat/needs-squash"
     ],
     "working_days_open": 5,
     "e2e_issues": [
@@ -4694,7 +4879,7 @@
     "draft": false,
     "title": "[Fix] 修复 HixlMemStore 同址注册元数据冲突",
     "created_at": "2026-09-14",
-    "updated_at": "2026-09-26",
+    "updated_at": "2026-09-27",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -5180,7 +5365,7 @@
     "draft": false,
     "title": "[Fix] 回复 H2D 异步传输失败并清理请求",
     "created_at": "2026-09-14",
-    "updated_at": "2026-09-26",
+    "updated_at": "2026-09-28",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -5802,7 +5987,7 @@
     "draft": false,
     "title": "[feat]: support multi-channel concurrent transfer for Host RoCE",
     "created_at": "2026-09-09",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-27",
     "merged_at": "",
     "closed_at": "",
     "author": "tangjie66",

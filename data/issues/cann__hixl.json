@@ -1,5 +1,133 @@
 [
   {
+    "iid": "890",
+    "state": "opened",
+    "created_at": "2026-09-27",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "[Bug-Report|缺陷反馈]: Hixl::GetNotifies 复用输出时保留旧通知",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "zhaozhihui"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/890",
+    "working_days_open": 0
+  },
+  {
+    "iid": "889",
+    "state": "opened",
+    "created_at": "2026-09-27",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: benchmark 子进程被信号终止时可能被误判为成功",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "youyx"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/889",
+    "working_days_open": 0
+  },
+  {
+    "iid": "888",
+    "state": "opened",
+    "created_at": "2026-09-27",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: H2D/D2H 传输诊断日志缺少字节单位",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "youyx"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/888",
+    "working_days_open": 0
+  },
+  {
+    "iid": "887",
+    "state": "opened",
+    "created_at": "2026-09-27",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Documentation|文档反馈]: CacheDesc 示例缺少 DataType 导入",
+    "labels": [
+      "wait-feedback"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "tangjie66"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/887",
+    "working_days_open": 0
+  },
+  {
+    "iid": "886",
+    "state": "opened",
+    "created_at": "2026-09-27",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: CacheManager 终结后旧实例仍可继续调用",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "zhaozhihui"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/886",
+    "working_days_open": 0
+  },
+  {
+    "iid": "885",
+    "state": "opened",
+    "created_at": "2026-09-27",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: 稀疏性能图表压缩横坐标导致块坐标错位",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "youyx"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/885",
+    "working_days_open": 0
+  },
+  {
+    "iid": "884",
+    "state": "opened",
+    "created_at": "2026-09-27",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: CacheDesc 的块缓存类型状态会污染后续普通缓存操作",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "tangjie66"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/884",
+    "working_days_open": 0
+  },
+  {
     "iid": "883",
     "state": "opened",
     "created_at": "2026-09-26",
@@ -7,11 +135,15 @@
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "[Documentation|文档反馈]: 构建指南安装命令遗漏 build_out 路径",
-    "labels": [],
+    "labels": [
+      "wait-feedback"
+    ],
     "issue_type": "任务",
     "issue_state": "进行中",
-    "assignees": [],
-    "user_notes_count": 0,
+    "assignees": [
+      "tangjie66"
+    ],
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/hixl/issues/883",
     "working_days_open": 0
   },
@@ -28,8 +160,10 @@
     ],
     "issue_type": "任务",
     "issue_state": "进行中",
-    "assignees": [],
-    "user_notes_count": 0,
+    "assignees": [
+      "tangjie66"
+    ],
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/hixl/issues/882",
     "working_days_open": 0
   },
@@ -44,7 +178,9 @@
     "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
-    "assignees": [],
+    "assignees": [
+      "lugang11"
+    ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/hixl/issues/881",
     "working_days_open": 0
@@ -1235,7 +1371,7 @@
     "closed_at": "",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
-    "title": "[Bug-Report|缺陷反馈]: FabricMem AICPU 请求资源释放失败后丢失重试句柄",
+    "title": "[Bug-Report|缺陷反馈]: AICPU 请求资源释放失败后丢失重试句柄",
     "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
@@ -1271,7 +1407,7 @@
     "closed_at": "",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
-    "title": "Issue 草稿：修复 MsgReceiver 将 EOF 和致命 recv 错误转换为成功",
+    "title": "[Bug-Report|缺陷反馈]: MsgReceiver 将 EOF 和致命 recv 错误转换为成功",
     "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
@@ -1651,7 +1787,7 @@
     "closed_at": "",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
-    "title": "[Bug-Report|缺陷反馈]: 客户端重复注册相同内存区间未复用注册句柄",
+    "title": "HIXL CS Client 重复注册失败会泄漏底层注册",
     "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
@@ -1767,15 +1903,13 @@
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "[Bug-Report|缺陷反馈]: ClientManager::Finalize 丢失 client 清理错误状态",
-    "labels": [
-      "wait-feedback"
-    ],
+    "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [
       "M__Cheng"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/hixl/issues/786",
     "working_days_open": 3
   },
@@ -2071,7 +2205,7 @@
     "assignees": [
       "zhaozhihui"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/hixl/issues/767",
     "working_days_open": 5
   },
@@ -2860,9 +2994,9 @@
   },
   {
     "iid": "712",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-15",
-    "closed_at": "",
+    "closed_at": "2026-09-27",
     "author": "whh_smile",
     "author_id": "694248d401d34c2a5eb99e05",
     "title": "[Question|问题咨询]: LlmDataDist::Finalize() 在 KV-Cache 去注册收尾路径抛未处理异常，导致进程 SIGILL(-4) 崩溃，coredump",
@@ -2870,7 +3004,7 @@
       "wait-feedback"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已解决",
     "assignees": [
       "tangjie66"
     ],

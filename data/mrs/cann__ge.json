@@ -1,5 +1,139 @@
 [
   {
+    "iid": 5195,
+    "state": "opened",
+    "draft": true,
+    "title": "【WIP】: 支持 Buffer SRAM 内存的编译期规划、加载期映射与执行期刷新",
+    "created_at": "2026-09-28",
+    "updated_at": "2026-09-28",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "m0_50621083",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5195",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5194,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: 修正onnx_plugin文档opsets参数说明与README表述不严谨问题",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gentle-knight",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5194",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5193,
+    "state": "closed",
+    "draft": false,
+    "title": "docs: 修正onnx_plugin样例README_en示例数值与文档链接归属",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "2026-09-27",
+    "author": "gentle-knight",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5193",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5192,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 新增 onnx-plugin-developer skill，辅助 ONNX Python 插件端到端链路开发",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gentle-knight",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5192",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5191,
+    "state": "opened",
+    "draft": true,
+    "title": "[WIP] feat: validate SRAM allocator on CANN 9.1.0",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "m0_50621083",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5191",
+    "labels": [
+      "cann-cla/yes",
+      "enhancement",
+      "stat/needs-squash",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5190,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: 透传边属性读取失败状态",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5190",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "584"
+    ]
+  },
+  {
+    "iid": 5189,
+    "state": "closed",
+    "draft": true,
+    "title": "[WIP] feat: validate SRAM allocator on CANN 9.2.0",
+    "created_at": "2026-09-27",
+    "updated_at": "2026-09-27",
+    "merged_at": "",
+    "closed_at": "2026-09-27",
+    "author": "m0_50621083",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5189",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 5188,
     "state": "opened",
     "draft": false,
@@ -146,7 +280,7 @@
     "draft": false,
     "title": "docs: 修复 ReportFuse Markdown 链接",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-27",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -603,7 +737,7 @@
     "draft": false,
     "title": "feat: 支持Eager自定义算子辅流资源编译期统计",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-25",
+    "updated_at": "2026-09-27",
     "merged_at": "",
     "closed_at": "",
     "author": "Chang-an-HW",
@@ -723,14 +857,15 @@
     "draft": true,
     "title": "[WIP]feat: add sram memory allocator support",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-24",
+    "updated_at": "2026-09-27",
     "merged_at": "",
     "closed_at": "",
     "author": "yuchen97",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5152",
     "labels": [
-      "ci-pipeline-running",
-      "cann-cla/yes"
+      "ci-pipeline-failed",
+      "cann-cla/yes",
+      "stat/needs-squash"
     ],
     "working_days_open": 2,
     "e2e_issues": []
