@@ -1,11 +1,120 @@
 [
   {
+    "iid": 2453,
+    "state": "opened",
+    "draft": false,
+    "title": "[L1] fix: SECURITY.md 附录锚点保留了标题里的全角括号（页面上不存在该锚点），2 处链接点不动",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2453",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2452,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: enable Tensor Level for pure Inductor MM",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "ling-DT",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2452",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2451,
+    "state": "opened",
+    "draft": false,
+    "title": "[L2] docs: 8 处表格行内代码里的竖线未转义（GFM 会多切单元并丢掉内容）· 2 个文件",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2451",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2450,
+    "state": "opened",
+    "draft": false,
+    "title": "[L3] fix: re.split 的第三个位置参数是 maxsplit，re.DOTALL 被当段数传了进去（flags 一直没生效）",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2450",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2449,
+    "state": "opened",
+    "draft": false,
+    "title": "[L1] fix: 许可头拼写 contiditions → conditions（本仓 31 个文件 31 处，剩余 10 个见 #374）",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2449",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "374"
+    ]
+  },
+  {
+    "iid": 2448,
+    "state": "opened",
+    "draft": false,
+    "title": "[L2] fix: tmp_dir fixture 的 finally 里 3 处 return 会吞掉测试异常（B012）；顺带修许可头拼写",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2448",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 2447,
     "state": "opened",
     "draft": false,
     "title": "fix: Preserve non-exact Pow exponents during graph optimization",
     "created_at": "2026-09-30",
-    "updated_at": "2026-09-30",
+    "updated_at": "2026-10-01",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -3350,12 +3459,13 @@
     "draft": false,
     "title": "feat: codegen 支持 inductor 纯 cube 融合图(单独 mm/bmm 无 epilogue 走 fixpipe 流程)",
     "created_at": "2026-09-22",
-    "updated_at": "2026-09-22",
+    "updated_at": "2026-10-01",
     "merged_at": "",
     "closed_at": "",
     "author": "ling-DT",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2281",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes"
     ],
     "working_days_open": 6,

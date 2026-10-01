@@ -1,5 +1,270 @@
 [
   {
+    "iid": 5280,
+    "state": "opened",
+    "draft": false,
+    "title": "[L2] fix: 23 处文内链接锚点与页面真实 id 不一致（标点/emoji/连续连字符），点击不跳转",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5280",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5279,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: 对齐 PatternMatcher Pass Python 示例的闭合围栏",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5279",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "617"
+    ]
+  },
+  {
+    "iid": 5278,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: 移除完整 JSON 配置示例中的尾逗号",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5278",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "616"
+    ]
+  },
+  {
+    "iid": 5277,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: 补充input_hint_shape等4个ATC选项说明页并更新索引(#615)",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "chenqian1365",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5277",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "615"
+    ]
+  },
+  {
+    "iid": 5276,
+    "state": "opened",
+    "draft": false,
+    "title": "[L3] fix: gen_esb 文档里的 --extract-history 不是工具的选项（真机报 unknown command line flag），应为 --es_mode=extract_history",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5276",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5275,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: 许可头行首 NBSP(U+00A0) 改为普通空格并补看护 UT(#614)",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "chenqian1365",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5275",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "614"
+    ]
+  },
+  {
+    "iid": 5274,
+    "state": "opened",
+    "draft": false,
+    "title": "[L2] fix(docs): AddControlEdge 示例里 `(void)` 写成全角括号（贴过去编译不过）",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5274",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5273,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: 非内联方案",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Chang-an-HW",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5273",
+    "labels": [
+      "enhancement",
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5272,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(tests): 删除测试桩 JSON 中被覆盖的重复键定义(#612)",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "chenqian1365",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5272",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "612"
+    ]
+  },
+  {
+    "iid": 5271,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(docs): 修正 C++ API 文档原型错误（custom.h 头文件路径 / RunCallBack 类型名）",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "dihidao",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5271",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "592"
+    ]
+  },
+  {
+    "iid": 5270,
+    "state": "opened",
+    "draft": false,
+    "title": "[L3] docs: 5 份 EsGraphBuilder cpp API 页的闭合围栏缩进 4 空格 → CommonMark 不闭合，整页后半（含参数表）被渲染成代码",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5270",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5269,
+    "state": "opened",
+    "draft": false,
+    "title": "[L3] docs: 14 个 API 页 python 代码块里的 NBSP(U+00A0) 换成普通空格（复制即 invalid non-printable character）",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5269",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "611"
+    ]
+  },
+  {
+    "iid": 5268,
+    "state": "opened",
+    "draft": false,
+    "title": "[L2] fix: graph_test.py 里 test_add_data_edge_invalid_dst_node 定义两次，前者被覆盖永不执行；把实际测 add_control_edge 的那份改成正确名字",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5268",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5267,
+    "state": "opened",
+    "draft": false,
+    "title": "[L3] fix: dflow 6 篇 Python API 文档的调用示例裸写 FlowInfo(...)，照抄必 NameError（同目录另有 3 处是 df.FlowInfo 的正确写法）",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5267",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 5266,
     "state": "opened",
     "draft": false,
@@ -415,7 +680,7 @@
     "draft": false,
     "title": "[L2] docs: EsGraphBuilder 4 个 API 文档闭合代码围栏缩进 4 空格致其吞掉后续两张表格",
     "created_at": "2026-09-29",
-    "updated_at": "2026-09-29",
+    "updated_at": "2026-10-01",
     "merged_at": "",
     "closed_at": "",
     "author": "wsnidie1",

@@ -1,5 +1,214 @@
 [
   {
+    "iid": 1141,
+    "state": "opened",
+    "draft": false,
+    "title": "[L1] fix: SECURITY.md 附录锚点保留了标题里的全角括号（页面上不存在该锚点），2 处链接点不动",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1141",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1140,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(reference_practice): build_and_run.sh 增加严格错误处理，构建/安装失败不再静默继续",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "yaozichen2025",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1140",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "803",
+      "790"
+    ]
+  },
+  {
+    "iid": 1139,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(contrib): 补齐 mobilenetv3 02.05 缺失的 torch.nn.functional 导入",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "yaozichen2025",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1139",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1138,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(new-books): de-link unbuilt book drafts to avoid 404",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "c2892480843s",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1138",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "801"
+    ]
+  },
+  {
+    "iid": 1137,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(new-courses): fix syllabus.md relative path off-by-one in 4 READMEs",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "c2892480843s",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1137",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "800"
+    ]
+  },
+  {
+    "iid": 1136,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(bootcamp): append missing .pptx suffix to lecture-11 PPT links",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "c2892480843s",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1136",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "799"
+    ]
+  },
+  {
+    "iid": 1135,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(sh): convert 4 CRLF scripts to LF to avoid bad interpreter",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "c2892480843s",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1135",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "798"
+    ]
+  },
+  {
+    "iid": 1134,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(qwen_ops): fill 4 empty op_host READMEs",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "c2892480843s",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1134",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "802"
+    ]
+  },
+  {
+    "iid": 1133,
+    "state": "opened",
+    "draft": false,
+    "title": "[L3] docs: SuperKernel 博客代码块里的 NBSP(U+00A0) 换成普通空格（命令/代码复制即报错）",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1133",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1132,
+    "state": "opened",
+    "draft": false,
+    "title": "[Bug] Reject symlinked grader build directories",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1132",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "797"
+    ]
+  },
+  {
+    "iid": 1131,
+    "state": "opened",
+    "draft": false,
+    "title": "[L3] fix: 4 个 .sh 存成 CRLF → Linux 上 bad interpreter（其中 2 个连 bash -n 都过不去）",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1131",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1130,
     "state": "opened",
     "draft": false,
@@ -13,7 +222,7 @@
     "labels": [
       "ai-co-authored",
       "cann-cla/yes",
-      "ci-pipeline-running"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -513,7 +722,7 @@
     "draft": false,
     "title": "fix: 修复 6 处失效的文档相对链接",
     "created_at": "2026-09-29",
-    "updated_at": "2026-09-30",
+    "updated_at": "2026-10-02",
     "merged_at": "",
     "closed_at": "",
     "author": "liuxiaqing",
@@ -521,9 +730,9 @@
     "labels": [
       "ai-docs-only",
       "stat/needs-squash",
-      "ai-co-authored",
-      "ai-compliance-failed",
-      "cann-cla/yes"
+      "cann-cla/no",
+      "ai-compliance-successful",
+      "ai-co-authored"
     ],
     "working_days_open": 2,
     "e2e_issues": []

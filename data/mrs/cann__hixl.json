@@ -1,5 +1,63 @@
 [
   {
+    "iid": 1344,
+    "state": "opened",
+    "draft": false,
+    "title": "[docs]: 修正 KV Cache 注册示例的类型及地址列表",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1344",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "900"
+    ]
+  },
+  {
+    "iid": 1343,
+    "state": "opened",
+    "draft": false,
+    "title": "[docs]: 修正 LLM-DataDist 1P1D 建链示例",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1343",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "899"
+    ]
+  },
+  {
+    "iid": 1342,
+    "state": "opened",
+    "draft": false,
+    "title": "[L3] fix: 2 个文件许可头每行行首是 NBSP(U+00A0) 而非空格 → 按原文匹配的合规扫描认不出这批头",
+    "created_at": "2026-10-01",
+    "updated_at": "2026-10-01",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1342",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1341,
     "state": "opened",
     "draft": false,
@@ -128,7 +186,7 @@
     "draft": false,
     "title": "[L2] docs: 英文版 HIXL-interface 缺失链路池水位线换算规则、公式与算例（中文版有）",
     "created_at": "2026-09-29",
-    "updated_at": "2026-09-30",
+    "updated_at": "2026-10-01",
     "merged_at": "",
     "closed_at": "",
     "author": "wsnidie1",
@@ -700,13 +758,13 @@
   },
   {
     "iid": 1307,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[docs]: 修正 HIXL 构建指南的安装包路径",
     "created_at": "2026-09-26",
-    "updated_at": "2026-09-27",
+    "updated_at": "2026-10-01",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-01",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1307",
     "labels": [
@@ -1652,7 +1710,7 @@
     "draft": false,
     "title": "[修复] 删除前等待正在执行的 timer callback",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-28",
+    "updated_at": "2026-10-01",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -1672,14 +1730,13 @@
     "draft": false,
     "title": "[修复] 修复 PrepareMem 与 Unlink 的资源生命周期竞态",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-28",
+    "updated_at": "2026-10-01",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1259",
     "labels": [
-      "approved",
-      "lgtm",
+      "ci-pipeline-passed",
       "cann-cla/yes"
     ],
     "working_days_open": 5,
@@ -1795,14 +1852,14 @@
     "draft": false,
     "title": "[修复] 回收 PrepareMem 早期失败时的裸 HcclComm",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-28",
+    "updated_at": "2026-10-01",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1253",
     "labels": [
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "cann-cla/yes"
     ],
     "working_days_open": 5,
     "e2e_issues": [
@@ -1811,19 +1868,20 @@
   },
   {
     "iid": 1252,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[修复] 修复非法控制消息头导致 CS 客户端连接失步",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-28",
-    "merged_at": "",
+    "updated_at": "2026-10-01",
+    "merged_at": "2026-10-01",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1252",
     "labels": [
       "lgtm",
       "approved",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 5,
     "e2e_issues": [
@@ -2430,15 +2488,14 @@
     "draft": false,
     "title": "[Fix] 传播 CopyCache stream 创建失败",
     "created_at": "2026-09-22",
-    "updated_at": "2026-09-30",
+    "updated_at": "2026-10-01",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1222",
     "labels": [
       "cann-cla/yes",
-      "approved",
-      "lgtm"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 6,
     "e2e_issues": [
@@ -3820,15 +3877,15 @@
     "draft": false,
     "title": "[Fix] 校验 Pull layer range 的 source 范围",
     "created_at": "2026-09-19",
-    "updated_at": "2026-09-30",
+    "updated_at": "2026-10-01",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1154",
     "labels": [
-      "cann-cla/yes",
       "ci-pipeline-passed",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "cann-cla/yes"
     ],
     "working_days_open": 8,
     "e2e_issues": [
