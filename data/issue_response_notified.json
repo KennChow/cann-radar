@@ -475,8 +475,8 @@
             "spring_yb"
           ],
           "satisfied": true,
-          "last_checked_at": "2026-09-30T23:48:56+00:00",
-          "satisfied_at": "2026-09-30T23:48:56+00:00"
+          "last_checked_at": "2026-10-01T05:52:25+00:00",
+          "satisfied_at": "2026-10-01T05:52:25+00:00"
         }
       }
     },
@@ -693,8 +693,8 @@
             "spring_yb"
           ],
           "satisfied": true,
-          "last_checked_at": "2026-09-30T23:48:52+00:00",
-          "satisfied_at": "2026-09-30T23:48:52+00:00"
+          "last_checked_at": "2026-10-01T05:52:21+00:00",
+          "satisfied_at": "2026-10-01T05:52:21+00:00"
         }
       }
     },
@@ -881,8 +881,8 @@
             "spring_yb"
           ],
           "satisfied": true,
-          "last_checked_at": "2026-09-30T23:48:48+00:00",
-          "satisfied_at": "2026-09-30T23:48:48+00:00"
+          "last_checked_at": "2026-10-01T05:52:17+00:00",
+          "satisfied_at": "2026-10-01T05:52:17+00:00"
         }
       }
     },
@@ -1052,7 +1052,26 @@
         "latest_non_author_comment_id": "192073179"
       },
       "comment_count": 2,
-      "issue_updated_at": "2026-10-01T05:45:06+08:00"
+      "issue_updated_at": "2026-10-01T05:45:06+08:00",
+      "notifications": {
+        "followup:192073179": {
+          "delivered_users": {
+            "guopeian": {
+              "sent_at": "2026-10-01T05:52:11+00:00"
+            },
+            "kobemini": {
+              "sent_at": "2026-10-01T05:52:13+00:00"
+            }
+          },
+          "required_users": [
+            "guopeian",
+            "kobemini"
+          ],
+          "satisfied": true,
+          "last_checked_at": "2026-10-01T05:52:13+00:00",
+          "satisfied_at": "2026-10-01T05:52:13+00:00"
+        }
+      }
     },
     "cann__metadef!110": {
       "repo": "cann/metadef",
@@ -1280,8 +1299,43 @@
         "latest_non_author_comment_id": ""
       },
       "comment_count": 0,
-      "issue_updated_at": "2026-09-30T22:30:43+08:00"
+      "issue_updated_at": "2026-09-30T22:30:43+08:00",
+      "notifications": {
+        "initial:2026-09-30T22:17:24+08:00": {
+          "delivered_users": {
+            "Mexyy": {
+              "sent_at": "2026-10-01T05:52:00+00:00"
+            },
+            "m0_50621083": {
+              "sent_at": "2026-10-01T05:52:02+00:00"
+            },
+            "spring_yb": {
+              "sent_at": "2026-10-01T05:52:04+00:00"
+            }
+          },
+          "required_users": [
+            "Mexyy",
+            "m0_50621083",
+            "spring_yb"
+          ],
+          "satisfied": true,
+          "last_checked_at": "2026-10-01T05:52:04+00:00",
+          "satisfied_at": "2026-10-01T05:52:04+00:00"
+        }
+      }
+    },
+    "cann__ge!611": {
+      "repo": "cann/ge",
+      "comments": {
+        "has_non_author_response": false,
+        "latest_comment_id": "192392144",
+        "latest_comment_author": "wsnidie1",
+        "latest_comment_at": "2026-10-01T12:10:43+08:00",
+        "latest_non_author_comment_id": ""
+      },
+      "comment_count": 1,
+      "issue_updated_at": "2026-10-01T12:10:43+08:00"
     }
   },
-  "last_run": "2026-09-30T23:48:56+00:00"
+  "last_run": "2026-10-01T05:52:25+00:00"
 }
