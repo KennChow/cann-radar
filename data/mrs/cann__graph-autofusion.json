@@ -1,5 +1,181 @@
 [
   {
+    "iid": 2462,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(att): compare formula metrics by node, pipe and case identity (#381)",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2462",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "381"
+    ]
+  },
+  {
+    "iid": 2461,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: allow build.sh output paths with missing parents",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2461",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "380"
+    ]
+  },
+  {
+    "iid": 2460,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(att): preserve compiler tiling case IDs when splitting slog (#379)",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2460",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "379"
+    ]
+  },
+  {
+    "iid": 2459,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(att): preserve graph identity in performance formula reports (#378)",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2459",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "378"
+    ]
+  },
+  {
+    "iid": 2458,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(att): position SVG groups on separate rows (#377)",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2458",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "377"
+    ]
+  },
+  {
+    "iid": 2457,
+    "state": "opened",
+    "draft": false,
+    "title": "[L2] fix: 用例里 `sub_op.timestamp_option == True` 是无效果语句，前置状态其实没被设置",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2457",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2456,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: 将 mockcpp 补丁校验限定在子 Shell 中",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2456",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "376"
+    ]
+  },
+  {
+    "iid": 2455,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: 对齐离线构建的 cann-cmake 引导依赖与路径",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2455",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "375"
+    ]
+  },
+  {
+    "iid": 2454,
+    "state": "opened",
+    "draft": false,
+    "title": "[L3] fix: 43 处用 sh 调用 #!/bin/bash 脚本（dash 下语法解析即失败）→ 改用 bash",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2454",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 2453,
     "state": "opened",
     "draft": false,
@@ -12,7 +188,7 @@
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2453",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 0,
     "e2e_issues": []
@@ -58,12 +234,13 @@
     "draft": false,
     "title": "[L3] fix: re.split 的第三个位置参数是 maxsplit，re.DOTALL 被当段数传了进去（flags 一直没生效）",
     "created_at": "2026-10-01",
-    "updated_at": "2026-10-01",
+    "updated_at": "2026-10-02",
     "merged_at": "",
     "closed_at": "",
     "author": "wsnidie1",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2450",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
@@ -1155,13 +1332,14 @@
     "draft": false,
     "title": "fix(att): write split slog output as UTF-8 (#361)",
     "created_at": "2026-09-27",
-    "updated_at": "2026-09-28",
+    "updated_at": "2026-10-02",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_Z57idahf",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2395",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 3,
     "e2e_issues": [
@@ -1174,13 +1352,14 @@
     "draft": false,
     "title": "fix(att): parse signed scientific performance values (#360)",
     "created_at": "2026-09-27",
-    "updated_at": "2026-09-28",
+    "updated_at": "2026-10-02",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_Z57idahf",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2394",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 3,
     "e2e_issues": [
@@ -1193,13 +1372,14 @@
     "draft": false,
     "title": "fix(att): parse scientific values in profiling logs (#359)",
     "created_at": "2026-09-27",
-    "updated_at": "2026-09-28",
+    "updated_at": "2026-10-02",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_Z57idahf",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2393",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 3,
     "e2e_issues": [

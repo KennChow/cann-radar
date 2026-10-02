@@ -1,5 +1,305 @@
 [
   {
+    "iid": "632",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: LLM 字符串 Tensor 将 Unicode ndarray 按 ASCII 转成 bytes，中文和 emoji 构造失败",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/632",
+    "working_days_open": 0
+  },
+  {
+    "iid": "631",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: LLM Tensor.numpy 的 FP16/BF16 特殊路径丢失 shape，FP16 copy=True 仍共享缓冲区",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/631",
+    "working_days_open": 0
+  },
+  {
+    "iid": "630",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: TransferAsyncThread 的 worker 抛异常后 synchronize 将空结果当作成功",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/630",
+    "working_days_open": 0
+  },
+  {
+    "iid": "629",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: 异步层传输读取普通 TransferConfig 不存在的 dst_layer_range，缓存键映射又用全局下标访问目标范围",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/629",
+    "working_days_open": 0
+  },
+  {
+    "iid": "628",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: 替换 TransferWithCacheKeyConfig.cache_key 后目的 cluster 元数据仍指向旧集群",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/628",
+    "working_days_open": 0
+  },
+  {
+    "iid": "627",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: TransferWithCacheKeyConfig 用源起点计算目标范围长度，拒绝等长错位范围并接受不等长范围",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/627",
+    "working_days_open": 0
+  },
+  {
+    "iid": "626",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: CacheDesc 接受 tuple shape 后无法更新，list 更新后 batch_size 仍为旧值",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/626",
+    "working_days_open": 0
+  },
+  {
+    "iid": "625",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: LlmConfig 再次生成 options 时保留已清除的旧配置",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/625",
+    "working_days_open": 0
+  },
+  {
+    "iid": "624",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: Python 外部分配器的 MemoryError 穿出 ctypes 回调，C++ 收不到确定的空指针",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/624",
+    "working_days_open": 0
+  },
+  {
+    "iid": "623",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: 空 Tensor 还原嵌套数据时外层零维导致除零异常",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/623",
+    "working_days_open": 0
+  },
+  {
+    "iid": "622",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: Tensor 构造时未验证输入长度，shape 大于 data 时原生接口越界读取",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/622",
+    "working_days_open": 0
+  },
+  {
+    "iid": "621",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: Tensor 的全 bool 输入无视声明 dtype，按 1 字节打包供多字节原生类型读取",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/621",
+    "working_days_open": 0
+  },
+  {
+    "iid": "620",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: Python FP16 次正规数转换在下溢与正规数进位边界错误归零",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/620",
+    "working_days_open": 0
+  },
+  {
+    "iid": "619",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: 多个插件目录下同名包被 sys.modules 复用，第二个插件静默漏加载",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/619",
+    "working_days_open": 0
+  },
+  {
+    "iid": "618",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: 单文件 Python 插件无法导入同目录依赖，目录模式正常",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/618",
+    "working_days_open": 0
+  },
+  {
     "iid": "617",
     "state": "opened",
     "created_at": "2026-10-02",

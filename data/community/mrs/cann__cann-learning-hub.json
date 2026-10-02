@@ -1,5 +1,225 @@
 [
   {
+    "iid": 1153,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(Lab5_4): 修正低强度 uint8 图片的归一化",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Hanabi21",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1153",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1152,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(tutorials): 防止 VOC 验证集回退时混入训练数据",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Hanabi21",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1152",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1151,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(deepseek_lora): 补齐 05.07 章节实践与参考答案缺失的 import torch",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "yaozichen2025",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1151",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1150,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(nearlink): 修复 04.05/05.06 章节实践 plt.step 语法错误与答案文件两处错误",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "yaozichen2025",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1150",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1149,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(face_guard): fail preparation when no images are written",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Hanabi21",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1149",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1148,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(stack_expr_lab): 三算子 Tiling 修复小张量除零与属性越界 (#786)",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "yaozichen2025",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1148",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "786"
+    ]
+  },
+  {
+    "iid": 1147,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(mc2): 01.04 答案 tilingData 改用栈对象消除异常路径内存泄漏 (#787)",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "yaozichen2025",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1147",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "787"
+    ]
+  },
+  {
+    "iid": 1146,
+    "state": "opened",
+    "draft": false,
+    "title": "NPU practice grader must check matrix result devices",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1146",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "808"
+    ]
+  },
+  {
+    "iid": 1145,
+    "state": "opened",
+    "draft": false,
+    "title": "[Bug-Report|缺陷反馈]: launch_infer_task 传播各 rank 退出状态",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1145",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "807"
+    ]
+  },
+  {
+    "iid": 1144,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(tutorials): decode async payload in Nearlink Mux example",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Hanabi21",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1144",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1143,
+    "state": "opened",
+    "draft": false,
+    "title": "Fix RoPE FP32 half-dimension copies",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1143",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "804"
+    ]
+  },
+  {
+    "iid": 1142,
+    "state": "opened",
+    "draft": false,
+    "title": "修正 bitmap grader 对尾块等价分支的误判",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1142",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "805"
+    ]
+  },
+  {
     "iid": 1141,
     "state": "opened",
     "draft": false,
@@ -23,13 +243,13 @@
     "draft": false,
     "title": "fix(reference_practice): build_and_run.sh 增加严格错误处理，构建/安装失败不再静默继续",
     "created_at": "2026-10-01",
-    "updated_at": "2026-10-01",
+    "updated_at": "2026-10-02",
     "merged_at": "",
     "closed_at": "",
     "author": "yaozichen2025",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1140",
     "labels": [
-      "cann-cla/no"
+      "cann-cla/yes"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -43,13 +263,13 @@
     "draft": false,
     "title": "fix(contrib): 补齐 mobilenetv3 02.05 缺失的 torch.nn.functional 导入",
     "created_at": "2026-10-01",
-    "updated_at": "2026-10-01",
+    "updated_at": "2026-10-02",
     "merged_at": "",
     "closed_at": "",
     "author": "yaozichen2025",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1139",
     "labels": [
-      "cann-cla/no"
+      "cann-cla/yes"
     ],
     "working_days_open": 0,
     "e2e_issues": []

@@ -1,5 +1,137 @@
 [
   {
+    "iid": "381",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: 性能公式跨 case 方差混合不同节点的同名指标，并可能把缺失指标的值标到其他 case",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/381",
+    "working_days_open": 0
+  },
+  {
+    "iid": "380",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "[Bug-Report|缺陷反馈]: `build.sh --output_path` fails when parent directories are missing",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/380",
+    "working_days_open": 0
+  },
+  {
+    "iid": "379",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: split-slog 丢失编译 case 编号，非连续 case 被重编号且 --case 筛选错误",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/379",
+    "working_days_open": 0
+  },
+  {
+    "iid": "378",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: PERF 分组忽略 graph id，将不同调度图的性能数据混为一组",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/378",
+    "working_days_open": 0
+  },
+  {
+    "iid": "377",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: perf-formula 在四个及以上 group 时重叠绘制分组，报告不可读",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/377",
+    "working_days_open": 0
+  },
+  {
+    "iid": "376",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "author_id": "67fb64ad2cb7f0133f7efecc",
+    "title": "[Documentation|文档反馈]: mockcpp 补丁校验示例改变工作目录导致后续构建入口失效",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Ethan_Zou"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/376",
+    "working_days_open": 0
+  },
+  {
+    "iid": "375",
+    "state": "opened",
+    "created_at": "2026-10-02",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "author_id": "67fb64ad2cb7f0133f7efecc",
+    "title": "[Documentation|文档反馈]: 离线构建指南提供旧版 cann-cmake 且未放入当前引导路径",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Ethan_Zou"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/375",
+    "working_days_open": 0
+  },
+  {
     "iid": "374",
     "state": "opened",
     "created_at": "2026-10-01",

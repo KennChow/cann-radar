@@ -1,5 +1,269 @@
 [
   {
+    "iid": 5293,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(llm): preserve half tensor arrays and encode Unicode strings (#631,#632)",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5293",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "632",
+      "631"
+    ]
+  },
+  {
+    "iid": 5292,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(llm): map destination layers and report worker failures (#629,#630)",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5292",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "630",
+      "629"
+    ]
+  },
+  {
+    "iid": 5291,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(llm): keep cache dimensions and transfer metadata consistent (#626,#627,#628)",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5291",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "628",
+      "627",
+      "626"
+    ]
+  },
+  {
+    "iid": 5290,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(llm): rebuild options from the current configuration (#625)",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5290",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "625"
+    ]
+  },
+  {
+    "iid": 5289,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(python): return null from allocator callbacks on MemoryError (#624)",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5289",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "624"
+    ]
+  },
+  {
+    "iid": 5288,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(python): unflatten Tensor data with zero-sized outer dimensions (#623)",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5288",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "623"
+    ]
+  },
+  {
+    "iid": 5287,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(python): reject Tensor data shorter than the declared shape (#622)",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5287",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "622"
+    ]
+  },
+  {
+    "iid": 5286,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(python): pack boolean Tensor values using the declared dtype (#621)",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5286",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "621"
+    ]
+  },
+  {
+    "iid": 5285,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(python): preserve FP16 subnormal rounding and exponent carry (#620)",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5285",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "620"
+    ]
+  },
+  {
+    "iid": 5284,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(python): load plugin packages by canonical file identity (#619)",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5284",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "619"
+    ]
+  },
+  {
+    "iid": 5283,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(python): expose plugin parent directory during file loading (#618)",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5283",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "618"
+    ]
+  },
+  {
+    "iid": 5282,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: ONNX插件接入Python多版本矩阵构建与fallback codegen",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gentle-knight",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5282",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5281,
+    "state": "opened",
+    "draft": false,
+    "title": "[L3] fix: 2 处用 sh 调用 #!/bin/bash 脚本（dash 下语法解析即失败）→ 改用 bash",
+    "created_at": "2026-10-02",
+    "updated_at": "2026-10-02",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5281",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 5280,
     "state": "opened",
     "draft": false,
@@ -234,14 +498,15 @@
     "draft": false,
     "title": "[L2] fix: graph_test.py 里 test_add_data_edge_invalid_dst_node 定义两次，前者被覆盖永不执行；把实际测 add_control_edge 的那份改成正确名字",
     "created_at": "2026-10-01",
-    "updated_at": "2026-10-01",
+    "updated_at": "2026-10-02",
     "merged_at": "",
     "closed_at": "",
     "author": "wsnidie1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5268",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 0,
     "e2e_issues": []
@@ -626,7 +891,7 @@
     "draft": false,
     "title": "[L1] docs: 英文文档混用中文全角标点（10 处）",
     "created_at": "2026-09-29",
-    "updated_at": "2026-09-29",
+    "updated_at": "2026-10-02",
     "merged_at": "",
     "closed_at": "",
     "author": "wsnidie1",
@@ -2274,13 +2539,14 @@
     "draft": false,
     "title": "fix(onnx_parser): opset版本冲突告警与origin miss诊断增强",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-30",
+    "updated_at": "2026-10-02",
     "merged_at": "",
     "closed_at": "",
     "author": "gentle-knight",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5166",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 4,
     "e2e_issues": []
