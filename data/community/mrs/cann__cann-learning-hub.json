@@ -1,5 +1,215 @@
 [
   {
+    "iid": 1165,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(sana-video): replace eval with globals lookup and ast.literal_eval",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "2401_88534495",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1165",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "788"
+    ]
+  },
+  {
+    "iid": 1164,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(conv): quote BUILD_DIR in conv build.sh to avoid rm splitting on spaces",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "2401_88534495",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1164",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "792"
+    ]
+  },
+  {
+    "iid": 1163,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(bootcamp): fix PPT link missing .pptx extension",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "2401_88534495",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1163",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "799"
+    ]
+  },
+  {
+    "iid": 1162,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(nearlink): correct Polar decoder output description",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Hanabi21",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1162",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1161,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(tutorials): compensate signaling AWGN for configured samples per symbol",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Hanabi21",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1161",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1160,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(tutorials): align GFSK BFSK reference with Q definition",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Hanabi21",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1160",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1159,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(tutorials): 校正 NearLink 配对接口与状态说明",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Hanabi21",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1159",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1158,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(nearlink): 修正MCS建议读取与应用的副作用说明",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Hanabi21",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1158",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1157,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(nearlink): 修正接入教程扩展广播帧的数据项说明",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Hanabi21",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1157",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1156,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(Lab5_1): 从评分模块目录读取答案文件",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Hanabi21",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1156",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1155,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(nearlink): 避免功率自适应噪声模型重复计算发射功率",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Hanabi21",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1155",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1154,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(nearlink): 修正 HARQ AvgTx 包含所有帧的说明",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Hanabi21",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1154",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1153,
     "state": "opened",
     "draft": false,
@@ -128,14 +338,14 @@
     "draft": false,
     "title": "NPU practice grader must check matrix result devices",
     "created_at": "2026-10-02",
-    "updated_at": "2026-10-02",
+    "updated_at": "2026-10-04",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1146",
     "labels": [
-      "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-failed",
+      "cann-cla/yes"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -205,14 +415,14 @@
     "draft": false,
     "title": "修正 bitmap grader 对尾块等价分支的误判",
     "created_at": "2026-10-02",
-    "updated_at": "2026-10-02",
+    "updated_at": "2026-10-03",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1142",
     "labels": [
-      "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed",
+      "cann-cla/yes"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -508,7 +718,7 @@
     "draft": false,
     "title": "fix(qwen3): handle missing torch_npu gracefully in precision checks",
     "created_at": "2026-09-30",
-    "updated_at": "2026-09-30",
+    "updated_at": "2026-10-03",
     "merged_at": "",
     "closed_at": "",
     "author": "Aorightyan",
@@ -942,17 +1152,16 @@
     "draft": false,
     "title": "fix: 修复 6 处失效的文档相对链接",
     "created_at": "2026-09-29",
-    "updated_at": "2026-10-02",
+    "updated_at": "2026-10-03",
     "merged_at": "",
     "closed_at": "",
     "author": "liuxiaqing",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1104",
     "labels": [
       "ai-docs-only",
-      "stat/needs-squash",
-      "cann-cla/no",
       "ai-compliance-successful",
-      "ai-co-authored"
+      "ai-co-authored",
+      "cann-cla/yes"
     ],
     "working_days_open": 2,
     "e2e_issues": []

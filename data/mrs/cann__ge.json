@@ -1,19 +1,177 @@
 [
   {
+    "iid": 5301,
+    "state": "opened",
+    "draft": false,
+    "title": "[L1] fix: triton_add_custom 示例脚本用了 RewriterConfig 却没导入，照 README 跑必 NameError",
+    "created_at": "2026-10-04",
+    "updated_at": "2026-10-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5301",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5300,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(python): enforce unsigned constant and graph output contracts (#639,#640)",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5300",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "640",
+      "639"
+    ]
+  },
+  {
+    "iid": 5299,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(python): reject TensorDesc dimensions outside the native range (#638)",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5299",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "638"
+    ]
+  },
+  {
+    "iid": 5298,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(python): restore DataType enums when reading list attributes (#637)",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5298",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "637"
+    ]
+  },
+  {
+    "iid": 5297,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(python): respect visible execute declarations when inheriting kernels (#636)",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5297",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "636"
+    ]
+  },
+  {
+    "iid": 5296,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(python): preserve inherited patterns when extending a fusion pass (#635)",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5296",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "635"
+    ]
+  },
+  {
+    "iid": 5295,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(llm): accept fixed-width strings with explicit tensor descriptors (#634)",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5295",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "634"
+    ]
+  },
+  {
+    "iid": 5294,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(python): dispatch DataType lists before integer attributes (#633)",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5294",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "633"
+    ]
+  },
+  {
     "iid": 5293,
     "state": "opened",
     "draft": false,
     "title": "fix(llm): preserve half tensor arrays and encode Unicode strings (#631,#632)",
     "created_at": "2026-10-02",
-    "updated_at": "2026-10-03",
+    "updated_at": "2026-10-04",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_Z57idahf",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5293",
     "labels": [
-      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-failed",
+      "stat/needs-squash"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -33,9 +191,9 @@
     "author": "gcw_Z57idahf",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5292",
     "labels": [
-      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed",
+      "stat/needs-squash"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -55,9 +213,9 @@
     "author": "gcw_Z57idahf",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5291",
     "labels": [
-      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed",
+      "stat/needs-squash"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -78,9 +236,9 @@
     "author": "gcw_Z57idahf",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5290",
     "labels": [
-      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed",
+      "stat/needs-squash"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -133,14 +291,15 @@
     "draft": false,
     "title": "fix(python): reject Tensor data shorter than the declared shape (#622)",
     "created_at": "2026-10-02",
-    "updated_at": "2026-10-02",
+    "updated_at": "2026-10-03",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_Z57idahf",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5287",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -498,15 +657,13 @@
     "draft": false,
     "title": "[L2] fix: graph_test.py 里 test_add_data_edge_invalid_dst_node 定义两次，前者被覆盖永不执行；把实际测 add_control_edge 的那份改成正确名字",
     "created_at": "2026-10-01",
-    "updated_at": "2026-10-02",
+    "updated_at": "2026-10-03",
     "merged_at": "",
     "closed_at": "",
     "author": "wsnidie1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5268",
     "labels": [
-      "stat/needs-squash",
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "cann-cla/yes"
     ],
     "working_days_open": 0,
     "e2e_issues": []

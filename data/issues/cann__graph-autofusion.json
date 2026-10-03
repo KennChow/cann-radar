@@ -1,5 +1,145 @@
 [
   {
+    "iid": "388",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: dump 图的 node:-1 控制依赖被当作真实张量输入，产生不存在的 NPY 比较项",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/388",
+    "working_days_open": 0
+  },
+  {
+    "iid": "387",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: 一个 dump 的布局与数组 rank 不匹配时异常逃逸，整批精度定位提前中断",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/387",
+    "working_days_open": 0
+  },
+  {
+    "iid": "386",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: 有限 float64 大值的 dot/norm 溢出，相同 dump 的余弦相似度为 NaN",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/386",
+    "working_days_open": 0
+  },
+  {
+    "iid": "385",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: int64/uint64 大整数先转 float64，真实差 1 的 dump 被报告为零误差",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/385",
+    "working_days_open": 0
+  },
+  {
+    "iid": "384",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: NPY 目录含方括号等 glob 字符时，已存在 dump 文件被误判为找不到",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/384",
+    "working_days_open": 0
+  },
+  {
+    "iid": "383",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: 保存 CSV 对比文本报告发生写入错误后标准输出指向已关闭文件",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/383",
+    "working_days_open": 0
+  },
+  {
+    "iid": "382",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: CSV 对比将性能从零变为非零的变化率报告为 0%",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/graph-autofusion/issues/382",
+    "working_days_open": 0
+  },
+  {
     "iid": "381",
     "state": "opened",
     "created_at": "2026-10-02",

@@ -1,5 +1,165 @@
 [
   {
+    "iid": "640",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: GraphBuilder.set_graph_output 接受其他 builder 的 TensorHolder，原生调用指向错误所属图",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/640",
+    "working_days_open": 0
+  },
+  {
+    "iid": "639",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: 无符号常量列表绕过标量范围检查，负值及越界值被 ctypes 静默回绕",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/639",
+    "working_days_open": 0
+  },
+  {
+    "iid": "638",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: TensorDesc 超出 int64 范围的维度被 ctypes 静默截断",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/638",
+    "working_days_open": 0
+  },
+  {
+    "iid": "637",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: 读取 LIST_DATA_TYPE 属性返回普通整数，无法作为 DataType 列表回写",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/637",
+    "working_days_open": 0
+  },
+  {
+    "iid": "636",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: custom op 的 kernel 继承被无 execute 的已注册基类阻断，或越过非可调用遮蔽",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/636",
+    "working_days_open": 0
+  },
+  {
+    "iid": "635",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: 子类新增 @pattern 方法时静默丢失基类已声明的融合 pattern",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/635",
+    "working_days_open": 0
+  },
+  {
+    "iid": "634",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: 显式 DT_STRING 描述符拒绝匹配的 NumPy 字符串数组",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/634",
+    "working_days_open": 0
+  },
+  {
+    "iid": "633",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: Python 属性列表的 DataType 枚举被错误写入 list_int",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/633",
+    "working_days_open": 0
+  },
+  {
     "iid": "632",
     "state": "opened",
     "created_at": "2026-10-02",

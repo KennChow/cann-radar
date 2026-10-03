@@ -1,5 +1,222 @@
 [
   {
+    "iid": 89,
+    "state": "opened",
+    "draft": false,
+    "title": "[L1] fix: npu_wrapper.py 的 npu_functional_support 用了未导入的 keras_tensor / nest",
+    "created_at": "2026-10-04",
+    "updated_at": "2026-10-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/89",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 88,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: MemoryConfig中文构造原型遗漏中间位置参数",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/88",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "39"
+    ]
+  },
+  {
+    "iid": 87,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: Session日志回传示例把stderr作为待打印输入",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/87",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "38"
+    ]
+  },
+  {
+    "iid": 86,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: TF2整网精度对比callbacks示例顶层缩进错误",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/86",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "37"
+    ]
+  },
+  {
+    "iid": 85,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: 迭代下沉图像输入示例混淆尺寸维度并漏传shuffle参数",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/85",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "36"
+    ]
+  },
+  {
+    "iid": 84,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: TF2数据集分片片段在顶层保留多余缩进",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/84",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "35"
+    ]
+  },
+  {
+    "iid": 83,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: is_finite迁移示例只注释首行而遗留非法续行",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/83",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "34"
+    ]
+  },
+  {
+    "iid": 82,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: Session分布式广播函数的for及if函数体缺少缩进",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/82",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "33"
+    ]
+  },
+  {
+    "iid": 81,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: 自动迁移示例的查找表初始化未正确置于Session块",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/81",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "32"
+    ]
+  },
+  {
+    "iid": 80,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: 按rank选择数据dump的配置行缩进非法",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/80",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "31"
+    ]
+  },
+  {
+    "iid": 79,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: 精度工具误差计数示例的条件表达式缺少 else",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/79",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "30"
+    ]
+  },
+  {
     "iid": 78,
     "state": "opened",
     "draft": false,
@@ -226,7 +443,7 @@
     "draft": false,
     "title": "docs: fix case-sensitive TF2 LossScaleOptimizer documentation links",
     "created_at": "2026-09-25",
-    "updated_at": "2026-09-29",
+    "updated_at": "2026-10-03",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",

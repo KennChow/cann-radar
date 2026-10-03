@@ -1,5 +1,22 @@
 [
   {
+    "iid": 1978,
+    "state": "closed",
+    "draft": false,
+    "title": "【设计文档】9月社区任务-单精度实数Cholesky分解、求解和批量接口(950) design v1.0",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "2026-10-03",
+    "author": "old_wrench",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1978",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1977,
     "state": "opened",
     "draft": false,
@@ -39,15 +56,17 @@
     "iid": 1975,
     "state": "opened",
     "draft": false,
-    "title": "docs: add aclblasCtrmm A2/A3 design and A2 evidence",
+    "title": "【社区任务】aclblasCtrmm A2/A3 算子设计文档",
     "created_at": "2026-10-02",
-    "updated_at": "2026-10-02",
+    "updated_at": "2026-10-03",
     "merged_at": "",
     "closed_at": "",
     "author": "xhf_A2_1",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/1975",
     "labels": [
-      "cann-cla/no",
+      "ai-docs-only",
+      "ai-compliance-failed",
+      "cann-cla/yes",
       "ai-co-authored"
     ],
     "working_days_open": 0,

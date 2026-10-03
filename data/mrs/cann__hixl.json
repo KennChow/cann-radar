@@ -1,5 +1,25 @@
 [
   {
+    "iid": 1347,
+    "state": "opened",
+    "draft": false,
+    "title": "【质量加固】style: 补充 Channel 只读成员与不可变数据的 const 修饰",
+    "created_at": "2026-10-04",
+    "updated_at": "2026-10-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zh123123456",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1347",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-running"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "613"
+    ]
+  },
+  {
     "iid": 1346,
     "state": "opened",
     "draft": false,
@@ -31,6 +51,7 @@
     "author": "z__y",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1345",
     "labels": [
+      "lgtm",
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
@@ -1157,7 +1178,7 @@
     "draft": false,
     "title": "[修复] 防止 CtrlMsgPlugin::Recv 的 timeout_ms 窄化为负 poll 超时",
     "created_at": "2026-09-24",
-    "updated_at": "2026-10-02",
+    "updated_at": "2026-10-03",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -1299,15 +1320,15 @@
     "draft": false,
     "title": "[修复] 回滚 HIXL 控制面握手失败后的 transfer engine 连接",
     "created_at": "2026-09-24",
-    "updated_at": "2026-09-28",
+    "updated_at": "2026-10-03",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1282",
     "labels": [
+      "cann-cla/yes",
       "ci-pipeline-passed",
-      "stat/needs-squash",
-      "cann-cla/yes"
+      "stat/needs-squash"
     ],
     "working_days_open": 4,
     "e2e_issues": [
@@ -1786,16 +1807,17 @@
   },
   {
     "iid": 1258,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[修复] 拒绝 SwapBlocksV2 未定义的 type 值",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-28",
-    "merged_at": "",
+    "updated_at": "2026-10-03",
+    "merged_at": "2026-10-03",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1258",
     "labels": [
+      "ci-pipeline-passed",
       "approved",
       "lgtm",
       "cann-cla/yes"
@@ -3520,14 +3542,15 @@
     "draft": false,
     "title": "[bugfix]: honor disconnect timeout during cleanup",
     "created_at": "2026-09-20",
-    "updated_at": "2026-09-26",
+    "updated_at": "2026-10-03",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1174",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-failed"
     ],
     "working_days_open": 8,
     "e2e_issues": [
@@ -5795,13 +5818,14 @@
     "draft": false,
     "title": "[bugfix] 修复 NULL 远端内存标签导致的列表错位",
     "created_at": "2026-09-14",
-    "updated_at": "2026-09-22",
+    "updated_at": "2026-10-03",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1065",
     "labels": [
       "lgtm",
+      "ci-pipeline-failed",
       "approved",
       "cann-cla/yes"
     ],

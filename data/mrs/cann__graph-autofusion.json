@@ -1,5 +1,50 @@
 [
   {
+    "iid": 2464,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(nwa): preserve numeric metrics and dump input handling (#384,#385,#386,#387,#388)",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2464",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "388",
+      "387",
+      "386",
+      "385",
+      "384"
+    ]
+  },
+  {
+    "iid": 2463,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(att): report zero-baseline changes and restore stdout on failure (#382,#383)",
+    "created_at": "2026-10-03",
+    "updated_at": "2026-10-03",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2463",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "383",
+      "382"
+    ]
+  },
+  {
     "iid": 2462,
     "state": "opened",
     "draft": false,
@@ -25,14 +70,14 @@
     "draft": false,
     "title": "fix: allow build.sh output paths with missing parents",
     "created_at": "2026-10-02",
-    "updated_at": "2026-10-02",
+    "updated_at": "2026-10-03",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2461",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -234,13 +279,12 @@
     "draft": false,
     "title": "[L3] fix: re.split 的第三个位置参数是 maxsplit，re.DOTALL 被当段数传了进去（flags 一直没生效）",
     "created_at": "2026-10-01",
-    "updated_at": "2026-10-02",
+    "updated_at": "2026-10-03",
     "merged_at": "",
     "closed_at": "",
     "author": "wsnidie1",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2450",
     "labels": [
-      "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
@@ -1251,15 +1295,15 @@
     "draft": false,
     "title": "fix: truncate reused SuperKernel source files",
     "created_at": "2026-09-27",
-    "updated_at": "2026-09-30",
+    "updated_at": "2026-10-03",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2399",
     "labels": [
-      "cann-cla/yes",
       "stat/needs-squash",
-      "ci-pipeline-failed"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 3,
     "e2e_issues": [

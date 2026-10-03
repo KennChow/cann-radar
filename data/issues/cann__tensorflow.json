@@ -1,5 +1,185 @@
 [
   {
+    "iid": "39",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "author_id": "67fb64ad2cb7f0133f7efecc",
+    "title": "[Documentation|文档反馈]: MemoryConfig中文构造原型遗漏中间位置参数",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Ethan_Zou"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/tensorflow/issues/39",
+    "working_days_open": 0
+  },
+  {
+    "iid": "38",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "author_id": "67fb64ad2cb7f0133f7efecc",
+    "title": "[Documentation|文档反馈]: Session日志回传示例把stderr作为待打印输入",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Ethan_Zou"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/tensorflow/issues/38",
+    "working_days_open": 0
+  },
+  {
+    "iid": "37",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "author_id": "67fb64ad2cb7f0133f7efecc",
+    "title": "[Documentation|文档反馈]: TF2整网精度对比callbacks示例顶层缩进错误",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Ethan_Zou"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/tensorflow/issues/37",
+    "working_days_open": 0
+  },
+  {
+    "iid": "36",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "author_id": "67fb64ad2cb7f0133f7efecc",
+    "title": "[Documentation|文档反馈]: 迭代下沉图像输入示例混淆尺寸维度并漏传shuffle参数",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Ethan_Zou"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/tensorflow/issues/36",
+    "working_days_open": 0
+  },
+  {
+    "iid": "35",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "author_id": "67fb64ad2cb7f0133f7efecc",
+    "title": "[Documentation|文档反馈]: TF2数据集分片片段在顶层保留多余缩进",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Ethan_Zou"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/tensorflow/issues/35",
+    "working_days_open": 0
+  },
+  {
+    "iid": "34",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "author_id": "67fb64ad2cb7f0133f7efecc",
+    "title": "[Documentation|文档反馈]: is_finite迁移示例只注释首行而遗留非法续行",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Ethan_Zou"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/tensorflow/issues/34",
+    "working_days_open": 0
+  },
+  {
+    "iid": "33",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "author_id": "67fb64ad2cb7f0133f7efecc",
+    "title": "[Documentation|文档反馈]: Session分布式广播函数的for及if函数体缺少缩进",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Ethan_Zou"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/tensorflow/issues/33",
+    "working_days_open": 0
+  },
+  {
+    "iid": "32",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "author_id": "67fb64ad2cb7f0133f7efecc",
+    "title": "[Documentation|文档反馈]: 自动迁移示例的查找表初始化未正确置于Session块",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Ethan_Zou"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/tensorflow/issues/32",
+    "working_days_open": 0
+  },
+  {
+    "iid": "31",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "author_id": "67fb64ad2cb7f0133f7efecc",
+    "title": "[Documentation|文档反馈]: 按rank选择数据dump的配置行缩进非法",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Ethan_Zou"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/tensorflow/issues/31",
+    "working_days_open": 0
+  },
+  {
+    "iid": "30",
+    "state": "opened",
+    "created_at": "2026-10-03",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "author_id": "67fb64ad2cb7f0133f7efecc",
+    "title": "[Documentation|文档反馈]: 精度工具误差计数示例的条件表达式缺少 else",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Ethan_Zou"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/tensorflow/issues/30",
+    "working_days_open": 0
+  },
+  {
     "iid": "29",
     "state": "opened",
     "created_at": "2026-10-02",
@@ -83,7 +263,7 @@
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/25",
     "working_days_open": 1
   },
