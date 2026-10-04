@@ -1,13 +1,94 @@
 [
   {
-    "iid": "903",
+    "iid": "907",
     "state": "opened",
-    "created_at": "2026-10-03",
+    "created_at": "2026-10-04",
     "closed_at": "",
+    "author": "z__y",
+    "author_id": "66a9f7ff5134be50df0a26c6",
+    "title": "[Bug-Report|缺陷反馈]: 冒烟样例忽略子进程的非零退出状态并报告成功",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "z__y"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/907",
+    "working_days_open": 0
+  },
+  {
+    "iid": "906",
+    "state": "opened",
+    "created_at": "2026-10-04",
+    "closed_at": "",
+    "author": "z__y",
+    "author_id": "66a9f7ff5134be50df0a26c6",
+    "title": "[Bug-Report|缺陷反馈]: 版本信息脚本拆分带空格的路径，且可能展开文件名后复制错文件",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "z__y"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/906",
+    "working_days_open": 0
+  },
+  {
+    "iid": "905",
+    "state": "opened",
+    "created_at": "2026-10-04",
+    "closed_at": "",
+    "author": "z__y",
+    "author_id": "66a9f7ff5134be50df0a26c6",
+    "title": "[Bug-Report|缺陷反馈]: 通信绘图未按 CSV 中实际的 block_size 字节数排序",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "z__y"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/905",
+    "working_days_open": 0
+  },
+  {
+    "iid": "904",
+    "state": "opened",
+    "created_at": "2026-10-04",
+    "closed_at": "",
+    "author": "z__y",
+    "author_id": "66a9f7ff5134be50df0a26c6",
+    "title": "[Bug-Report|缺陷反馈]: 截断的 KV benchmark CSV 行导致整次绘图失败",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "z__y"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/904",
+    "working_days_open": 0
+  },
+  {
+    "iid": "903",
+    "state": "closed",
+    "created_at": "2026-10-03",
+    "closed_at": "2026-10-04",
     "author": "z__y",
     "author_id": "66a9f7ff5134be50df0a26c6",
     "title": "[Bug-Report|缺陷反馈]: 日志规范检查器扫描带源码后缀的目录时崩溃",
     "labels": [
+      "resolved",
       "bug-report"
     ],
     "issue_type": "任务",
@@ -21,13 +102,14 @@
   },
   {
     "iid": "902",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-03",
-    "closed_at": "",
+    "closed_at": "2026-10-04",
     "author": "z__y",
     "author_id": "66a9f7ff5134be50df0a26c6",
     "title": "[Documentation|文档反馈]: 日志规范将“密钥”误写为“秘钥”",
     "labels": [
+      "resolved",
       "documentation"
     ],
     "issue_type": "任务",

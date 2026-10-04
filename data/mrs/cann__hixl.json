@@ -1,5 +1,86 @@
 [
   {
+    "iid": 1351,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: 检查冒烟样例每个子进程的退出状态",
+    "created_at": "2026-10-04",
+    "updated_at": "2026-10-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "z__y",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1351",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "907"
+    ]
+  },
+  {
+    "iid": 1350,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: 正确引用版本信息脚本的输入输出路径",
+    "created_at": "2026-10-04",
+    "updated_at": "2026-10-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "z__y",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1350",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "906"
+    ]
+  },
+  {
+    "iid": 1349,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: 按字节数排序通信 benchmark 图表横轴",
+    "created_at": "2026-10-04",
+    "updated_at": "2026-10-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "z__y",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1349",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "905"
+    ]
+  },
+  {
+    "iid": 1348,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: 跳过 KV 绘图中缺失必需数字字段的记录",
+    "created_at": "2026-10-04",
+    "updated_at": "2026-10-04",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "z__y",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1348",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "741",
+      "904"
+    ]
+  },
+  {
     "iid": 1347,
     "state": "opened",
     "draft": false,
@@ -12,7 +93,7 @@
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1347",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-running"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -21,17 +102,19 @@
   },
   {
     "iid": 1346,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[bugfix]: 日志规范检查只读取源码文件",
     "created_at": "2026-10-03",
-    "updated_at": "2026-10-03",
-    "merged_at": "",
+    "updated_at": "2026-10-04",
+    "merged_at": "2026-10-04",
     "closed_at": "",
     "author": "z__y",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1346",
     "labels": [
       "cann-cla/yes",
+      "approved",
+      "lgtm",
       "ci-pipeline-passed"
     ],
     "working_days_open": 0,
@@ -41,19 +124,20 @@
   },
   {
     "iid": 1345,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[docs]: 修正日志规范中的密钥错字",
     "created_at": "2026-10-03",
-    "updated_at": "2026-10-03",
-    "merged_at": "",
+    "updated_at": "2026-10-04",
+    "merged_at": "2026-10-04",
     "closed_at": "",
     "author": "z__y",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1345",
     "labels": [
       "lgtm",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -1874,7 +1958,7 @@
     "draft": false,
     "title": "[修复] 拒绝 ParseListenInfo 中 IPv4 地址的额外字段",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-28",
+    "updated_at": "2026-10-05",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -2551,7 +2635,7 @@
     "draft": false,
     "title": "[Fix] 传播 CopyCache stream 创建失败",
     "created_at": "2026-09-22",
-    "updated_at": "2026-10-01",
+    "updated_at": "2026-10-04",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -2652,15 +2736,15 @@
     "draft": false,
     "title": "[bugfix]: abort in-flight device kernels before handle release on submit failure(#772)",
     "created_at": "2026-09-22",
-    "updated_at": "2026-09-28",
+    "updated_at": "2026-10-04",
     "merged_at": "",
     "closed_at": "",
     "author": "zhaozhihui",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1217",
     "labels": [
       "cann-cla/yes",
-      "stat/needs-squash",
-      "ci-pipeline-failed"
+      "ci-pipeline-failed",
+      "stat/needs-squash"
     ],
     "working_days_open": 6,
     "e2e_issues": [
@@ -3542,7 +3626,7 @@
     "draft": false,
     "title": "[bugfix]: honor disconnect timeout during cleanup",
     "created_at": "2026-09-20",
-    "updated_at": "2026-10-03",
+    "updated_at": "2026-10-04",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -3550,7 +3634,7 @@
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 8,
     "e2e_issues": [
@@ -5814,19 +5898,19 @@
   },
   {
     "iid": 1065,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[bugfix] 修复 NULL 远端内存标签导致的列表错位",
     "created_at": "2026-09-14",
-    "updated_at": "2026-10-03",
-    "merged_at": "",
+    "updated_at": "2026-10-04",
+    "merged_at": "2026-10-04",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1065",
     "labels": [
       "lgtm",
-      "ci-pipeline-failed",
       "approved",
+      "ci-pipeline-passed",
       "cann-cla/yes"
     ],
     "working_days_open": 13,

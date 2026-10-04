@@ -5,7 +5,7 @@
     "draft": false,
     "title": "fix(sana-video): replace eval with globals lookup and ast.literal_eval",
     "created_at": "2026-10-03",
-    "updated_at": "2026-10-03",
+    "updated_at": "2026-10-04",
     "merged_at": "",
     "closed_at": "",
     "author": "2401_88534495",
@@ -344,8 +344,9 @@
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1146",
     "labels": [
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -1152,7 +1153,7 @@
     "draft": false,
     "title": "fix: 修复 6 处失效的文档相对链接",
     "created_at": "2026-09-29",
-    "updated_at": "2026-10-03",
+    "updated_at": "2026-10-04",
     "merged_at": "",
     "closed_at": "",
     "author": "liuxiaqing",

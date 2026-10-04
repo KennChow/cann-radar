@@ -5,13 +5,14 @@
     "draft": false,
     "title": "[L1] fix: triton_add_custom 示例脚本用了 RewriterConfig 却没导入，照 README 跑必 NameError",
     "created_at": "2026-10-04",
-    "updated_at": "2026-10-04",
+    "updated_at": "2026-10-05",
     "merged_at": "",
     "closed_at": "",
     "author": "wsnidie1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5301",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 0,
     "e2e_issues": []
@@ -657,13 +658,14 @@
     "draft": false,
     "title": "[L2] fix: graph_test.py 里 test_add_data_edge_invalid_dst_node 定义两次，前者被覆盖永不执行；把实际测 add_control_edge 的那份改成正确名字",
     "created_at": "2026-10-01",
-    "updated_at": "2026-10-03",
+    "updated_at": "2026-10-05",
     "merged_at": "",
     "closed_at": "",
     "author": "wsnidie1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5268",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 0,
     "e2e_issues": []
