@@ -1,5 +1,25 @@
 [
   {
+    "iid": 1352,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: reject empty device ID sequences",
+    "created_at": "2026-10-06",
+    "updated_at": "2026-10-06",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1352",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "908"
+    ]
+  },
+  {
     "iid": 1351,
     "state": "opened",
     "draft": false,
@@ -1875,7 +1895,7 @@
     "draft": false,
     "title": "[修复] 修复 PrepareMem 与 Unlink 的资源生命周期竞态",
     "created_at": "2026-09-23",
-    "updated_at": "2026-10-01",
+    "updated_at": "2026-10-05",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -3320,9 +3340,9 @@
     "iid": 1189,
     "state": "opened",
     "draft": false,
-    "title": "[Fix] 回滚 CacheAccessTableUpdater 初始化失败后的设备 buffer",
+    "title": "[修复] 回滚 CacheAccessTableUpdater 初始化失败后的设备 buffer",
     "created_at": "2026-09-20",
-    "updated_at": "2026-09-28",
+    "updated_at": "2026-10-05",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -3682,18 +3702,19 @@
   },
   {
     "iid": 1171,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[bugfix]: Defer ADXL channel cleanup errors until local resources are released",
     "created_at": "2026-09-20",
-    "updated_at": "2026-09-28",
-    "merged_at": "",
+    "updated_at": "2026-10-05",
+    "merged_at": "2026-10-05",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1171",
     "labels": [
       "cann-cla/yes",
       "approved",
+      "ci-pipeline-passed",
       "lgtm"
     ],
     "working_days_open": 8,
@@ -3783,12 +3804,12 @@
   },
   {
     "iid": 1166,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[Fix] 修复 CommMemManager 多地址注册失败时的可重试回滚",
     "created_at": "2026-09-20",
-    "updated_at": "2026-09-28",
-    "merged_at": "",
+    "updated_at": "2026-10-05",
+    "merged_at": "2026-10-05",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1166",
@@ -3796,7 +3817,8 @@
       "approved",
       "cann-cla/yes",
       "stat/needs-squash",
-      "lgtm"
+      "lgtm",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 8,
     "e2e_issues": [

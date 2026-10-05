@@ -1,5 +1,23 @@
 [
   {
+    "iid": "908",
+    "state": "opened",
+    "created_at": "2026-10-06",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "author_id": "67fb64ad2cb7f0133f7efecc",
+    "title": "[Bug-Report|缺陷反馈]: LlmConfig 接受空设备序列后生成配置崩溃",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Ethan_Zou"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/908",
+    "working_days_open": 0
+  },
+  {
     "iid": "907",
     "state": "opened",
     "created_at": "2026-10-04",
@@ -2027,15 +2045,13 @@
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "[Bug-Report|缺陷反馈]: tensor_num_per_layer 超出缓存 tensor 数量时静默跳过推送",
-    "labels": [
-      "wait-feedback"
-    ],
+    "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [
       "M__Cheng"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/hixl/issues/797",
     "working_days_open": 6
   },
@@ -2697,21 +2713,22 @@
   },
   {
     "iid": "757",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-20",
-    "closed_at": "",
+    "closed_at": "2026-10-05",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "[Bug-Report|缺陷反馈]: ADXL CommChannel 解绑失败时提前返回并遗留 fd 与 heartbeat",
     "labels": [
-      "bug-report"
+      "bug-report",
+      "resolved"
     ],
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [
       "KaranocaVe"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/hixl/issues/757",
     "working_days_open": 8
   },
@@ -3797,13 +3814,14 @@
   },
   {
     "iid": "662",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-14",
-    "closed_at": "",
+    "closed_at": "2026-10-05",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "[Bug-Report|缺陷反馈]: HixlCSClientGetRemoteMem 对 NULL mem_tag 返回长度/索引错位的 mem_tag_list",
     "labels": [
+      "resolved",
       "bug-report"
     ],
     "issue_type": "任务",
@@ -3811,7 +3829,7 @@
     "assignees": [
       "jiazhaoyang"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/hixl/issues/662",
     "working_days_open": 13
   },

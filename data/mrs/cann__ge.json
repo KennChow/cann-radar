@@ -1,11 +1,47 @@
 [
   {
+    "iid": 5303,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(stub): graph_metadef 的 stub 生成器补上漏掉的 self. 前缀",
+    "created_at": "2026-10-06",
+    "updated_at": "2026-10-06",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "grandocean",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5303",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5302,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: 补充atc --mode=7（OM2模型转换）取值说明与参数约束(#641)",
+    "created_at": "2026-10-05",
+    "updated_at": "2026-10-05",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "chenqian1365",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5302",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "641"
+    ]
+  },
+  {
     "iid": 5301,
     "state": "opened",
     "draft": false,
     "title": "[L1] fix: triton_add_custom 示例脚本用了 RewriterConfig 却没导入，照 README 跑必 NameError",
     "created_at": "2026-10-04",
-    "updated_at": "2026-10-05",
+    "updated_at": "2026-10-06",
     "merged_at": "",
     "closed_at": "",
     "author": "wsnidie1",
@@ -1050,13 +1086,13 @@
     "draft": false,
     "title": "[L1] docs: 英文文档混用中文全角标点（10 处）",
     "created_at": "2026-09-29",
-    "updated_at": "2026-10-02",
+    "updated_at": "2026-10-06",
     "merged_at": "",
     "closed_at": "",
     "author": "wsnidie1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5248",
     "labels": [
-      "ci-pipeline-failed",
+      "ci-pipeline-passed",
       "cann-cla/yes"
     ],
     "working_days_open": 2,
