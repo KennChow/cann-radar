@@ -1,5 +1,87 @@
 [
   {
+    "iid": 1356,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: reject out-of-range async source batches",
+    "created_at": "2026-10-06",
+    "updated_at": "2026-10-06",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1356",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "750",
+      "743",
+      "911"
+    ]
+  },
+  {
+    "iid": 1355,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: regenerate LLM configuration options from current properties",
+    "created_at": "2026-10-06",
+    "updated_at": "2026-10-06",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1355",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "765",
+      "910"
+    ]
+  },
+  {
+    "iid": 1354,
+    "state": "opened",
+    "draft": false,
+    "title": "[fix] INI 校验失败时终止生成算子 JSON 并非零退出",
+    "created_at": "2026-10-06",
+    "updated_at": "2026-10-06",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "NUAA_wqy",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1354",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "901"
+    ]
+  },
+  {
+    "iid": 1353,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: keep performance charts beside their report",
+    "created_at": "2026-10-06",
+    "updated_at": "2026-10-06",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1353",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "909"
+    ]
+  },
+  {
     "iid": 1352,
     "state": "opened",
     "draft": false,
@@ -6698,14 +6780,14 @@
     "draft": false,
     "title": "[feat]: extend multi-channel concurrent transfer to UBC (ub_ctp)",
     "created_at": "2026-09-09",
-    "updated_at": "2026-09-30",
+    "updated_at": "2026-10-06",
     "merged_at": "",
     "closed_at": "",
     "author": "tangjie66",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1028",
     "labels": [
-      "ci-pipeline-passed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 16,
     "e2e_issues": [
