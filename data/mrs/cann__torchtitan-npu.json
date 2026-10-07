@@ -1,11 +1,28 @@
 [
   {
+    "iid": 960,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: 修复 README 链接后句号前多余空格",
+    "created_at": "2026-10-07",
+    "updated_at": "2026-10-07",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_2C7pfVg4",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/960",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 959,
     "state": "opened",
     "draft": false,
     "title": "fix(tests): reject duplicate and non-finite recorded losses (#148)",
     "created_at": "2026-10-03",
-    "updated_at": "2026-10-03",
+    "updated_at": "2026-10-07",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_Z57idahf",
@@ -25,7 +42,7 @@
     "draft": false,
     "title": "fix(tests): require supplied imported losses to contain steps (#147)",
     "created_at": "2026-10-03",
-    "updated_at": "2026-10-03",
+    "updated_at": "2026-10-07",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_Z57idahf",
@@ -46,7 +63,7 @@
     "draft": false,
     "title": "docs: 修正上游版本准备脚本与版本来源说明",
     "created_at": "2026-10-03",
-    "updated_at": "2026-10-03",
+    "updated_at": "2026-10-07",
     "merged_at": "",
     "closed_at": "",
     "author": "z__y",
@@ -66,7 +83,7 @@
     "draft": false,
     "title": "fix(profiling): exclude regular files from offline trace discovery (#145)",
     "created_at": "2026-10-02",
-    "updated_at": "2026-10-02",
+    "updated_at": "2026-10-07",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_Z57idahf",
@@ -86,7 +103,7 @@
     "draft": false,
     "title": "fix(tooling): keep numerics automatic matching within the same phase",
     "created_at": "2026-10-02",
-    "updated_at": "2026-10-02",
+    "updated_at": "2026-10-07",
     "merged_at": "",
     "closed_at": "",
     "author": "Ethan_Zou",
@@ -106,7 +123,7 @@
     "draft": false,
     "title": "fix(tooling): classify unequal infinite numerics hashes as differences",
     "created_at": "2026-10-02",
-    "updated_at": "2026-10-02",
+    "updated_at": "2026-10-07",
     "merged_at": "",
     "closed_at": "",
     "author": "Ethan_Zou",
@@ -705,13 +722,14 @@
     "draft": true,
     "title": "[WIP][feat] Add DeepSeek-V4.1 LoRA, Muon and PEFT checkpoints",
     "created_at": "2026-09-23",
-    "updated_at": "2026-10-04",
+    "updated_at": "2026-10-07",
     "merged_at": "",
     "closed_at": "",
     "author": "leedongkun30-arch",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/924",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -2656,16 +2674,17 @@
     "iid": 826,
     "state": "opened",
     "draft": false,
-    "title": "test(sdc): simplify SDC unit tests and smoke tests",
+    "title": "fix(sdc): simplify tests and support updated torch-npu checksum",
     "created_at": "2026-09-16",
-    "updated_at": "2026-09-21",
+    "updated_at": "2026-10-07",
     "merged_at": "",
     "closed_at": "",
     "author": "jiangna1111",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/826",
     "labels": [
-      "ci-pipeline-passed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 11,
     "e2e_issues": []
@@ -5020,14 +5039,14 @@
     "draft": false,
     "title": "[feat] Add opt-in DeepSeek-V4 low-memory policies",
     "created_at": "2026-09-04",
-    "updated_at": "2026-09-22",
+    "updated_at": "2026-10-07",
     "merged_at": "",
     "closed_at": "",
     "author": "leedongkun30-arch",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/705",
     "labels": [
       "cann-cla/yes",
-      "stat/needs-squash"
+      "ci-pipeline-failed"
     ],
     "working_days_open": 19,
     "e2e_issues": []
@@ -5736,13 +5755,14 @@
     "draft": true,
     "title": "[WIP][feat] Add DeepSeek-V4 expert placement workflow",
     "created_at": "2026-08-31",
-    "updated_at": "2026-09-20",
+    "updated_at": "2026-10-07",
     "merged_at": "",
     "closed_at": "",
     "author": "leedongkun30-arch",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/667",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 23,
     "e2e_issues": []

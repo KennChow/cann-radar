@@ -117,15 +117,15 @@
   },
   {
     "iid": "142",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-30",
-    "closed_at": "",
+    "closed_at": "2026-10-07",
     "author": "gcw_nzLqvz09",
     "author_id": "6a93de27cee9516519f7089d",
     "title": "[Question|问题咨询]: torch==2.14.0.dev20260719找不到",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/142",
@@ -149,15 +149,17 @@
   },
   {
     "iid": "140",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-29",
-    "closed_at": "",
+    "closed_at": "2026-10-07",
     "author": "shuqian0",
     "author_id": "681ccce924adff5452d5e10f",
     "title": "[RFC] DeepSeek-V4 双 Chunk CV 重叠调度",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/140",
@@ -199,15 +201,17 @@
   },
   {
     "iid": "136",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-24",
-    "closed_at": "",
+    "closed_at": "2026-10-07",
     "author": "jizewei",
     "author_id": "681c928a8fc09a56addb4f0a",
     "title": "[RFC] GraphTrainer NPU Auto Overlap：基于 Cost Model 的 EP 通信自动调度",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/136",
@@ -510,9 +514,9 @@
   },
   {
     "iid": "119",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-15",
-    "closed_at": "",
+    "closed_at": "2026-10-07",
     "author": "mystri",
     "author_id": "68d8d3431331e546a2648f95",
     "title": "[Bug-Report|缺陷反馈]: EMA integrated cases cause ci breakdown",
@@ -520,7 +524,7 @@
       "bug-report"
     ],
     "issue_type": "缺陷",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/119",
@@ -883,15 +887,15 @@
   },
   {
     "iid": "98",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-08-06",
-    "closed_at": "",
+    "closed_at": "2026-10-07",
     "author": "sunote",
     "author_id": "6a2677d00348c7181e491ccc",
     "title": "[Requirement|需求建议]: 提供网络精度和prof 验证指导。",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "liuyuanchen1"
     ],
@@ -976,15 +980,17 @@
   },
   {
     "iid": "92",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-07-31",
-    "closed_at": "",
+    "closed_at": "2026-10-07",
     "author": "nancycyzl",
     "author_id": "6a3500ad4ecb037f1067077e",
     "title": "[RFC] 通过 TorchAO 支持 DeepSeek-V4 模型的 HiFloat8 训练",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "需求",
-    "issue_state": "待办的",
+    "issue_state": "已验收",
     "assignees": [
       "nancycyzl"
     ],
@@ -1606,9 +1612,9 @@
   },
   {
     "iid": "60",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-06-26",
-    "closed_at": "",
+    "closed_at": "2026-10-07",
     "author": "liuyuanchen1",
     "author_id": "68da801fa3c0221fe7931e07",
     "title": "[揭榜挑战] frozen MHC 权重时 `grad_weight.t()` 崩溃",
@@ -1616,11 +1622,11 @@
       "good-first-issue"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "liuyuanchen1"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/60",
     "working_days_open": 69
   },
