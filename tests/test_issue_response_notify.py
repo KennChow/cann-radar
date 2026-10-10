@@ -262,10 +262,15 @@ class IssueResponseNotifyTests(unittest.TestCase):
     def test_html_escapes_issue_fields_and_rejects_bad_url(self):
         body = notify.build_html_email(
             issue(title="<script>x</script>", web_url="javascript:x"), "initial", 12,
+            {"shared@example.com": ["alice", "bob"], "bad<script>@example.com": ["<script>"]},
         )
         self.assertNotIn("<script>", body)
         self.assertNotIn("javascript:", body)
         self.assertIn("&lt;script&gt;", body)
+        self.assertIn("本次计划通知人", body)
+        self.assertIn("alice, bob", body)
+        self.assertIn("shared@example.com", body)
+        self.assertIn("bad&lt;script&gt;@example.com", body)
 
     def test_main_dry_run_never_sends_or_saves_state(self):
         notification = {"delivered_users": {}}
@@ -312,6 +317,8 @@ class IssueResponseNotifyTests(unittest.TestCase):
             self.assertEqual(notify.main(), 0)
         send.assert_called_once()
         self.assertEqual(send.call_args.args[1], "carol@example.com")
+        self.assertIn("carol@example.com", send.call_args.args[3])
+        self.assertNotIn("bob@example.com", send.call_args.args[3])
         self.assertEqual(set(notification["delivered_users"]), {"bob", "carol"})
         self.assertNotIn("carol@example.com", json.dumps(notification))
         self.assertTrue(notification["satisfied"])
@@ -346,6 +353,59 @@ class IssueResponseNotifyTests(unittest.TestCase):
         self.assertFalse(notification["satisfied"])
         save.assert_called_once()
 
+    def test_main_groups_multiple_issues_per_recipient_without_leaking_other_issues(self):
+        first_notification = {"delivered_users": {}}
+        second_notification = {"delivered_users": {}}
+        first = event(kind="followup", current_issue=issue(
+            iid="101", assignees=["bob", "carol"],
+        ), notification=first_notification)
+        second = event(kind="followup", current_issue=issue(
+            iid="102", assignees=["bob"],
+        ), notification=second_notification)
+        with patch.object(sys, "argv", ["issue_response_notify.py"]), \
+             patch.object(notify, "_load_token", return_value="token"), \
+             patch.object(notify, "load_rules_config", return_value=rules()), \
+             patch.object(notify, "load_notify_repos", return_value=["cann/ge"]), \
+             patch.object(notify, "load_state", return_value={"version": 2, "issues": {}}), \
+             patch.object(notify, "scan_events", return_value=[first, second]), \
+             patch.object(notify, "revalidate_event", side_effect=lambda item, *a: item), \
+             patch.object(notify, "_smtp_config_or_none", return_value=object()), \
+             patch.object(notify, "load_mail_map", return_value={
+                 "bob": "bob@example.com", "carol": "carol@example.com",
+             }), patch.object(notify, "send_one_email") as send, \
+             patch.object(notify, "save_json"):
+            self.assertEqual(notify.main(), 0)
+        self.assertEqual(send.call_count, 2)
+        sent = {call.args[1]: call.args for call in send.call_args_list}
+        self.assertIn("#101", sent["bob@example.com"][3])
+        self.assertIn("#102", sent["bob@example.com"][3])
+        self.assertIn("（2 条）", sent["bob@example.com"][2])
+        self.assertIn("#101", sent["carol@example.com"][3])
+        self.assertNotIn("#102", sent["carol@example.com"][3])
+        self.assertEqual(set(first_notification["delivered_users"]), {"bob", "carol"})
+        self.assertEqual(set(second_notification["delivered_users"]), {"bob"})
+
+    def test_failed_digest_keeps_all_of_its_issues_pending(self):
+        notifications = [{"delivered_users": {}} for _ in range(2)]
+        events = [event(kind="followup", current_issue=issue(
+            iid=str(201 + index), assignees=["bob"],
+        ), notification=notifications[index]) for index in range(2)]
+        with patch.object(sys, "argv", ["issue_response_notify.py"]), \
+             patch.object(notify, "_load_token", return_value="token"), \
+             patch.object(notify, "load_rules_config", return_value=rules()), \
+             patch.object(notify, "load_notify_repos", return_value=["cann/ge"]), \
+             patch.object(notify, "load_state", return_value={"version": 2, "issues": {}}), \
+             patch.object(notify, "scan_events", return_value=events), \
+             patch.object(notify, "revalidate_event", side_effect=lambda item, *a: item), \
+             patch.object(notify, "_smtp_config_or_none", return_value=object()), \
+             patch.object(notify, "load_mail_map", return_value={"bob": "bob@example.com"}), \
+             patch.object(notify, "send_one_email", side_effect=RuntimeError("SMTP timeout")) as send, \
+             patch.object(notify, "save_json"):
+            self.assertEqual(notify.main(), 1)
+        send.assert_called_once()
+        self.assertTrue(all(not item["delivered_users"] for item in notifications))
+        self.assertTrue(all(not item["satisfied"] for item in notifications))
+
     def test_main_test_mode_uses_exact_issue_and_does_not_save_state(self):
         notification = {"delivered_users": {}}
         selected = event(current_issue=issue(iid="123"), notification=notification)
@@ -370,6 +430,8 @@ class IssueResponseNotifyTests(unittest.TestCase):
         self.assertEqual(send.call_args.args[1], test_email)
         self.assertTrue(send.call_args.args[2].startswith("[TEST] "))
         self.assertIn("#123", send.call_args.args[3])
+        self.assertIn("test@example.com", send.call_args.args[3])
+        self.assertNotIn("bob@example.com", send.call_args.args[3])
         save.assert_not_called()
         self.assertEqual(notification, {"delivered_users": {}})
 
