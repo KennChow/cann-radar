@@ -296,7 +296,7 @@ def build_html_email(issue, kind, waited_hours, recipients_by_email=None):
 <tr><th>创建者</th><td>{html.escape(str(issue.get('author') or ''))}</td></tr>
 <tr><th>责任人</th><td>{html.escape(', '.join(issue.get('assignees') or []) or '未分配')}</td></tr>
 </table>
-<p>本次计划通知对象（按邮箱去重）：</p>
+<p>本次计划通知人（按邮箱去重）：</p>
 <ul>{recipients_html}</ul>
 <p style="color:#999;font-size:11px">逐人发送；此名单不代表全部邮件已送达。此邮件由 CANN Radar 自动发送。</p>
 </div>"""
