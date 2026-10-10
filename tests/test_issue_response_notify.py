@@ -267,6 +267,7 @@ class IssueResponseNotifyTests(unittest.TestCase):
         self.assertNotIn("<script>", body)
         self.assertNotIn("javascript:", body)
         self.assertIn("&lt;script&gt;", body)
+        self.assertIn("本次计划通知人", body)
         self.assertIn("alice, bob", body)
         self.assertIn("shared@example.com", body)
         self.assertIn("bad&lt;script&gt;@example.com", body)
