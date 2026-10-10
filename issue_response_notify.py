@@ -270,7 +270,7 @@ def _resolve_recipient_users(usernames, mail_map):
     return by_email, missing
 
 
-def build_html_email(issue, kind, waited_hours):
+def build_html_email(issue, kind, waited_hours, recipients_by_email=None):
     if kind == "initial":
         heading = "Issue 首次响应超时"
         explanation = "该 Issue 创建后已超过响应时限，尚无非创建者在评论区响应。"
@@ -279,6 +279,13 @@ def build_html_email(issue, kind, waited_hours):
         explanation = "该 Issue 曾得到回复，但创建者的最新评论已超过响应时限，之后尚无人继续响应。"
     url = str(issue.get("web_url") or "")
     safe_url = html.escape(url, quote=True) if url.startswith(("http://", "https://")) else "#"
+    recipient_rows = []
+    for email, usernames in (recipients_by_email or {}).items():
+        names = ", ".join(usernames)
+        recipient_rows.append(
+            f"<li>{html.escape(names)} &lt;{html.escape(email)}&gt;</li>"
+        )
+    recipients_html = "".join(recipient_rows) or "<li>无</li>"
     return f"""<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:720px;margin:0 auto">
 <h2 style="font-size:18px;color:#1a1d2e">{heading}</h2>
 <p style="color:#555">{explanation} 当前等待约 <strong>{waited_hours:.1f} 小时</strong>，请及时处理。</p>
@@ -289,7 +296,9 @@ def build_html_email(issue, kind, waited_hours):
 <tr><th>创建者</th><td>{html.escape(str(issue.get('author') or ''))}</td></tr>
 <tr><th>责任人</th><td>{html.escape(', '.join(issue.get('assignees') or []) or '未分配')}</td></tr>
 </table>
-<p style="color:#999;font-size:11px">此邮件由 CANN Radar 自动发送。</p>
+<p>本次计划通知对象（按邮箱去重）：</p>
+<ul>{recipients_html}</ul>
+<p style="color:#999;font-size:11px">逐人发送；此名单不代表全部邮件已送达。此邮件由 CANN Radar 自动发送。</p>
 </div>"""
 
 
@@ -505,7 +514,12 @@ def main():
         )
         label = "首次响应超时" if event["kind"] == "initial" else "创建者追问超时"
         subject = f"[CANN Radar] {label}: {issue['repo']}#{issue['iid']}"
-        body = build_html_email(issue, event["kind"], event["waited_hours"])
+        displayed_recipients = (
+            {args.test: ["测试邮箱"]} if args.test else recipients_by_email
+        )
+        body = build_html_email(
+            issue, event["kind"], event["waited_hours"], displayed_recipients,
+        )
 
         if args.dry_run:
             _, dry_run_missing = _resolve_recipient_users(required_users, mail_map)
