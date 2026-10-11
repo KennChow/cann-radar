@@ -1,5 +1,131 @@
 [
   {
+    "iid": "929",
+    "state": "opened",
+    "created_at": "2026-10-12",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "author_id": "67fb64ad2cb7f0133f7efecc",
+    "title": "[Bug-Report|缺陷反馈]: 延迟 KV 回收队列会被未过期的队首请求阻塞",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Ethan_Zou"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/929",
+    "working_days_open": 0
+  },
+  {
+    "iid": "928",
+    "state": "opened",
+    "created_at": "2026-10-11",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "author_id": "67fb64ad2cb7f0133f7efecc",
+    "title": "[Bug-Report|缺陷反馈]: Python 日志忽略 stacklevel 并错误标注调用者",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Ethan_Zou"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/928",
+    "working_days_open": 0
+  },
+  {
+    "iid": "927",
+    "state": "opened",
+    "created_at": "2026-10-11",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: 构建和测试脚本拆分含空格的合法路径",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/927",
+    "working_days_open": 0
+  },
+  {
+    "iid": "926",
+    "state": "opened",
+    "created_at": "2026-10-11",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "author_id": "67fb64ad2cb7f0133f7efecc",
+    "title": "[Bug-Report|缺陷反馈]: 日志时间线漏检已能解析时间戳的FATAL记录",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Ethan_Zou"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/926",
+    "working_days_open": 0
+  },
+  {
+    "iid": "925",
+    "state": "opened",
+    "created_at": "2026-10-11",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "author_id": "67fb64ad2cb7f0133f7efecc",
+    "title": "[Bug-Report|缺陷反馈]: NUMA 诊断扫描丢失物理内存块间隙前的空闲区间",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "Ethan_Zou"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/925",
+    "working_days_open": 0
+  },
+  {
+    "iid": "924",
+    "state": "opened",
+    "created_at": "2026-10-11",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: 同一目标集群的多个异步传输配置互相覆盖返回结果",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/924",
+    "working_days_open": 0
+  },
+  {
+    "iid": "923",
+    "state": "opened",
+    "created_at": "2026-10-11",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "author_id": "6a9a202b63ecda5a857cfa43",
+    "title": "[Bug-Report|缺陷反馈]: KV benchmark 取消或 rank 启动失败后残留已启动进程",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/923",
+    "working_days_open": 0
+  },
+  {
     "iid": "922",
     "state": "opened",
     "created_at": "2026-10-09",
@@ -518,19 +644,19 @@
   },
   {
     "iid": "896",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-29",
-    "closed_at": "",
+    "closed_at": "2026-10-11",
     "author": "gcw_FYN1wICt",
     "author_id": "6a3b8ca6ffc2ab4b867ebaf9",
     "title": "[Documentation|文档反馈]:云pod环境无法通过hixl的wiki提供的脚本生成localcommres信息",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "已确认",
+    "issue_state": "已完成",
     "assignees": [
       "lugang11"
     ],
-    "user_notes_count": 6,
+    "user_notes_count": 7,
     "web_url": "https://gitcode.com/cann/hixl/issues/896",
     "working_days_open": 5
   },

@@ -1,11 +1,28 @@
 [
   {
+    "iid": 41,
+    "state": "opened",
+    "draft": false,
+    "title": "fix:  修复TRITONBACKEND_OutputBuffer 函数调用上，memory_type等参数为初始化问题",
+    "created_at": "2026-10-11",
+    "updated_at": "2026-10-11",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "keecin",
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/merge_requests/41",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 40,
     "state": "opened",
     "draft": false,
     "title": "perf:  ExecuteInferenceV2等函数，参数从传值改为传引用，避免不必要的内存拷贝，提升推理性能",
     "created_at": "2026-10-10",
-    "updated_at": "2026-10-10",
+    "updated_at": "2026-10-11",
     "merged_at": "",
     "closed_at": "",
     "author": "keecin",

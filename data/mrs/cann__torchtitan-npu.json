@@ -1,5 +1,148 @@
 [
   {
+    "iid": 991,
+    "state": "opened",
+    "draft": true,
+    "title": "[WIP] DeepSeek-V4 接入attn-gym及override重新整理",
+    "created_at": "2026-10-11",
+    "updated_at": "2026-10-12",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lrwei0709",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/991",
+    "labels": [],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 990,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(tooling): distinguish main loss from indexer loss",
+    "created_at": "2026-10-11",
+    "updated_at": "2026-10-11",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/990",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "156"
+    ]
+  },
+  {
+    "iid": 989,
+    "state": "opened",
+    "draft": false,
+    "title": "ci: add model-owned A3/A5 nightly suites with Lite Actions workflows",
+    "created_at": "2026-10-11",
+    "updated_at": "2026-10-11",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "depeng1994",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/989",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "6",
+      "66"
+    ]
+  },
+  {
+    "iid": 988,
+    "state": "merged",
+    "draft": false,
+    "title": "fix(checkpoint): preserve routing indices during HF dtype export",
+    "created_at": "2026-10-11",
+    "updated_at": "2026-10-11",
+    "merged_at": "2026-10-11",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/988",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "155"
+    ]
+  },
+  {
+    "iid": 987,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(metrics): exclude ranks without valid labels from maximum loss",
+    "created_at": "2026-10-11",
+    "updated_at": "2026-10-12",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/987",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "154"
+    ]
+  },
+  {
+    "iid": 986,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(profiler): treat trace parent paths literally",
+    "created_at": "2026-10-11",
+    "updated_at": "2026-10-12",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/986",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "153"
+    ]
+  },
+  {
+    "iid": 985,
+    "state": "closed",
+    "draft": false,
+    "title": "Lite Actions V2 Phase 1: synchronize verified GitHub release to GitCode master",
+    "created_at": "2026-10-11",
+    "updated_at": "2026-10-11",
+    "merged_at": "",
+    "closed_at": "2026-10-11",
+    "author": "depeng1994",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/985",
+    "labels": [
+      "cann-cla/no",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "4",
+      "29",
+      "1",
+      "28"
+    ]
+  },
+  {
     "iid": 984,
     "state": "opened",
     "draft": false,
@@ -242,12 +385,13 @@
     "draft": false,
     "title": "[fix] bump attn-gym to 0.0.16 and migrate V4.1 attention to gather_attn",
     "created_at": "2026-10-09",
-    "updated_at": "2026-10-10",
+    "updated_at": "2026-10-12",
     "merged_at": "",
     "closed_at": "",
     "author": "lrwei0709",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/971",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes"
     ],
     "working_days_open": 2,
@@ -480,19 +624,21 @@
   },
   {
     "iid": 958,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix(tests): require supplied imported losses to contain steps (#147)",
     "created_at": "2026-10-03",
-    "updated_at": "2026-10-08",
-    "merged_at": "",
+    "updated_at": "2026-10-11",
+    "merged_at": "2026-10-11",
     "closed_at": "",
     "author": "gcw_Z57idahf",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/958",
     "labels": [
       "ci-pipeline-passed",
       "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 3,
     "e2e_issues": [
@@ -1263,7 +1409,7 @@
     "draft": false,
     "title": "fix(checkpoint): write hash manifests as UTF-8",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-10-11",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_Z57idahf",
@@ -1303,7 +1449,7 @@
     "draft": false,
     "title": "fix(dsv4.1): reject overlong packed vision samples",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-10-11",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_Z57idahf",
@@ -2270,13 +2416,13 @@
   },
   {
     "iid": 870,
-    "state": "opened",
+    "state": "closed",
     "draft": true,
     "title": "[WIP] DeepSeek-V4.1 dataloader支持逐文档对齐 || 序列切分适配 || 融合算子适配CP切分",
     "created_at": "2026-09-20",
-    "updated_at": "2026-09-20",
+    "updated_at": "2026-10-11",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-11",
     "author": "lrwei0709",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/870",
     "labels": [],
@@ -5813,13 +5959,13 @@
   },
   {
     "iid": 689,
-    "state": "opened",
+    "state": "closed",
     "draft": true,
     "title": "[WIP] 代码结构规范刷新和重构",
     "created_at": "2026-09-02",
-    "updated_at": "2026-09-02",
+    "updated_at": "2026-10-11",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-11",
     "author": "lrwei0709",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/689",
     "labels": [
@@ -7051,13 +7197,13 @@
   },
   {
     "iid": 624,
-    "state": "opened",
+    "state": "closed",
     "draft": true,
     "title": "[WIP] DeepSeek-V4序列切分元数据接口重构",
     "created_at": "2026-08-24",
-    "updated_at": "2026-08-25",
+    "updated_at": "2026-10-11",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-11",
     "author": "lrwei0709",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/624",
     "labels": [],
@@ -10326,13 +10472,13 @@
   },
   {
     "iid": 457,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[feat] add tilelang topk",
     "created_at": "2026-07-23",
-    "updated_at": "2026-08-12",
+    "updated_at": "2026-10-11",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-11",
     "author": "zouqian",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/457",
     "labels": [
@@ -10699,13 +10845,13 @@
   },
   {
     "iid": 438,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[feat] profile startup and checkpoint lifecycle",
     "created_at": "2026-07-17",
-    "updated_at": "2026-07-22",
+    "updated_at": "2026-10-11",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-11",
     "author": "hwcaifubi",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/438",
     "labels": [
@@ -10716,13 +10862,13 @@
   },
   {
     "iid": 437,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[feat] add lightweight phase timing for DeepSeek V4",
     "created_at": "2026-07-17",
-    "updated_at": "2026-07-23",
+    "updated_at": "2026-10-11",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-11",
     "author": "hwcaifubi",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/437",
     "labels": [

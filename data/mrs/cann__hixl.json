@@ -1,5 +1,178 @@
 [
   {
+    "iid": 1388,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: reclaim expired KV requests regardless of queue order",
+    "created_at": "2026-10-12",
+    "updated_at": "2026-10-12",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1388",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "929"
+    ]
+  },
+  {
+    "iid": 1387,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: preserve Python log caller context",
+    "created_at": "2026-10-11",
+    "updated_at": "2026-10-11",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1387",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "928"
+    ]
+  },
+  {
+    "iid": 1386,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: preserve build and test path arguments containing spaces",
+    "created_at": "2026-10-11",
+    "updated_at": "2026-10-12",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1386",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "927"
+    ]
+  },
+  {
+    "iid": 1385,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: retain fatal events in log timelines",
+    "created_at": "2026-10-11",
+    "updated_at": "2026-10-11",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1385",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "926"
+    ]
+  },
+  {
+    "iid": 1384,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: preserve free PFN runs before NUMA block gaps",
+    "created_at": "2026-10-11",
+    "updated_at": "2026-10-11",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Ethan_Zou",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1384",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "925"
+    ]
+  },
+  {
+    "iid": 1383,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: preserve results for each asynchronous transfer configuration",
+    "created_at": "2026-10-11",
+    "updated_at": "2026-10-12",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1383",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "924"
+    ]
+  },
+  {
+    "iid": 1382,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: reap KV benchmark ranks on launch or wait interruption",
+    "created_at": "2026-10-11",
+    "updated_at": "2026-10-12",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_Z57idahf",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1382",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "923"
+    ]
+  },
+  {
+    "iid": 1381,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix][9.2.0]: slot清洁交接修复跨client复用时的SQE残留污染",
+    "created_at": "2026-10-11",
+    "updated_at": "2026-10-11",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "niyi01",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1381",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1380,
+    "state": "closed",
+    "draft": false,
+    "title": "[bugfix][9.2.0]: slot清洁交接修复跨client复用时的SQE残留污染",
+    "created_at": "2026-10-11",
+    "updated_at": "2026-10-11",
+    "merged_at": "",
+    "closed_at": "2026-10-11",
+    "author": "niyi01",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1380",
+    "labels": [],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1379,
     "state": "opened",
     "draft": true,
@@ -1267,7 +1440,7 @@
     "draft": false,
     "title": "[bugfix]: 修复 CommEngine::GetNotifies 复用输出时残留旧通知",
     "created_at": "2026-09-27",
-    "updated_at": "2026-10-10",
+    "updated_at": "2026-10-11",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -1310,7 +1483,7 @@
     "draft": false,
     "title": "修复 HIXL CS Client 重复注册泄漏",
     "created_at": "2026-09-27",
-    "updated_at": "2026-10-10",
+    "updated_at": "2026-10-11",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -1583,13 +1756,13 @@
   },
   {
     "iid": 1301,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[修复] 隔离 HIXL LLM-DataDist 超时后的迟到响应",
     "created_at": "2026-09-26",
-    "updated_at": "2026-09-26",
+    "updated_at": "2026-10-11",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-11",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1301",
     "labels": [
@@ -1828,7 +2001,7 @@
     "draft": false,
     "title": "[修复] 防止 CtrlMsgPlugin::Recv 的 timeout_ms 窄化为负 poll 超时",
     "created_at": "2026-09-24",
-    "updated_at": "2026-10-10",
+    "updated_at": "2026-10-11",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -2421,7 +2594,7 @@
     "draft": false,
     "title": "[修复] 删除前等待正在执行的 timer callback",
     "created_at": "2026-09-23",
-    "updated_at": "2026-10-08",
+    "updated_at": "2026-10-11",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -2850,7 +3023,7 @@
     "draft": false,
     "title": "[修复] 修复 CacheManager 更新 cache access table 失败后的状态回滚",
     "created_at": "2026-09-23",
-    "updated_at": "2026-10-10",
+    "updated_at": "2026-10-11",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -3201,7 +3374,7 @@
     "draft": false,
     "title": "[Fix] 传播 CopyCache stream 创建失败",
     "created_at": "2026-09-22",
-    "updated_at": "2026-10-04",
+    "updated_at": "2026-10-11",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -3895,12 +4068,13 @@
     "draft": false,
     "title": "[修复] 回滚 CacheAccessTableUpdater 初始化失败后的设备 buffer",
     "created_at": "2026-09-20",
-    "updated_at": "2026-10-10",
+    "updated_at": "2026-10-11",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1189",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
@@ -6180,7 +6354,7 @@
     "draft": false,
     "title": "[Fix] 修复 HixlMemStore 同址注册元数据冲突",
     "created_at": "2026-09-14",
-    "updated_at": "2026-09-27",
+    "updated_at": "2026-10-11",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -6668,15 +6842,15 @@
     "draft": false,
     "title": "[Fix] 回复 H2D 异步传输失败并清理请求",
     "created_at": "2026-09-14",
-    "updated_at": "2026-10-08",
+    "updated_at": "2026-10-11",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1056",
     "labels": [
-      "ci-pipeline-passed",
+      "stat/needs-squash",
       "cann-cla/yes",
-      "stat/needs-squash"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 16,
     "e2e_issues": [

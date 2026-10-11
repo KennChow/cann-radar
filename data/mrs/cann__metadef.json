@@ -1,5 +1,65 @@
 [
   {
+    "iid": 529,
+    "state": "opened",
+    "draft": false,
+    "title": "修复 Tensor 字节数错误转换",
+    "created_at": "2026-10-12",
+    "updated_at": "2026-10-12",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/529",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "128"
+    ]
+  },
+  {
+    "iid": 528,
+    "state": "opened",
+    "draft": false,
+    "title": "修正 GetFormatName 返回值文档",
+    "created_at": "2026-10-11",
+    "updated_at": "2026-10-11",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/528",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "127"
+    ]
+  },
+  {
+    "iid": 527,
+    "state": "opened",
+    "draft": false,
+    "title": "修复 Shape/Stride::SetDimNum 超过最大 rank 导致越界访问",
+    "created_at": "2026-10-11",
+    "updated_at": "2026-10-11",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/527",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "126"
+    ]
+  },
+  {
     "iid": 526,
     "state": "opened",
     "draft": false,
@@ -65,7 +125,7 @@
     "draft": false,
     "title": "Fix TensorData move assignment when releasing the previous resource fails",
     "created_at": "2026-10-09",
-    "updated_at": "2026-10-09",
+    "updated_at": "2026-10-11",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -509,13 +569,13 @@
   },
   {
     "iid": 501,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[Bug-Report|缺陷反馈]: 修复 metadef 安装与卸载文档中的软件包路径",
     "created_at": "2026-09-24",
-    "updated_at": "2026-10-05",
+    "updated_at": "2026-10-11",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-11",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/501",
     "labels": [
