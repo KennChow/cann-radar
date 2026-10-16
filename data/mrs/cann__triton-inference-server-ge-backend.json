@@ -5,7 +5,7 @@
     "draft": false,
     "title": "fix(build): preserve paths in CMake arguments",
     "created_at": "2026-10-14",
-    "updated_at": "2026-10-14",
+    "updated_at": "2026-10-16",
     "merged_at": "",
     "closed_at": "",
     "author": "Ethan_Zou",
@@ -13,7 +13,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": [
       "66"
     ]
@@ -24,7 +24,7 @@
     "draft": false,
     "title": "fix(build): reject failed PyTorch ABI queries",
     "created_at": "2026-10-14",
-    "updated_at": "2026-10-14",
+    "updated_at": "2026-10-16",
     "merged_at": "",
     "closed_at": "",
     "author": "Ethan_Zou",
@@ -32,7 +32,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": [
       "65"
     ]
@@ -43,7 +43,7 @@
     "draft": false,
     "title": "fix(build): export default Triton installation path",
     "created_at": "2026-10-14",
-    "updated_at": "2026-10-14",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "Ethan_Zou",
@@ -51,7 +51,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 2,
+    "working_days_open": 3,
     "e2e_issues": [
       "64"
     ]
@@ -62,7 +62,7 @@
     "draft": false,
     "title": "fix(build): keep preparation and cleanup in the source tree",
     "created_at": "2026-10-13",
-    "updated_at": "2026-10-13",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "Ethan_Zou",
@@ -70,7 +70,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 3,
+    "working_days_open": 4,
     "e2e_issues": [
       "63"
     ]
@@ -81,7 +81,7 @@
     "draft": false,
     "title": "fix:  修复TRITONBACKEND_OutputBuffer 函数调用上，memory_type等参数为初始化问题",
     "created_at": "2026-10-11",
-    "updated_at": "2026-10-11",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "keecin",
@@ -89,7 +89,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 4,
+    "working_days_open": 5,
     "e2e_issues": []
   },
   {
@@ -107,7 +107,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 5,
+    "working_days_open": 6,
     "e2e_issues": []
   },
   {
@@ -124,7 +124,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 6,
+    "working_days_open": 7,
     "e2e_issues": []
   },
   {
@@ -133,7 +133,7 @@
     "draft": false,
     "title": "[fix] 修复模型实例 Init 失败时 ModelInstanceState 内存泄漏",
     "created_at": "2026-10-07",
-    "updated_at": "2026-10-08",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "NUAA_wqy",
@@ -141,7 +141,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": [
       "41"
     ]
@@ -160,7 +160,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": [
       "62"
     ]
@@ -179,7 +179,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": [
       "61"
     ]
@@ -198,7 +198,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": [
       "60"
     ]
@@ -209,7 +209,7 @@
     "draft": false,
     "title": "Fix ONNX FLOAT16 auto-completion datatype mapping",
     "created_at": "2026-10-04",
-    "updated_at": "2026-10-15",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -217,7 +217,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": [
       "58"
     ]
@@ -228,7 +228,7 @@
     "draft": false,
     "title": "Match underscore-containing dimension names in output formulas",
     "created_at": "2026-10-04",
-    "updated_at": "2026-10-15",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -236,7 +236,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": [
       "57"
     ]
@@ -257,7 +257,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": [
       "35"
     ]
@@ -278,7 +278,7 @@
       "approved",
       "cann-cla/yes"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": [
       "36"
     ]
@@ -299,7 +299,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": [
       "34"
     ]
@@ -320,7 +320,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": [
       "56"
     ]
@@ -341,7 +341,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": [
       "55"
     ]
@@ -360,7 +360,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": []
   },
   {
@@ -377,7 +377,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": [
       "54"
     ]
@@ -388,7 +388,7 @@
     "draft": false,
     "title": "Propagate GE output-copy failures",
     "created_at": "2026-09-30",
-    "updated_at": "2026-10-15",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -396,7 +396,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 8,
+    "working_days_open": 9,
     "e2e_issues": [
       "53"
     ]
@@ -407,7 +407,7 @@
     "draft": false,
     "title": "Restore GE scheduler instances after request errors",
     "created_at": "2026-09-30",
-    "updated_at": "2026-10-15",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -415,7 +415,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 8,
+    "working_days_open": 9,
     "e2e_issues": [
       "52"
     ]
@@ -426,7 +426,7 @@
     "draft": false,
     "title": "Fix dynamic batch offsets and shared input lifetime in multi-instance inference",
     "created_at": "2026-09-27",
-    "updated_at": "2026-10-15",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -434,7 +434,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": [
       "50",
       "42"
@@ -456,7 +456,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": [
       "49"
     ]
@@ -477,7 +477,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 11,
+    "working_days_open": 12,
     "e2e_issues": [
       "48"
     ]
@@ -499,7 +499,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 14,
+    "working_days_open": 15,
     "e2e_issues": []
   },
   {
@@ -519,7 +519,7 @@
       "lgtm",
       "stat/needs-squash"
     ],
-    "working_days_open": 15,
+    "working_days_open": 16,
     "e2e_issues": []
   },
   {
@@ -538,7 +538,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 21,
+    "working_days_open": 22,
     "e2e_issues": []
   },
   {
@@ -557,7 +557,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 35,
+    "working_days_open": 36,
     "e2e_issues": [
       "44"
     ]
@@ -579,7 +579,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 50,
+    "working_days_open": 51,
     "e2e_issues": []
   },
   {
@@ -598,7 +598,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 82,
+    "working_days_open": 83,
     "e2e_issues": []
   },
   {
@@ -615,7 +615,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 82,
+    "working_days_open": 83,
     "e2e_issues": []
   },
   {
@@ -636,7 +636,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 126,
+    "working_days_open": 127,
     "e2e_issues": [
       "22"
     ]
@@ -659,7 +659,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 156,
+    "working_days_open": 157,
     "e2e_issues": [
       "18"
     ]
@@ -682,7 +682,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 175,
+    "working_days_open": 176,
     "e2e_issues": []
   },
   {
@@ -700,7 +700,7 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 179,
+    "working_days_open": 180,
     "e2e_issues": []
   },
   {
@@ -720,7 +720,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 185,
+    "working_days_open": 186,
     "e2e_issues": []
   },
   {
@@ -740,7 +740,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 188,
+    "working_days_open": 189,
     "e2e_issues": []
   },
   {
@@ -759,7 +759,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 192,
+    "working_days_open": 193,
     "e2e_issues": []
   },
   {
@@ -779,7 +779,7 @@
       "stat/needs-squash",
       "lgtm"
     ],
-    "working_days_open": 195,
+    "working_days_open": 196,
     "e2e_issues": []
   },
   {
@@ -799,7 +799,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 199,
+    "working_days_open": 200,
     "e2e_issues": [
       "2"
     ]
@@ -821,7 +821,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 201,
+    "working_days_open": 202,
     "e2e_issues": [
       "1"
     ]
@@ -842,7 +842,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 210,
+    "working_days_open": 211,
     "e2e_issues": []
   },
   {
@@ -861,7 +861,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 212,
+    "working_days_open": 213,
     "e2e_issues": []
   },
   {
@@ -878,7 +878,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 215,
+    "working_days_open": 216,
     "e2e_issues": []
   }
 ]
