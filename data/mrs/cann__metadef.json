@@ -1,5 +1,105 @@
 [
   {
+    "iid": 591,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: 明确 TilingData 的指针所有权",
+    "created_at": "2026-10-17",
+    "updated_at": "2026-10-17",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/591",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "181"
+    ]
+  },
+  {
+    "iid": 590,
+    "state": "opened",
+    "draft": false,
+    "title": "补充 Range::GetMin 可能返回空指针的说明",
+    "created_at": "2026-10-17",
+    "updated_at": "2026-10-17",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/590",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "192"
+    ]
+  },
+  {
+    "iid": 589,
+    "state": "opened",
+    "draft": false,
+    "title": "修复 AppendConvertedAttrVal 对负 AttrDataType 的越界查表",
+    "created_at": "2026-10-17",
+    "updated_at": "2026-10-17",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/589",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "191"
+    ]
+  },
+  {
+    "iid": 588,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: 修复gert::Range空range相等比较崩溃问题(#111)",
+    "created_at": "2026-10-17",
+    "updated_at": "2026-10-17",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "yuchen97",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/588",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "111"
+    ]
+  },
+  {
+    "iid": 587,
+    "state": "opened",
+    "draft": false,
+    "title": "修正 OutputIsView 文档示例的接口调用",
+    "created_at": "2026-10-17",
+    "updated_at": "2026-10-17",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/587",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "190"
+    ]
+  },
+  {
     "iid": 586,
     "state": "opened",
     "draft": false,

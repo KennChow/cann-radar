@@ -1,18 +1,54 @@
 [
   {
+    "iid": 1414,
+    "state": "opened",
+    "draft": false,
+    "title": "[refactor]: 统一SoC判定并拆分带版本标识的endpoint生成实现",
+    "created_at": "2026-10-17",
+    "updated_at": "2026-10-17",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhaozhihui",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1414",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1413,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: 修复中文标点前多余空格（7 处）",
+    "created_at": "2026-10-17",
+    "updated_at": "2026-10-17",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_2C7pfVg4",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1413",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1412,
     "state": "opened",
     "draft": false,
     "title": "[feat]: add TLS support for control plane channels",
     "created_at": "2026-10-16",
-    "updated_at": "2026-10-16",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "M__Cheng",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1412",
     "labels": [
-      "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "stat/needs-squash"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -139,14 +175,14 @@
     "draft": false,
     "title": "[feat]: generate A5 Host RoCE endpoints from nic topo",
     "created_at": "2026-10-15",
-    "updated_at": "2026-10-16",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "lugang11",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1405",
     "labels": [
-      "cann-cla/yes",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "cann-cla/yes"
     ],
     "working_days_open": 2,
     "e2e_issues": []

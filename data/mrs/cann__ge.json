@@ -1,5 +1,40 @@
 [
   {
+    "iid": 5434,
+    "state": "closed",
+    "draft": false,
+    "title": "test: CI基线对照实验(验证ST性能阈值FAIL是否存量问题)",
+    "created_at": "2026-10-17",
+    "updated_at": "2026-10-17",
+    "merged_at": "",
+    "closed_at": "2026-10-17",
+    "author": "tang-haojie",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5434",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5433,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: 简要描述",
+    "created_at": "2026-10-17",
+    "updated_at": "2026-10-17",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_2C7pfVg4",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5433",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 5432,
     "state": "opened",
     "draft": false,
@@ -356,13 +391,14 @@
     "draft": false,
     "title": "fix: 修复大HBM机型不同内存类型逻辑地址区间重叠问题",
     "created_at": "2026-10-15",
-    "updated_at": "2026-10-16",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "tang-haojie",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5414",
     "labels": [
       "cann-cla/yes",
+      "stat/needs-squash",
       "ci-pipeline-failed"
     ],
     "working_days_open": 2,
@@ -1360,17 +1396,17 @@
     "iid": 5364,
     "state": "opened",
     "draft": false,
-    "title": "【PR】: 简要描述",
+    "title": "【PR】: hcce解依赖 同步gepr5247",
     "created_at": "2026-10-12",
-    "updated_at": "2026-10-15",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "Archerls",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5364",
     "labels": [
+      "cann-cla/yes",
       "stat/needs-squash",
-      "enhancement",
-      "cann-cla/yes"
+      "enhancement"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -3164,7 +3200,7 @@
     "draft": false,
     "title": "feat: 自定义算子支持变长自定义数据(非内联方案)",
     "created_at": "2026-10-01",
-    "updated_at": "2026-10-16",
+    "updated_at": "2026-10-18",
     "merged_at": "",
     "closed_at": "",
     "author": "Chang-an-HW",
@@ -3173,7 +3209,7 @@
       "enhancement",
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-running"
     ],
     "working_days_open": 8,
     "e2e_issues": []
@@ -3617,7 +3653,7 @@
     "draft": false,
     "title": "feat: 新增模型调度模式配置特性，支持加载前配置普通/独占调度",
     "created_at": "2026-09-29",
-    "updated_at": "2026-10-16",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "autumn982",
@@ -3626,6 +3662,7 @@
       "enhancement",
       "stat/needs-squash",
       "cann-cla/yes",
+      "lgtm",
       "ci-pipeline-passed"
     ],
     "working_days_open": 10,
@@ -3637,15 +3674,15 @@
     "draft": false,
     "title": "feat: 支持GroupedBroadcast符号化推导并统一StridedSliceV3符号索引处理",
     "created_at": "2026-09-29",
-    "updated_at": "2026-10-15",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "xiebangrui2025",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5250",
     "labels": [
       "stat/needs-squash",
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 10,
     "e2e_issues": []
@@ -5529,7 +5566,7 @@
     "draft": false,
     "title": "[bugfix] 校验算子 JSON 生成脚本的输入输出路径",
     "created_at": "2026-09-23",
-    "updated_at": "2026-10-16",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_Z57idahf",
@@ -9964,10 +10001,10 @@
   {
     "iid": 4941,
     "state": "opened",
-    "draft": false,
-    "title": "feat: Ascend950 及之后算子 InferShapeRange 改用默认值填充策略",
+    "draft": true,
+    "title": "[WIP]feat: Ascend950 及之后算子 InferShapeRange 改用默认值填充策略",
     "created_at": "2026-09-14",
-    "updated_at": "2026-10-16",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "yuchen97",
@@ -15538,7 +15575,7 @@
     "draft": false,
     "title": "feat:GE多流组件化抽取",
     "created_at": "2026-09-01",
-    "updated_at": "2026-10-13",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "KenChow",
@@ -21128,13 +21165,13 @@
   },
   {
     "iid": 4395,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "docs: 新增PassSwitch默认开关验证demo",
     "created_at": "2026-08-14",
-    "updated_at": "2026-09-10",
+    "updated_at": "2026-10-17",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-17",
     "author": "Dazhou_Cao",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4395",
     "labels": [
@@ -42096,7 +42133,7 @@
     "draft": false,
     "title": "【PR】: 简要描述 add swish lowering imply",
     "created_at": "2026-06-04",
-    "updated_at": "2026-10-16",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "wtf_newage",
@@ -44816,7 +44853,7 @@
     "draft": false,
     "title": "【PR】:fix:recall tiling parsing when stream level res limit exists",
     "created_at": "2026-05-28",
-    "updated_at": "2026-10-10",
+    "updated_at": "2026-10-17",
     "merged_at": "",
     "closed_at": "",
     "author": "CHEN_Hanrui",

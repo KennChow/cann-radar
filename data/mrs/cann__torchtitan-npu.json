@@ -1,19 +1,58 @@
 [
   {
-    "iid": 1049,
+    "iid": 1051,
+    "state": "merged",
+    "draft": false,
+    "title": "[fix](patches): revert the AscendC gather lowering dtype whitelist patch",
+    "created_at": "2026-10-17",
+    "updated_at": "2026-10-17",
+    "merged_at": "2026-10-17",
+    "closed_at": "",
+    "author": "zhaowei1936",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1051",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1050,
     "state": "opened",
+    "draft": true,
+    "title": "[WIP][feat](lora): compile bounded adapter chunks",
+    "created_at": "2026-10-17",
+    "updated_at": "2026-10-17",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "leedongkun30-arch",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1050",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1049,
+    "state": "merged",
     "draft": false,
     "title": "fix(metrics): correct Ascend950DT peak FLOPS by device model",
     "created_at": "2026-10-16",
-    "updated_at": "2026-10-16",
-    "merged_at": "",
+    "updated_at": "2026-10-17",
+    "merged_at": "2026-10-17",
     "closed_at": "",
     "author": "xuyujun",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1049",
     "labels": [
       "cann-cla/yes",
       "stat/needs-squash",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -113,17 +152,20 @@
   },
   {
     "iid": 1043,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[refactor](dsv4.1): move the stack onto the backend-owned metadata seam",
     "created_at": "2026-10-16",
-    "updated_at": "2026-10-16",
-    "merged_at": "",
+    "updated_at": "2026-10-17",
+    "merged_at": "2026-10-17",
     "closed_at": "",
     "author": "lrwei0709",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1043",
     "labels": [
       "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm",
       "stat/needs-squash"
     ],
     "working_days_open": 1,
@@ -1566,12 +1608,12 @@
   },
   {
     "iid": 969,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[test] Restore the DeepSeek-V4.1 golden integration case",
     "created_at": "2026-10-09",
-    "updated_at": "2026-10-16",
-    "merged_at": "",
+    "updated_at": "2026-10-17",
+    "merged_at": "2026-10-17",
     "closed_at": "",
     "author": "mystri",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/969",
@@ -5227,13 +5269,13 @@
   },
   {
     "iid": 786,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【质量加固】docs: 修正文档与代码不一致的默认值、并行示例与 override 清单",
     "created_at": "2026-09-11",
-    "updated_at": "2026-09-30",
+    "updated_at": "2026-10-17",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-17",
     "author": "nied",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/786",
     "labels": [
@@ -6253,18 +6295,20 @@
   },
   {
     "iid": 734,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "feat:同步修改更新文档skill",
     "created_at": "2026-09-06",
-    "updated_at": "2026-10-16",
-    "merged_at": "",
+    "updated_at": "2026-10-17",
+    "merged_at": "2026-10-17",
     "closed_at": "",
     "author": "liuyuanchen1",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/734",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 26,
     "e2e_issues": []
@@ -8605,7 +8649,7 @@
     "draft": false,
     "title": "[feat]support deepep dispatch/combine",
     "created_at": "2026-08-21",
-    "updated_at": "2026-10-15",
+    "updated_at": "2026-10-17",
     "merged_at": "2026-09-04",
     "closed_at": "",
     "author": "MissingPompeii",
