@@ -1,5 +1,217 @@
 [
   {
+    "iid": "204",
+    "state": "opened",
+    "created_at": "2026-10-19",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "OpDefFactory 重复注册会生成重复的算子类型项",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/metadef/issues/204",
+    "working_days_open": 0
+  },
+  {
+    "iid": "203",
+    "state": "opened",
+    "created_at": "2026-10-19",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "AnyValue 分配失败后仍报告成功并导致复制崩溃",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/metadef/issues/203",
+    "working_days_open": 0
+  },
+  {
+    "iid": "202",
+    "state": "opened",
+    "created_at": "2026-10-18",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "TensorV2 offset 文档未说明元素单位",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "m0_50621083"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/metadef/issues/202",
+    "working_days_open": 0
+  },
+  {
+    "iid": "201",
+    "state": "opened",
+    "created_at": "2026-10-18",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "TilingDataSize 参数方向标注错误",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "m0_50621083"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/metadef/issues/201",
+    "working_days_open": 0
+  },
+  {
+    "iid": "200",
+    "state": "opened",
+    "created_at": "2026-10-18",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "TensorData::SetAddr 对当前地址自别名时重复释放",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "m0_50621083"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/metadef/issues/200",
+    "working_days_open": 0
+  },
+  {
+    "iid": "199",
+    "state": "opened",
+    "created_at": "2026-10-18",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "GetAddr 文档未说明 manager 查询失败时返回空指针",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "m0_50621083"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/metadef/issues/199",
+    "working_days_open": 0
+  },
+  {
+    "iid": "198",
+    "state": "opened",
+    "created_at": "2026-10-18",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "Misaligned runtime attribute payload causes undefined behavior",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "m0_50621083"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/metadef/issues/198",
+    "working_days_open": 0
+  },
+  {
+    "iid": "197",
+    "state": "opened",
+    "created_at": "2026-10-18",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "TensorDesc::GetShape 返回值语义与文档不符",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "m0_50621083"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/metadef/issues/197",
+    "working_days_open": 0
+  },
+  {
+    "iid": "196",
+    "state": "opened",
+    "created_at": "2026-10-18",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "OpContextBuilderBase 的 IO 配置顺序契约未被双向执行",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "m0_50621083"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/metadef/issues/196",
+    "working_days_open": 0
+  },
+  {
+    "iid": "195",
+    "state": "opened",
+    "created_at": "2026-10-18",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "GERT TensorData 文档示例误将只读引用按值复制",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "m0_50621083"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/metadef/issues/195",
+    "working_days_open": 0
+  },
+  {
+    "iid": "194",
+    "state": "opened",
+    "created_at": "2026-10-18",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "SetOpApiParams 空 deleter 契约与实现不一致",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "m0_50621083"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/metadef/issues/194",
+    "working_days_open": 0
+  },
+  {
+    "iid": "193",
+    "state": "opened",
+    "created_at": "2026-10-18",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "author_id": "682829bcddc3c54994a73773",
+    "title": "ParseSubgraphPostFn 回调参数方向文档错误",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "m0_50621083"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/metadef/issues/193",
+    "working_days_open": 0
+  },
+  {
     "iid": "192",
     "state": "opened",
     "created_at": "2026-10-17",

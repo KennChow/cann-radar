@@ -1,5 +1,278 @@
 [
   {
+    "iid": 1288,
+    "state": "opened",
+    "draft": false,
+    "title": "[L1] fix: parallel_programming教程CANNLab环境版本标注与真机对齐（CANN 9.0→9.1.0）",
+    "created_at": "2026-10-19",
+    "updated_at": "2026-10-19",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1288",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-running"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1287,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: 修正 README 在线体验链接,指向 AtomGit 平台对应入口",
+    "created_at": "2026-10-18",
+    "updated_at": "2026-10-18",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "c2892480843s",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1287",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1286,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: validate local LongCat checkpoints before reuse",
+    "created_at": "2026-10-18",
+    "updated_at": "2026-10-18",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gxhgxh2475698",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1286",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "863"
+    ]
+  },
+  {
+    "iid": 1285,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: fix Lab8 notebook navigation links",
+    "created_at": "2026-10-18",
+    "updated_at": "2026-10-18",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "eyja_fjalla",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1285",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "864"
+    ]
+  },
+  {
+    "iid": 1284,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: allow explicit YOLOv13 target kernel",
+    "created_at": "2026-10-18",
+    "updated_at": "2026-10-18",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "eyja_fjalla",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1284",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "862"
+    ]
+  },
+  {
+    "iid": 1283,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: escape AI general course PPT link",
+    "created_at": "2026-10-18",
+    "updated_at": "2026-10-18",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "eyja_fjalla",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1283",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "861"
+    ]
+  },
+  {
+    "iid": 1282,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: escape AI chip course PPT links",
+    "created_at": "2026-10-18",
+    "updated_at": "2026-10-18",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "eyja_fjalla",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1282",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "860"
+    ]
+  },
+  {
+    "iid": 1281,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: remove broken Lecture8 next link",
+    "created_at": "2026-10-18",
+    "updated_at": "2026-10-18",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "eyja_fjalla",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1281",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "859"
+    ]
+  },
+  {
+    "iid": 1280,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: fix Lecture1 CANN basics link",
+    "created_at": "2026-10-18",
+    "updated_at": "2026-10-18",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "eyja_fjalla",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1280",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "857"
+    ]
+  },
+  {
+    "iid": 1279,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: fix atomic framework directory link",
+    "created_at": "2026-10-18",
+    "updated_at": "2026-10-18",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "eyja_fjalla",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1279",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "856"
+    ]
+  },
+  {
+    "iid": 1278,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: fix Lab5_4 CLI examples",
+    "created_at": "2026-10-18",
+    "updated_at": "2026-10-18",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "eyja_fjalla",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1278",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "855"
+    ]
+  },
+  {
+    "iid": 1277,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: resolve Lab4_5 sample image paths",
+    "created_at": "2026-10-18",
+    "updated_at": "2026-10-18",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "eyja_fjalla",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1277",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "854"
+    ]
+  },
+  {
+    "iid": 1276,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: validate Lab7_3 ATC conversion",
+    "created_at": "2026-10-18",
+    "updated_at": "2026-10-18",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "eyja_fjalla",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1276",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "853"
+    ]
+  },
+  {
+    "iid": 1275,
+    "state": "closed",
+    "draft": false,
+    "title": "feat(tutorials): 新增 02.04 矢量减法算子 sub_custom 参考实现",
+    "created_at": "2026-10-18",
+    "updated_at": "2026-10-18",
+    "merged_at": "",
+    "closed_at": "2026-10-18",
+    "author": "gcw_bX7QIJhj",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1275",
+    "labels": [
+      "cann-cla/no",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1274,
     "state": "opened",
     "draft": false,
@@ -2036,7 +2309,7 @@
     "draft": false,
     "title": "Align onsite demo tooling with the current AI security course tree",
     "created_at": "2026-10-05",
-    "updated_at": "2026-10-05",
+    "updated_at": "2026-10-18",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -2078,7 +2351,7 @@
     "draft": false,
     "title": "Pin the LeRobot source used by the NPU setup script",
     "created_at": "2026-10-05",
-    "updated_at": "2026-10-05",
+    "updated_at": "2026-10-18",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -2433,7 +2706,7 @@
     "draft": false,
     "title": "NPU practice grader must check matrix result devices",
     "created_at": "2026-10-02",
-    "updated_at": "2026-10-04",
+    "updated_at": "2026-10-18",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -2493,7 +2766,7 @@
     "draft": false,
     "title": "Fix RoPE FP32 half-dimension copies",
     "created_at": "2026-10-02",
-    "updated_at": "2026-10-02",
+    "updated_at": "2026-10-18",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -2513,7 +2786,7 @@
     "draft": false,
     "title": "修正 bitmap grader 对尾块等价分支的误判",
     "created_at": "2026-10-02",
-    "updated_at": "2026-10-15",
+    "updated_at": "2026-10-18",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -2713,7 +2986,7 @@
     "draft": false,
     "title": "[Bug] Reject symlinked grader build directories",
     "created_at": "2026-10-01",
-    "updated_at": "2026-10-15",
+    "updated_at": "2026-10-18",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -4228,7 +4501,7 @@
     "draft": false,
     "title": "feat(d2l_ai_pypto): 优化d2l_ai_pypto第11章 PyPTO 优化课程",
     "created_at": "2026-09-21",
-    "updated_at": "2026-09-23",
+    "updated_at": "2026-10-18",
     "merged_at": "",
     "closed_at": "",
     "author": "Approach1999",
@@ -5072,7 +5345,7 @@
     "draft": false,
     "title": "fix: resolve issue #698",
     "created_at": "2026-09-14",
-    "updated_at": "2026-10-16",
+    "updated_at": "2026-10-18",
     "merged_at": "",
     "closed_at": "",
     "author": "refgrhdh",
