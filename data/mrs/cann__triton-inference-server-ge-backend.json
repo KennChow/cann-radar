@@ -1,11 +1,30 @@
 [
   {
+    "iid": 47,
+    "state": "opened",
+    "draft": false,
+    "title": "fix:all-open-prs",
+    "created_at": "2026-10-20",
+    "updated_at": "2026-10-20",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "guoyiwei1111",
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/merge_requests/47",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
     "iid": 46,
     "state": "opened",
     "draft": false,
     "title": "docs: 修复中文标点前多余空格（5 处）",
     "created_at": "2026-10-17",
-    "updated_at": "2026-10-17",
+    "updated_at": "2026-10-20",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_2C7pfVg4",
@@ -13,7 +32,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 1,
+    "working_days_open": 2,
     "e2e_issues": []
   },
   {
@@ -22,7 +41,7 @@
     "draft": false,
     "title": "fix: preserve build paths and resume CI CPU dependency downloads",
     "created_at": "2026-10-14",
-    "updated_at": "2026-10-19",
+    "updated_at": "2026-10-20",
     "merged_at": "",
     "closed_at": "",
     "author": "Ethan_Zou",
@@ -31,7 +50,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 4,
+    "working_days_open": 5,
     "e2e_issues": [
       "66"
     ]
@@ -51,7 +70,7 @@
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 4,
+    "working_days_open": 5,
     "e2e_issues": [
       "65"
     ]
@@ -72,7 +91,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 4,
+    "working_days_open": 5,
     "e2e_issues": [
       "64"
     ]
@@ -93,7 +112,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 5,
+    "working_days_open": 6,
     "e2e_issues": [
       "63"
     ]
@@ -114,7 +133,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 6,
+    "working_days_open": 7,
     "e2e_issues": []
   },
   {
@@ -132,7 +151,7 @@
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": []
   },
   {
@@ -149,7 +168,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 8,
+    "working_days_open": 9,
     "e2e_issues": []
   },
   {
@@ -168,64 +187,70 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": [
       "41"
     ]
   },
   {
     "iid": 37,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix(model): set init_failed_ when aclrtSetDevice fails in CreateDeviceThreads",
     "created_at": "2026-10-05",
-    "updated_at": "2026-10-08",
-    "merged_at": "",
+    "updated_at": "2026-10-20",
+    "merged_at": "2026-10-20",
     "closed_at": "",
     "author": "NUAA_wqy",
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/merge_requests/37",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": [
       "62"
     ]
   },
   {
     "iid": 36,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix(config): treat dynamic_batching fields as optional in ParseDynamicBatching",
     "created_at": "2026-10-05",
-    "updated_at": "2026-10-08",
-    "merged_at": "",
+    "updated_at": "2026-10-20",
+    "merged_at": "2026-10-20",
     "closed_at": "",
     "author": "NUAA_wqy",
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/merge_requests/36",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": [
       "61"
     ]
   },
   {
     "iid": 35,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "Advance the initialization ticket after graph setup failure",
     "created_at": "2026-10-05",
-    "updated_at": "2026-10-19",
-    "merged_at": "",
+    "updated_at": "2026-10-20",
+    "merged_at": "2026-10-20",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/merge_requests/35",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": [
       "60"
     ]
@@ -246,28 +271,29 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": [
       "58"
     ]
   },
   {
     "iid": 33,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "Match underscore-containing dimension names in output formulas",
     "created_at": "2026-10-04",
-    "updated_at": "2026-10-19",
-    "merged_at": "",
+    "updated_at": "2026-10-20",
+    "merged_at": "2026-10-20",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/merge_requests/33",
     "labels": [
       "cann-cla/yes",
       "approved",
-      "lgtm"
+      "lgtm",
+      "ci-pipeline-failed"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": [
       "57"
     ]
@@ -288,7 +314,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": [
       "35"
     ]
@@ -309,7 +335,7 @@
       "approved",
       "cann-cla/yes"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": [
       "36"
     ]
@@ -330,7 +356,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": [
       "34"
     ]
@@ -351,7 +377,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": [
       "56"
     ]
@@ -372,7 +398,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": [
       "55"
     ]
@@ -391,45 +417,48 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": []
   },
   {
     "iid": 26,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "Preserve Triton inputs split across buffers",
     "created_at": "2026-10-01",
-    "updated_at": "2026-10-19",
-    "merged_at": "",
+    "updated_at": "2026-10-20",
+    "merged_at": "2026-10-20",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/merge_requests/26",
-    "labels": [
-      "cann-cla/yes"
-    ],
-    "working_days_open": 9,
-    "e2e_issues": [
-      "54"
-    ]
-  },
-  {
-    "iid": 25,
-    "state": "opened",
-    "draft": false,
-    "title": "Propagate GE output-copy failures",
-    "created_at": "2026-09-30",
-    "updated_at": "2026-10-19",
-    "merged_at": "",
-    "closed_at": "",
-    "author": "KaranocaVe",
-    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/merge_requests/25",
     "labels": [
       "cann-cla/yes",
       "approved",
       "lgtm"
     ],
     "working_days_open": 10,
+    "e2e_issues": [
+      "54"
+    ]
+  },
+  {
+    "iid": 25,
+    "state": "merged",
+    "draft": false,
+    "title": "Propagate GE output-copy failures",
+    "created_at": "2026-09-30",
+    "updated_at": "2026-10-20",
+    "merged_at": "2026-10-20",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/merge_requests/25",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 11,
     "e2e_issues": [
       "53"
     ]
@@ -450,7 +479,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": [
       "52"
     ]
@@ -471,7 +500,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 12,
+    "working_days_open": 13,
     "e2e_issues": [
       "50",
       "42"
@@ -493,7 +522,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 12,
+    "working_days_open": 13,
     "e2e_issues": [
       "49"
     ]
@@ -514,7 +543,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 13,
+    "working_days_open": 14,
     "e2e_issues": [
       "48"
     ]
@@ -536,7 +565,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 16,
+    "working_days_open": 17,
     "e2e_issues": []
   },
   {
@@ -556,7 +585,7 @@
       "lgtm",
       "stat/needs-squash"
     ],
-    "working_days_open": 17,
+    "working_days_open": 18,
     "e2e_issues": []
   },
   {
@@ -575,7 +604,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 23,
+    "working_days_open": 24,
     "e2e_issues": []
   },
   {
@@ -594,7 +623,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 37,
+    "working_days_open": 38,
     "e2e_issues": [
       "44"
     ]
@@ -616,7 +645,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 52,
+    "working_days_open": 53,
     "e2e_issues": []
   },
   {
@@ -635,7 +664,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 84,
+    "working_days_open": 85,
     "e2e_issues": []
   },
   {
@@ -652,7 +681,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 84,
+    "working_days_open": 85,
     "e2e_issues": []
   },
   {
@@ -673,7 +702,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 128,
+    "working_days_open": 129,
     "e2e_issues": [
       "22"
     ]
@@ -696,7 +725,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 158,
+    "working_days_open": 159,
     "e2e_issues": [
       "18"
     ]
@@ -719,7 +748,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 177,
+    "working_days_open": 178,
     "e2e_issues": []
   },
   {
@@ -737,7 +766,7 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 181,
+    "working_days_open": 182,
     "e2e_issues": []
   },
   {
@@ -757,7 +786,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 187,
+    "working_days_open": 188,
     "e2e_issues": []
   },
   {
@@ -777,7 +806,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 190,
+    "working_days_open": 191,
     "e2e_issues": []
   },
   {
@@ -796,7 +825,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 194,
+    "working_days_open": 195,
     "e2e_issues": []
   },
   {
@@ -816,7 +845,7 @@
       "stat/needs-squash",
       "lgtm"
     ],
-    "working_days_open": 197,
+    "working_days_open": 198,
     "e2e_issues": []
   },
   {
@@ -836,7 +865,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 201,
+    "working_days_open": 202,
     "e2e_issues": [
       "2"
     ]
@@ -858,7 +887,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 203,
+    "working_days_open": 204,
     "e2e_issues": [
       "1"
     ]
@@ -879,7 +908,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 212,
+    "working_days_open": 213,
     "e2e_issues": []
   },
   {
@@ -898,7 +927,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 214,
+    "working_days_open": 215,
     "e2e_issues": []
   },
   {
@@ -915,7 +944,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 217,
+    "working_days_open": 218,
     "e2e_issues": []
   }
 ]

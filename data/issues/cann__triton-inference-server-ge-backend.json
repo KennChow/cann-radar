@@ -15,7 +15,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/66",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "65",
@@ -33,7 +33,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/65",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "64",
@@ -53,7 +53,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/64",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "63",
@@ -73,61 +73,67 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/63",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "62",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-05",
-    "closed_at": "",
+    "closed_at": "2026-10-20",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "Device setup failure is reported as successful model initialization",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "guoyiwei1111"
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/62",
-    "working_days_open": 9
+    "working_days_open": 10
   },
   {
     "iid": "61",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-05",
-    "closed_at": "",
+    "closed_at": "2026-10-20",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "Preferred batch sizes are ignored when queue delay is omitted",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "guoyiwei1111"
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/61",
-    "working_days_open": 9
+    "working_days_open": 10
   },
   {
     "iid": "60",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-05",
-    "closed_at": "",
+    "closed_at": "2026-10-20",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "Later Triton model initialization can wait forever after graph setup fails",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "guoyiwei1111"
     ],
-    "user_notes_count": 0,
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/60",
-    "working_days_open": 9
+    "working_days_open": 10
   },
   {
     "iid": "59",
@@ -145,7 +151,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/59",
-    "working_days_open": 9
+    "working_days_open": 10
   },
   {
     "iid": "58",
@@ -165,25 +171,27 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/58",
-    "working_days_open": 9
+    "working_days_open": 10
   },
   {
     "iid": "57",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-04",
-    "closed_at": "",
+    "closed_at": "2026-10-20",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "Underscores in dimension names break dynamic output formulas",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "guoyiwei1111"
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/57",
-    "working_days_open": 9
+    "working_days_open": 10
   },
   {
     "iid": "56",
@@ -203,7 +211,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/56",
-    "working_days_open": 9
+    "working_days_open": 10
   },
   {
     "iid": "55",
@@ -223,43 +231,47 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/55",
-    "working_days_open": 9
+    "working_days_open": 10
   },
   {
     "iid": "54",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-01",
-    "closed_at": "",
+    "closed_at": "2026-10-20",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "Triton GE backend truncates fixed-width inputs split across buffers",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "guoyiwei1111"
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/54",
-    "working_days_open": 9
+    "working_days_open": 10
   },
   {
     "iid": "53",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-30",
-    "closed_at": "",
+    "closed_at": "2026-10-20",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "GE output copy failures can be reported as successful inference",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "guoyiwei1111"
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/53",
-    "working_days_open": 10
+    "working_days_open": 11
   },
   {
     "iid": "52",
@@ -279,7 +291,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/52",
-    "working_days_open": 10
+    "working_days_open": 11
   },
   {
     "iid": "51",
@@ -297,7 +309,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/51",
-    "working_days_open": 12
+    "working_days_open": 13
   },
   {
     "iid": "50",
@@ -317,7 +329,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/50",
-    "working_days_open": 12
+    "working_days_open": 13
   },
   {
     "iid": "49",
@@ -335,7 +347,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/49",
-    "working_days_open": 12
+    "working_days_open": 13
   },
   {
     "iid": "48",
@@ -353,7 +365,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/48",
-    "working_days_open": 13
+    "working_days_open": 14
   },
   {
     "iid": "47",
@@ -371,7 +383,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/47",
-    "working_days_open": 15
+    "working_days_open": 16
   },
   {
     "iid": "46",
@@ -387,7 +399,7 @@
     "assignees": [],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/46",
-    "working_days_open": 24
+    "working_days_open": 25
   },
   {
     "iid": "45",
@@ -403,7 +415,7 @@
     "assignees": [],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/45",
-    "working_days_open": 34
+    "working_days_open": 35
   },
   {
     "iid": "44",
@@ -423,7 +435,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/44",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "43",
@@ -441,7 +453,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/43",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "42",
@@ -461,7 +473,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/42",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "41",
@@ -481,7 +493,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/41",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "40",
@@ -499,7 +511,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/40",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "39",
@@ -515,7 +527,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/39",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "36",
@@ -533,7 +545,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/36",
-    "working_days_open": 41
+    "working_days_open": 42
   },
   {
     "iid": "35",
@@ -551,7 +563,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/35",
-    "working_days_open": 42
+    "working_days_open": 43
   },
   {
     "iid": "34",
@@ -569,7 +581,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/34",
-    "working_days_open": 43
+    "working_days_open": 44
   },
   {
     "iid": "33",
@@ -587,7 +599,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/33",
-    "working_days_open": 48
+    "working_days_open": 49
   },
   {
     "iid": "32",
@@ -603,7 +615,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/32",
-    "working_days_open": 52
+    "working_days_open": 53
   },
   {
     "iid": "31",
@@ -621,7 +633,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/31",
-    "working_days_open": 64
+    "working_days_open": 65
   },
   {
     "iid": "30",
@@ -639,7 +651,7 @@
     "assignees": [],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/30",
-    "working_days_open": 75
+    "working_days_open": 76
   },
   {
     "iid": "29",
@@ -659,7 +671,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/29",
-    "working_days_open": 83
+    "working_days_open": 84
   },
   {
     "iid": "28",
@@ -679,7 +691,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/28",
-    "working_days_open": 84
+    "working_days_open": 85
   },
   {
     "iid": "27",
@@ -699,7 +711,7 @@
     ],
     "user_notes_count": 11,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/27",
-    "working_days_open": 86
+    "working_days_open": 87
   },
   {
     "iid": "26",
@@ -719,7 +731,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/26",
-    "working_days_open": 90
+    "working_days_open": 91
   },
   {
     "iid": "25",
@@ -737,7 +749,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/25",
-    "working_days_open": 104
+    "working_days_open": 105
   },
   {
     "iid": "24",
@@ -755,7 +767,7 @@
     "assignees": [],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/24",
-    "working_days_open": 112
+    "working_days_open": 113
   },
   {
     "iid": "23",
@@ -773,7 +785,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/23",
-    "working_days_open": 139
+    "working_days_open": 140
   },
   {
     "iid": "22",
@@ -792,7 +804,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/22",
-    "working_days_open": 140
+    "working_days_open": 141
   },
   {
     "iid": "21",
@@ -808,7 +820,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/21",
-    "working_days_open": 153
+    "working_days_open": 154
   },
   {
     "iid": "20",
@@ -826,7 +838,7 @@
     "assignees": [],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/20",
-    "working_days_open": 157
+    "working_days_open": 158
   },
   {
     "iid": "18",
@@ -845,7 +857,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/18",
-    "working_days_open": 160
+    "working_days_open": 161
   },
   {
     "iid": "17",
@@ -863,7 +875,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/17",
-    "working_days_open": 160
+    "working_days_open": 161
   },
   {
     "iid": "16",
@@ -881,7 +893,7 @@
     "assignees": [],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/16",
-    "working_days_open": 160
+    "working_days_open": 161
   },
   {
     "iid": "15",
@@ -899,7 +911,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/15",
-    "working_days_open": 161
+    "working_days_open": 162
   },
   {
     "iid": "14",
@@ -915,7 +927,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/14",
-    "working_days_open": 162
+    "working_days_open": 163
   },
   {
     "iid": "13",
@@ -931,7 +943,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/13",
-    "working_days_open": 162
+    "working_days_open": 163
   },
   {
     "iid": "12",
@@ -947,7 +959,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/12",
-    "working_days_open": 162
+    "working_days_open": 163
   },
   {
     "iid": "11",
@@ -965,7 +977,7 @@
     "assignees": [],
     "user_notes_count": 22,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/11",
-    "working_days_open": 169
+    "working_days_open": 170
   },
   {
     "iid": "10",
@@ -983,7 +995,7 @@
     "assignees": [],
     "user_notes_count": 17,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/10",
-    "working_days_open": 181
+    "working_days_open": 182
   },
   {
     "iid": "9",
@@ -999,7 +1011,7 @@
     "assignees": [],
     "user_notes_count": 9,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/9",
-    "working_days_open": 182
+    "working_days_open": 183
   },
   {
     "iid": "8",
@@ -1019,7 +1031,7 @@
     ],
     "user_notes_count": 8,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/8",
-    "working_days_open": 184
+    "working_days_open": 185
   },
   {
     "iid": "7",
@@ -1037,7 +1049,7 @@
     "assignees": [],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/7",
-    "working_days_open": 184
+    "working_days_open": 185
   },
   {
     "iid": "6",
@@ -1055,7 +1067,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/6",
-    "working_days_open": 184
+    "working_days_open": 185
   },
   {
     "iid": "5",
@@ -1073,7 +1085,7 @@
     "assignees": [],
     "user_notes_count": 7,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/5",
-    "working_days_open": 191
+    "working_days_open": 192
   },
   {
     "iid": "4",
@@ -1091,7 +1103,7 @@
     "assignees": [],
     "user_notes_count": 9,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/4",
-    "working_days_open": 191
+    "working_days_open": 192
   },
   {
     "iid": "3",
@@ -1109,7 +1121,7 @@
     "assignees": [],
     "user_notes_count": 8,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/3",
-    "working_days_open": 193
+    "working_days_open": 194
   },
   {
     "iid": "2",
@@ -1130,7 +1142,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/2",
-    "working_days_open": 204
+    "working_days_open": 205
   },
   {
     "iid": "1",
@@ -1151,6 +1163,6 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/issues/1",
-    "working_days_open": 204
+    "working_days_open": 205
   }
 ]
