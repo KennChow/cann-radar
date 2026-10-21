@@ -1,18 +1,25 @@
 {
   "repos": [
     {
+      "name": "metadef",
+      "path": "cann/metadef",
+      "avg_days": 10.1,
+      "closed": 125,
+      "opened": 95
+    },
+    {
       "name": "hixl",
       "path": "cann/hixl",
-      "avg_days": 10.7,
-      "closed": 796,
-      "opened": 64
+      "avg_days": 10.8,
+      "closed": 800,
+      "opened": 65
     },
     {
       "name": "graph-autofusion",
       "path": "cann/graph-autofusion",
       "avg_days": 11.0,
       "closed": 361,
-      "opened": 32
+      "opened": 39
     },
     {
       "name": "tensorflow",
@@ -22,40 +29,33 @@
       "opened": 20
     },
     {
-      "name": "metadef",
-      "path": "cann/metadef",
-      "avg_days": 11.4,
-      "closed": 107,
-      "opened": 99
-    },
-    {
       "name": "ge",
       "path": "cann/ge",
       "avg_days": 14.8,
-      "closed": 556,
-      "opened": 72
+      "closed": 558,
+      "opened": 78
     },
     {
       "name": "torchair",
       "path": "Ascend/torchair",
       "avg_days": 14.9,
-      "closed": 632,
+      "closed": 634,
       "opened": 67
     },
     {
       "name": "torchtitan-npu",
       "path": "cann/torchtitan-npu",
-      "avg_days": 20.3,
-      "closed": 150,
+      "avg_days": 20.2,
+      "closed": 151,
       "opened": 15
     },
     {
       "name": "triton-inference-server-ge-backend",
       "path": "cann/triton-inference-server-ge-backend",
-      "avg_days": 22.2,
-      "closed": 57,
-      "opened": 6
+      "avg_days": 22.3,
+      "closed": 62,
+      "opened": 1
     }
   ],
-  "generated_at": "2026-10-20"
+  "generated_at": "2026-10-21"
 }

@@ -1,76 +1,78 @@
 [
   {
     "iid": 47,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
-    "title": "fix:all-open-prs",
+    "title": "fix: 修复已知bug，更新文档中已知错误",
     "created_at": "2026-10-20",
-    "updated_at": "2026-10-20",
-    "merged_at": "",
+    "updated_at": "2026-10-21",
+    "merged_at": "2026-10-21",
     "closed_at": "",
     "author": "guoyiwei1111",
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/merge_requests/47",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
+      "lgtm",
+      "approved",
       "stat/needs-squash"
-    ],
-    "working_days_open": 1,
-    "e2e_issues": []
-  },
-  {
-    "iid": 46,
-    "state": "opened",
-    "draft": false,
-    "title": "docs: 修复中文标点前多余空格（5 处）",
-    "created_at": "2026-10-17",
-    "updated_at": "2026-10-20",
-    "merged_at": "",
-    "closed_at": "",
-    "author": "gcw_2C7pfVg4",
-    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/merge_requests/46",
-    "labels": [
-      "cann-cla/no"
     ],
     "working_days_open": 2,
     "e2e_issues": []
   },
   {
+    "iid": 46,
+    "state": "closed",
+    "draft": false,
+    "title": "docs: 修复中文标点前多余空格（5 处）",
+    "created_at": "2026-10-17",
+    "updated_at": "2026-10-21",
+    "merged_at": "",
+    "closed_at": "2026-10-21",
+    "author": "gcw_2C7pfVg4",
+    "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/merge_requests/46",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 3,
+    "e2e_issues": []
+  },
+  {
     "iid": 45,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix: preserve build paths and resume CI CPU dependency downloads",
     "created_at": "2026-10-14",
-    "updated_at": "2026-10-20",
+    "updated_at": "2026-10-21",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-21",
     "author": "Ethan_Zou",
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/merge_requests/45",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 5,
+    "working_days_open": 6,
     "e2e_issues": [
       "66"
     ]
   },
   {
     "iid": 44,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix: stop the build when the PyTorch ABI query fails",
     "created_at": "2026-10-14",
-    "updated_at": "2026-10-20",
+    "updated_at": "2026-10-21",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-21",
     "author": "Ethan_Zou",
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/merge_requests/44",
     "labels": [
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
-    "working_days_open": 5,
+    "working_days_open": 6,
     "e2e_issues": [
       "65"
     ]
@@ -91,7 +93,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 5,
+    "working_days_open": 6,
     "e2e_issues": [
       "64"
     ]
@@ -112,7 +114,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 6,
+    "working_days_open": 7,
     "e2e_issues": [
       "63"
     ]
@@ -133,42 +135,42 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 7,
+    "working_days_open": 8,
     "e2e_issues": []
   },
   {
     "iid": 40,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "perf:  ExecuteInferenceV2等函数，参数从传值改为传引用，避免不必要的内存拷贝，提升推理性能",
     "created_at": "2026-10-10",
-    "updated_at": "2026-10-11",
+    "updated_at": "2026-10-21",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-21",
     "author": "keecin",
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/merge_requests/40",
     "labels": [
       "cann-cla/yes",
       "stat/needs-squash"
     ],
-    "working_days_open": 8,
+    "working_days_open": 9,
     "e2e_issues": []
   },
   {
     "iid": 39,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "重构: onnxruntime 路径参数化,新增 --onnxruntime-path 参数",
     "created_at": "2026-10-09",
-    "updated_at": "2026-10-09",
+    "updated_at": "2026-10-21",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-21",
     "author": "keecin",
     "web_url": "https://gitcode.com/cann/triton-inference-server-ge-backend/merge_requests/39",
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 9,
+    "working_days_open": 10,
     "e2e_issues": []
   },
   {
@@ -187,7 +189,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": [
       "41"
     ]
@@ -208,7 +210,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": [
       "62"
     ]
@@ -229,7 +231,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": [
       "61"
     ]
@@ -250,7 +252,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": [
       "60"
     ]
@@ -271,7 +273,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": [
       "58"
     ]
@@ -293,7 +295,7 @@
       "lgtm",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": [
       "57"
     ]
@@ -314,7 +316,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": [
       "35"
     ]
@@ -335,7 +337,7 @@
       "approved",
       "cann-cla/yes"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": [
       "36"
     ]
@@ -356,7 +358,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": [
       "34"
     ]
@@ -377,7 +379,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": [
       "56"
     ]
@@ -398,7 +400,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": [
       "55"
     ]
@@ -417,7 +419,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": []
   },
   {
@@ -436,7 +438,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 10,
+    "working_days_open": 11,
     "e2e_issues": [
       "54"
     ]
@@ -458,7 +460,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 11,
+    "working_days_open": 12,
     "e2e_issues": [
       "53"
     ]
@@ -479,7 +481,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 11,
+    "working_days_open": 12,
     "e2e_issues": [
       "52"
     ]
@@ -500,7 +502,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 13,
+    "working_days_open": 14,
     "e2e_issues": [
       "50",
       "42"
@@ -522,7 +524,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 13,
+    "working_days_open": 14,
     "e2e_issues": [
       "49"
     ]
@@ -543,7 +545,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 14,
+    "working_days_open": 15,
     "e2e_issues": [
       "48"
     ]
@@ -565,7 +567,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 17,
+    "working_days_open": 18,
     "e2e_issues": []
   },
   {
@@ -585,7 +587,7 @@
       "lgtm",
       "stat/needs-squash"
     ],
-    "working_days_open": 18,
+    "working_days_open": 19,
     "e2e_issues": []
   },
   {
@@ -604,7 +606,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 24,
+    "working_days_open": 25,
     "e2e_issues": []
   },
   {
@@ -623,7 +625,7 @@
       "lgtm",
       "approved"
     ],
-    "working_days_open": 38,
+    "working_days_open": 39,
     "e2e_issues": [
       "44"
     ]
@@ -645,7 +647,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 53,
+    "working_days_open": 54,
     "e2e_issues": []
   },
   {
@@ -664,7 +666,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 85,
+    "working_days_open": 86,
     "e2e_issues": []
   },
   {
@@ -681,7 +683,7 @@
     "labels": [
       "cann-cla/no"
     ],
-    "working_days_open": 85,
+    "working_days_open": 86,
     "e2e_issues": []
   },
   {
@@ -702,7 +704,7 @@
       "ci-pipeline-passed",
       "lgtm"
     ],
-    "working_days_open": 129,
+    "working_days_open": 130,
     "e2e_issues": [
       "22"
     ]
@@ -725,7 +727,7 @@
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
-    "working_days_open": 159,
+    "working_days_open": 160,
     "e2e_issues": [
       "18"
     ]
@@ -748,7 +750,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 178,
+    "working_days_open": 179,
     "e2e_issues": []
   },
   {
@@ -766,7 +768,7 @@
       "cann-cla/yes",
       "ci-pipeline-failed"
     ],
-    "working_days_open": 182,
+    "working_days_open": 183,
     "e2e_issues": []
   },
   {
@@ -786,7 +788,7 @@
       "stat/needs-squash",
       "cann-cla/yes"
     ],
-    "working_days_open": 188,
+    "working_days_open": 189,
     "e2e_issues": []
   },
   {
@@ -806,7 +808,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 191,
+    "working_days_open": 192,
     "e2e_issues": []
   },
   {
@@ -825,7 +827,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 195,
+    "working_days_open": 196,
     "e2e_issues": []
   },
   {
@@ -845,7 +847,7 @@
       "stat/needs-squash",
       "lgtm"
     ],
-    "working_days_open": 198,
+    "working_days_open": 199,
     "e2e_issues": []
   },
   {
@@ -865,7 +867,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 202,
+    "working_days_open": 203,
     "e2e_issues": [
       "2"
     ]
@@ -887,7 +889,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 204,
+    "working_days_open": 205,
     "e2e_issues": [
       "1"
     ]
@@ -908,7 +910,7 @@
       "approved",
       "lgtm"
     ],
-    "working_days_open": 213,
+    "working_days_open": 214,
     "e2e_issues": []
   },
   {
@@ -927,7 +929,7 @@
       "lgtm",
       "cann-cla/yes"
     ],
-    "working_days_open": 215,
+    "working_days_open": 216,
     "e2e_issues": []
   },
   {
@@ -944,7 +946,7 @@
     "labels": [
       "cann-cla/yes"
     ],
-    "working_days_open": 218,
+    "working_days_open": 219,
     "e2e_issues": []
   }
 ]
