@@ -16,7 +16,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/45",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "44",
@@ -35,26 +35,28 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/44",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "43",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-14",
-    "closed_at": "",
+    "closed_at": "2026-10-22",
     "author": "Ethan_Zou",
     "author_id": "67fb64ad2cb7f0133f7efecc",
     "title": "[Bug-Report|缺陷反馈]: configure 接受现有普通文件作为 CANN 安装目录并写出错误配置",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "Ethan_Zou",
       "jikai-tyler"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/43",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "42",
@@ -74,43 +76,47 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/42",
-    "working_days_open": 10
+    "working_days_open": 11
   },
   {
     "iid": "41",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-05",
-    "closed_at": "",
+    "closed_at": "2026-10-22",
     "author": "dihidao",
     "author_id": "6841a5c82be0321da0afc427",
     "title": "[Documentation|文档反馈]: 8 处示例 config=tf.estimator.NPURunConfig(...) 命名空间错误（实际为顶层导入的 NPURunConfig）",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "SeasonChu"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/41",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "40",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-04",
-    "closed_at": "",
+    "closed_at": "2026-10-22",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "TensorFlow adapter ignores explicit `tf.device` placement",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "m0_50621083"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/40",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "39",
@@ -128,169 +134,187 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/39",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "38",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-03",
-    "closed_at": "",
+    "closed_at": "2026-10-22",
     "author": "Ethan_Zou",
     "author_id": "67fb64ad2cb7f0133f7efecc",
     "title": "[Documentation|文档反馈]: Session日志回传示例把stderr作为待打印输入",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "m0_50621083"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/38",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "37",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-03",
-    "closed_at": "",
+    "closed_at": "2026-10-22",
     "author": "Ethan_Zou",
     "author_id": "67fb64ad2cb7f0133f7efecc",
     "title": "[Documentation|文档反馈]: TF2整网精度对比callbacks示例顶层缩进错误",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "m0_50621083"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/37",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "36",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-03",
-    "closed_at": "",
+    "closed_at": "2026-10-22",
     "author": "Ethan_Zou",
     "author_id": "67fb64ad2cb7f0133f7efecc",
     "title": "[Documentation|文档反馈]: 迭代下沉图像输入示例混淆尺寸维度并漏传shuffle参数",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "m0_50621083"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/36",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "35",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-03",
-    "closed_at": "",
+    "closed_at": "2026-10-22",
     "author": "Ethan_Zou",
     "author_id": "67fb64ad2cb7f0133f7efecc",
     "title": "[Documentation|文档反馈]: TF2数据集分片片段在顶层保留多余缩进",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "m0_50621083"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/35",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "34",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-03",
-    "closed_at": "",
+    "closed_at": "2026-10-22",
     "author": "Ethan_Zou",
     "author_id": "67fb64ad2cb7f0133f7efecc",
     "title": "[Documentation|文档反馈]: is_finite迁移示例只注释首行而遗留非法续行",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "m0_50621083"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/34",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "33",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-03",
-    "closed_at": "",
+    "closed_at": "2026-10-22",
     "author": "Ethan_Zou",
     "author_id": "67fb64ad2cb7f0133f7efecc",
     "title": "[Documentation|文档反馈]: Session分布式广播函数的for及if函数体缺少缩进",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "m0_50621083"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/33",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "32",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-03",
-    "closed_at": "",
+    "closed_at": "2026-10-22",
     "author": "Ethan_Zou",
     "author_id": "67fb64ad2cb7f0133f7efecc",
     "title": "[Documentation|文档反馈]: 自动迁移示例的查找表初始化未正确置于Session块",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "m0_50621083"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/32",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "31",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-03",
-    "closed_at": "",
+    "closed_at": "2026-10-22",
     "author": "Ethan_Zou",
     "author_id": "67fb64ad2cb7f0133f7efecc",
     "title": "[Documentation|文档反馈]: 按rank选择数据dump的配置行缩进非法",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "m0_50621083"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/31",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "30",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-03",
-    "closed_at": "",
+    "closed_at": "2026-10-22",
     "author": "Ethan_Zou",
     "author_id": "67fb64ad2cb7f0133f7efecc",
     "title": "[Documentation|文档反馈]: 精度工具误差计数示例的条件表达式缺少 else",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "m0_50621083"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/30",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "29",
@@ -308,7 +332,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/29",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "28",
@@ -326,7 +350,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/28",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "27",
@@ -344,7 +368,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/27",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "26",
@@ -362,7 +386,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/26",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "25",
@@ -380,7 +404,7 @@
     ],
     "user_notes_count": 7,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/25",
-    "working_days_open": 12
+    "working_days_open": 13
   },
   {
     "iid": "24",
@@ -398,9 +422,9 @@
     "assignees": [
       "Mexyy"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/24",
-    "working_days_open": 14
+    "working_days_open": 15
   },
   {
     "iid": "23",
@@ -418,9 +442,9 @@
     "assignees": [
       "KenChow"
     ],
-    "user_notes_count": 6,
+    "user_notes_count": 7,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/23",
-    "working_days_open": 15
+    "working_days_open": 16
   },
   {
     "iid": "22",
@@ -440,7 +464,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/22",
-    "working_days_open": 16
+    "working_days_open": 17
   },
   {
     "iid": "21",
@@ -458,7 +482,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/21",
-    "working_days_open": 21
+    "working_days_open": 22
   },
   {
     "iid": "20",
@@ -474,7 +498,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/20",
-    "working_days_open": 23
+    "working_days_open": 24
   },
   {
     "iid": "19",
@@ -492,7 +516,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/19",
-    "working_days_open": 30
+    "working_days_open": 31
   },
   {
     "iid": "17",
@@ -510,7 +534,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/17",
-    "working_days_open": 38
+    "working_days_open": 39
   },
   {
     "iid": "16",
@@ -530,7 +554,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/16",
-    "working_days_open": 38
+    "working_days_open": 39
   },
   {
     "iid": "15",
@@ -550,7 +574,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/15",
-    "working_days_open": 38
+    "working_days_open": 39
   },
   {
     "iid": "14",
@@ -569,7 +593,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/14",
-    "working_days_open": 42
+    "working_days_open": 43
   },
   {
     "iid": "13",
@@ -589,7 +613,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/13",
-    "working_days_open": 42
+    "working_days_open": 43
   },
   {
     "iid": "12",
@@ -605,7 +629,7 @@
     "assignees": [],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/12",
-    "working_days_open": 42
+    "working_days_open": 43
   },
   {
     "iid": "11",
@@ -621,7 +645,7 @@
     "assignees": [],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/11",
-    "working_days_open": 42
+    "working_days_open": 43
   },
   {
     "iid": "10",
@@ -637,7 +661,7 @@
     "assignees": [],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/10",
-    "working_days_open": 42
+    "working_days_open": 43
   },
   {
     "iid": "9",
@@ -657,7 +681,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/9",
-    "working_days_open": 45
+    "working_days_open": 46
   },
   {
     "iid": "8",
@@ -675,7 +699,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/8",
-    "working_days_open": 51
+    "working_days_open": 52
   },
   {
     "iid": "7",
@@ -695,7 +719,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/7",
-    "working_days_open": 52
+    "working_days_open": 53
   },
   {
     "iid": "6",
@@ -711,7 +735,7 @@
     "assignees": [],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/6",
-    "working_days_open": 59
+    "working_days_open": 60
   },
   {
     "iid": "5",
@@ -727,7 +751,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/5",
-    "working_days_open": 81
+    "working_days_open": 82
   },
   {
     "iid": "4",
@@ -743,7 +767,7 @@
     "assignees": [],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/4",
-    "working_days_open": 113
+    "working_days_open": 114
   },
   {
     "iid": "3",
@@ -761,7 +785,7 @@
     "assignees": [],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/3",
-    "working_days_open": 118
+    "working_days_open": 119
   },
   {
     "iid": "2",
@@ -779,7 +803,7 @@
     "assignees": [],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/2",
-    "working_days_open": 124
+    "working_days_open": 125
   },
   {
     "iid": "1",
@@ -799,6 +823,6 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/tensorflow/issues/1",
-    "working_days_open": 128
+    "working_days_open": 129
   }
 ]
