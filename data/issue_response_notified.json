@@ -157,45 +157,6 @@
       "comment_count": 4,
       "issue_updated_at": "2026-04-16T20:00:16+08:00"
     },
-    "cann__ge!578": {
-      "repo": "cann/ge",
-      "comments": {
-        "has_non_author_response": true,
-        "latest_comment_id": "191919928",
-        "latest_comment_author": "yelongjian",
-        "latest_comment_at": "2026-09-28T15:35:10+08:00",
-        "latest_non_author_comment_id": "191919928"
-      },
-      "comment_count": 2,
-      "issue_updated_at": "2026-09-28T15:35:10+08:00",
-      "notifications": {
-        "initial:2026-09-24T17:47:22+08:00": {
-          "delivered_users": {
-            "Mexyy": {
-              "sent_at": "2026-09-24T22:23:59+00:00"
-            },
-            "m0_50621083": {
-              "sent_at": "2026-09-24T22:24:01+00:00"
-            },
-            "spring_yb": {
-              "sent_at": "2026-09-24T22:24:04+00:00"
-            },
-            "wuzheng-hw": {
-              "sent_at": "2026-09-28T06:53:07+00:00"
-            }
-          },
-          "required_users": [
-            "wuzheng-hw",
-            "Mexyy",
-            "m0_50621083",
-            "spring_yb"
-          ],
-          "satisfied": true,
-          "last_checked_at": "2026-09-28T06:53:07+00:00",
-          "satisfied_at": "2026-09-28T06:53:07+00:00"
-        }
-      }
-    },
     "cann__ge!577": {
       "repo": "cann/ge",
       "comments": {
@@ -2119,6 +2080,19 @@
           "satisfied": true,
           "last_checked_at": "2026-10-23T01:30:03+00:00",
           "satisfied_at": "2026-10-23T01:30:03+00:00"
+        },
+        "followup:195429317": {
+          "delivered_users": {
+            "yelongjian": {
+              "sent_at": "2026-10-23T13:25:20+00:00"
+            }
+          },
+          "required_users": [
+            "yelongjian"
+          ],
+          "satisfied": true,
+          "last_checked_at": "2026-10-23T13:25:20+00:00",
+          "satisfied_at": "2026-10-23T13:25:20+00:00"
         }
       }
     },
@@ -3728,8 +3702,8 @@
             "KenChow"
           ],
           "satisfied": true,
-          "last_checked_at": "2026-10-23T07:30:36+00:00",
-          "satisfied_at": "2026-10-23T07:30:36+00:00"
+          "last_checked_at": "2026-10-23T13:25:20+00:00",
+          "satisfied_at": "2026-10-23T13:25:20+00:00"
         }
       }
     },
@@ -3744,7 +3718,31 @@
       },
       "comment_count": 0,
       "issue_updated_at": "2026-10-23T11:06:37+08:00"
+    },
+    "cann__ge!678": {
+      "repo": "cann/ge",
+      "comments": {
+        "has_non_author_response": false,
+        "latest_comment_id": "",
+        "latest_comment_author": "",
+        "latest_comment_at": "",
+        "latest_non_author_comment_id": ""
+      },
+      "comment_count": 0,
+      "issue_updated_at": "2026-10-23T19:56:49+08:00"
+    },
+    "cann__ge!677": {
+      "repo": "cann/ge",
+      "comments": {
+        "has_non_author_response": false,
+        "latest_comment_id": "",
+        "latest_comment_author": "",
+        "latest_comment_at": "",
+        "latest_non_author_comment_id": ""
+      },
+      "comment_count": 0,
+      "issue_updated_at": "2026-10-23T19:53:17+08:00"
     }
   },
-  "last_run": "2026-10-23T07:30:36+00:00"
+  "last_run": "2026-10-23T13:25:20+00:00"
 }
