@@ -165,13 +165,15 @@
   },
   {
     "iid": "669",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-21",
-    "closed_at": "",
+    "closed_at": "2026-10-24",
     "author": "wsnidie1",
     "author_id": "68107c6b43c294728be9a375",
     "title": "[Bug-Report|缺陷反馈]: transformer 两份 cpp run_sample.sh 参数被拒时 usage() 先 exit 0，未知选项分支的 exit 1 是死代码",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [
@@ -201,13 +203,15 @@
   },
   {
     "iid": "667",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-21",
-    "closed_at": "",
+    "closed_at": "2026-10-24",
     "author": "wsnidie1",
     "author_id": "68107c6b43c294728be9a375",
     "title": "[Bug-Report|缺陷反馈]: 4 处包安装/卸载守卫写成 [ -z \"$common_parse_dir/share/info/<pkg>\" ] 恒不触发，ERR_NO:0x0001 分支是死代码",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [

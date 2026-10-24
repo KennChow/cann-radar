@@ -1,5 +1,117 @@
 [
   {
+    "iid": 2655,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: 修复复合Norm融合无角色Nddma侧输入导致SIMT元数据walk越界codegen失败",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "JaydenChu",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2655",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2654,
+    "state": "closed",
+    "draft": false,
+    "title": "fix: 修复复合Norm融合无角色Nddma侧输入导致SIMT元数据walk越界codegen失败",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "",
+    "closed_at": "2026-10-24",
+    "author": "JaydenChu",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2654",
+    "labels": [
+      "cann-cla/no",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2653,
+    "state": "opened",
+    "draft": true,
+    "title": "[WIP]【PR】: build: 验证 LLVM 21 与 MLIR CI 用例",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "niuyuhu",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2653",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2652,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 新增RandInt AscIR算子（Triton randint64逐位一致的自定义reg_base API全链路）",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wei_shi",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2652",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2651,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: SK 窗口语义 tmp 估算 + 多核轴 tile 选择硬核数上限（合并 #2634 #2646）",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wangyichao0421",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2651",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2650,
+    "state": "opened",
+    "draft": false,
+    "title": "【fix】: A comprehensive solution for deadlock detection based on lifecycle assessment",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Achilles_d",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2650",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "enhancement"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 2649,
     "state": "closed",
     "draft": false,
@@ -22,15 +134,15 @@
     "draft": true,
     "title": "【WIP】【PR】: A5 argmax ASCIR适配",
     "created_at": "2026-10-23",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "tourse",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2648",
     "labels": [
+      "cann-cla/yes",
       "ci-pipeline-passed",
-      "enhancement",
-      "cann-cla/yes"
+      "enhancement"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -58,14 +170,15 @@
     "iid": 2646,
     "state": "opened",
     "draft": false,
-    "title": "fix: 多核相关轴 tile 选择补硬核数上限校验，修复 block_dim 超核数导致求解失败",
+    "title": "fix: 多核轴终检核数超限兜底修复，保留原逐轴选择逻辑",
     "created_at": "2026-10-23",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "wangyichao0421",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2646",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
@@ -115,14 +228,14 @@
     "draft": false,
     "title": "【PR】:  sync develop to master 20261023",
     "created_at": "2026-10-23",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "Jett_Woo",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2643",
     "labels": [
-      "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "stat/needs-squash"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -208,14 +321,14 @@
     "draft": false,
     "title": "【feat】: 新增 Gelu Regbase API（GeluExtend）对齐 ops-nn gelu_v2 tanh 实现，同步 codegen 注册、perf 建模与 UT",
     "created_at": "2026-10-23",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "wangdingjun",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2638",
     "labels": [
-      "cann-cla/yes",
       "ci-pipeline-failed",
+      "cann-cla/yes",
       "enhancement"
     ],
     "working_days_open": 1,
@@ -282,19 +395,21 @@
   },
   {
     "iid": 2634,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix: SK 模板 IndirectLoad tmp 静态估算按单窗口驻留量计算",
     "created_at": "2026-10-23",
-    "updated_at": "2026-10-23",
-    "merged_at": "",
+    "updated_at": "2026-10-24",
+    "merged_at": "2026-10-24",
     "closed_at": "",
     "author": "wangyichao0421",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2634",
     "labels": [
+      "approved",
       "stat/needs-squash",
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "lgtm",
+      "ci-pipeline-passed",
+      "cann-cla/yes"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -360,17 +475,19 @@
   },
   {
     "iid": 2630,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix: 修复 IndirectLoad 多行 block 下 data 行地址漏 outerTb 维度的精度问题",
     "created_at": "2026-10-22",
-    "updated_at": "2026-10-23",
-    "merged_at": "",
+    "updated_at": "2026-10-24",
+    "merged_at": "2026-10-24",
     "closed_at": "",
     "author": "JaydenChu",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2630",
     "labels": [
+      "approved",
       "ci-pipeline-passed",
+      "lgtm",
       "cann-cla/yes"
     ],
     "working_days_open": 2,
@@ -1154,13 +1271,13 @@
   },
   {
     "iid": 2589,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】: 9.1.0测试关闭DB",
     "created_at": "2026-10-19",
-    "updated_at": "2026-10-20",
+    "updated_at": "2026-10-24",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-24",
     "author": "WangYanMale",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2589",
     "labels": [
@@ -1271,17 +1388,19 @@
   },
   {
     "iid": 2583,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix: ImprovePrecision按实际anchor取peer dtype，修复Frexp多输出直连Store误插Cast",
     "created_at": "2026-10-19",
-    "updated_at": "2026-10-20",
-    "merged_at": "",
+    "updated_at": "2026-10-24",
+    "merged_at": "2026-10-24",
     "closed_at": "",
     "author": "gcw_WTfSfUy7",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2583",
     "labels": [
+      "approved",
       "ci-pipeline-passed",
+      "lgtm",
       "cann-cla/yes"
     ],
     "working_days_open": 5,
@@ -1345,13 +1464,13 @@
   },
   {
     "iid": 2579,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【test】: test reduceminExtend bug",
     "created_at": "2026-10-19",
-    "updated_at": "2026-10-19",
+    "updated_at": "2026-10-24",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-24",
     "author": "WangYanMale",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2579",
     "labels": [
@@ -1425,16 +1544,16 @@
     "draft": false,
     "title": "feat: 常量化编译支持scope范围控制",
     "created_at": "2026-10-19",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "WeijieWang007",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2575",
     "labels": [
       "cann-cla/yes",
+      "ci-pipeline-passed",
       "enhancement",
-      "stat/needs-squash",
-      "ci-pipeline-passed"
+      "stat/needs-squash"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -1466,7 +1585,7 @@
     "draft": false,
     "title": "fix: 支持动态MM/BMM CV并修复tiling、workspace与整数shape生成",
     "created_at": "2026-10-18",
-    "updated_at": "2026-10-20",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "ling-DT",
@@ -10146,7 +10265,7 @@
     "draft": false,
     "title": "fix: 修复 MTE3 StoreStride 在 LoopMode 下 block_count 高估",
     "created_at": "2026-09-16",
-    "updated_at": "2026-09-17",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "zhang_shengjie",
@@ -11504,13 +11623,13 @@
   },
   {
     "iid": 2081,
-    "state": "opened",
+    "state": "closed",
     "draft": true,
     "title": "[WIP]test(mlir): make MLIR tests the default",
     "created_at": "2026-09-12",
-    "updated_at": "2026-09-12",
+    "updated_at": "2026-10-24",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-24",
     "author": "niuyuhu",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2081",
     "labels": [
@@ -12147,13 +12266,14 @@
     "draft": true,
     "title": "[WIP]【PR】: 合主线准备",
     "created_at": "2026-09-10",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "niuyuhu",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2050",
     "labels": [
       "cann-cla/yes",
+      "ci-pipeline-failed",
       "enhancement",
       "stat/needs-squash"
     ],
@@ -17147,7 +17267,7 @@
     "draft": false,
     "title": "【PR】: 空提交",
     "created_at": "2026-08-24",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "2026-08-26",
     "author": "zhang_shengjie",

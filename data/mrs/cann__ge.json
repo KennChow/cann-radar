@@ -1,18 +1,197 @@
 [
   {
+    "iid": 5584,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: preserve nested control-flow stream activation in MiniDAG",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KenChow",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5584",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "5",
+      "5"
+    ]
+  },
+  {
+    "iid": 5583,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: PrunePass保活判定调整（收窄救援范围并扩大至无数据输出算子）",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhangguangshuo",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5583",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5582,
+    "state": "merged",
+    "draft": false,
+    "title": "fix: 修复脚本守卫死代码与样例退出码问题，补充 GNode 端口查询文档(#665)(#667)(#669)",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "2026-10-24",
+    "closed_at": "",
+    "author": "tang-haojie",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5582",
+    "labels": [
+      "approved",
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "669",
+      "667",
+      "665"
+    ]
+  },
+  {
+    "iid": 5581,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: 新增 H2D overlap 特性测试用例 example",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "kobemini",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5581",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5580,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: kernel launch性能优化",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "liyanrong_9",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5580",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5579,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: Replace 契约澄清（CanFuse 拒绝返回 NOT_CHANGED）与 CanFuse 单节点判环豁免，支持扁平化控制流合法环上的节点替换",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Dazhou_Cao",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5579",
+    "labels": [
+      "stat/needs-squash",
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5578,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: OM2 变量数据准备下沉到模型 SO，容器只保留设备内存归属",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wuzheng-hw",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5578",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5577,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: fix allow_hf32 overwrite op_precision_mode",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lushiming0",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5577",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "enhancement"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 5576,
+    "state": "merged",
+    "draft": false,
+    "title": "fix(pydflow): 合并 add_invoked_closure 重复定义并修正类型注解 (#613)",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "2026-10-24",
+    "closed_at": "",
+    "author": "SeasonChu",
+    "web_url": "https://gitcode.com/cann/ge/merge_requests/5576",
+    "labels": [
+      "ci-pipeline-passed",
+      "enhancement",
+      "lgtm",
+      "cann-cla/yes",
+      "approved"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "613"
+    ]
+  },
+  {
     "iid": 5575,
     "state": "opened",
     "draft": false,
     "title": "【PR】:  sync develop to master 20261023",
     "created_at": "2026-10-23",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "Jett_Woo",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5575",
     "labels": [
-      "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "stat/needs-squash"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -38,19 +217,21 @@
   },
   {
     "iid": 5573,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
-    "title": "【PR】: 支持softmax+layernorm融合",
+    "title": "【PR】: 支持Softmax/Layernorm算子融合",
     "created_at": "2026-10-23",
-    "updated_at": "2026-10-23",
-    "merged_at": "",
+    "updated_at": "2026-10-24",
+    "merged_at": "2026-10-24",
     "closed_at": "",
     "author": "luo-lipeng",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5573",
     "labels": [
+      "approved",
+      "cann-cla/yes",
       "enhancement",
-      "stat/needs-squash",
-      "cann-cla/yes"
+      "ci-pipeline-passed",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -116,13 +297,13 @@
   },
   {
     "iid": 5569,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix: 修复PrunePass误保活死Enter挂死与误剪副作用算子控制边",
     "created_at": "2026-10-23",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-24",
     "author": "zhangguangshuo",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5569",
     "labels": [
@@ -135,13 +316,13 @@
   },
   {
     "iid": 5568,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-10-23",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-24",
     "author": "Andyyliu",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5568",
     "labels": [
@@ -194,13 +375,13 @@
   },
   {
     "iid": 5565,
-    "state": "opened",
+    "state": "closed",
     "draft": true,
     "title": "[WIP][Shape] Infer E8M0 ScaleNZ from canonical KN axes",
     "created_at": "2026-10-23",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-24",
     "author": "guiruoyu",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5565",
     "labels": [
@@ -211,13 +392,13 @@
   },
   {
     "iid": 5564,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】: 简要描述",
     "created_at": "2026-10-23",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-24",
     "author": "Andyyliu",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5564",
     "labels": [
@@ -425,13 +606,13 @@
   },
   {
     "iid": 5553,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "docs(atc): build_config 补充 Ascend950PR 不支持的实测说明",
     "created_at": "2026-10-23",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-24",
     "author": "wsnidie1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5553",
     "labels": [
@@ -578,13 +759,13 @@
   },
   {
     "iid": 5545,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "docs: 补充 SuperKernel C API 参考文档",
     "created_at": "2026-10-22",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-24",
     "author": "yrz1027",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5545",
     "labels": [
@@ -1192,13 +1373,13 @@
   },
   {
     "iid": 5512,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix(es): transformer 两份 cpp run_sample.sh 的头注释写了不存在的 --target-t，目标值也抄错",
     "created_at": "2026-10-21",
-    "updated_at": "2026-10-22",
+    "updated_at": "2026-10-24",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-24",
     "author": "wsnidie1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5512",
     "labels": [
@@ -2091,7 +2272,7 @@
     "draft": false,
     "title": "【PR】: softmax融合",
     "created_at": "2026-10-20",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "luo-lipeng",
@@ -2213,20 +2394,22 @@
   },
   {
     "iid": 5462,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【PR】: OM2模型介绍+IR构图buildconfig增加",
     "created_at": "2026-10-20",
-    "updated_at": "2026-10-23",
-    "merged_at": "",
+    "updated_at": "2026-10-24",
+    "merged_at": "2026-10-24",
     "closed_at": "",
     "author": "zhufanfan_hw",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5462",
     "labels": [
-      "cann-cla/yes",
-      "ci-pipeline-passed",
+      "approved",
+      "lgtm",
       "enhancement",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 4,
     "e2e_issues": []
@@ -2641,12 +2824,13 @@
     "draft": false,
     "title": "feat: 新增 args 表 L2 常驻的编译期插入 pass 与加载期 Const 补写",
     "created_at": "2026-10-19",
-    "updated_at": "2026-10-19",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "chenqian1365",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5441",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes"
     ],
     "working_days_open": 5,
@@ -3939,15 +4123,15 @@
     "draft": false,
     "title": "【PR】:hccl task适配",
     "created_at": "2026-10-13",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "lidaoming1",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5376",
     "labels": [
       "stat/needs-squash",
-      "enhancement",
       "cann-cla/yes",
+      "enhancement",
       "ci-pipeline-passed"
     ],
     "working_days_open": 9,
@@ -4193,13 +4377,13 @@
   },
   {
     "iid": 5363,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix: UnloadModel使用model自身的device_id替代GetContext().DeviceId()",
     "created_at": "2026-10-12",
-    "updated_at": "2026-10-12",
+    "updated_at": "2026-10-24",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-24",
     "author": "wuzheng-hw",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5363",
     "labels": [
@@ -4211,17 +4395,19 @@
   },
   {
     "iid": 5362,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "feat: new pass for conv and concat set no task",
     "created_at": "2026-10-12",
-    "updated_at": "2026-10-23",
-    "merged_at": "",
+    "updated_at": "2026-10-24",
+    "merged_at": "2026-10-24",
     "closed_at": "",
     "author": "lushiming0",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5362",
     "labels": [
+      "approved",
       "enhancement",
+      "lgtm",
       "ci-pipeline-passed",
       "cann-cla/yes"
     ],
@@ -4234,14 +4420,14 @@
     "draft": false,
     "title": "feat: migrate RT2 custom AICPU launch to ACL APIs",
     "created_at": "2026-10-12",
-    "updated_at": "2026-10-21",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "pan-tong",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5361",
     "labels": [
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "cann-cla/yes"
     ],
     "working_days_open": 10,
     "e2e_issues": []
@@ -18396,12 +18582,13 @@
     "draft": false,
     "title": "feat:GE多流组件化抽取",
     "created_at": "2026-09-01",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "KenChow",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/4668",
     "labels": [
+      "ci-pipeline-failed",
       "cann-cla/yes",
       "stat/needs-squash"
     ],
@@ -20401,7 +20588,7 @@
     "draft": false,
     "title": "[binary]feat: 新增算子符号化Shape推导与SymbolicValue计算",
     "created_at": "2026-08-26",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "2026-09-02",
     "closed_at": "",
     "author": "chengyutao3",

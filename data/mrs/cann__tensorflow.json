@@ -1,5 +1,22 @@
 [
   {
+    "iid": 148,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: acl-compat 下载路径从已失效的 mirrors.huaweicloud inner 路径迁移到 cann-3rd.obs",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "songchangxia",
+    "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/148",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 147,
     "state": "opened",
     "draft": false,
@@ -38,19 +55,20 @@
   },
   {
     "iid": 145,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "revert: 回退 PR90 的显式设备放置行为变更",
     "created_at": "2026-10-23",
-    "updated_at": "2026-10-23",
-    "merged_at": "",
+    "updated_at": "2026-10-24",
+    "merged_at": "2026-10-24",
     "closed_at": "",
     "author": "m0_50621083",
     "web_url": "https://gitcode.com/cann/tensorflow/merge_requests/145",
     "labels": [
       "cann-cla/yes",
       "ci-pipeline-passed",
-      "approved"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": [
@@ -1532,7 +1550,7 @@
     "draft": false,
     "title": "fix: preserve first appearance order in parallel tf.unique",
     "created_at": "2026-09-30",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",

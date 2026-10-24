@@ -1,5 +1,79 @@
 [
   {
+    "iid": "176",
+    "state": "opened",
+    "created_at": "2026-10-24",
+    "closed_at": "",
+    "author": "zhaowei1936",
+    "author_id": "6822c76de4b985165b4b05c6",
+    "title": "[RFC] torchtitan-npu 支持 Qwen3.6/Qwen3.5-ViT 模型预训练",
+    "labels": [
+      "RFC"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/176",
+    "working_days_open": 0
+  },
+  {
+    "iid": "175",
+    "state": "opened",
+    "created_at": "2026-10-24",
+    "closed_at": "",
+    "author": "lrwei0709",
+    "author_id": "6822c2f22f11da2d75c9552b",
+    "title": "[RFC] DeepSeek-V4/V4.1长序列切分支持及后续上游回合计划",
+    "labels": [
+      "RFC"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "lrwei0709"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/175",
+    "working_days_open": 0
+  },
+  {
+    "iid": "174",
+    "state": "closed",
+    "created_at": "2026-10-24",
+    "closed_at": "2026-10-24",
+    "author": "xuyujun",
+    "author_id": "68a80e4b0f9a7255ef78a02b",
+    "title": "[RFC] Compressor融合算子支持CP",
+    "labels": [
+      "RFC"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "xuyujun"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/174",
+    "working_days_open": 0
+  },
+  {
+    "iid": "173",
+    "state": "opened",
+    "created_at": "2026-10-24",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "author_id": "68107c6b43c294728be9a375",
+    "title": "[Bug-Report|缺陷反馈]: numerical_alignment 的 compare_tensors 遇到 NaN/Inf 张量直接抛 ValueError 崩溃，而不是报告 NaN 统计（对齐工具核心场景失效）",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/173",
+    "working_days_open": 0
+  },
+  {
     "iid": "172",
     "state": "opened",
     "created_at": "2026-10-23",
@@ -67,15 +141,17 @@
   },
   {
     "iid": "168",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-14",
-    "closed_at": "",
+    "closed_at": "2026-10-24",
     "author": "Ethan_Zou",
     "author_id": "67fb64ad2cb7f0133f7efecc",
     "title": "[Documentation|文档反馈]: Lint最小安装指南遗漏固定上游源码与Python类型导入前提",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "Ethan_Zou"
     ],
@@ -213,15 +289,15 @@
   },
   {
     "iid": "160",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-14",
-    "closed_at": "",
+    "closed_at": "2026-10-24",
     "author": "Ethan_Zou",
     "author_id": "67fb64ad2cb7f0133f7efecc",
     "title": "[Bug-Report|缺陷反馈]: loss比较CLI接受NaN阈值并禁用close模式的误差判定",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已拒绝",
     "assignees": [
       "Ethan_Zou"
     ],
@@ -781,15 +857,15 @@
   },
   {
     "iid": "127",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-23",
-    "closed_at": "",
+    "closed_at": "2026-10-24",
     "author": "gcw_Z57idahf",
     "author_id": "6a9a202b63ecda5a857cfa43",
     "title": "[Bug-Report|缺陷反馈]: Qwen3.5 长文本 DATA_FILES 列表不会清理空白项",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已拒绝",
     "assignees": [
       "gcw_Z57idahf"
     ],

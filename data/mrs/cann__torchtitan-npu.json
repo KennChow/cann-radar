@@ -1,5 +1,65 @@
 [
   {
+    "iid": 1085,
+    "state": "closed",
+    "draft": false,
+    "title": "[docs] Add RFC for Qwen3.6/Qwen3.5-ViT pretraining support",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "",
+    "closed_at": "2026-10-24",
+    "author": "zhaowei1936",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1085",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "174",
+      "133"
+    ]
+  },
+  {
+    "iid": 1084,
+    "state": "opened",
+    "draft": false,
+    "title": "[feat] Change the single-node equivalent pruning configuration of DeepSeek-V4.1 Flash to 24 experts",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "hitwdy",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1084",
+    "labels": [
+      "ci-pipeline-passed",
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1083,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(numerical_alignment): compare_tensors 遇 NaN/Inf 改为输出统计并判 FAIL，不再 raise 崩溃",
+    "created_at": "2026-10-24",
+    "updated_at": "2026-10-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wsnidie1",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1083",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "173"
+    ]
+  },
+  {
     "iid": 1082,
     "state": "opened",
     "draft": true,
@@ -107,17 +167,20 @@
   },
   {
     "iid": 1076,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
-    "title": "perf: 统一 DSV4.1 ViT 的四维 SDPA 输入",
+    "title": "[perf] Unify 4D SDPA inputs of DSV4.1 ViT for auto-routing to FA",
     "created_at": "2026-10-22",
-    "updated_at": "2026-10-23",
-    "merged_at": "",
+    "updated_at": "2026-10-24",
+    "merged_at": "2026-10-24",
     "closed_at": "",
     "author": "hitwdy",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1076",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved",
+      "lgtm",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -181,19 +244,21 @@
   },
   {
     "iid": 1072,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
-    "title": "[refactor](dsv4): require whole-block context-parallel shards and documents",
+    "title": "[refactor](dsv4): V4/V4.1 context parallel frames, fused-path cleanup and CP accuracy evidence",
     "created_at": "2026-10-22",
-    "updated_at": "2026-10-23",
-    "merged_at": "",
+    "updated_at": "2026-10-24",
+    "merged_at": "2026-10-24",
     "closed_at": "",
     "author": "lrwei0709",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1072",
     "labels": [
-      "ci-pipeline-passed",
+      "approved",
+      "lgtm",
       "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -380,15 +445,16 @@
   {
     "iid": 1062,
     "state": "opened",
-    "draft": true,
-    "title": "[WIP] [feat] cpuoffload model param use foreach to reduce hostbound",
+    "draft": false,
+    "title": "[feat] cpuoffload model param use foreach to reduce hostbound",
     "created_at": "2026-10-20",
-    "updated_at": "2026-10-22",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "YueGuoDora",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1062",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes"
     ],
     "working_days_open": 4,
@@ -617,7 +683,7 @@
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1050",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-running"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -808,7 +874,7 @@
     "draft": false,
     "title": "feat: support loading AO-protocol MX safetensors checkpoints in DCP",
     "created_at": "2026-10-16",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "zhengliyang",
@@ -816,6 +882,7 @@
     "labels": [
       "approved",
       "cann-cla/yes",
+      "lgtm",
       "stat/needs-squash"
     ],
     "working_days_open": 6,
@@ -827,14 +894,14 @@
     "draft": false,
     "title": "feat: compile DeepSeek-V4.1 vision blocks under model component",
     "created_at": "2026-10-15",
-    "updated_at": "2026-10-20",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "hitwdy",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1039",
     "labels": [
-      "cann-cla/yes",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "cann-cla/yes"
     ],
     "working_days_open": 7,
     "e2e_issues": []
@@ -1007,13 +1074,13 @@
   },
   {
     "iid": 1030,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "feat: add fused attention for DeepSeek-V4.1 vit",
     "created_at": "2026-10-14",
-    "updated_at": "2026-10-22",
+    "updated_at": "2026-10-24",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-24",
     "author": "hitwdy",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1030",
     "labels": [
@@ -1110,7 +1177,7 @@
     "draft": false,
     "title": "fix(examples): preserve path arguments with Bash arrays",
     "created_at": "2026-10-14",
-    "updated_at": "2026-10-21",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "Ethan_Zou",
@@ -1152,7 +1219,7 @@
     "draft": false,
     "title": "fix(launcher): quote the literal log filename passed to tee",
     "created_at": "2026-10-14",
-    "updated_at": "2026-10-21",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "Ethan_Zou",
@@ -1290,7 +1357,7 @@
     "draft": false,
     "title": "fix(tooling): parse separate per-step elapsed metric lines",
     "created_at": "2026-10-14",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "Ethan_Zou",
@@ -2935,7 +3002,9 @@
       "ci-pipeline-passed"
     ],
     "working_days_open": 17,
-    "e2e_issues": []
+    "e2e_issues": [
+      "174"
+    ]
   },
   {
     "iid": 934,
@@ -3423,7 +3492,9 @@
       "lgtm"
     ],
     "working_days_open": 18,
-    "e2e_issues": []
+    "e2e_issues": [
+      "174"
+    ]
   },
   {
     "iid": 910,
@@ -5563,17 +5634,17 @@
   {
     "iid": 803,
     "state": "opened",
-    "draft": true,
-    "title": "[WIP] feat: add memory snapshot analysis skill",
+    "draft": false,
+    "title": "[feat] add memory snapshot analysis skill",
     "created_at": "2026-09-14",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-24",
     "merged_at": "",
     "closed_at": "",
     "author": "hitwdy",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/803",
     "labels": [
-      "cann-cla/yes",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "cann-cla/yes"
     ],
     "working_days_open": 26,
     "e2e_issues": []
@@ -7682,7 +7753,7 @@
     "draft": false,
     "title": "[feat] Qwen3.5-VL NPU Context Parallel 适配迁移至 master",
     "created_at": "2026-09-03",
-    "updated_at": "2026-09-19",
+    "updated_at": "2026-10-24",
     "merged_at": "2026-09-19",
     "closed_at": "",
     "author": "zhaowei1936",
@@ -7695,7 +7766,9 @@
       "stat/needs-squash"
     ],
     "working_days_open": 33,
-    "e2e_issues": []
+    "e2e_issues": [
+      "176"
+    ]
   },
   {
     "iid": 693,
