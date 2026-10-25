@@ -1,5 +1,24 @@
 [
   {
+    "iid": 1086,
+    "state": "opened",
+    "draft": true,
+    "title": "[WIP][refactor] 升级适配 TorchTitan ConfigLoader 与 TrainingEngine",
+    "created_at": "2026-10-25",
+    "updated_at": "2026-10-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhangyifan999",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1086",
+    "labels": [
+      "stat/needs-squash",
+      "ci-pipeline-failed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1085,
     "state": "closed",
     "draft": false,
@@ -44,15 +63,14 @@
     "draft": false,
     "title": "fix(numerical_alignment): compare_tensors 遇 NaN/Inf 改为输出统计并判 FAIL，不再 raise 崩溃",
     "created_at": "2026-10-24",
-    "updated_at": "2026-10-24",
+    "updated_at": "2026-10-26",
     "merged_at": "",
     "closed_at": "",
     "author": "wsnidie1",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1083",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-failed",
-      "stat/needs-squash"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -580,7 +598,7 @@
     "draft": false,
     "title": "feat(gemma3): add Gemma3 SFT support and FSDP2 tests",
     "created_at": "2026-10-19",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-25",
     "merged_at": "",
     "closed_at": "",
     "author": "woai531iiii",

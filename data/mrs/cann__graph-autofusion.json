@@ -1,5 +1,63 @@
 [
   {
+    "iid": 2658,
+    "state": "opened",
+    "draft": true,
+    "title": "【WIP】【PR】: A5 argmax ASCIR适配（RC模板Phase2向量化版本）",
+    "created_at": "2026-10-26",
+    "updated_at": "2026-10-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "tourse",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2658",
+    "labels": [
+      "enhancement",
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2657,
+    "state": "opened",
+    "draft": false,
+    "title": "perf: SIMT融合寄存器压力模型位宽感知——全成员uint32走32位细化常数+codegen位宽漂移防护",
+    "created_at": "2026-10-25",
+    "updated_at": "2026-10-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wangyichao0421",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2657",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2656,
+    "state": "opened",
+    "draft": false,
+    "title": "test: 精简 Autofuse UT 并恢复 CPU 默认编译并行度",
+    "created_at": "2026-10-25",
+    "updated_at": "2026-10-26",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "ling-DT",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2656",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 2655,
     "state": "opened",
     "draft": false,
@@ -280,13 +338,13 @@
   },
   {
     "iid": 2640,
-    "state": "opened",
+    "state": "closed",
     "draft": true,
     "title": "【WIP】【PR】: A5 argmax ASCIR适配",
     "created_at": "2026-10-23",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-25",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-25",
     "author": "tourse",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2640",
     "labels": [

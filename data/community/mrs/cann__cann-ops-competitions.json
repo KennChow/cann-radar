@@ -1,19 +1,42 @@
 [
   {
+    "iid": 2355,
+    "state": "opened",
+    "draft": false,
+    "title": "【社区任务】Wan2.2-I2V TaylorSeer、Offload 与 Prefetch 设计文档",
+    "created_at": "2026-10-25",
+    "updated_at": "2026-10-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gca_u2401_85399545",
+    "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/2355",
+    "labels": [
+      "ci-pipeline-passed",
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "496"
+    ]
+  },
+  {
     "iid": 2354,
     "state": "opened",
     "draft": false,
     "title": "【社区任务】ops-nn算子ONNX适配设计文档",
     "created_at": "2026-10-24",
-    "updated_at": "2026-10-24",
+    "updated_at": "2026-10-25",
     "merged_at": "",
     "closed_at": "",
     "author": "aiaijiaolvle",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/2354",
     "labels": [
-      "ai-co-authored",
+      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ai-docs-only",
+      "ci-pipeline-passed",
+      "ai-co-authored"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -26,7 +49,7 @@
     "draft": false,
     "title": "【设计文档】CANN训练营山东大学-aclblasCgeru算子开发(A2A3)（fpwdh）",
     "created_at": "2026-10-24",
-    "updated_at": "2026-10-24",
+    "updated_at": "2026-10-25",
     "merged_at": "",
     "closed_at": "",
     "author": "fpwdh",
@@ -63,7 +86,7 @@
     "draft": false,
     "title": "【9月社区任务】aclblasCtrsmBatched（A2A3）算子设计文档",
     "created_at": "2026-10-24",
-    "updated_at": "2026-10-24",
+    "updated_at": "2026-10-25",
     "merged_at": "",
     "closed_at": "",
     "author": "zhanghua145",
@@ -717,15 +740,17 @@
     "draft": false,
     "title": "【社区任务】ops-math算子ONNX适配设计文档",
     "created_at": "2026-10-21",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-25",
     "merged_at": "",
     "closed_at": "",
     "author": "wsnidie1",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/2318",
     "labels": [
       "ai-co-authored",
+      "ci-pipeline-passed",
+      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ai-docs-only"
     ],
     "working_days_open": 3,
     "e2e_issues": [
@@ -902,13 +927,13 @@
   },
   {
     "iid": 2309,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【社区任务】添加单精度复数QR分解与最小二乘 算子设计文档 (950)",
     "created_at": "2026-10-20",
-    "updated_at": "2026-10-20",
+    "updated_at": "2026-10-25",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-25",
     "author": "zhanghua145",
     "web_url": "https://gitcode.com/cann/cann-ops-competitions/merge_requests/2309",
     "labels": [
