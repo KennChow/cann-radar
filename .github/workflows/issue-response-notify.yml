@@ -57,7 +57,9 @@ jobs:
         run: python -m pytest -q
 
   notify:
-    if: github.event_name != 'pull_request'
+    # 2026-10-30: 暂停 Issue 响应超时通知，定时和手动触发均不发信。
+    # 恢复时移除 false &&，并在 GitHub Actions 中重新启用此工作流。
+    if: false && github.event_name != 'pull_request'
     needs: test
     runs-on: ubuntu-latest
     steps:

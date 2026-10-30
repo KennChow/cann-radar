@@ -2,6 +2,8 @@
 
 对指定 GitCode 仓库的 Star / Fork / Issue / MR 数据进行采集与可视化分析，跟踪社区用户构成、参与深度和运营目标达成情况。同时自动扫描超期未关闭的 MR 和 Issue，通过邮件提醒相关开发者及时处理。
 
+> **通知暂停（2026-10-30）**：线上超期 MR/Issue 提醒、管理员汇总和 Issue 响应超时提醒均已暂停，定时与手动触发都不发信。数据采集和采集异常告警继续运行。下文通知规则保留供恢复时参考；恢复需要移除两个通知工作流中的 `false &&` 暂停条件，并重新启用 GitHub Actions 的 `Issue Response SLA Notify` 工作流。
+
 在线查看：https://kennchow.github.io/cann-stars/
 
 ## 功能概览
