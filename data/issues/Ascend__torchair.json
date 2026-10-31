@@ -1,5 +1,85 @@
 [
   {
+    "iid": "927",
+    "state": "opened",
+    "created_at": "2026-10-31",
+    "closed_at": "",
+    "author": "ling-DT",
+    "author_id": "6822c1d1096b0e7b44aa5974",
+    "title": "[Bug]: AscendC 推理编译需要保留原生 aten.matmul 调用",
+    "labels": [
+      "bug"
+    ],
+    "issue_type": "Bug-Report",
+    "issue_state": "TODO",
+    "assignees": [
+      "ling-DT"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/927",
+    "working_days_open": 0
+  },
+  {
+    "iid": "926",
+    "state": "closed",
+    "created_at": "2026-10-31",
+    "closed_at": "2026-10-31",
+    "author": "LyriCheng",
+    "author_id": "67fe31bf88e7c46e3ad86734",
+    "title": "[Bug]: 低版本 torch_npu 上捕获 torch.cond 报错指向 torch 符号缺失，掩盖真实的版本门槛",
+    "labels": [
+      "bug",
+      "resolved"
+    ],
+    "issue_type": "Bug-Report",
+    "issue_state": "DONE",
+    "assignees": [
+      "LyriCheng"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/926",
+    "working_days_open": 0
+  },
+  {
+    "iid": "925",
+    "state": "opened",
+    "created_at": "2026-10-31",
+    "closed_at": "",
+    "author": "chenweiheng",
+    "author_id": "69002a852ca35d2a0db4ec72",
+    "title": "[Bug]: inductor+af路径融合kernel名优化",
+    "labels": [
+      "bug",
+      "bug"
+    ],
+    "issue_type": "Bug-Report",
+    "issue_state": "TODO",
+    "assignees": [
+      "chenweiheng"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/925",
+    "working_days_open": 0
+  },
+  {
+    "iid": "924",
+    "state": "opened",
+    "created_at": "2026-10-31",
+    "closed_at": "",
+    "author": "xingtaowu",
+    "author_id": "683967dc81eef356e142a072",
+    "title": "[Bug]: 图模式torch_npu.npu_scatter_nd_update_ 重复申请了一块kvcache大小的内存",
+    "labels": [
+      "bug"
+    ],
+    "issue_type": "Bug-Report",
+    "issue_state": "TODO",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/924",
+    "working_days_open": 0
+  },
+  {
     "iid": "923",
     "state": "opened",
     "created_at": "2026-10-30",
@@ -41,18 +121,19 @@
   },
   {
     "iid": "921",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-30",
-    "closed_at": "",
+    "closed_at": "2026-10-31",
     "author": "mulong933",
     "author_id": "6a9e5f83fd3adf5ad63cdf76",
     "title": "[Bug]:Inductor AscendC 归约后广播计算轴映射错误，导致 AutoFuse 编译失败",
     "labels": [
       "bug",
-      "bug"
+      "bug",
+      "resolved"
     ],
     "issue_type": "Bug-Report",
-    "issue_state": "TODO",
+    "issue_state": "DONE",
     "assignees": [
       "mulong933"
     ],

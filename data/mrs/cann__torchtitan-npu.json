@@ -1,5 +1,208 @@
 [
   {
+    "iid": 1152,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: adapt dev_0.4.0 PEFT, SDC replay and native checkpointing",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "jiangna1111",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1152",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1151,
+    "state": "merged",
+    "draft": false,
+    "title": "[fix] register the clip norm group before the empty-shard early exit",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "2026-10-31",
+    "closed_at": "",
+    "author": "YueGuoDora",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1151",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1150,
+    "state": "opened",
+    "draft": false,
+    "title": "refactor(dsv3.2): remove the varlen-CP capability, keep the model",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "mystri",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1150",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1149,
+    "state": "closed",
+    "draft": false,
+    "title": "[test](dsv4): refresh golden loss references for the Grain/folded baseline",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "2026-10-31",
+    "author": "mystri",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1149",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1148,
+    "state": "opened",
+    "draft": false,
+    "title": "[feat](torchao-npu): 让 DeepSeek-V4 低精度通路支持 CP",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lrwei0709",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1148",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1147,
+    "state": "opened",
+    "draft": false,
+    "title": "refactor: migrate vision data pipelines to native Grain configs",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "mystri",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1147",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1146,
+    "state": "opened",
+    "draft": false,
+    "title": "refactor: remove DeepSeek-V3.2 model support",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "mystri",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1146",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1145,
+    "state": "merged",
+    "draft": false,
+    "title": "fix: declare Grain runtime dependency",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "2026-10-31",
+    "closed_at": "",
+    "author": "hitwdy",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1145",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1144,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(graph-trainer): preserve chunk loss order in full Inductor",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhangjianshe",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1144",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1143,
+    "state": "opened",
+    "draft": false,
+    "title": "refactor: reuse upstream interfaces for DeepSeek-V4.1",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "hitwdy",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1143",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1142,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: alltoall MXFP8 低精通信",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wanghui0",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1142",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1141,
     "state": "opened",
     "draft": false,
@@ -127,7 +330,7 @@
     "draft": true,
     "title": "[WIP][feat] Update the default configurations in deepseek-v4 single node training example scripts",
     "created_at": "2026-10-30",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "caoshuyang",
@@ -183,33 +386,35 @@
     "draft": false,
     "title": "[feat] Add support for pre-quantized input of MXTrainingWeightWrapperTensor's mm/bmm/gmm",
     "created_at": "2026-10-30",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "caoshuyang",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1132",
     "labels": [
-      "cann-cla/yes",
-      "ci-pipeline-passed",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "cann-cla/yes"
     ],
     "working_days_open": 1,
     "e2e_issues": []
   },
   {
     "iid": 1131,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[feat]allow MXTensor activations in BlockMXTrainingWeightWrapperTensor",
     "created_at": "2026-10-30",
-    "updated_at": "2026-10-30",
-    "merged_at": "",
+    "updated_at": "2026-10-31",
+    "merged_at": "2026-10-31",
     "closed_at": "",
     "author": "caoshuyang",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1131",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm",
+      "stat/needs-squash"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -332,19 +537,21 @@
   },
   {
     "iid": 1124,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[fix](dsv4.1): fix the bug in saving the weights of the deepseek-v4.1-flash text model",
     "created_at": "2026-10-29",
-    "updated_at": "2026-10-30",
-    "merged_at": "",
+    "updated_at": "2026-10-31",
+    "merged_at": "2026-10-31",
     "closed_at": "",
     "author": "ningzhixiong",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1124",
     "labels": [
       "stat/needs-squash",
+      "ci-pipeline-passed",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": [
@@ -373,19 +580,21 @@
   },
   {
     "iid": 1122,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix(dsv4): support old and new CANN compressor forward",
     "created_at": "2026-10-29",
-    "updated_at": "2026-10-30",
-    "merged_at": "",
+    "updated_at": "2026-10-31",
+    "merged_at": "2026-10-31",
     "closed_at": "",
     "author": "zhangjianshe",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1122",
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -650,7 +859,7 @@
     "draft": false,
     "title": "feat(fsdp): allocate AG/RS buffers on compute stream",
     "created_at": "2026-10-28",
-    "updated_at": "2026-10-29",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "xuyujun",
@@ -812,13 +1021,13 @@
     "draft": false,
     "title": "[feat](extensions): auto CPU-affinity extension with rank isolation and native-binding rescue",
     "created_at": "2026-10-27",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "2401_86789832",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1100",
     "labels": [
-      "ci-pipeline-passed",
+      "stat/needs-squash",
       "cann-cla/yes"
     ],
     "working_days_open": 4,
@@ -875,15 +1084,15 @@
     "draft": true,
     "title": "[WIP]feat: migrate torchtitan-npu onto the folded-batch-dim TorchTitan baseline (stepwise)",
     "created_at": "2026-10-27",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "mystri",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1097",
     "labels": [
       "stat/needs-squash",
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 4,
     "e2e_issues": []
@@ -912,10 +1121,10 @@
   {
     "iid": 1095,
     "state": "opened",
-    "draft": false,
-    "title": "[refactor]:set asc_deepep as the default MoE token dispatcher config",
+    "draft": true,
+    "title": "[WIP][refactor]:set asc_deepep as the default MoE token dispatcher config",
     "created_at": "2026-10-27",
-    "updated_at": "2026-10-27",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "MissingPompeii",
@@ -1011,14 +1220,14 @@
     "draft": true,
     "title": "[WIP]suspend抢占",
     "created_at": "2026-10-26",
-    "updated_at": "2026-10-29",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "zhangguoguang",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1090",
     "labels": [
-      "cann-cla/yes",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "cann-cla/yes"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -1088,14 +1297,15 @@
     "draft": true,
     "title": "[WIP][fix] 迁移 TorchFT 适配至 dev_0.4.0",
     "created_at": "2026-10-25",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "zhangyifan999",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1086",
     "labels": [
-      "ci-pipeline-failed",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -4324,7 +4534,7 @@
     "draft": false,
     "title": "[feat] Support Deepseek v4 HiFloat8 current-tensor scaling training through TorchAO",
     "created_at": "2026-09-23",
-    "updated_at": "2026-09-29",
+    "updated_at": "2026-10-31",
     "merged_at": "2026-09-29",
     "closed_at": "",
     "author": "nancycyzl",
@@ -4337,7 +4547,9 @@
       "ci-pipeline-passed"
     ],
     "working_days_open": 23,
-    "e2e_issues": []
+    "e2e_issues": [
+      "117"
+    ]
   },
   {
     "iid": 924,
@@ -5662,19 +5874,21 @@
   },
   {
     "iid": 858,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix(tooling): report zero-baseline relative divergence",
     "created_at": "2026-09-19",
-    "updated_at": "2026-10-12",
-    "merged_at": "",
+    "updated_at": "2026-10-31",
+    "merged_at": "2026-10-31",
     "closed_at": "",
     "author": "gcw_Z57idahf",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/858",
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 26,
     "e2e_issues": [
@@ -6766,7 +6980,7 @@
     "draft": false,
     "title": "[feat] add memory snapshot analysis skill",
     "created_at": "2026-09-14",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "hitwdy",
@@ -7499,9 +7713,7 @@
       "ci-pipeline-failed"
     ],
     "working_days_open": 34,
-    "e2e_issues": [
-      "117"
-    ]
+    "e2e_issues": []
   },
   {
     "iid": 764,
@@ -8862,7 +9074,7 @@
     "draft": false,
     "title": "feat: adapt GraphTrainer EP overlap for DeepSeek-V4",
     "created_at": "2026-09-03",
-    "updated_at": "2026-09-17",
+    "updated_at": "2026-10-31",
     "merged_at": "2026-09-17",
     "closed_at": "",
     "author": "wanlinan",
@@ -8874,7 +9086,9 @@
       "lgtm"
     ],
     "working_days_open": 38,
-    "e2e_issues": []
+    "e2e_issues": [
+      "113"
+    ]
   },
   {
     "iid": 694,
@@ -11663,7 +11877,7 @@
     "draft": false,
     "title": "[feat] Support HiFloat8 current-tensor scaling training with torchao",
     "created_at": "2026-08-12",
-    "updated_at": "2026-08-20",
+    "updated_at": "2026-10-31",
     "merged_at": "2026-08-20",
     "closed_at": "",
     "author": "nancycyzl",
@@ -11677,7 +11891,7 @@
     ],
     "working_days_open": 54,
     "e2e_issues": [
-      "92"
+      "94"
     ]
   },
   {

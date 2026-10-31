@@ -1,11 +1,49 @@
 [
   {
+    "iid": 1483,
+    "state": "opened",
+    "draft": false,
+    "title": "[refactor]: remove unused LLM status codes (#974)",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "M__Cheng",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1483",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "974"
+    ]
+  },
+  {
+    "iid": 1482,
+    "state": "opened",
+    "draft": false,
+    "title": "[test]: 增加 HIXL 建链分阶段耗时统计并验证关闭全量内存交换",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "M__Cheng",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1482",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1481,
     "state": "opened",
     "draft": false,
     "title": "[bugfix]: validate D2RD sample address exchange port",
     "created_at": "2026-10-30",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "gxhgxh2475698",
@@ -25,7 +63,7 @@
     "draft": false,
     "title": "[bugfix]: support IPv6 address exchange in D2RD sample",
     "created_at": "2026-10-30",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "gxhgxh2475698",
@@ -65,7 +103,7 @@
     "draft": false,
     "title": "[bugfix]: build missing selected benchmark binaries",
     "created_at": "2026-10-30",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "gxhgxh2475698",
@@ -122,13 +160,13 @@
   },
   {
     "iid": 1475,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[bugfix] 校验 tensor_num_per_layer 上限 (#797)",
     "created_at": "2026-10-30",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-10-31",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-31",
     "author": "M__Cheng",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1475",
     "labels": [
@@ -143,13 +181,13 @@
   },
   {
     "iid": 1474,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[refactor]: remove unused LLM status codes (#974)",
     "created_at": "2026-10-30",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-10-31",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-31",
     "author": "M__Cheng",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1474",
     "labels": [
@@ -163,17 +201,19 @@
   },
   {
     "iid": 1473,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[bugfix]: A5 配置 protocol_desc 为 ubmem 时仍生成 endpoint",
     "created_at": "2026-10-29",
-    "updated_at": "2026-10-30",
-    "merged_at": "",
+    "updated_at": "2026-10-31",
+    "merged_at": "2026-10-31",
     "closed_at": "",
     "author": "youyx",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1473",
     "labels": [
       "cann-cla/yes",
+      "approved",
+      "lgtm",
       "ci-pipeline-passed"
     ],
     "working_days_open": 2,
@@ -220,20 +260,21 @@
     "iid": 1470,
     "state": "opened",
     "draft": false,
-    "title": "[feat]: 支持UB CTP链路优先级配置并默认优先PEER2NET(#993)",
+    "title": "[feat]: 支持UB CTP链路优先级配置并默认优先PEER2NET",
     "created_at": "2026-10-29",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "jiazhaoyang",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1470",
     "labels": [
       "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 2,
     "e2e_issues": [
-      "993"
+      "997"
     ]
   },
   {
@@ -256,13 +297,13 @@
   },
   {
     "iid": 1468,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "docs: 更新 Python 示例与 E2E 依赖安装说明",
     "created_at": "2026-10-29",
-    "updated_at": "2026-10-29",
+    "updated_at": "2026-10-31",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-31",
     "author": "M__Cheng",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1468",
     "labels": [
@@ -364,7 +405,7 @@
     "draft": false,
     "title": "[feat]: 支持 hixl Python 包多版本在线编译",
     "created_at": "2026-10-27",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "tangjie66",
@@ -1178,9 +1219,9 @@
     "iid": 1423,
     "state": "opened",
     "draft": false,
-    "title": "cherry-pick-mr-1391-1792477923006-auto",
+    "title": "bugfix: UB endpoint 按 dst_eid 和 plane 稳定排序",
     "created_at": "2026-10-20",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "jiazhaoyang",
@@ -1188,7 +1229,8 @@
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm"
     ],
     "working_days_open": 9,
     "e2e_issues": []
@@ -1234,19 +1276,20 @@
   },
   {
     "iid": 1420,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "docs: 修正 llm-datadist_develop.md API 名称、变量名及地址示例",
     "created_at": "2026-10-19",
-    "updated_at": "2026-10-23",
-    "merged_at": "",
+    "updated_at": "2026-10-31",
+    "merged_at": "2026-10-31",
     "closed_at": "",
     "author": "dihidao",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1420",
     "labels": [
-      "ci-pipeline-passed",
       "lgtm",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 10,
     "e2e_issues": [
@@ -2935,13 +2978,13 @@
   },
   {
     "iid": 1337,
-    "state": "opened",
+    "state": "closed",
     "draft": true,
     "title": "[WIP][feat]: add TLS support for control plane channels",
     "created_at": "2026-09-29",
-    "updated_at": "2026-10-15",
+    "updated_at": "2026-10-31",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-31",
     "author": "M__Cheng",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1337",
     "labels": [
@@ -3400,7 +3443,8 @@
     "labels": [
       "ci-pipeline-passed",
       "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "lgtm"
     ],
     "working_days_open": 21,
     "e2e_issues": [
@@ -4058,15 +4102,15 @@
     "draft": false,
     "title": "[bugfix]: 回滚 HIXL 控制面握手失败后的 transfer engine 连接",
     "created_at": "2026-09-24",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1282",
     "labels": [
       "stat/needs-squash",
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "cann-cla/yes"
     ],
     "working_days_open": 22,
     "e2e_issues": [
@@ -4536,7 +4580,7 @@
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-running"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 23,
     "e2e_issues": [
@@ -5247,15 +5291,15 @@
     "draft": false,
     "title": "[bugfix] 校验 tensor_num_per_layer 不超过缓存 tensor 数量",
     "created_at": "2026-09-22",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1224",
     "labels": [
       "stat/needs-squash",
-      "ci-pipeline-passed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 24,
     "e2e_issues": [
@@ -6524,7 +6568,8 @@
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-running"
+      "lgtm",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 26,
     "e2e_issues": [
@@ -8046,13 +8091,12 @@
     "draft": true,
     "title": "[WIP]: 1815E memory-disk UBG pierce via ENABLE_INNER_CTRL=0 (hcomm-carried control plane)",
     "created_at": "2026-09-14",
-    "updated_at": "2026-10-14",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "tangjie66",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1090",
     "labels": [
-      "ci-pipeline-passed",
       "cann-cla/yes",
       "stat/needs-squash"
     ],

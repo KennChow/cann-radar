@@ -1,5 +1,95 @@
 [
   {
+    "iid": "232",
+    "state": "opened",
+    "created_at": "2026-10-31",
+    "closed_at": "",
+    "author": "gxhgxh2475698",
+    "author_id": "671a465c4af15e11abd4ff3b",
+    "title": "[Bug-Report|缺陷反馈]: 环境检查未提示构建必需的 ASCEND_HOME_PATH",
+    "labels": [],
+    "issue_type": "缺陷",
+    "issue_state": "待办的",
+    "assignees": [
+      "SeasonChu"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/metadef/issues/232",
+    "working_days_open": 0
+  },
+  {
+    "iid": "231",
+    "state": "opened",
+    "created_at": "2026-10-31",
+    "closed_at": "",
+    "author": "gxhgxh2475698",
+    "author_id": "671a465c4af15e11abd4ff3b",
+    "title": "[Bug-Report|缺陷反馈]: toolkit 安装清理时误删未使用的 ops 包",
+    "labels": [],
+    "issue_type": "缺陷",
+    "issue_state": "待办的",
+    "assignees": [
+      "SeasonChu"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/metadef/issues/231",
+    "working_days_open": 0
+  },
+  {
+    "iid": "230",
+    "state": "opened",
+    "created_at": "2026-10-31",
+    "closed_at": "",
+    "author": "gxhgxh2475698",
+    "author_id": "671a465c4af15e11abd4ff3b",
+    "title": "[Bug-Report|缺陷反馈]: CANN 下载失败后残缺文件阻止重新下载",
+    "labels": [],
+    "issue_type": "缺陷",
+    "issue_state": "待办的",
+    "assignees": [
+      "SeasonChu"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/metadef/issues/230",
+    "working_days_open": 0
+  },
+  {
+    "iid": "229",
+    "state": "opened",
+    "created_at": "2026-10-31",
+    "closed_at": "",
+    "author": "gxhgxh2475698",
+    "author_id": "671a465c4af15e11abd4ff3b",
+    "title": "[Bug-Report|缺陷反馈]: 环境检查将合格的 GCC 7.x 误判为版本过低",
+    "labels": [],
+    "issue_type": "缺陷",
+    "issue_state": "待办的",
+    "assignees": [
+      "SeasonChu"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/metadef/issues/229",
+    "working_days_open": 0
+  },
+  {
+    "iid": "228",
+    "state": "opened",
+    "created_at": "2026-10-31",
+    "closed_at": "",
+    "author": "gxhgxh2475698",
+    "author_id": "671a465c4af15e11abd4ff3b",
+    "title": "[Bug-Report|缺陷反馈]: 环境检查遗漏 Python3 版本且跳过 pip 检查",
+    "labels": [],
+    "issue_type": "缺陷",
+    "issue_state": "待办的",
+    "assignees": [
+      "SeasonChu"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/metadef/issues/228",
+    "working_days_open": 0
+  },
+  {
     "iid": "227",
     "state": "closed",
     "created_at": "2026-10-21",
@@ -291,7 +381,7 @@
     "assignees": [
       "Chang-an-HW"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/212",
     "working_days_open": 9
   },
@@ -311,7 +401,7 @@
     "assignees": [
       "Chang-an-HW"
     ],
-    "user_notes_count": 3,
+    "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/metadef/issues/211",
     "working_days_open": 9
   },
@@ -1320,15 +1410,18 @@
   },
   {
     "iid": "159",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-12",
-    "closed_at": "",
+    "closed_at": "2026-10-31",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "修复 Execute 与 Prepare 的输出 Tensor 越界访问",
-    "labels": [],
+    "labels": [
+      "resolved",
+      "Accepted"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "luo-lipeng"
     ],
@@ -1375,15 +1468,18 @@
   },
   {
     "iid": "156",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-12",
-    "closed_at": "",
+    "closed_at": "2026-10-31",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "TensorData 移动赋值示例误用已禁用的拷贝构造",
-    "labels": [],
+    "labels": [
+      "resolved",
+      "Accepted"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "luo-lipeng"
     ],
@@ -1655,15 +1751,18 @@
   },
   {
     "iid": "142",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-12",
-    "closed_at": "",
+    "closed_at": "2026-10-31",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "OpAttrDef::AttrType 从 OPTIONAL 改为 REQUIRED 后仍判为可选",
-    "labels": [],
+    "labels": [
+      "resolved",
+      "Accepted"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "luo-lipeng"
     ],
@@ -1923,15 +2022,18 @@
   },
   {
     "iid": "128",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-12",
-    "closed_at": "",
+    "closed_at": "2026-10-31",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "Tensor shape-size 溢出导致内存长度变成 `SIZE_MAX`",
-    "labels": [],
+    "labels": [
+      "resolved",
+      "Accepted"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "luo-lipeng"
     ],
@@ -2048,7 +2150,7 @@
     "assignees": [
       "du-hua1024"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/122",
     "working_days_open": 18
   },
@@ -2225,15 +2327,17 @@
   },
   {
     "iid": "112",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-30",
-    "closed_at": "",
+    "closed_at": "2026-10-31",
     "author": "dududu121",
     "author_id": "6a2558444cfa487e40c205cf",
     "title": "[Bug-Report|缺陷反馈]: tests/run_test.sh 无法将含空格的第三方库路径完整传给 CMake",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "yuht9",
       "dududu121"
@@ -2256,7 +2360,6 @@
     "issue_type": "任务",
     "issue_state": "已完成",
     "assignees": [
-      "guopeian",
       "yuchen97"
     ],
     "user_notes_count": 5,

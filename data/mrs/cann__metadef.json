@@ -1,12 +1,196 @@
 [
   {
-    "iid": 668,
+    "iid": 677,
     "state": "opened",
+    "draft": false,
+    "title": "【fix】:  docs: 修正 gert API 参考文档的返回值说明、错误码与索引约束",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "kantao1",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/677",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes",
+      "enhancement"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "175",
+      "177",
+      "178",
+      "182",
+      "173",
+      "174",
+      "180",
+      "176",
+      "185"
+    ]
+  },
+  {
+    "iid": 676,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: so加载flag由RTLD_NOW改为RTLD_LAZY并打印加载flag",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "tangqunzhang",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/676",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 675,
+    "state": "closed",
+    "draft": false,
+    "title": "fix: so加载flag由RTLD_NOW改为RTLD_LAZY并打印加载flag",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "2026-10-31",
+    "author": "tangqunzhang",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/675",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 674,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 新增符号化推导自定义算子注册接口与发布头",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "xiebangrui2025",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/674",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 673,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: require build environment variable",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gxhgxh2475698",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/673",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "232"
+    ]
+  },
+  {
+    "iid": 672,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: preserve unused ops package",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gxhgxh2475698",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/672",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "230",
+      "231"
+    ]
+  },
+  {
+    "iid": 671,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: retry interrupted CANN downloads",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gxhgxh2475698",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/671",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "230"
+    ]
+  },
+  {
+    "iid": 670,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: check full GCC version",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gxhgxh2475698",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/670",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "229"
+    ]
+  },
+  {
+    "iid": 669,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: check Python in build environment",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gxhgxh2475698",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/669",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "228"
+    ]
+  },
+  {
+    "iid": 668,
+    "state": "merged",
     "draft": false,
     "title": "【PR】: sync develop to master 1030",
     "created_at": "2026-10-30",
-    "updated_at": "2026-10-30",
-    "merged_at": "",
+    "updated_at": "2026-10-31",
+    "merged_at": "2026-10-31",
     "closed_at": "",
     "author": "yangyongqiang0606",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/668",
@@ -14,7 +198,9 @@
       "stat/needs-squash",
       "cann-cla/yes",
       "enhancement",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -3056,13 +3242,13 @@
   },
   {
     "iid": 523,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "Fix TensorData move assignment when releasing the previous resource fails",
     "created_at": "2026-10-09",
-    "updated_at": "2026-10-29",
+    "updated_at": "2026-10-31",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-31",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/523",
     "labels": [
@@ -3313,7 +3499,7 @@
     "draft": false,
     "title": "fix: 修正 AnyValue 内联存储路径右值退化为复制构造的问题(#115)",
     "created_at": "2026-09-30",
-    "updated_at": "2026-09-30",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "chenqian1365",
@@ -3353,7 +3539,7 @@
     "draft": false,
     "title": "docs: 修正 AddOverflow/MulOverflow 参数表中 ret 的方向与有效条件(#114)",
     "created_at": "2026-09-30",
-    "updated_at": "2026-10-22",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "chenqian1365",

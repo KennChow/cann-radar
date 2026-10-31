@@ -10,8 +10,10 @@
     "labels": [],
     "issue_type": "缺陷",
     "issue_state": "待办的",
-    "assignees": [],
-    "user_notes_count": 0,
+    "assignees": [
+      "gxhgxh2475698"
+    ],
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/hixl/issues/1004",
     "working_days_open": 1
   },
@@ -26,8 +28,10 @@
     "labels": [],
     "issue_type": "缺陷",
     "issue_state": "待办的",
-    "assignees": [],
-    "user_notes_count": 0,
+    "assignees": [
+      "gxhgxh2475698"
+    ],
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/hixl/issues/1003",
     "working_days_open": 1
   },
@@ -42,8 +46,10 @@
     "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
-    "assignees": [],
-    "user_notes_count": 0,
+    "assignees": [
+      "qiuqiuyahhhh"
+    ],
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/hixl/issues/1002",
     "working_days_open": 1
   },
@@ -58,8 +64,10 @@
     "labels": [],
     "issue_type": "缺陷",
     "issue_state": "待办的",
-    "assignees": [],
-    "user_notes_count": 0,
+    "assignees": [
+      "gxhgxh2475698"
+    ],
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/hixl/issues/1001",
     "working_days_open": 1
   },
@@ -74,8 +82,10 @@
     "labels": [],
     "issue_type": "缺陷",
     "issue_state": "待办的",
-    "assignees": [],
-    "user_notes_count": 0,
+    "assignees": [
+      "gxhgxh2475698"
+    ],
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/hixl/issues/1000",
     "working_days_open": 1
   },
@@ -90,8 +100,10 @@
     "labels": [],
     "issue_type": "缺陷",
     "issue_state": "待办的",
-    "assignees": [],
-    "user_notes_count": 0,
+    "assignees": [
+      "gxhgxh2475698"
+    ],
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/hixl/issues/999",
     "working_days_open": 1
   },
@@ -106,8 +118,10 @@
     "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
-    "assignees": [],
-    "user_notes_count": 0,
+    "assignees": [
+      "lugang11"
+    ],
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/hixl/issues/998",
     "working_days_open": 1
   },
@@ -163,7 +177,7 @@
     "assignees": [
       "youyx"
     ],
-    "user_notes_count": 3,
+    "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/hixl/issues/995",
     "working_days_open": 2
   },
@@ -210,17 +224,18 @@
   },
   {
     "iid": "992",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-29",
-    "closed_at": "",
+    "closed_at": "2026-10-31",
     "author": "gxhgxh2475698",
     "author_id": "671a465c4af15e11abd4ff3b",
     "title": "[Bug-Report|缺陷反馈]: KV benchmark 非正进程数会清理旧结果",
     "labels": [
-      "bug-report"
+      "bug-report",
+      "resolved"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "gxhgxh2475698",
       "youyx"
@@ -345,9 +360,9 @@
   },
   {
     "iid": "985",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-24",
-    "closed_at": "",
+    "closed_at": "2026-10-31",
     "author": "youyx",
     "author_id": "682450aae4b985165b4bae43",
     "title": "[RFC]: HIXL_CS 按 max_channel 限制本端主动建出的链路",
@@ -355,7 +370,7 @@
       "RFC"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "youyx"
     ],
@@ -400,7 +415,7 @@
     "assignees": [
       "tangjie66"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/hixl/issues/983",
     "working_days_open": 5
   },
@@ -643,7 +658,7 @@
     "closed_at": "",
     "author": "jiazhaoyang",
     "author_id": "67ecaa80101a0b41cc8e5eba",
-    "title": "[RFC]: 【HIXL】Hcomm 建链支持单线程异步状态推进",
+    "title": "[RFC]: 【HIXL】建链支持单线程异步状态推进",
     "labels": [
       "RFC"
     ],
@@ -696,15 +711,17 @@
   },
   {
     "iid": "967",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-19",
-    "closed_at": "",
+    "closed_at": "2026-10-31",
     "author": "dihidao",
     "author_id": "6841a5c82be0321da0afc427",
     "title": "[Documentation|文档反馈]: llm-datadist_develop.md 多处 API 名称与变量名和头文件声明不一致（UnLinkLlmClusters 等）",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "已确认",
+    "issue_state": "已完成",
     "assignees": [
       "youyx"
     ],
@@ -1646,7 +1663,8 @@
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [
-      "tangjie66"
+      "tangjie66",
+      "gcw_Z57idahf"
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/hixl/issues/920",
@@ -1667,7 +1685,8 @@
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [
-      "tangjie66"
+      "tangjie66",
+      "gcw_Z57idahf"
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/hixl/issues/919",

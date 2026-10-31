@@ -1,5 +1,78 @@
 [
   {
+    "iid": 1396,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: reject missing Qwen inference option values",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "project-nju-learner",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1396",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1395,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(hccl): 新增第 4 章 HCCL 软件架构 Notebook 课件与最小示例",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "weixin_45130366",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1395",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1394,
+    "state": "opened",
+    "draft": false,
+    "title": "修复 MatmulSinh 练习对 NaN 输出误判通过及精度失败返回成功",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhanqi",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1394",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1393,
+    "state": "merged",
+    "draft": false,
+    "title": "feat: add ai application rag practice",
+    "created_at": "2026-10-31",
+    "updated_at": "2026-10-31",
+    "merged_at": "2026-10-31",
+    "closed_at": "",
+    "author": "xdmiao",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1393",
+    "labels": [
+      "approved",
+      "lgtm",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1392,
     "state": "opened",
     "draft": false,
@@ -224,9 +297,9 @@
     "iid": 1381,
     "state": "opened",
     "draft": false,
-    "title": "[course-sync] 课程全量同步：事实层 19 处 + 行为层修正（含 910B3 实操验证）",
+    "title": "[course-sync] 课程全量更新：两仓同步 + 行为层修正 + 分层化改造（含 910B3 实操验证）",
     "created_at": "2026-10-30",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-10-31",
     "merged_at": "",
     "closed_at": "",
     "author": "yanhf",
@@ -2407,17 +2480,19 @@
   },
   {
     "iid": 1269,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "docs(blogs): 修正 msSanitizer 博客参考资料中的样例目录链接",
     "created_at": "2026-10-16",
-    "updated_at": "2026-10-16",
-    "merged_at": "",
+    "updated_at": "2026-10-31",
+    "merged_at": "2026-10-31",
     "closed_at": "",
     "author": "chenmingyu",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1269",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 11,
     "e2e_issues": [
@@ -2446,17 +2521,19 @@
   },
   {
     "iid": 1267,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "docs(hixl): 修正 03.02 A2 场景带宽表",
     "created_at": "2026-10-16",
-    "updated_at": "2026-10-16",
-    "merged_at": "",
+    "updated_at": "2026-10-31",
+    "merged_at": "2026-10-31",
     "closed_at": "",
     "author": "chenmingyu",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1267",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 11,
     "e2e_issues": [
@@ -2465,17 +2542,19 @@
   },
   {
     "iid": 1266,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "docs(ascendc_operator_development): 补全04.03练习host侧 %%writefile 空cell",
     "created_at": "2026-10-16",
-    "updated_at": "2026-10-16",
-    "merged_at": "",
+    "updated_at": "2026-10-31",
+    "merged_at": "2026-10-31",
     "closed_at": "",
     "author": "chenmingyu",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1266",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 11,
     "e2e_issues": [
@@ -2702,17 +2781,19 @@
   },
   {
     "iid": 1254,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix(courseware): 修正 02 课件 infer.sh 示例中 --yaml 参数的错误路径前缀",
     "created_at": "2026-10-15",
-    "updated_at": "2026-10-15",
-    "merged_at": "",
+    "updated_at": "2026-10-31",
+    "merged_at": "2026-10-31",
     "closed_at": "",
     "author": "yaozichen2025",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1254",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 12,
     "e2e_issues": [
@@ -2776,17 +2857,19 @@
   },
   {
     "iid": 1250,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix(ai_computing_embedded_system): Lab6_2 修正失效插图路径与幽灵文件名引用",
     "created_at": "2026-10-15",
-    "updated_at": "2026-10-15",
-    "merged_at": "",
+    "updated_at": "2026-10-31",
+    "merged_at": "2026-10-31",
     "closed_at": "",
     "author": "yaozichen2025",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1250",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 12,
     "e2e_issues": [
@@ -3029,13 +3112,13 @@
   },
   {
     "iid": 1237,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix(nearlink_sdr_sim): 01.04/02.05 章节实践查看答案单元指向不存在的 .py 文件，必现 No such file or directory",
     "created_at": "2026-10-13",
-    "updated_at": "2026-10-13",
+    "updated_at": "2026-10-31",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-31",
     "author": "ORANGE_XU2003",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1237",
     "labels": [
@@ -3049,13 +3132,13 @@
   },
   {
     "iid": 1236,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix(nearlink_sdr_sim): 查看源码单元 cat src/... 相对路径少一级 ../，章目录运行必现 No such file or directory",
     "created_at": "2026-10-13",
-    "updated_at": "2026-10-13",
+    "updated_at": "2026-10-31",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-31",
     "author": "ORANGE_XU2003",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1236",
     "labels": [
@@ -3063,9 +3146,7 @@
       "ci-pipeline-passed"
     ],
     "working_days_open": 14,
-    "e2e_issues": [
-      "830"
-    ]
+    "e2e_issues": []
   },
   {
     "iid": 1235,
@@ -3147,17 +3228,19 @@
   },
   {
     "iid": 1231,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix(nearlink_sdr_sim): 8 个 notebook 源码查看单元 src/ 相对路径补 ../ 前缀",
     "created_at": "2026-10-12",
-    "updated_at": "2026-10-12",
-    "merged_at": "",
+    "updated_at": "2026-10-31",
+    "merged_at": "2026-10-31",
     "closed_at": "",
     "author": "yaozichen2025",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1231",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 15,
     "e2e_issues": [
@@ -3166,17 +3249,19 @@
   },
   {
     "iid": 1230,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix(nearlink_sdr_sim): 章节实践查看答案指向不存在的 .py 文件改为实际 answer .txt",
     "created_at": "2026-10-12",
-    "updated_at": "2026-10-12",
-    "merged_at": "",
+    "updated_at": "2026-10-31",
+    "merged_at": "2026-10-31",
     "closed_at": "",
     "author": "yaozichen2025",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1230",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 15,
     "e2e_issues": [
@@ -4009,13 +4094,13 @@
   },
   {
     "iid": 1186,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "feat: add ai application rag practice",
     "created_at": "2026-10-09",
-    "updated_at": "2026-10-09",
+    "updated_at": "2026-10-31",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-10-31",
     "author": "xdmiao",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1186",
     "labels": [
@@ -8834,17 +8919,19 @@
   },
   {
     "iid": 941,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "修复问题：[Documentation|文档反馈]: 【开发者成长计划】性能结论与表格数据矛盾：小 case 两项不升反降，正文却称整体提升 15%",
     "created_at": "2026-08-31",
-    "updated_at": "2026-08-31",
-    "merged_at": "",
+    "updated_at": "2026-10-31",
+    "merged_at": "2026-10-31",
     "closed_at": "",
     "author": "allenli178",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/941",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 41,
     "e2e_issues": [

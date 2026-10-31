@@ -115,17 +115,19 @@
   },
   {
     "iid": "186",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-29",
-    "closed_at": "",
+    "closed_at": "2026-10-31",
     "author": "ningzhixiong",
     "author_id": "68a8045a8950f411cb53f240",
     "title": "[Bug-Report|缺陷反馈]: deepseek-v4.1-flash text模型保存的huggingface权重无法加载",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/186",
     "working_days_open": 2
   },
@@ -1278,12 +1280,15 @@
     "author_id": "6a9a202b63ecda5a857cfa43",
     "title": "[Bug-Report|缺陷反馈]: 训练日志零基线差异被错误显示为 0% 相对误差",
     "labels": [
-      "bug-report"
+      "bug-report",
+      "resolved"
     ],
     "issue_type": "任务",
     "issue_state": "已完成",
-    "assignees": [],
-    "user_notes_count": 2,
+    "assignees": [
+      "gcw_Z57idahf"
+    ],
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/120",
     "working_days_open": 26
   },
@@ -1316,7 +1321,9 @@
     "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
-    "assignees": [],
+    "assignees": [
+      "jiangna1111"
+    ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/118",
     "working_days_open": 34
@@ -1329,11 +1336,15 @@
     "author": "NIKI1205",
     "author_id": "6a85057b79523e08dbdd04b3",
     "title": "[RFC] 通过 TorchAO 支持 DeepSeek-V4 模型的 HiFloat8 训练",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
     "issue_state": "进行中",
-    "assignees": [],
-    "user_notes_count": 2,
+    "assignees": [
+      "NIKI1205"
+    ],
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/117",
     "working_days_open": 34
   },
@@ -1403,11 +1414,15 @@
     "author": "wanlinan",
     "author_id": "686fc04d30980b376fb8a074",
     "title": "[RFC] DeepSeek-V4 GraphTrainer EP overlap 适配方案",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
     "issue_state": "进行中",
-    "assignees": [],
-    "user_notes_count": 2,
+    "assignees": [
+      "wanlinan"
+    ],
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/113",
     "working_days_open": 38
   },
@@ -1422,7 +1437,9 @@
     "labels": [],
     "issue_type": "任务",
     "issue_state": "进行中",
-    "assignees": [],
+    "assignees": [
+      "leedongkun30-arch"
+    ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/112",
     "working_days_open": 40
@@ -1731,11 +1748,15 @@
     "author": "",
     "author_id": "",
     "title": "[RFC] HiF8 delayed scaling 在 torchtitan-npu 中的实现方案——基于延迟历史幅度统计的动态量化缩放",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
     "issue_state": "已完成",
-    "assignees": [],
-    "user_notes_count": 1,
+    "assignees": [
+      "liuyuanchen1"
+    ],
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/94",
     "working_days_open": 59
   },

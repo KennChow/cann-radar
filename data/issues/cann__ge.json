@@ -1,5 +1,45 @@
 [
   {
+    "iid": "699",
+    "state": "opened",
+    "created_at": "2026-10-31",
+    "closed_at": "",
+    "author": "crueldaybreak",
+    "author_id": "65defbfb652137304a17baed",
+    "title": "[docs][命名] ge_glossary.md DnnEngine 与仓内实现 DNNEngine 不一致",
+    "labels": [
+      "documentation"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "zhufanfan_hw"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/699",
+    "working_days_open": 0
+  },
+  {
+    "iid": "698",
+    "state": "opened",
+    "created_at": "2026-10-31",
+    "closed_at": "",
+    "author": "gcw_R3bcNRUt",
+    "author_id": "67f8bbc27795fd623e1875d8",
+    "title": "[Bug-Report|缺陷反馈]: ATC 转换 ONNX Resize 算子静默忽略 coordinate_transformation_mode=half_pixel，导致离线模型语义错误",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [
+      "zhufanfan_hw"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/698",
+    "working_days_open": 0
+  },
+  {
     "iid": "697",
     "state": "opened",
     "created_at": "2026-10-30",
@@ -354,7 +394,9 @@
     "labels": [],
     "issue_type": "缺陷",
     "issue_state": "待办的",
-    "assignees": [],
+    "assignees": [
+      "SeasonChu"
+    ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/678",
     "working_days_open": 6
@@ -370,7 +412,9 @@
     "labels": [],
     "issue_type": "需求",
     "issue_state": "待办的",
-    "assignees": [],
+    "assignees": [
+      "SeasonChu"
+    ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/677",
     "working_days_open": 6
@@ -1047,7 +1091,7 @@
     "title": "[Documentation|文档反馈]: atc --mode 参数取值表缺少 mode=7（OM2 模型转换），报错提示与 --help 均含 7",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "已完成",
+    "issue_state": "已解决",
     "assignees": [
       "du-hua1024"
     ],
@@ -1705,7 +1749,7 @@
     "issue_type": "任务",
     "issue_state": "已完成",
     "assignees": [
-      "guopeian"
+      "yuchen97"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/608",
@@ -1818,7 +1862,7 @@
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [
-      "guopeian"
+      "zhangguangshuo"
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/602",
@@ -2112,7 +2156,7 @@
     "title": "[Bug-Report|缺陷反馈]: monitor_cpu.sh 的 status 在 curl 失败时仍返回成功",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "ClarkXie",
       "zhaozhihui",
@@ -2711,7 +2755,7 @@
     "assignees": [
       "dingweiqin_57"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/554",
     "working_days_open": 36
   },
