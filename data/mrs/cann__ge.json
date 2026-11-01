@@ -163,15 +163,14 @@
     "draft": false,
     "title": "feat: 适配 Tensor API 的 CV lowering 与尾部升精度",
     "created_at": "2026-10-31",
-    "updated_at": "2026-10-31",
+    "updated_at": "2026-11-01",
     "merged_at": "",
     "closed_at": "",
     "author": "ling-DT",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5703",
     "labels": [
-      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "stat/needs-squash"
     ],
     "working_days_open": 0,
     "e2e_issues": []
@@ -565,13 +564,14 @@
     "draft": false,
     "title": "fix: Report YOLO visualization I/O failures",
     "created_at": "2026-10-30",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-11-01",
     "merged_at": "",
     "closed_at": "",
     "author": "gxhgxh2475698",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5683",
     "labels": [
       "ci-pipeline-passed",
+      "stat/needs-squash",
       "cann-cla/yes"
     ],
     "working_days_open": 1,
@@ -604,15 +604,17 @@
     "iid": 5681,
     "state": "opened",
     "draft": false,
-    "title": "【PR】: fix: 修复声明式辅流多 launch 的 task stream 被压平导致跨流 event 丢失",
+    "title": "fix: 修复声明式辅流多 launch 的 task stream 被压平导致跨流 event 丢失",
     "created_at": "2026-10-30",
-    "updated_at": "2026-10-30",
+    "updated_at": "2026-11-01",
     "merged_at": "",
     "closed_at": "",
     "author": "Chang-an-HW",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5681",
     "labels": [
-      "cann-cla/yes"
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -1228,13 +1230,13 @@
   },
   {
     "iid": 5649,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "test: 新增Eager算子动态shape输出内存重分配在线执行端到端样例",
     "created_at": "2026-10-28",
-    "updated_at": "2026-10-28",
+    "updated_at": "2026-11-01",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-11-01",
     "author": "Chang-an-HW",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5649",
     "labels": [
@@ -1961,13 +1963,13 @@
   },
   {
     "iid": 5613,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "【PR】:Revert \"feat: 自定义算子支持变长自定义数据(非内联方案)\"",
     "created_at": "2026-10-27",
-    "updated_at": "2026-10-27",
+    "updated_at": "2026-11-01",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-11-01",
     "author": "Chang-an-HW",
     "web_url": "https://gitcode.com/cann/ge/merge_requests/5613",
     "labels": [
@@ -5688,7 +5690,7 @@
     "draft": false,
     "title": "feat: Python 自定义算子 Portable 状态快照与源码打包进 OM",
     "created_at": "2026-10-16",
-    "updated_at": "2026-10-31",
+    "updated_at": "2026-11-01",
     "merged_at": "",
     "closed_at": "",
     "author": "shangdf",
@@ -5908,10 +5910,10 @@
   {
     "iid": 5417,
     "state": "opened",
-    "draft": false,
-    "title": "docs: 新增变长自定义数据（非内联方案）端到端验证样例",
+    "draft": true,
+    "title": "[WIP]docs: 新增变长自定义数据（非内联方案）端到端验证样例",
     "created_at": "2026-10-16",
-    "updated_at": "2026-10-16",
+    "updated_at": "2026-11-01",
     "merged_at": "",
     "closed_at": "",
     "author": "Chang-an-HW",

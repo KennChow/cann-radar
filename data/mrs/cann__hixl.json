@@ -43,12 +43,13 @@
     "draft": false,
     "title": "[bugfix]: validate D2RD sample address exchange port",
     "created_at": "2026-10-30",
-    "updated_at": "2026-10-31",
+    "updated_at": "2026-11-01",
     "merged_at": "",
     "closed_at": "",
     "author": "gxhgxh2475698",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1481",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
@@ -63,7 +64,7 @@
     "draft": false,
     "title": "[bugfix]: support IPv6 address exchange in D2RD sample",
     "created_at": "2026-10-30",
-    "updated_at": "2026-10-31",
+    "updated_at": "2026-11-01",
     "merged_at": "",
     "closed_at": "",
     "author": "gxhgxh2475698",
@@ -103,12 +104,13 @@
     "draft": false,
     "title": "[bugfix]: build missing selected benchmark binaries",
     "created_at": "2026-10-30",
-    "updated_at": "2026-10-31",
+    "updated_at": "2026-11-01",
     "merged_at": "",
     "closed_at": "",
     "author": "gxhgxh2475698",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1478",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
@@ -195,9 +197,7 @@
       "ci-pipeline-passed"
     ],
     "working_days_open": 1,
-    "e2e_issues": [
-      "974"
-    ]
+    "e2e_issues": []
   },
   {
     "iid": 1473,
@@ -424,15 +424,15 @@
     "iid": 1462,
     "state": "opened",
     "draft": false,
-    "title": "[L1] fix: LLMStatusCode.md 补齐缺失的 7 个可被 LLMException 抛出的状态码（#974）",
+    "title": "[docs] docs(llm_datadist): LLMStatusCode.md 补齐缺失的 7 个可被 LLMException 抛出的状态码（#974）",
     "created_at": "2026-10-27",
-    "updated_at": "2026-10-28",
+    "updated_at": "2026-11-01",
     "merged_at": "",
     "closed_at": "",
     "author": "wsnidie1",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1462",
     "labels": [
-      "ci-pipeline-passed",
+      "stat/needs-squash",
       "cann-cla/yes"
     ],
     "working_days_open": 4,
@@ -4102,7 +4102,7 @@
     "draft": false,
     "title": "[bugfix]: 回滚 HIXL 控制面握手失败后的 transfer engine 连接",
     "created_at": "2026-09-24",
-    "updated_at": "2026-10-31",
+    "updated_at": "2026-11-01",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -4572,15 +4572,15 @@
     "draft": false,
     "title": "[bugfix] 修复 PrepareMem 与 Unlink 资源生命周期竞态",
     "created_at": "2026-09-23",
-    "updated_at": "2026-10-31",
+    "updated_at": "2026-11-01",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1259",
     "labels": [
       "stat/needs-squash",
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "cann-cla/yes"
     ],
     "working_days_open": 23,
     "e2e_issues": [

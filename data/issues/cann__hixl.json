@@ -1,5 +1,37 @@
 [
   {
+    "iid": "1006",
+    "state": "opened",
+    "created_at": "2026-11-01",
+    "closed_at": "",
+    "author": "berlinda",
+    "author_id": "6a99408963ecda5a857cd6a2",
+    "title": "[Question|问题咨询]:  bash benchmarks/run_all_bench.sh --在A5 server上运行失败",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1006",
+    "working_days_open": 0
+  },
+  {
+    "iid": "1005",
+    "state": "opened",
+    "created_at": "2026-11-01",
+    "closed_at": "",
+    "author": "berlinda",
+    "author_id": "6a99408963ecda5a857cd6a2",
+    "title": "[Bug-Report|缺陷反馈]: A5 server roce流量one-to-one里：1、D2rH流量在32K时达到最大，然后性能回落；2、D2rD和rD2D性能不一致",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "进行中",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1005",
+    "working_days_open": 0
+  },
+  {
     "iid": "1004",
     "state": "opened",
     "created_at": "2026-10-30",
@@ -583,21 +615,23 @@
     "author": "wsnidie1",
     "author_id": "68107c6b43c294728be9a375",
     "title": "[Documentation|文档反馈]: LLMStatusCode.md 自称列出全部枚举值，实际少 7 个可被 LLMException 抛出的状态码",
-    "labels": [],
+    "labels": [
+      "wait-feedback"
+    ],
     "issue_type": "任务",
     "issue_state": "进行中",
     "assignees": [
       "M__Cheng"
     ],
-    "user_notes_count": 3,
+    "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/hixl/issues/974",
     "working_days_open": 8
   },
   {
     "iid": "973",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-21",
-    "closed_at": "",
+    "closed_at": "2026-11-01",
     "author": "jianwei8960",
     "author_id": "681cd2b5096b0e7b44a885bc",
     "title": "[Bug-Report|缺陷反馈]:天工A3运行batch_put_get_sample.py测试FabricMem模式异常报错",
@@ -609,7 +643,7 @@
     "assignees": [
       "M__Cheng"
     ],
-    "user_notes_count": 8,
+    "user_notes_count": 9,
     "web_url": "https://gitcode.com/cann/hixl/issues/973",
     "working_days_open": 8
   },
