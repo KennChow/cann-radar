@@ -1,15 +1,17 @@
 [
   {
     "iid": "711",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-05",
-    "closed_at": "",
+    "closed_at": "2026-11-07",
     "author": "turing_yulei",
     "author_id": "6a8c56190e7adb5b5c5d2ea9",
     "title": "[Bug-Report|缺陷反馈]:适配在A6平台下GE 编译生成的 MemcpyAddrAsync/ CmoAddr任务参数格式",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "xiebangrui2025"
     ],
@@ -19,17 +21,18 @@
   },
   {
     "iid": "710",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-05",
-    "closed_at": "",
+    "closed_at": "2026-11-07",
     "author": "gxhgxh2475698",
     "author_id": "671a465c4af15e11abd4ff3b",
     "title": "[Documentation|文档反馈]: 固定 Shape 示例在同步等待前提示处理异步算子输出",
     "labels": [
-      "documentation"
+      "documentation",
+      "resolved"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "gxhgxh2475698",
       "xiebangrui2025"
@@ -40,17 +43,18 @@
   },
   {
     "iid": "709",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-05",
-    "closed_at": "",
+    "closed_at": "2026-11-07",
     "author": "gxhgxh2475698",
     "author_id": "671a465c4af15e11abd4ff3b",
     "title": "[Documentation|文档反馈]: 英文 Graph 参数分节标题粘入表格，remove_subgraph 标题消失",
     "labels": [
-      "documentation"
+      "documentation",
+      "resolved"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "gxhgxh2475698",
       "xiebangrui2025"
@@ -61,17 +65,18 @@
   },
   {
     "iid": "708",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-05",
-    "closed_at": "",
+    "closed_at": "2026-11-07",
     "author": "gxhgxh2475698",
     "author_id": "671a465c4af15e11abd4ff3b",
     "title": "[Documentation|文档反馈]: Session.add_graph 文档参数名与实现不符，关键字调用被拒绝",
     "labels": [
-      "documentation"
+      "documentation",
+      "resolved"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "gxhgxh2475698",
       "xiebangrui2025"
@@ -82,17 +87,18 @@
   },
   {
     "iid": "707",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-05",
-    "closed_at": "",
+    "closed_at": "2026-11-07",
     "author": "gxhgxh2475698",
     "author_id": "671a465c4af15e11abd4ff3b",
     "title": "[Documentation|文档反馈]: GeUtils 双语示例调用不存在的 Graph.get_node 方法",
     "labels": [
-      "documentation"
+      "documentation",
+      "resolved"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "gxhgxh2475698",
       "xiebangrui2025"
@@ -103,17 +109,18 @@
   },
   {
     "iid": "706",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-05",
-    "closed_at": "",
+    "closed_at": "2026-11-07",
     "author": "gxhgxh2475698",
     "author_id": "671a465c4af15e11abd4ff3b",
     "title": "[Documentation|文档反馈]: Conv2D + Concat 样例索引遗漏 cpp 子目录，双语链接无法打开",
     "labels": [
-      "documentation"
+      "documentation",
+      "resolved"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "gxhgxh2475698",
       "xiebangrui2025"
@@ -327,14 +334,15 @@
   },
   {
     "iid": "691",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-28",
-    "closed_at": "",
+    "closed_at": "2026-11-07",
     "author": "gxhgxh2475698",
     "author_id": "671a465c4af15e11abd4ff3b",
     "title": "[Bug-Report|缺陷反馈]: 图格式验证缺少 dump 时不显示错误提示",
     "labels": [
-      "bug-report"
+      "bug-report",
+      "resolved"
     ],
     "issue_type": "缺陷",
     "issue_state": "待办的",
@@ -347,14 +355,15 @@
   },
   {
     "iid": "690",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-28",
-    "closed_at": "",
+    "closed_at": "2026-11-07",
     "author": "gxhgxh2475698",
     "author_id": "671a465c4af15e11abd4ff3b",
     "title": "[Bug-Report|缺陷反馈]: Qwen 样例架构检测失败时无法手动选择",
     "labels": [
-      "bug-report"
+      "bug-report",
+      "resolved"
     ],
     "issue_type": "缺陷",
     "issue_state": "待办的",
@@ -405,14 +414,15 @@
   },
   {
     "iid": "687",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-28",
-    "closed_at": "",
+    "closed_at": "2026-11-07",
     "author": "gxhgxh2475698",
     "author_id": "671a465c4af15e11abd4ff3b",
     "title": "[Bug-Report|缺陷反馈]: ResNet50 图片多点文件名导致预处理结果覆盖",
     "labels": [
-      "bug-report"
+      "bug-report",
+      "resolved"
     ],
     "issue_type": "缺陷",
     "issue_state": "待办的",
@@ -425,14 +435,15 @@
   },
   {
     "iid": "686",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-28",
-    "closed_at": "",
+    "closed_at": "2026-11-07",
     "author": "gxhgxh2475698",
     "author_id": "671a465c4af15e11abd4ff3b",
     "title": "[Bug-Report|缺陷反馈]: DFlow NUMA 配置工具接受重复或空设备列表",
     "labels": [
-      "bug-report"
+      "bug-report",
+      "resolved"
     ],
     "issue_type": "缺陷",
     "issue_state": "待办的",
@@ -1941,15 +1952,17 @@
   },
   {
     "iid": "607",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-29",
-    "closed_at": "",
+    "closed_at": "2026-11-07",
     "author": "dududu121",
     "author_id": "6a2558444cfa487e40c205cf",
     "title": "[Bug-Report|缺陷反馈]: pydflow 测试脚本将含空格的 Ascend 安装路径拆分为多个路径",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "likun104",
       "dududu121"
@@ -1979,15 +1992,17 @@
   },
   {
     "iid": "605",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-29",
-    "closed_at": "",
+    "closed_at": "2026-11-07",
     "author": "dududu121",
     "author_id": "6a2558444cfa487e40c205cf",
     "title": "[Bug-Report|缺陷反馈]: 无参数运行 ge docs 全量构建成功后仍返回失败码",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "likun104",
       "dududu121"
@@ -1998,15 +2013,17 @@
   },
   {
     "iid": "604",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-29",
-    "closed_at": "",
+    "closed_at": "2026-11-07",
     "author": "dududu121",
     "author_id": "6a2558444cfa487e40c205cf",
     "title": "[Bug-Report|缺陷反馈]: ArgsChecker 负索引逃过上界检查并触发 vector 越界访问",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "likun104",
       "dududu121"
@@ -2017,15 +2034,17 @@
   },
   {
     "iid": "603",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-29",
-    "closed_at": "",
+    "closed_at": "2026-11-07",
     "author": "dududu121",
     "author_id": "6a2558444cfa487e40c205cf",
     "title": "[Bug-Report|缺陷反馈]: TensorFlow ParseFromMemory 成功用例未校验返回状态",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "likun104",
       "dududu121"

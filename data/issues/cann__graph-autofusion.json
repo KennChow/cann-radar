@@ -1,33 +1,38 @@
 [
   {
     "iid": "459",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-06",
-    "closed_at": "",
+    "closed_at": "2026-11-07",
     "author": "gcw_V3YyYBt1",
     "author_id": "68ef093cdf95a9103a88e723",
     "title": "[Bug-Report|缺陷反馈]: Transpose ASCIR算子不支持int8类型",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
-    "assignees": [],
+    "issue_state": "已完成",
+    "assignees": [
+      "gcw_V3YyYBt1"
+    ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/graph-autofusion/issues/459",
     "working_days_open": 1
   },
   {
     "iid": "458",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-04",
-    "closed_at": "",
+    "closed_at": "2026-11-07",
     "author": "yrz1027",
     "author_id": "66d481403bc7a021dbf9108f",
     "title": "[Bug-Report|缺陷反馈]: SuperKernel AOT memory event关联与scope融合状态处理不一致",
     "labels": [
-      "bug-report"
+      "bug-report",
+      "resolved"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "yrz1027"
     ],
@@ -57,17 +62,18 @@
   },
   {
     "iid": "456",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-03",
-    "closed_at": "",
+    "closed_at": "2026-11-07",
     "author": "yrz1027",
     "author_id": "66d481403bc7a021dbf9108f",
     "title": "SuperKernel AOT 首个同队列 kernel 的 early-start wait 未处理 receive sync",
     "labels": [
-      "bug-report"
+      "bug-report",
+      "resolved"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "yrz1027"
     ],
