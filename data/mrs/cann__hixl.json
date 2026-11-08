@@ -1,5 +1,25 @@
 [
   {
+    "iid": 1501,
+    "state": "opened",
+    "draft": false,
+    "title": "bugfix: 将 lcrgen 接入构建（CANN开发者共建计划）",
+    "created_at": "2026-11-08",
+    "updated_at": "2026-11-08",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "jingkai-2026",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1501",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "1014"
+    ]
+  },
+  {
     "iid": 1500,
     "state": "merged",
     "draft": false,
@@ -24,17 +44,17 @@
     "iid": 1499,
     "state": "opened",
     "draft": false,
-    "title": "[fix]: 设备 RESET_POST 回调清理并重建 TransferPool",
+    "title": "[fix]: 设备复位时 abort 期间不打驱动 + Acquire 懒重建 TransferPool",
     "created_at": "2026-11-06",
-    "updated_at": "2026-11-07",
+    "updated_at": "2026-11-08",
     "merged_at": "",
     "closed_at": "",
     "author": "tangjie66",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1499",
     "labels": [
       "ci-pipeline-failed",
-      "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "stat/needs-squash"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -759,14 +779,14 @@
     "draft": false,
     "title": "[feat]: 支持 hixl Python 包多版本在线编译",
     "created_at": "2026-10-27",
-    "updated_at": "2026-11-05",
+    "updated_at": "2026-11-08",
     "merged_at": "",
     "closed_at": "",
     "author": "tangjie66",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1463",
     "labels": [
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 9,
     "e2e_issues": [
