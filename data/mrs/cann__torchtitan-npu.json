@@ -1,18 +1,75 @@
 [
   {
+    "iid": 1273,
+    "state": "opened",
+    "draft": true,
+    "title": "[WIP][refactor] Align DSV4 flavors and eager recipes with upstream layout",
+    "created_at": "2026-11-14",
+    "updated_at": "2026-11-14",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "hitwdy",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1273",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1272,
+    "state": "opened",
+    "draft": false,
+    "title": "refactor: remove DeepSeek-V3.2 model and related assets",
+    "created_at": "2026-11-14",
+    "updated_at": "2026-11-14",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "hitwdy",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1272",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1271,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: clarify the pinned TorchTitan release",
+    "created_at": "2026-11-14",
+    "updated_at": "2026-11-14",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1271",
+    "labels": [
+      "cann-cla/no"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "209"
+    ]
+  },
+  {
     "iid": 1270,
     "state": "opened",
     "draft": true,
     "title": "[WIP][feat] Add GLM-5.3-Flash text training support",
     "created_at": "2026-11-13",
-    "updated_at": "2026-11-13",
+    "updated_at": "2026-11-14",
     "merged_at": "",
     "closed_at": "",
     "author": "zhaowei1936",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1270",
     "labels": [
-      "cann-cla/yes",
-      "ci-pipeline-failed"
+      "stat/needs-squash",
+      "ci-pipeline-failed",
+      "cann-cla/yes"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -108,15 +165,16 @@
   {
     "iid": 1264,
     "state": "opened",
-    "draft": true,
-    "title": "[WIP]refactor: 迁移剩余模型配置生命周期（RFC #207）",
+    "draft": false,
+    "title": "[refactor] Adapt DSV4.1 to the upstream config lifecycle",
     "created_at": "2026-11-13",
-    "updated_at": "2026-11-13",
+    "updated_at": "2026-11-14",
     "merged_at": "",
     "closed_at": "",
     "author": "hitwdy",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1264",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes"
     ],
     "working_days_open": 1,
@@ -158,17 +216,20 @@
   },
   {
     "iid": 1261,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[fix]:enable deepep and remove redundant CLI_OVERRIDES in graphtrainer scripts",
     "created_at": "2026-11-13",
     "updated_at": "2026-11-14",
-    "merged_at": "",
+    "merged_at": "2026-11-14",
     "closed_at": "",
     "author": "MissingPompeii",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1261",
     "labels": [
-      "cann-cla/yes"
+      "ci-pipeline-passed",
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -193,17 +254,19 @@
   },
   {
     "iid": 1259,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "refactor: adapt DSV4 to the upstream config lifecycle (#207)",
     "created_at": "2026-11-12",
-    "updated_at": "2026-11-13",
-    "merged_at": "",
+    "updated_at": "2026-11-14",
+    "merged_at": "2026-11-14",
     "closed_at": "",
     "author": "hitwdy",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1259",
     "labels": [
       "ci-pipeline-passed",
+      "approved",
+      "lgtm",
       "stat/needs-squash",
       "cann-cla/yes"
     ],
@@ -236,15 +299,15 @@
     "draft": false,
     "title": "refactor: 清理 DeepSeek-V4 模型适配与重复代码",
     "created_at": "2026-11-12",
-    "updated_at": "2026-11-13",
+    "updated_at": "2026-11-14",
     "merged_at": "",
     "closed_at": "",
     "author": "mystri",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1257",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-passed",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -255,12 +318,13 @@
     "draft": false,
     "title": "refactor: reuse upstream DeepSeek-V4 chat processing",
     "created_at": "2026-11-12",
-    "updated_at": "2026-11-13",
+    "updated_at": "2026-11-14",
     "merged_at": "",
     "closed_at": "",
     "author": "mystri",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1256",
     "labels": [
+      "ci-pipeline-passed",
       "cann-cla/yes",
       "stat/needs-squash"
     ],
@@ -310,7 +374,7 @@
     "draft": false,
     "title": "feat(tools): add the vLLM Ascend quantized checkpoint exporter",
     "created_at": "2026-11-12",
-    "updated_at": "2026-11-12",
+    "updated_at": "2026-11-14",
     "merged_at": "",
     "closed_at": "",
     "author": "zhaoxi1029",
@@ -327,14 +391,14 @@
     "draft": true,
     "title": "[WIP]feat/quant_deepep",
     "created_at": "2026-11-12",
-    "updated_at": "2026-11-13",
+    "updated_at": "2026-11-14",
     "merged_at": "",
     "closed_at": "",
     "author": "huangjiaxin_1",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1252",
     "labels": [
-      "cann-cla/yes",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "cann-cla/yes"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -384,15 +448,14 @@
     "draft": false,
     "title": "feat(cp): keep the CP all-to-all inside one supernode",
     "created_at": "2026-11-12",
-    "updated_at": "2026-11-13",
+    "updated_at": "2026-11-14",
     "merged_at": "",
     "closed_at": "",
     "author": "lrwei0709",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1249",
     "labels": [
-      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -438,19 +501,21 @@
   },
   {
     "iid": 1246,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[feat] 同步 submit-pr skill 到 dev_0.4.0",
     "created_at": "2026-11-11",
-    "updated_at": "2026-11-12",
-    "merged_at": "",
+    "updated_at": "2026-11-14",
+    "merged_at": "2026-11-14",
     "closed_at": "",
     "author": "zcklllyao",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1246",
     "labels": [
       "cann-cla/yes",
       "stat/needs-squash",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -478,7 +543,7 @@
     "draft": false,
     "title": "feat: GitCode 原生接入 Lite Actions Smoke",
     "created_at": "2026-11-11",
-    "updated_at": "2026-11-12",
+    "updated_at": "2026-11-14",
     "merged_at": "",
     "closed_at": "",
     "author": "depeng1994",

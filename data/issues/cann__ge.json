@@ -1,5 +1,25 @@
 [
   {
+    "iid": "722",
+    "state": "opened",
+    "created_at": "2026-11-14",
+    "closed_at": "",
+    "author": "yelongjian",
+    "author_id": "68c76fbe82ee0b00674fab05",
+    "title": "[Bug-Report|缺陷反馈]:代码未覆盖llt用例",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "kobemini"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/722",
+    "working_days_open": 0
+  },
+  {
     "iid": "721",
     "state": "opened",
     "created_at": "2026-11-13",
@@ -11,7 +31,8 @@
     "issue_type": "任务",
     "issue_state": "待办的",
     "assignees": [
-      "gxhgxh2475698"
+      "gxhgxh2475698",
+      "chenqian1365"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/721",
@@ -322,9 +343,9 @@
   },
   {
     "iid": "698",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-31",
-    "closed_at": "",
+    "closed_at": "2026-11-14",
     "author": "gcw_R3bcNRUt",
     "author_id": "67f8bbc27795fd623e1875d8",
     "title": "[Bug-Report|缺陷反馈]: ATC 转换 ONNX Resize 算子静默忽略 coordinate_transformation_mode=half_pixel，导致离线模型语义错误",
@@ -332,11 +353,11 @@
       "bug-report"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "zhufanfan_hw"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/698",
     "working_days_open": 10
   },

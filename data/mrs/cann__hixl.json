@@ -1,18 +1,79 @@
 [
   {
-    "iid": 1517,
+    "iid": 1520,
     "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: validate batch when changing cache key (#1002)",
+    "created_at": "2026-11-14",
+    "updated_at": "2026-11-14",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lugang11",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1520",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "1002"
+    ]
+  },
+  {
+    "iid": 1519,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: canonicalize nic topo path before reading it",
+    "created_at": "2026-11-14",
+    "updated_at": "2026-11-14",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lugang11",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1519",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1518,
+    "state": "opened",
+    "draft": false,
+    "title": "refactor: 修复 TLS 与 CS 静态检查告警",
+    "created_at": "2026-11-14",
+    "updated_at": "2026-11-14",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "M__Cheng",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1518",
+    "labels": [
+      "ci-pipeline-passed",
+      "lgtm",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1517,
+    "state": "merged",
     "draft": false,
     "title": "refactor: comm benchmark 校验参数改名为 data_verify",
     "created_at": "2026-11-13",
-    "updated_at": "2026-11-13",
-    "merged_at": "",
+    "updated_at": "2026-11-14",
+    "merged_at": "2026-11-14",
     "closed_at": "",
     "author": "jiazhaoyang",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1517",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "approved",
+      "ci-pipeline-passed",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -23,14 +84,15 @@
     "draft": false,
     "title": "[docs]: CANN开发者共建计划--补齐 hixl_tool 默认 CANN 环境路径",
     "created_at": "2026-11-13",
-    "updated_at": "2026-11-13",
+    "updated_at": "2026-11-14",
     "merged_at": "",
     "closed_at": "",
     "author": "haimianbaby",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1516",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": [
@@ -101,7 +163,7 @@
     "draft": false,
     "title": "[docs]: CANN开发者共建计划--明确 TransferWithCacheKeyConfig 两端层数相等",
     "created_at": "2026-11-13",
-    "updated_at": "2026-11-13",
+    "updated_at": "2026-11-14",
     "merged_at": "2026-11-13",
     "closed_at": "",
     "author": "accessale",
@@ -139,19 +201,21 @@
   },
   {
     "iid": 1510,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[bugfix]: 补全 vllm_hixl_connector 派生声明并修复负层数/delayed_free 清理",
     "created_at": "2026-11-13",
-    "updated_at": "2026-11-13",
-    "merged_at": "",
+    "updated_at": "2026-11-14",
+    "merged_at": "2026-11-14",
     "closed_at": "",
     "author": "tangjie66",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1510",
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": [
@@ -165,14 +229,14 @@
     "draft": false,
     "title": "[bugfix]: 注册 device abort POST 回调，设备 abort 后重建 hcomm 传输线程",
     "created_at": "2026-11-13",
-    "updated_at": "2026-11-13",
+    "updated_at": "2026-11-14",
     "merged_at": "",
     "closed_at": "",
     "author": "tangjie66",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1509",
     "labels": [
-      "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -204,7 +268,7 @@
     "draft": true,
     "title": "[WIP]: named engine 元数据交换 ExportLocalMD/ImportRemoteMD 接口骨架（#1011）",
     "created_at": "2026-11-11",
-    "updated_at": "2026-11-11",
+    "updated_at": "2026-11-14",
     "merged_at": "",
     "closed_at": "",
     "author": "tangjie66",
@@ -221,18 +285,21 @@
   },
   {
     "iid": 1506,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[bugfix]: download the pinned cann-cmake OBS package for offline builds",
     "created_at": "2026-11-10",
-    "updated_at": "2026-11-12",
-    "merged_at": "",
+    "updated_at": "2026-11-14",
+    "merged_at": "2026-11-14",
     "closed_at": "",
     "author": "lugang11",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1506",
     "labels": [
+      "lgtm",
+      "approved",
       "cann-cla/yes",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 4,
     "e2e_issues": [
@@ -1112,18 +1179,20 @@
   },
   {
     "iid": 1463,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[feat]: 支持 hixl Python 包多版本在线编译",
     "created_at": "2026-10-27",
-    "updated_at": "2026-11-13",
-    "merged_at": "",
+    "updated_at": "2026-11-14",
+    "merged_at": "2026-11-14",
     "closed_at": "",
     "author": "tangjie66",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1463",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 14,
     "e2e_issues": [
@@ -1793,12 +1862,13 @@
     "draft": false,
     "title": "[refactor]: 服务端使用单线程异步推进 Channel 建链",
     "created_at": "2026-10-20",
-    "updated_at": "2026-11-12",
+    "updated_at": "2026-11-14",
     "merged_at": "",
     "closed_at": "",
     "author": "jiazhaoyang",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1430",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes"
     ],
     "working_days_open": 19,
@@ -1835,14 +1905,16 @@
     "draft": false,
     "title": "[refactor]: 隔离 HIXL CS client 传输逻辑到按协议划分的 channel",
     "created_at": "2026-10-20",
-    "updated_at": "2026-10-20",
+    "updated_at": "2026-11-14",
     "merged_at": "",
     "closed_at": "",
     "author": "zhaozhihui",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1428",
     "labels": [
       "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved"
     ],
     "working_days_open": 19,
     "e2e_issues": []
@@ -2460,13 +2532,13 @@
   },
   {
     "iid": 1397,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix: clear delayed timeout state for non-transfer completion",
     "created_at": "2026-10-14",
-    "updated_at": "2026-11-07",
+    "updated_at": "2026-11-14",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-11-14",
     "author": "Ethan_Zou",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1397",
     "labels": [
@@ -2500,13 +2572,13 @@
   },
   {
     "iid": 1395,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix: reject negative prefill pipeline layer partitions",
     "created_at": "2026-10-14",
-    "updated_at": "2026-11-07",
+    "updated_at": "2026-11-14",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-11-14",
     "author": "Ethan_Zou",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1395",
     "labels": [
@@ -15377,14 +15449,13 @@
     "draft": true,
     "title": "[WIP]ci test",
     "created_at": "2026-07-15",
-    "updated_at": "2026-11-12",
+    "updated_at": "2026-11-14",
     "merged_at": "",
     "closed_at": "",
     "author": "songxiujing",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/773",
     "labels": [
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "cann-cla/yes"
     ],
     "working_days_open": 84,
     "e2e_issues": []

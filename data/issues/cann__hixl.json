@@ -95,21 +95,22 @@
   },
   {
     "iid": "1024",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-11",
-    "closed_at": "",
+    "closed_at": "2026-11-14",
     "author": "sang_sa",
     "author_id": "6af4347886412f6cc57cbd3c",
-    "title": "[Bug-Report|缺陷反馈]: ",
+    "title": "[Bug-Report|缺陷反馈]: DeepSeek-V4.1-Flash 在 A2（910B3）上做 PD 分离，并启用 Mooncake KV 池化；配置 global_segment_size=70GB 后，服务完全启动不起来",
     "labels": [
-      "wait-feedback"
+      "wait-feedback",
+      "resolved"
     ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "jiazhaoyang"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/hixl/issues/1024",
     "working_days_open": 3
   },
@@ -121,13 +122,15 @@
     "author": "wwccyang",
     "author_id": "67580307b5b8bb7550ed820e",
     "title": "[Question|问题咨询]: HixlCSClientConnect: ErrorNo: 503900 HixlCSClientConnect failed, client_handle is 0xffdf7000c8f0, timeout:33064 ms",
-    "labels": [],
+    "labels": [
+      "wait-feedback"
+    ],
     "issue_type": "任务",
     "issue_state": "待办的",
     "assignees": [
       "M__Cheng"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/hixl/issues/1023",
     "working_days_open": 3
   },
@@ -192,17 +195,18 @@
   },
   {
     "iid": "1019",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-10",
-    "closed_at": "",
+    "closed_at": "2026-11-14",
     "author": "huangdong2022",
     "author_id": "68c2698837720e1c67468082",
     "title": "[Bug-Report|缺陷反馈]: vllm-ascend v0.30.0分支部署DSV4.1+池化，单卡注册25G，服务拉起报错 Failed to mount segment: INVALID_PARAMS",
     "labels": [
-      "wait-feedback"
+      "wait-feedback",
+      "invalid"
     ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已拒绝",
     "assignees": [
       "jiazhaoyang"
     ],
@@ -212,17 +216,18 @@
   },
   {
     "iid": "1018",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-10",
-    "closed_at": "",
+    "closed_at": "2026-11-14",
     "author": "Mknmkn123",
     "author_id": "68d9fd5a1cd4be6766a9f60c",
     "title": "[Bug-Report|缺陷反馈]: 9.2.0分支bash build.sh --examples在线编译失败",
     "labels": [
-      "bug-report"
+      "bug-report",
+      "resolved"
     ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "jiazhaoyang"
     ],
@@ -422,37 +427,39 @@
   },
   {
     "iid": "1007",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-03",
-    "closed_at": "",
+    "closed_at": "2026-11-14",
     "author": "wujiao_swag",
     "author_id": "68da3716b0003b5e0eaa66c7",
     "title": "[Bug-Report|缺陷反馈]: 离线编译，缺少三方依赖下载链接",
     "labels": [
-      "wait-feedback"
+      "wait-feedback",
+      "resolved"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "M__Cheng"
     ],
-    "user_notes_count": 3,
+    "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/hixl/issues/1007",
     "working_days_open": 9
   },
   {
     "iid": "1006",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-01",
-    "closed_at": "",
+    "closed_at": "2026-11-14",
     "author": "berlinda",
     "author_id": "6a99408963ecda5a857cd6a2",
     "title": "[Question|问题咨询]:  bash benchmarks/run_all_bench.sh --在A5 server上运行失败",
     "labels": [
-      "wait-feedback"
+      "wait-feedback",
+      "resolved"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "jiazhaoyang"
     ],
@@ -462,9 +469,9 @@
   },
   {
     "iid": "1005",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-01",
-    "closed_at": "",
+    "closed_at": "2026-11-14",
     "author": "berlinda",
     "author_id": "6a99408963ecda5a857cd6a2",
     "title": "[Bug-Report|缺陷反馈]: A5 server roce流量one-to-one里：1、D2rH流量在32K时达到最大，然后性能回落；2、D2rD和rD2D性能不一致",
@@ -472,7 +479,7 @@
       "wait-feedback"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "jiazhaoyang"
     ],
@@ -608,21 +615,22 @@
   },
   {
     "iid": "998",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-30",
-    "closed_at": "",
+    "closed_at": "2026-11-14",
     "author": "lllllllzh",
     "author_id": "691d35a49e57390c7aca149e",
     "title": "[Bug-Report|缺陷反馈]: Master分支离线编译中一键式第三方软件下载打包脚本sha256不匹配导致build失败",
     "labels": [
-      "wait-feedback"
+      "wait-feedback",
+      "resolved"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "lugang11"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/hixl/issues/998",
     "working_days_open": 11
   },
@@ -909,9 +917,9 @@
   },
   {
     "iid": "983",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-24",
-    "closed_at": "",
+    "closed_at": "2026-11-14",
     "author": "foraxe_admin",
     "author_id": "698ad9fe6bbe68179fcb8ddc",
     "title": "[Question|问题咨询]: A5 UB Host端点注册成功，建链在HrtRaBlockGetSockets超时",
@@ -919,7 +927,7 @@
       "wait-feedback"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "tangjie66"
     ],
@@ -1754,9 +1762,9 @@
   },
   {
     "iid": "941",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-14",
-    "closed_at": "",
+    "closed_at": "2026-11-14",
     "author": "Ethan_Zou",
     "author_id": "67fb64ad2cb7f0133f7efecc",
     "title": "[Bug-Report|缺陷反馈]: 无需传输的已完成请求仍留在延迟超时队列并再次返回",
@@ -1764,12 +1772,12 @@
       "wait-feedback"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已解决",
     "assignees": [
       "Ethan_Zou",
       "tangjie66"
     ],
-    "user_notes_count": 3,
+    "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/hixl/issues/941",
     "working_days_open": 23
   },
@@ -1795,20 +1803,20 @@
   },
   {
     "iid": "939",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-14",
-    "closed_at": "",
+    "closed_at": "2026-11-14",
     "author": "Ethan_Zou",
     "author_id": "67fb64ad2cb7f0133f7efecc",
     "title": "[Bug-Report|缺陷反馈]: 自定义Prefill PP分层允许负层数并生成模型范围外区间",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已解决",
     "assignees": [
       "Ethan_Zou",
       "tangjie66"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/hixl/issues/939",
     "working_days_open": 23
   },
@@ -3194,20 +3202,22 @@
   },
   {
     "iid": "868",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-24",
-    "closed_at": "",
+    "closed_at": "2026-11-14",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "[Bug-Report|缺陷反馈]: HIXL 建链控制面握手失败后未回滚 transfer engine 连接",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已解决",
     "assignees": [
       "KaranocaVe",
       "tangjie66"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/hixl/issues/868",
     "working_days_open": 32
   },
@@ -3860,20 +3870,22 @@
   },
   {
     "iid": "831",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-23",
-    "closed_at": "",
+    "closed_at": "2026-11-14",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "[Bug-Report|缺陷反馈]: 修复 PrepareMem 与 Unlink 的资源生命周期竞态",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "jiazhaoyang",
       "KaranocaVe"
     ],
-    "user_notes_count": 4,
+    "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/hixl/issues/831",
     "working_days_open": 33
   },
@@ -4435,19 +4447,21 @@
   },
   {
     "iid": "801",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-22",
-    "closed_at": "",
+    "closed_at": "2026-11-14",
     "author": "cy1279671",
     "author_id": "6ab223e70f537e54a3d3fb9b",
     "title": "[Bug-Report|缺陷反馈]: 双机跑rD2D方向时，带宽相比D2rD差很多",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "jiazhaoyang"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/hixl/issues/801",
     "working_days_open": 34
   },
@@ -5317,7 +5331,7 @@
     "assignees": [
       "lugang11"
     ],
-    "user_notes_count": 3,
+    "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/hixl/issues/752",
     "working_days_open": 36
   },
@@ -17966,7 +17980,9 @@
     "author": "leichaoaizhaojie",
     "author_id": "677b87f16c135d444123df16",
     "title": "[Bug-Report|缺陷反馈]: Mooncake adxl内存池场景只put影响TPOT",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
     "issue_state": "已完成",
     "assignees": [

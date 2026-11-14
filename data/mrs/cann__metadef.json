@@ -1,12 +1,165 @@
 [
   {
-    "iid": 711,
+    "iid": 719,
     "state": "opened",
+    "draft": false,
+    "title": "【PR】:  sync develop to master 20261114",
+    "created_at": "2026-11-14",
+    "updated_at": "2026-11-14",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhukkk",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/719",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 718,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 新增符号化推导自定义算子注册接口与发布头",
+    "created_at": "2026-11-14",
+    "updated_at": "2026-11-14",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "xiebangrui2025",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/718",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 717,
+    "state": "opened",
+    "draft": false,
+    "title": "feat: 新增符号化推导自定义算子注册接口与发布头",
+    "created_at": "2026-11-14",
+    "updated_at": "2026-11-14",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "xiebangrui2025",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/717",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 716,
+    "state": "merged",
+    "draft": false,
+    "title": "revert: 回退「新增符号化推导自定义算子注册接口与发布头」，修复 OpDefImpl ABI 断点导致的 PreSmoke_A5 段错误",
+    "created_at": "2026-11-14",
+    "updated_at": "2026-11-14",
+    "merged_at": "2026-11-14",
+    "closed_at": "",
+    "author": "xiebangrui2025",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/716",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 715,
+    "state": "merged",
+    "draft": false,
+    "title": "ci: 开启 develop 分支的 A2/A5 冒烟任务",
+    "created_at": "2026-11-14",
+    "updated_at": "2026-11-14",
+    "merged_at": "2026-11-14",
+    "closed_at": "",
+    "author": "yelongjian",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/715",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 714,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: 更正 TilingData::Append 的失败返回码说明",
+    "created_at": "2026-11-14",
+    "updated_at": "2026-11-14",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/714",
+    "labels": [],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "161"
+    ]
+  },
+  {
+    "iid": 713,
+    "state": "opened",
+    "draft": false,
+    "title": "修复 `GetFormatName` 负枚举值越界读取",
+    "created_at": "2026-11-14",
+    "updated_at": "2026-11-14",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/713",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "242"
+    ]
+  },
+  {
+    "iid": 712,
+    "state": "opened",
+    "draft": false,
+    "title": "修正 GetOutputDesc 文档中的输出索引说明",
+    "created_at": "2026-11-14",
+    "updated_at": "2026-11-14",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "KaranocaVe",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/712",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "180"
+    ]
+  },
+  {
+    "iid": 711,
+    "state": "merged",
     "draft": false,
     "title": "[Security] 删除 oat_check.sh 并加固 init_env.sh 下载流程",
     "created_at": "2026-11-13",
-    "updated_at": "2026-11-13",
-    "merged_at": "",
+    "updated_at": "2026-11-14",
+    "merged_at": "2026-11-14",
     "closed_at": "",
     "author": "yelongjian",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/711",
@@ -14,7 +167,8 @@
       "cann-cla/yes",
       "stat/needs-squash",
       "ci-pipeline-passed",
-      "lgtm"
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -40,12 +194,12 @@
   },
   {
     "iid": 709,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【refactor】: 使用ACL_SUCCESS替换ACL_ERROR_NONE",
     "created_at": "2026-11-13",
-    "updated_at": "2026-11-13",
-    "merged_at": "",
+    "updated_at": "2026-11-14",
+    "merged_at": "2026-11-14",
     "closed_at": "",
     "author": "kantao1",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/709",
@@ -53,25 +207,29 @@
       "lgtm",
       "enhancement",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved"
     ],
     "working_days_open": 1,
     "e2e_issues": []
   },
   {
     "iid": 708,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【PR】:  sync develop to master 20261112",
     "created_at": "2026-11-12",
-    "updated_at": "2026-11-12",
-    "merged_at": "",
+    "updated_at": "2026-11-14",
+    "merged_at": "2026-11-14",
     "closed_at": "",
     "author": "zhukkk",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/708",
     "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
       "stat/needs-squash",
-      "cann-cla/yes"
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -4143,13 +4301,14 @@
     "draft": false,
     "title": "fix: 修正 AnyValue 内联存储路径右值退化为复制构造的问题(#115)",
     "created_at": "2026-09-30",
-    "updated_at": "2026-10-31",
+    "updated_at": "2026-11-14",
     "merged_at": "",
     "closed_at": "",
     "author": "chenqian1365",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/511",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 29,
     "e2e_issues": [
