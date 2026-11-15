@@ -1,5 +1,345 @@
 [
   {
+    "iid": 1505,
+    "state": "opened",
+    "draft": false,
+    "title": "CANN开发者共建计划-删除 detection_visualization.py 末尾不可达且未定义的 return fig 死代码",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-16",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "jefferson1017",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1505",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "1017"
+    ]
+  },
+  {
+    "iid": 1504,
+    "state": "opened",
+    "draft": false,
+    "title": "CANN开发者共建计划-补全 06.03 与 09.03 参考答案 practice_solution.py 缺失的常量及前置函数",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-16",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "stellarphantom05",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1504",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "1015"
+    ]
+  },
+  {
+    "iid": 1503,
+    "state": "opened",
+    "draft": false,
+    "title": "CANN开发者共建计划-补全 pypto_development 5 份 *_answer.py 缺失的 pypto 导入与常量声明",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "crazylink1127",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1503",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "1016"
+    ]
+  },
+  {
+    "iid": 1502,
+    "state": "opened",
+    "draft": false,
+    "title": "CANN开发者共建计划-补齐 asr_client.py 第 70 行错误消息的 %s 占位符",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "noahbi0601",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1502",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "1014"
+    ]
+  },
+  {
+    "iid": 1501,
+    "state": "opened",
+    "draft": false,
+    "title": "CANN开发者共建计划-移除 qwen3 量化工具 find_matched_target 过时文档参数 fused_strategy",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "benjamin2014",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1501",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "1013"
+    ]
+  },
+  {
+    "iid": 1500,
+    "state": "opened",
+    "draft": false,
+    "title": "CANN开发者共建计划-修正 qwen3 推理教程 ExecutionEngine 初始化 docstring 参数名",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "miaoion0812",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1500",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "1012"
+    ]
+  },
+  {
+    "iid": 1499,
+    "state": "opened",
+    "draft": false,
+    "title": "CANN开发者共建计划-更正 huaweicloud_sis bean 请求类初始化函数参数文档",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "nobleweichi0215",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1499",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "1011"
+    ]
+  },
+  {
+    "iid": 1498,
+    "state": "opened",
+    "draft": false,
+    "title": "CANN开发者共建计划-修复 rtts_client.py 与 vcs_stream_client.py 中 logger.error 格式符错误",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "fastboss",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1498",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "1010"
+    ]
+  },
+  {
+    "iid": 1497,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(course): 重整并行编程课程 Notebook 与 CANNLab 实验流程",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "bnujwx",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1497",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1496,
+    "state": "opened",
+    "draft": false,
+    "title": "CANN开发者共建计划--[Docs] 修正 qwen_ops 02.01_rope_baseline 框架接口表 extention 拼写错误",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "ududhbsbj",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1496",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1495,
+    "state": "opened",
+    "draft": false,
+    "title": "CANN开发者共建计划--[Docs] 修复 12_moe_fused design.md 表格竖线未转义导致 |Δw|<1e-4 内容被截断",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "ududhbsbj",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1495",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1494,
+    "state": "opened",
+    "draft": false,
+    "title": "[Docs] 修正 03.06 章节练习骨架中误用的 aclnnAdd 日志文案",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "hw_0086_hrf",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1494",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "678"
+    ]
+  },
+  {
+    "iid": 1493,
+    "state": "opened",
+    "draft": false,
+    "title": "feat(pypto_from_zero): 面向零基础人群的 PyPTO 算子开发课程（6 章 48 节）",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-16",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Brillian",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1493",
+    "labels": [
+      "cann-cla/no",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1492,
+    "state": "opened",
+    "draft": false,
+    "title": "feat(tutorials): add zero-to-AI PyPTO operator development course",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "liushaoweihua1225",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1492",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1491,
+    "state": "opened",
+    "draft": false,
+    "title": "CANN开发者共建计划--[Docs] 修正 SECURITY.md 附录 A 交叉引用锚点（标题含大写与全角括号未规范化）",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "ududhbsbj",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1491",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1490,
+    "state": "opened",
+    "draft": false,
+    "title": "CANN开发者共建计划--[Docs] 修复首页角色导航 3 处锚点缺失前导连字符（emoji 标题）",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "ududhbsbj",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1490",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1489,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: 新增零基础 PyPTO 算子开发课程（A3）",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "huier325",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1489",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "1009"
+    ]
+  },
+  {
+    "iid": 1488,
+    "state": "closed",
+    "draft": false,
+    "title": "【社区课程】新增 PyPTO 0 基础到大模型课程（pypto_zero_to_llm，6 章 89 本 notebook）",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "2026-11-15",
+    "author": "u011078141",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1488",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1487,
     "state": "opened",
     "draft": false,
@@ -868,7 +1208,7 @@
     "draft": false,
     "title": "Plan for Adjusting the Course Outline of Ascend C Operator Programming",
     "created_at": "2026-11-10",
-    "updated_at": "2026-11-10",
+    "updated_at": "2026-11-15",
     "merged_at": "",
     "closed_at": "",
     "author": "YANXI_ZHAO",
@@ -1859,7 +2199,7 @@
     "draft": false,
     "title": "fix: avoid overwriting Git tutorial demo file",
     "created_at": "2026-10-30",
-    "updated_at": "2026-11-13",
+    "updated_at": "2026-11-15",
     "merged_at": "",
     "closed_at": "",
     "author": "gxhgxh2475698",

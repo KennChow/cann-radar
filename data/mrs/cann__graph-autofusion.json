@@ -1,5 +1,107 @@
 [
   {
+    "iid": 2985,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: 约束 NDDMA 校准域外估值",
+    "created_at": "2026-11-16",
+    "updated_at": "2026-11-16",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhang_shengjie",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2985",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2984,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: fix: return failure when UB searches find no satisfying candidate (#466)",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "LongfeiWang2026",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2984",
+    "labels": [
+      "enhancement",
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "466"
+    ]
+  },
+  {
+    "iid": 2983,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: perf: visit each tiling constraint once per pass (#465)",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "LongfeiWang2026",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2983",
+    "labels": [
+      "enhancement",
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "465"
+    ]
+  },
+  {
+    "iid": 2982,
+    "state": "opened",
+    "draft": false,
+    "title": "chore: CI baseline probe——UT_report 403 定性（对照 #2962，勿合）",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "wangyichao0421",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2982",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 2981,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】: perf: avoid linear scans in prompt alignment (#464)",
+    "created_at": "2026-11-15",
+    "updated_at": "2026-11-15",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "LongfeiWang2026",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2981",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "464"
+    ]
+  },
+  {
     "iid": 2980,
     "state": "closed",
     "draft": false,
@@ -355,16 +457,16 @@
     "iid": 2962,
     "state": "opened",
     "draft": false,
-    "title": "fix: 动态 embedding 图步长正性假阴性——稠密等式证据恢复 SIMT 结构化通道",
+    "title": "fix: 动态 embedding 图simt模板性能优化--UINT32/64动态双发",
     "created_at": "2026-11-13",
-    "updated_at": "2026-11-14",
+    "updated_at": "2026-11-15",
     "merged_at": "",
     "closed_at": "",
     "author": "wangyichao0421",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2962",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-passed",
+      "ci-pipeline-failed",
       "stat/needs-squash"
     ],
     "working_days_open": 1,
@@ -997,7 +1099,7 @@
     "draft": false,
     "title": "fix(autofuse): allow Load schedule axes outside output view",
     "created_at": "2026-11-12",
-    "updated_at": "2026-11-14",
+    "updated_at": "2026-11-15",
     "merged_at": "",
     "closed_at": "",
     "author": "Ren_Jie",
