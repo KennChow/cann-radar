@@ -1,5 +1,1051 @@
 [
   {
+    "iid": "857",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "slyweichi87",
+    "author_id": "6b000b91b2ac1d166c75203a",
+    "title": "CANN开发者共建计划--修复 InferShapePass 中 UpdateShapeAndDType 错用存储 ShapeRange 覆盖原始 ShapeRange",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/857",
+    "working_days_open": 0
+  },
+  {
+    "iid": "856",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "leonidashu",
+    "author_id": "6b000645fea4b95582c9177a",
+    "title": "CANN开发者共建计划--ge 修复 DeviceMemoryPtr 移动赋值与 Reset 缺少自赋值保护致设备显存重复释放",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/856",
+    "working_days_open": 0
+  },
+  {
+    "iid": "855",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "chaoshan_1209",
+    "author_id": "6b000174b2ac1d166c751ab7",
+    "title": "CANN开发者共建计划--ge 修复 TensorFlowModelParser 两个融合判定函数空入参误返 true 缺陷",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/855",
+    "working_days_open": 0
+  },
+  {
+    "iid": "854",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "cosmichelix1999",
+    "author_id": "6afffcd635fa763749e8aefb",
+    "title": "CANN开发者共建计划--ge 修复 SetInputOutputOffsetPass::CheckBufferFusion 前驱描述为空误返 true",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/854",
+    "working_days_open": 0
+  },
+  {
+    "iid": "853",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "zimu_murong2007",
+    "author_id": "6afff871fea4b95582c90f7d",
+    "title": "CANN开发者共建计划--ge 修复 TransposeTransDataPass::FusionIfNeed 五处判空反转误触发融合",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/853",
+    "working_days_open": 0
+  },
+  {
+    "iid": "852",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "tianyangdeng",
+    "author_id": "6affbfa15cf02b48b29a944f",
+    "title": "CANN开发者共建计划--ge 修复 FFTSPlusTaskBuilder 写回后继关联模板函数空上下文误返 true",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/852",
+    "working_days_open": 0
+  },
+  {
+    "iid": "851",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "sonicye13",
+    "author_id": "6affbc40fea4b95582c8f35b",
+    "title": "CANN开发者共建计划--ge 修复 CheckWeightTypeQualifiedWithCount 子图前驱锚点为空误判权重合法",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/851",
+    "working_days_open": 0
+  },
+  {
+    "iid": "850",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "weijunyuan0503",
+    "author_id": "6affb8dc5cf02b48b29a9067",
+    "title": "CANN开发者共建计划--ge 修复 CheckTilingSink 节点 OpDesc 为空时误判支持 Tiling 下沉",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/850",
+    "working_days_open": 0
+  },
+  {
+    "iid": "849",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "oudog1992",
+    "author_id": "6affb60135fa763749e889d2",
+    "title": "CANN开发者共建计划--修复 GenerateCMOInvalidTask 获取 CMO 标识判空反转及输出越界日志格式错配",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/849",
+    "working_days_open": 0
+  },
+  {
+    "iid": "848",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "obsidianwang2002",
+    "author_id": "6affb32d319a944fb28df814",
+    "title": "CANN开发者共建计划--ge 修复 SplitNOptimizer::OutputCheck 下游算子描述为空误判通过优化检查",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/848",
+    "working_days_open": 0
+  },
+  {
+    "iid": "847",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "vividrain_2001",
+    "author_id": "6affb1019a8ca858dde7fe9b",
+    "title": "CANN开发者共建计划--ge 修复 StridedSliceDToSplitFusionPass 输入描述为空时误判满足拆分融合条件",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/847",
+    "working_days_open": 0
+  },
+  {
+    "iid": "846",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "xingniuhu",
+    "author_id": "6affaef09c992864332f5174",
+    "title": "CANN开发者共建计划--ge 修复 NodeOptimizePassBase::is_single_out_and_ref 输出锚点为空误返 true",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/846",
+    "working_days_open": 0
+  },
+  {
+    "iid": "845",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "2601_96008034",
+    "author_id": "6affacf8319a944fb28df376",
+    "title": "CANN开发者共建计划--ge 解决 ConcatOptimizeChecker::IsDimCAlignedWithQuant 量化节点描述为空误判对齐",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/845",
+    "working_days_open": 0
+  },
+  {
+    "iid": "844",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "mysticshi2008",
+    "author_id": "6affaae8b2ac1d166c74eb96",
+    "title": "CANN开发者共建计划--ge 修复 IR 构图 IsAttrIndexSetByUser 遇空节点误判定为用户已设置索引",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/844",
+    "working_days_open": 0
+  },
+  {
+    "iid": "843",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "jiangboss02",
+    "author_id": "6affa93b5cf02b48b29a8674",
+    "title": "CANN开发者共建计划--ge 修复 AttrGroupShapeEnv::CreateSymbol 漏写百分号及提前自增溢出缺陷",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/843",
+    "working_days_open": 0
+  },
+  {
+    "iid": "842",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "ferdinandnanmi09",
+    "author_id": "6affa7981b014e09b03964f6",
+    "title": "CANN开发者共建计划--ge 修复 SwitchToStreamSwitchPass 解析 hccl_group_id 未校验 npos 导致截取异常",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/842",
+    "working_days_open": 0
+  },
+  {
+    "iid": "841",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "rawjiang",
+    "author_id": "6affa6569a8ca858dde7f8af",
+    "title": "CANN开发者共建计划--ge 修复定制参数区累加输出地址大小时错用 input_addr_size 导致越界",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/841",
+    "working_days_open": 0
+  },
+  {
+    "iid": "840",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "bigmurong08",
+    "author_id": "6affa51335fa763749e87ec2",
+    "title": "CANN开发者共建计划--ge 修复 BlockMemAssigner 连续内存类型自比较恒假导致冲突检测失效",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/840",
+    "working_days_open": 0
+  },
+  {
+    "iid": "839",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "octaviafong2007",
+    "author_id": "6affa3d2319a944fb28dee33",
+    "title": "CANN开发者共建计划--ge 修复 FlowModelSender::CacheLocalModel 子模型指针为空误判可本地缓存",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/839",
+    "working_days_open": 0
+  },
+  {
+    "iid": "838",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "kongpixel_2002",
+    "author_id": "6affa1c6b2ac1d166c74e650",
+    "title": "CANN开发者共建计划--ge 修复 FlowGwClient::IsExceptionGroup 端点查询为空误判为异常分组",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/838",
+    "working_days_open": 0
+  },
+  {
+    "iid": "837",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "shyhao09",
+    "author_id": "6affa0a49a8ca858dde7f5a0",
+    "title": "CANN开发者共建计划--ge 修复 GraphPrepare 输出类型判定判空反转及动态形状范围查找未判尾",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/837",
+    "working_days_open": 0
+  },
+  {
+    "iid": "836",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "dengprism0514",
+    "author_id": "6aff9f4bebcfc5505fd541dd",
+    "title": "CANN开发者共建计划--修复 PrunePass 中 IsTargetRefNode 遇空节点误返 true 干扰死节点剪枝",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/836",
+    "working_days_open": 0
+  },
+  {
+    "iid": "835",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "primehu1118",
+    "author_id": "6b00127aef431a7302c55aaa",
+    "title": "CANN开发者共建计划--ge 修复 RecomputeRewriting::AnyInNodeIsRecompute 空锚点或空前驱误判为重计算节点",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/835",
+    "working_days_open": 0
+  },
+  {
+    "iid": "834",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "haodroid_1021",
+    "author_id": "6aff9ca91b014e09b0395f9e",
+    "title": "CANN开发者共建计划--ge 修复 ModelCache::CompareVarDesc 变量管理器为空时误判缓存命中",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/834",
+    "working_days_open": 0
+  },
+  {
+    "iid": "833",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "2601_96006595",
+    "author_id": "6aff9b5735fa763749e87a1e",
+    "title": "CANN开发者共建计划--修复 FeGraphUtils::CheckRelatedEdgesOriginShape 三处空指针误判形状一致",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/833",
+    "working_days_open": 0
+  },
+  {
+    "iid": "832",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "songmatrix",
+    "author_id": "6aff9a3cef431a7302c51a80",
+    "title": "CANN开发者共建计划--ge 修复 CannKBUtils::InitCannKb 分配插件管理器异常时误返回 true",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/832",
+    "working_days_open": 0
+  },
+  {
+    "iid": "831",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "sonicwei13",
+    "author_id": "6aff9943b2ac1d166c74e237",
+    "title": "CANN开发者共建计划--ge 修复 TransNodeCheckAccuracySupported 算子库信息为空误判支持精度",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/831",
+    "working_days_open": 0
+  },
+  {
+    "iid": "830",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "boldguo",
+    "author_id": "6aff9894fea4b95582c8df26",
+    "title": "CANN开发者共建计划--修复 GenerateCMOTypeInvalid::IsLastPeerOutNode 对端锚点为空误返 true",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/830",
+    "working_days_open": 0
+  },
+  {
+    "iid": "829",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "glossylin",
+    "author_id": "6aff97ebf8b00e1b8c4ffcf8",
+    "title": "CANN开发者共建计划--ge 修复 TbeOpStoreAdapter 探测算子库安装接口指针为空时误返 true",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/829",
+    "working_days_open": 0
+  },
+  {
+    "iid": "828",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "bartholomewlin85",
+    "author_id": "6aff972e9a8ca858dde7f16c",
+    "title": "CANN开发者共建计划--修复 GraphFusion 中 JudgeUserQualified 与 IsCastOptimizable 八处判空反转",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/828",
+    "working_days_open": 0
+  },
+  {
+    "iid": "827",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "obsidianarrow",
+    "author_id": "6aff96db74b69a26e284e885",
+    "title": "CANN开发者共建计划--ge 修复 SplitOptimizeChecker 先解引用后判空及两处布尔校验返回语义反转",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/827",
+    "working_days_open": 0
+  },
+  {
+    "iid": "826",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "sullivan_jiang",
+    "author_id": "6aff967d9c992864332f44d9",
+    "title": "CANN开发者共建计划--ge 解决 ConcatTileFusionPass 对端节点为空误返 true 致融合模式误匹配",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/826",
+    "working_days_open": 0
+  },
+  {
+    "iid": "825",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "shidroid",
+    "author_id": "6aff962a74b69a26e284e82e",
+    "title": "CANN开发者共建计划--修正 GeSession::Impl 三个布尔状态查询接口空会话误返 true 缺陷",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/825",
+    "working_days_open": 0
+  },
+  {
+    "iid": "824",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "dama_",
+    "author_id": "6aff95d8425ce75d72402ba0",
+    "title": "CANN开发者共建计划--ge 修复 Session::IsGraphNeedRebuild 会话为空时误返回 true 触发无效重编",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/824",
+    "working_days_open": 0
+  },
+  {
+    "iid": "823",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "shengci0410",
+    "author_id": "6aff9586fea4b95582c8ddfa",
+    "title": "CANN开发者共建计划--ge 修复 LlmCommEntity 通信请求报错日志多传整型参数错配 %s 致段错误",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/823",
+    "working_days_open": 0
+  },
+  {
+    "iid": "822",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "binaryhawk",
+    "author_id": "6aff94fafea4b95582c8ddbe",
+    "title": "CANN开发者共建计划--ge 修复 StreamGraphOptimizer 优化失败断言日志漏传 ret 致字符串越界解引用",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/822",
+    "working_days_open": 0
+  },
+  {
+    "iid": "821",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "wuatlas0611",
+    "author_id": "6aff949d33910b7851363cb7",
+    "title": "CANN开发者共建计划--ge 修复 NoPaddingContinuousOutputNodeChecker 将字面量 0 传入 %s 导致空指针崩溃",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/821",
+    "working_days_open": 0
+  },
+  {
+    "iid": "820",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "2601_96006433",
+    "author_id": "6aff944035fa763749e87754",
+    "title": "CANN开发者共建计划--ge 修复 ExceptionDumper 三处转储失败日志实参顺序颠倒引发段错误",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/820",
+    "working_days_open": 0
+  },
+  {
+    "iid": "819",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "kuqin1988",
+    "author_id": "6aff93e81b014e09b0395c13",
+    "title": "CANN开发者共建计划--ge 修复 FlowFuncProcessor::DiscardAllInputData 动态转型队列未判空崩溃",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/819",
+    "working_days_open": 0
+  },
+  {
+    "iid": "818",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "qianghu_0906",
+    "author_id": "6aff9392ebcfc5505fd53d18",
+    "title": "CANN开发者共建计划--ge 修复 KernelBox 元数据收集对 LoadOp 执行 dynamic_cast 后未判空",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/818",
+    "working_days_open": 0
+  },
+  {
+    "iid": "817",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "dongji0509",
+    "author_id": "6aff933c74b69a26e284e74e",
+    "title": "CANN开发者共建计划--ge 修复 MarkRWTypeForSubgraphOutput 输入索引差一越界校验缺陷",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/817",
+    "working_days_open": 0
+  },
+  {
+    "iid": "816",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "archibaldwang09",
+    "author_id": "6aff92dfb2ac1d166c74e007",
+    "title": "CANN开发者共建计划--ge 修复 HostCpuEngine::LoadLib 初始化动态库失败时早退泄漏句柄",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/816",
+    "working_days_open": 0
+  },
+  {
+    "iid": "815",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "longxue0428",
+    "author_id": "6aff9287319a944fb28de6bf",
+    "title": "CANN开发者共建计划--修复 HcclSoManager::LoadSo 符号查找失败漏关闭句柄并污染加载状态",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/815",
+    "working_days_open": 0
+  },
+  {
+    "iid": "814",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "bingniu_tang",
+    "author_id": "6aff922d9a8ca858dde7eff9",
+    "title": "CANN开发者共建计划--ge 修复 FEGraphOptimizer 手动加锁后异常早退漏解锁引发永久死锁",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/814",
+    "working_days_open": 0
+  },
+  {
+    "iid": "813",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "staticrider_0108",
+    "author_id": "6aff91cfebcfc5505fd53ca7",
+    "title": "CANN开发者共建计划--ge 配置属性管理模块 `TrimStr` 无法去除带前导空格配置的尾部空白且纯空白串返回原值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/813",
+    "working_days_open": 0
+  },
+  {
+    "iid": "812",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "guoshield_0412",
+    "author_id": "6aff916e5cf02b48b29a7b5f",
+    "title": "CANN开发者共建计划--ge Host 数据转储解析非标准 `dump_step` 配置时发生向量越界访问且日志格式符错配",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/812",
+    "working_days_open": 0
+  },
+  {
+    "iid": "811",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "xingma1103",
+    "author_id": "6aff910f425ce75d72402a5b",
+    "title": "CANN开发者共建计划--离线模型生成器 `IsAllAicpuNodes` 返回 `GE_CHECK_NOTNULL` 与 `GRAPH_FAILED` 被隐式转成 `true`",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/811",
+    "working_days_open": 0
+  },
+  {
+    "iid": "810",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "opheliashen0606",
+    "author_id": "6aff90b833910b7851363b99",
+    "title": "CANN开发者共建计划--ge 单流 L2 显存分配器释放非 `MultiStreamMemBlock` 内存块时因转型空指针直接崩溃",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/810",
+    "working_days_open": 0
+  },
+  {
+    "iid": "809",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "lingke0805",
+    "author_id": "6aff905e74b69a26e284e67e",
+    "title": "CANN开发者共建计划--Concat+Slice 化简融合 Pass 先打印 `src_node->GetNamePtr()` 后执行 `GE_ASSERT_NOTNULL` 且漏判输出锚点",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/809",
+    "working_days_open": 0
+  },
+  {
+    "iid": "808",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "fengshupeng",
+    "author_id": "6aff9003b2ac1d166c74df33",
+    "title": "CANN开发者共建计划--ge 模型解析工具存在 `out_node` 先解引用后校验空指针及空图被误判为单算子图的双缺陷",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/808",
+    "working_days_open": 0
+  },
+  {
+    "iid": "807",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "tuxiongjin0605",
+    "author_id": "6aff8fa6319a944fb28de5cb",
+    "title": "CANN开发者共建计划--ge HCOM 算子内核构建器查 `AivSuperKernelMap*` 未校验 `end()` 直接解引用引发崩溃",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/807",
+    "working_days_open": 0
+  },
+  {
+    "iid": "806",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "crazymiao0516",
+    "author_id": "6aff8f3afea4b95582c8dbed",
+    "title": "CANN开发者共建计划--ge 数据切分适配器三个轴映射函数漏判 `cend()` 与负轴索引引发越界读和段错误",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/806",
+    "working_days_open": 0
+  },
+  {
+    "iid": "805",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "zhoufengyang",
+    "author_id": "6aff8ee1319a944fb28de5a4",
+    "title": "CANN开发者共建计划--ge 图融合替换校验 `CheckShape` 和 `CheckDataType` 遇空锚点返回 `true` 且缺链式判空",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/805",
+    "working_days_open": 0
+  },
+  {
+    "iid": "804",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "primebeacon1999",
+    "author_id": "6aff8e739c992864332f4253",
+    "title": "CANN开发者共建计划--ge 格式对称消除 Pass 四个布尔判定函数校验空指针失败错返 `true` 导致错误消除转置算子",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/804",
+    "working_days_open": 0
+  },
+  {
+    "iid": "803",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "yilongzhou1020",
+    "author_id": "6aff8e07ef431a7302c516e0",
+    "title": "CANN开发者共建计划--ge 执行图属性降低 `AppendTensor` 校验张量字节数不足时错误返回 `true` 造成属性缺失",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/803",
+    "working_days_open": 0
+  },
+  {
+    "iid": "802",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "shuailing_",
+    "author_id": "6aff8d955cf02b48b29a7a75",
+    "title": "CANN开发者共建计划--ge 构图添加 `NetOutput` 输入输出信息遇到空源节点指针时陷入死循环",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/802",
+    "working_days_open": 0
+  },
+  {
+    "iid": "801",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "baicao_song",
+    "author_id": "6aff8d0533910b7851363b08",
+    "title": "CANN开发者共建计划--ge 内存分配器执行 `SpanLayerLut::Recycle` 遇到无效层 ID 时陷入死循环",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/801",
+    "working_days_open": 0
+  },
+  {
+    "iid": "800",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "glacialzhuge83",
+    "author_id": "6aff8c8874b69a26e284e5b9",
+    "title": "CANN开发者共建计划--ge adaption_transpose_backward.h GELOGI 传入 3 个字符串参数但格式串仅含 2 个 %s",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/800",
+    "working_days_open": 0
+  },
+  {
+    "iid": "799",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "bradfordhan0401",
+    "author_id": "6aff8c1ab2ac1d166c74de89",
+    "title": "CANN开发者共建计划--ge symbolic_info_pre_processor.cc GELOGI 传入 graph->GetName() 却漏写 %s 占位符",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/799",
+    "working_days_open": 0
+  },
+  {
+    "iid": "798",
+    "state": "opened",
+    "created_at": "2026-11-21",
+    "closed_at": "",
+    "author": "adriancheng0211",
+    "author_id": "6aff8bc4ef431a7302c5168b",
+    "title": "CANN开发者共建计划--ge hcom_acl_adapter.cc hrtMemcpyAddrAsync 告警日志无占位符却多传返回码 ret",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/cann/ge/issues/798",
+    "working_days_open": 0
+  },
+  {
     "iid": "797",
     "state": "opened",
     "created_at": "2026-11-21",
@@ -11,9 +1057,10 @@
     "issue_type": "任务",
     "issue_state": "待办的",
     "assignees": [
-      "JerryJiao0628"
+      "JerryJiao0628",
+      "yuchen97"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/797",
     "working_days_open": 0
   },
@@ -29,9 +1076,10 @@
     "issue_type": "任务",
     "issue_state": "待办的",
     "assignees": [
-      "JerryJiao0628"
+      "JerryJiao0628",
+      "yuchen97"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/796",
     "working_days_open": 0
   },
@@ -47,9 +1095,10 @@
     "issue_type": "任务",
     "issue_state": "待办的",
     "assignees": [
-      "JerryJiao0628"
+      "JerryJiao0628",
+      "yuchen97"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/795",
     "working_days_open": 0
   },
@@ -65,9 +1114,10 @@
     "issue_type": "任务",
     "issue_state": "待办的",
     "assignees": [
-      "JerryJiao0628"
+      "JerryJiao0628",
+      "yuchen97"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/794",
     "working_days_open": 0
   },
@@ -87,7 +1137,7 @@
     "assignees": [
       "JerryJiao0628"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/793",
     "working_days_open": 1
   },
@@ -107,7 +1157,7 @@
     "assignees": [
       "JerryJiao0628"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/792",
     "working_days_open": 1
   },
@@ -127,7 +1177,7 @@
     "assignees": [
       "JerryJiao0628"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/791",
     "working_days_open": 1
   },
@@ -145,7 +1195,7 @@
     "assignees": [
       "JerryJiao0628"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/790",
     "working_days_open": 1
   },
@@ -160,8 +1210,10 @@
     "labels": [],
     "issue_type": "任务",
     "issue_state": "待办的",
-    "assignees": [],
-    "user_notes_count": 0,
+    "assignees": [
+      "likun104"
+    ],
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/789",
     "working_days_open": 1
   },
@@ -1492,17 +2544,18 @@
   },
   {
     "iid": "716",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-10",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
     "author": "cannteam",
     "author_id": "6a880a8934ce927a5bee227d",
     "title": "[L2] 各仓 master 存在 pre-commit ruff format 历史欠账，单行修复被整文件格式化判红",
     "labels": [
-      "requirement"
+      "requirement",
+      "resolved"
     ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "wuzheng-hw"
     ],

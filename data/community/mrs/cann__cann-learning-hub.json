@@ -1,5 +1,45 @@
 [
   {
+    "iid": 1589,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(ai_computing_embedded_system): 移除 Lab4_1 中指向不存在图片的引用",
+    "created_at": "2026-11-21",
+    "updated_at": "2026-11-21",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "gcw_uZ9OegMF",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1589",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "1075"
+    ]
+  },
+  {
+    "iid": 1588,
+    "state": "closed",
+    "draft": false,
+    "title": "ci: JOB_pre 补齐 permissions(id-token: write) 配套 pre_action OIDC 化",
+    "created_at": "2026-11-21",
+    "updated_at": "2026-11-21",
+    "merged_at": "",
+    "closed_at": "2026-11-21",
+    "author": "cui_jiahao",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1588",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "216"
+    ]
+  },
+  {
     "iid": 1587,
     "state": "opened",
     "draft": false,
@@ -154,7 +194,7 @@
     "draft": false,
     "title": "fix(tutorial): 为 03.02 测试代码复制补充 rm -rf 前置清理，避免重复执行",
     "created_at": "2026-11-20",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-21",
     "merged_at": "",
     "closed_at": "",
     "author": "hw_0086_hrf",
@@ -172,7 +212,7 @@
     "draft": false,
     "title": "[Docs] 修正 03.06 章节练习骨架中误用的 aclnnAdd 日志文案",
     "created_at": "2026-11-20",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-21",
     "merged_at": "",
     "closed_at": "",
     "author": "hw_0086_hrf",
@@ -213,15 +253,14 @@
     "draft": false,
     "title": "fix(nearlink): reject invalid MAC bit arrays",
     "created_at": "2026-11-20",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-22",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_7YtSi70C",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1577",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-failed",
-      "stat/needs-squash"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -232,15 +271,14 @@
     "draft": false,
     "title": "fix(nearlink): handle null equalizer bins safely",
     "created_at": "2026-11-20",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-22",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_7YtSi70C",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1576",
     "labels": [
-      "cann-cla/yes",
-      "ci-pipeline-failed",
-      "stat/needs-squash"
+      "ci-pipeline-passed",
+      "cann-cla/yes"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -251,15 +289,14 @@
     "draft": false,
     "title": "fix(nearlink): validate resolvable address marker",
     "created_at": "2026-11-20",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-22",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_7YtSi70C",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1575",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-failed",
-      "stat/needs-squash"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -270,15 +307,14 @@
     "draft": false,
     "title": "fix(nearlink): validate antenna shuffle capacity",
     "created_at": "2026-11-20",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-22",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_7YtSi70C",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1574",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-failed",
-      "stat/needs-squash"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -289,15 +325,14 @@
     "draft": false,
     "title": "fix(nearlink): reject truncated broadcast records",
     "created_at": "2026-11-20",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-22",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_7YtSi70C",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1573",
     "labels": [
-      "ci-pipeline-failed",
       "cann-cla/yes",
-      "stat/needs-squash"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -308,15 +343,14 @@
     "draft": false,
     "title": "fix(nearlink): preserve odd PSK payload bits",
     "created_at": "2026-11-20",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-22",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_7YtSi70C",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1572",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-failed",
-      "stat/needs-squash"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -1045,12 +1079,13 @@
     "author": "WforovZ",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1536",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed",
-      "stat/needs-squash"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 4,
     "e2e_issues": [
+      "707",
       "620"
     ]
   },
@@ -1532,7 +1567,7 @@
     "draft": false,
     "title": "docs: close unclosed code fence in 04_reduce priority queue README",
     "created_at": "2026-11-16",
-    "updated_at": "2026-11-17",
+    "updated_at": "2026-11-21",
     "merged_at": "",
     "closed_at": "",
     "author": "JerryJiao0628",
@@ -1692,7 +1727,7 @@
     "draft": false,
     "title": "[Docs] 修正 SECURITY.md 中不存在的依赖路径与 Unicode 权限符号",
     "created_at": "2026-11-16",
-    "updated_at": "2026-11-19",
+    "updated_at": "2026-11-21",
     "merged_at": "",
     "closed_at": "",
     "author": "hw_0086_hrf",
@@ -1925,13 +1960,13 @@
   },
   {
     "iid": 1494,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[Docs] 修正 03.06 章节练习骨架中误用的 aclnnAdd 日志文案",
     "created_at": "2026-11-15",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-21",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
     "author": "hw_0086_hrf",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1494",
     "labels": [
@@ -2075,7 +2110,7 @@
     "draft": false,
     "title": "docs: 修正 README 目录结构中技术博客数量统计",
     "created_at": "2026-11-14",
-    "updated_at": "2026-11-14",
+    "updated_at": "2026-11-21",
     "merged_at": "",
     "closed_at": "",
     "author": "hensyyang",
@@ -3798,7 +3833,7 @@
     "draft": false,
     "title": "fix: 传递YOLOv13运行脚本命令行参数",
     "created_at": "2026-11-01",
-    "updated_at": "2026-11-18",
+    "updated_at": "2026-11-21",
     "merged_at": "",
     "closed_at": "",
     "author": "Ethan_Zou",
@@ -6821,7 +6856,7 @@
     "draft": false,
     "title": "fix: reject subset outputs that would remove source data",
     "created_at": "2026-10-14",
-    "updated_at": "2026-11-18",
+    "updated_at": "2026-11-21",
     "merged_at": "",
     "closed_at": "",
     "author": "Ethan_Zou",
@@ -6841,7 +6876,7 @@
     "draft": false,
     "title": "fix: resolve VOC image targets before creating symlinks",
     "created_at": "2026-10-14",
-    "updated_at": "2026-11-18",
+    "updated_at": "2026-11-22",
     "merged_at": "",
     "closed_at": "",
     "author": "Ethan_Zou",
@@ -6861,7 +6896,7 @@
     "draft": false,
     "title": "fix: verify scheduled events and shared pipeline resources",
     "created_at": "2026-10-14",
-    "updated_at": "2026-11-18",
+    "updated_at": "2026-11-22",
     "merged_at": "",
     "closed_at": "",
     "author": "Ethan_Zou",
@@ -7329,13 +7364,12 @@
     "draft": false,
     "title": "fix(cannjudge): validate manifests in resolved project roots",
     "created_at": "2026-10-12",
-    "updated_at": "2026-11-19",
+    "updated_at": "2026-11-22",
     "merged_at": "",
     "closed_at": "",
     "author": "Ethan_Zou",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1219",
     "labels": [
-      "approved",
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
@@ -7997,13 +8031,13 @@
   },
   {
     "iid": 1184,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix(scripts): 将 4 个 shell 脚本的 CRLF 行尾统一为 LF",
     "created_at": "2026-10-09",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-21",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
     "author": "hw_0086_hrf",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1184",
     "labels": [
@@ -8017,13 +8051,13 @@
   },
   {
     "iid": 1183,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix(tutorial): 为 03.02 测试代码复制补充 rm -rf 前置清理，避免重复执行时目录嵌套",
     "created_at": "2026-10-09",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-21",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
     "author": "hw_0086_hrf",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1183",
     "labels": [

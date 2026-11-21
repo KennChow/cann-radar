@@ -1,17 +1,63 @@
 [
   {
-    "iid": "219",
-    "state": "opened",
+    "iid": "221",
+    "state": "closed",
     "created_at": "2026-11-21",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
+    "author": "mystri",
+    "author_id": "68d8d3431331e546a2648f95",
+    "title": "[Bug-Report|缺陷反馈]: 直接 pytest 与 CI 的 Triton smoke 跳过行为不一致",
+    "labels": [
+      "resolved",
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "mystri"
+    ],
+    "user_notes_count": 3,
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/221",
+    "working_days_open": 0
+  },
+  {
+    "iid": "220",
+    "state": "closed",
+    "created_at": "2026-11-21",
+    "closed_at": "2026-11-21",
+    "author": "shengnan666",
+    "author_id": "68529c53ad189e7497d49a96",
+    "title": "[Bug-Report|缺陷反馈]:md文档之间互相链接时，建议使用相对路径，避免镜像仓跳转回gitcode",
+    "labels": [
+      "resolved",
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "xuyujun"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/220",
+    "working_days_open": 0
+  },
+  {
+    "iid": "219",
+    "state": "closed",
+    "created_at": "2026-11-21",
+    "closed_at": "2026-11-21",
     "author": "JerryJiao0628",
     "author_id": "672d6aa8fbbddc0c2008a855",
     "title": "[Docs] override README 的入口清单与目录树未同步代码",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
-    "assignees": [],
-    "user_notes_count": 0,
+    "issue_state": "已完成",
+    "assignees": [
+      "zhaowei1936"
+    ],
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/219",
     "working_days_open": 0
   },
@@ -35,37 +81,41 @@
   },
   {
     "iid": "217",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-17",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
     "author": "gxhgxh2475698",
     "author_id": "671a465c4af15e11abd4ff3b",
     "title": "[Documentation|文档反馈]: override 指南仍使用已删除的 checkpoint 入口",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "zhaowei1936"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/217",
     "working_days_open": 4
   },
   {
     "iid": "216",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-17",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
     "author": "gxhgxh2475698",
     "author_id": "671a465c4af15e11abd4ff3b",
     "title": "[Bug-Report|缺陷反馈]: 单机启动器覆盖 A5 示例和用户设置的 HCCL 连接超时",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "zhaowei1936"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/216",
     "working_days_open": 4
   },
@@ -89,15 +139,17 @@
   },
   {
     "iid": "214",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-17",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
     "author": "gxhgxh2475698",
     "author_id": "671a465c4af15e11abd4ff3b",
     "title": "[Bug-Report|缺陷反馈]: 无限容差下非有限 TensorBoard 指标可能被误判通过",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "hitwdy"
     ],
@@ -107,87 +159,97 @@
   },
   {
     "iid": "213",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-16",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
     "author": "mystri",
     "author_id": "68d8d3431331e546a2648f95",
     "title": "[Bug] DeepSeek V4 LoRA 测试引用已移除的 ParamSwapConfig 导出",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "mystri"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/213",
     "working_days_open": 5
   },
   {
     "iid": "212",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-16",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
     "author": "mystri",
     "author_id": "68d8d3431331e546a2648f95",
     "title": "[Docs] DeepSeek V3 单卡快速上手未说明 RoPE 兼容实现",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "mystri"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/212",
     "working_days_open": 5
   },
   {
     "iid": "211",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-16",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
     "author": "mystri",
     "author_id": "68d8d3431331e546a2648f95",
     "title": "[Docs] 安装指南遗漏 Triton-Ascend 运行时 C++ 编译器前提",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "mystri"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/211",
     "working_days_open": 5
   },
   {
     "iid": "210",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-16",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
     "author": "mystri",
     "author_id": "68d8d3431331e546a2648f95",
     "title": "[Bug] PyArrow 26 与 Triton-Ascend 固定的 NumPy 1.26.4 不兼容",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "mystri"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/210",
     "working_days_open": 5
   },
   {
     "iid": "209",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-14",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
     "author": "liangjinxuan-2026",
     "author_id": "6903114ff366cf1f50b9df1b",
     "title": "CANN 开发者共建计划 - docs: 安装配套表与 TorchTitan 固定版本不一致",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "liangjinxuan-2026"
     ],
@@ -207,7 +269,7 @@
       "bug-report"
     ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "挂起",
     "assignees": [
       "xuyujun"
     ],
@@ -282,7 +344,9 @@
     "labels": [],
     "issue_type": "任务",
     "issue_state": "已拒绝",
-    "assignees": [],
+    "assignees": [
+      "mystri"
+    ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/204",
     "working_days_open": 10
@@ -372,15 +436,17 @@
   },
   {
     "iid": "199",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-08",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
     "author": "jingkai-2026",
     "author_id": "6732051b21ac1d58ee853d9f",
     "title": "CANN开发者共建计划--qwen3_5 文档安装的 torchvision nightly 版本与 requirements 及仓内单测冲突",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "文档",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "jingkai-2026",
       "botcanlearn"
@@ -617,15 +683,17 @@
   },
   {
     "iid": "182",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-29",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
     "author": "qiuqiuyahhhh",
     "author_id": "6637ae3ae9df6d5a496ab5ff",
     "title": "[Documentation|文档反馈]: checkpoint 指南中的 DSV4 示例未指定对应模型与 tokenizer",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "hwcaifubi",
       "jiangna1111"
@@ -636,15 +704,17 @@
   },
   {
     "iid": "181",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-29",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
     "author": "qiuqiuyahhhh",
     "author_id": "6637ae3ae9df6d5a496ab5ff",
     "title": "[Documentation|文档反馈]: DeepSeek-V4 Debug checkpoint 导出与加载示例路径不一致",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "hwcaifubi",
       "jiangna1111"
@@ -1005,20 +1075,22 @@
   },
   {
     "iid": "162",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-14",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
     "author": "Ethan_Zou",
     "author_id": "67fb64ad2cb7f0133f7efecc",
     "title": "[Documentation|文档反馈]: Profiling指南把SQLite数据库指给Chrome Tracing查看",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "Ethan_Zou",
       "hwcaifubi"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/162",
     "working_days_open": 28
   },
@@ -1720,9 +1792,9 @@
   },
   {
     "iid": "122",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-20",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
     "author": "gcw_Z57idahf",
     "author_id": "6a9a202b63ecda5a857cfa43",
     "title": "[Bug-Report|缺陷反馈]: checkpoint hash manifest 忽略未登记的额外文件",
@@ -1730,12 +1802,12 @@
       "bug-report"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "hwcaifubi",
       "gcw_Z57idahf"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/122",
     "working_days_open": 41
   },
@@ -1916,19 +1988,19 @@
   },
   {
     "iid": "112",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-09-01",
-    "closed_at": "",
+    "closed_at": "2026-11-21",
     "author": "leedongkun30-arch",
     "author_id": "68f5efcbc9b4ed70dd5120dd",
     "title": "[RFC] DeepSeek-V4 单节点轻量微调：LoRA、显存节省与专家放置 / Single-node lightweight fine-tuning: LoRA, memory saving and expert placement",
     "labels": [],
     "issue_type": "需求",
-    "issue_state": "待办的",
+    "issue_state": "已解决",
     "assignees": [
       "leedongkun30-arch"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/112",
     "working_days_open": 55
   },
@@ -2124,7 +2196,7 @@
       "requirement"
     ],
     "issue_type": "任务",
-    "issue_state": "已完成",
+    "issue_state": "已拒绝",
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/torchtitan-npu/issues/101",

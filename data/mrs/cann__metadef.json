@@ -1,5 +1,39 @@
 [
   {
+    "iid": 783,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】:  sync develop to master 20261121",
+    "created_at": "2026-11-21",
+    "updated_at": "2026-11-21",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Jett_Woo",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/783",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 782,
+    "state": "closed",
+    "draft": false,
+    "title": "ci: 入口 job 补齐 permissions(id-token: write) + obs 步骤 OIDC 化",
+    "created_at": "2026-11-21",
+    "updated_at": "2026-11-21",
+    "merged_at": "",
+    "closed_at": "2026-11-21",
+    "author": "cui_jiahao",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/782",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 781,
     "state": "opened",
     "draft": false,
@@ -64,19 +98,21 @@
   },
   {
     "iid": 778,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【PR】:  sync develop to master 20261120",
     "created_at": "2026-11-20",
-    "updated_at": "2026-11-20",
-    "merged_at": "",
+    "updated_at": "2026-11-21",
+    "merged_at": "2026-11-21",
     "closed_at": "",
     "author": "Jett_Woo",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/778",
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -366,14 +402,15 @@
     "draft": false,
     "title": "fix: 清理codecheck告警（gert_tensor_data.h补齐直接include保证头文件自包含）",
     "created_at": "2026-11-20",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-21",
     "merged_at": "",
     "closed_at": "",
     "author": "yelongjian",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/763",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -641,14 +678,15 @@
     "draft": false,
     "title": "feat: 恢复 OpDef InferSymbol 注册并将新增成员置于末尾",
     "created_at": "2026-11-18",
-    "updated_at": "2026-11-18",
+    "updated_at": "2026-11-21",
     "merged_at": "",
     "closed_at": "",
     "author": "xiebangrui2025",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/750",
     "labels": [
       "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 3,
     "e2e_issues": []
@@ -1802,19 +1840,20 @@
   },
   {
     "iid": 693,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix: avoid null allocator dereference in workspace cleanup",
     "created_at": "2026-11-09",
-    "updated_at": "2026-11-20",
-    "merged_at": "",
+    "updated_at": "2026-11-21",
+    "merged_at": "2026-11-21",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/693",
     "labels": [
       "lgtm",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed",
+      "approved"
     ],
     "working_days_open": 10,
     "e2e_issues": [

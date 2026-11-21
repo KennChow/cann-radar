@@ -1,5 +1,80 @@
 [
   {
+    "iid": 1555,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: ADXL 断链复用建链长连接并按连接身份销毁",
+    "created_at": "2026-11-21",
+    "updated_at": "2026-11-21",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhaozhihui",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1555",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1554,
+    "state": "merged",
+    "draft": false,
+    "title": "[bugfix]: 将Host RoCE默认传输批次调整为1022",
+    "created_at": "2026-11-21",
+    "updated_at": "2026-11-21",
+    "merged_at": "2026-11-21",
+    "closed_at": "",
+    "author": "jiazhaoyang",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1554",
+    "labels": [
+      "approved",
+      "lgtm",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1553,
+    "state": "opened",
+    "draft": false,
+    "title": "ci: 入口 job 补齐 permissions(id-token: write) + obs 步骤 OIDC 化",
+    "created_at": "2026-11-21",
+    "updated_at": "2026-11-21",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "cui_jiahao",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1553",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1552,
+    "state": "merged",
+    "draft": false,
+    "title": "fix: 锁存传输错误并允许资源不足后重试",
+    "created_at": "2026-11-21",
+    "updated_at": "2026-11-21",
+    "merged_at": "2026-11-21",
+    "closed_at": "",
+    "author": "jiazhaoyang",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1552",
+    "labels": [
+      "approved",
+      "lgtm",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1551,
     "state": "opened",
     "draft": false,
@@ -56,7 +131,8 @@
     "labels": [
       "cann-cla/yes",
       "ai-co-authored",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -80,7 +156,8 @@
       "cann-cla/yes",
       "ai-includes-code",
       "ai-compliance-successful",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm"
     ],
     "working_days_open": 0,
     "e2e_issues": [
@@ -121,6 +198,7 @@
     "author": "JerryJiao0628",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1546",
     "labels": [
+      "lgtm",
       "cann-cla/yes",
       "ai-co-authored",
       "ci-pipeline-passed"
@@ -142,6 +220,7 @@
     "author": "JerryJiao0628",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1545",
     "labels": [
+      "lgtm",
       "ai-co-authored",
       "cann-cla/yes",
       "ci-pipeline-passed"
@@ -155,15 +234,16 @@
     "iid": 1544,
     "state": "opened",
     "draft": false,
-    "title": "fix: 销毁发起后拒绝 CS client 排队传输并锁存传输错误",
+    "title": "fix: 销毁发起后拒绝排队传输并允许资源不足后重试",
     "created_at": "2026-11-20",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-21",
     "merged_at": "",
     "closed_at": "",
     "author": "jiazhaoyang",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1544",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -192,9 +272,9 @@
     "iid": 1542,
     "state": "opened",
     "draft": true,
-    "title": "[WIP]: add connect benchmarks with A3 HCCS and RoCE support",
+    "title": "[WIP]: add connect benchmarks with A3 support and channel timing",
     "created_at": "2026-11-19",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-21",
     "merged_at": "",
     "closed_at": "",
     "author": "jiazhaoyang",
@@ -288,12 +368,13 @@
     "draft": false,
     "title": "[bugfix]: reject unknown performance report platforms",
     "created_at": "2026-11-19",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-21",
     "merged_at": "",
     "closed_at": "",
     "author": "shiguangke",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1537",
     "labels": [
+      "lgtm",
       "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed"
@@ -390,7 +471,7 @@
     "draft": false,
     "title": "[docs]: 添加 HCCL-VM 运行 HiXL communication benchmark 教程",
     "created_at": "2026-11-17",
-    "updated_at": "2026-11-19",
+    "updated_at": "2026-11-21",
     "merged_at": "",
     "closed_at": "",
     "author": "jiazhaoyang",
@@ -398,7 +479,8 @@
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm"
     ],
     "working_days_open": 4,
     "e2e_issues": []
@@ -586,7 +668,7 @@
     "draft": true,
     "title": "[WIP] [feat]: 增加可选 native Host RoCE 与 HBM 完成确认",
     "created_at": "2026-11-16",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-21",
     "merged_at": "",
     "closed_at": "",
     "author": "youyx",
@@ -894,15 +976,15 @@
     "draft": false,
     "title": "[feat]: named engine 元数据交换 ExportLocalMD/ImportRemoteMD 完整实现（#1011）",
     "created_at": "2026-11-11",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-21",
     "merged_at": "",
     "closed_at": "",
     "author": "tangjie66",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1507",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed",
-      "stat/needs-squash"
+      "ci-pipeline-failed"
     ],
     "working_days_open": 8,
     "e2e_issues": [
@@ -978,18 +1060,20 @@
   },
   {
     "iid": 1503,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[feat]: CS 完成通知改造为 pool 级 device flag + aclrtValueWait / aclrtValueWrite",
     "created_at": "2026-11-09",
-    "updated_at": "2026-11-20",
-    "merged_at": "",
+    "updated_at": "2026-11-21",
+    "merged_at": "2026-11-21",
     "closed_at": "",
     "author": "hanyinglong_qaq",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1503",
     "labels": [
-      "stat/needs-squash",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 10,
     "e2e_issues": [
@@ -2489,7 +2573,7 @@
     "draft": false,
     "title": "[refactor]: 服务端使用单线程异步推进 Channel 建链",
     "created_at": "2026-10-20",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-21",
     "merged_at": "",
     "closed_at": "",
     "author": "jiazhaoyang",
@@ -12837,7 +12921,7 @@
     "draft": false,
     "title": "feat: 支持配置每批最大传输数量及队列深度(#559)",
     "created_at": "2026-08-20",
-    "updated_at": "2026-11-06",
+    "updated_at": "2026-11-21",
     "merged_at": "2026-09-14",
     "closed_at": "",
     "author": "jiazhaoyang",
