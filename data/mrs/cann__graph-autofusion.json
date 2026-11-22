@@ -1,5 +1,24 @@
 [
   {
+    "iid": 3152,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: 修复静态 GE PGO 采样匹配与回放回退",
+    "created_at": "2026-11-22",
+    "updated_at": "2026-11-23",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhang_shengjie",
+    "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/3152",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 3151,
     "state": "merged",
     "draft": false,
@@ -1748,14 +1767,14 @@
     "draft": false,
     "title": "docs(autofuse): activate the PyTorch environment before running samples",
     "created_at": "2026-11-18",
-    "updated_at": "2026-11-18",
+    "updated_at": "2026-11-22",
     "merged_at": "",
     "closed_at": "",
     "author": "gxhgxh2475698",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/3063",
     "labels": [
-      "ci-pipeline-passed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 3,
     "e2e_issues": [
@@ -2586,15 +2605,15 @@
     "draft": false,
     "title": "fix: clear SuperKernel pre-commit blockers",
     "created_at": "2026-11-17",
-    "updated_at": "2026-11-17",
+    "updated_at": "2026-11-23",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/3021",
     "labels": [
       "stat/needs-squash",
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-failed",
+      "cann-cla/yes"
     ],
     "working_days_open": 4,
     "e2e_issues": []
@@ -3816,7 +3835,7 @@
     "labels": [
       "enhancement",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 6,
     "e2e_issues": []
@@ -12095,15 +12114,15 @@
     "draft": false,
     "title": "fix: clear SuperKernel Ruff diagnostics and format files",
     "created_at": "2026-10-15",
-    "updated_at": "2026-11-13",
+    "updated_at": "2026-11-23",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2542",
     "labels": [
       "stat/needs-squash",
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-failed",
+      "cann-cla/yes"
     ],
     "working_days_open": 27,
     "e2e_issues": []
@@ -15017,15 +15036,15 @@
     "draft": false,
     "title": "fix: truncate reused SuperKernel source files",
     "created_at": "2026-09-27",
-    "updated_at": "2026-11-17",
+    "updated_at": "2026-11-23",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2399",
     "labels": [
       "stat/needs-squash",
-      "cann-cla/yes",
-      "ci-pipeline-failed"
+      "ci-pipeline-passed",
+      "cann-cla/yes"
     ],
     "working_days_open": 36,
     "e2e_issues": [
@@ -15210,14 +15229,15 @@
     "draft": false,
     "title": "fix: propagate graph pass failures from BasePassRunner",
     "created_at": "2026-09-26",
-    "updated_at": "2026-11-04",
+    "updated_at": "2026-11-23",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/graph-autofusion/merge_requests/2390",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-failed"
     ],
     "working_days_open": 36,
     "e2e_issues": [
@@ -26998,7 +27018,7 @@
     "draft": false,
     "title": "[Fix] 检查 SuperKernel 动态子 Kernel 拆分命令返回码",
     "created_at": "2026-08-24",
-    "updated_at": "2026-11-04",
+    "updated_at": "2026-11-23",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -27006,8 +27026,8 @@
     "labels": [
       "api-check-pass",
       "stat/needs-squash",
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "cann-cla/yes"
     ],
     "working_days_open": 61,
     "e2e_issues": [

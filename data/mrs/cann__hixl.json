@@ -1,5 +1,22 @@
 [
   {
+    "iid": 1556,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: 等待全部异步子请求结束并加固客户端并发断链、状态查询与在途传输取消",
+    "created_at": "2026-11-22",
+    "updated_at": "2026-11-22",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "youyx",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1556",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
     "iid": 1555,
     "state": "opened",
     "draft": false,
@@ -145,14 +162,13 @@
     "draft": false,
     "title": "[bugfix]: 修复 Python 样例 argparse 的 --role 默认值与 --is_single 真值判断",
     "created_at": "2026-11-21",
-    "updated_at": "2026-11-21",
+    "updated_at": "2026-11-22",
     "merged_at": "",
     "closed_at": "",
     "author": "JerryJiao0628",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1548",
     "labels": [
       "ai-co-authored",
-      "ai-compliance-failed",
       "cann-cla/yes",
       "ai-includes-code",
       "ai-compliance-successful",
@@ -665,16 +681,17 @@
   {
     "iid": 1522,
     "state": "opened",
-    "draft": true,
-    "title": "[WIP] [feat]: 增加可选 native Host RoCE 与 HBM 完成确认",
+    "draft": false,
+    "title": "[feat]: 增加可选 native Host RoCE 与 HBM 完成确认",
     "created_at": "2026-11-16",
-    "updated_at": "2026-11-21",
+    "updated_at": "2026-11-22",
     "merged_at": "",
     "closed_at": "",
     "author": "youyx",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1522",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -976,7 +993,7 @@
     "draft": false,
     "title": "[feat]: named engine 元数据交换 ExportLocalMD/ImportRemoteMD 完整实现（#1011）",
     "created_at": "2026-11-11",
-    "updated_at": "2026-11-21",
+    "updated_at": "2026-11-22",
     "merged_at": "",
     "closed_at": "",
     "author": "tangjie66",

@@ -1,16 +1,89 @@
 [
   {
-    "iid": 1339,
+    "iid": 1343,
     "state": "opened",
+    "draft": true,
+    "title": "[WIP][feat] 按本地查询分片构建 DeepSeek 量化稀疏算子记录",
+    "created_at": "2026-11-22",
+    "updated_at": "2026-11-22",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lrwei0709",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1343",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1342,
+    "state": "opened",
+    "draft": true,
+    "title": "[WIP][feat] 支持 DeepSeek-V4 和 V4.1 的 BF16 逐文档上下文并行",
+    "created_at": "2026-11-22",
+    "updated_at": "2026-11-22",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lrwei0709",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1342",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1341,
+    "state": "opened",
+    "draft": true,
+    "title": "[WIP][refactor] 统一 DeepSeek-V4 和 V4.1 的稀疏 Attention 与 Indexer 接口",
+    "created_at": "2026-11-22",
+    "updated_at": "2026-11-22",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lrwei0709",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1341",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1340,
+    "state": "opened",
+    "draft": true,
+    "title": "[WIP] 重构分支支持DeepSeek-V4/DeepSeek-V4.1序列切分",
+    "created_at": "2026-11-22",
+    "updated_at": "2026-11-22",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "lrwei0709",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1340",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1339,
+    "state": "merged",
     "draft": false,
     "title": "[fix] Restore DeepSeek-V4 LoRA integration and address review",
     "created_at": "2026-11-21",
-    "updated_at": "2026-11-21",
-    "merged_at": "",
+    "updated_at": "2026-11-22",
+    "merged_at": "2026-11-22",
     "closed_at": "",
     "author": "mystri",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1339",
     "labels": [
+      "lgtm",
       "stat/needs-squash",
       "cann-cla/yes",
       "approved",
@@ -21,13 +94,13 @@
   },
   {
     "iid": 1338,
-    "state": "opened",
+    "state": "closed",
     "draft": true,
     "title": "[WIP][fix] Restore DeepSeek-V4 LoRA integration and address review",
     "created_at": "2026-11-21",
-    "updated_at": "2026-11-21",
+    "updated_at": "2026-11-22",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-11-22",
     "author": "mystri",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1338",
     "labels": [
@@ -40,13 +113,13 @@
   },
   {
     "iid": 1337,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix/pr1311-review-comments",
     "created_at": "2026-11-21",
-    "updated_at": "2026-11-21",
+    "updated_at": "2026-11-22",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-11-22",
     "author": "mystri",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1337",
     "labels": [],
@@ -95,13 +168,14 @@
     "draft": false,
     "title": "[docs] 同步 override README 的入口清单、目录树与 checkpoint 小节到代码",
     "created_at": "2026-11-21",
-    "updated_at": "2026-11-21",
+    "updated_at": "2026-11-22",
     "merged_at": "",
     "closed_at": "",
     "author": "zhaowei1936",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1334",
     "labels": [
       "cann-cla/yes",
+      "stat/needs-squash",
       "ci-pipeline-passed"
     ],
     "working_days_open": 0,
@@ -550,12 +624,13 @@
     "draft": false,
     "title": "[fix] Restore DeepSeek-V4 LoRA integration recipes",
     "created_at": "2026-11-18",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-22",
     "merged_at": "",
     "closed_at": "",
     "author": "leedongkun30-arch",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1311",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
       "ci-pipeline-passed"
     ],
@@ -837,14 +912,14 @@
     "draft": false,
     "title": "[refactor] cpu-offload-dev040-suit",
     "created_at": "2026-11-17",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-22",
     "merged_at": "",
     "closed_at": "",
     "author": "YueGuoDora",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1297",
     "labels": [
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 4,
     "e2e_issues": []
@@ -1089,15 +1164,15 @@
     "draft": true,
     "title": "[WIP][refactor] Investigate dev_0.4.0 CI from fork against master",
     "created_at": "2026-11-16",
-    "updated_at": "2026-11-21",
+    "updated_at": "2026-11-22",
     "merged_at": "",
     "closed_at": "",
     "author": "mystri",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1284",
     "labels": [
       "stat/needs-squash",
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 5,
     "e2e_issues": []
