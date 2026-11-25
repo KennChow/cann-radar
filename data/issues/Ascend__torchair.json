@@ -1,5 +1,143 @@
 [
   {
+    "iid": "1035",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "chenweiheng",
+    "author_id": "69002a852ca35d2a0db4ec72",
+    "title": "[Bug]:融合kernel命名在有算子延迟物化情况下，会产生虚标命名",
+    "labels": [
+      "bug"
+    ],
+    "issue_type": "Bug-Report",
+    "issue_state": "TODO",
+    "assignees": [
+      "chenweiheng"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/1035",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1034",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "looop5",
+    "author_id": "68087c65ece4e4654712efa6",
+    "title": "[精度参考] HF32 模式下 Eager 与 AF 编译模式精度差异分析及排查指引",
+    "labels": [
+      "bug"
+    ],
+    "issue_type": "Bug-Report",
+    "issue_state": "TODO",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/1034",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1033",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "LyriCheng",
+    "author_id": "67fe31bf88e7c46e3ad86734",
+    "title": "[Bug]: npugraph_ex 捕获的 ACL 图没有正常释放入口，reset_captured_graph 只在容量上限回退时被调用",
+    "labels": [
+      "bug"
+    ],
+    "issue_type": "Bug-Report",
+    "issue_state": "TODO",
+    "assignees": [
+      "LyriCheng"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/1033",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1032",
+    "state": "closed",
+    "created_at": "2026-11-24",
+    "closed_at": "2026-11-24",
+    "author": "yurongkun",
+    "author_id": "68da2328c9e33e3d8f425e06",
+    "title": "[Bug]: smoke用例修复",
+    "labels": [
+      "resolved",
+      "bug"
+    ],
+    "issue_type": "Bug-Report",
+    "issue_state": "DONE",
+    "assignees": [
+      "yurongkun"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/1032",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1031",
+    "state": "closed",
+    "created_at": "2026-11-24",
+    "closed_at": "2026-11-24",
+    "author": "ling-DT",
+    "author_id": "6822c1d1096b0e7b44aa5974",
+    "title": "[Bug]: GMM + ReLU smoke 无参数启动时因缺少 --output 退出",
+    "labels": [
+      "resolved",
+      "bug"
+    ],
+    "issue_type": "Bug-Report",
+    "issue_state": "DONE",
+    "assignees": [
+      "ling-DT"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/1031",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1030",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "LyriCheng",
+    "author_id": "67fe31bf88e7c46e3ad86734",
+    "title": "[Bug]: npugraph_ex 的 data dump 只保存根图，控制流分支体内的中间张量全部缺失",
+    "labels": [
+      "bug"
+    ],
+    "issue_type": "Bug-Report",
+    "issue_state": "TODO",
+    "assignees": [
+      "LyriCheng"
+    ],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/1030",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1029",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "w30088736",
+    "author_id": "6720bbd0a892cc606dc86f97",
+    "title": "[Bug]: 目前的 ci 更改仍会运行PR门禁中的 build 和 ut 任务，容易出现死锁情况",
+    "labels": [
+      "bug"
+    ],
+    "issue_type": "Bug-Report",
+    "issue_state": "TODO",
+    "assignees": [],
+    "user_notes_count": 0,
+    "web_url": "https://gitcode.com/Ascend/torchair/issues/1029",
+    "working_days_open": 1
+  },
+  {
     "iid": "1028",
     "state": "closed",
     "created_at": "2026-11-23",
@@ -117,17 +255,18 @@
   },
   {
     "iid": "1022",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-23",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "XianyongWang",
     "author_id": "6a5f313356f0526d3724378d",
     "title": "[Bug]: QuantConv2D 图模式 hifloat8 输出构图失败：The data type DT_COMPLEX32 of the output y is not supported",
     "labels": [
-      "bug"
+      "bug",
+      "resolved"
     ],
     "issue_type": "Bug-Report",
-    "issue_state": "TODO",
+    "issue_state": "DONE",
     "assignees": [],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/Ascend/torchair/issues/1022",
@@ -135,17 +274,18 @@
   },
   {
     "iid": "1021",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-23",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "weixin_44016285",
     "author_id": "66ab9e3aff9995601d7bfb01",
     "title": "[Bug]:PyTorch 2.15 下动态 view 优化回退，GE 图多生成 3 个 Reshape",
     "labels": [
-      "bug"
+      "bug",
+      "resolved"
     ],
     "issue_type": "Bug-Report",
-    "issue_state": "TODO",
+    "issue_state": "DONE",
     "assignees": [
       "weixin_44016285"
     ],
@@ -155,17 +295,18 @@
   },
   {
     "iid": "1020",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-23",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "rich9527",
     "author_id": "68b6a3f852d11012db783410",
     "title": "[Feature]: Ascendc支持AOTI",
     "labels": [
-      "feature"
+      "feature",
+      "resolved"
     ],
     "issue_type": "Bug-Report",
-    "issue_state": "TODO",
+    "issue_state": "DONE",
     "assignees": [
       "rich9527"
     ],
@@ -234,21 +375,22 @@
   },
   {
     "iid": "1016",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-20",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "yvaniii",
     "author_id": "66279f454c443a7cc61439ab",
     "title": "[Bug]: 双卡 HCCL 下 AllGather 堆叠输出编译报错，缓存 GE 通信图退出时偶发超时",
     "labels": [
-      "bug"
+      "bug",
+      "resolved"
     ],
     "issue_type": "Bug-Report",
-    "issue_state": "TODO",
+    "issue_state": "DONE",
     "assignees": [
       "yvaniii"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/Ascend/torchair/issues/1016",
     "working_days_open": 3
   },
@@ -659,15 +801,17 @@
   },
   {
     "iid": "994",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-18",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "glf2016",
     "author_id": "68c23d6f59d71b2d89a81f22",
     "title": "[perf/bugfix] fp16/bf16 纯搬运算子（transpose/concat/store）存在多余的 fp32 往返 cast",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "Bug-Report",
-    "issue_state": "TODO",
+    "issue_state": "DONE",
     "assignees": [
       "glf2016"
     ],
@@ -2079,7 +2223,7 @@
     "iid": "923",
     "state": "closed",
     "created_at": "2026-10-30",
-    "closed_at": "2026-11-16",
+    "closed_at": "2026-11-24",
     "author": "gaoyong10",
     "author_id": "68087dbaece4e4654712f0b7",
     "title": "[Feature]: torchair对接fx wrapper导出fx graph.",
@@ -2811,17 +2955,18 @@
   },
   {
     "iid": "883",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-22",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "yurongkun",
     "author_id": "68da2328c9e33e3d8f425e06",
     "title": "[Feature]: inductor+af支持动态场景下非线性符号表达",
     "labels": [
-      "feature"
+      "feature",
+      "resolved"
     ],
     "issue_type": "Bug-Report",
-    "issue_state": "TODO",
+    "issue_state": "DONE",
     "assignees": [
       "yurongkun"
     ],
@@ -14714,7 +14859,7 @@
     "state": "closed",
     "created_at": "2026-01-08",
     "closed_at": "2026-02-11",
-    "author": "qq_26765989",
+    "author": "fa1c0n0",
     "author_id": "66b4ba9af730504b5595207c",
     "title": "[Bug]: 社区CANN8.5alpha002+torch-npu2.8.0 以图模式运行sglang在draft worker初始化时报错，提示graph不能以不同stream运行",
     "labels": [

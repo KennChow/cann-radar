@@ -1,6 +1,109 @@
 [
   {
-    "iid": 791,
+    "iid": 804,
+    "state": "opened",
+    "draft": false,
+    "title": "【PR】:  sync develop to master 20261124",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhukkk",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/804",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 803,
+    "state": "merged",
+    "draft": false,
+    "title": "fix: 示例按输入输出 desc 推导 StorageShape，移除硬编码魔数(#283)",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
+    "closed_at": "",
+    "author": "yuchen97",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/803",
+    "labels": [
+      "cann-cla/yes",
+      "lgtm",
+      "ci-pipeline-passed",
+      "approved"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "283"
+    ]
+  },
+  {
+    "iid": 802,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: 修复日志质量扫描问题——补全错误定位信息、修正语法拼写、高频/诊断日志降级",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "du-hua1024",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/802",
+    "labels": [
+      "enhancement",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 801,
+    "state": "merged",
+    "draft": false,
+    "title": "【fix】: 解决space_registries_的越界访问问题以及更新cmake tag",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
+    "closed_at": "",
+    "author": "kantao1",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/801",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes",
+      "enhancement",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "280"
+    ]
+  },
+  {
+    "iid": 800,
+    "state": "merged",
+    "draft": false,
+    "title": "【PR】: 修改英文资料中的中文链接",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
+    "closed_at": "",
+    "author": "sophia1213",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/800",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes",
+      "enhancement",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 799,
     "state": "opened",
     "draft": false,
     "title": "docs: add h1 title to attrs user guide",
@@ -8,6 +111,158 @@
     "updated_at": "2026-11-24",
     "merged_at": "",
     "closed_at": "",
+    "author": "chenge1",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/799",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 798,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(package): return non-zero on unsupported parameters",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "chenge1",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/798",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 797,
+    "state": "opened",
+    "draft": false,
+    "title": "docs: add h1 title to attrs user guide",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "chenge1",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/797",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "288"
+    ]
+  },
+  {
+    "iid": 796,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(package): return non-zero on unsupported parameters",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "chenge1",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/796",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "287"
+    ]
+  },
+  {
+    "iid": 795,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: propagate errors properly in scripts/init_env.sh",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "qunzhongjia",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/795",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 794,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: log actual checked values in plugin version and registry path checks",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "qunzhongjia",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/794",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 793,
+    "state": "opened",
+    "draft": false,
+    "title": "fix: clear aligned_addr_ in AlignedPtr::Reset",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "qunzhongjia",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/793",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "282"
+    ]
+  },
+  {
+    "iid": 792,
+    "state": "merged",
+    "draft": false,
+    "title": "fix: 修复 run_test.sh 过期构建目录自动清理在 Toolkit 环境失效",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
+    "closed_at": "",
+    "author": "yelongjian",
+    "web_url": "https://gitcode.com/cann/metadef/merge_requests/792",
+    "labels": [
+      "approved",
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "lgtm"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 791,
+    "state": "closed",
+    "draft": false,
+    "title": "docs: add h1 title to attrs user guide",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "2026-11-24",
     "author": "chenge1",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/791",
     "labels": [
@@ -21,13 +276,13 @@
   },
   {
     "iid": 790,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "fix(package): return non-zero on unsupported parameters",
     "created_at": "2026-11-24",
     "updated_at": "2026-11-24",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "chenge1",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/790",
     "labels": [
@@ -40,16 +295,18 @@
   },
   {
     "iid": 789,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【PR】:  sync develop to master 20261123",
     "created_at": "2026-11-23",
     "updated_at": "2026-11-24",
-    "merged_at": "",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "zhukkk",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/789",
     "labels": [
+      "lgtm",
+      "approved",
       "ci-pipeline-passed",
       "stat/needs-squash",
       "cann-cla/yes"
@@ -295,18 +552,19 @@
   },
   {
     "iid": 777,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【Documentation|文档反馈】修正 OpKernelContextBuilder Build 双语示例",
     "created_at": "2026-11-20",
     "updated_at": "2026-11-24",
-    "merged_at": "",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/777",
     "labels": [
       "cann-cla/yes",
       "lgtm",
+      "approved",
       "ci-pipeline-passed"
     ],
     "working_days_open": 3,
@@ -316,19 +574,20 @@
   },
   {
     "iid": 776,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【Documentation|文档反馈】修正 Shape 比较示例的命名空间限定",
     "created_at": "2026-11-20",
     "updated_at": "2026-11-24",
-    "merged_at": "",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/776",
     "labels": [
       "cann-cla/yes",
       "lgtm",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved"
     ],
     "working_days_open": 3,
     "e2e_issues": [
@@ -358,19 +617,20 @@
   },
   {
     "iid": 774,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【Documentation|文档反馈】修正 OpTilingParseContextBuilder JSON 示例中的指针调用",
     "created_at": "2026-11-20",
     "updated_at": "2026-11-24",
-    "merged_at": "",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/774",
     "labels": [
       "cann-cla/yes",
       "lgtm",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved"
     ],
     "working_days_open": 3,
     "e2e_issues": [
@@ -379,19 +639,20 @@
   },
   {
     "iid": 773,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[Documentation] Fix OpTilingContextBuilder deterministic builder defaults",
     "created_at": "2026-11-20",
     "updated_at": "2026-11-24",
-    "merged_at": "",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/773",
     "labels": [
       "cann-cla/yes",
       "lgtm",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved"
     ],
     "working_days_open": 3,
     "e2e_issues": [
@@ -400,18 +661,19 @@
   },
   {
     "iid": 772,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【Documentation|文档反馈】修正 OpTilingContextBuilder Build 示例的命名空间和 TilingData 生命周期",
     "created_at": "2026-11-20",
     "updated_at": "2026-11-24",
-    "merged_at": "",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/772",
     "labels": [
       "cann-cla/yes",
       "lgtm",
+      "approved",
       "ci-pipeline-passed"
     ],
     "working_days_open": 3,
@@ -443,19 +705,21 @@
   },
   {
     "iid": 770,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[Documentation] Clarify CreateFusionTask supported subtask sequences",
     "created_at": "2026-11-20",
     "updated_at": "2026-11-24",
-    "merged_at": "",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/770",
     "labels": [
       "stat/needs-squash",
+      "approved",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm"
     ],
     "working_days_open": 3,
     "e2e_issues": [
@@ -506,17 +770,18 @@
   },
   {
     "iid": 767,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "【Documentation|文档反馈】修正 ExpandDimsType Expand 示例命名空间",
     "created_at": "2026-11-20",
     "updated_at": "2026-11-24",
-    "merged_at": "",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/767",
     "labels": [
       "cann-cla/yes",
+      "approved",
       "ci-pipeline-passed",
       "lgtm"
     ],
@@ -527,17 +792,18 @@
   },
   {
     "iid": 766,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[Documentation] Fix member-access typo in English GetDynamicInputTensorRange example",
     "created_at": "2026-11-20",
     "updated_at": "2026-11-24",
-    "merged_at": "",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/766",
     "labels": [
       "cann-cla/yes",
+      "approved",
       "ci-pipeline-passed",
       "lgtm"
     ],
@@ -768,12 +1034,13 @@
     "draft": true,
     "title": "[WIP]ci test",
     "created_at": "2026-11-19",
-    "updated_at": "2026-11-19",
+    "updated_at": "2026-11-24",
     "merged_at": "",
     "closed_at": "",
     "author": "songxiujing",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/755",
     "labels": [
+      "ci-pipeline-failed",
       "cann-cla/yes",
       "enhancement"
     ],
@@ -870,12 +1137,12 @@
   },
   {
     "iid": 750,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "feat: 恢复 OpDef 式 InferSymbol 注册并将新增成员置于 OpDefImpl 末尾",
     "created_at": "2026-11-18",
     "updated_at": "2026-11-24",
-    "merged_at": "",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "xiebangrui2025",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/750",
@@ -895,7 +1162,7 @@
     "draft": false,
     "title": "2026 11 15 Metadef Attr Buffer Unsupported Type Contract Scan Wave4 01",
     "created_at": "2026-11-18",
-    "updated_at": "2026-11-19",
+    "updated_at": "2026-11-25",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
@@ -916,15 +1183,15 @@
     "draft": false,
     "title": "2026 11 15 Metadef Continuous Vector Vector Overhead Overflow Contract Scan Wave4 02",
     "created_at": "2026-11-18",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-25",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/748",
     "labels": [
-      "ci-pipeline-passed",
+      "stat/needs-squash",
       "cann-cla/yes",
-      "stat/needs-squash"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 5,
     "e2e_issues": [
@@ -1883,14 +2150,15 @@
     "draft": false,
     "title": "补充 Tensor::ResetData 指针重载说明",
     "created_at": "2026-11-11",
-    "updated_at": "2026-11-11",
+    "updated_at": "2026-11-24",
     "merged_at": "",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/701",
     "labels": [
-      "ci-pipeline-passed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 10,
     "e2e_issues": [
@@ -1940,19 +2208,21 @@
   },
   {
     "iid": 698,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "docs: 更正 SetOutputDataType 的输出索引说明",
     "created_at": "2026-11-10",
     "updated_at": "2026-11-24",
-    "merged_at": "",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/698",
     "labels": [
+      "approved",
       "cann-cla/yes",
       "stat/needs-squash",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm"
     ],
     "working_days_open": 11,
     "e2e_issues": [
@@ -1961,19 +2231,21 @@
   },
   {
     "iid": 697,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "docs: 补充 GetRequiredInputDataType 的未实例化返回条件",
     "created_at": "2026-11-10",
     "updated_at": "2026-11-24",
-    "merged_at": "",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "KaranocaVe",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/697",
     "labels": [
+      "approved",
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm"
     ],
     "working_days_open": 11,
     "e2e_issues": [
@@ -5831,14 +6103,15 @@
     "draft": false,
     "title": "fix: 修正 AnyValue 内联存储路径右值退化为复制构造的问题(#115)",
     "created_at": "2026-09-30",
-    "updated_at": "2026-11-15",
+    "updated_at": "2026-11-24",
     "merged_at": "",
     "closed_at": "",
     "author": "chenqian1365",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/511",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "lgtm",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 36,
     "e2e_issues": [
@@ -5872,13 +6145,14 @@
     "draft": false,
     "title": "docs: 修正 AddOverflow/MulOverflow 参数表中 ret 的方向与有效条件(#114)",
     "created_at": "2026-09-30",
-    "updated_at": "2026-10-31",
+    "updated_at": "2026-11-24",
     "merged_at": "",
     "closed_at": "",
     "author": "chenqian1365",
     "web_url": "https://gitcode.com/cann/metadef/merge_requests/509",
     "labels": [
       "cann-cla/yes",
+      "lgtm",
       "ci-pipeline-passed"
     ],
     "working_days_open": 36,

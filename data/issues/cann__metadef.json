@@ -13,7 +13,7 @@
     "issue_type": "任务",
     "issue_state": "待办的",
     "assignees": [
-      "Z-Shiyuan"
+      "Chang-an-HW"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/288",
@@ -33,7 +33,7 @@
     "issue_type": "任务",
     "issue_state": "待办的",
     "assignees": [
-      "Z-Shiyuan"
+      "chenqian1365"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/287",
@@ -53,7 +53,7 @@
     "assignees": [
       "zhangguangshuo"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/286",
     "working_days_open": 2
   },
@@ -97,19 +97,21 @@
   },
   {
     "iid": "283",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-21",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "JerryJiao0628",
     "author_id": "672d6aa8fbbddc0c2008a855",
     "title": "[Bug-Report|缺陷反馈]: 示例 tc_ge_irrun_open_api_0014 PrepareInputTensors 输入 StorageShape 与图输入不一致致设备缓冲大小失配",
-    "labels": [],
-    "issue_type": "任务",
-    "issue_state": "待办的",
-    "assignees": [
-      "xchu42"
+    "labels": [
+      "resolved"
     ],
-    "user_notes_count": 0,
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "yuchen97"
+    ],
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/283",
     "working_days_open": 2
   },
@@ -127,7 +129,7 @@
     "assignees": [
       "jikai-tyler"
     ],
-    "user_notes_count": 0,
+    "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/metadef/issues/282",
     "working_days_open": 2
   },
@@ -151,15 +153,17 @@
   },
   {
     "iid": "280",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-21",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "JerryJiao0628",
     "author_id": "672d6aa8fbbddc0c2008a855",
     "title": "[Bug-Report|缺陷反馈]: DefaultOpImplSpaceRegistry::GetDefaultSpaceRegistry 边界判断 off-by-one 致数级越界读写",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "gcw_2mqml1vq"
     ],
@@ -232,15 +236,17 @@
   },
   {
     "iid": "276",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-20",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "OpKernelContextBuilder Build 双语示例命名空间与独立编译缺陷",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "guopeian"
     ],
@@ -250,15 +256,17 @@
   },
   {
     "iid": "275",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-20",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "Shape operator 比较示例缺少 `gert::` 命名空间限定",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "zhaozhihui"
     ],
@@ -286,15 +294,17 @@
   },
   {
     "iid": "273",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-20",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "OpTilingParseContextBuilder Build 双语示例对 JSON 字符串指针调用 c_str",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "xiebangrui2025"
     ],
@@ -304,37 +314,41 @@
   },
   {
     "iid": "272",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-20",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "OpTilingContextBuilder 确定性配置文档误称必须设置",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "kobemini"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/272",
     "working_days_open": 3
   },
   {
     "iid": "271",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-20",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "OpTilingContextBuilder Build 双语示例无法独立编译且误导 TilingData 生命周期",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "luo-lipeng"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/271",
     "working_days_open": 3
   },
@@ -360,19 +374,21 @@
   },
   {
     "iid": "269",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-20",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "[Documentation] CreateFusionTask 文档错误地限制子任务必须异构组合",
-    "labels": [],
-    "issue_type": "任务",
-    "issue_state": "待办的",
-    "assignees": [
-      "lining23666"
+    "labels": [
+      "resolved"
     ],
-    "user_notes_count": 1,
+    "issue_type": "任务",
+    "issue_state": "已拒绝",
+    "assignees": [
+      "A-Liuhao"
+    ],
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/metadef/issues/269",
     "working_days_open": 3
   },
@@ -408,39 +424,43 @@
     "assignees": [
       "zhufanfan_hw"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/267",
     "working_days_open": 3
   },
   {
     "iid": "266",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-20",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "ExpandDimsType::Expand 双语示例缺少 `gert::` 命名空间限定",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "Dazhou_Cao"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/266",
     "working_days_open": 3
   },
   {
     "iid": "265",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-20",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "English GetDynamicInputTensorRange example uses an invalid member-access token",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "penghongwei"
     ],
@@ -907,7 +927,7 @@
     "assignees": [
       "ClarkXie"
     ],
-    "user_notes_count": 1,
+    "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/metadef/issues/239",
     "working_days_open": 10
   },
@@ -931,15 +951,17 @@
   },
   {
     "iid": "237",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-10",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "docs: 更正 SetOutputDataType 的输出索引说明",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "wuzheng-hw"
     ],
@@ -949,15 +971,17 @@
   },
   {
     "iid": "236",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-10",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "KaranocaVe",
     "author_id": "682829bcddc3c54994a73773",
     "title": "[Documentation|文档反馈]: GetRequiredInputDataType 返回条件文档遗漏",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "wuzheng-hw"
     ],

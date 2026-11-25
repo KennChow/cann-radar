@@ -1,9 +1,697 @@
 [
   {
+    "iid": 1595,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: 修复 Python 单机双进程 pull 样例建链配置",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "M__Cheng",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1595",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1594,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: 修复线程池临时线程未持续处理积压任务的问题",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "jiazhaoyang",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1594",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1593,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: fail parser_ini when INI validation fails",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1593",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1088"
+    ]
+  },
+  {
+    "iid": 1592,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: support parser_ini on Python 3.12",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1592",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1087"
+    ]
+  },
+  {
+    "iid": 1591,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: allow hixl.sh help without CANN environment",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1591",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1086"
+    ]
+  },
+  {
+    "iid": 1590,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: parse bracketed IPv6 listen addresses in Python",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1590",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1085"
+    ]
+  },
+  {
+    "iid": 1589,
+    "state": "opened",
+    "draft": false,
+    "title": "[docs]: point English C++ sample links to English API docs",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1589",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1084"
+    ]
+  },
+  {
+    "iid": 1588,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: fix Chinese A3 ranktable JSON example",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1588",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1083"
+    ]
+  },
+  {
+    "iid": 1587,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: fix the A3 ranktable JSON example",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1587",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1082"
+    ]
+  },
+  {
+    "iid": 1586,
+    "state": "opened",
+    "draft": false,
+    "title": "[docs]: fix Chinese LLMDataDist rank_table JSON example",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1586",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1081"
+    ]
+  },
+  {
+    "iid": 1585,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: reuse npu-smi output during platform detection",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1585",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1080"
+    ]
+  },
+  {
+    "iid": 1584,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: validate single-machine communication ports",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1584",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1079"
+    ]
+  },
+  {
+    "iid": 1583,
+    "state": "opened",
+    "draft": false,
+    "title": "[docs]: correct FabricMem design API reference",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1583",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1078"
+    ]
+  },
+  {
+    "iid": 1582,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: validate aggregate communication benchmark ports",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1582",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1077"
+    ]
+  },
+  {
+    "iid": 1581,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(en): point documentation links to English pages in CacheManager.md",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1581",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1076"
+    ]
+  },
+  {
+    "iid": 1580,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(en): point documentation links to English pages in FabricMem.md",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1580",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1075"
+    ]
+  },
+  {
+    "iid": 1579,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(en): point documentation links to English pages in README_en.md",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1579",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1074"
+    ]
+  },
+  {
+    "iid": 1578,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(en): point documentation links to English pages in README_en.md",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1578",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1073"
+    ]
+  },
+  {
+    "iid": 1577,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(en): point documentation links to English pages in README_en.md",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1577",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1072"
+    ]
+  },
+  {
+    "iid": 1576,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: validate KV benchmark rank port range",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1576",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1071"
+    ]
+  },
+  {
+    "iid": 1575,
+    "state": "opened",
+    "draft": false,
+    "title": "[docs]: document KV benchmark launcher options",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1575",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1070"
+    ]
+  },
+  {
+    "iid": 1574,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: reject empty IPv6 remote host",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1574",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1069"
+    ]
+  },
+  {
+    "iid": 1573,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: validate prebuilt input before manifest generation",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1573",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1068"
+    ]
+  },
+  {
+    "iid": 1572,
+    "state": "opened",
+    "draft": false,
+    "title": "revert: 回退 \"[feat]: 增加可选 native Host RoCE实现\" (!1522)",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "youyx",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1572",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1571,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: validate KV benchmark device IDs",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1571",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1067"
+    ]
+  },
+  {
+    "iid": 1570,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: validate comm benchmark device IDs",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1570",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1066"
+    ]
+  },
+  {
+    "iid": 1569,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: report missing log checker paths",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1569",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1065"
+    ]
+  },
+  {
+    "iid": 1568,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: validate benchmark device IDs",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1568",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1064"
+    ]
+  },
+  {
+    "iid": 1567,
+    "state": "opened",
+    "draft": false,
+    "title": "[docs]: fix ranktable JSON example",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1567",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1063"
+    ]
+  },
+  {
+    "iid": 1566,
+    "state": "merged",
+    "draft": false,
+    "title": "[refactor]: keep control-plane TLS private key in memory",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
+    "closed_at": "",
+    "author": "zhaozhihui",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1566",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1"
+    ]
+  },
+  {
+    "iid": 1565,
+    "state": "opened",
+    "draft": false,
+    "title": "[docs]: fix A2 ranktable JSON example",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1565",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1062"
+    ]
+  },
+  {
+    "iid": 1564,
+    "state": "opened",
+    "draft": false,
+    "title": "[bugfix]: filter unsupported paths from performance charts",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "shiguangke",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1564",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1061"
+    ]
+  },
+  {
+    "iid": 1563,
+    "state": "merged",
+    "draft": false,
+    "title": "[bugfix]: bind control-plane peer identity to TLS certificate fingerprint",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
+    "closed_at": "",
+    "author": "zhaozhihui",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1563",
+    "labels": [
+      "ci-pipeline-passed",
+      "lgtm",
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "approved"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1562,
+    "state": "merged",
+    "draft": false,
+    "title": "ci: PreSmoke 阶段新增 A5 前冒烟任务（用例暂空，先搭框架）",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
+    "closed_at": "",
+    "author": "yelongjian",
+    "web_url": "https://gitcode.com/cann/hixl/merge_requests/1562",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "271"
+    ]
+  },
+  {
     "iid": 1561,
     "state": "opened",
     "draft": true,
-    "title": "[WIP] [feat] add temporary Connect timing diagnostics",
+    "title": "[WIP] [feat] add Connect timing and thread-pool backlog A/B diagnostics",
     "created_at": "2026-11-24",
     "updated_at": "2026-11-24",
     "merged_at": "",
@@ -11,7 +699,8 @@
     "author": "jiazhaoyang",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1561",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "stat/needs-squash"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -22,7 +711,7 @@
     "draft": false,
     "title": "docs: fix missing trailing pipes in LLMConfig/LLMDataDist",
     "created_at": "2026-11-24",
-    "updated_at": "2026-11-24",
+    "updated_at": "2026-11-25",
     "merged_at": "",
     "closed_at": "",
     "author": "chenge1",
@@ -42,7 +731,7 @@
     "draft": false,
     "title": "docs: fix missing trailing pipes in LLMConfig/LLMDataDist",
     "created_at": "2026-11-24",
-    "updated_at": "2026-11-24",
+    "updated_at": "2026-11-25",
     "merged_at": "",
     "closed_at": "",
     "author": "chenge1",
@@ -59,16 +748,17 @@
   {
     "iid": 1558,
     "state": "opened",
-    "draft": true,
-    "title": "[WIP][bugfix]: 适配 HCOMM Host 和 Device 同名异常回调结构体",
+    "draft": false,
+    "title": "[bugfix]: 适配 HCOMM Host 异常回调类型及接口声明",
     "created_at": "2026-11-23",
-    "updated_at": "2026-11-23",
+    "updated_at": "2026-11-25",
     "merged_at": "",
     "closed_at": "",
     "author": "hanyinglong_qaq",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1558",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -113,13 +803,13 @@
   },
   {
     "iid": 1555,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[bugfix]: ADXL 断链复用建链长连接并按连接身份销毁",
     "created_at": "2026-11-21",
-    "updated_at": "2026-11-23",
+    "updated_at": "2026-11-24",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "zhaozhihui",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1555",
     "labels": [
@@ -189,19 +879,23 @@
   },
   {
     "iid": 1551,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[bugfix]: 修复 swap_blocks 的 src_to_dst value 校验与 tensor_addrs 内部引用泄露",
     "created_at": "2026-11-21",
-    "updated_at": "2026-11-21",
-    "merged_at": "",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "JerryJiao0628",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1551",
     "labels": [
       "ai-co-authored",
+      "approved",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ai-includes-code",
+      "ai-compliance-successful",
+      "ci-pipeline-passed",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": [
@@ -214,14 +908,16 @@
     "draft": false,
     "title": "[chore]: 清理构建与打包脚本 3 处缺陷（glob 误用/永假分支/重复 if-else）",
     "created_at": "2026-11-21",
-    "updated_at": "2026-11-21",
+    "updated_at": "2026-11-25",
     "merged_at": "",
     "closed_at": "",
     "author": "JerryJiao0628",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1550",
     "labels": [
-      "cann-cla/yes",
       "ai-co-authored",
+      "ai-includes-code",
+      "ai-compliance-successful",
+      "cann-cla/yes",
       "ci-pipeline-passed"
     ],
     "working_days_open": 2,
@@ -284,7 +980,7 @@
     "draft": false,
     "title": "[ci]: 修复 ut.sh 调用 run_test.sh 的 -t= 选项形式",
     "created_at": "2026-11-21",
-    "updated_at": "2026-11-21",
+    "updated_at": "2026-11-24",
     "merged_at": "",
     "closed_at": "",
     "author": "JerryJiao0628",
@@ -292,7 +988,9 @@
     "labels": [
       "ci-pipeline-passed",
       "ai-co-authored",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ai-compliance-successful",
+      "ai-includes-code"
     ],
     "working_days_open": 2,
     "e2e_issues": [
@@ -528,15 +1226,14 @@
     "draft": false,
     "title": "[ci]: fail ut.sh on unknown ut_type",
     "created_at": "2026-11-18",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-25",
     "merged_at": "",
     "closed_at": "",
     "author": "chenge1",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1535",
     "labels": [
-      "lgtm",
-      "ci-pipeline-passed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved"
     ],
     "working_days_open": 5,
     "e2e_issues": [
@@ -770,33 +1467,35 @@
     "draft": false,
     "title": "[docs]: add LocalCommRes auto-generation flow in Chinese and English",
     "created_at": "2026-11-16",
-    "updated_at": "2026-11-17",
+    "updated_at": "2026-11-24",
     "merged_at": "",
     "closed_at": "",
     "author": "lugang11",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1523",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed",
-      "stat/needs-squash"
+      "ci-pipeline-passed"
     ],
     "working_days_open": 7,
     "e2e_issues": []
   },
   {
     "iid": 1522,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
-    "title": "[feat]: 增加可选 native Host RoCE 与 HBM 完成确认",
+    "title": "[feat]: 增加可选 native Host RoCE实现",
     "created_at": "2026-11-16",
     "updated_at": "2026-11-24",
-    "merged_at": "",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "youyx",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1522",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 7,
     "e2e_issues": []
@@ -1098,7 +1797,7 @@
     "draft": false,
     "title": "[feat]: named engine 元数据交换 ExportLocalMD/ImportRemoteMD 完整实现（#1011）",
     "created_at": "2026-11-11",
-    "updated_at": "2026-11-23",
+    "updated_at": "2026-11-25",
     "merged_at": "",
     "closed_at": "",
     "author": "tangjie66",
@@ -1164,15 +1863,15 @@
     "draft": false,
     "title": "[bugfix]: 保留 CI 各阶段参数边界 (#1016)",
     "created_at": "2026-11-09",
-    "updated_at": "2026-11-11",
+    "updated_at": "2026-11-25",
     "merged_at": "",
     "closed_at": "",
     "author": "lilong555",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/1504",
     "labels": [
-      "ci-pipeline-passed",
-      "lgtm",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 12,
     "e2e_issues": [
@@ -9299,7 +9998,7 @@
     "draft": false,
     "title": "chore: 修复17处问题：16处头文件自包含（规则6）+ 1处注释拼写（规则2）【质量加固#613】",
     "created_at": "2026-09-15",
-    "updated_at": "2026-10-23",
+    "updated_at": "2026-11-25",
     "merged_at": "",
     "closed_at": "",
     "author": "gcw_93rlw6ed",
@@ -16280,14 +16979,14 @@
     "draft": true,
     "title": "[WIP]ci test",
     "created_at": "2026-07-15",
-    "updated_at": "2026-11-18",
+    "updated_at": "2026-11-24",
     "merged_at": "",
     "closed_at": "",
     "author": "songxiujing",
     "web_url": "https://gitcode.com/cann/hixl/merge_requests/773",
     "labels": [
-      "ci-pipeline-passed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 91,
     "e2e_issues": []

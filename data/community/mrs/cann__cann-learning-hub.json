@@ -1,5 +1,99 @@
 [
   {
+    "iid": 1603,
+    "state": "opened",
+    "draft": false,
+    "title": "fix(as_strided): Tiling 增加 ndim 范围检查并以 64 位累乘防 uint32 溢出（Fixes #897）",
+    "created_at": "2026-11-25",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "Oboah",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1603",
+    "labels": [
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 0,
+    "e2e_issues": [
+      "897"
+    ]
+  },
+  {
+    "iid": 1602,
+    "state": "opened",
+    "draft": false,
+    "title": "CANN开发者共建计划-文档: 7 处样例仓链接迁移到 gitcode.com/cann（关联 #1079）",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "mengqing0105",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1602",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "1079"
+    ]
+  },
+  {
+    "iid": 1601,
+    "state": "opened",
+    "draft": false,
+    "title": "CANN开发者共建计划-修复 02.05 训练教程缺失 torch.nn.functional 导入导致 NameError",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "mengqing0105",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1601",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1600,
+    "state": "closed",
+    "draft": false,
+    "title": "CANN开发者共建计划-修复 02.05 训练教程缺失 torch.nn.functional 导入导致 NameError",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "2026-11-24",
+    "author": "mengqing0105",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1600",
+    "labels": [
+      "ci-pipeline-passed",
+      "cann-cla/no",
+      "stat/needs-squash"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1599,
+    "state": "opened",
+    "draft": false,
+    "title": "新增零基础 PyPTO 算子实践课程（6 章、31 本 Notebook）",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "2301_76761127",
+    "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1599",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
     "iid": 1598,
     "state": "merged",
     "draft": false,
@@ -100,16 +194,18 @@
   },
   {
     "iid": 1593,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "Course Reorganization Plan",
     "created_at": "2026-11-23",
-    "updated_at": "2026-11-23",
-    "merged_at": "",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "YANXI_ZHAO",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1593",
     "labels": [
+      "approved",
+      "lgtm",
       "cann-cla/yes"
     ],
     "working_days_open": 2,
@@ -121,7 +217,7 @@
     "draft": false,
     "title": "新增传统课程和品牌课程大纲",
     "created_at": "2026-11-23",
-    "updated_at": "2026-11-23",
+    "updated_at": "2026-11-24",
     "merged_at": "",
     "closed_at": "",
     "author": "ascendhjh",
@@ -156,17 +252,19 @@
   },
   {
     "iid": 1590,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix(speech_ocr): 修正 rtts_client/vcs_stream_client logger.error {} 占位符导致的 TypeError",
     "created_at": "2026-11-22",
-    "updated_at": "2026-11-22",
-    "merged_at": "",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "ududhbsbj",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1590",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 2,
     "e2e_issues": [
@@ -1363,19 +1461,21 @@
   },
   {
     "iid": 1531,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "fix(tutorials): qwen3_8b 06 课按时间戳数值选取最新 profiling 目录 (#923)",
     "created_at": "2026-11-17",
-    "updated_at": "2026-11-19",
-    "merged_at": "",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "JerryJiao0628",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1531",
     "labels": [
       "ai-co-authored",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 6,
     "e2e_issues": [
@@ -1388,7 +1488,7 @@
     "draft": false,
     "title": "fix(tutorials): 02.06/02.07 样例按 32B 对齐分配缓冲区，消除尾块越界 (#783)",
     "created_at": "2026-11-17",
-    "updated_at": "2026-11-23",
+    "updated_at": "2026-11-24",
     "merged_at": "",
     "closed_at": "",
     "author": "JerryJiao0628",
@@ -1541,13 +1641,13 @@
   },
   {
     "iid": 1523,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "docs: remove nonexistent gtest.cmake entry and fix perm dash in SECURITY.md",
     "created_at": "2026-11-17",
-    "updated_at": "2026-11-23",
+    "updated_at": "2026-11-24",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "JerryJiao0628",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1523",
     "labels": [
@@ -1719,12 +1819,12 @@
   },
   {
     "iid": 1515,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "docs: fix broken external links in learning-hub",
     "created_at": "2026-11-16",
-    "updated_at": "2026-11-20",
-    "merged_at": "",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "JerryJiao0628",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1515",
@@ -1733,7 +1833,9 @@
       "ai-co-authored",
       "ai-docs-only",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 7,
     "e2e_issues": [
@@ -1864,17 +1966,19 @@
   },
   {
     "iid": 1508,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "docs(course): 重整并行编程课程 Notebook 与 CANNLab 实验流程",
     "created_at": "2026-11-16",
-    "updated_at": "2026-11-18",
-    "merged_at": "",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "bnujwx",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1508",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 7,
     "e2e_issues": [
@@ -2048,18 +2152,20 @@
   },
   {
     "iid": 1499,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "CANN开发者共建计划-更正 huaweicloud_sis bean 请求类初始化函数参数文档",
     "created_at": "2026-11-15",
-    "updated_at": "2026-11-15",
-    "merged_at": "",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "nobleweichi0215",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1499",
     "labels": [
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
     ],
     "working_days_open": 7,
     "e2e_issues": [
@@ -2365,7 +2471,7 @@
     "draft": false,
     "title": "CANN开发者共建计划-修正 torch_npu IPC 博客两处函数签名缺失的冒号",
     "created_at": "2026-11-13",
-    "updated_at": "2026-11-13",
+    "updated_at": "2026-11-24",
     "merged_at": "",
     "closed_at": "",
     "author": "HanHHHH66",
@@ -4123,17 +4229,19 @@
   },
   {
     "iid": 1392,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "CANN开发者共建计划-docs: 补齐 04_reduce 优先队列实验 README 的闭合围栏",
     "created_at": "2026-10-30",
-    "updated_at": "2026-10-30",
-    "merged_at": "",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "wsnidie1",
     "web_url": "https://gitcode.com/cann/cann-learning-hub/merge_requests/1392",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 18,
     "e2e_issues": [

@@ -1,9 +1,297 @@
 [
   {
-    "iid": 1361,
+    "iid": 1376,
+    "state": "opened",
+    "draft": false,
+    "title": "[feat] adapt GraphTrainer for dsv4.1",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-25",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "jizewei",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1376",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1375,
+    "state": "opened",
+    "draft": false,
+    "title": "[refactor](dsv4): route A3/A5 mHC pre uniformly through the fused mhc_pre_sinkhorn",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zhaowei1936",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1375",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1374,
+    "state": "merged",
+    "draft": false,
+    "title": "[refactor] 清理 DeepSeek-V4 遗留 compressor 拼接并统一 q_b_norm 命名",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
+    "closed_at": "",
+    "author": "lrwei0709",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1374",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1373,
+    "state": "opened",
+    "draft": false,
+    "title": "[refactor] Group repeated TorchAO-NPU converter startup logs",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "xuyujun",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1373",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1372,
+    "state": "opened",
+    "draft": false,
+    "title": "[refactor] Add unified memory offload config",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "zzyyjj012",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1372",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1371,
+    "state": "opened",
+    "draft": false,
+    "title": "[fix] Preserve Engram shard metadata during checkpoint export",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "xuyujun",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1371",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1370,
+    "state": "opened",
+    "draft": false,
+    "title": "[docs] 完善 dev_0.4.0 README 快速开始",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "mystri",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1370",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": [
+      "4",
+      "133"
+    ]
+  },
+  {
+    "iid": 1369,
+    "state": "opened",
+    "draft": false,
+    "title": "docs(moonep): remove nonexistent test paths and fix spacing typo",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "qunzhongjia",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1369",
+    "labels": [
+      "cann-cla/yes",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1368,
+    "state": "merged",
+    "draft": false,
+    "title": "[feat] Use upstream mass-weighted SparseIndexerLoss in DeepSeek V4 and V4.1",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
+    "closed_at": "",
+    "author": "lrwei0709",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1368",
+    "labels": [
+      "cann-cla/yes",
+      "stat/needs-squash",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1367,
+    "state": "merged",
+    "draft": false,
+    "title": "[refactor] Share BF16 sparse attention and lightning indexer kernels across DeepSeek V4 models",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
+    "closed_at": "",
+    "author": "lrwei0709",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1367",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "approved",
+      "lgtm",
+      "ci-pipeline-passed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1366,
+    "state": "merged",
+    "draft": false,
+    "title": "[fix] Return real BF16 top-k scores in DeepSeek V4 and V4.1",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
+    "closed_at": "",
+    "author": "lrwei0709",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1366",
+    "labels": [
+      "stat/needs-squash",
+      "lgtm",
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "approved"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1365,
+    "state": "merged",
+    "draft": false,
+    "title": "[refactor] Prepare compact-frame metadata only for the V4 PyPTO-Pro indexer",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
+    "closed_at": "",
+    "author": "lrwei0709",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1365",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "lgtm",
+      "approved"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1364,
     "state": "opened",
     "draft": true,
-    "title": "[WIP][perf] 合并 DeepSeek-V4.1 相邻两层 Muon buckets（0.4.0）",
+    "title": "[WIP]perf(torchft): optimize p2p heal path - event-driven wait_quorum, device snapshot, PG wiring, chunked live-apply receive & zero-clone send",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "max-whale",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1364",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/no"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1363,
+    "state": "opened",
+    "draft": false,
+    "title": "[feat][WIP] 支持DeepSeek V4 HiFloat8 Delayed-Tensor Scaling (DTS) 训练",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "nancycyzl",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1363",
+    "labels": [
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-failed"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1362,
+    "state": "opened",
+    "draft": true,
+    "title": "[WIP][docs] 修复 dev_0.4.0 GraphTrainer 指南链接",
+    "created_at": "2026-11-24",
+    "updated_at": "2026-11-24",
+    "merged_at": "",
+    "closed_at": "",
+    "author": "mystri",
+    "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1362",
+    "labels": [
+      "cann-cla/yes"
+    ],
+    "working_days_open": 1,
+    "e2e_issues": []
+  },
+  {
+    "iid": 1361,
+    "state": "opened",
+    "draft": false,
+    "title": "[perf] 合并 DeepSeek-V4.1 相邻两层 Muon buckets（0.4.0）",
     "created_at": "2026-11-24",
     "updated_at": "2026-11-24",
     "merged_at": "",
@@ -11,7 +299,8 @@
     "author": "NoGood",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1361",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
@@ -19,8 +308,8 @@
   {
     "iid": 1360,
     "state": "opened",
-    "draft": true,
-    "title": "[WIP][perf] 合并 DeepSeek-V4.1 相邻两层 Muon buckets",
+    "draft": false,
+    "title": "[perf] 合并 DeepSeek-V4.1 相邻两层 Muon buckets",
     "created_at": "2026-11-24",
     "updated_at": "2026-11-24",
     "merged_at": "",
@@ -28,26 +317,29 @@
     "author": "NoGood",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1360",
     "labels": [
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 1,
     "e2e_issues": []
   },
   {
     "iid": 1359,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[fix] 修复 FSDP 预量化：排除 stacked w13 并让 wo_a 走 bmm 量化",
     "created_at": "2026-11-23",
     "updated_at": "2026-11-24",
-    "merged_at": "",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "zhaoxi1029",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1359",
     "labels": [
-      "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "stat/needs-squash",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -175,7 +467,7 @@
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1353",
     "labels": [
       "stat/needs-squash",
-      "cann-cla/no",
+      "cann-cla/yes",
       "ci-pipeline-failed"
     ],
     "working_days_open": 2,
@@ -183,17 +475,20 @@
   },
   {
     "iid": 1352,
-    "state": "opened",
-    "draft": true,
-    "title": "[WIP][refactor] 统一 DeepSeek-V4 和 V4.1 的 inner_indexer 与 BF16 override",
+    "state": "merged",
+    "draft": false,
+    "title": "[refactor] 统一 DeepSeek-V4 和 V4.1 的 inner_indexer 与 BF16 override",
     "created_at": "2026-11-23",
     "updated_at": "2026-11-24",
-    "merged_at": "",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "lrwei0709",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1352",
     "labels": [
       "cann-cla/yes",
+      "approved",
+      "ci-pipeline-passed",
+      "lgtm",
       "stat/needs-squash"
     ],
     "working_days_open": 2,
@@ -201,18 +496,19 @@
   },
   {
     "iid": 1351,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[feat] Adapt indexer auxiliary loss to TorchTitan v0.4.0",
     "created_at": "2026-11-23",
-    "updated_at": "2026-11-23",
+    "updated_at": "2026-11-24",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "zhangjianshe",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1351",
     "labels": [
+      "ci-pipeline-failed",
       "cann-cla/yes",
-      "ci-pipeline-failed"
+      "stat/needs-squash"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -237,8 +533,8 @@
   {
     "iid": 1349,
     "state": "opened",
-    "draft": true,
-    "title": "[WIP]fix(torchft): 迁移 DeepSeek-V4 测试配方并修复双 replica 启动恢复",
+    "draft": false,
+    "title": "[fix] 迁移 DeepSeek-V4 TorchFT 配方并修复双 replica 启动恢复",
     "created_at": "2026-11-23",
     "updated_at": "2026-11-24",
     "merged_at": "",
@@ -246,8 +542,9 @@
     "author": "zhangyifan999",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1349",
     "labels": [
-      "stat/needs-squash",
-      "ci-pipeline-failed"
+      "cann-cla/yes",
+      "ci-pipeline-passed",
+      "stat/needs-squash"
     ],
     "working_days_open": 2,
     "e2e_issues": []
@@ -258,7 +555,7 @@
     "draft": true,
     "title": "[WIP][feat] Add mega moe implementation on A3 for high precision training",
     "created_at": "2026-11-23",
-    "updated_at": "2026-11-23",
+    "updated_at": "2026-11-24",
     "merged_at": "",
     "closed_at": "",
     "author": "caoshuyang",
@@ -337,17 +634,20 @@
     "draft": false,
     "title": "[fix][CI] 修复组织仓 Lite Actions Smoke 的用例清单交付",
     "created_at": "2026-11-23",
-    "updated_at": "2026-11-24",
+    "updated_at": "2026-11-25",
     "merged_at": "",
     "closed_at": "",
     "author": "depeng1994",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1344",
     "labels": [
-      "cann-cla/no",
-      "stat/needs-squash"
+      "stat/needs-squash",
+      "cann-cla/yes",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 2,
-    "e2e_issues": []
+    "e2e_issues": [
+      "54"
+    ]
   },
   {
     "iid": 1343,
@@ -370,16 +670,17 @@
   {
     "iid": 1342,
     "state": "opened",
-    "draft": true,
-    "title": "[WIP][feat] 支持 DeepSeek-V4 和 V4.1 的 BF16 逐文档上下文并行",
+    "draft": false,
+    "title": "[feat] 支持 DeepSeek-V4 和 V4.1 的 BF16 逐文档上下文并行",
     "created_at": "2026-11-22",
-    "updated_at": "2026-11-23",
+    "updated_at": "2026-11-25",
     "merged_at": "",
     "closed_at": "",
     "author": "lrwei0709",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1342",
     "labels": [
       "cann-cla/yes",
+      "ci-pipeline-failed",
       "stat/needs-squash"
     ],
     "working_days_open": 2,
@@ -387,13 +688,13 @@
   },
   {
     "iid": 1341,
-    "state": "opened",
+    "state": "closed",
     "draft": true,
     "title": "[WIP][refactor] 统一 DeepSeek-V4 和 V4.1 的稀疏 Attention 与 Indexer 接口",
     "created_at": "2026-11-22",
-    "updated_at": "2026-11-23",
+    "updated_at": "2026-11-24",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "lrwei0709",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1341",
     "labels": [
@@ -732,6 +1033,7 @@
     "author": "YueGuoDora",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1324",
     "labels": [
+      "stat/needs-squash",
       "cann-cla/yes"
     ],
     "working_days_open": 3,
@@ -761,7 +1063,7 @@
     "draft": false,
     "title": "[refactor] migrate DeepSeek V4.1 flavors",
     "created_at": "2026-11-19",
-    "updated_at": "2026-11-23",
+    "updated_at": "2026-11-24",
     "merged_at": "",
     "closed_at": "",
     "author": "hitwdy",
@@ -798,19 +1100,21 @@
   },
   {
     "iid": 1320,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[feat](dsv41): support multi-row packed batches for MBS>1",
     "created_at": "2026-11-19",
-    "updated_at": "2026-11-23",
-    "merged_at": "",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "hitwdy",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1320",
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 4,
     "e2e_issues": []
@@ -821,15 +1125,15 @@
     "draft": false,
     "title": "feat: Suspend--Modify the torchft source code",
     "created_at": "2026-11-19",
-    "updated_at": "2026-11-23",
+    "updated_at": "2026-11-24",
     "merged_at": "",
     "closed_at": "",
     "author": "zhangguoguang",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1319",
     "labels": [
       "stat/needs-squash",
-      "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "cann-cla/yes"
     ],
     "working_days_open": 4,
     "e2e_issues": []
@@ -994,19 +1298,21 @@
   },
   {
     "iid": 1310,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[refactor] Refactor DeepSeek V4 MTP",
     "created_at": "2026-11-18",
-    "updated_at": "2026-11-23",
-    "merged_at": "",
+    "updated_at": "2026-11-24",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "zhangjianshe",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1310",
     "labels": [
       "stat/needs-squash",
       "ci-pipeline-passed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 5,
     "e2e_issues": []
@@ -1265,18 +1571,20 @@
   },
   {
     "iid": 1297,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
     "title": "[refactor] cpu-offload-dev040-suit",
     "created_at": "2026-11-17",
     "updated_at": "2026-11-24",
-    "merged_at": "",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "YueGuoDora",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1297",
     "labels": [
-      "ci-pipeline-passed",
-      "cann-cla/yes"
+      "approved",
+      "cann-cla/yes",
+      "lgtm",
+      "ci-pipeline-passed"
     ],
     "working_days_open": 6,
     "e2e_issues": []
@@ -1522,15 +1830,15 @@
     "draft": true,
     "title": "[WIP][refactor] Investigate dev_0.4.0 CI from fork against master",
     "created_at": "2026-11-16",
-    "updated_at": "2026-11-23",
+    "updated_at": "2026-11-24",
     "merged_at": "",
     "closed_at": "",
     "author": "mystri",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1284",
     "labels": [
       "stat/needs-squash",
-      "ci-pipeline-failed",
-      "cann-cla/yes"
+      "cann-cla/yes",
+      "ci-pipeline-failed"
     ],
     "working_days_open": 7,
     "e2e_issues": []
@@ -1818,13 +2126,13 @@
   },
   {
     "iid": 1269,
-    "state": "opened",
+    "state": "closed",
     "draft": false,
     "title": "[dsv4] unify inner_indexer naming and per-model AscendC kernel bridges",
     "created_at": "2026-11-13",
-    "updated_at": "2026-11-20",
+    "updated_at": "2026-11-24",
     "merged_at": "",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "lrwei0709",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1269",
     "labels": [
@@ -4699,22 +5007,26 @@
   },
   {
     "iid": 1125,
-    "state": "opened",
+    "state": "merged",
     "draft": false,
-    "title": "feat(torchft): add save-only last-words checkpoints",
+    "title": "[feat] Add save-only last-words checkpoints for TorchFT",
     "created_at": "2026-10-29",
     "updated_at": "2026-11-24",
-    "merged_at": "",
+    "merged_at": "2026-11-24",
     "closed_at": "",
     "author": "zhangyifan999",
     "web_url": "https://gitcode.com/cann/torchtitan-npu/merge_requests/1125",
     "labels": [
       "stat/needs-squash",
       "cann-cla/yes",
-      "ci-pipeline-passed"
+      "ci-pipeline-passed",
+      "approved",
+      "lgtm"
     ],
     "working_days_open": 19,
-    "e2e_issues": []
+    "e2e_issues": [
+      "226"
+    ]
   },
   {
     "iid": 1124,

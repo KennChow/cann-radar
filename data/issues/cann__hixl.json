@@ -1,5 +1,546 @@
 [
   {
+    "iid": "1088",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Bug-Report|缺陷反馈]: parser_ini 校验失败仍写出 JSON 并返回成功",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1088",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1087",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Bug-Report|缺陷反馈]: parser_ini.py 在 Python 3.12 缺少 distutils 时无法启动",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1087",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1086",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Bug-Report|缺陷反馈]: ci_test/hixl.sh 在未设置 CANN 环境时无法显示帮助",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1086",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1085",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Bug-Report|缺陷反馈]: Python V2 listen_ip_info 解析器拒绝带方括号的 IPv6 地址",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1085",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1084",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Documentation|文档反馈]: examples/cpp/README_en.md 链接指向中文接口文档",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1084",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1083",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Documentation|文档反馈]: docs/zh/api/python/LLMConfig.md 的 A3 ranktable 示例包含 JSON 注释",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1083",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1082",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Documentation|文档反馈]: docs/en/api/python/LLMConfig.md 的 A3 ranktable 示例不是有效 JSON",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1082",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1081",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Documentation|文档反馈]: docs/zh/api/python/LLMDataDist.md 的 rank_table 示例含尾随逗号",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1081",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1080",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Bug-Report|缺陷反馈]: 平台识别失败时重复执行 npu-smi 查询",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1080",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1079",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Bug-Report|缺陷反馈]: 通信基准启动器未校验多 lane 的 HIXL 端口范围",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "shiguangke"
+    ],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1079",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1078",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Documentation|文档反馈]: 英文 FabricMem 设计文档的 API 引用和 protocol_desc 说明过时",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1078",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1077",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Bug-Report|缺陷反馈]: run_all_benchmarks.py 未校验通信端口范围",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1077",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1076",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Docs] docs/en/api/python/CacheManager.md links point to Chinese docs instead of existing English docs",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "liangjinxuan-2026"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1076",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1075",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Docs] docs/en/FabricMem.md links point to Chinese docs instead of existing English docs",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "liangjinxuan-2026"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1075",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1074",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Docs] examples/python/README_en.md links point to Chinese docs instead of existing English docs",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "liangjinxuan-2026"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1074",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1073",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Docs] docs/README_en.md links point to Chinese docs instead of existing English docs",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "liangjinxuan-2026"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1073",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1072",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Docs] README_en.md links point to Chinese docs instead of existing English docs",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "liangjinxuan-2026"
+    ],
+    "user_notes_count": 2,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1072",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1071",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Bug-Report|缺陷反馈]: KV 基准启动器未校验 base_port 与进程数的端口范围",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1071",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1070",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Documentation|文档反馈]: KV benchmark 双语 README 缺少启动参数说明",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1070",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1069",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Bug-Report|缺陷反馈]: Python Benchmark 接受空的 IPv6 远端主机名",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1069",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1068",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Bug-Report|缺陷反馈]: gen_manifest 校验失败前已写入清单文件",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1068",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1067",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Bug-Report|缺陷反馈]: KV 基准启动器未校验 devices 输入",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1067",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1066",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Bug-Report|缺陷反馈]: 通信基准启动器未校验 device_ids 输入",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1066",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1065",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Bug-Report|缺陷反馈]: 日志规范检查器静默忽略不存在的显式路径",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1065",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1064",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Bug-Report|缺陷反馈]: run_all_benchmarks.py 无效 --device_ids 会直接抛出未处理异常",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1064",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1063",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Documentation|文档反馈]: docs/en/api/python/LLMDataDist.md 的 rank_table 示例含尾随逗号",
+    "labels": [
+      "documentation"
+    ],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1063",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1062",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Documentation|文档反馈]: docs/en/api/python/LLMConfig.md 的 A2 ranktable 示例包含 JSON 尾随逗号",
+    "labels": [
+      "documentation"
+    ],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1062",
+    "working_days_open": 1
+  },
+  {
+    "iid": "1061",
+    "state": "opened",
+    "created_at": "2026-11-24",
+    "closed_at": "",
+    "author": "shiguangke",
+    "author_id": "6983ee09856d9157f9c79bbd",
+    "title": "[Bug-Report|缺陷反馈]: 性能报告折线图仍展示表格标记为不支持的传输路径",
+    "labels": [
+      "bug-report"
+    ],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "tangjie66",
+      "shiguangke"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/hixl/issues/1061",
+    "working_days_open": 1
+  },
+  {
     "iid": "1060",
     "state": "opened",
     "created_at": "2026-11-24",
@@ -27,13 +568,15 @@
     "author": "hwsja",
     "author_id": "681736bc7740957d853fe619",
     "title": "[Bug-Report|缺陷反馈]: A5 单机无 CLOS 组网时仍生成 plane_pg_0 端点，UB CTP 建链 errNo:114 死循环",
-    "labels": [],
+    "labels": [
+      "wait-feedback"
+    ],
     "issue_type": "缺陷",
     "issue_state": "待办的",
     "assignees": [
       "tangjie66"
     ],
-    "user_notes_count": 0,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/hixl/issues/1059",
     "working_days_open": 1
   },
@@ -104,9 +647,9 @@
     "closed_at": "",
     "author": "dongzhubeitang10",
     "author_id": "6b000e659c992864332f83ec",
-    "title": "CANN开发者共建计划--hixl python/test_remote_cache_accessible.py使用裸 except: 误捕获系统退出与中断信号",
+    "title": "[Bug-Report|缺陷反馈]: Python 测试使用裸 except 会吞掉系统退出与中断信号",
     "labels": [],
-    "issue_type": "任务",
+    "issue_type": "缺陷",
     "issue_state": "待办的",
     "assignees": [
       "A-Liuhao"
@@ -159,9 +702,9 @@
     "closed_at": "",
     "author": "JerryJiao0628",
     "author_id": "672d6aa8fbbddc0c2008a855",
-    "title": "[质量加固] 构建与打包脚本 3 处缺陷：build.sh glob 误用 / run_hixl_uninstall.sh 永假分支 / hixl_custom_uninstall.sh 重复 if-else",
+    "title": "[Bug-Report|缺陷反馈]: 构建与打包脚本存在 glob 误用、永假分支和重复 if-else",
     "labels": [],
-    "issue_type": "任务",
+    "issue_type": "缺陷",
     "issue_state": "待办的",
     "assignees": [
       "JerryJiao0628",
@@ -220,10 +763,10 @@
     "closed_at": "2026-11-23",
     "author": "JerryJiao0628",
     "author_id": "672d6aa8fbbddc0c2008a855",
-    "title": "[Bug-Report|缺陷反馈]: 在途 PR #843 分支陈旧，按现状合入会回退 3 项已合入的安全/功能改进",
+    "title": "[Bug-Report|缺陷反馈]: PR #843 分支陈旧，按现状合入将回退 3 项已合入改进",
     "labels": [],
-    "issue_type": "任务",
-    "issue_state": "已拒绝",
+    "issue_type": "缺陷",
+    "issue_state": "已完成",
     "assignees": [
       "JerryJiao0628",
       "A-Liuhao"
@@ -301,7 +844,9 @@
     "author": "gcw_IETEQrRJ",
     "author_id": "6ac897ac2762836865d88758",
     "title": "[Bug-Report|缺陷反馈]: CANN 9.2.1 在 A3 上异步 KV GET 偶发 GetTransferStatus 103900",
-    "labels": [],
+    "labels": [
+      "wait-feedback"
+    ],
     "issue_type": "任务",
     "issue_state": "待办的",
     "assignees": [
@@ -354,11 +899,11 @@
     "closed_at": "",
     "author": "kyokai-erisu",
     "author_id": "69526dd763bb150764bb6dbb",
-    "title": "双机A2部署dsv4.1-1017  HixlCSClientConnect failed报错",
+    "title": "[Bug-Report|缺陷反馈]: 双机 A2 部署 DSV4.1 与 Mooncake 时出现 HixlCSClientConnect failed",
     "labels": [
       "wait-feedback"
     ],
-    "issue_type": "任务",
+    "issue_type": "缺陷",
     "issue_state": "待办的",
     "assignees": [
       "M__Cheng"
@@ -568,11 +1113,11 @@
     "closed_at": "",
     "author": "weixin_65637564",
     "author_id": "671b91e52b0f3f05d612a596",
-    "title": "[Question|问题咨询]:BCLinux  4.19 内核 + 64KB 页 hdk 25.5.6  mooncake池化部署报错host 内存注册失败halHostRegister failed, ret=65534，",
+    "title": "[Question|问题咨询]: BCLinux 4.19 内核与 64KB 页环境下 Mooncake 池化部署 host 内存注册失败",
     "labels": [
       "wait-feedback"
     ],
-    "issue_type": "任务",
+    "issue_type": "咨询",
     "issue_state": "待办的",
     "assignees": [
       "hanyinglong_qaq"
@@ -588,13 +1133,13 @@
     "closed_at": "2026-11-19",
     "author": "avsvas",
     "author_id": "6af97f7d51b7f0311c3ff58a",
-    "title": "CANN开发者共建计划--Python 快速入门的 pybind11 安装命令丢失版本约束",
+    "title": "[Documentation|文档反馈]: Python 快速入门中的 pybind11 安装命令丢失版本约束",
     "labels": [
       "wait-feedback",
       "documentation",
       "resolved"
     ],
-    "issue_type": "任务",
+    "issue_type": "文档",
     "issue_state": "已解决",
     "assignees": [
       "hanyinglong_qaq"
@@ -610,11 +1155,12 @@
     "closed_at": "",
     "author": "haimianbaby",
     "author_id": "6af692b9e2cfbe062cd1934e",
-    "title": "CANN开发者共建计划--hixl_tool 环境加载命令未使用注释约定的默认路径",
+    "title": "[Documentation|文档反馈]: hixl_tool 环境加载命令未使用文档约定的默认路径",
     "labels": [],
-    "issue_type": "任务",
+    "issue_type": "文档",
     "issue_state": "待办的",
     "assignees": [
+      "tangjie66",
       "haimianbaby"
     ],
     "user_notes_count": 2,
@@ -633,6 +1179,7 @@
     "issue_type": "任务",
     "issue_state": "待办的",
     "assignees": [
+      "tangjie66",
       "accessale"
     ],
     "user_notes_count": 2,
@@ -675,7 +1222,7 @@
     "assignees": [
       "A-Liuhao"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/hixl/issues/1026",
     "working_days_open": 9
   },
@@ -10370,9 +10917,9 @@
   },
   {
     "iid": "477",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-07-14",
-    "closed_at": "",
+    "closed_at": "2026-11-24",
     "author": "songmingyang",
     "author_id": "68c2745e2134ad667af2c439",
     "title": "[Bug-Report|缺陷反馈]: A5 A+X标卡场景，Host侧配置了多张CX网卡，但HIXL当前不支持多张网卡并发传输",
@@ -10380,7 +10927,7 @@
       "bug-report"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "songmingyang"
     ],
@@ -18610,7 +19157,9 @@
     "author": "zhaozhihui",
     "author_id": "68c3c7cff31de23a33f20316",
     "title": "[Roadmap] hixl roadmap Nov. 2025",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
     "issue_state": "已完成",
     "assignees": [
