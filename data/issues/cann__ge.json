@@ -1,5 +1,395 @@
 [
   {
+    "iid": "946",
+    "state": "opened",
+    "created_at": "2026-11-27",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Bug-Report|缺陷反馈]: fusion_engine_tbe_json_parser_unittest.cc 未检查 memcpy_s 返回值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/946",
+    "working_days_open": 1
+  },
+  {
+    "iid": "945",
+    "state": "opened",
+    "created_at": "2026-11-27",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Bug-Report|缺陷反馈]: fusion_engine_tbe_json_parser_stest.cc 未检查 memcpy_s 返回值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/945",
+    "working_days_open": 1
+  },
+  {
+    "iid": "944",
+    "state": "opened",
+    "created_at": "2026-11-27",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Bug-Report|缺陷反馈]: ut_hcom_lowering.cc 未检查 malloc 及 memset_s 返回值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/944",
+    "working_days_open": 1
+  },
+  {
+    "iid": "943",
+    "state": "opened",
+    "created_at": "2026-11-27",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Bug-Report|缺陷反馈]: st_hcom_lowering.cc 未检查 malloc 及 memset_s 返回值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/943",
+    "working_days_open": 1
+  },
+  {
+    "iid": "942",
+    "state": "opened",
+    "created_at": "2026-11-27",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Bug-Report|缺陷反馈]: flow_model_impl_utest.cpp new(std::nothrow) 未判空且未检查 memset_s 返回值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/942",
+    "working_days_open": 1
+  },
+  {
+    "iid": "941",
+    "state": "opened",
+    "created_at": "2026-11-27",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Bug-Report|缺陷反馈]: muti_in_out_stest.cpp 未检查 memcpy_s 返回值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/941",
+    "working_days_open": 1
+  },
+  {
+    "iid": "940",
+    "state": "opened",
+    "created_at": "2026-11-27",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Bug-Report|缺陷反馈]: llm_service_flow_func_stest.cpp new(std::nothrow) 未判空且未检查 memset_s 返回值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/940",
+    "working_days_open": 1
+  },
+  {
+    "iid": "939",
+    "state": "opened",
+    "created_at": "2026-11-27",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Bug-Report|缺陷反馈]: tests/dflow/udf/st/stub/udf_stub.cpp 未检查 memcpy_s 返回值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/939",
+    "working_days_open": 1
+  },
+  {
+    "iid": "938",
+    "state": "opened",
+    "created_at": "2026-11-27",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Bug-Report|缺陷反馈]: st_hcom_executor.cc 两处 memset_s 漏乘 sizeof(s32) 且未检查返回值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/938",
+    "working_days_open": 1
+  },
+  {
+    "iid": "937",
+    "state": "opened",
+    "created_at": "2026-11-27",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Bug-Report|缺陷反馈]: ut_hccl_kernel_info.cc 未检查 strcpy_s 返回值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/937",
+    "working_days_open": 1
+  },
+  {
+    "iid": "936",
+    "state": "opened",
+    "created_at": "2026-11-27",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Bug-Report|缺陷反馈]: st_hccl_kernel_info.cc 未检查 strcpy_s 返回值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/936",
+    "working_days_open": 1
+  },
+  {
+    "iid": "935",
+    "state": "opened",
+    "created_at": "2026-11-27",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Bug-Report|缺陷反馈]: heterogeneous_exchange_service_unittest.cc 未检查 memset_s 返回值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/935",
+    "working_days_open": 1
+  },
+  {
+    "iid": "934",
+    "state": "opened",
+    "created_at": "2026-11-27",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Bug-Report|缺陷反馈]: executor_benchmark.cc 未检查 memset_s 返回值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/934",
+    "working_days_open": 1
+  },
+  {
+    "iid": "933",
+    "state": "opened",
+    "created_at": "2026-11-27",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Bug-Report|缺陷反馈]: acl_model_unittest.cpp LoadDataFromFile Stub 未检查 memcpy_s 返回值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/933",
+    "working_days_open": 1
+  },
+  {
+    "iid": "932",
+    "state": "opened",
+    "created_at": "2026-11-27",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Bug-Report|缺陷反馈]: configurations_unittest.cc MockMmpaRealPath 未检查 memcpy_s 返回值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/932",
+    "working_days_open": 1
+  },
+  {
+    "iid": "931",
+    "state": "opened",
+    "created_at": "2026-11-27",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Bug-Report|缺陷反馈]: tests/engines/cpueng/stub/runtime/src/runtime_stub.cpp 未检查 memcpy_s 返回值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/931",
+    "working_days_open": 1
+  },
+  {
+    "iid": "930",
+    "state": "opened",
+    "created_at": "2026-11-27",
+    "closed_at": "",
+    "author": "liangjinxuan-2026",
+    "author_id": "6903114ff366cf1f50b9df1b",
+    "title": "[Bug-Report|缺陷反馈]: tests/depends/ascendcl/src/ascendcl_stub.cc 未检查 memset_s 返回值",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/930",
+    "working_days_open": 1
+  },
+  {
+    "iid": "929",
+    "state": "opened",
+    "created_at": "2026-11-27",
+    "closed_at": "",
+    "author": "pan-tong",
+    "author_id": "688440d8c48edb4f2f1fd135",
+    "title": "[Bug-Report|缺陷反馈]: 新toolkit搭配旧ops包时HostCPU初始化查找已移除的常量折叠库",
+    "labels": [],
+    "issue_type": "任务",
+    "issue_state": "待办的",
+    "assignees": [
+      "pan-tong"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/929",
+    "working_days_open": 1
+  },
+  {
+    "iid": "928",
+    "state": "closed",
+    "created_at": "2026-11-27",
+    "closed_at": "2026-11-27",
+    "author": "Xztxzt",
+    "author_id": "6720952e09c9b075bc0bb43e",
+    "title": "[Bug-Report|缺陷反馈]: 仅修改根目录英文 README、CONTRIBUTING 或 AGENTS 时，GE 的文档变更检测仍会触发完整打包",
+    "labels": [
+      "bug-report",
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "Xztxzt",
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/928",
+    "working_days_open": 1
+  },
+  {
+    "iid": "927",
+    "state": "closed",
+    "created_at": "2026-11-27",
+    "closed_at": "2026-11-27",
+    "author": "Xztxzt",
+    "author_id": "6720952e09c9b075bc0bb43e",
+    "title": "[Documentation|文档反馈]: GE 构建帮助和中英文指南把默认并行数写成了固定的 8",
+    "labels": [
+      "documentation",
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "Xztxzt",
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/927",
+    "working_days_open": 1
+  },
+  {
+    "iid": "926",
+    "state": "closed",
+    "created_at": "2026-11-27",
+    "closed_at": "2026-11-27",
+    "author": "Xztxzt",
+    "author_id": "6720952e09c9b075bc0bb43e",
+    "title": "[Bug-Report|缺陷反馈]: GE 同时打包多个组件时，第二个组件的安装包缺失仍会报告构建成功",
+    "labels": [
+      "bug-report",
+      "resolved"
+    ],
+    "issue_type": "任务",
+    "issue_state": "已完成",
+    "assignees": [
+      "Xztxzt",
+      "gcw_2mqml1vq"
+    ],
+    "user_notes_count": 1,
+    "web_url": "https://gitcode.com/cann/ge/issues/926",
+    "working_days_open": 1
+  },
+  {
     "iid": "925",
     "state": "opened",
     "created_at": "2026-11-26",
@@ -15,7 +405,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/925",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "924",
@@ -33,7 +423,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/924",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "923",
@@ -51,7 +441,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/923",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "922",
@@ -69,7 +459,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/922",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "921",
@@ -87,7 +477,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/921",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "920",
@@ -105,7 +495,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/920",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "919",
@@ -123,7 +513,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/919",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "918",
@@ -141,7 +531,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/918",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "917",
@@ -159,7 +549,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/917",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "916",
@@ -177,7 +567,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/916",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "915",
@@ -195,7 +585,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/915",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "914",
@@ -213,7 +603,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/914",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "913",
@@ -231,7 +621,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/913",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "912",
@@ -249,7 +639,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/912",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "911",
@@ -267,7 +657,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/911",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "910",
@@ -285,7 +675,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/910",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "909",
@@ -303,7 +693,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/909",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "908",
@@ -321,7 +711,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/908",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "907",
@@ -339,7 +729,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/907",
-    "working_days_open": 1
+    "working_days_open": 2
   },
   {
     "iid": "906",
@@ -357,7 +747,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/906",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "905",
@@ -375,25 +765,25 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/905",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "904",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-24",
-    "closed_at": "",
+    "closed_at": "2026-11-27",
     "author": "liangjinxuan-2026",
     "author_id": "6903114ff366cf1f50b9df1b",
     "title": "[Docs] docs/en/api/graph_engine_api/python/ge/onnx_plugin/onnx_plugin.md links point to Chinese docs instead of existing English docs",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "autumn982"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/904",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "903",
@@ -411,7 +801,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/903",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "902",
@@ -429,7 +819,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/902",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "901",
@@ -447,7 +837,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/901",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "900",
@@ -465,7 +855,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/900",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "899",
@@ -483,7 +873,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/899",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "898",
@@ -501,7 +891,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/898",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "897",
@@ -519,7 +909,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/897",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "896",
@@ -537,7 +927,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/896",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "895",
@@ -557,25 +947,25 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/895",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "894",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-24",
-    "closed_at": "",
+    "closed_at": "2026-11-27",
     "author": "liangjinxuan-2026",
     "author_id": "6903114ff366cf1f50b9df1b",
     "title": "[Docs] examples/acl/5_sample_yolov13/README_en.md links point to Chinese docs instead of existing English docs",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "lidaoming1"
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/894",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "893",
@@ -596,7 +986,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/893",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "892",
@@ -614,7 +1004,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/892",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "891",
@@ -632,7 +1022,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/891",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "890",
@@ -642,7 +1032,9 @@
     "author": "liangjinxuan-2026",
     "author_id": "6903114ff366cf1f50b9df1b",
     "title": "[Docs] examples/fusion_pass/graph_base_pass/3_modify_conv_data_format_pass/python/README_en.md links point to Chinese docs instead of existing English docs",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
     "issue_state": "已解决",
     "assignees": [
@@ -650,7 +1042,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/890",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "889",
@@ -668,7 +1060,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/889",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "888",
@@ -686,7 +1078,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/888",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "887",
@@ -704,7 +1096,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/887",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "886",
@@ -726,7 +1118,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/886",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "885",
@@ -748,7 +1140,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/885",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "884",
@@ -770,7 +1162,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/884",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "883",
@@ -792,7 +1184,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/883",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "882",
@@ -813,7 +1205,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/882",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "881",
@@ -831,7 +1223,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/881",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "880",
@@ -849,7 +1241,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/880",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "879",
@@ -867,7 +1259,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/879",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "878",
@@ -885,7 +1277,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/878",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "877",
@@ -903,7 +1295,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/877",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "876",
@@ -921,7 +1313,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/876",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "875",
@@ -939,7 +1331,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/875",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "874",
@@ -957,7 +1349,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/874",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "873",
@@ -975,7 +1367,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/873",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "872",
@@ -993,7 +1385,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/872",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "866",
@@ -1011,7 +1403,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/866",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "865",
@@ -1029,7 +1421,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/865",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "864",
@@ -1047,7 +1439,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/864",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "863",
@@ -1068,7 +1460,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/863",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "862",
@@ -1088,7 +1480,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/862",
-    "working_days_open": 3
+    "working_days_open": 4
   },
   {
     "iid": "861",
@@ -1109,7 +1501,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/861",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "860",
@@ -1130,7 +1522,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/860",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "859",
@@ -1148,7 +1540,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/859",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "858",
@@ -1168,7 +1560,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/858",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "857",
@@ -1188,7 +1580,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/857",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "856",
@@ -1208,7 +1600,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/856",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "855",
@@ -1228,7 +1620,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/855",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "854",
@@ -1248,7 +1640,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/854",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "853",
@@ -1266,7 +1658,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/853",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "852",
@@ -1284,7 +1676,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/852",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "851",
@@ -1303,7 +1695,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/851",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "850",
@@ -1321,7 +1713,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/850",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "849",
@@ -1339,7 +1731,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/849",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "848",
@@ -1357,7 +1749,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/848",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "847",
@@ -1375,7 +1767,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/847",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "846",
@@ -1393,7 +1785,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/846",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "845",
@@ -1411,7 +1803,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/845",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "844",
@@ -1429,7 +1821,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/844",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "843",
@@ -1449,7 +1841,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/843",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "842",
@@ -1460,7 +1852,8 @@
     "author_id": "6affa7981b014e09b03964f6",
     "title": "CANN开发者共建计划--ge 修复 SwitchToStreamSwitchPass 解析 hccl_group_id 未校验 npos 导致截取异常",
     "labels": [
-      "resolved"
+      "resolved",
+      "Accepted"
     ],
     "issue_type": "任务",
     "issue_state": "已完成",
@@ -1469,7 +1862,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/842",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "841",
@@ -1487,7 +1880,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/841",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "840",
@@ -1505,7 +1898,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/840",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "839",
@@ -1525,7 +1918,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/839",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "838",
@@ -1543,7 +1936,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/838",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "837",
@@ -1563,7 +1956,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/837",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "836",
@@ -1581,7 +1974,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/836",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "835",
@@ -1599,7 +1992,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/835",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "834",
@@ -1619,7 +2012,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/834",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "833",
@@ -1639,7 +2032,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/833",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "832",
@@ -1657,7 +2050,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/832",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "831",
@@ -1675,7 +2068,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/831",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "830",
@@ -1693,7 +2086,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/830",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "829",
@@ -1707,11 +2100,12 @@
     "issue_type": "任务",
     "issue_state": "待办的",
     "assignees": [
+      "lushiming0",
       "lijunyu_111"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/829",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "828",
@@ -1729,7 +2123,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/828",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "827",
@@ -1747,7 +2141,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/827",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "826",
@@ -1765,7 +2159,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/826",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "825",
@@ -1783,7 +2177,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/825",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "824",
@@ -1801,7 +2195,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/824",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "823",
@@ -1819,7 +2213,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/823",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "822",
@@ -1837,7 +2231,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/822",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "821",
@@ -1858,7 +2252,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/821",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "820",
@@ -1876,7 +2270,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/820",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "819",
@@ -1894,7 +2288,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/819",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "818",
@@ -1914,7 +2308,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/818",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "817",
@@ -1932,7 +2326,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/817",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "816",
@@ -1952,7 +2346,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/816",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "815",
@@ -1972,25 +2366,27 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/815",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "814",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-21",
-    "closed_at": "",
+    "closed_at": "2026-11-27",
     "author": "bingniu_tang",
     "author_id": "6aff922d9a8ca858dde7eff9",
     "title": "CANN开发者共建计划--ge 修复 FEGraphOptimizer 手动加锁后异常早退漏解锁引发永久死锁",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "lushiming0"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/814",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "813",
@@ -2008,7 +2404,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/813",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "812",
@@ -2026,7 +2422,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/812",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "811",
@@ -2044,7 +2440,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/811",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "810",
@@ -2062,7 +2458,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/810",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "809",
@@ -2082,7 +2478,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/809",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "808",
@@ -2102,7 +2498,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/808",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "807",
@@ -2121,7 +2517,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/807",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "806",
@@ -2141,7 +2537,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/806",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "805",
@@ -2159,7 +2555,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/805",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "804",
@@ -2179,7 +2575,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/804",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "803",
@@ -2199,7 +2595,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/803",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "802",
@@ -2219,7 +2615,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/802",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "801",
@@ -2239,7 +2635,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/801",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "800",
@@ -2259,7 +2655,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/800",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "799",
@@ -2279,25 +2675,27 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/799",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "798",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-21",
-    "closed_at": "",
+    "closed_at": "2026-11-27",
     "author": "adriancheng0211",
     "author_id": "6aff8bc4ef431a7302c5168b",
     "title": "CANN开发者共建计划--ge hcom_acl_adapter.cc hrtMemcpyAddrAsync 告警日志无占位符却多传返回码 ret",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "muzhiyu6"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/798",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "797",
@@ -2316,7 +2714,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/797",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "796",
@@ -2335,7 +2733,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/796",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "795",
@@ -2354,7 +2752,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/795",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "794",
@@ -2373,7 +2771,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/794",
-    "working_days_open": 4
+    "working_days_open": 5
   },
   {
     "iid": "793",
@@ -2396,7 +2794,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/793",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "792",
@@ -2419,7 +2817,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/792",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "791",
@@ -2442,7 +2840,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/791",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "790",
@@ -2464,7 +2862,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/790",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "789",
@@ -2482,7 +2880,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/789",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "788",
@@ -2503,7 +2901,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/788",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "787",
@@ -2525,7 +2923,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/787",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "786",
@@ -2545,7 +2943,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/786",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "785",
@@ -2563,7 +2961,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/785",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "784",
@@ -2583,7 +2981,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/784",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "783",
@@ -2603,7 +3001,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/783",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "782",
@@ -2621,7 +3019,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/782",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "781",
@@ -2639,7 +3037,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/781",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "780",
@@ -2657,7 +3055,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/780",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "779",
@@ -2675,7 +3073,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/779",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "778",
@@ -2693,7 +3091,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/778",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "777",
@@ -2713,7 +3111,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/777",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "776",
@@ -2731,7 +3129,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/776",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "775",
@@ -2752,7 +3150,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/775",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "774",
@@ -2770,7 +3168,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/774",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "773",
@@ -2788,7 +3186,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/773",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "772",
@@ -2808,7 +3206,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/772",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "771",
@@ -2828,7 +3226,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/771",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "770",
@@ -2848,7 +3246,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/770",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "769",
@@ -2868,7 +3266,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/769",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "768",
@@ -2889,7 +3287,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/768",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "767",
@@ -2907,7 +3305,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/767",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "766",
@@ -2928,7 +3326,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/766",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "765",
@@ -2949,7 +3347,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/765",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "764",
@@ -2970,7 +3368,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/764",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "763",
@@ -2981,7 +3379,8 @@
     "author_id": "6afecff1ef431a7302c4ed58",
     "title": "CANN开发者共建计划--ge FastNode::operator== 将 in_control_edge_count_ 与自身比较导致控制边计数差异漏检",
     "labels": [
-      "resolved"
+      "resolved",
+      "Accepted"
     ],
     "issue_type": "任务",
     "issue_state": "已完成",
@@ -2990,7 +3389,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/763",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "762",
@@ -3011,7 +3410,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/762",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "761",
@@ -3022,7 +3421,8 @@
     "author_id": "6afeccd254a1ea51890af4dc",
     "title": "CANN开发者共建计划--ge Scope::Name/SubType/AllNodesMap/LastName 等接口在未调用 Init 时直接解引用空 impl_",
     "labels": [
-      "resolved"
+      "resolved",
+      "Accepted"
     ],
     "issue_type": "任务",
     "issue_state": "已完成",
@@ -3031,7 +3431,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/761",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "760",
@@ -3052,7 +3452,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/760",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "759",
@@ -3073,7 +3473,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/759",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "758",
@@ -3094,7 +3494,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/758",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "757",
@@ -3115,7 +3515,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/757",
-    "working_days_open": 5
+    "working_days_open": 6
   },
   {
     "iid": "756",
@@ -3133,7 +3533,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/756",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "755",
@@ -3153,7 +3553,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/755",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "754",
@@ -3173,25 +3573,25 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/754",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "753",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-19",
-    "closed_at": "",
+    "closed_at": "2026-11-27",
     "author": "azhiqiu",
     "author_id": "6781ebcaf7201c694a141fd3",
     "title": "[Documentation|文档反馈]: 7 份中文 README 的标题层级整体比英文版深一级（英文 208/208 用 #，仅此 7 份用 ##）",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "autumn982"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/753",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "752",
@@ -3210,7 +3610,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/752",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "751",
@@ -3229,7 +3629,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/751",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "750",
@@ -3248,7 +3648,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/750",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "749",
@@ -3267,7 +3667,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/749",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "748",
@@ -3285,7 +3685,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/748",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "747",
@@ -3303,7 +3703,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/747",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "746",
@@ -3321,25 +3721,25 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/746",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "745",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-19",
-    "closed_at": "",
+    "closed_at": "2026-11-27",
     "author": "steamyao1998",
     "author_id": "6afd76ff33910b7851359aa6",
     "title": "CANN开发者共建计划--[Bug]: ge FormatRefiner::RefreshOriginFormatOfAnchor 判空滞后导致可选空输入输出描述崩溃",
     "labels": [],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已解决",
     "assignees": [
       "tang-haojie"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/745",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "744",
@@ -3357,7 +3757,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/744",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "743",
@@ -3375,7 +3775,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/743",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "742",
@@ -3393,7 +3793,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/742",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "741",
@@ -3411,7 +3811,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/741",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "740",
@@ -3429,7 +3829,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/740",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "739",
@@ -3449,7 +3849,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/739",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "738",
@@ -3469,7 +3869,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/738",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "737",
@@ -3489,7 +3889,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/737",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "736",
@@ -3509,7 +3909,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/736",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "735",
@@ -3529,7 +3929,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/735",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "734",
@@ -3549,7 +3949,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/734",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "733",
@@ -3569,7 +3969,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/733",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "732",
@@ -3589,7 +3989,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/732",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "731",
@@ -3607,7 +4007,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/731",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "730",
@@ -3627,25 +4027,27 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/730",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "729",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-11-19",
-    "closed_at": "",
+    "closed_at": "2026-11-27",
     "author": "zhengace_",
     "author_id": "6afd522c74b69a26e28430bc",
     "title": "CANN开发者共建计划--ge test_dataflow_flow_func.py AssignFunc.assign 缩进错误导致正常输入也返回 FAILED",
-    "labels": [],
+    "labels": [
+      "resolved"
+    ],
     "issue_type": "任务",
-    "issue_state": "待办的",
+    "issue_state": "已完成",
     "assignees": [
       "Chang-an-HW"
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/729",
-    "working_days_open": 6
+    "working_days_open": 7
   },
   {
     "iid": "728",
@@ -3665,7 +4067,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/728",
-    "working_days_open": 7
+    "working_days_open": 8
   },
   {
     "iid": "727",
@@ -3683,7 +4085,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/727",
-    "working_days_open": 8
+    "working_days_open": 9
   },
   {
     "iid": "726",
@@ -3703,7 +4105,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/726",
-    "working_days_open": 8
+    "working_days_open": 9
   },
   {
     "iid": "725",
@@ -3721,7 +4123,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/725",
-    "working_days_open": 8
+    "working_days_open": 9
   },
   {
     "iid": "724",
@@ -3740,7 +4142,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/724",
-    "working_days_open": 8
+    "working_days_open": 9
   },
   {
     "iid": "723",
@@ -3761,7 +4163,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/723",
-    "working_days_open": 9
+    "working_days_open": 10
   },
   {
     "iid": "722",
@@ -3781,7 +4183,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/722",
-    "working_days_open": 9
+    "working_days_open": 10
   },
   {
     "iid": "721",
@@ -3800,7 +4202,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/721",
-    "working_days_open": 10
+    "working_days_open": 11
   },
   {
     "iid": "720",
@@ -3821,7 +4223,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/720",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "719",
@@ -3839,7 +4241,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/719",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "718",
@@ -3859,7 +4261,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/718",
-    "working_days_open": 11
+    "working_days_open": 12
   },
   {
     "iid": "717",
@@ -3877,7 +4279,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/717",
-    "working_days_open": 13
+    "working_days_open": 14
   },
   {
     "iid": "716",
@@ -3898,7 +4300,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/716",
-    "working_days_open": 13
+    "working_days_open": 14
   },
   {
     "iid": "711",
@@ -3918,7 +4320,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/711",
-    "working_days_open": 16
+    "working_days_open": 17
   },
   {
     "iid": "710",
@@ -3940,7 +4342,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/710",
-    "working_days_open": 16
+    "working_days_open": 17
   },
   {
     "iid": "709",
@@ -3962,7 +4364,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/709",
-    "working_days_open": 16
+    "working_days_open": 17
   },
   {
     "iid": "708",
@@ -3984,7 +4386,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/708",
-    "working_days_open": 16
+    "working_days_open": 17
   },
   {
     "iid": "707",
@@ -4006,7 +4408,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/707",
-    "working_days_open": 16
+    "working_days_open": 17
   },
   {
     "iid": "706",
@@ -4028,7 +4430,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/706",
-    "working_days_open": 16
+    "working_days_open": 17
   },
   {
     "iid": "705",
@@ -4048,7 +4450,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/705",
-    "working_days_open": 17
+    "working_days_open": 18
   },
   {
     "iid": "704",
@@ -4066,7 +4468,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/704",
-    "working_days_open": 19
+    "working_days_open": 20
   },
   {
     "iid": "700",
@@ -4085,7 +4487,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/700",
-    "working_days_open": 19
+    "working_days_open": 20
   },
   {
     "iid": "699",
@@ -4106,7 +4508,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/699",
-    "working_days_open": 19
+    "working_days_open": 20
   },
   {
     "iid": "698",
@@ -4126,7 +4528,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/698",
-    "working_days_open": 19
+    "working_days_open": 20
   },
   {
     "iid": "697",
@@ -4146,7 +4548,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/697",
-    "working_days_open": 20
+    "working_days_open": 21
   },
   {
     "iid": "696",
@@ -4166,7 +4568,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/696",
-    "working_days_open": 20
+    "working_days_open": 21
   },
   {
     "iid": "695",
@@ -4186,7 +4588,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/695",
-    "working_days_open": 20
+    "working_days_open": 21
   },
   {
     "iid": "694",
@@ -4206,7 +4608,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/694",
-    "working_days_open": 20
+    "working_days_open": 21
   },
   {
     "iid": "693",
@@ -4224,7 +4626,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/693",
-    "working_days_open": 20
+    "working_days_open": 21
   },
   {
     "iid": "692",
@@ -4242,7 +4644,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/692",
-    "working_days_open": 21
+    "working_days_open": 22
   },
   {
     "iid": "691",
@@ -4263,7 +4665,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/691",
-    "working_days_open": 22
+    "working_days_open": 23
   },
   {
     "iid": "690",
@@ -4284,7 +4686,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/690",
-    "working_days_open": 22
+    "working_days_open": 23
   },
   {
     "iid": "689",
@@ -4304,7 +4706,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/689",
-    "working_days_open": 22
+    "working_days_open": 23
   },
   {
     "iid": "688",
@@ -4322,7 +4724,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/688",
-    "working_days_open": 22
+    "working_days_open": 23
   },
   {
     "iid": "687",
@@ -4343,7 +4745,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/687",
-    "working_days_open": 22
+    "working_days_open": 23
   },
   {
     "iid": "686",
@@ -4364,7 +4766,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/686",
-    "working_days_open": 22
+    "working_days_open": 23
   },
   {
     "iid": "684",
@@ -4384,7 +4786,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/684",
-    "working_days_open": 22
+    "working_days_open": 23
   },
   {
     "iid": "683",
@@ -4404,7 +4806,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/683",
-    "working_days_open": 22
+    "working_days_open": 23
   },
   {
     "iid": "682",
@@ -4424,7 +4826,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/682",
-    "working_days_open": 22
+    "working_days_open": 23
   },
   {
     "iid": "681",
@@ -4444,7 +4846,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/681",
-    "working_days_open": 22
+    "working_days_open": 23
   },
   {
     "iid": "680",
@@ -4464,7 +4866,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/680",
-    "working_days_open": 22
+    "working_days_open": 23
   },
   {
     "iid": "679",
@@ -4482,7 +4884,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/679",
-    "working_days_open": 23
+    "working_days_open": 24
   },
   {
     "iid": "678",
@@ -4502,7 +4904,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/678",
-    "working_days_open": 25
+    "working_days_open": 26
   },
   {
     "iid": "677",
@@ -4522,7 +4924,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/677",
-    "working_days_open": 25
+    "working_days_open": 26
   },
   {
     "iid": "676",
@@ -4542,7 +4944,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/676",
-    "working_days_open": 26
+    "working_days_open": 27
   },
   {
     "iid": "675",
@@ -4562,7 +4964,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/675",
-    "working_days_open": 26
+    "working_days_open": 27
   },
   {
     "iid": "674",
@@ -4582,7 +4984,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/674",
-    "working_days_open": 26
+    "working_days_open": 27
   },
   {
     "iid": "673",
@@ -4602,7 +5004,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/673",
-    "working_days_open": 26
+    "working_days_open": 27
   },
   {
     "iid": "672",
@@ -4622,7 +5024,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/672",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
     "iid": "671",
@@ -4642,7 +5044,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/671",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
     "iid": "670",
@@ -4662,7 +5064,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/670",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
     "iid": "669",
@@ -4682,7 +5084,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/669",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
     "iid": "668",
@@ -4702,7 +5104,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/668",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
     "iid": "667",
@@ -4722,7 +5124,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/667",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
     "iid": "666",
@@ -4743,7 +5145,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/666",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
     "iid": "665",
@@ -4761,7 +5163,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/665",
-    "working_days_open": 27
+    "working_days_open": 28
   },
   {
     "iid": "664",
@@ -4779,7 +5181,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/664",
-    "working_days_open": 29
+    "working_days_open": 30
   },
   {
     "iid": "663",
@@ -4799,7 +5201,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/663",
-    "working_days_open": 30
+    "working_days_open": 31
   },
   {
     "iid": "662",
@@ -4819,7 +5221,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/662",
-    "working_days_open": 30
+    "working_days_open": 31
   },
   {
     "iid": "661",
@@ -4838,7 +5240,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/661",
-    "working_days_open": 30
+    "working_days_open": 31
   },
   {
     "iid": "660",
@@ -4859,7 +5261,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/660",
-    "working_days_open": 31
+    "working_days_open": 32
   },
   {
     "iid": "659",
@@ -4880,7 +5282,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/659",
-    "working_days_open": 31
+    "working_days_open": 32
   },
   {
     "iid": "658",
@@ -4899,7 +5301,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/658",
-    "working_days_open": 31
+    "working_days_open": 32
   },
   {
     "iid": "657",
@@ -4918,7 +5320,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/657",
-    "working_days_open": 31
+    "working_days_open": 32
   },
   {
     "iid": "656",
@@ -4936,7 +5338,7 @@
     ],
     "user_notes_count": 6,
     "web_url": "https://gitcode.com/cann/ge/issues/656",
-    "working_days_open": 32
+    "working_days_open": 33
   },
   {
     "iid": "655",
@@ -4957,7 +5359,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/655",
-    "working_days_open": 32
+    "working_days_open": 33
   },
   {
     "iid": "654",
@@ -4975,7 +5377,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/654",
-    "working_days_open": 34
+    "working_days_open": 35
   },
   {
     "iid": "653",
@@ -4995,7 +5397,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/653",
-    "working_days_open": 34
+    "working_days_open": 35
   },
   {
     "iid": "652",
@@ -5013,7 +5415,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/652",
-    "working_days_open": 34
+    "working_days_open": 35
   },
   {
     "iid": "651",
@@ -5031,7 +5433,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/651",
-    "working_days_open": 36
+    "working_days_open": 37
   },
   {
     "iid": "650",
@@ -5051,7 +5453,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/650",
-    "working_days_open": 36
+    "working_days_open": 37
   },
   {
     "iid": "649",
@@ -5072,7 +5474,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/649",
-    "working_days_open": 36
+    "working_days_open": 37
   },
   {
     "iid": "647",
@@ -5090,7 +5492,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/647",
-    "working_days_open": 36
+    "working_days_open": 37
   },
   {
     "iid": "646",
@@ -5108,7 +5510,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/646",
-    "working_days_open": 36
+    "working_days_open": 37
   },
   {
     "iid": "645",
@@ -5128,7 +5530,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/645",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "644",
@@ -5148,7 +5550,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/644",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "643",
@@ -5168,7 +5570,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/643",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "642",
@@ -5188,7 +5590,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/642",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "641",
@@ -5208,7 +5610,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/641",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "640",
@@ -5229,7 +5631,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/640",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "639",
@@ -5250,7 +5652,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/639",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "638",
@@ -5271,7 +5673,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/638",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "637",
@@ -5292,7 +5694,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/637",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "636",
@@ -5312,7 +5714,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/636",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "635",
@@ -5333,7 +5735,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/635",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "634",
@@ -5353,7 +5755,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/634",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "633",
@@ -5374,13 +5776,13 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/633",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "632",
-    "state": "opened",
+    "state": "closed",
     "created_at": "2026-10-02",
-    "closed_at": "",
+    "closed_at": "2026-11-27",
     "author": "gcw_Z57idahf",
     "author_id": "6a9a202b63ecda5a857cfa43",
     "title": "[Bug-Report|缺陷反馈]: LLM 字符串 Tensor 将 Unicode ndarray 按 ASCII 转成 bytes，中文和 emoji 构造失败",
@@ -5388,13 +5790,13 @@
       "bug-report"
     ],
     "issue_type": "任务",
-    "issue_state": "进行中",
+    "issue_state": "已完成",
     "assignees": [
       "tangjie66"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/632",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "631",
@@ -5412,9 +5814,9 @@
     "assignees": [
       "tangjie66"
     ],
-    "user_notes_count": 2,
+    "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/631",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "630",
@@ -5434,7 +5836,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/630",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "629",
@@ -5454,7 +5856,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/629",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "628",
@@ -5474,7 +5876,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/628",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "627",
@@ -5494,7 +5896,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/627",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "626",
@@ -5514,7 +5916,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/626",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "625",
@@ -5534,7 +5936,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/625",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "624",
@@ -5554,7 +5956,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/624",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "623",
@@ -5574,7 +5976,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/623",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "622",
@@ -5594,7 +5996,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/622",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "621",
@@ -5615,7 +6017,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/621",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "620",
@@ -5635,7 +6037,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/620",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "619",
@@ -5655,7 +6057,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/619",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "618",
@@ -5676,7 +6078,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/618",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "617",
@@ -5697,7 +6099,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/617",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "616",
@@ -5717,7 +6119,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/616",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "615",
@@ -5737,7 +6139,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/615",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "614",
@@ -5755,7 +6157,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/614",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "613",
@@ -5773,7 +6175,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/613",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "612",
@@ -5793,7 +6195,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/612",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "611",
@@ -5813,7 +6215,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/611",
-    "working_days_open": 37
+    "working_days_open": 38
   },
   {
     "iid": "610",
@@ -5834,7 +6236,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/610",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "609",
@@ -5854,7 +6256,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/609",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "608",
@@ -5872,7 +6274,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/608",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "607",
@@ -5893,7 +6295,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/607",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "606",
@@ -5914,7 +6316,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/606",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "605",
@@ -5935,7 +6337,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/605",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "604",
@@ -5956,7 +6358,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/604",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "603",
@@ -5977,7 +6379,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/603",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "602",
@@ -5995,7 +6397,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/602",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "601",
@@ -6016,7 +6418,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/601",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "600",
@@ -6037,7 +6439,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/600",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "599",
@@ -6056,7 +6458,7 @@
     ],
     "user_notes_count": 12,
     "web_url": "https://gitcode.com/cann/ge/issues/599",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "598",
@@ -6075,7 +6477,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/598",
-    "working_days_open": 39
+    "working_days_open": 40
   },
   {
     "iid": "597",
@@ -6093,7 +6495,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/597",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "596",
@@ -6111,7 +6513,7 @@
     "assignees": [],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/596",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "595",
@@ -6130,7 +6532,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/595",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "594",
@@ -6148,7 +6550,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/594",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "593",
@@ -6166,7 +6568,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/593",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "592",
@@ -6184,7 +6586,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/592",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "591",
@@ -6202,7 +6604,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/591",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "590",
@@ -6221,7 +6623,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/590",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "589",
@@ -6240,7 +6642,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/589",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "588",
@@ -6259,7 +6661,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/588",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "587",
@@ -6277,7 +6679,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/587",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "586",
@@ -6297,7 +6699,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/586",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "585",
@@ -6317,7 +6719,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/585",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "584",
@@ -6335,7 +6737,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/584",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "583",
@@ -6353,7 +6755,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/583",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "582",
@@ -6371,7 +6773,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/582",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "581",
@@ -6389,7 +6791,7 @@
     ],
     "user_notes_count": 7,
     "web_url": "https://gitcode.com/cann/ge/issues/581",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "580",
@@ -6408,7 +6810,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/580",
-    "working_days_open": 40
+    "working_days_open": 41
   },
   {
     "iid": "579",
@@ -6426,7 +6828,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/579",
-    "working_days_open": 41
+    "working_days_open": 42
   },
   {
     "iid": "578",
@@ -6446,7 +6848,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/578",
-    "working_days_open": 41
+    "working_days_open": 42
   },
   {
     "iid": "577",
@@ -6464,7 +6866,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/577",
-    "working_days_open": 41
+    "working_days_open": 42
   },
   {
     "iid": "576",
@@ -6484,7 +6886,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/576",
-    "working_days_open": 42
+    "working_days_open": 43
   },
   {
     "iid": "575",
@@ -6504,7 +6906,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/575",
-    "working_days_open": 43
+    "working_days_open": 44
   },
   {
     "iid": "573",
@@ -6527,7 +6929,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/573",
-    "working_days_open": 44
+    "working_days_open": 45
   },
   {
     "iid": "572",
@@ -6547,7 +6949,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/572",
-    "working_days_open": 45
+    "working_days_open": 46
   },
   {
     "iid": "571",
@@ -6568,7 +6970,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/571",
-    "working_days_open": 45
+    "working_days_open": 46
   },
   {
     "iid": "570",
@@ -6586,7 +6988,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/570",
-    "working_days_open": 45
+    "working_days_open": 46
   },
   {
     "iid": "569",
@@ -6604,7 +7006,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/569",
-    "working_days_open": 45
+    "working_days_open": 46
   },
   {
     "iid": "568",
@@ -6622,7 +7024,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/568",
-    "working_days_open": 47
+    "working_days_open": 48
   },
   {
     "iid": "567",
@@ -6640,7 +7042,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/567",
-    "working_days_open": 47
+    "working_days_open": 48
   },
   {
     "iid": "566",
@@ -6660,7 +7062,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/566",
-    "working_days_open": 49
+    "working_days_open": 50
   },
   {
     "iid": "565",
@@ -6680,7 +7082,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/565",
-    "working_days_open": 49
+    "working_days_open": 50
   },
   {
     "iid": "564",
@@ -6700,7 +7102,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/564",
-    "working_days_open": 50
+    "working_days_open": 51
   },
   {
     "iid": "563",
@@ -6719,7 +7121,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/563",
-    "working_days_open": 50
+    "working_days_open": 51
   },
   {
     "iid": "562",
@@ -6739,7 +7141,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/562",
-    "working_days_open": 50
+    "working_days_open": 51
   },
   {
     "iid": "561",
@@ -6757,7 +7159,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/561",
-    "working_days_open": 50
+    "working_days_open": 51
   },
   {
     "iid": "560",
@@ -6777,7 +7179,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/560",
-    "working_days_open": 52
+    "working_days_open": 53
   },
   {
     "iid": "559",
@@ -6795,7 +7197,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/559",
-    "working_days_open": 54
+    "working_days_open": 55
   },
   {
     "iid": "558",
@@ -6816,7 +7218,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/558",
-    "working_days_open": 54
+    "working_days_open": 55
   },
   {
     "iid": "557",
@@ -6834,7 +7236,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/557",
-    "working_days_open": 54
+    "working_days_open": 55
   },
   {
     "iid": "556",
@@ -6852,7 +7254,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/556",
-    "working_days_open": 54
+    "working_days_open": 55
   },
   {
     "iid": "555",
@@ -6872,7 +7274,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/555",
-    "working_days_open": 55
+    "working_days_open": 56
   },
   {
     "iid": "554",
@@ -6890,7 +7292,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/554",
-    "working_days_open": 55
+    "working_days_open": 56
   },
   {
     "iid": "553",
@@ -6910,7 +7312,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/553",
-    "working_days_open": 55
+    "working_days_open": 56
   },
   {
     "iid": "552",
@@ -6930,7 +7332,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/552",
-    "working_days_open": 55
+    "working_days_open": 56
   },
   {
     "iid": "551",
@@ -6950,7 +7352,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/551",
-    "working_days_open": 55
+    "working_days_open": 56
   },
   {
     "iid": "550",
@@ -6970,7 +7372,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/550",
-    "working_days_open": 55
+    "working_days_open": 56
   },
   {
     "iid": "549",
@@ -6988,7 +7390,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/549",
-    "working_days_open": 55
+    "working_days_open": 56
   },
   {
     "iid": "548",
@@ -7006,7 +7408,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/548",
-    "working_days_open": 56
+    "working_days_open": 57
   },
   {
     "iid": "547",
@@ -7024,7 +7426,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/547",
-    "working_days_open": 56
+    "working_days_open": 57
   },
   {
     "iid": "546",
@@ -7044,7 +7446,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/546",
-    "working_days_open": 57
+    "working_days_open": 58
   },
   {
     "iid": "545",
@@ -7062,7 +7464,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/545",
-    "working_days_open": 57
+    "working_days_open": 58
   },
   {
     "iid": "544",
@@ -7082,7 +7484,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/544",
-    "working_days_open": 59
+    "working_days_open": 60
   },
   {
     "iid": "543",
@@ -7100,7 +7502,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/543",
-    "working_days_open": 63
+    "working_days_open": 64
   },
   {
     "iid": "542",
@@ -7118,7 +7520,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/542",
-    "working_days_open": 63
+    "working_days_open": 64
   },
   {
     "iid": "541",
@@ -7138,7 +7540,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/541",
-    "working_days_open": 63
+    "working_days_open": 64
   },
   {
     "iid": "540",
@@ -7159,7 +7561,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/540",
-    "working_days_open": 64
+    "working_days_open": 65
   },
   {
     "iid": "538",
@@ -7179,7 +7581,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/538",
-    "working_days_open": 65
+    "working_days_open": 66
   },
   {
     "iid": "537",
@@ -7199,7 +7601,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/537",
-    "working_days_open": 65
+    "working_days_open": 66
   },
   {
     "iid": "536",
@@ -7219,7 +7621,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/536",
-    "working_days_open": 65
+    "working_days_open": 66
   },
   {
     "iid": "535",
@@ -7237,7 +7639,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/535",
-    "working_days_open": 65
+    "working_days_open": 66
   },
   {
     "iid": "534",
@@ -7255,7 +7657,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/534",
-    "working_days_open": 65
+    "working_days_open": 66
   },
   {
     "iid": "533",
@@ -7273,7 +7675,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/533",
-    "working_days_open": 65
+    "working_days_open": 66
   },
   {
     "iid": "532",
@@ -7291,7 +7693,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/532",
-    "working_days_open": 65
+    "working_days_open": 66
   },
   {
     "iid": "531",
@@ -7309,7 +7711,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/531",
-    "working_days_open": 65
+    "working_days_open": 66
   },
   {
     "iid": "530",
@@ -7329,7 +7731,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/530",
-    "working_days_open": 66
+    "working_days_open": 67
   },
   {
     "iid": "529",
@@ -7349,7 +7751,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/529",
-    "working_days_open": 66
+    "working_days_open": 67
   },
   {
     "iid": "528",
@@ -7367,7 +7769,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/528",
-    "working_days_open": 66
+    "working_days_open": 67
   },
   {
     "iid": "527",
@@ -7387,7 +7789,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/527",
-    "working_days_open": 69
+    "working_days_open": 70
   },
   {
     "iid": "526",
@@ -7405,7 +7807,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/526",
-    "working_days_open": 69
+    "working_days_open": 70
   },
   {
     "iid": "525",
@@ -7423,7 +7825,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/525",
-    "working_days_open": 69
+    "working_days_open": 70
   },
   {
     "iid": "524",
@@ -7441,7 +7843,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/524",
-    "working_days_open": 69
+    "working_days_open": 70
   },
   {
     "iid": "523",
@@ -7459,7 +7861,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/523",
-    "working_days_open": 69
+    "working_days_open": 70
   },
   {
     "iid": "522",
@@ -7477,7 +7879,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/522",
-    "working_days_open": 69
+    "working_days_open": 70
   },
   {
     "iid": "521",
@@ -7497,7 +7899,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/521",
-    "working_days_open": 70
+    "working_days_open": 71
   },
   {
     "iid": "520",
@@ -7515,7 +7917,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/520",
-    "working_days_open": 70
+    "working_days_open": 71
   },
   {
     "iid": "519",
@@ -7533,7 +7935,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/519",
-    "working_days_open": 71
+    "working_days_open": 72
   },
   {
     "iid": "518",
@@ -7553,7 +7955,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/518",
-    "working_days_open": 72
+    "working_days_open": 73
   },
   {
     "iid": "517",
@@ -7571,7 +7973,7 @@
     ],
     "user_notes_count": 12,
     "web_url": "https://gitcode.com/cann/ge/issues/517",
-    "working_days_open": 73
+    "working_days_open": 74
   },
   {
     "iid": "516",
@@ -7591,7 +7993,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/516",
-    "working_days_open": 73
+    "working_days_open": 74
   },
   {
     "iid": "515",
@@ -7609,7 +8011,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/515",
-    "working_days_open": 73
+    "working_days_open": 74
   },
   {
     "iid": "514",
@@ -7630,7 +8032,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/514",
-    "working_days_open": 73
+    "working_days_open": 74
   },
   {
     "iid": "513",
@@ -7648,7 +8050,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/513",
-    "working_days_open": 73
+    "working_days_open": 74
   },
   {
     "iid": "512",
@@ -7668,7 +8070,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/512",
-    "working_days_open": 73
+    "working_days_open": 74
   },
   {
     "iid": "511",
@@ -7686,7 +8088,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/511",
-    "working_days_open": 74
+    "working_days_open": 75
   },
   {
     "iid": "510",
@@ -7706,7 +8108,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/510",
-    "working_days_open": 74
+    "working_days_open": 75
   },
   {
     "iid": "509",
@@ -7724,7 +8126,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/509",
-    "working_days_open": 74
+    "working_days_open": 75
   },
   {
     "iid": "507",
@@ -7742,7 +8144,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/507",
-    "working_days_open": 75
+    "working_days_open": 76
   },
   {
     "iid": "506",
@@ -7760,7 +8162,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/506",
-    "working_days_open": 77
+    "working_days_open": 78
   },
   {
     "iid": "505",
@@ -7780,7 +8182,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/505",
-    "working_days_open": 77
+    "working_days_open": 78
   },
   {
     "iid": "504",
@@ -7798,7 +8200,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/504",
-    "working_days_open": 78
+    "working_days_open": 79
   },
   {
     "iid": "503",
@@ -7818,7 +8220,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/503",
-    "working_days_open": 80
+    "working_days_open": 81
   },
   {
     "iid": "502",
@@ -7836,7 +8238,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/502",
-    "working_days_open": 81
+    "working_days_open": 82
   },
   {
     "iid": "501",
@@ -7856,7 +8258,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/501",
-    "working_days_open": 82
+    "working_days_open": 83
   },
   {
     "iid": "500",
@@ -7874,7 +8276,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/500",
-    "working_days_open": 82
+    "working_days_open": 83
   },
   {
     "iid": "499",
@@ -7892,7 +8294,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/499",
-    "working_days_open": 83
+    "working_days_open": 84
   },
   {
     "iid": "498",
@@ -7910,7 +8312,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/498",
-    "working_days_open": 85
+    "working_days_open": 86
   },
   {
     "iid": "497",
@@ -7926,7 +8328,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/497",
-    "working_days_open": 85
+    "working_days_open": 86
   },
   {
     "iid": "496",
@@ -7946,7 +8348,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/496",
-    "working_days_open": 86
+    "working_days_open": 87
   },
   {
     "iid": "495",
@@ -7966,7 +8368,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/495",
-    "working_days_open": 86
+    "working_days_open": 87
   },
   {
     "iid": "494",
@@ -7986,7 +8388,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/494",
-    "working_days_open": 87
+    "working_days_open": 88
   },
   {
     "iid": "493",
@@ -8006,7 +8408,7 @@
     ],
     "user_notes_count": 9,
     "web_url": "https://gitcode.com/cann/ge/issues/493",
-    "working_days_open": 88
+    "working_days_open": 89
   },
   {
     "iid": "492",
@@ -8026,7 +8428,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/492",
-    "working_days_open": 89
+    "working_days_open": 90
   },
   {
     "iid": "491",
@@ -8047,7 +8449,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/491",
-    "working_days_open": 89
+    "working_days_open": 90
   },
   {
     "iid": "489",
@@ -8065,7 +8467,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/489",
-    "working_days_open": 89
+    "working_days_open": 90
   },
   {
     "iid": "490",
@@ -8085,7 +8487,7 @@
     ],
     "user_notes_count": 46,
     "web_url": "https://gitcode.com/cann/ge/issues/490",
-    "working_days_open": 89
+    "working_days_open": 90
   },
   {
     "iid": "488",
@@ -8106,7 +8508,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/488",
-    "working_days_open": 92
+    "working_days_open": 93
   },
   {
     "iid": "487",
@@ -8127,7 +8529,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/487",
-    "working_days_open": 93
+    "working_days_open": 94
   },
   {
     "iid": "486",
@@ -8145,7 +8547,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/486",
-    "working_days_open": 95
+    "working_days_open": 96
   },
   {
     "iid": "485",
@@ -8163,7 +8565,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/485",
-    "working_days_open": 98
+    "working_days_open": 99
   },
   {
     "iid": "484",
@@ -8183,7 +8585,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/484",
-    "working_days_open": 99
+    "working_days_open": 100
   },
   {
     "iid": "483",
@@ -8201,7 +8603,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/483",
-    "working_days_open": 100
+    "working_days_open": 101
   },
   {
     "iid": "482",
@@ -8219,7 +8621,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/482",
-    "working_days_open": 101
+    "working_days_open": 102
   },
   {
     "iid": "481",
@@ -8239,7 +8641,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/481",
-    "working_days_open": 102
+    "working_days_open": 103
   },
   {
     "iid": "480",
@@ -8257,7 +8659,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/480",
-    "working_days_open": 103
+    "working_days_open": 104
   },
   {
     "iid": "479",
@@ -8273,7 +8675,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/479",
-    "working_days_open": 105
+    "working_days_open": 106
   },
   {
     "iid": "478",
@@ -8293,7 +8695,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/478",
-    "working_days_open": 105
+    "working_days_open": 106
   },
   {
     "iid": "477",
@@ -8309,7 +8711,7 @@
     "assignees": [],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/477",
-    "working_days_open": 105
+    "working_days_open": 106
   },
   {
     "iid": "476",
@@ -8327,7 +8729,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/476",
-    "working_days_open": 106
+    "working_days_open": 107
   },
   {
     "iid": "474",
@@ -8345,7 +8747,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/474",
-    "working_days_open": 106
+    "working_days_open": 107
   },
   {
     "iid": "473",
@@ -8364,7 +8766,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/473",
-    "working_days_open": 106
+    "working_days_open": 107
   },
   {
     "iid": "472",
@@ -8384,7 +8786,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/472",
-    "working_days_open": 106
+    "working_days_open": 107
   },
   {
     "iid": "471",
@@ -8402,7 +8804,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/471",
-    "working_days_open": 106
+    "working_days_open": 107
   },
   {
     "iid": "470",
@@ -8422,7 +8824,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/470",
-    "working_days_open": 106
+    "working_days_open": 107
   },
   {
     "iid": "469",
@@ -8442,7 +8844,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/469",
-    "working_days_open": 107
+    "working_days_open": 108
   },
   {
     "iid": "468",
@@ -8460,7 +8862,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/468",
-    "working_days_open": 107
+    "working_days_open": 108
   },
   {
     "iid": "467",
@@ -8480,7 +8882,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/467",
-    "working_days_open": 107
+    "working_days_open": 108
   },
   {
     "iid": "466",
@@ -8501,7 +8903,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/466",
-    "working_days_open": 107
+    "working_days_open": 108
   },
   {
     "iid": "465",
@@ -8519,7 +8921,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/465",
-    "working_days_open": 108
+    "working_days_open": 109
   },
   {
     "iid": "464",
@@ -8537,7 +8939,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/464",
-    "working_days_open": 108
+    "working_days_open": 109
   },
   {
     "iid": "463",
@@ -8555,7 +8957,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/463",
-    "working_days_open": 108
+    "working_days_open": 109
   },
   {
     "iid": "462",
@@ -8573,7 +8975,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/462",
-    "working_days_open": 108
+    "working_days_open": 109
   },
   {
     "iid": "461",
@@ -8591,7 +8993,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/461",
-    "working_days_open": 108
+    "working_days_open": 109
   },
   {
     "iid": "460",
@@ -8609,7 +9011,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/460",
-    "working_days_open": 108
+    "working_days_open": 109
   },
   {
     "iid": "459",
@@ -8629,7 +9031,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/459",
-    "working_days_open": 108
+    "working_days_open": 109
   },
   {
     "iid": "458",
@@ -8649,7 +9051,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/458",
-    "working_days_open": 109
+    "working_days_open": 110
   },
   {
     "iid": "455",
@@ -8667,7 +9069,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/455",
-    "working_days_open": 110
+    "working_days_open": 111
   },
   {
     "iid": "454",
@@ -8688,7 +9090,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/454",
-    "working_days_open": 110
+    "working_days_open": 111
   },
   {
     "iid": "453",
@@ -8706,7 +9108,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/453",
-    "working_days_open": 110
+    "working_days_open": 111
   },
   {
     "iid": "452",
@@ -8724,7 +9126,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/452",
-    "working_days_open": 110
+    "working_days_open": 111
   },
   {
     "iid": "451",
@@ -8744,7 +9146,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/451",
-    "working_days_open": 111
+    "working_days_open": 112
   },
   {
     "iid": "450",
@@ -8764,7 +9166,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/450",
-    "working_days_open": 113
+    "working_days_open": 114
   },
   {
     "iid": "449",
@@ -8784,7 +9186,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/449",
-    "working_days_open": 115
+    "working_days_open": 116
   },
   {
     "iid": "448",
@@ -8804,7 +9206,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/448",
-    "working_days_open": 115
+    "working_days_open": 116
   },
   {
     "iid": "447",
@@ -8822,7 +9224,7 @@
     ],
     "user_notes_count": 7,
     "web_url": "https://gitcode.com/cann/ge/issues/447",
-    "working_days_open": 115
+    "working_days_open": 116
   },
   {
     "iid": "446",
@@ -8838,7 +9240,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/446",
-    "working_days_open": 115
+    "working_days_open": 116
   },
   {
     "iid": "443",
@@ -8856,7 +9258,7 @@
     ],
     "user_notes_count": 9,
     "web_url": "https://gitcode.com/cann/ge/issues/443",
-    "working_days_open": 116
+    "working_days_open": 117
   },
   {
     "iid": "442",
@@ -8877,7 +9279,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/442",
-    "working_days_open": 116
+    "working_days_open": 117
   },
   {
     "iid": "440",
@@ -8897,7 +9299,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/440",
-    "working_days_open": 117
+    "working_days_open": 118
   },
   {
     "iid": "441",
@@ -8917,7 +9319,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/441",
-    "working_days_open": 117
+    "working_days_open": 118
   },
   {
     "iid": "439",
@@ -8935,7 +9337,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/439",
-    "working_days_open": 117
+    "working_days_open": 118
   },
   {
     "iid": "438",
@@ -8953,7 +9355,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/438",
-    "working_days_open": 117
+    "working_days_open": 118
   },
   {
     "iid": "444",
@@ -8973,7 +9375,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/444",
-    "working_days_open": 117
+    "working_days_open": 118
   },
   {
     "iid": "445",
@@ -8993,7 +9395,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/445",
-    "working_days_open": 117
+    "working_days_open": 118
   },
   {
     "iid": "435",
@@ -9013,7 +9415,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/435",
-    "working_days_open": 119
+    "working_days_open": 120
   },
   {
     "iid": "434",
@@ -9033,7 +9435,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/434",
-    "working_days_open": 120
+    "working_days_open": 121
   },
   {
     "iid": "432",
@@ -9051,7 +9453,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/432",
-    "working_days_open": 122
+    "working_days_open": 123
   },
   {
     "iid": "431",
@@ -9070,7 +9472,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/431",
-    "working_days_open": 122
+    "working_days_open": 123
   },
   {
     "iid": "430",
@@ -9088,7 +9490,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/430",
-    "working_days_open": 122
+    "working_days_open": 123
   },
   {
     "iid": "429",
@@ -9106,7 +9508,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/429",
-    "working_days_open": 122
+    "working_days_open": 123
   },
   {
     "iid": "428",
@@ -9126,7 +9528,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/428",
-    "working_days_open": 122
+    "working_days_open": 123
   },
   {
     "iid": "427",
@@ -9144,7 +9546,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/427",
-    "working_days_open": 122
+    "working_days_open": 123
   },
   {
     "iid": "426",
@@ -9164,7 +9566,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/426",
-    "working_days_open": 122
+    "working_days_open": 123
   },
   {
     "iid": "425",
@@ -9184,7 +9586,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/425",
-    "working_days_open": 122
+    "working_days_open": 123
   },
   {
     "iid": "424",
@@ -9204,7 +9606,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/424",
-    "working_days_open": 123
+    "working_days_open": 124
   },
   {
     "iid": "423",
@@ -9225,7 +9627,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/423",
-    "working_days_open": 123
+    "working_days_open": 124
   },
   {
     "iid": "422",
@@ -9243,7 +9645,7 @@
     ],
     "user_notes_count": 6,
     "web_url": "https://gitcode.com/cann/ge/issues/422",
-    "working_days_open": 123
+    "working_days_open": 124
   },
   {
     "iid": "421",
@@ -9261,7 +9663,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/421",
-    "working_days_open": 123
+    "working_days_open": 124
   },
   {
     "iid": "420",
@@ -9279,7 +9681,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/420",
-    "working_days_open": 123
+    "working_days_open": 124
   },
   {
     "iid": "419",
@@ -9299,7 +9701,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/419",
-    "working_days_open": 124
+    "working_days_open": 125
   },
   {
     "iid": "418",
@@ -9319,7 +9721,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/418",
-    "working_days_open": 124
+    "working_days_open": 125
   },
   {
     "iid": "417",
@@ -9339,7 +9741,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/417",
-    "working_days_open": 124
+    "working_days_open": 125
   },
   {
     "iid": "416",
@@ -9355,7 +9757,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/416",
-    "working_days_open": 124
+    "working_days_open": 125
   },
   {
     "iid": "415",
@@ -9371,7 +9773,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/415",
-    "working_days_open": 124
+    "working_days_open": 125
   },
   {
     "iid": "414",
@@ -9389,7 +9791,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/414",
-    "working_days_open": 125
+    "working_days_open": 126
   },
   {
     "iid": "413",
@@ -9407,7 +9809,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/413",
-    "working_days_open": 125
+    "working_days_open": 126
   },
   {
     "iid": "412",
@@ -9425,7 +9827,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/412",
-    "working_days_open": 126
+    "working_days_open": 127
   },
   {
     "iid": "411",
@@ -9445,7 +9847,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/411",
-    "working_days_open": 127
+    "working_days_open": 128
   },
   {
     "iid": "410",
@@ -9463,7 +9865,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/410",
-    "working_days_open": 127
+    "working_days_open": 128
   },
   {
     "iid": "408",
@@ -9481,7 +9883,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/408",
-    "working_days_open": 127
+    "working_days_open": 128
   },
   {
     "iid": "407",
@@ -9499,7 +9901,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/407",
-    "working_days_open": 127
+    "working_days_open": 128
   },
   {
     "iid": "406",
@@ -9517,7 +9919,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/406",
-    "working_days_open": 127
+    "working_days_open": 128
   },
   {
     "iid": "405",
@@ -9533,7 +9935,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/405",
-    "working_days_open": 127
+    "working_days_open": 128
   },
   {
     "iid": "403",
@@ -9551,7 +9953,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/403",
-    "working_days_open": 129
+    "working_days_open": 130
   },
   {
     "iid": "402",
@@ -9571,7 +9973,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/402",
-    "working_days_open": 129
+    "working_days_open": 130
   },
   {
     "iid": "401",
@@ -9591,7 +9993,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/401",
-    "working_days_open": 129
+    "working_days_open": 130
   },
   {
     "iid": "400",
@@ -9611,7 +10013,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/400",
-    "working_days_open": 129
+    "working_days_open": 130
   },
   {
     "iid": "399",
@@ -9631,7 +10033,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/399",
-    "working_days_open": 129
+    "working_days_open": 130
   },
   {
     "iid": "398",
@@ -9649,7 +10051,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/398",
-    "working_days_open": 131
+    "working_days_open": 132
   },
   {
     "iid": "397",
@@ -9667,7 +10069,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/397",
-    "working_days_open": 131
+    "working_days_open": 132
   },
   {
     "iid": "396",
@@ -9685,7 +10087,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/396",
-    "working_days_open": 131
+    "working_days_open": 132
   },
   {
     "iid": "395",
@@ -9703,7 +10105,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/395",
-    "working_days_open": 131
+    "working_days_open": 132
   },
   {
     "iid": "394",
@@ -9721,7 +10123,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/394",
-    "working_days_open": 131
+    "working_days_open": 132
   },
   {
     "iid": "393",
@@ -9739,7 +10141,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/393",
-    "working_days_open": 131
+    "working_days_open": 132
   },
   {
     "iid": "392",
@@ -9759,7 +10161,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/392",
-    "working_days_open": 132
+    "working_days_open": 133
   },
   {
     "iid": "391",
@@ -9779,7 +10181,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/391",
-    "working_days_open": 132
+    "working_days_open": 133
   },
   {
     "iid": "390",
@@ -9799,7 +10201,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/390",
-    "working_days_open": 132
+    "working_days_open": 133
   },
   {
     "iid": "389",
@@ -9819,7 +10221,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/389",
-    "working_days_open": 133
+    "working_days_open": 134
   },
   {
     "iid": "388",
@@ -9839,7 +10241,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/388",
-    "working_days_open": 133
+    "working_days_open": 134
   },
   {
     "iid": "387",
@@ -9861,7 +10263,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/387",
-    "working_days_open": 134
+    "working_days_open": 135
   },
   {
     "iid": "386",
@@ -9879,7 +10281,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/386",
-    "working_days_open": 134
+    "working_days_open": 135
   },
   {
     "iid": "385",
@@ -9899,7 +10301,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/385",
-    "working_days_open": 135
+    "working_days_open": 136
   },
   {
     "iid": "384",
@@ -9920,7 +10322,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/384",
-    "working_days_open": 135
+    "working_days_open": 136
   },
   {
     "iid": "383",
@@ -9940,7 +10342,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/383",
-    "working_days_open": 135
+    "working_days_open": 136
   },
   {
     "iid": "382",
@@ -9958,7 +10360,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/382",
-    "working_days_open": 136
+    "working_days_open": 137
   },
   {
     "iid": "381",
@@ -9979,7 +10381,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/381",
-    "working_days_open": 136
+    "working_days_open": 137
   },
   {
     "iid": "380",
@@ -9999,7 +10401,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/380",
-    "working_days_open": 136
+    "working_days_open": 137
   },
   {
     "iid": "379",
@@ -10019,7 +10421,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/379",
-    "working_days_open": 136
+    "working_days_open": 137
   },
   {
     "iid": "378",
@@ -10037,7 +10439,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/378",
-    "working_days_open": 137
+    "working_days_open": 138
   },
   {
     "iid": "377",
@@ -10057,7 +10459,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/377",
-    "working_days_open": 137
+    "working_days_open": 138
   },
   {
     "iid": "376",
@@ -10078,7 +10480,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/376",
-    "working_days_open": 138
+    "working_days_open": 139
   },
   {
     "iid": "375",
@@ -10099,7 +10501,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/375",
-    "working_days_open": 138
+    "working_days_open": 139
   },
   {
     "iid": "374",
@@ -10120,7 +10522,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/374",
-    "working_days_open": 138
+    "working_days_open": 139
   },
   {
     "iid": "373",
@@ -10138,7 +10540,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/373",
-    "working_days_open": 138
+    "working_days_open": 139
   },
   {
     "iid": "372",
@@ -10160,7 +10562,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/372",
-    "working_days_open": 139
+    "working_days_open": 140
   },
   {
     "iid": "371",
@@ -10180,7 +10582,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/371",
-    "working_days_open": 140
+    "working_days_open": 141
   },
   {
     "iid": "370",
@@ -10198,7 +10600,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/370",
-    "working_days_open": 140
+    "working_days_open": 141
   },
   {
     "iid": "369",
@@ -10216,7 +10618,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/369",
-    "working_days_open": 140
+    "working_days_open": 141
   },
   {
     "iid": "368",
@@ -10234,7 +10636,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/368",
-    "working_days_open": 141
+    "working_days_open": 142
   },
   {
     "iid": "367",
@@ -10255,7 +10657,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/367",
-    "working_days_open": 142
+    "working_days_open": 143
   },
   {
     "iid": "366",
@@ -10276,7 +10678,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/366",
-    "working_days_open": 142
+    "working_days_open": 143
   },
   {
     "iid": "365",
@@ -10294,7 +10696,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/365",
-    "working_days_open": 143
+    "working_days_open": 144
   },
   {
     "iid": "364",
@@ -10315,7 +10717,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/364",
-    "working_days_open": 143
+    "working_days_open": 144
   },
   {
     "iid": "363",
@@ -10333,7 +10735,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/363",
-    "working_days_open": 143
+    "working_days_open": 144
   },
   {
     "iid": "362",
@@ -10354,7 +10756,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/362",
-    "working_days_open": 143
+    "working_days_open": 144
   },
   {
     "iid": "361",
@@ -10372,7 +10774,7 @@
     ],
     "user_notes_count": 6,
     "web_url": "https://gitcode.com/cann/ge/issues/361",
-    "working_days_open": 143
+    "working_days_open": 144
   },
   {
     "iid": "360",
@@ -10391,7 +10793,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/360",
-    "working_days_open": 143
+    "working_days_open": 144
   },
   {
     "iid": "359",
@@ -10411,7 +10813,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/359",
-    "working_days_open": 143
+    "working_days_open": 144
   },
   {
     "iid": "358",
@@ -10431,7 +10833,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/358",
-    "working_days_open": 144
+    "working_days_open": 145
   },
   {
     "iid": "357",
@@ -10449,7 +10851,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/357",
-    "working_days_open": 144
+    "working_days_open": 145
   },
   {
     "iid": "356",
@@ -10469,7 +10871,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/356",
-    "working_days_open": 145
+    "working_days_open": 146
   },
   {
     "iid": "354",
@@ -10489,7 +10891,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/354",
-    "working_days_open": 145
+    "working_days_open": 146
   },
   {
     "iid": "353",
@@ -10509,7 +10911,7 @@
     ],
     "user_notes_count": 6,
     "web_url": "https://gitcode.com/cann/ge/issues/353",
-    "working_days_open": 145
+    "working_days_open": 146
   },
   {
     "iid": "352",
@@ -10527,7 +10929,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/352",
-    "working_days_open": 145
+    "working_days_open": 146
   },
   {
     "iid": "349",
@@ -10548,7 +10950,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/349",
-    "working_days_open": 145
+    "working_days_open": 146
   },
   {
     "iid": "348",
@@ -10568,7 +10970,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/348",
-    "working_days_open": 145
+    "working_days_open": 146
   },
   {
     "iid": "347",
@@ -10588,7 +10990,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/347",
-    "working_days_open": 145
+    "working_days_open": 146
   },
   {
     "iid": "346",
@@ -10606,7 +11008,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/346",
-    "working_days_open": 146
+    "working_days_open": 147
   },
   {
     "iid": "345",
@@ -10626,7 +11028,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/345",
-    "working_days_open": 146
+    "working_days_open": 147
   },
   {
     "iid": "344",
@@ -10646,7 +11048,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/344",
-    "working_days_open": 146
+    "working_days_open": 147
   },
   {
     "iid": "343",
@@ -10666,7 +11068,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/343",
-    "working_days_open": 146
+    "working_days_open": 147
   },
   {
     "iid": "342",
@@ -10686,7 +11088,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/342",
-    "working_days_open": 146
+    "working_days_open": 147
   },
   {
     "iid": "341",
@@ -10704,7 +11106,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/341",
-    "working_days_open": 146
+    "working_days_open": 147
   },
   {
     "iid": "340",
@@ -10724,7 +11126,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/340",
-    "working_days_open": 147
+    "working_days_open": 148
   },
   {
     "iid": "339",
@@ -10742,7 +11144,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/339",
-    "working_days_open": 147
+    "working_days_open": 148
   },
   {
     "iid": "338",
@@ -10760,7 +11162,7 @@
     "assignees": [],
     "user_notes_count": 10,
     "web_url": "https://gitcode.com/cann/ge/issues/338",
-    "working_days_open": 147
+    "working_days_open": 148
   },
   {
     "iid": "337",
@@ -10780,7 +11182,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/337",
-    "working_days_open": 148
+    "working_days_open": 149
   },
   {
     "iid": "336",
@@ -10798,7 +11200,7 @@
     ],
     "user_notes_count": 7,
     "web_url": "https://gitcode.com/cann/ge/issues/336",
-    "working_days_open": 148
+    "working_days_open": 149
   },
   {
     "iid": "335",
@@ -10818,7 +11220,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/335",
-    "working_days_open": 148
+    "working_days_open": 149
   },
   {
     "iid": "334",
@@ -10836,7 +11238,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/334",
-    "working_days_open": 148
+    "working_days_open": 149
   },
   {
     "iid": "332",
@@ -10856,7 +11258,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/332",
-    "working_days_open": 150
+    "working_days_open": 151
   },
   {
     "iid": "331",
@@ -10877,7 +11279,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/331",
-    "working_days_open": 151
+    "working_days_open": 152
   },
   {
     "iid": "330",
@@ -10895,7 +11297,7 @@
     ],
     "user_notes_count": 10,
     "web_url": "https://gitcode.com/cann/ge/issues/330",
-    "working_days_open": 151
+    "working_days_open": 152
   },
   {
     "iid": "329",
@@ -10913,7 +11315,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/329",
-    "working_days_open": 151
+    "working_days_open": 152
   },
   {
     "iid": "328",
@@ -10931,7 +11333,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/328",
-    "working_days_open": 151
+    "working_days_open": 152
   },
   {
     "iid": "327",
@@ -10951,7 +11353,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/327",
-    "working_days_open": 152
+    "working_days_open": 153
   },
   {
     "iid": "326",
@@ -10969,7 +11371,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/326",
-    "working_days_open": 152
+    "working_days_open": 153
   },
   {
     "iid": "318",
@@ -10987,7 +11389,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/318",
-    "working_days_open": 152
+    "working_days_open": 153
   },
   {
     "iid": "316",
@@ -11007,7 +11409,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/316",
-    "working_days_open": 152
+    "working_days_open": 153
   },
   {
     "iid": "315",
@@ -11027,7 +11429,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/315",
-    "working_days_open": 153
+    "working_days_open": 154
   },
   {
     "iid": "314",
@@ -11047,7 +11449,7 @@
     ],
     "user_notes_count": 6,
     "web_url": "https://gitcode.com/cann/ge/issues/314",
-    "working_days_open": 153
+    "working_days_open": 154
   },
   {
     "iid": "313",
@@ -11067,7 +11469,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/313",
-    "working_days_open": 153
+    "working_days_open": 154
   },
   {
     "iid": "312",
@@ -11087,7 +11489,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/312",
-    "working_days_open": 153
+    "working_days_open": 154
   },
   {
     "iid": "311",
@@ -11107,7 +11509,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/311",
-    "working_days_open": 153
+    "working_days_open": 154
   },
   {
     "iid": "309",
@@ -11125,7 +11527,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/309",
-    "working_days_open": 155
+    "working_days_open": 156
   },
   {
     "iid": "308",
@@ -11145,7 +11547,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/308",
-    "working_days_open": 156
+    "working_days_open": 157
   },
   {
     "iid": "307",
@@ -11163,7 +11565,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/307",
-    "working_days_open": 156
+    "working_days_open": 157
   },
   {
     "iid": "306",
@@ -11181,7 +11583,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/306",
-    "working_days_open": 157
+    "working_days_open": 158
   },
   {
     "iid": "305",
@@ -11201,7 +11603,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/305",
-    "working_days_open": 157
+    "working_days_open": 158
   },
   {
     "iid": "304",
@@ -11222,7 +11624,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/304",
-    "working_days_open": 157
+    "working_days_open": 158
   },
   {
     "iid": "303",
@@ -11242,7 +11644,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/303",
-    "working_days_open": 157
+    "working_days_open": 158
   },
   {
     "iid": "302",
@@ -11262,7 +11664,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/302",
-    "working_days_open": 157
+    "working_days_open": 158
   },
   {
     "iid": "301",
@@ -11282,7 +11684,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/301",
-    "working_days_open": 157
+    "working_days_open": 158
   },
   {
     "iid": "300",
@@ -11302,7 +11704,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/300",
-    "working_days_open": 157
+    "working_days_open": 158
   },
   {
     "iid": "299",
@@ -11323,7 +11725,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/299",
-    "working_days_open": 158
+    "working_days_open": 159
   },
   {
     "iid": "298",
@@ -11341,7 +11743,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/298",
-    "working_days_open": 159
+    "working_days_open": 160
   },
   {
     "iid": "297",
@@ -11361,7 +11763,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/297",
-    "working_days_open": 160
+    "working_days_open": 161
   },
   {
     "iid": "296",
@@ -11379,7 +11781,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/296",
-    "working_days_open": 160
+    "working_days_open": 161
   },
   {
     "iid": "295",
@@ -11400,7 +11802,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/295",
-    "working_days_open": 160
+    "working_days_open": 161
   },
   {
     "iid": "294",
@@ -11420,7 +11822,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/294",
-    "working_days_open": 161
+    "working_days_open": 162
   },
   {
     "iid": "292",
@@ -11438,7 +11840,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/292",
-    "working_days_open": 162
+    "working_days_open": 163
   },
   {
     "iid": "291",
@@ -11458,7 +11860,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/291",
-    "working_days_open": 163
+    "working_days_open": 164
   },
   {
     "iid": "290",
@@ -11479,7 +11881,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/290",
-    "working_days_open": 163
+    "working_days_open": 164
   },
   {
     "iid": "289",
@@ -11503,7 +11905,7 @@
     ],
     "user_notes_count": 6,
     "web_url": "https://gitcode.com/cann/ge/issues/289",
-    "working_days_open": 163
+    "working_days_open": 164
   },
   {
     "iid": "288",
@@ -11523,7 +11925,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/288",
-    "working_days_open": 165
+    "working_days_open": 166
   },
   {
     "iid": "287",
@@ -11543,7 +11945,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/287",
-    "working_days_open": 165
+    "working_days_open": 166
   },
   {
     "iid": "286",
@@ -11561,7 +11963,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/286",
-    "working_days_open": 165
+    "working_days_open": 166
   },
   {
     "iid": "285",
@@ -11579,7 +11981,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/285",
-    "working_days_open": 165
+    "working_days_open": 166
   },
   {
     "iid": "284",
@@ -11597,7 +11999,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/284",
-    "working_days_open": 165
+    "working_days_open": 166
   },
   {
     "iid": "283",
@@ -11615,7 +12017,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/283",
-    "working_days_open": 165
+    "working_days_open": 166
   },
   {
     "iid": "282",
@@ -11635,7 +12037,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/282",
-    "working_days_open": 165
+    "working_days_open": 166
   },
   {
     "iid": "281",
@@ -11655,7 +12057,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/281",
-    "working_days_open": 165
+    "working_days_open": 166
   },
   {
     "iid": "279",
@@ -11675,7 +12077,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/279",
-    "working_days_open": 165
+    "working_days_open": 166
   },
   {
     "iid": "278",
@@ -11693,7 +12095,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/278",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "277",
@@ -11711,7 +12113,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/277",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "276",
@@ -11729,7 +12131,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/276",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "275",
@@ -11749,7 +12151,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/275",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "274",
@@ -11769,7 +12171,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/274",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "272",
@@ -11789,7 +12191,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/272",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "271",
@@ -11809,7 +12211,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/271",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "270",
@@ -11829,7 +12231,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/270",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "269",
@@ -11849,7 +12251,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/269",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "268",
@@ -11867,7 +12269,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/268",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "267",
@@ -11885,7 +12287,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/267",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "266",
@@ -11903,7 +12305,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/266",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "265",
@@ -11921,7 +12323,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/265",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "264",
@@ -11939,7 +12341,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/264",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "263",
@@ -11957,7 +12359,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/263",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "262",
@@ -11975,7 +12377,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/262",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "261",
@@ -11995,7 +12397,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/261",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "260",
@@ -12015,7 +12417,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/260",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "259",
@@ -12035,7 +12437,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/259",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "258",
@@ -12053,7 +12455,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/258",
-    "working_days_open": 166
+    "working_days_open": 167
   },
   {
     "iid": "257",
@@ -12071,7 +12473,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/257",
-    "working_days_open": 167
+    "working_days_open": 168
   },
   {
     "iid": "256",
@@ -12091,7 +12493,7 @@
     ],
     "user_notes_count": 11,
     "web_url": "https://gitcode.com/cann/ge/issues/256",
-    "working_days_open": 167
+    "working_days_open": 168
   },
   {
     "iid": "255",
@@ -12109,7 +12511,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/255",
-    "working_days_open": 167
+    "working_days_open": 168
   },
   {
     "iid": "254",
@@ -12129,7 +12531,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/254",
-    "working_days_open": 168
+    "working_days_open": 169
   },
   {
     "iid": "253",
@@ -12147,7 +12549,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/253",
-    "working_days_open": 168
+    "working_days_open": 169
   },
   {
     "iid": "252",
@@ -12167,7 +12569,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/252",
-    "working_days_open": 168
+    "working_days_open": 169
   },
   {
     "iid": "251",
@@ -12187,7 +12589,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/251",
-    "working_days_open": 168
+    "working_days_open": 169
   },
   {
     "iid": "250",
@@ -12207,7 +12609,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/250",
-    "working_days_open": 168
+    "working_days_open": 169
   },
   {
     "iid": "249",
@@ -12225,7 +12627,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/249",
-    "working_days_open": 168
+    "working_days_open": 169
   },
   {
     "iid": "248",
@@ -12243,7 +12645,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/248",
-    "working_days_open": 168
+    "working_days_open": 169
   },
   {
     "iid": "247",
@@ -12263,7 +12665,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/247",
-    "working_days_open": 168
+    "working_days_open": 169
   },
   {
     "iid": "246",
@@ -12283,7 +12685,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/246",
-    "working_days_open": 168
+    "working_days_open": 169
   },
   {
     "iid": "245",
@@ -12303,7 +12705,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/245",
-    "working_days_open": 168
+    "working_days_open": 169
   },
   {
     "iid": "244",
@@ -12323,7 +12725,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/244",
-    "working_days_open": 169
+    "working_days_open": 170
   },
   {
     "iid": "243",
@@ -12343,7 +12745,7 @@
     ],
     "user_notes_count": 7,
     "web_url": "https://gitcode.com/cann/ge/issues/243",
-    "working_days_open": 169
+    "working_days_open": 170
   },
   {
     "iid": "241",
@@ -12363,7 +12765,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/241",
-    "working_days_open": 170
+    "working_days_open": 171
   },
   {
     "iid": "239",
@@ -12381,7 +12783,7 @@
     ],
     "user_notes_count": 17,
     "web_url": "https://gitcode.com/cann/ge/issues/239",
-    "working_days_open": 170
+    "working_days_open": 171
   },
   {
     "iid": "238",
@@ -12399,7 +12801,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/238",
-    "working_days_open": 170
+    "working_days_open": 171
   },
   {
     "iid": "237",
@@ -12417,7 +12819,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/237",
-    "working_days_open": 170
+    "working_days_open": 171
   },
   {
     "iid": "236",
@@ -12437,7 +12839,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/236",
-    "working_days_open": 171
+    "working_days_open": 172
   },
   {
     "iid": "235",
@@ -12458,7 +12860,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/235",
-    "working_days_open": 171
+    "working_days_open": 172
   },
   {
     "iid": "234",
@@ -12476,7 +12878,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/234",
-    "working_days_open": 171
+    "working_days_open": 172
   },
   {
     "iid": "233",
@@ -12494,7 +12896,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/233",
-    "working_days_open": 171
+    "working_days_open": 172
   },
   {
     "iid": "231",
@@ -12512,7 +12914,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/231",
-    "working_days_open": 171
+    "working_days_open": 172
   },
   {
     "iid": "230",
@@ -12532,7 +12934,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/230",
-    "working_days_open": 171
+    "working_days_open": 172
   },
   {
     "iid": "229",
@@ -12552,7 +12954,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/229",
-    "working_days_open": 171
+    "working_days_open": 172
   },
   {
     "iid": "232",
@@ -12570,7 +12972,7 @@
     ],
     "user_notes_count": 11,
     "web_url": "https://gitcode.com/cann/ge/issues/232",
-    "working_days_open": 171
+    "working_days_open": 172
   },
   {
     "iid": "280",
@@ -12590,7 +12992,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/280",
-    "working_days_open": 172
+    "working_days_open": 173
   },
   {
     "iid": "228",
@@ -12611,7 +13013,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/228",
-    "working_days_open": 172
+    "working_days_open": 173
   },
   {
     "iid": "227",
@@ -12629,7 +13031,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/227",
-    "working_days_open": 172
+    "working_days_open": 173
   },
   {
     "iid": "226",
@@ -12647,7 +13049,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/226",
-    "working_days_open": 172
+    "working_days_open": 173
   },
   {
     "iid": "225",
@@ -12667,7 +13069,7 @@
     ],
     "user_notes_count": 8,
     "web_url": "https://gitcode.com/cann/ge/issues/225",
-    "working_days_open": 172
+    "working_days_open": 173
   },
   {
     "iid": "224",
@@ -12685,7 +13087,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/224",
-    "working_days_open": 173
+    "working_days_open": 174
   },
   {
     "iid": "223",
@@ -12703,7 +13105,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/223",
-    "working_days_open": 173
+    "working_days_open": 174
   },
   {
     "iid": "222",
@@ -12721,7 +13123,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/222",
-    "working_days_open": 173
+    "working_days_open": 174
   },
   {
     "iid": "221",
@@ -12737,7 +13139,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/221",
-    "working_days_open": 174
+    "working_days_open": 175
   },
   {
     "iid": "220",
@@ -12753,7 +13155,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/220",
-    "working_days_open": 174
+    "working_days_open": 175
   },
   {
     "iid": "219",
@@ -12771,7 +13173,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/219",
-    "working_days_open": 175
+    "working_days_open": 176
   },
   {
     "iid": "218",
@@ -12791,7 +13193,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/218",
-    "working_days_open": 175
+    "working_days_open": 176
   },
   {
     "iid": "217",
@@ -12811,7 +13213,7 @@
     ],
     "user_notes_count": 6,
     "web_url": "https://gitcode.com/cann/ge/issues/217",
-    "working_days_open": 175
+    "working_days_open": 176
   },
   {
     "iid": "216",
@@ -12831,7 +13233,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/216",
-    "working_days_open": 175
+    "working_days_open": 176
   },
   {
     "iid": "215",
@@ -12849,7 +13251,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/215",
-    "working_days_open": 175
+    "working_days_open": 176
   },
   {
     "iid": "214",
@@ -12871,7 +13273,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/214",
-    "working_days_open": 175
+    "working_days_open": 176
   },
   {
     "iid": "213",
@@ -12889,7 +13291,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/213",
-    "working_days_open": 176
+    "working_days_open": 177
   },
   {
     "iid": "212",
@@ -12907,7 +13309,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/212",
-    "working_days_open": 177
+    "working_days_open": 178
   },
   {
     "iid": "211",
@@ -12926,7 +13328,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/211",
-    "working_days_open": 177
+    "working_days_open": 178
   },
   {
     "iid": "210",
@@ -12946,7 +13348,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/210",
-    "working_days_open": 177
+    "working_days_open": 178
   },
   {
     "iid": "209",
@@ -12965,7 +13367,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/209",
-    "working_days_open": 177
+    "working_days_open": 178
   },
   {
     "iid": "208",
@@ -12983,7 +13385,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/208",
-    "working_days_open": 180
+    "working_days_open": 181
   },
   {
     "iid": "206",
@@ -13001,7 +13403,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/206",
-    "working_days_open": 180
+    "working_days_open": 181
   },
   {
     "iid": "205",
@@ -13019,7 +13421,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/205",
-    "working_days_open": 180
+    "working_days_open": 181
   },
   {
     "iid": "204",
@@ -13037,7 +13439,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/204",
-    "working_days_open": 180
+    "working_days_open": 181
   },
   {
     "iid": "203",
@@ -13055,7 +13457,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/203",
-    "working_days_open": 180
+    "working_days_open": 181
   },
   {
     "iid": "202",
@@ -13073,7 +13475,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/202",
-    "working_days_open": 180
+    "working_days_open": 181
   },
   {
     "iid": "201",
@@ -13091,7 +13493,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/201",
-    "working_days_open": 181
+    "working_days_open": 182
   },
   {
     "iid": "200",
@@ -13111,7 +13513,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/200",
-    "working_days_open": 181
+    "working_days_open": 182
   },
   {
     "iid": "199",
@@ -13129,7 +13531,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/199",
-    "working_days_open": 181
+    "working_days_open": 182
   },
   {
     "iid": "198",
@@ -13149,7 +13551,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/198",
-    "working_days_open": 181
+    "working_days_open": 182
   },
   {
     "iid": "197",
@@ -13169,7 +13571,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/197",
-    "working_days_open": 181
+    "working_days_open": 182
   },
   {
     "iid": "196",
@@ -13189,7 +13591,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/196",
-    "working_days_open": 181
+    "working_days_open": 182
   },
   {
     "iid": "195",
@@ -13209,7 +13611,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/195",
-    "working_days_open": 181
+    "working_days_open": 182
   },
   {
     "iid": "194",
@@ -13227,7 +13629,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/194",
-    "working_days_open": 181
+    "working_days_open": 182
   },
   {
     "iid": "193",
@@ -13247,7 +13649,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/193",
-    "working_days_open": 181
+    "working_days_open": 182
   },
   {
     "iid": "192",
@@ -13267,7 +13669,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/192",
-    "working_days_open": 181
+    "working_days_open": 182
   },
   {
     "iid": "191",
@@ -13287,7 +13689,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/191",
-    "working_days_open": 181
+    "working_days_open": 182
   },
   {
     "iid": "190",
@@ -13307,7 +13709,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/190",
-    "working_days_open": 182
+    "working_days_open": 183
   },
   {
     "iid": "189",
@@ -13325,7 +13727,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/189",
-    "working_days_open": 182
+    "working_days_open": 183
   },
   {
     "iid": "188",
@@ -13343,7 +13745,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/188",
-    "working_days_open": 182
+    "working_days_open": 183
   },
   {
     "iid": "187",
@@ -13363,7 +13765,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/187",
-    "working_days_open": 182
+    "working_days_open": 183
   },
   {
     "iid": "186",
@@ -13382,7 +13784,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/186",
-    "working_days_open": 182
+    "working_days_open": 183
   },
   {
     "iid": "185",
@@ -13400,7 +13802,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/185",
-    "working_days_open": 183
+    "working_days_open": 184
   },
   {
     "iid": "184",
@@ -13418,7 +13820,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/184",
-    "working_days_open": 183
+    "working_days_open": 184
   },
   {
     "iid": "183",
@@ -13438,7 +13840,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/183",
-    "working_days_open": 183
+    "working_days_open": 184
   },
   {
     "iid": "182",
@@ -13458,7 +13860,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/182",
-    "working_days_open": 183
+    "working_days_open": 184
   },
   {
     "iid": "181",
@@ -13478,7 +13880,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/181",
-    "working_days_open": 183
+    "working_days_open": 184
   },
   {
     "iid": "180",
@@ -13498,7 +13900,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/180",
-    "working_days_open": 183
+    "working_days_open": 184
   },
   {
     "iid": "179",
@@ -13518,7 +13920,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/179",
-    "working_days_open": 183
+    "working_days_open": 184
   },
   {
     "iid": "178",
@@ -13536,7 +13938,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/178",
-    "working_days_open": 183
+    "working_days_open": 184
   },
   {
     "iid": "177",
@@ -13556,7 +13958,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/177",
-    "working_days_open": 183
+    "working_days_open": 184
   },
   {
     "iid": "176",
@@ -13576,7 +13978,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/176",
-    "working_days_open": 183
+    "working_days_open": 184
   },
   {
     "iid": "175",
@@ -13596,7 +13998,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/175",
-    "working_days_open": 183
+    "working_days_open": 184
   },
   {
     "iid": "174",
@@ -13616,7 +14018,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/174",
-    "working_days_open": 183
+    "working_days_open": 184
   },
   {
     "iid": "173",
@@ -13634,7 +14036,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/173",
-    "working_days_open": 184
+    "working_days_open": 185
   },
   {
     "iid": "172",
@@ -13650,7 +14052,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/172",
-    "working_days_open": 184
+    "working_days_open": 185
   },
   {
     "iid": "171",
@@ -13668,7 +14070,7 @@
     ],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/171",
-    "working_days_open": 185
+    "working_days_open": 186
   },
   {
     "iid": "170",
@@ -13686,7 +14088,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/170",
-    "working_days_open": 185
+    "working_days_open": 186
   },
   {
     "iid": "169",
@@ -13706,7 +14108,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/169",
-    "working_days_open": 185
+    "working_days_open": 186
   },
   {
     "iid": "168",
@@ -13726,7 +14128,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/168",
-    "working_days_open": 185
+    "working_days_open": 186
   },
   {
     "iid": "167",
@@ -13746,7 +14148,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/167",
-    "working_days_open": 186
+    "working_days_open": 187
   },
   {
     "iid": "166",
@@ -13766,7 +14168,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/166",
-    "working_days_open": 186
+    "working_days_open": 187
   },
   {
     "iid": "165",
@@ -13785,7 +14187,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/165",
-    "working_days_open": 188
+    "working_days_open": 189
   },
   {
     "iid": "164",
@@ -13804,7 +14206,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/164",
-    "working_days_open": 188
+    "working_days_open": 189
   },
   {
     "iid": "163",
@@ -13823,7 +14225,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/163",
-    "working_days_open": 188
+    "working_days_open": 189
   },
   {
     "iid": "162",
@@ -13843,7 +14245,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/162",
-    "working_days_open": 189
+    "working_days_open": 190
   },
   {
     "iid": "160",
@@ -13863,7 +14265,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/160",
-    "working_days_open": 191
+    "working_days_open": 192
   },
   {
     "iid": "159",
@@ -13884,7 +14286,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/159",
-    "working_days_open": 192
+    "working_days_open": 193
   },
   {
     "iid": "158",
@@ -13902,7 +14304,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/158",
-    "working_days_open": 192
+    "working_days_open": 193
   },
   {
     "iid": "157",
@@ -13918,7 +14320,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/157",
-    "working_days_open": 194
+    "working_days_open": 195
   },
   {
     "iid": "156",
@@ -13934,7 +14336,7 @@
     "assignees": [],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/156",
-    "working_days_open": 194
+    "working_days_open": 195
   },
   {
     "iid": "155",
@@ -13950,7 +14352,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/155",
-    "working_days_open": 195
+    "working_days_open": 196
   },
   {
     "iid": "154",
@@ -13966,7 +14368,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/154",
-    "working_days_open": 196
+    "working_days_open": 197
   },
   {
     "iid": "153",
@@ -13984,7 +14386,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/153",
-    "working_days_open": 196
+    "working_days_open": 197
   },
   {
     "iid": "152",
@@ -14002,7 +14404,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/152",
-    "working_days_open": 196
+    "working_days_open": 197
   },
   {
     "iid": "151",
@@ -14022,7 +14424,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/151",
-    "working_days_open": 196
+    "working_days_open": 197
   },
   {
     "iid": "149",
@@ -14042,7 +14444,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/149",
-    "working_days_open": 197
+    "working_days_open": 198
   },
   {
     "iid": "148",
@@ -14060,7 +14462,7 @@
     ],
     "user_notes_count": 7,
     "web_url": "https://gitcode.com/cann/ge/issues/148",
-    "working_days_open": 197
+    "working_days_open": 198
   },
   {
     "iid": "147",
@@ -14076,7 +14478,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/147",
-    "working_days_open": 197
+    "working_days_open": 198
   },
   {
     "iid": "146",
@@ -14094,7 +14496,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/146",
-    "working_days_open": 197
+    "working_days_open": 198
   },
   {
     "iid": "145",
@@ -14110,7 +14512,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/145",
-    "working_days_open": 197
+    "working_days_open": 198
   },
   {
     "iid": "144",
@@ -14128,7 +14530,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/144",
-    "working_days_open": 197
+    "working_days_open": 198
   },
   {
     "iid": "143",
@@ -14146,7 +14548,7 @@
     "assignees": [],
     "user_notes_count": 11,
     "web_url": "https://gitcode.com/cann/ge/issues/143",
-    "working_days_open": 197
+    "working_days_open": 198
   },
   {
     "iid": "142",
@@ -14164,7 +14566,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/142",
-    "working_days_open": 198
+    "working_days_open": 199
   },
   {
     "iid": "141",
@@ -14182,7 +14584,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/141",
-    "working_days_open": 198
+    "working_days_open": 199
   },
   {
     "iid": "140",
@@ -14204,7 +14606,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/140",
-    "working_days_open": 198
+    "working_days_open": 199
   },
   {
     "iid": "139",
@@ -14223,7 +14625,7 @@
     ],
     "user_notes_count": 7,
     "web_url": "https://gitcode.com/cann/ge/issues/139",
-    "working_days_open": 198
+    "working_days_open": 199
   },
   {
     "iid": "138",
@@ -14243,7 +14645,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/138",
-    "working_days_open": 198
+    "working_days_open": 199
   },
   {
     "iid": "137",
@@ -14261,7 +14663,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/137",
-    "working_days_open": 198
+    "working_days_open": 199
   },
   {
     "iid": "136",
@@ -14281,7 +14683,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/136",
-    "working_days_open": 198
+    "working_days_open": 199
   },
   {
     "iid": "135",
@@ -14301,7 +14703,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/135",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "134",
@@ -14321,7 +14723,7 @@
     ],
     "user_notes_count": 8,
     "web_url": "https://gitcode.com/cann/ge/issues/134",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "133",
@@ -14339,7 +14741,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/133",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "132",
@@ -14359,7 +14761,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/132",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "131",
@@ -14379,7 +14781,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/131",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "130",
@@ -14399,7 +14801,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/130",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "129",
@@ -14419,7 +14821,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/129",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "128",
@@ -14439,7 +14841,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/128",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "127",
@@ -14459,7 +14861,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/127",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "126",
@@ -14479,7 +14881,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/126",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "125",
@@ -14499,7 +14901,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/125",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "124",
@@ -14519,7 +14921,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/124",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "123",
@@ -14539,7 +14941,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/123",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "122",
@@ -14559,7 +14961,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/122",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "121",
@@ -14579,7 +14981,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/121",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "120",
@@ -14599,7 +15001,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/120",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "119",
@@ -14619,7 +15021,7 @@
     ],
     "user_notes_count": 10,
     "web_url": "https://gitcode.com/cann/ge/issues/119",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "118",
@@ -14637,7 +15039,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/118",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "117",
@@ -14655,7 +15057,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/117",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "116",
@@ -14673,7 +15075,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/116",
-    "working_days_open": 199
+    "working_days_open": 200
   },
   {
     "iid": "115",
@@ -14691,7 +15093,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/115",
-    "working_days_open": 200
+    "working_days_open": 201
   },
   {
     "iid": "114",
@@ -14709,7 +15111,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/114",
-    "working_days_open": 200
+    "working_days_open": 201
   },
   {
     "iid": "113",
@@ -14727,7 +15129,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/113",
-    "working_days_open": 200
+    "working_days_open": 201
   },
   {
     "iid": "112",
@@ -14745,7 +15147,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/112",
-    "working_days_open": 200
+    "working_days_open": 201
   },
   {
     "iid": "111",
@@ -14765,7 +15167,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/111",
-    "working_days_open": 200
+    "working_days_open": 201
   },
   {
     "iid": "110",
@@ -14783,7 +15185,7 @@
     "assignees": [],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/110",
-    "working_days_open": 201
+    "working_days_open": 202
   },
   {
     "iid": "109",
@@ -14801,7 +15203,7 @@
     "assignees": [],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/109",
-    "working_days_open": 201
+    "working_days_open": 202
   },
   {
     "iid": "108",
@@ -14819,7 +15221,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/108",
-    "working_days_open": 201
+    "working_days_open": 202
   },
   {
     "iid": "107",
@@ -14839,7 +15241,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/107",
-    "working_days_open": 202
+    "working_days_open": 203
   },
   {
     "iid": "106",
@@ -14859,7 +15261,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/106",
-    "working_days_open": 202
+    "working_days_open": 203
   },
   {
     "iid": "105",
@@ -14879,7 +15281,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/105",
-    "working_days_open": 202
+    "working_days_open": 203
   },
   {
     "iid": "104",
@@ -14899,7 +15301,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/104",
-    "working_days_open": 202
+    "working_days_open": 203
   },
   {
     "iid": "103",
@@ -14920,7 +15322,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/103",
-    "working_days_open": 202
+    "working_days_open": 203
   },
   {
     "iid": "102",
@@ -14940,7 +15342,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/102",
-    "working_days_open": 202
+    "working_days_open": 203
   },
   {
     "iid": "101",
@@ -14960,7 +15362,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/101",
-    "working_days_open": 202
+    "working_days_open": 203
   },
   {
     "iid": "100",
@@ -14980,7 +15382,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/100",
-    "working_days_open": 202
+    "working_days_open": 203
   },
   {
     "iid": "99",
@@ -15000,7 +15402,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/99",
-    "working_days_open": 202
+    "working_days_open": 203
   },
   {
     "iid": "98",
@@ -15020,7 +15422,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/98",
-    "working_days_open": 202
+    "working_days_open": 203
   },
   {
     "iid": "97",
@@ -15040,7 +15442,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/97",
-    "working_days_open": 202
+    "working_days_open": 203
   },
   {
     "iid": "96",
@@ -15060,7 +15462,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/96",
-    "working_days_open": 203
+    "working_days_open": 204
   },
   {
     "iid": "95",
@@ -15078,7 +15480,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/95",
-    "working_days_open": 203
+    "working_days_open": 204
   },
   {
     "iid": "94",
@@ -15098,7 +15500,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/94",
-    "working_days_open": 203
+    "working_days_open": 204
   },
   {
     "iid": "93",
@@ -15118,7 +15520,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/93",
-    "working_days_open": 203
+    "working_days_open": 204
   },
   {
     "iid": "92",
@@ -15138,7 +15540,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/92",
-    "working_days_open": 203
+    "working_days_open": 204
   },
   {
     "iid": "91",
@@ -15154,7 +15556,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/91",
-    "working_days_open": 204
+    "working_days_open": 205
   },
   {
     "iid": "90",
@@ -15170,7 +15572,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/90",
-    "working_days_open": 204
+    "working_days_open": 205
   },
   {
     "iid": "89",
@@ -15188,7 +15590,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/89",
-    "working_days_open": 204
+    "working_days_open": 205
   },
   {
     "iid": "88",
@@ -15206,7 +15608,7 @@
     ],
     "user_notes_count": 6,
     "web_url": "https://gitcode.com/cann/ge/issues/88",
-    "working_days_open": 205
+    "working_days_open": 206
   },
   {
     "iid": "87",
@@ -15224,7 +15626,7 @@
     "assignees": [],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/87",
-    "working_days_open": 205
+    "working_days_open": 206
   },
   {
     "iid": "86",
@@ -15242,7 +15644,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/86",
-    "working_days_open": 206
+    "working_days_open": 207
   },
   {
     "iid": "85",
@@ -15262,7 +15664,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/85",
-    "working_days_open": 206
+    "working_days_open": 207
   },
   {
     "iid": "84",
@@ -15280,7 +15682,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/84",
-    "working_days_open": 206
+    "working_days_open": 207
   },
   {
     "iid": "83",
@@ -15298,7 +15700,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/83",
-    "working_days_open": 206
+    "working_days_open": 207
   },
   {
     "iid": "82",
@@ -15318,7 +15720,7 @@
     ],
     "user_notes_count": 6,
     "web_url": "https://gitcode.com/cann/ge/issues/82",
-    "working_days_open": 206
+    "working_days_open": 207
   },
   {
     "iid": "81",
@@ -15336,7 +15738,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/81",
-    "working_days_open": 206
+    "working_days_open": 207
   },
   {
     "iid": "80",
@@ -15357,7 +15759,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/80",
-    "working_days_open": 206
+    "working_days_open": 207
   },
   {
     "iid": "79",
@@ -15375,7 +15777,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/79",
-    "working_days_open": 207
+    "working_days_open": 208
   },
   {
     "iid": "78",
@@ -15395,7 +15797,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/78",
-    "working_days_open": 207
+    "working_days_open": 208
   },
   {
     "iid": "77",
@@ -15415,7 +15817,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/77",
-    "working_days_open": 208
+    "working_days_open": 209
   },
   {
     "iid": "76",
@@ -15435,7 +15837,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/76",
-    "working_days_open": 208
+    "working_days_open": 209
   },
   {
     "iid": "75",
@@ -15455,7 +15857,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/75",
-    "working_days_open": 209
+    "working_days_open": 210
   },
   {
     "iid": "74",
@@ -15471,7 +15873,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/74",
-    "working_days_open": 210
+    "working_days_open": 211
   },
   {
     "iid": "73",
@@ -15487,7 +15889,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/73",
-    "working_days_open": 210
+    "working_days_open": 211
   },
   {
     "iid": "72",
@@ -15507,7 +15909,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/72",
-    "working_days_open": 210
+    "working_days_open": 211
   },
   {
     "iid": "71",
@@ -15525,7 +15927,7 @@
     ],
     "user_notes_count": 8,
     "web_url": "https://gitcode.com/cann/ge/issues/71",
-    "working_days_open": 210
+    "working_days_open": 211
   },
   {
     "iid": "70",
@@ -15543,7 +15945,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/70",
-    "working_days_open": 211
+    "working_days_open": 212
   },
   {
     "iid": "69",
@@ -15561,7 +15963,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/69",
-    "working_days_open": 211
+    "working_days_open": 212
   },
   {
     "iid": "68",
@@ -15579,7 +15981,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/68",
-    "working_days_open": 211
+    "working_days_open": 212
   },
   {
     "iid": "66",
@@ -15597,7 +15999,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/66",
-    "working_days_open": 212
+    "working_days_open": 213
   },
   {
     "iid": "65",
@@ -15615,7 +16017,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/65",
-    "working_days_open": 212
+    "working_days_open": 213
   },
   {
     "iid": "64",
@@ -15633,7 +16035,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/64",
-    "working_days_open": 212
+    "working_days_open": 213
   },
   {
     "iid": "63",
@@ -15651,7 +16053,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/63",
-    "working_days_open": 213
+    "working_days_open": 214
   },
   {
     "iid": "62",
@@ -15667,7 +16069,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/62",
-    "working_days_open": 213
+    "working_days_open": 214
   },
   {
     "iid": "61",
@@ -15685,7 +16087,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/61",
-    "working_days_open": 213
+    "working_days_open": 214
   },
   {
     "iid": "60",
@@ -15703,7 +16105,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/60",
-    "working_days_open": 213
+    "working_days_open": 214
   },
   {
     "iid": "59",
@@ -15721,7 +16123,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/59",
-    "working_days_open": 214
+    "working_days_open": 215
   },
   {
     "iid": "58",
@@ -15741,7 +16143,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/58",
-    "working_days_open": 214
+    "working_days_open": 215
   },
   {
     "iid": "57",
@@ -15757,7 +16159,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/57",
-    "working_days_open": 214
+    "working_days_open": 215
   },
   {
     "iid": "56",
@@ -15777,7 +16179,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/56",
-    "working_days_open": 214
+    "working_days_open": 215
   },
   {
     "iid": "55",
@@ -15795,7 +16197,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/55",
-    "working_days_open": 214
+    "working_days_open": 215
   },
   {
     "iid": "54",
@@ -15813,7 +16215,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/54",
-    "working_days_open": 215
+    "working_days_open": 216
   },
   {
     "iid": "53",
@@ -15829,7 +16231,7 @@
     "assignees": [],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/53",
-    "working_days_open": 215
+    "working_days_open": 216
   },
   {
     "iid": "52",
@@ -15845,7 +16247,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/52",
-    "working_days_open": 215
+    "working_days_open": 216
   },
   {
     "iid": "51",
@@ -15861,7 +16263,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/51",
-    "working_days_open": 215
+    "working_days_open": 216
   },
   {
     "iid": "50",
@@ -15879,7 +16281,7 @@
     ],
     "user_notes_count": 5,
     "web_url": "https://gitcode.com/cann/ge/issues/50",
-    "working_days_open": 216
+    "working_days_open": 217
   },
   {
     "iid": "49",
@@ -15899,7 +16301,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/49",
-    "working_days_open": 216
+    "working_days_open": 217
   },
   {
     "iid": "48",
@@ -15917,7 +16319,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/48",
-    "working_days_open": 216
+    "working_days_open": 217
   },
   {
     "iid": "47",
@@ -15935,7 +16337,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/47",
-    "working_days_open": 216
+    "working_days_open": 217
   },
   {
     "iid": "46",
@@ -15953,7 +16355,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/46",
-    "working_days_open": 216
+    "working_days_open": 217
   },
   {
     "iid": "45",
@@ -15973,7 +16375,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/45",
-    "working_days_open": 216
+    "working_days_open": 217
   },
   {
     "iid": "44",
@@ -15989,7 +16391,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/44",
-    "working_days_open": 217
+    "working_days_open": 218
   },
   {
     "iid": "43",
@@ -16007,7 +16409,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/43",
-    "working_days_open": 217
+    "working_days_open": 218
   },
   {
     "iid": "42",
@@ -16023,7 +16425,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/42",
-    "working_days_open": 217
+    "working_days_open": 218
   },
   {
     "iid": "41",
@@ -16041,7 +16443,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/41",
-    "working_days_open": 217
+    "working_days_open": 218
   },
   {
     "iid": "40",
@@ -16059,7 +16461,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/40",
-    "working_days_open": 217
+    "working_days_open": 218
   },
   {
     "iid": "39",
@@ -16077,7 +16479,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/39",
-    "working_days_open": 217
+    "working_days_open": 218
   },
   {
     "iid": "38",
@@ -16097,7 +16499,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/38",
-    "working_days_open": 218
+    "working_days_open": 219
   },
   {
     "iid": "37",
@@ -16117,7 +16519,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/37",
-    "working_days_open": 218
+    "working_days_open": 219
   },
   {
     "iid": "36",
@@ -16135,7 +16537,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/36",
-    "working_days_open": 218
+    "working_days_open": 219
   },
   {
     "iid": "35",
@@ -16153,7 +16555,7 @@
     "assignees": [],
     "user_notes_count": 0,
     "web_url": "https://gitcode.com/cann/ge/issues/35",
-    "working_days_open": 219
+    "working_days_open": 220
   },
   {
     "iid": "34",
@@ -16169,7 +16571,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/34",
-    "working_days_open": 219
+    "working_days_open": 220
   },
   {
     "iid": "33",
@@ -16187,7 +16589,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/33",
-    "working_days_open": 219
+    "working_days_open": 220
   },
   {
     "iid": "32",
@@ -16205,7 +16607,7 @@
     "assignees": [],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/32",
-    "working_days_open": 219
+    "working_days_open": 220
   },
   {
     "iid": "31",
@@ -16221,7 +16623,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/31",
-    "working_days_open": 219
+    "working_days_open": 220
   },
   {
     "iid": "30",
@@ -16239,7 +16641,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/30",
-    "working_days_open": 219
+    "working_days_open": 220
   },
   {
     "iid": "29",
@@ -16257,7 +16659,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/29",
-    "working_days_open": 220
+    "working_days_open": 221
   },
   {
     "iid": "28",
@@ -16277,7 +16679,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/28",
-    "working_days_open": 220
+    "working_days_open": 221
   },
   {
     "iid": "27",
@@ -16297,7 +16699,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/27",
-    "working_days_open": 220
+    "working_days_open": 221
   },
   {
     "iid": "26",
@@ -16315,7 +16717,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/26",
-    "working_days_open": 220
+    "working_days_open": 221
   },
   {
     "iid": "25",
@@ -16331,7 +16733,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/25",
-    "working_days_open": 220
+    "working_days_open": 221
   },
   {
     "iid": "24",
@@ -16347,7 +16749,7 @@
     "assignees": [],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/24",
-    "working_days_open": 220
+    "working_days_open": 221
   },
   {
     "iid": "23",
@@ -16363,7 +16765,7 @@
     "assignees": [],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/23",
-    "working_days_open": 220
+    "working_days_open": 221
   },
   {
     "iid": "22",
@@ -16381,7 +16783,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/22",
-    "working_days_open": 220
+    "working_days_open": 221
   },
   {
     "iid": "21",
@@ -16397,7 +16799,7 @@
     "assignees": [],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/21",
-    "working_days_open": 220
+    "working_days_open": 221
   },
   {
     "iid": "20",
@@ -16415,7 +16817,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/20",
-    "working_days_open": 220
+    "working_days_open": 221
   },
   {
     "iid": "19",
@@ -16431,7 +16833,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/19",
-    "working_days_open": 220
+    "working_days_open": 221
   },
   {
     "iid": "18",
@@ -16449,7 +16851,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/18",
-    "working_days_open": 220
+    "working_days_open": 221
   },
   {
     "iid": "17",
@@ -16465,7 +16867,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/17",
-    "working_days_open": 221
+    "working_days_open": 222
   },
   {
     "iid": "16",
@@ -16483,7 +16885,7 @@
     "assignees": [],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/16",
-    "working_days_open": 221
+    "working_days_open": 222
   },
   {
     "iid": "15",
@@ -16501,7 +16903,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/15",
-    "working_days_open": 221
+    "working_days_open": 222
   },
   {
     "iid": "14",
@@ -16520,7 +16922,7 @@
     ],
     "user_notes_count": 7,
     "web_url": "https://gitcode.com/cann/ge/issues/14",
-    "working_days_open": 221
+    "working_days_open": 222
   },
   {
     "iid": "13",
@@ -16538,7 +16940,7 @@
     "assignees": [],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/13",
-    "working_days_open": 221
+    "working_days_open": 222
   },
   {
     "iid": "12",
@@ -16558,7 +16960,7 @@
     ],
     "user_notes_count": 1,
     "web_url": "https://gitcode.com/cann/ge/issues/12",
-    "working_days_open": 221
+    "working_days_open": 222
   },
   {
     "iid": "11",
@@ -16576,7 +16978,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/11",
-    "working_days_open": 221
+    "working_days_open": 222
   },
   {
     "iid": "10",
@@ -16596,7 +16998,7 @@
     ],
     "user_notes_count": 9,
     "web_url": "https://gitcode.com/cann/ge/issues/10",
-    "working_days_open": 221
+    "working_days_open": 222
   },
   {
     "iid": "9",
@@ -16614,7 +17016,7 @@
     ],
     "user_notes_count": 3,
     "web_url": "https://gitcode.com/cann/ge/issues/9",
-    "working_days_open": 222
+    "working_days_open": 223
   },
   {
     "iid": "5",
@@ -16632,7 +17034,7 @@
     ],
     "user_notes_count": 2,
     "web_url": "https://gitcode.com/cann/ge/issues/5",
-    "working_days_open": 222
+    "working_days_open": 223
   },
   {
     "iid": "4",
@@ -16653,7 +17055,7 @@
     ],
     "user_notes_count": 6,
     "web_url": "https://gitcode.com/cann/ge/issues/4",
-    "working_days_open": 226
+    "working_days_open": 227
   },
   {
     "iid": "3",
@@ -16673,7 +17075,7 @@
     ],
     "user_notes_count": 6,
     "web_url": "https://gitcode.com/cann/ge/issues/3",
-    "working_days_open": 226
+    "working_days_open": 227
   },
   {
     "iid": "2",
@@ -16693,7 +17095,7 @@
     ],
     "user_notes_count": 4,
     "web_url": "https://gitcode.com/cann/ge/issues/2",
-    "working_days_open": 226
+    "working_days_open": 227
   },
   {
     "iid": "1",
@@ -16713,6 +17115,6 @@
     ],
     "user_notes_count": 9,
     "web_url": "https://gitcode.com/cann/ge/issues/1",
-    "working_days_open": 226
+    "working_days_open": 227
   }
 ]
